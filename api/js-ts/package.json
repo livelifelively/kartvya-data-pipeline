@@ -1,0 +1,32 @@
+{
+  "name": "js-ts",
+  "version": "1.0.0",
+  "main": "build/app.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/app.js",
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "lint": "eslint src/**/*.ts",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@typescript-eslint/eslint-plugin": "^8.8.1",
+    "@typescript-eslint/parser": "^8.8.1",
+    "eslint": "^9.12.0",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "fastify": "^5.0.0",
+    "fastify-plugin": "^5.0.1",
+    "graphql-request": "^6.1.0"
+  }
+}

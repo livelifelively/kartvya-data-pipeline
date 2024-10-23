@@ -1,0 +1,533 @@
+# USER AUTHENTICATION
+
+type Account {
+  id: ID
+  type: String
+  provider: String @search(by: [hash])
+  providerAccountId: String @search(by: [hash])
+  refreshToken: String
+  expires_at: Int64
+  accessToken: String
+  token_type: String
+  refresh_token: String
+  access_token: String
+  scope: String
+  id_token: String
+  session_state: String
+  user: User @hasInverse(field: "accounts")
+}
+
+type Session {
+  id: ID
+  expires: DateTime
+  sessionToken: String @search(by: [hash])
+  user: User @hasInverse(field: "sessions")
+}
+
+type User {
+  id: ID
+  name: String
+  email: String @search(by: [hash])
+  emailVerified: DateTime
+  image: String
+  accounts: [Account] @hasInverse(field: "user")
+  sessions: [Session] @hasInverse(field: "user")
+}
+
+type VerificationToken {
+  id: ID
+  identifier: String @search(by: [hash])
+  token: String @search(by: [hash])
+  expires: DateTime
+}
+
+type Language {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  scripts: [Script]
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+}
+
+type Script {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  languages: [Language] @hasInverse(field: "scripts")
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+}
+
+# instance of language + script combination.
+type LanguageScript {
+  id: ID!
+  name_en: String! @id
+  language: Language!
+  script: Script!
+}
+
+# Administrative regions
+type RegionName {
+  id: ID!
+  language_script: LanguageScript!
+  name: String! @id @search(by: [hash, term, fulltext])
+  name_of: [AdministrativeEntity]
+}
+
+enum AdministrativeEntityCategory {
+  Nation
+  Zonal_Council
+  State
+  Union_Territory
+  District
+  City
+  Loksabha_Constituency
+  Vidhansabha_Constituency
+}
+
+# territories with a soverign root node.
+# searchable name, slug and how its related to other regions.
+# an administrative region is tightly coupled with territory.
+# any change in territory means change in the region.
+type AdministrativeEntity {
+  id: ID!
+
+  names: [RegionName!]! @hasInverse(field: "name_of")
+
+  category: AdministrativeEntityCategory @search(by: [exact])
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  new_administrative_entity: [AdministrativeEntity]
+  previous_administrative_entity: [AdministrativeEntity]
+
+  nation_region: NationRegion @hasInverse(field: "administrative_entity")
+  nation_legal: NationLegal @hasInverse(field: "administrative_entity")
+
+  zone_council_region: ZonalCouncilRegion @hasInverse(field: "administrative_entity")
+  zone_council_legal: ZonalCouncilLegal @hasInverse(field: "administrative_entity")
+
+  union_territory_region: UnionTerritoryRegion @hasInverse(field: "administrative_entity")
+  union_territory_legal: UnionTerritoryLegal @hasInverse(field: "administrative_entity")
+
+  state_region: StateRegion @hasInverse(field: "administrative_entity")
+  state_legal: StateLegal @hasInverse(field: "administrative_entity")
+
+  district_region: DistrictRegion @hasInverse(field: "administrative_entity")
+  district_legal: DistrictLegal @hasInverse(field: "administrative_entity")
+
+  city_region: CityRegion @hasInverse(field: "administrative_entity")
+  city_legal: CityLegal @hasInverse(field: "administrative_entity")
+
+  loksabha_constituency_region: LoksabhaConstituencyRegion @hasInverse(field: "administrative_entity")
+  loksabha_constituency_legal: LoksabhaConstituencyLegal @hasInverse(field: "administrative_entity")
+
+  vidhansabha_constituency_region: VidhansabhaConstituencyRegion @hasInverse(field: "administrative_entity")
+  vidhansabha_constituency_legal: VidhansabhaConstituencyLegal @hasInverse(field: "administrative_entity")
+}
+
+type NationRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: NationLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  capital: [NationalCapitalCity]
+
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "nation")
+  state: [StateRegion] @hasInverse(field: "nation")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "nation")
+  city: [CityRegion] @hasInverse(field: "nation")
+  district: [DistrictRegion] @hasInverse(field: "nation")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "nation")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "nation")
+}
+
+type NationLegal {
+  id: ID!
+
+  administrative_entity: AdministrativeEntity
+  region: NationRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+}
+
+type ZonalCouncilRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: ZonalCouncilLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  nation: NationRegion @hasInverse(field: "zonal_council")
+  state: [StateRegion] @hasInverse(field: "zonal_council")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "zonal_council")
+  city: [CityRegion] @hasInverse(field: "zonal_council")
+  district: [DistrictRegion] @hasInverse(field: "zonal_council")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "zonal_council")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "zonal_council")
+}
+
+type ZonalCouncilLegal {
+  id: ID!
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  administrative_entity: AdministrativeEntity
+  region: ZonalCouncilRegion @hasInverse(field: "legal")
+}
+
+type StateRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: StateLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  capital: [StateCapitalCity]
+
+  nation: NationRegion @hasInverse(field: "state")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "state")
+  city: [CityRegion] @hasInverse(field: "state")
+  district: [DistrictRegion] @hasInverse(field: "state")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "state")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "state")
+}
+
+type StateLegal {
+  id: ID!
+
+  administrative_entity: AdministrativeEntity
+  region: StateRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  iso_code: String
+  vehicle_code: String
+
+  official_language: [Language]
+  additional_official_language: [Language]
+
+  official_website: String
+}
+
+type UnionTerritoryRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: UnionTerritoryLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  capital: [UnionTerritoryCapitalCity]
+
+  nation: NationRegion @hasInverse(field: "union_territory")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "union_territory")
+  city: [CityRegion] @hasInverse(field: "union_territory")
+  district: [DistrictRegion] @hasInverse(field: "union_territory")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "union_territory")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "union_territory")
+}
+
+type UnionTerritoryLegal {
+  id: ID!
+  administrative_entity: AdministrativeEntity
+  region: UnionTerritoryRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  iso_code: String
+  vehicle_code: String
+
+  official_language: [Language]
+  additional_official_language: [Language]
+
+  official_website: String
+}
+
+type DistrictRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: DistrictLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  nation: NationRegion @hasInverse(field: "district")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "district")
+  state: [StateRegion] @hasInverse(field: "district")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "district")
+  city: [CityRegion] @hasInverse(field: "district")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "district")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "district")
+}
+
+type DistrictLegal {
+  id: ID!
+  administrative_entity: AdministrativeEntity
+  region: DistrictRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  official_website: String
+}
+
+type CityRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: CityLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  # covers all situations as capital city, all purposes, all seasons, all times
+  national_capital: [NationalCapitalCity]
+  state_capital: [StateCapitalCity]
+  union_territory_capital: [UnionTerritoryCapitalCity]
+
+  nation: NationRegion @hasInverse(field: "city")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "city")
+  state: [StateRegion] @hasInverse(field: "city")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "city")
+  district: [DistrictRegion] @hasInverse(field: "city")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "city")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "city")
+}
+
+type CityLegal {
+  id: ID!
+
+  administrative_entity: AdministrativeEntity
+  region: CityRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+}
+
+type LoksabhaConstituencyRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: LoksabhaConstituencyLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  new_region: [LoksabhaConstituencyRegion]
+
+  nation: NationRegion @hasInverse(field: "loksabha_constituency")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "loksabha_constituency")
+  state: [StateRegion] @hasInverse(field: "loksabha_constituency")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "loksabha_constituency")
+  city: [CityRegion] @hasInverse(field: "loksabha_constituency")
+  district: [DistrictRegion] @hasInverse(field: "loksabha_constituency")
+  vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "loksabha_constituency")
+}
+
+type LoksabhaConstituencyLegal {
+  id: ID!
+
+  administrative_entity: AdministrativeEntity
+  region: LoksabhaConstituencyRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  new_legal: [LoksabhaConstituencyLegal]
+}
+
+type VidhansabhaConstituencyRegion {
+  id: ID!
+  region_id: String! @id
+
+  administrative_entity: AdministrativeEntity
+  legal: VidhansabhaConstituencyLegal
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+
+  nation: NationRegion @hasInverse(field: "vidhansabha_constituency")
+  zonal_council: [ZonalCouncilRegion] @hasInverse(field: "vidhansabha_constituency")
+  state: [StateRegion] @hasInverse(field: "vidhansabha_constituency")
+  union_territory: [UnionTerritoryRegion] @hasInverse(field: "vidhansabha_constituency")
+  city: [CityRegion] @hasInverse(field: "vidhansabha_constituency")
+  district: [DistrictRegion] @hasInverse(field: "vidhansabha_constituency")
+  loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "vidhansabha_constituency")
+}
+
+type VidhansabhaConstituencyLegal {
+  id: ID!
+  administrative_entity: AdministrativeEntity
+  region: VidhansabhaConstituencyRegion @hasInverse(field: "legal")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  established_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [year])
+}
+
+enum CapitalCityCategory {
+  # all seasons all purposes
+  Sole_All_Seasons
+  # winter season all purposes
+  Sole_Winter
+  # summer season all purposes
+  Sole_Summer
+
+  # judicial all seasons; not all purposes;
+  Judicial_All_Seasons
+  # judicial winter only; not all purposes; not all seasons;
+  Judicial_Winter
+  # judicial summer only; not all purposes; not all seasons;
+  Judicial_Summer
+
+  # administrative all seasons; not all purposes;
+  Administrative_All_Seasons
+  # administrative winter only; not all purposes; not all seasons;
+  Administrative_Winter
+  # administrative summer only; not all purposes; not all seasons;
+  Administrative_Summer
+
+  # legislative all seasons; not all purposes;
+  Legislative_All_Seasons
+  # legislative winter only; not all purposes; not all seasons;
+  Legislative_Winter
+  # legislative summer only; not all purposes; not all seasons;
+  Legislative_Summer
+}
+
+type NationalCapitalCity {
+  id: ID!
+  city: CityRegion @hasInverse(field: "national_capital")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  # established as capital
+  established_on: DateTime @search(by: [year])
+  # dissolution of capital status
+  dissolved_on: DateTime @search(by: [year])
+
+  # if the capital is only capital for all seasons and all purposes
+  # sole - all purpose i.e. judicial, administrative and legislative
+  # all_seasons - all seasons
+  # winter/summer - seasonal
+  # judicial, administrative or legislative
+  category: CapitalCityCategory
+  capital_of: NationRegion @hasInverse(field: "capital")
+}
+
+type UnionTerritoryCapitalCity {
+  id: ID!
+  city: CityRegion @hasInverse(field: "union_territory_capital")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  # established as capital
+  established_on: DateTime @search(by: [year])
+  # dissolution of capital status
+  dissolved_on: DateTime @search(by: [year])
+
+  # if the capital is only capital for all seasons and all purposes
+  # sole - all purpose i.e. judicial, administrative and legislative
+  # all_seasons - all seasons
+  # winter/summer - seasonal
+  # judicial, administrative or legislative
+  category: CapitalCityCategory
+  capital_of: UnionTerritoryRegion @hasInverse(field: "capital")
+}
+
+type StateCapitalCity {
+  id: ID!
+  city: CityRegion @hasInverse(field: "state_capital")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+
+  # established as capital
+  established_on: DateTime @search(by: [year])
+  # dissolution of capital status
+  dissolved_on: DateTime @search(by: [year])
+
+  # if the capital is only capital for all seasons and all purposes
+  # sole - all purpose i.e. judicial, administrative and legislative
+  # all_seasons - all seasons
+  # winter/summer - seasonal
+  # judicial, administrative or legislative
+  category: CapitalCityCategory
+  capital_of: StateRegion @hasInverse(field: "capital")
+}
