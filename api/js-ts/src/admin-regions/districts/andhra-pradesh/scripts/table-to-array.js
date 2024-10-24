@@ -21,6 +21,7 @@ let apAssemblyTerms = [];
 // voter election result row has class "vcard"
 function fetchElectionResultTableFromWikipedia(tableElement) {
   //
+  // tableElement;
 }
 
 function categorizeWikipediaPageTable(tableElement) {
@@ -70,19 +71,25 @@ function fetchTableFromWikipediaPage(tableElement) {
       if (idx === 0) agg['maxLength'] = val.length;
       let newVal = new Array(agg['maxLength']);
 
+      // i is pointer to values in the array with overall length smaller than number of titles
+      // because it has values being filled from previous rows with larger rowspans
       let i = 0;
       for (let j = 0; j < newVal.length; j++) {
         if (agg.row[j] && agg.row[j].rowSpan > 0) {
           newVal[j] = agg.row[j].content;
           agg.row[j].rowSpan -= 1;
         } else {
+          // read value from row, since no value from previous rows
           newVal[j] = val[i];
 
+          // if this value spans across multiple rows, save it to agg.
           if (val[i].rowSpan > 1) {
-            agg.row[j] = agg.row[j] || {};
-            agg.row[j].rowSpan = val[j].rowSpan - 1;
+            agg.row[j] = {};
+            agg.row[j].rowSpan = val[i].rowSpan - 1;
+            // index would be as per title's index
             agg.row[j].index = j;
-            agg.row[j].content = val[j];
+            // value will be from current rows readable value (i)
+            agg.row[j].content = val[i];
           }
 
           i += 1;
