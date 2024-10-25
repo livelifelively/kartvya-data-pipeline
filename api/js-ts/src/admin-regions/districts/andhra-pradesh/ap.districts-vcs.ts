@@ -916,7 +916,7 @@ export const districtVCs = [
   {
     district: {
       name: 'Kadapa',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Kadapa',
+      wikipedia_page: 'https://en.wikipedia.org/wiki/Kadapa_district',
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Badvel_Assembly_constituency" title="Badvel Assembly constituency">Badvelu</a>',
