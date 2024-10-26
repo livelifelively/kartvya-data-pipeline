@@ -169,7 +169,7 @@ const path = require('path');
 // ];
 
 // STEP 2: for every state, process all decades
-const establishmentsInDecadeByState = require('./states-establishments-categories-by-decade.json');
+// const establishmentsInDecadeByState = require('./states-establishments-categories-by-decade.json');
 
 async function openPage(context, url) {
   try {
@@ -183,17 +183,19 @@ async function openPage(context, url) {
   }
 }
 
-async function extractDecadalEstablishmentsUrls(page) {
+async function extractWikipediaCategoryUrls(page) {
   return await page.evaluate(() => {
     function extractDataFromWikipediaCategories() {
-      let establishments = [];
+      let extractedURLs = [];
+
       document.querySelectorAll('.mw-category .mw-category-group a').forEach((val) => {
-        establishments.push({
+        extractedURLs.push({
           url: val.href,
           text: val.text,
         });
       });
-      return establishments.filter((val) => val.text.length);
+
+      return extractedURLs.filter((val) => val.text.length);
     }
 
     try {
@@ -214,7 +216,7 @@ async function extractDecadalEstablishmentsUrls(page) {
 
 //   for (const url of pageUrls) {
 //     const page = await openPage(context, url);
-//     const list = await extractDecadalEstablishmentsUrls(page);
+//     const list = await extractWikipediaCategoryUrls(page);
 
 //     await page.close();
 
@@ -240,48 +242,108 @@ async function extractDecadalEstablishmentsUrls(page) {
 /**
  * STEP 2 CODE:
  */
+// async function processListOfWikipediaPages(pageUrls) {
+//   const browser = await chromium.launch({ headless: true });
+//   const context = await browser.newContext();
+
+//   //   let allData = [];
+
+//   for (let state of pageUrls) {
+//     console.log('============================================');
+//     console.log('starting state ', state.url);
+//     console.log('============================================');
+
+//     let stateData = { state: state.state, url: state.url, data: [] };
+//     let errors = [];
+
+//     for (let decade of state.result) {
+//       try {
+//         console.log(decade.url);
+
+//         const page = await openPage(context, decade.url);
+//         const list = await extractWikipediaCategoryUrls(page);
+
+//         await page.close();
+
+//         // console.log(list);
+
+//         //   console.log('finished processing url: ', decade.url);
+//         stateData.data.push({
+//           url: decade.url,
+//           years: list,
+//         });
+//       } catch (e) {
+//         console.log(`FAILED TO READ URL ${decade.url}`);
+//         errors.push(decade.url);
+//         console.error(e);
+//       }
+//     }
+
+//     const outputFilePath = path.join(__dirname, `state-decade-events/${state.state}.json`);
+//     const errorsFilePath = path.join(__dirname, `state-decade-events/${state.state}-errors.json`);
+
+//     fs.writeFileSync(outputFilePath, JSON.stringify(stateData, null, 2));
+//     fs.writeFileSync(errorsFilePath, JSON.stringify(errors, null, 2));
+//   }
+
+//   console.log('DONE!!!');
+
+//   //   return results;
+// }
+
+// (async () => {
+//   const results = await processListOfWikipediaPages(establishmentsInDecadeByState);
+// })();
+
+/**
+ * STEP 3 CODE
+ */
+
+const { generateEstablishmentsList } = require('./state-decade-events');
+
 async function processListOfWikipediaPages(pageUrls) {
   const browser = await chromium.launch({ headless: true });
   const context = await browser.newContext();
 
-  //   let allData = [];
+  const stateDir = path.join(__dirname, `establishments`);
+  fs.mkdirSync(stateDir, { recursive: true });
 
   for (let state of pageUrls) {
     console.log('============================================');
     console.log('starting state ', state.url);
     console.log('============================================');
 
-    let stateData = { state: state.state, url: state.url, data: [] };
-    let errors = [];
+    let stateData = { state: state.state, url: state.url, data: [], errors: [] };
 
-    for (let decade of state.result) {
-      try {
-        console.log(decade.url);
+    for (let decade of state.data) {
+      console.log(decade.url);
+      let decadeData = {
+        url: decade.url,
+        years: [],
+      };
 
-        const page = await openPage(context, decade.url);
-        const list = await extractDecadalEstablishmentsUrls(page);
+      for (let year of decade.years) {
+        try {
+          const page = await openPage(context, year.url);
+          const list = await extractWikipediaCategoryUrls(page);
 
-        await page.close();
+          await page.close();
 
-        // console.log(list);
-
-        //   console.log('finished processing url: ', decade.url);
-        stateData.data.push({
-          url: decade.url,
-          years: list,
-        });
-      } catch (e) {
-        console.log(`FAILED TO READ URL ${decade.url}`);
-        errors.push(decade.url);
-        console.error(e);
+          decadeData.years.push({
+            url: year.url,
+            establishments: list,
+          });
+        } catch (e) {
+          console.log(`FAILED TO READ URL ${year.url}`);
+          stateData.errors.push(year.url);
+          console.error(e);
+        }
       }
     }
 
-    const outputFilePath = path.join(__dirname, `state-decade-events/${state.state}.json`);
-    const errorsFilePath = path.join(__dirname, `state-decade-events/${state.state}-errors.json`);
+    const outputFilePath = path.join(stateDir, `${state.state}.json`);
 
     fs.writeFileSync(outputFilePath, JSON.stringify(stateData, null, 2));
-    fs.writeFileSync(errorsFilePath, JSON.stringify(errors, null, 2));
   }
 
   console.log('DONE!!!');
@@ -289,7 +351,9 @@ async function processListOfWikipediaPages(pageUrls) {
   //   return results;
 }
 
-// STEP 2 Code:
 (async () => {
-  const results = await processListOfWikipediaPages(establishmentsInDecadeByState);
+  const establishmentsInYearsInDecadeByState = generateEstablishmentsList();
+  console.log(establishmentsInYearsInDecadeByState);
+
+  const results = await processListOfWikipediaPages(establishmentsInYearsInDecadeByState);
 })();
