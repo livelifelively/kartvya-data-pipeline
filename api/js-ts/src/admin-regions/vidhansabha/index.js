@@ -1,0 +1,417 @@
+const { chromium } = require('playwright');
+const path = require('path');
+const fs = require('fs');
+
+const outputFilePath = path.join(__dirname, 'vc-data.json');
+const errorFile = path.join(__dirname, 'vc_errors.json');
+
+async function openPage(context, url) {
+  try {
+    const page = await context.newPage();
+    await page.goto(url);
+    await page.waitForEvent('requestfinished');
+
+    return page;
+  } catch (error) {
+    console.error(`Failed to open URL: ${url}`, error);
+  }
+}
+
+async function extractDataFromWikipediaPage(context, url, state) {
+  try {
+    const page = await openPage(context, url);
+    const list = await processVidhansabhaPage(page);
+
+    await page.close();
+    return list;
+  } catch (error) {
+    const errorData = {
+      vidhansabha: url,
+      state,
+      message: error.toString(),
+      timestamp: new Date().toISOString(),
+    };
+    logError(errorData);
+  }
+}
+
+function logError(errorData) {
+  const existingErrors = fs.existsSync(errorFile) ? JSON.parse(fs.readFileSync(errorFile)) : [];
+  existingErrors.push(errorData);
+  fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
+}
+
+async function processListOfWikipediaPages(pageUrls) {
+  const browser = await chromium.launch({ headless: true });
+  const context = await browser.newContext();
+
+  const allPagesResults = [];
+
+  for (const url of pageUrls) {
+    const result = await extractDataFromWikipediaPage(context, url);
+    console.log('finished processing url: ', url);
+    allPagesResults.push({
+      url,
+      result,
+    });
+  }
+  console.log('DONE!!!');
+
+  return allPagesResults;
+}
+
+async function processVidhansabhaPage(page) {
+  // Use the injected functions
+  const result = await page.evaluate(() => {
+    function getAllAnchorLinks(node) {
+      let links = [];
+      let linkNodes = node.querySelectorAll('a');
+
+      if (linkNodes.length && linkNodes.length === 1) {
+        return linkNodes[0].href;
+      } else {
+        linkNodes.forEach((val) => {
+          links.push(val.href);
+        });
+      }
+
+      return links;
+    }
+
+    function extractFromVidhansabhaInfoBox() {
+      let t = document.querySelectorAll('.infobox.vcard');
+
+      const classesCategories = [
+        {
+          className: 'infobox-above',
+          nodeName: 'TH',
+          colSpan: 2,
+          dataFunction: (element, data) => {
+            // initiate infobox
+            data.heading = element.innerText;
+            data.sections = [];
+
+            return data;
+          },
+        },
+        {
+          className: 'infobox-subheader',
+          nodeName: 'TD',
+          colSpan: 2,
+          dataFunction: (element, data) => {
+            const subheaderLinks = [];
+            element.querySelectorAll('a').forEach((val) => {
+              subheaderLinks.push({
+                text: val.innerText,
+                href: val.href,
+              });
+            });
+
+            return {
+              ...data,
+              subHeading: {
+                text: element.innerText,
+                links: subheaderLinks,
+              },
+            };
+          },
+        },
+        {
+          className: 'infobox-image',
+          nodeName: 'TD',
+          colSpan: 2,
+          dataFunction: (element, data) => {
+            // don't need images yet
+            return data;
+          },
+        },
+        {
+          className: 'infobox-header',
+          nodeName: 'TH',
+          colSpan: 2,
+          dataFunction: (element, data) => {
+            const sectionTitleLinks = [];
+            element.querySelectorAll('a').forEach((val) => {
+              sectionTitleLinks.push({
+                text: val.innerText,
+                href: val.href,
+              });
+            });
+
+            const newSection = {
+              title: element.innerText,
+              links: sectionTitleLinks,
+              subSections: [],
+            };
+
+            data.sections.push(newSection);
+
+            return data;
+          },
+        },
+        {
+          className: 'infobox-label',
+          nodeName: 'TH',
+          colSpan: 1,
+          dataFunction: (element, data) => {
+            data.sections[data.sections.length - 1].subSections.push({
+              title: element.innerText,
+              type: 'infobox-label',
+            });
+
+            return data;
+          },
+        },
+        {
+          className: 'infobox-data',
+          nodeName: 'TD',
+          colSpan: 1,
+          dataFunction: (element, data) => {
+            const sectionValueLinks = [];
+            element.querySelectorAll('a').forEach((val) => {
+              sectionValueLinks.push({
+                text: val.innerText,
+                href: val.href,
+              });
+            });
+
+            // add value to subsection
+            const subSection = data.sections[data.sections.length - 1].subSections;
+            subSection[subSection.length - 1].value = {
+              text: element.innerText,
+              links: sectionValueLinks,
+            };
+
+            return data;
+          },
+        },
+        {
+          className: 'infobox-full-data',
+          nodeName: 'TD',
+          colSpan: 2,
+          dataFunction: (element, data) => {
+            const sectionValueLinks = [];
+            element.querySelectorAll('a').forEach((val) => {
+              sectionValueLinks.push({
+                text: val.innerText,
+                href: val.href,
+              });
+            });
+
+            const subSection = data.sections[data.sections.length - 1].subSections;
+            subSection.push({
+              type: 'infobox-full-data',
+              text: element.innerText,
+              links: sectionValueLinks,
+            });
+
+            return data;
+          },
+        },
+      ];
+
+      let data = {
+        heading: '',
+        sections: [],
+      };
+
+      t.forEach((eachTable) => {
+        eachTable.querySelectorAll('tbody tr').forEach((eachRow) => {
+          eachRow.querySelectorAll('td, th').forEach((eachCell) => {
+            const category = classesCategories.filter(
+              (val) =>
+                eachCell.classList.contains(val.className) &&
+                eachCell.nodeName === val.nodeName &&
+                eachCell.colSpan === val.colSpan
+            );
+
+            if (category.length === 1) {
+              data = category[0].dataFunction(eachCell, data);
+            } else {
+              console.log(eachCell);
+            }
+          });
+        });
+      });
+
+      return data;
+    }
+
+    function findGeoJSONMaps() {
+      let mapURLs = [];
+      document.querySelectorAll('.mw-kartographer-link').forEach((val) => {
+        mapURLs.push(val.href);
+      });
+      return mapURLs;
+    }
+
+    function getWikidataQID() {
+      let link = document.getElementById('t-wikibase').querySelector('a').href;
+      let linkChunks = link.split('/');
+
+      let qid = '';
+      while (qid.length === 0) {
+        qid = linkChunks.pop();
+      }
+
+      return qid;
+    }
+
+    function getLastEditedOnDate() {
+      let dateStr = document.getElementById('footer-info-lastmod').innerText.split('This page was last edited on ')[1];
+
+      // Remove the " at " and " (UTC)." parts to make it easier to parse
+      const parts = dateStr.match(/(\d{1,2}) (\w+) (\d{4}), at (\d{2}:\d{2})/);
+
+      if (!parts) {
+        throw new Error('Invalid date format');
+      }
+
+      // Extracted parts
+      const day = parts[1];
+      const month = parts[2];
+      const year = parts[3];
+      const time = parts[4];
+
+      // Reformat to a standard date-time string
+      const formattedDateStr = `${day} ${month} ${year} ${time} UTC`;
+
+      // Create a Date object
+      return new Date(formattedDateStr);
+    }
+
+    function extractDataFromWikipediaNavbox() {
+      // get the titles
+      let table = document.querySelectorAll('.navbox > table > tbody > tr > th.navbox-title');
+
+      let navBoxes = [];
+
+      // from the title row, iterate to the last row.
+      table.forEach((value) => {
+        let titleNode = value.lastElementChild;
+
+        let navbox = {
+          title: {
+            text: titleNode.innerText,
+            href: getAllAnchorLinks(titleNode),
+          },
+          data: [],
+        };
+
+        navbox.data = extractDataFromWikipediaNavboxTables(value.parentNode.nextElementSibling, navbox.data);
+
+        navBoxes.push(navbox);
+      });
+
+      return navBoxes;
+    }
+
+    function extractDataFromWikipediaNavboxTables(startTableRowNode, navboxData) {
+      let nextRow = startTableRowNode;
+
+      while (nextRow && nextRow.nodeName === 'TR') {
+        let dataRow = {};
+
+        const firstElementChild = nextRow.firstElementChild;
+        const lastElementChild = nextRow.lastElementChild;
+
+        if (firstElementChild.nodeName === 'TH' && firstElementChild.classList.contains('navbox-group')) {
+          dataRow.label = {
+            text: firstElementChild.innerText,
+            href: getAllAnchorLinks(firstElementChild),
+          };
+          dataRow.data = [];
+
+          const nestedTables = lastElementChild.querySelectorAll('table');
+          if (nestedTables.length) {
+            nestedTables.forEach((val) => {
+              const nestedTableFirstRow = val.querySelector('tbody').firstElementChild;
+              const nestedTableData = extractDataFromWikipediaNavboxTables(nestedTableFirstRow, dataRow.data);
+
+              dataRow.data.concat(nestedTableData);
+            });
+          } else {
+            if (lastElementChild.querySelector('dl')) {
+              const dds = lastElementChild.querySelector('dl').querySelectorAll('dd');
+
+              dds.forEach((val) => {
+                dataRow.data.push({
+                  text: val.innerText,
+                  href: val.querySelector('a').href,
+                });
+              });
+            } else if (lastElementChild.querySelector('ul')) {
+              lastElementChild
+                .querySelector('ul')
+                .querySelectorAll('li')
+                .forEach((val) => {
+                  dataRow.data.push({
+                    text: val.innerText,
+                    href: val.querySelector('a').href,
+                  });
+                });
+            } else if (lastElementChild.querySelector('ol')) {
+              lastElementChild
+                .querySelector('ol')
+                .querySelectorAll('li')
+                .forEach((val) => {
+                  dataRow.data.push({
+                    text: val.innerText,
+                    href: val.querySelector('a').href,
+                  });
+                });
+            } else {
+              console.log('HAS SOMETHING ELSE');
+              console.log(lastElementChild);
+              dataRow.data.push({
+                html: lastElementChild.innerHTML,
+              });
+            }
+          }
+          // nextRow.lastChild;
+
+          navboxData.push(dataRow);
+        }
+        nextRow = nextRow.nextElementSibling;
+      }
+
+      return navboxData;
+    }
+
+    function extractDataFromVidhansabhaPage() {
+      const infoBox = extractFromVidhansabhaInfoBox();
+      const maps = findGeoJSONMaps();
+      const lastUpdatedOn = getLastEditedOnDate();
+      const wikidataQID = getWikidataQID();
+      const navbox = extractDataFromWikipediaNavbox();
+
+      return {
+        infoBox,
+        maps,
+        lastUpdatedOn,
+        wikidataQID,
+        // navbox,
+      };
+    }
+
+    return extractDataFromVidhansabhaPage();
+  });
+
+  return result;
+}
+
+(async () => {
+  const urls = [
+    'https://en.wikipedia.org/wiki/Manendragarh_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Baikunthpur,_Chhattisgarh_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Premnagar_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Bhatgaon_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Pratappur,_Chhattisgarh_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Ramanujganj_Assembly_constituency',
+    'https://en.wikipedia.org/wiki/Bharatpur-Sonhat_Assembly_constituency',
+  ];
+
+  const results = await processListOfWikipediaPages(urls);
+
+  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
+})();
