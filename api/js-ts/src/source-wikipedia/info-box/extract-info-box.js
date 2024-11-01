@@ -1,11 +1,18 @@
-// $(v)
-//           .find('sup')
-//           .each((j, sup) => {
-//             // Capture the citation text
-//             citations.push($(sup).text().trim());
-//             // Remove the citation from the header text
-//             $(sup).remove();
-//           });
+function readAndRemoveSup(element) {
+  links = [];
+  element.querySelectorAll('sup').forEach((val) => {
+    let link = {
+      text: val.querySelector('a').innerText,
+      href: val.querySelector('a').href,
+    };
+
+    links.push(link);
+
+    val.remove();
+  });
+
+  return links;
+}
 
 function extractFromVidhansabhaInfoBox() {
   let t = document.querySelectorAll('.infobox.vcard');
@@ -222,7 +229,3 @@ function extractDataFromVidhansabhaPage() {
     wikidataQID,
   };
 }
-
-module.exports = {
-  extractDataFromVidhansabhaPage,
-};

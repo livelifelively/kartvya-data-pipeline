@@ -111,4 +111,4 @@ function getAllAnchorLinks(node) {
   return links;
 }
 
-extractDataFromWikipediaNavbox();
+// extractDataFromWikipediaNavbox();

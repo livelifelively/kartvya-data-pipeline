@@ -202,35 +202,36 @@ function extractFromVidhansabhaInfoBox() {
   });
 
   // refine data
-  let constituencyDetailsRaw = infoBox.sections.filter((val) => {
-    val.title.toLowerCase() === 'constituency details';
+  let constituencyDetailsRaw = data.sections.find((val) => {
+    return val.title.toLowerCase() === 'constituency details';
   });
 
   const allDataFields = {
-    country: country,
-    region: region,
-    state: state,
-    division: division,
-    district: district,
-    lsconstituency: loksabha_constituency,
-    loksabha_constituency: loksabha_constituency,
-    established: established,
-    total_electors: total_electors,
-    total_voters: total_electors,
-    reservation: reservation,
+    country: 'country',
+    region: 'region',
+    state: 'state',
+    division: 'division',
+    district: 'district',
+    ls_constituency: 'loksabha_constituency',
+    loksabha_constituency: 'loksabha_constituency',
+    established: 'established',
+    total_electors: 'total_electors',
+    total_voters: 'total_electors',
+    reservation: 'reservation',
+    abolished: 'abolished',
   };
 
   let constituencyDetails = {};
-  constituencyDetailsRaw.subSections.map((val) => {
+  constituencyDetailsRaw?.subSections.map((val) => {
     let title = val.title.toLowerCase();
     let key = title.toLowerCase().split(' ').join('_');
 
     if (allDataFields[key]) {
-      constituencyDetails[allDataFields[key]] = [];
       if (val.value.links.length) {
-        constituencyDetails[allDataFields[key]].concat(val.value.links);
+        constituencyDetails[allDataFields[key]] =
+          val.value.links.length === 1 ? val.value.links[0] : [...val.value.links];
       } else {
-        constituencyDetails[allDataFields[key]].push({ text: val.value.text });
+        constituencyDetails[allDataFields[key]] = { text: val.value.text };
       }
     } else {
       // data key is not expected one.
@@ -239,7 +240,7 @@ function extractFromVidhansabhaInfoBox() {
     }
   });
 
-  return data;
+  return { ...data, constituencyDetails };
 }
 
 function findGeoJSONMaps() {
@@ -388,13 +389,15 @@ function extractDataFromVidhansabhaPage() {
   const maps = findGeoJSONMaps();
   const lastUpdatedOn = getLastEditedOnDate();
   const wikidataQID = getWikidataQID();
-  const navbox = extractDataFromWikipediaNavbox();
+  // const navbox = extractDataFromWikipediaNavbox();
 
   return {
     infoBox,
     maps,
     lastUpdatedOn,
     wikidataQID,
-    navbox,
+    // navbox,
   };
 }
+
+// return extractDataFromVidhansabhaPage();

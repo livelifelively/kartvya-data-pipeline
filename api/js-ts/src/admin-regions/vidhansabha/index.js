@@ -50,10 +50,12 @@ async function processListOfWikipediaPages(pageUrls) {
   for (const url of pageUrls) {
     const result = await extractDataFromWikipediaPage(context, url);
     console.log('finished processing url: ', url);
-    allPagesResults.push({
-      url,
-      result,
-    });
+    if (result) {
+      allPagesResults.push({
+        url,
+        result,
+      });
+    }
   }
   console.log('DONE!!!');
 
@@ -63,6 +65,22 @@ async function processListOfWikipediaPages(pageUrls) {
 async function processVidhansabhaPage(page) {
   // Use the injected functions
   const result = await page.evaluate(() => {
+    function readAndRemoveSup(element) {
+      links = [];
+      element.querySelectorAll('sup').forEach((val) => {
+        let link = {
+          text: val.querySelector('a').innerText,
+          href: val.querySelector('a').href,
+        };
+
+        links.push(link);
+
+        val.remove();
+      });
+
+      return links;
+    }
+
     function getAllAnchorLinks(node) {
       let links = [];
       let linkNodes = node.querySelectorAll('a');
@@ -87,6 +105,8 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TH',
           colSpan: 2,
           dataFunction: (element, data) => {
+            data.sup = readAndRemoveSup(element);
+
             // initiate infobox
             data.heading = element.innerText;
             data.sections = [];
@@ -99,6 +119,8 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TD',
           colSpan: 2,
           dataFunction: (element, data) => {
+            let sup = readAndRemoveSup(element);
+
             const subheaderLinks = [];
             element.querySelectorAll('a').forEach((val) => {
               subheaderLinks.push({
@@ -112,6 +134,7 @@ async function processVidhansabhaPage(page) {
               subHeading: {
                 text: element.innerText,
                 links: subheaderLinks,
+                sup,
               },
             };
           },
@@ -130,11 +153,13 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TH',
           colSpan: 2,
           dataFunction: (element, data) => {
+            let sup = readAndRemoveSup(element);
             const sectionTitleLinks = [];
             element.querySelectorAll('a').forEach((val) => {
               sectionTitleLinks.push({
                 text: val.innerText,
                 href: val.href,
+                sup,
               });
             });
 
@@ -154,9 +179,12 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TH',
           colSpan: 1,
           dataFunction: (element, data) => {
+            let sup = readAndRemoveSup(element);
+
             data.sections[data.sections.length - 1].subSections.push({
               title: element.innerText,
               type: 'infobox-label',
+              sup,
             });
 
             return data;
@@ -167,6 +195,8 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TD',
           colSpan: 1,
           dataFunction: (element, data) => {
+            let sup = readAndRemoveSup(element);
+
             const sectionValueLinks = [];
             element.querySelectorAll('a').forEach((val) => {
               sectionValueLinks.push({
@@ -180,6 +210,7 @@ async function processVidhansabhaPage(page) {
             subSection[subSection.length - 1].value = {
               text: element.innerText,
               links: sectionValueLinks,
+              sup,
             };
 
             return data;
@@ -190,6 +221,8 @@ async function processVidhansabhaPage(page) {
           nodeName: 'TD',
           colSpan: 2,
           dataFunction: (element, data) => {
+            let sup = readAndRemoveSup(element);
+
             const sectionValueLinks = [];
             element.querySelectorAll('a').forEach((val) => {
               sectionValueLinks.push({
@@ -203,6 +236,7 @@ async function processVidhansabhaPage(page) {
               type: 'infobox-full-data',
               text: element.innerText,
               links: sectionValueLinks,
+              sup,
             });
 
             return data;
@@ -234,7 +268,46 @@ async function processVidhansabhaPage(page) {
         });
       });
 
-      return data;
+      // refine data
+      let constituencyDetailsRaw = data.sections.find((val) => {
+        return val.title.toLowerCase() === 'constituency details';
+      });
+
+      const allDataFields = {
+        country: 'country',
+        region: 'region',
+        state: 'state',
+        division: 'division',
+        district: 'district',
+        ls_constituency: 'loksabha_constituency',
+        loksabha_constituency: 'loksabha_constituency',
+        established: 'established',
+        total_electors: 'total_electors',
+        total_voters: 'total_electors',
+        reservation: 'reservation',
+        abolished: 'abolished',
+      };
+
+      let constituencyDetails = {};
+      constituencyDetailsRaw?.subSections.map((val) => {
+        let title = val.title.toLowerCase();
+        let key = title.toLowerCase().split(' ').join('_');
+
+        if (allDataFields[key]) {
+          if (val.value.links.length) {
+            constituencyDetails[allDataFields[key]] =
+              val.value.links.length === 1 ? val.value.links[0] : [...val.value.links];
+          } else {
+            constituencyDetails[allDataFields[key]] = { text: val.value.text };
+          }
+        } else {
+          // data key is not expected one.
+          constituencyDetails.others = constituencyDetails.others || [];
+          constituencyDetails.others.push(val);
+        }
+      });
+
+      return { ...data, constituencyDetails };
     }
 
     function findGeoJSONMaps() {
@@ -379,11 +452,11 @@ async function processVidhansabhaPage(page) {
     }
 
     function extractDataFromVidhansabhaPage() {
-      const infoBox = extractFromVidhansabhaInfoBox();
+      let infoBox = extractFromVidhansabhaInfoBox();
       const maps = findGeoJSONMaps();
       const lastUpdatedOn = getLastEditedOnDate();
       const wikidataQID = getWikidataQID();
-      const navbox = extractDataFromWikipediaNavbox();
+      // const navbox = extractDataFromWikipediaNavbox();
 
       return {
         infoBox,
