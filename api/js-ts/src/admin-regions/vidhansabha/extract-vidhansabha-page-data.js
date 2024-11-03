@@ -2,6 +2,10 @@ const { chromium } = require('playwright');
 const path = require('path');
 const fs = require('fs');
 
+const { sortBy, keyBy, map, forEach } = require('lodash');
+
+const issuesVcs = require('./state-vsc-navboxes.issues.json');
+
 const outputFilePath = path.join(__dirname, 'vc-data.json');
 const errorFile = path.join(__dirname, 'vc_errors.json');
 
@@ -451,19 +455,23 @@ async function processVidhansabhaPage(page) {
       return navboxData;
     }
 
+    function getWikipediaPageUrl() {
+      return window.location.href;
+    }
+
     function extractDataFromVidhansabhaPage() {
       let infoBox = extractFromVidhansabhaInfoBox();
       const maps = findGeoJSONMaps();
       const lastUpdatedOn = getLastEditedOnDate();
       const wikidataQID = getWikidataQID();
-      // const navbox = extractDataFromWikipediaNavbox();
+      const wikipediaPage = getWikipediaPageUrl();
 
       return {
         infoBox,
         maps,
         lastUpdatedOn,
         wikidataQID,
-        // navbox,
+        wikipediaPage,
       };
     }
 
@@ -474,17 +482,22 @@ async function processVidhansabhaPage(page) {
 }
 
 (async () => {
-  const urls = [
-    'https://en.wikipedia.org/wiki/Manendragarh_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Baikunthpur,_Chhattisgarh_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Premnagar_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Bhatgaon_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Pratappur,_Chhattisgarh_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Ramanujganj_Assembly_constituency',
-    'https://en.wikipedia.org/wiki/Bharatpur-Sonhat_Assembly_constituency',
-  ];
+  const statesUrls = map(issuesVcs, (val, key) => {
+    return {
+      state: key,
+      urls: val.notFound.map((v) => v.href),
+    };
+  });
 
-  const results = await processListOfWikipediaPages(urls);
+  for (let i = 0; i < statesUrls.length; i++) {
+    let results = await processListOfWikipediaPages(statesUrls[i].urls);
 
-  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
+    if (!results.length) continue;
+
+    results = { results, state: statesUrls[i].state };
+
+    const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
+    existingResults.push(results);
+    fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
+  }
 })();
