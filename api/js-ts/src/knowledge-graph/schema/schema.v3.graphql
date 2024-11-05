@@ -81,14 +81,6 @@ type RegionName {
   name_of: [AdministrativeEntity]
 }
 
-# type KGDateTime {
-#   date_time: DateTime
-
-#   g_year:
-#   g_month: DateTime @search(by: [month])
-#   g_day: DateTime @search(by: [day])
-# }
-
 enum AdministrativeEntityCategory {
   Nation
   Zonal_Council
@@ -98,6 +90,94 @@ enum AdministrativeEntityCategory {
   City
   Loksabha_Constituency
   Vidhansabha_Constituency
+}
+
+enum DateTimePrecision {
+  Year
+  Month
+  Day
+  Hour
+  Minute
+  Second
+}
+
+enum KGEventCategory {
+  Administrative_Entity_Established_On
+  Administrative_Entity_Dissolved_On
+
+  Nation_Region_Established_On
+  Nation_Region_Dissolved_On
+
+  Zonal_Council_Region_Established_On
+  Zonal_Council_Region_Dissolved_On
+  
+  State_Region_Established_On
+  State_Region_Dissolved_On
+
+  Union_Territory_Region_Established_On
+  Union_Territory_Region_Dissolved_On
+
+  District_Region_Established_On
+  District_Region_Dissolved_On
+  
+  Loksabha_Constituency_Region_Established_On
+  Loksabha_Constituency_Region_Dissolved_On
+
+  Vidhansabha_Constituency_Region_Established_On
+  Vidhansabha_Constituency_Region_Dissolved_On
+
+  National_Capital_City_Established_On
+  National_Capital_City_Dissolved_On
+
+  Union_Territory_Capital_City_Established_On
+  Union_Territory_Capital_City_Dissolved_On
+
+  State_Capital_City_Established_On
+  State_Capital_City_Dissolved_On
+}
+
+# the WHEN
+type KGDateTime {
+  date_time_year: DateTime @search(by: [year])
+  date_time_month: DateTime @search(by: [month])
+  date_time_day: DateTime @search(by: [day])
+  date_time_hour: DateTime @search(by: [hour])
+
+  g_year: String @search(by: [hash, exact])
+  g_month: String @search(by: [hash, exact])
+  g_day: String @search(by: [hash, exact])
+  g_hour_minute: String @search(by: [hash, exact])
+
+  events: [KGEvent]
+}
+
+# the WHAT
+type KGEvent {
+  # is one time event or has a time range
+  event_time: KGDateTime @hasInverse(field: "events")
+  event_date_time_precision: DateTimePrecision @search(by: [exact])
+
+  event_category: KGEventCategory @search(by: [exact])
+
+  # description: 
+}
+
+type KGLocationOrRegion {
+  # 
+}
+
+type KGHow {
+  # 
+}
+
+type WikipediaIdentifier {
+  wikidata_qid: String @search(by: [hash, exact])
+  wikipedia_page_url: String @search(by: [fulltext])
+  wikipedia_page_id: String @search(by: [fulltext, exact])
+
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime @search(by: [hour])
 }
 
 # territories with a soverign root node.
@@ -148,15 +228,6 @@ type AdministrativeEntity {
 
   vidhansabha_constituency_region: VidhansabhaConstituencyRegion @hasInverse(field: "administrative_entity")
   vidhansabha_constituency_legal: VidhansabhaConstituencyLegal @hasInverse(field: "administrative_entity")
-}
-
-enum DateTimePrecision {
-  Year
-  Month
-  Day
-  Hour
-  Minute
-  Second
 }
 
 type NationRegion {
@@ -265,7 +336,7 @@ type StateRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
   # last update date of the wikipedia data.
-  # if this date changed on wikipedia, we should consider updating
+  # if this date changed on wikipedia and the gap is huge, we should consider updating
   wikipedia_page_data_version: DateTime
 
   established_on: DateTime @search(by: [day])
