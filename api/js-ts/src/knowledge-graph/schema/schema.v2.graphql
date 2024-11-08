@@ -48,6 +48,9 @@ type Language {
   scripts: [Script]
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 }
 
 type Script {
@@ -57,6 +60,9 @@ type Script {
   languages: [Language] @hasInverse(field: "scripts")
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 }
 
 # instance of language + script combination.
@@ -74,6 +80,14 @@ type RegionName {
   name: String! @id @search(by: [hash, term, fulltext])
   name_of: [AdministrativeEntity]
 }
+
+# type KGDateTime {
+#   date_time: DateTime
+
+#   g_year:
+#   g_month: DateTime @search(by: [month])
+#   g_day: DateTime @search(by: [day])
+# }
 
 enum AdministrativeEntityCategory {
   Nation
@@ -99,9 +113,14 @@ type AdministrativeEntity {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   new_administrative_entity: [AdministrativeEntity]
   previous_administrative_entity: [AdministrativeEntity]
@@ -131,6 +150,15 @@ type AdministrativeEntity {
   vidhansabha_constituency_legal: VidhansabhaConstituencyLegal @hasInverse(field: "administrative_entity")
 }
 
+enum DateTimePrecision {
+  Year
+  Month
+  Day
+  Hour
+  Minute
+  Second
+}
+
 type NationRegion {
   id: ID!
   region_id: String! @id
@@ -140,9 +168,14 @@ type NationRegion {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   capital: [NationalCapitalCity]
 
@@ -153,6 +186,8 @@ type NationRegion {
   district: [DistrictRegion] @hasInverse(field: "nation")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "nation")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "nation")
+
+  boundary: MultiPolygon @search
 }
 
 type NationLegal {
@@ -163,9 +198,14 @@ type NationLegal {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 }
 
 type ZonalCouncilRegion {
@@ -177,9 +217,14 @@ type ZonalCouncilRegion {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   nation: NationRegion @hasInverse(field: "zonal_council")
   state: [StateRegion] @hasInverse(field: "zonal_council")
@@ -188,16 +233,23 @@ type ZonalCouncilRegion {
   district: [DistrictRegion] @hasInverse(field: "zonal_council")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "zonal_council")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "zonal_council")
+
+  boundary: MultiPolygon @search
 }
 
 type ZonalCouncilLegal {
   id: ID!
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
   administrative_entity: AdministrativeEntity
   region: ZonalCouncilRegion @hasInverse(field: "legal")
@@ -212,9 +264,14 @@ type StateRegion {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   capital: [StateCapitalCity]
 
@@ -224,6 +281,8 @@ type StateRegion {
   district: [DistrictRegion] @hasInverse(field: "state")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "state")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "state")
+
+  boundary: MultiPolygon @search
 }
 
 type StateLegal {
@@ -234,9 +293,14 @@ type StateLegal {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   iso_code: String
   vehicle_code: String
@@ -256,9 +320,14 @@ type UnionTerritoryRegion {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   capital: [UnionTerritoryCapitalCity]
 
@@ -268,6 +337,8 @@ type UnionTerritoryRegion {
   district: [DistrictRegion] @hasInverse(field: "union_territory")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "union_territory")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "union_territory")
+
+  boundary: MultiPolygon @search
 }
 
 type UnionTerritoryLegal {
@@ -278,8 +349,10 @@ type UnionTerritoryLegal {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   iso_code: String
   vehicle_code: String
@@ -300,8 +373,10 @@ type DistrictRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   nation: NationRegion @hasInverse(field: "district")
   zonal_council: [ZonalCouncilRegion] @hasInverse(field: "district")
@@ -310,6 +385,8 @@ type DistrictRegion {
   city: [CityRegion] @hasInverse(field: "district")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "district")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "district")
+
+  boundary: MultiPolygon @search
 }
 
 type DistrictLegal {
@@ -320,8 +397,10 @@ type DistrictLegal {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   official_website: String
 }
@@ -336,8 +415,10 @@ type CityRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   # covers all situations as capital city, all purposes, all seasons, all times
   national_capital: [NationalCapitalCity]
@@ -351,6 +432,8 @@ type CityRegion {
   district: [DistrictRegion] @hasInverse(field: "city")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "city")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "city")
+
+  boundary: MultiPolygon @search
 }
 
 type CityLegal {
@@ -362,8 +445,10 @@ type CityLegal {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 }
 
 type LoksabhaConstituencyRegion {
@@ -376,8 +461,10 @@ type LoksabhaConstituencyRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   new_region: [LoksabhaConstituencyRegion]
 
@@ -388,6 +475,8 @@ type LoksabhaConstituencyRegion {
   city: [CityRegion] @hasInverse(field: "loksabha_constituency")
   district: [DistrictRegion] @hasInverse(field: "loksabha_constituency")
   vidhansabha_constituency: [VidhansabhaConstituencyRegion] @hasInverse(field: "loksabha_constituency")
+
+  boundary: MultiPolygon @search
 }
 
 type LoksabhaConstituencyLegal {
@@ -399,8 +488,10 @@ type LoksabhaConstituencyLegal {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   new_legal: [LoksabhaConstituencyLegal]
 }
@@ -415,8 +506,10 @@ type VidhansabhaConstituencyRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 
   nation: NationRegion @hasInverse(field: "vidhansabha_constituency")
   zonal_council: [ZonalCouncilRegion] @hasInverse(field: "vidhansabha_constituency")
@@ -425,6 +518,8 @@ type VidhansabhaConstituencyRegion {
   city: [CityRegion] @hasInverse(field: "vidhansabha_constituency")
   district: [DistrictRegion] @hasInverse(field: "vidhansabha_constituency")
   loksabha_constituency: [LoksabhaConstituencyRegion] @hasInverse(field: "vidhansabha_constituency")
+
+  boundary: MultiPolygon @search
 }
 
 type VidhansabhaConstituencyLegal {
@@ -435,8 +530,10 @@ type VidhansabhaConstituencyLegal {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on: DateTime @search(by: [year])
-  dissolved_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
+  established_on_precision: DateTimePrecision
+  dissolved_on: DateTime @search(by: [day])
+  dissolved_on_precision: DateTimePrecision
 }
 
 enum CapitalCityCategory {
@@ -477,9 +574,9 @@ type NationalCapitalCity {
   wikipedia_page: String @search(by: [fulltext])
 
   # established as capital
-  established_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
   # dissolution of capital status
-  dissolved_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [day])
 
   # if the capital is only capital for all seasons and all purposes
   # sole - all purpose i.e. judicial, administrative and legislative
@@ -498,9 +595,9 @@ type UnionTerritoryCapitalCity {
   wikipedia_page: String @search(by: [fulltext])
 
   # established as capital
-  established_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
   # dissolution of capital status
-  dissolved_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [day])
 
   # if the capital is only capital for all seasons and all purposes
   # sole - all purpose i.e. judicial, administrative and legislative
@@ -519,9 +616,9 @@ type StateCapitalCity {
   wikipedia_page: String @search(by: [fulltext])
 
   # established as capital
-  established_on: DateTime @search(by: [year])
+  established_on: DateTime @search(by: [day])
   # dissolution of capital status
-  dissolved_on: DateTime @search(by: [year])
+  dissolved_on: DateTime @search(by: [day])
 
   # if the capital is only capital for all seasons and all purposes
   # sole - all purpose i.e. judicial, administrative and legislative
