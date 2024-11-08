@@ -1,0 +1,27 @@
+type Event_Established_Or_Dissolved {
+    # commemorated as
+    # date time
+    # related events
+    # from news sources
+    # 
+}
+
+type Event_Made_Statement {
+    # who made it
+    # verbal or written
+    # statement text
+    # why said it - previous events - cause and effect (inverse node?)
+    # people or organisations in the statement (departments/ministries)
+    # date time
+    # location - point to polygon - complete address
+    # 
+}
+
+type Event_Administrative_Entity_Region_Update {
+    # category
+    # link to entity region e.g. rajasthan state_region
+}
+
+type Event_Administrative_Entity_Legal_Update {
+    
+}

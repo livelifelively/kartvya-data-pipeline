@@ -154,9 +154,21 @@ type KGDateTime {
 # the WHAT
 type KGEvent {
   # is one time event or has a time range
-  event_time: KGDateTime @hasInverse(field: "events")
-  event_date_time_precision: DateTimePrecision @search(by: [exact])
+  one_time_event_date_time: KGDateTime @hasInverse(field: "events")
+  one_time_event_date_time_precision: DateTimePrecision @search(by: [exact])
 
+  time_range_event_start_date_time: KGDateTime @hasInverse(field: "events")
+  time_range_event_start_date_time_precision: DateTimePrecision @search(by: [exact])
+
+  time_range_event_end_date_time: KGDateTime @hasInverse(field: "events")
+  time_range_event_end_date_time_precision: DateTimePrecision @search(by: [exact])
+
+  # place/region where the event happened
+  event_source_regions
+  # which regions are directly related to/impacted by this event?
+  direct_impact_regions
+
+  # related_events: 
   event_category: KGEventCategory @search(by: [exact])
 
   # description: 
