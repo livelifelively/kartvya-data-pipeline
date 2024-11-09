@@ -143,10 +143,10 @@ type KGDateTime {
   date_time_day: DateTime @search(by: [day])
   date_time_hour: DateTime @search(by: [hour])
 
-  g_year: String @search(by: [hash, exact])
-  g_month: String @search(by: [hash, exact])
-  g_day: String @search(by: [hash, exact])
-  g_hour_minute: String @search(by: [hash, exact])
+  gregorian_year: String @search(by: [hash, exact])
+  gregorian_month: String @search(by: [hash, exact])
+  gregorian_day: String @search(by: [hash, exact])
+  gregorian_hour_minute: String @search(by: [hash, exact])
 
   events: [KGEvent]
 }
