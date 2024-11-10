@@ -1,0 +1,212 @@
+type Language {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  scripts: [Script]
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
+}
+
+type Script {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  languages: [Language] @hasInverse(field: "scripts")
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
+}
+
+# instance of language + script combination.
+type Language_Script {
+  id: ID!
+  name_en: String! @id
+  language: Language!
+  script: Script!
+}
+
+type Name {
+  id: ID!
+  language_script: Language_Script!
+  name: String! @id @search(by: [hash, term, fulltext])
+
+  person: [Person]
+  organisation: [Organisation]
+  nation: [Nation]
+  indian_legal_document: [Indian_Legal_Document]
+}
+
+enum Date_Time_Precision_Category {
+  Year
+  Month
+  Day
+  Hour
+  Minute
+  Second
+}
+
+type KG_Date_Time {
+  id: ID!
+
+  date_time_hour: DateTime @search(by: [hour])
+  date_time_precision: Date_Time_Precision_Category @search(by: [exact])
+
+  # events: [KG_Event]
+}
+
+# type KG_Event {
+#   id: ID!
+# }
+
+type Nation {
+  id: ID!
+  name_id: String! @id
+
+  names: [Name!]! @hasInverse(field: "nation")
+
+  region: [Nation_Region]
+}
+
+# political regions associated with and within a nation
+type Nation_Region {
+  id: ID!
+
+  nation: Nation @hasInverse(field: "region")
+}
+
+enum Indian_Legal_Document_Category {
+  Constitution
+  Bill
+  Act
+  Notification
+  Rules
+  Regulation
+  Order
+}
+
+type Indian_Legal_Document {
+  id: ID!
+
+  # english title that can be searched
+  name_id: String! @id @search(by: [hash, term, fulltext])
+
+  # title in multiple languages
+  names: [Name!]! @hasInverse(field: "indian_legal_document")
+
+  description: String
+  document_type: Indian_Legal_Document_Category! @search(by: [exact])
+
+  is_notified: Boolean!
+
+  active_version: Indian_Legal_Document_Version
+  versions: [Indian_Legal_Document_Version]
+
+  # indianJurisdictions: [IndianJurisdiction] @hasInverse
+  # notifications
+  # rules
+  # regulations
+  # orders
+  # circulars
+  # ordinance
+  # statutes
+  # bills
+
+  # # origin state or union
+  # union_or_state: Union | State
+  # state: [IndianState]
+
+  # notified_in_union: Boolean
+  # notified_in_states: [IndianState]
+
+  # ministry
+  # department
+
+  # policy domains or subjects
+  # subject type - concurrent, union or state
+
+  structural_elements: [Indian_Legal_Document_Structural_Element]
+  amendments: [Indian_Legal_Document_Amendment]
+
+  enactment_date: DateTime @search
+  enforcement_date: DateTime @search
+}
+
+enum Indian_Legal_Document_Structural_Element_Category {
+  #   Part
+  #   Chapter
+  #   Schedule
+  Article
+  Section
+  #   Sub_Section
+}
+
+type Indian_Legal_Document_Structural_Element {
+  id: ID!
+
+  # which legal document it is part of
+  legal_document: Indian_Legal_Document! @hasInverse(field: "structural_elements")
+  # type of element
+  element_type: Indian_Legal_Document_Structural_Element_Category! @search(by: [exact])
+
+  # if section/article has a number or roman number or alpha-numeric value in the original document
+  identifier: String @search
+
+  part: String @search(by: [exact])
+  chapter: String @search(by: [exact])
+  schedule: String @search(by: [exact])
+
+  # title of the document
+  title: String @search(by: [term, fulltext])
+  is_active: Boolean @search
+  text: String! @search(by: [term, fulltext])
+
+  # if the structural element is from an amendment
+  amendment: Indian_Legal_Document_Amendment
+
+  # all versions this structural element is part of
+  part_of_versions: [Indian_Legal_Document_Version] @search
+
+  #   parent_structural_element: Indian_Legal_Document_Structural_Element @hasInverse(field: "children_structural_element")
+  #   children_structural_elements: [Indian_Legal_Document_Structural_Element]
+  #     @hasInverse(field: "parent_structural_element")
+
+  created_on: DateTime
+}
+
+type Indian_Legal_Document_Version {
+  id: ID!
+
+  version: DateTime @search
+
+  is_active_version_of: Indian_Legal_Document @hasInverse(field: "active_version")
+  legal_document: Indian_Legal_Document! @hasInverse(field: "versions")
+
+  structural_elements: [Indian_Legal_Document_Structural_Element!]! @hasInverse(field: "part_of_versions")
+
+  # if amendment is null, means original document
+  previous_version: Indian_Legal_Document_Version @hasInverse(field: "next_version")
+  next_version: Indian_Legal_Document_Version @hasInverse(field: "previous_version")
+
+  amendment: Indian_Legal_Document_Amendment
+}
+
+type Indian_Legal_Document_Amendment {
+  id: ID!
+
+  legal_document: Indian_Legal_Document! @hasInverse(field: "amendments")
+
+  resulting_version: Indian_Legal_Document_Version @hasInverse(field: "amendment")
+
+  # structural elements introduced by this ammendment
+  structural_elements: [Indian_Legal_Document_Amendment_Structural_Element] @hasInverse(field: "amendment")
+
+  amendment_date: DateTime!
+  description: String
+
+  change_description: String
+}
