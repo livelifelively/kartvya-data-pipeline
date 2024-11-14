@@ -1,0 +1,211 @@
+type Event_Established_Or_Dissolved {
+    # commemorated as
+    # date time
+    # related events
+    # from news sources
+    # 
+}
+
+type Event_Made_Statement {
+    # who made it
+    # verbal or written
+    # statement text
+    # why said it - previous events - cause and effect (inverse node?)
+    # people or organisations in the statement (departments/ministries)
+    # date time
+    # location - point to polygon - complete address
+    # 
+}
+
+type Event_Administrative_Entity_Region_Update {
+    # category
+    # link to entity region e.g. rajasthan state_region
+}
+
+type Event_Administrative_Entity_Legal_Update {
+    
+}
+
+##############################################
+# schema with geo and regions. 
+##############################################
+
+type Language {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  scripts: [Script]
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
+}
+
+type Script {
+  id: ID!
+  name_en: String! @id
+  names: [String]
+  languages: [Language] @hasInverse(field: "scripts")
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+  # last update date of the wikipedia data.
+  # if this date changed on wikipedia, we should consider updating
+  wikipedia_page_data_version: DateTime
+}
+
+# instance of language + script combination.
+type Language_Script {
+  id: ID!
+  name_en: String! @id
+  language: Language!
+  script: Script!
+}
+
+type Name {
+  id: ID!
+  language_script: Language_Script!
+  name: String! @id @search(by: [hash, term, fulltext])
+
+  # region: [Region]
+  person: [Person]
+  organisation: [Organisation]
+  nation: [Nation]
+  in_zonal_council: [IN_Zonal_Council]
+}
+
+enum Date_Time_Precision_Category {
+  Year
+  Month
+  Day
+  Hour
+  Minute
+  Second
+}
+
+type KGDateTime {
+  date_time_hour: DateTime @search(by: [hour])
+  date_time_precision: Date_Time_Precision_Category @search(by: [exact])
+
+  events: [KGEvent]
+}
+
+type Nation {
+  id: ID!
+  name_id: String! @id
+
+  names: [Name!]! @hasInverse(field: "nation")
+
+  region: [Nation_Region]
+}
+
+# political regions associated with and within a nation
+type Nation_Region {
+  id: ID!
+
+  nation: Nation @hasInverse(field: "region")
+
+  capital: [National_Capital_City]
+
+  zonal_council: [IN_Zonal_Council_Region] @hasInverse(field: "nation")
+  state: [IN_State_Region] @hasInverse(field: "nation")
+  union_territory: [IN_Union_Territory_Region] @hasInverse(field: "nation")
+
+  # array because, there can be multiple version with varying precision.
+  # low precision for maps, high precicion for search and computation
+  geo_boundary_self_actual: [Geo]
+
+  # boundaries recognized by the national authorities
+  # e.g. PoK is part of India as per Indian government, although its not under GOI administration
+  geo_boundary_self_official: [Geo]
+  geo_boundary_world_official: [Geo]
+
+  geo_zonal_council_boundary: [Geo]
+  geo_state_boundary: [Geo]
+}
+
+type IN_Zonal_Council {
+  id: ID!
+
+  # id derived from name
+  name_id: String! @id
+
+  names: [Name!]! @hasInverse(field: "in_zonal_council")
+
+  region: [IN_Zonal_Council_Region]
+}
+
+type IN_Zonal_Council_Region {
+  id: ID!
+
+  nation: Nation @hasInverse(field: "region")
+
+  capital: [National_Capital_City]
+
+  nation: [Nation_Region] @hasInverse(field: "zonal_council")
+  state: [IN_State_Region] @hasInverse(field: "zonal_council")
+  union_territory: [IN_Union_Territory_Region] @hasInverse(field: "zonal_council")
+}
+
+enum Location_Or_Region_Category {
+  Location
+  Region
+}
+
+# tile by tile geo information and how its related to political regions
+type Geo {
+  category: Location_Or_Region_Category @search(by: [exact])
+
+  # if the category is location
+  location: Point @search
+
+  # if the category is region
+  area: MultiPolygon @search
+}
+
+type Indian_Legal_Document {
+  id: ID!
+
+  # english title that can be searched
+  name_id: String! @id @search(by: [hash, term, fulltext])
+
+  # title in multiple languages
+  names: [Name!]! @hasInverse(field: "indian_legal_document")
+
+  description: String
+  document_type: Indian_Legal_Document_Category! @search(by: [exact])
+
+  is_notified: Boolean!
+
+  active_version: Indian_Legal_Document_Version
+  versions: [Indian_Legal_Document_Version]
+
+  # indianJurisdictions: [IndianJurisdiction] @hasInverse
+  # notifications
+  # rules
+  # regulations
+  # orders
+  # circulars
+  # ordinance
+  # statutes
+  # bills
+
+  # # origin state or union
+  # union_or_state: Union | State
+  # state: [IndianState]
+
+  # notified_in_union: Boolean
+  # notified_in_states: [IndianState]
+
+  # ministry
+  # department
+
+  # policy domains or subjects
+  # subject type - concurrent, union or state
+
+  structural_elements: [Indian_Legal_Document_Structural_Element]
+  amendments: [Indian_Legal_Document_Amendment]
+
+  enactment_date: DateTime @search
+  enforcement_date: DateTime @search
+}
