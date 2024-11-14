@@ -523,6 +523,8 @@ type VidhansabhaConstituencyRegion {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
+  vidhansabha_number: Int @search
+
   established_on: DateTime @search(by: [day])
   established_on_precision: DateTimePrecision
   dissolved_on: DateTime @search(by: [day])
