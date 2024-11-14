@@ -648,13 +648,13 @@ type StateCapitalCity {
 
 type Name {
   id: ID!
-  language_script: LanguageScript!
+  language_script: [LanguageScript!]!
   name: String! @id @search(by: [hash, term, fulltext])
 
-  indian_legal_document: [Indian_Legal_Document]
+  indian_legal_document: [_Indian_Legal_Document_]
 }
 
-enum Indian_Legal_Document_Category {
+enum _Indian_Legal_Document_Category_ {
   Constitution
   Bill
   Act
@@ -664,7 +664,7 @@ enum Indian_Legal_Document_Category {
   Order
 }
 
-type Indian_Legal_Document {
+type _Indian_Legal_Document_ {
   id: ID!
 
   # english title that can be searched
@@ -674,33 +674,33 @@ type Indian_Legal_Document {
   names: [Name!]! @hasInverse(field: "indian_legal_document")
 
   description: String
-  document_type: Indian_Legal_Document_Category! @search(by: [exact])
+  document_type: _Indian_Legal_Document_Category_! @search(by: [exact])
 
   is_notified: Boolean!
 
-  active_version: Indian_Legal_Document_Version
-  versions: [Indian_Legal_Document_Version]
+  active_version: _Indian_Legal_Document_Version_
+  versions: [_Indian_Legal_Document_Version_]
 
-  structural_elements: [Indian_Legal_Document_Structural_Element]
-  amendments: [Indian_Legal_Document_Amendment]
+  structural_elements: [_Indian_Legal_Document_Structural_Element_]
+  amendments: [_Indian_Legal_Document_Amendment_]
 
   enactment_date: DateTime @search
   enforcement_date: DateTime @search
 }
 
-enum Indian_Legal_Document_Structural_Element_Category {
+enum _Indian_Legal_Document_Structural_Element_Category_ {
   Article
   Section
   Preamble
 }
 
-type Indian_Legal_Document_Structural_Element {
+type _Indian_Legal_Document_Structural_Element_ {
   id: ID!
 
   # which legal document it is part of
-  legal_document: Indian_Legal_Document! @hasInverse(field: "structural_elements")
+  legal_document: _Indian_Legal_Document_! @hasInverse(field: "structural_elements")
   # type of element
-  element_type: Indian_Legal_Document_Structural_Element_Category! @search(by: [exact])
+  element_type: _Indian_Legal_Document_Structural_Element_Category_! @search(by: [exact])
 
   # if section/article has a number or roman number or alpha-numeric value in the original document
   identifier: String @search
@@ -712,44 +712,46 @@ type Indian_Legal_Document_Structural_Element {
   # title of the document
   title: String @search(by: [term, fulltext])
   is_active: Boolean @search
-  text: String! @search(by: [term, fulltext])
+  text_unformatted: [String!] @search(by: [term, fulltext])
+  text_formatted: [String!] @search(by: [term, fulltext])
 
   # if the structural element is from an amendment
-  amendment: Indian_Legal_Document_Amendment
-  ommited: Boolean @search
+  amendment: _Indian_Legal_Document_Amendment_
 
   # all versions this structural element is part of
-  part_of_versions: [Indian_Legal_Document_Version]
+  part_of_versions: [_Indian_Legal_Document_Version_]
+  # ommited_in_versions: [_Indian_Legal_Document_Version_]
 
+  # date on which this element was added to the knowledge graph
   created_on: DateTime
 }
 
-type Indian_Legal_Document_Version {
+type _Indian_Legal_Document_Version_ {
   id: ID!
 
   version: DateTime @search
 
-  is_active_version_of: Indian_Legal_Document @hasInverse(field: "active_version")
-  legal_document: Indian_Legal_Document! @hasInverse(field: "versions")
+  is_active_version_of: _Indian_Legal_Document_ @hasInverse(field: "active_version")
+  legal_document: _Indian_Legal_Document_! @hasInverse(field: "versions")
 
-  structural_elements: [Indian_Legal_Document_Structural_Element!]! @hasInverse(field: "part_of_versions")
+  structural_elements: [_Indian_Legal_Document_Structural_Element_!]! @hasInverse(field: "part_of_versions")
 
   # if amendment is null, means original document
-  previous_version: Indian_Legal_Document_Version @hasInverse(field: "next_version")
-  next_version: Indian_Legal_Document_Version @hasInverse(field: "previous_version")
+  previous_version: _Indian_Legal_Document_Version_ @hasInverse(field: "next_version")
+  next_version: _Indian_Legal_Document_Version_ @hasInverse(field: "previous_version")
 
-  amendment: Indian_Legal_Document_Amendment
+  amendment: _Indian_Legal_Document_Amendment_
 }
 
-type Indian_Legal_Document_Amendment {
+type _Indian_Legal_Document_Amendment_ {
   id: ID!
 
-  legal_document: Indian_Legal_Document! @hasInverse(field: "amendments")
+  legal_document: _Indian_Legal_Document_! @hasInverse(field: "amendments")
 
-  resulting_version: Indian_Legal_Document_Version @hasInverse(field: "amendment")
+  resulting_version: _Indian_Legal_Document_Version_ @hasInverse(field: "amendment")
 
   # structural elements introduced by this ammendment
-  structural_elements: [Indian_Legal_Document_Structural_Element] @hasInverse(field: "amendment")
+  structural_elements: [_Indian_Legal_Document_Structural_Element_] @hasInverse(field: "amendment")
 
   amendment_date: DateTime!
   description: String
