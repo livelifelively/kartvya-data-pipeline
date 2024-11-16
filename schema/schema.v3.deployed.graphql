@@ -1,0 +1,250 @@
+# USER AUTHENTICATION
+# values in camelcase are due to @auth/core adapter type definition
+
+type Account {
+  id: ID
+
+  type: String
+  provider: String @search(by: [hash])
+  providerAccountId: String @search(by: [hash])
+  refreshToken: String
+  expires_at: Int64
+  accessToken: String
+  token_type: String
+  refresh_token: String
+  access_token: String
+  scope: String
+  id_token: String
+  session_state: String
+  user: User @hasInverse(field: "accounts")
+}
+
+type Session {
+  id: ID
+
+  expires: DateTime
+  sessionToken: String @search(by: [hash])
+  user: User @hasInverse(field: "sessions")
+}
+
+type User {
+  id: ID
+
+  name: String
+  email: String @id
+  emailVerified: DateTime
+  image: String
+  accounts: [Account] @hasInverse(field: "user")
+  sessions: [Session] @hasInverse(field: "user")
+}
+
+type VerificationToken {
+  id: ID
+
+  identifier: String @search(by: [hash])
+  token: String @search(by: [hash])
+  expires: DateTime
+}
+
+# language and scripts
+# text, especially names can be in multiple languages and scripts
+type _Language_ {
+  id: ID!
+
+  name_en: String! @id
+  names: [_Name_] @hasInverse(field: "language")
+  scripts: [_Script_]
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+}
+
+type _Script_ {
+  id: ID!
+
+  name_en: String! @id
+  names: [_Name_] @hasInverse(field: "script")
+  languages: [_Language_] @hasInverse(field: "scripts")
+
+  wikidata_qid: String @search(by: [hash])
+  wikipedia_page: String @search(by: [fulltext])
+}
+
+# instance of language + script combination.
+type _Language_Script_ {
+  id: ID!
+
+  name_en: String! @id
+  language: _Language_!
+  script: _Script_!
+}
+
+# the "WHO" of 5W1H #ENTRY_NODE
+# #ENTRY_NODE
+# name of all entities in the knowledge graph.
+# an entry point for all.
+# one name can be shared by multiple entities.
+type _Name_ {
+  id: ID!
+
+  name: String! @id @search(by: [hash, term, fulltext])
+  language_script: _Language_Script_
+
+  language: [_Language_]
+  script: [_Script_]
+
+  # indian_legal_document: [_Indian_Legal_Document_]
+  country: [_Country_]
+  # in_zonal_council: [_IN_Zonal_Council_]
+
+  country_event: [_Country_Event_]
+  country_government: [_Country_Government_]
+}
+
+enum _Location_Or_Region_Category_ {
+  Location
+  Region
+}
+
+enum _Geo_Precision_ {
+  # e.g. countries in world map on low res map image
+  Extra_Low
+  Low
+  Medium
+  High
+  Very_High
+  Near_Real_World
+}
+
+# the "WHERE" of 5W1H
+# #ENTRY_NODE
+# tile by tile geo information and how its related to political regions
+type _Geo_ {
+  id: ID!
+  # CHANGE: not to include category, if has location,
+  category: _Location_Or_Region_Category_ @search(by: [exact])
+
+  # if the category is location
+  location: Point @search
+
+  # if the category is region
+  area: MultiPolygon @search
+
+  precision: Int @search
+
+  country_boundary_actual: _Country_Region_
+  country_boundary_official: _Country_Region_
+  country_boundary_world_official: _Country_Region_
+
+  in_zonal_council_boundary: _Country_Region_
+  in_state_boundary: _Country_Region_
+  in_union_territory_boundary: _Country_Region_
+  in_district_boundary: _Country_Region_
+  in_vidhansabha_constituency_boundary: _Country_Region_
+  in_loksabha_constituency_boundary: _Country_Region_
+}
+
+enum Date_Time_Precision_Category {
+  Year
+  Month
+  Day
+  Hour
+  Minute
+  Second
+}
+
+type _Date_Time_ {
+  id: ID!
+
+  date_time: DateTime @search(by: [hour])
+  date_time_precision: Date_Time_Precision_Category @search(by: [exact])
+
+  from_datetime_country_event: [_Country_Event_]
+  # end date for ranged events
+  to_datetime_country_event: [_Country_Event_]
+}
+
+# the "WHAT" of 5W1H.
+# will have to have multiple node types for the events.
+#
+type _Country_Event_ {
+  id: ID!
+
+  # if involves multiple countrys
+  country: [_Country_]
+
+  # specific to this event. should be able to identify the event and country.
+  # would be best if the value can be unique, though not setting that as a condition as of now.
+  names: [_Name_] @hasInverse(field: "country_event")
+  description: String! @search(by: [exact, fulltext, term])
+
+  # broad categories. "term criteria": can be applicable to any country.
+  # "Declared Independence", "Civil War", "Independence Day", "Declared as Republic", "Declared War", "Hoasted Olympic", "Launched a Sattelite"
+  # cannot be an enum (at least at this point) since can have too many values,
+  # unless we reach a point where we have a sure number which may not change much.
+  event_type: String! @search(by: [exact, fulltext, term])
+
+  # time range event or one time
+  one_time_event: Boolean
+
+  datetime_from: _Date_Time_! @hasInverse(field: "from_datetime_country_event")
+  datetime_to: _Date_Time_ @hasInverse(field: "to_datetime_country_event")
+}
+
+type _Country_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_!]! @hasInverse(field: "country")
+
+  region: [_Country_Region_]
+
+  # legal: [_Country_Legal_]
+
+  events: [_Country_Event_]
+}
+
+# political regions associated with and within a country
+type _Country_Region_ {
+  id: ID!
+
+  country: _Country_ @hasInverse(field: "region")
+
+  # date on which the region changed
+  # e.g. sikkim added to India
+  # version: DateTime @search
+
+  established_on: _Country_Event_
+  disestablished_on: _Country_Event_
+
+  # how the country region related to other region types
+  # capital: [_Countryal_Capital_City_]
+  # zonal_council: [_IN_Zonal_Council_Region_] @hasInverse(field: "country")
+  # state: [_IN_State_Region_] @hasInverse(field: "country")
+  # union_territory: [_IN_Union_Territory_Region_] @hasInverse(field: "country")
+
+  # array because, there can be multiple version with varying precision.
+  # low precision for maps, high precicion for search and computation
+  geo_boundary_self_actual: [_Geo_]
+
+  # boundaries recognized by the national authorities
+  # e.g. PoK is part of India as per Indian government, although its not under GOI administration
+  geo_boundary_self_official: [_Geo_]
+  # a country may accept or reject borders of certain countries based on its foriegn policy
+  # this is the world map as per the country
+  geo_boundary_world_official: [_Geo_]
+
+  geo_political_country_zonal_council: [_Geo_]
+  geo_political_country_state_union_territory: [_Geo_]
+  geo_political_country_district: [_Geo_]
+  geo_political_country_loksabha_constituency: [_Geo_]
+  geo_political_country_vidhansabha_constituency: [_Geo_]
+}
+
+type _Country_Government_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_!]! @hasInverse(field: "country_government")
+  governs_country: _Country_
+}
