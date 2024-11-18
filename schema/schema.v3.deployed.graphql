@@ -46,6 +46,12 @@ type VerificationToken {
   expires: DateTime
 }
 
+type _Admin_Comments_ {
+  id: ID!
+  text: String
+  created_on: DateTime
+}
+
 # language and scripts
 # text, especially names can be in multiple languages and scripts
 type _Language_ {
@@ -99,6 +105,23 @@ type _Name_ {
 
   country_event: [_Country_Event_]
   country_government: [_Country_Government_]
+  government_system_type_economic_system: [_Government_System_Types_Economic_System_]
+  government_system_type_religion: [_Government_System_Types_Religion_]
+  government_system_type_head_of_government: [_Government_System_Types_Head_Of_Government_]
+  government_system_type_head_of_state: [_Government_System_Types_Head_Of_State_]
+  government_system_type_partisan_systems: [_Government_System_Types_Partisan_Systems_]
+  government_system_type_democracy: [_Government_System_Types_Democracy_]
+  government_system_type_oligarchy: [_Government_System_Types_Oligarchy_]
+  government_system_type_autocratic: [_Government_System_Types_Autocratic_]
+  government_system_type_monarchy: [_Government_System_Types_Monarchy_]
+  government_system_type_authority_distribution: [_Government_System_Types_Authority_Distribution_]
+  government_system_type_authority_concentration: [_Government_System_Types_Authority_Concentration_]
+  government_system_type_authority_source: [_Government_System_Types_Authority_Source_]
+  government_system_type_authority_status: [_Government_System_Types_Authority_Status_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 enum _Location_Or_Region_Category_ {
@@ -201,7 +224,13 @@ type _Country_ {
 
   # legal: [_Country_Legal_]
 
-  events: [_Country_Event_]
+  government: _Country_Government_
+
+  events: [_Country_Event_] @hasInverse(field: "country")
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 # political regions associated with and within a country
@@ -245,6 +274,253 @@ type _Country_Government_ {
   id: ID!
   name_id: String! @id
 
+  # Government of India, भारत सरकार
   names: [_Name_!]! @hasInverse(field: "country_government")
-  governs_country: _Country_
+
+  governs_country: _Country_ @hasInverse(field: "government")
+
+  government_system: [_Government_System_] @hasInverse(field: "government")
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_ {
+  id: ID!
+
+  name_id: String! @id
+  description: String
+  government: _Country_Government_
+
+  # what is the current status of the authority
+  authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
+
+  # where does the authority reside? monarchy - in the family or individual, republic - in the people
+  authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_instance")
+
+  # where is authority concentrated?
+  authority_concentration_type: [_Government_System_Types_Authority_Concentration_!]!
+    @hasInverse(field: "government_instance")
+
+  # how is authority distributed?
+  authority_distribution_type: _Government_System_Types_Authority_Distribution_!
+    @hasInverse(field: "government_instance")
+
+  # if authority origin is heriditary i.e. monarchy
+  monarchy_type: _Government_System_Types_Monarchy_ @hasInverse(field: "government_instance")
+
+  # if authority concentrated as autocracy
+  autocratic_type: _Government_System_Types_Autocratic_ @hasInverse(field: "government_instance")
+
+  # if authority concentrated as oligarchy
+  oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_instance")
+
+  # If authority is concentrated in elected representatives
+  democracy_type: _Government_System_Types_Democracy_ @hasInverse(field: "government_instance")
+
+  # if democracy, how many parties are capable of authority
+  partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_instance")
+
+  # system of selecting head of the state
+  head_of_state_type: _Government_System_Types_Head_Of_State_! @hasInverse(field: "government_instance")
+
+  # system of selecting head of the government or executive. day to day functioning of government
+  head_of_government_type: _Government_System_Types_Head_Of_Government_! @hasInverse(field: "government_instance")
+
+  # how is the state related to religion
+  religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_instance")
+
+  # how does the state control the resources flow
+  economic_system_type: [_Government_System_Types_Economic_System_!]! @hasInverse(field: "government_instance")
+
+  established: _Country_Event_
+  disestablished: _Country_Event_
+
+  # change_type: Major | Minor | Patch
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Status_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_status")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Source_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_source")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Concentration_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_concentration")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Distribution_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_distribution")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Monarchy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_monarchy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Autocratic_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_autocratic")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Oligarchy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_oligarchy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Democracy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_democracy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Partisan_Systems_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_partisan_systems")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Head_Of_State_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_head_of_state")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Head_Of_Government_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_head_of_government")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Religion_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_religion")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Economic_System_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_economic_system")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }

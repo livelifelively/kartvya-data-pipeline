@@ -64,34 +64,42 @@ type VerificationToken {
 #   # #TODO
 # }
 
+type _Admin_Comments_ {
+  id: ID!
+  text: String
+  created_on: DateTime
+}
+
 # language and scripts
 # text, especially names can be in multiple languages and scripts
 type _Language_ {
   id: ID!
 
   name_en: String! @id
-  names: [String]
+  names: [_Name_] @hasInverse(field: "language")
   scripts: [_Script_]
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-  # last update date of the wikipedia data.
-  # if this date changed on wikipedia, we should consider updating
-  wikipedia_page_data_version: DateTime
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 type _Script_ {
   id: ID!
 
   name_en: String! @id
-  names: [String]
+  names: [_Name_] @hasInverse(field: "script")
   languages: [_Language_] @hasInverse(field: "scripts")
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-  # last update date of the wikipedia data.
-  # if this date changed on wikipedia, we should consider updating
-  wikipedia_page_data_version: DateTime
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 # instance of language + script combination.
@@ -101,6 +109,10 @@ type _Language_Script_ {
   name_en: String! @id
   language: _Language_!
   script: _Script_!
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 # the "WHO" of 5W1H #ENTRY_NODE
@@ -111,14 +123,37 @@ type _Language_Script_ {
 type _Name_ {
   id: ID!
 
-  language_script: [_Language_Script_!]!
   name: String! @id @search(by: [hash, term, fulltext])
+  # language-script combination in which name is saved
+  language_script: _Language_Script_
 
-  indian_legal_document: [_Indian_Legal_Document_]
+  # if name is of language or a script
+  language: [_Language_]
+  script: [_Script_]
+
+  # indian_legal_document: [_Indian_Legal_Document_]
   country: [_Country_]
-  in_zonal_council: [_IN_Zonal_Council_]
+  # in_zonal_council: [_IN_Zonal_Council_]
 
   country_event: [_Country_Event_]
+  country_government: [_Country_Government_]
+  government_system_type_economic_system: [_Government_System_Types_Economic_System_]
+  government_system_type_religion: [_Government_System_Types_Religion_]
+  government_system_type_head_of_government: [_Government_System_Types_Head_Of_Government_]
+  government_system_type_head_of_state: [_Government_System_Types_Head_Of_State_]
+  government_system_type_partisan_systems: [_Government_System_Types_Partisan_Systems_]
+  government_system_type_democracy: [_Government_System_Types_Democracy_]
+  government_system_type_oligarchy: [_Government_System_Types_Oligarchy_]
+  government_system_type_autocratic: [_Government_System_Types_Autocratic_]
+  government_system_type_monarchy: [_Government_System_Types_Monarchy_]
+  government_system_type_authority_distribution: [_Government_System_Types_Authority_Distribution_]
+  government_system_type_authority_concentration: [_Government_System_Types_Authority_Concentration_]
+  government_system_type_authority_source: [_Government_System_Types_Authority_Source_]
+  government_system_type_authority_status: [_Government_System_Types_Authority_Status_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 enum _Location_Or_Region_Category_ {
@@ -162,6 +197,10 @@ type _Geo_ {
   in_district_boundary: _Country_Region_
   in_vidhansabha_constituency_boundary: _Country_Region_
   in_loksabha_constituency_boundary: _Country_Region_
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 enum Date_Time_Precision_Category {
@@ -179,65 +218,13 @@ type _Date_Time_ {
   date_time: DateTime @search(by: [hour])
   date_time_precision: Date_Time_Precision_Category @search(by: [exact])
 
-  country_event_from: [_Country_Event_]
+  from_datetime_country_event: [_Country_Event_]
   # end date for ranged events
-  country_event_to: [_Country_Event_]
-}
+  to_datetime_country_event: [_Country_Event_]
 
-type _Country_ {
-  id: ID!
-  name_id: String! @id
-
-  names: [_Name_!]! @hasInverse(field: "country")
-
-  region: [_Country_Region_]
-
-  legal: [_Country_Legal_]
-
-  events: [_Country_Event_]
-}
-
-# political regions associated with and within a country
-type _Country_Region_ {
-  id: ID!
-
-  country: _Country_ @hasInverse(field: "region")
-
-  # date on which the region changed
-  # e.g. sikkim added to India
-  # version: DateTime @search
-
-  established_on: _Country_Event_
-  disestablished_on: _Country_Event_
-
-  # how the country region related to other region types
-  capital: [_Countryal_Capital_City_]
-  zonal_council: [_IN_Zonal_Council_Region_] @hasInverse(field: "country")
-  state: [_IN_State_Region_] @hasInverse(field: "country")
-  union_territory: [_IN_Union_Territory_Region_] @hasInverse(field: "country")
-
-  # array because, there can be multiple version with varying precision.
-  # low precision for maps, high precicion for search and computation
-  geo_boundary_self_actual: [_Geo_]
-
-  # boundaries recognized by the national authorities
-  # e.g. PoK is part of India as per Indian government, although its not under GOI administration
-  geo_boundary_self_official: [_Geo_]
-  geo_boundary_world_official: [_Geo_]
-
-  geo_political_country_zonal_council: [_Geo_]
-  geo_political_country_state_union_territory: [_Geo_]
-  geo_political_country_district: [_Geo_]
-  geo_political_country_loksabha_constituency: [_Geo_]
-  geo_political_country_vidhansabha_constituency: [_Geo_]
-}
-
-type _Country_Government_ {
-  id: ID!
-  name_id: String! @id
-
-  names: [Name!]! @hasInverse(field: "country_government")
-  governs_country: _Country_
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 # the "WHAT" of 5W1H.
@@ -263,11 +250,358 @@ type _Country_Event_ {
   # time range event or one time
   one_time_event: Boolean
 
-  date_from: _Date_Time_! @hasInverse(field: "country_event_to")
-  date_to: _Date_Time_ @hasInverse(field: "country_event_from")
+  datetime_from: _Date_Time_! @hasInverse(field: "from_datetime_country_event")
+  datetime_to: _Date_Time_ @hasInverse(field: "to_datetime_country_event")
 
-  # #TODO
-  # repeated_event_details:
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Country_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_!]! @hasInverse(field: "country")
+
+  region: [_Country_Region_]
+
+  # legal: [_Country_Legal_]
+
+  government: _Country_Government_
+
+  events: [_Country_Event_] @hasInverse(field: "country")
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+# political regions associated with and within a country
+type _Country_Region_ {
+  id: ID!
+
+  country: _Country_ @hasInverse(field: "region")
+
+  # date on which the region changed
+  # e.g. sikkim added to India
+  # version: DateTime @search
+
+  established: _Country_Event_
+  disestablished: _Country_Event_
+
+  # how the country region related to other region types
+  # capital: [_Countryal_Capital_City_]
+  # zonal_council: [_IN_Zonal_Council_Region_] @hasInverse(field: "country")
+  # state: [_IN_State_Region_] @hasInverse(field: "country")
+  # union_territory: [_IN_Union_Territory_Region_] @hasInverse(field: "country")
+
+  # array because, there can be multiple version with varying precision.
+  # low precision for maps, high precicion for search and computation
+  geo_boundary_self_actual: [_Geo_]
+
+  # boundaries recognized by the national authorities
+  # e.g. PoK is part of India as per Indian government, although its not under GOI administration
+  geo_boundary_self_official: [_Geo_]
+  # a country may accept or reject borders of certain countries based on its foriegn policy
+  # this is the world map as per the country
+  geo_boundary_world_official: [_Geo_]
+
+  geo_political_country_zonal_council: [_Geo_]
+  geo_political_country_state_union_territory: [_Geo_]
+  geo_political_country_district: [_Geo_]
+  geo_political_country_loksabha_constituency: [_Geo_]
+  geo_political_country_vidhansabha_constituency: [_Geo_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Country_Government_ {
+  id: ID!
+  name_id: String! @id
+
+  # Government of India, भारत सरकार
+  names: [_Name_!]! @hasInverse(field: "country_government")
+
+  governs_country: _Country_ @hasInverse(field: "government")
+
+  government_system: [_Government_System_] @hasInverse(field: "government")
+
+  # world country governments
+  # to add country specific data to each one
+  # one country can have had variety of government systems in the past
+  # individual type can help adapt to the country specific needs
+  # e.g. India had in the past, a dominion government, provisional government, british-colony government, east indian company government
+  india: [_Indian_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_ {
+  id: ID!
+
+  name_id: String! @id
+  description: String
+  government: _Country_Government_
+
+  # Sovereign | Provisional (Exile, Transition)
+  authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
+
+  # Lineage | People | Religion | Military | Revolution | Resources
+  # where does the authority reside? monarchy - in the family or individual, republic - in the people
+  authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_instance")
+
+  # Autocracy | Oligarchy | Democracy | Anarchy
+  # where is authority concentrated?
+  # Autocracy - individual or polity;
+  # Oligarchy - small number of people - wealth, education, nobility, family ties - religious, corporate or military control;
+  # Theocracy
+  # Democracy - represented/elected individuals;
+  # Anarchy - no concentration of authority; smaller multiple authority concentrations
+  authority_concentration_type: [_Government_System_Types_Authority_Concentration_!]!
+    @hasInverse(field: "government_instance")
+
+  # Confederation | Unitary | Federation | Strong_Center_Federation
+  authority_distribution_type: _Government_System_Types_Authority_Distribution_!
+    @hasInverse(field: "government_instance")
+
+  # if authority origin is monarchy
+  # Absolute_Monarchy | Constitutional_Monarchy | Crowned_Republic | Elective_Monarchy
+  monarchy_type: _Government_System_Types_Monarchy_ @hasInverse(field: "government_instance")
+
+  # if authority concentrated as autocracy
+  # Civilian_Dictatorship (Absolute_Monarchy, Dictatorship) | Military_Dictatorship | Hybrid_Dictatorship (mix of civil-military elites)
+  autocratic_type: _Government_System_Types_Autocratic_ @hasInverse(field: "government_instance")
+
+  # Aristocracy | Geniocracy | Kraterocracy | Kritarchy | Meritocracy | Noocracy | Plutocracy | Particracy | Stratocracy | Synarchism
+  # Technocracy | Theocracy | Timocracy
+  oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_instance")
+
+  # If democracy which type(s) of democracy?
+  # Sortition | Census_Democracy | Direct_Democracy | Electocracy | Ergatocracy | Herrenvolk_Democracy
+  # Liquid_Democracy | Representative_Democracy | Social_Democracy | Soviet_Democracy | Electoral_Autocracy (representative democracy, indirect democracy)
+  # Digital_Democracy |  Cellular_Democracy | Totalitarian_Democracy | Illiberal_Democracy | Liberal_Democracy
+  democracy_type: _Government_System_Types_Democracy_ @hasInverse(field: "government_instance")
+
+  # Dominant_Party_System | Two_Party_System | Multi_Party_System | Non_Partisan_System
+  partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_instance")
+
+  # Title as head of the state
+  # Directorail | Presidential | Monarchy | Parliamentary | Semi-Presidential
+  head_of_state_type: _Government_System_Types_Head_Of_State_! @hasInverse(field: "government_instance")
+
+  # Executive authority - Day to day functioning of the government
+  # Directorail | Presidential | Monarchy | Parliamentary | Semi-Presidential
+  head_of_government_type: _Government_System_Types_Head_Of_Government_! @hasInverse(field: "government_instance")
+
+  # State_With_Religion | Religious_State (e.g. Islamic_State, Buddhist_State, Christian_State, Jewish_State) | Secular_State | Atheist_State | Undeclared
+  religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_instance")
+
+  # Feudalism | Capitalism | Colonialism | Communism | Despotism | Distributism | Feudalism | Minarchism
+  # Socialism | Totalitarianism |
+  economic_system_type: [_Government_System_Types_Economic_System_!]! @hasInverse(field: "government_instance")
+
+  established: _Country_Event_
+  disestablished: _Country_Event_
+
+  # change_type: Major | Minor | Patch
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+# WHY HAVE MULTIPLE TYPES?
+# we followed the flow of authority model
+# where authority originates from a point and then on & on is eventually executed/evaluated/feedback
+# there is a structure to it.
+# there are some standard types for each step. e.g. authority_status can be stable, provisional, in-exile, emergency-powers-enabled
+# these are standard values, there can be some custom vale for authority_status
+# like externally-defended-internal-civil-unrest, where there is internal instability, but no external actors can intervene
+# or like war-torn e.g. ukraine, where the government system is intact, but there are regions where government is not working.
+type _Government_System_Types_Authority_Status_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_status")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Source_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_source")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Concentration_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_concentration")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Authority_Distribution_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_authority_distribution")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Monarchy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_monarchy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Autocratic_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_autocratic")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Oligarchy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_oligarchy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Democracy_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_democracy")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Partisan_Systems_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_partisan_systems")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Head_Of_State_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_head_of_state")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Head_Of_Government_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_head_of_government")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Religion_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_religion")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
+}
+
+type _Government_System_Types_Economic_System_ {
+  id: ID!
+  name_id: String! @id
+
+  names: [_Name_] @hasInverse(field: "government_system_type_economic_system")
+  description: String!
+  characterstics: [String]
+  government_instance: [_Government_System_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 enum _Indian_Legal_Document_Category_ {
@@ -374,3 +708,65 @@ type _Indian_Legal_Document_Amendment_ {
 
   change_description: String
 }
+
+# [
+#   {
+#     name: "Liberal_Democracy"
+#     description: "A liberal democracy is a representative democracy with rule of law, protection for individual liberties and rights, and limitations on the power of the elected representatives."
+#   },
+#   {
+#     name: "Illiberal_Democracy",
+#     description: "An illiberal democracy is a representative democracy with weak or no limits on the power of the elected representatives to rule as they please."
+#   },
+#   {
+#     name: "Parliamentary_Democracy",
+#     description: "A democratic system of government where the legislative branch (the parliament) appoints the executive branch (typically a cabinet), which is headed by a prime minister who is considered the head of government."
+#   },
+#   {
+#     name: "Presidential_Democracy",
+#     description: "A democratic system of government where the head of government is also head of state (typically a president) and leads an executive branch that is separate from the legislative branch."
+#   },
+#   {
+#     name: "Dominant_Party_System",
+#     description: "A dominant-party system, or one-party dominant system, is a political occurrence in which a single political party continuously dominates election results over running opposition groups or parties.[1] Any ruling party staying in power for more than one consecutive term may be considered a dominant party.",
+#     admin_comments: [
+#       "I don't think this is a system, but rather a state, at least based on the examples given in context of India (BJP rule, Congress rule till 1989, Trinmool Congress rule in Bengal etc.)"
+#     ]
+#   },
+#   {
+#     name: "Two_Party_System"
+#     description: "Two-party system is a system where only two parties or alliances, typically placed either side of the center, have a realistic chance of winning a majority of votes. Other parties are very minor or solely regional.",
+#   },
+#   {
+#     name: "Multi_Party_System ",
+#     description: "A system in which multiple political parties have the capacity to gain control of government offices, separately or in coalition."
+#   },
+#   {
+#     name: "Non_Partisan_System",
+#     description: "Non-partisan system is a system in which universal and periodic elections (by secret ballot) take place without reference to political parties."
+#   },
+#   {
+#     name: "Totalitarian_Democracy",
+#     description: "Totalitarian democracy is a dictatorship based on the mass enthusiasm generated by a perfectionist ideology. The conflict between the state and the individual should not exist in a totalitarian democracy, and in the event of such a conflict, the state has the moral duty to coerce the individual to obey. This idea that there is one true way for a society to be organized and a government should get there at all costs stands in contrast to liberal democracy which trusts the process of democracy to, through trial and error, help a society improve without there being only one correct way to self-govern"
+#   },
+#   {
+#     name: "Cellular_Democracy",
+#     description: "Cellular democracy was developed by Georgist libertarian economist Fred E. Foldvary, uses a multi-level bottom-up structure based on either small neighborhood governmental districts or contractual communities."
+#   },
+#   {
+#     name: "Republic",
+#     description: "A republic (Latin: res publica) is a form of government in which the country is considered a "public matter", not the private concern or property of the rulers. The primary positions of power within a republic are not inherited, but are attained through elections expressing the consent of the governed."
+#   },
+#   {
+#     name: "Monarchy",
+#     description: "A monarchy is a form of government in which a group, generally a family representing a dynasty, embodies the country's national identity and its head, the monarch, exercises the role of sovereignty. The actual power of the monarch may vary from purely symbolic (crowned republic), to partial and restricted (constitutional monarchy), to completely autocratic (absolute monarchy). Traditionally the monarch's post is inherited and lasts until death or abdication. In contrast, elective monarchies require the monarch to be elected. Both types have further variations as there are widely divergent structures and traditions defining monarchy."
+#   },
+#   {
+#     name: "",
+#     description: ""
+#   },
+#   {
+#     name: "",
+#     description: ""
+#   }
+# ]
