@@ -349,7 +349,7 @@ type _Government_System_Types_Authority_Status_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_status")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -363,7 +363,7 @@ type _Government_System_Types_Authority_Source_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_source")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -377,7 +377,7 @@ type _Government_System_Types_Authority_Concentration_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_concentration")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -391,7 +391,7 @@ type _Government_System_Types_Authority_Distribution_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_distribution")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -405,7 +405,7 @@ type _Government_System_Types_Monarchy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_monarchy")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -419,7 +419,7 @@ type _Government_System_Types_Autocratic_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_autocratic")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -433,7 +433,7 @@ type _Government_System_Types_Oligarchy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_oligarchy")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -447,7 +447,7 @@ type _Government_System_Types_Democracy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_democracy")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -461,7 +461,7 @@ type _Government_System_Types_Partisan_Systems_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_partisan_systems")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -475,7 +475,7 @@ type _Government_System_Types_Head_Of_State_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_head_of_state")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -489,7 +489,7 @@ type _Government_System_Types_Head_Of_Government_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_head_of_government")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -503,7 +503,7 @@ type _Government_System_Types_Religion_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_religion")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -517,7 +517,7 @@ type _Government_System_Types_Economic_System_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_economic_system")
   description: String!
-  characterstics: [String]
+  characteristics: [String]
   government_instance: [_Government_System_]
 
   created_on: DateTime
