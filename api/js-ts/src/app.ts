@@ -1,6 +1,6 @@
-import fastify, { FastifyInstance } from 'fastify';
-import knowledgeGraphRoutes from './knowledge-graph';
-import { graphqlClientPlugin } from './knowledge-graph/generic/generic.utils';
+import fastify, { FastifyInstance } from "fastify";
+import knowledgeGraphRoutes from "./knowledge-graph";
+import { graphqlClientPlugin } from "./knowledge-graph/generic/generic.utils";
 
 // Create a server instance
 const server: FastifyInstance = fastify({ logger: true });
@@ -9,11 +9,11 @@ const server: FastifyInstance = fastify({ logger: true });
 server.register(graphqlClientPlugin);
 
 // Register the knowledge-graph routes with a prefix
-server.register(knowledgeGraphRoutes, { prefix: '/knowledge-graph' });
+server.register(knowledgeGraphRoutes, { prefix: "/knowledge-graph" });
 
 // Declare a basic route
-server.get('/', async (request, reply) => {
-  return { hello: 'world' };
+server.get("/", async (request, reply) => {
+  return { hello: "world" };
 });
 
 // Run the server!
