@@ -348,11 +348,11 @@ type _Government_System_ {
   description: String
   government: _Country_Government_
 
-  # Sovereign | Provisional (Exile, Transition)
+  # Sovereign | Exile | Transition | Stable | Provisional | In_Exile | Emergency_Powers_Enabled
   authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
 
   # Lineage | People | Religion | Military | Revolution | Resources
-  # where does the authority reside? monarchy - in the family or individual, republic - in the people
+  # where does the authority originate from? monarchy - in the family or individual, republic - in the people
   authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_instance")
 
   # Autocracy | Oligarchy | Democracy | Anarchy
@@ -368,6 +368,9 @@ type _Government_System_ {
   # Confederation | Unitary | Federation | Strong_Center_Federation
   authority_distribution_type: _Government_System_Types_Authority_Distribution_!
     @hasInverse(field: "government_instance")
+
+  # regular_fair_elections | do_not_exist |
+  authority_transfer_mechanism_type: _Government_System_Types_Authority_Transfer_!
 
   # if authority origin is monarchy
   # Absolute_Monarchy | Constitutional_Monarchy | Crowned_Republic | Elective_Monarchy
