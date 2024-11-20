@@ -211,6 +211,10 @@ type _Country_Event_ {
 
   datetime_from: _Date_Time_! @hasInverse(field: "from_datetime_country_event")
   datetime_to: _Date_Time_ @hasInverse(field: "to_datetime_country_event")
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 type _Country_ {
@@ -242,8 +246,8 @@ type _Country_Region_ {
   # e.g. sikkim added to India
   # version: DateTime @search
 
-  established_on: _Country_Event_
-  disestablished_on: _Country_Event_
+  established: _Country_Event_
+  disestablished: _Country_Event_
 
   # how the country region related to other region types
   # capital: [_Countryal_Capital_City_]
@@ -267,6 +271,10 @@ type _Country_Region_ {
   geo_political_country_district: [_Geo_]
   geo_political_country_loksabha_constituency: [_Geo_]
   geo_political_country_vidhansabha_constituency: [_Geo_]
+
+  created_on: DateTime
+  updated_on: DateTime
+  admin_comments: [_Admin_Comments_]
 }
 
 type _Country_Government_ {
@@ -279,6 +287,13 @@ type _Country_Government_ {
   governs_country: _Country_ @hasInverse(field: "government")
 
   government_system: [_Government_System_] @hasInverse(field: "government")
+
+  # world country governments
+  # to add country specific data to each one
+  # one country can have had variety of government systems in the past
+  # individual type can help adapt to the country specific needs
+  # e.g. India had in the past, a dominion government, provisional government, british-colony government, east indian company government
+  # india: [_Indian_Government_System_]
 
   created_on: DateTime
   updated_on: DateTime
@@ -344,6 +359,14 @@ type _Government_System_ {
   admin_comments: [_Admin_Comments_]
 }
 
+# WHY HAVE MULTIPLE TYPES?
+# we followed the flow of authority model
+# where authority originates from a point and then on & on is eventually executed/evaluated/feedback
+# there is a structure to it.
+# there are some standard types for each step. e.g. authority_status can be stable, provisional, in-exile, emergency-powers-enabled
+# these are standard values, there can be some custom vale for authority_status
+# like externally-defended-internal-civil-unrest, where there is internal instability, but no external actors can intervene
+# or like war-torn e.g. ukraine, where the government system is intact, but there are regions where government is not working.
 type _Government_System_Types_Authority_Status_ {
   id: ID!
   name_id: String! @id
