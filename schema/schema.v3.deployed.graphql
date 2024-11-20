@@ -46,10 +46,10 @@ type VerificationToken {
   expires: DateTime
 }
 
-type _Admin_Comments_ {
+type _Node_Update_ {
   id: ID!
-  text: String
-  created_on: DateTime
+  comment: String
+  updated_on: DateTime @search
 }
 
 # language and scripts
@@ -119,8 +119,7 @@ type _Name_ {
   government_system_type_authority_status: [_Government_System_Types_Authority_Status_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 enum _Location_Or_Region_Category_ {
@@ -213,8 +212,7 @@ type _Country_Event_ {
   datetime_to: _Date_Time_ @hasInverse(field: "to_datetime_country_event")
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Country_ {
@@ -232,8 +230,7 @@ type _Country_ {
   events: [_Country_Event_] @hasInverse(field: "country")
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 # political regions associated with and within a country
@@ -273,8 +270,7 @@ type _Country_Region_ {
   geo_political_country_vidhansabha_constituency: [_Geo_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Country_Government_ {
@@ -296,8 +292,7 @@ type _Country_Government_ {
   # india: [_Indian_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_ {
@@ -355,8 +350,7 @@ type _Government_System_ {
 
   # change_type: Major | Minor | Patch
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 # WHY HAVE MULTIPLE TYPES?
@@ -382,8 +376,7 @@ type _Government_System_Types_Authority_Status_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Authority_Source_ {
@@ -401,8 +394,7 @@ type _Government_System_Types_Authority_Source_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Authority_Concentration_ {
@@ -420,8 +412,7 @@ type _Government_System_Types_Authority_Concentration_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Authority_Distribution_ {
@@ -439,8 +430,7 @@ type _Government_System_Types_Authority_Distribution_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Monarchy_ {
@@ -459,8 +449,7 @@ type _Government_System_Types_Monarchy_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Autocratic_ {
@@ -478,8 +467,7 @@ type _Government_System_Types_Autocratic_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Oligarchy_ {
@@ -497,8 +485,7 @@ type _Government_System_Types_Oligarchy_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Democracy_ {
@@ -516,8 +503,7 @@ type _Government_System_Types_Democracy_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Partisan_Systems_ {
@@ -535,8 +521,7 @@ type _Government_System_Types_Partisan_Systems_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Head_Of_State_Or_Government {
@@ -555,8 +540,7 @@ type _Government_System_Types_Head_Of_State_Or_Government {
   government_instance_head_of_government: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Religion_ {
@@ -574,8 +558,7 @@ type _Government_System_Types_Religion_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
 
 type _Government_System_Types_Economic_System_ {
@@ -593,6 +576,5 @@ type _Government_System_Types_Economic_System_ {
   government_instance: [_Government_System_]
 
   created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
+  updates: [_Node_Update_]
 }
