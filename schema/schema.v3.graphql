@@ -139,8 +139,7 @@ type _Name_ {
   country_government: [_Country_Government_]
   government_system_type_economic_system: [_Government_System_Types_Economic_System_]
   government_system_type_religion: [_Government_System_Types_Religion_]
-  government_system_type_head_of_government: [_Government_System_Types_Head_Of_Government_]
-  government_system_type_head_of_state: [_Government_System_Types_Head_Of_State_]
+  government_system_type_head_of_state_or_government: [_Government_System_Types_Head_Of_State_Or_Government]
   government_system_type_partisan_systems: [_Government_System_Types_Partisan_Systems_]
   government_system_type_democracy: [_Government_System_Types_Democracy_]
   government_system_type_oligarchy: [_Government_System_Types_Oligarchy_]
@@ -348,64 +347,47 @@ type _Government_System_ {
   description: String
   government: _Country_Government_
 
-  # Sovereign | Exile | Transition | Stable | Provisional | In_Exile | Emergency_Powers_Enabled
+  # what is the current status of the authority
   authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
 
-  # Lineage | People | Religion | Military | Revolution | Resources
-  # where does the authority originate from? monarchy - in the family or individual, republic - in the people
+  # where does the authority reside? monarchy - in the family or individual, republic - in the people
   authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_instance")
 
-  # Autocracy | Oligarchy | Democracy | Anarchy
   # where is authority concentrated?
-  # Autocracy - individual or polity;
-  # Oligarchy - small number of people - wealth, education, nobility, family ties - religious, corporate or military control;
-  # Theocracy
-  # Democracy - represented/elected individuals;
-  # Anarchy - no concentration of authority; smaller multiple authority concentrations
   authority_concentration_type: [_Government_System_Types_Authority_Concentration_!]!
     @hasInverse(field: "government_instance")
 
-  # Confederation | Unitary | Federation | Strong_Center_Federation
+  # how is authority distributed?
   authority_distribution_type: _Government_System_Types_Authority_Distribution_!
     @hasInverse(field: "government_instance")
 
-  # regular_fair_elections | do_not_exist |
-  authority_transfer_mechanism_type: _Government_System_Types_Authority_Transfer_!
-
-  # if authority origin is monarchy
-  # Absolute_Monarchy | Constitutional_Monarchy | Crowned_Republic | Elective_Monarchy
+  # if authority origin is heriditary i.e. monarchy
   monarchy_type: _Government_System_Types_Monarchy_ @hasInverse(field: "government_instance")
 
   # if authority concentrated as autocracy
-  # Civilian_Dictatorship (Absolute_Monarchy, Dictatorship) | Military_Dictatorship | Hybrid_Dictatorship (mix of civil-military elites)
   autocratic_type: _Government_System_Types_Autocratic_ @hasInverse(field: "government_instance")
 
-  # Aristocracy | Geniocracy | Kraterocracy | Kritarchy | Meritocracy | Noocracy | Plutocracy | Particracy | Stratocracy | Synarchism
-  # Technocracy | Theocracy | Timocracy
+  # if authority concentrated as oligarchy
   oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_instance")
 
-  # If democracy which type(s) of democracy?
-  # Sortition | Census_Democracy | Direct_Democracy | Electocracy | Ergatocracy | Herrenvolk_Democracy
-  # Liquid_Democracy | Representative_Democracy | Social_Democracy | Soviet_Democracy | Electoral_Autocracy (representative democracy, indirect democracy)
-  # Digital_Democracy |  Cellular_Democracy | Totalitarian_Democracy | Illiberal_Democracy | Liberal_Democracy
+  # If authority is concentrated in elected representatives
   democracy_type: _Government_System_Types_Democracy_ @hasInverse(field: "government_instance")
 
-  # Dominant_Party_System | Two_Party_System | Multi_Party_System | Non_Partisan_System
+  # if democracy, how many parties are capable of authority
   partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_instance")
 
-  # Title as head of the state
-  # Directorail | Presidential | Monarchy | Parliamentary | Semi-Presidential
-  head_of_state_type: _Government_System_Types_Head_Of_State_! @hasInverse(field: "government_instance")
+  # system of selecting head of the state
+  head_of_state_type: _Government_System_Types_Head_Of_State_Or_Government!
+    @hasInverse(field: "government_instance_head_of_state")
 
-  # Executive authority - Day to day functioning of the government
-  # Directorail | Presidential | Monarchy | Parliamentary | Semi-Presidential
-  head_of_government_type: _Government_System_Types_Head_Of_Government_! @hasInverse(field: "government_instance")
+  # system of selecting head of the government or executive. day to day functioning of government
+  head_of_government_type: _Government_System_Types_Head_Of_State_Or_Government!
+    @hasInverse(field: "government_instance_head_of_government")
 
-  # State_With_Religion | Religious_State (e.g. Islamic_State, Buddhist_State, Christian_State, Jewish_State) | Secular_State | Atheist_State | Undeclared
+  # how is the state related to religion
   religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_instance")
 
-  # Feudalism | Capitalism | Colonialism | Communism | Despotism | Distributism | Feudalism | Minarchism
-  # Socialism | Totalitarianism |
+  # how does the state control the resources flow
   economic_system_type: [_Government_System_Types_Economic_System_!]! @hasInverse(field: "government_instance")
 
   established: _Country_Event_
@@ -431,7 +413,12 @@ type _Government_System_Types_Authority_Status_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_status")
   description: String!
-  characterstics: [String]
+
+  governance_status: String!
+  control_and_authority: String!
+  objective_and_focus: String!
+  international_recognition: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -445,7 +432,12 @@ type _Government_System_Types_Authority_Source_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_source")
   description: String!
-  characterstics: [String]
+
+  source_of_legitimacy: String!
+  power_structure: String!
+  governance_mechanisms: String!
+  role_of_leadership: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -459,7 +451,12 @@ type _Government_System_Types_Authority_Concentration_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_concentration")
   description: String!
-  characterstics: [String]
+
+  authority_held_by: String!
+  accountability_towards_people: String!
+  power_hierarchy: [String!]
+  public_access_to_means_of_peaceful_power_transfer: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -473,7 +470,12 @@ type _Government_System_Types_Authority_Distribution_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_authority_distribution")
   description: String!
-  characterstics: [String]
+
+  state_sovereignty: String!
+  power_distribution: String!
+  law_uniformity: String!
+  central_authority_role: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -487,7 +489,13 @@ type _Government_System_Types_Monarchy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_monarchy")
   description: String!
-  characterstics: [String]
+
+  authority_level: String!
+  constitutional_limitations: String!
+  governing_powers_in: String!
+  power_source: String!
+  reign_term: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -501,7 +509,12 @@ type _Government_System_Types_Autocratic_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_autocratic")
   description: String!
-  characterstics: [String]
+
+  leadership_origin: String!
+  power_consolidation: String!
+  formation_context: String!
+  governance_style: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -515,7 +528,12 @@ type _Government_System_Types_Oligarchy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_oligarchy")
   description: String!
-  characterstics: [String]
+
+  power_basis: String!
+  selection_mechanism: String!
+  governance_focus: String!
+  stability_and_order: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -529,7 +547,12 @@ type _Government_System_Types_Democracy_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_democracy")
   description: String!
-  characterstics: [String]
+
+  selection_method: String!
+  governance_focus: String!
+  participation_level: String!
+  system_stability: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -543,7 +566,12 @@ type _Government_System_Types_Partisan_Systems_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_partisan_systems")
   description: String!
-  characterstics: [String]
+
+  party_influence: String!
+  government_formation: String!
+  political_stability: String!
+  representation: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -551,28 +579,20 @@ type _Government_System_Types_Partisan_Systems_ {
   admin_comments: [_Admin_Comments_]
 }
 
-type _Government_System_Types_Head_Of_State_ {
+type _Government_System_Types_Head_Of_State_Or_Government {
   id: ID!
   name_id: String! @id
 
-  names: [_Name_] @hasInverse(field: "government_system_type_head_of_state")
+  names: [_Name_] @hasInverse(field: "government_system_type_head_of_state_or_government")
   description: String!
-  characterstics: [String]
-  government_instance: [_Government_System_]
 
-  created_on: DateTime
-  updated_on: DateTime
-  admin_comments: [_Admin_Comments_]
-}
+  leadership_structure: String!
+  power_distribution: String!
+  authority_scope: String!
+  government_integration: String!
 
-type _Government_System_Types_Head_Of_Government_ {
-  id: ID!
-  name_id: String! @id
-
-  names: [_Name_] @hasInverse(field: "government_system_type_head_of_government")
-  description: String!
-  characterstics: [String]
-  government_instance: [_Government_System_]
+  government_instance_head_of_state: [_Government_System_]
+  government_instance_head_of_government: [_Government_System_]
 
   created_on: DateTime
   updated_on: DateTime
@@ -585,7 +605,12 @@ type _Government_System_Types_Religion_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_religion")
   description: String!
-  characterstics: [String]
+
+  religious_influence: String!
+  religious_freedom: String!
+  state_support: String!
+  legal_framework: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
@@ -599,7 +624,12 @@ type _Government_System_Types_Economic_System_ {
 
   names: [_Name_] @hasInverse(field: "government_system_type_economic_system")
   description: String!
-  characterstics: [String]
+
+  ownership_and_control: String!
+  societal_structure: String!
+  economic_drivers: String!
+  governance_approach: String!
+
   government_instance: [_Government_System_]
 
   created_on: DateTime
