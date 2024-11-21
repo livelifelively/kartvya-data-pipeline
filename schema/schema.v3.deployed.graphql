@@ -94,7 +94,10 @@ type _Name_ {
   id: ID!
 
   name: String! @id @search(by: [hash, term, fulltext])
-  language_script: _Language_Script_
+  # a set of characters can be same for different combinations of languages and scripts
+  language_script: [_Language_Script_]
+
+  case_sensitive: Boolean
 
   language: [_Language_]
   script: [_Script_]
@@ -223,8 +226,6 @@ type _Country_ {
 
   region: [_Country_Region_]
 
-  # legal: [_Country_Legal_]
-
   government: _Country_Government_
 
   events: [_Country_Event_] @hasInverse(field: "country")
@@ -282,7 +283,8 @@ type _Country_Government_ {
 
   governs_country: _Country_ @hasInverse(field: "government")
 
-  government_system: [_Government_System_] @hasInverse(field: "government")
+  # official declaration of government system
+  active_government_system_official: _Government_System_ @hasInverse(field: "active_official_system_of")
 
   # world country governments
   # to add country specific data to each one
@@ -300,7 +302,8 @@ type _Government_System_ {
 
   name_id: String! @id
   description: String
-  government: _Country_Government_
+  # if official system definition
+  active_official_system_of: _Country_Government_
 
   # what is the current status of the authority
   authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
@@ -326,18 +329,14 @@ type _Government_System_ {
   oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_instance")
 
   # If authority is concentrated in elected representatives
-  democracy_type: _Government_System_Types_Democracy_ @hasInverse(field: "government_instance")
+  democracy_type: [_Government_System_Types_Democracy_] @hasInverse(field: "government_instance")
 
   # if democracy, how many parties are capable of authority
   partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_instance")
 
   # system of selecting head of the state
-  head_of_state_type: _Government_System_Types_Head_Of_State_Or_Government!
-    @hasInverse(field: "government_instance_head_of_state")
-
-  # system of selecting head of the government or executive. day to day functioning of government
-  head_of_government_type: _Government_System_Types_Head_Of_State_Or_Government!
-    @hasInverse(field: "government_instance_head_of_government")
+  head_of_state_or_government_system_type: _Government_System_Types_Head_Of_State_Or_Government!
+    @hasInverse(field: "government_instance")
 
   # how is the state related to religion
   religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_instance")
@@ -536,8 +535,7 @@ type _Government_System_Types_Head_Of_State_Or_Government {
   authority_scope: String!
   government_integration: String!
 
-  government_instance_head_of_state: [_Government_System_]
-  government_instance_head_of_government: [_Government_System_]
+  government_instance: [_Government_System_]
 
   created_on: DateTime
   updates: [_Node_Update_]
