@@ -833,13 +833,16 @@ type _Indian_Rajyasabha_ {
 
 # CREATE_NEW: whenever new loksabha is elected
 # may also have versions to cover by-elections
+# having versions is yet to be decided.
+# by-elections can be managed without versions.
+# there can be a lot more data that may need versioning
 type _Indian_Loksabha_ {
   id: ID!
 
   loksabha_number: Int!
 
-  formed_on: _Date_Time_
-  dispersed_on: _Date_Time_
+  term_start: _Date_Time_
+  term_end: _Date_Time_
 
   members: [_Indian_Loksabha_Member_]
 
@@ -872,8 +875,8 @@ type _Indian_Loksabha_Member_ {
 
   election: _Indian_Loksabha_Election_
 
-  date_from: _Date_Time_
-  date_to: _Date_Time_
+  tenure_start: _Date_Time_
+  tenure_end: _Date_Time_
 }
 
 # CREATE_NEW: when new government is elected or when new PM is added
