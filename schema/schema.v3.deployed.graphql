@@ -656,7 +656,8 @@ type _Public_Policy_Domain_Government_Ministries_Departments_ {
 
   indian_union_government_ministries: [_Indian_Union_Government_Ministry_]
     @hasInverse(field: "policy_domain_ministeries_list")
-  indian_union_government_departments: [_Indian_Union_Government_Department_] @hasInverse(field: "")
+  indian_union_government_departments: [_Indian_Union_Government_Department_]
+    @hasInverse(field: "policy_domain_ministeries_departments_list")
   # indian_state_government: [_Indian_Union_Government_Ministry_]
   # indian_union_territory_government: [_Indian_Union_Government_Ministry_]
 
@@ -782,11 +783,11 @@ type _Indian_Union_Government_ {
 
   # TODO bill may need a separate type. when presented, when passed,
   # revisions and other different steps in the process
-  # bills: [_Indian_Legal_Document_] @hasInverse(field: "")
-  # acts: [_Indian_Legal_Document_] @hasInverse(field: "")
+  # bills: [_Indian_Legal_Document_]
+  # acts: [_Indian_Legal_Document_]
 
   ministries: [_Indian_Union_Government_Ministry_] @hasInverse(field: "union_government")
-  departments: [_Indian_Union_Government_Department_] @hasInverse(field: "")
+  departments: [_Indian_Union_Government_Department_] @hasInverse(field: "union_government")
 
   established_on: _Date_Time_
   destablished_on: _Date_Time_
@@ -802,10 +803,6 @@ type _Indian_Prime_Minister_ {
   id: ID!
 
   position_held_by: _Indian_Politician_
-
-  # whether is a rajyasabha or loksabha member.
-  # rajyasabha_membership:
-  loksabha_membership: _Indian_Loksabha_Member_
 
   ministries: [_Indian_Union_Government_Ministry_] @hasInverse(field: "prime_minister")
 
@@ -853,10 +850,10 @@ type _Indian_Union_Government_Cabinet_ {
 
   ministries: [_Indian_Union_Government_Ministry_] @hasInverse(field: "cabinet")
 
-  cabinet_ministers: _Indian_Union_Government_Cabinet_Minister_ @hasInverse(field: "")
-  minister_of_state: _Indian_Union_Government_Minister_Of_State_ @hasInverse(field: "")
+  cabinet_ministers: _Indian_Union_Government_Cabinet_Minister_ @hasInverse(field: "cabinet")
+  minister_of_state: _Indian_Union_Government_Minister_Of_State_ @hasInverse(field: "cabinet")
   minister_of_state_independent_charge: _Indian_Union_Government_Minister_Of_State_Independent_Charge_
-    @hasInverse(field: "")
+    @hasInverse(field: "cabinet")
 
   tenure_start: _Date_Time_
   tenure_end: _Date_Time_
@@ -878,7 +875,7 @@ type _Indian_Union_Government_Cabinet_Minister_ {
   cabinet: _Indian_Union_Government_Cabinet_ @hasInverse(field: "cabinet_ministers")
 
   ministry: _Indian_Union_Government_Ministry_ @hasInverse(field: "minister")
-  minister: _Indian_Politician_ @hasInverse(field: "")
+  position_held_by: _Indian_Politician_ @hasInverse(field: "cabinet_minister")
 
   tenure_start: _Date_Time_
   tenure_end: _Date_Time_
@@ -896,10 +893,10 @@ type _Indian_Union_Government_Minister_Of_State_Independent_Charge_ {
   prime_minister: _Indian_Prime_Minister_
   government: _Indian_Union_Government_
 
-  cabinet: _Indian_Union_Government_Cabinet_ @hasInverse(field: "cabinet_ministers")
+  cabinet: _Indian_Union_Government_Cabinet_ @hasInverse(field: "minister_of_state_independent_charge")
 
   ministry: _Indian_Union_Government_Ministry_ @hasInverse(field: "minister_of_state_independent_charge")
-  minister: _Indian_Politician_ @hasInverse(field: "")
+  position_held_by: _Indian_Politician_ @hasInverse(field: "minister_of_state_independent_charge")
 
   tenure_start: _Date_Time_
   tenure_end: _Date_Time_
@@ -917,10 +914,10 @@ type _Indian_Union_Government_Minister_Of_State_ {
   prime_minister: _Indian_Prime_Minister_
   government: _Indian_Union_Government_
 
-  cabinet: _Indian_Union_Government_Cabinet_ @hasInverse(field: "cabinet_ministers")
+  cabinet: _Indian_Union_Government_Cabinet_ @hasInverse(field: "minister_of_state")
 
   ministry: _Indian_Union_Government_Ministry_ @hasInverse(field: "minister_of_state")
-  minister: _Indian_Politician_ @hasInverse(field: "")
+  position_held_by: _Indian_Politician_ @hasInverse(field: "minister_of_state")
 
   tenure_start: _Date_Time_
   tenure_end: _Date_Time_
@@ -944,7 +941,7 @@ type _Indian_Union_Government_Ministry_ {
 
   # broad categories for public policy.  *:* relation with ministries
   # e.g. health, fisheries, agriculture, road infrastructure
-  policy_domains: [_Public_Policy_Domain_] @hasInverse(field: "indian_union_government_ministries")
+  policy_domains: [_Public_Policy_Domain_]
 
   # objective is self updated listing that connects to all ministeries in the domain
   policy_domain_ministeries_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
@@ -966,9 +963,6 @@ type _Indian_Union_Government_Ministry_ {
   disestablished_on: _Date_Time_
 }
 
-# indian_union_government_ministries: [_Indian_Union_Government_Ministry_] @hasInverse(field: "")
-# indian_union_government_departments: [_Indian_Union_Government_Department_] @hasInverse(field: "")
-
 # subordinate to ministries.
 # corresponds to the executive part that is not directly controlled by the elected representatives
 # can have versions. for now just list the latest ones.
@@ -980,12 +974,13 @@ type _Indian_Union_Government_Department_ {
 
   # broad categories for public policy.  *:* relation with ministries
   # e.g. health, fisheries, agriculture, road infrastructure
-  policy_domains: [_Public_Policy_Domain_] @hasInverse(field: "")
+  policy_domains: [_Public_Policy_Domain_]
 
   # objective is self updated listing that connects to all ministeries in the domain
   policy_domain_ministeries_departments_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
     @hasInverse(field: "indian_union_government_departments")
 
+  union_government: _Indian_Union_Government_ @hasInverse(field: "departments")
   ministry: _Indian_Union_Government_Ministry_ @hasInverse(field: "departments")
   parent_department: [_Indian_Union_Government_Department_] @hasInverse(field: "child_departments")
   child_departments: [_Indian_Union_Government_Department_] @hasInverse(field: "parent_department")
@@ -1046,9 +1041,9 @@ type _Indian_Loksabha_Constituency_ {
   # all loksabhas that had a member from this constituency
   loksabhas: [_Indian_Loksabha_] @hasInverse(field: "constituencies")
   # all members so far
-  loksabha_members: [_Indian_Loksabha_Member_] @hasInverse(field: "")
+  loksabha_members: [_Indian_Loksabha_Member_] @hasInverse(field: "constituency")
   # all elections so far
-  elections: [_Indian_Loksabha_Constituency_Election_] @hasInverse(field: "")
+  elections: [_Indian_Loksabha_Constituency_Election_] @hasInverse(field: "constituency")
 
   # region connections - district, vsc, state
 
@@ -1068,12 +1063,13 @@ type _Indian_Loksabha_Member_ {
   id: ID!
 
   loksabha: _Indian_Loksabha_ @hasInverse(field: "members")
+  constituency_election_result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "winner")
 
-  # political_party:
   constituency: _Indian_Loksabha_Constituency_ @hasInverse(field: "loksabha_members")
-  election: _Indian_Loksabha_Constituency_Election_ @hasInverse(field: "")
+  election: _Indian_Loksabha_Constituency_Election_ @hasInverse(field: "loksabha_memberships")
 
-  member: _Indian_Politician_ @hasInverse(field: "")
+  position_held_by: _Indian_Politician_ @hasInverse(field: "loksabha_member")
+  election_winning_political_party: _Indian_Political_Party_Loksabha_Election_ @hasInverse(field: "loksabha_members")
 
   tenure_start: _Date_Time_
   tenure_end: _Date_Time_
@@ -1101,6 +1097,10 @@ type _Indian_Loksabha_Election_ {
   # all the participating constituencies
   constituency_election: [_Indian_Loksabha_Constituency_Election_] @hasInverse(field: "election")
 
+  participating_political_parties: [_Indian_Political_Party_Loksabha_Election_] @hasInverse(field: "loksabha_election")
+  pre_poll_coalitions: [_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_]
+    @hasInverse(field: "loksabha_election")
+
   # no updates field. redundancy acceptable
   started_on: _Date_Time_
   completed_on: _Date_Time_
@@ -1115,9 +1115,7 @@ type _Indian_Loksabha_Election_Result_ {
   id: ID!
 
   election: _Indian_Loksabha_Election_ @hasInverse(field: "result")
-  constituency_election_result: [_Indian_Loksabha_Constituency_Election_Result_] @hasInverse(field: "")
-
-  winners: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "")
+  constituency_election_result: [_Indian_Loksabha_Constituency_Election_Result_] @hasInverse(field: "election_result")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1147,8 +1145,9 @@ type _Indian_Loksabha_Constituency_Election_ {
 
   constituency: _Indian_Loksabha_Constituency_ @hasInverse(field: "elections")
   candidates: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "election")
+  # participating_political_parties: [_Indian_Political_Party_Loksabha_Election_] @hasInverse(field: "constituencies")
 
-  result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "")
+  result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "constituency_election")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1158,12 +1157,12 @@ type _Indian_Loksabha_Constituency_Election_ {
 type _Indian_Loksabha_Constituency_Election_Candidate_ {
   id: ID!
 
-  candidate: _Indian_Politician_ @hasInverse(field: "")
-  political_party: _Indian_Political_Party_ @hasInverse(field: "")
+  candidate: _Indian_Politician_ @hasInverse(field: "loksabha_elections_contested")
+  political_party: _Indian_Political_Party_Loksabha_Election_ @hasInverse(field: "candidates_constituencies")
 
-  election: _Indian_Loksabha_Constituency_Election_ @hasInverse(field: "")
-  constituency_election_result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "")
-  candidate_result: _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_ @hasInverse(field: "")
+  election: _Indian_Loksabha_Constituency_Election_ @hasInverse(field: "candidates")
+  constituency_election_result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "candidates")
+  candidate_result: _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_ @hasInverse(field: "candidate")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1172,18 +1171,19 @@ type _Indian_Loksabha_Constituency_Election_Candidate_ {
 type _Indian_Loksabha_Constituency_Election_Result_ {
   id: ID!
 
+  election_result: _Indian_Loksabha_Election_Result_ @hasInverse(field: "constituency_election_result")
+
   constituency_election: _Indian_Loksabha_Constituency_Election_ @hasInverse(field: "election_result")
 
   total_voters: Int
   voter_turnout: Int
   voter_turnout_percentage: Float
 
-  candidates: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "candidate_result")
+  candidates: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "constituency_election_result")
+  candidate_result: [_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_] @hasInverse(field: "overall_result")
 
-  candidate_result: [_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_] @hasInverse(field: "")
-
-  # redundant info. never updated.
-  winner: _Indian_Loksabha_Constituency_Election_Candidate_ @hasInverse(field: "")
+  # connect to the loksabha member
+  winner: _Indian_Loksabha_Member_ @hasInverse(field: "constituency_election_result")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1193,8 +1193,7 @@ type _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_ {
   id: ID!
 
   candidate: _Indian_Loksabha_Constituency_Election_Candidate_ @hasInverse(field: "candidate_result")
-
-  result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "candidate_result")
+  overall_result: _Indian_Loksabha_Constituency_Election_Result_ @hasInverse(field: "candidate_result")
 
   votes_count: Int
   votes_percentage: Float
@@ -1209,16 +1208,21 @@ type _Indian_Politician_ {
 
   name: [Name!]! @hasInverse(field: "indian_politician")
 
-  political_party_active_membership: _Indian_Political_Party_Member_ @hasInverse(field: "")
-  political_party_memberships: [_Indian_Political_Party_Member_] @hasInverse(field: "")
+  political_party_memberships: [_Indian_Political_Party_Member_] @hasInverse(field: "politician")
 
   # elections in which participated
-  loksabha_elections: [_Indian_Loksabha_Constituency_Election_] @hasInverse(field: "")
+  loksabha_elections_contested: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "candidate")
 
-  # legislative memberships
-  loksabha_memberships: [_Indian_Loksabha_Member_] @hasInverse(field: "")
-  # rajyasabha_memberships: [_Indian_Rajyasabha_Member_]
-  # vidhansabha_memberships: [_Indian_Vidhansabha_Member_]
+  # official positions
+  loksabha_member: [_Indian_Loksabha_Member_] @hasInverse(field: "position_held_by")
+  # rajyasabha_member: [_Indian_Rajyasabha_Member_]
+  # vidhansabha_member: [_Indian_Vidhansabha_Member_]
+
+  prime_minister: [_Indian_Prime_Minister_] @hasInverse(field: "position_held_by")
+  cabinet_minister: [_Indian_Union_Government_Cabinet_Minister_] @hasInverse(field: "position_held_by")
+  minister_of_state_independent_charge: [_Indian_Union_Government_Minister_Of_State_Independent_Charge_]
+    @hasInverse(field: "position_held_by")
+  minister_of_state: [_Indian_Union_Government_Minister_Of_State_] @hasInverse(field: "position_held_by")
 }
 
 type _Indian_Political_Party_ {
@@ -1235,10 +1239,46 @@ type _Indian_Political_Party_ {
 
   is_national_party: Boolean
 
-  # loksabha_election_candidates: []
-  loksabha_memberships: [_Indian_Loksabha_Member_] @hasInverse(field: "")
+  # all elections fought by political party,
+  loksabha_elections: [_Indian_Political_Party_Loksabha_Election_] @hasInverse(field: "political_party")
+  # coalitions in those elections
+  # and their results.
 
-  members: [_Indian_Political_Party_Member_] @hasInverse(field: "")
+  # loksabha_election_candidates: []
+  loksabha_memberships: [_Indian_Loksabha_Member_] @hasInverse(field: "political_party")
+  members: [_Indian_Political_Party_Member_] @hasInverse(field: "party")
+
+  # political_party_loksabha_election
+  # political party
+  # which election
+  # fielded candidates and constituencies
+  # coalition with political_party_loksabha_election
+  #
+}
+
+# OBJECTIVES: which party, fought which loksabha election, fought in which constituencies, which loksabha members won from this
+type _Indian_Political_Party_Loksabha_Election_ {
+  id: ID!
+
+  loksabha_election: _Indian_Loksabha_Election_ @hasInverse(field: "participating_political_parties")
+  political_party: _Indian_Political_Party_ @hasInverse(field: "loksabha_elections")
+
+  candidates_constituencies: [_Indian_Loksabha_Constituency_Election_Candidate_] @hasInverse(field: "political_party")
+  loksabha_members: [_Indian_Loksabha_Member_] @hasInverse(field: "election_winning_political_party")
+
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
+}
+
+# OBJECTIVES: which parties made a pre-poll coalition.
+type _Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_ {
+  id: ID!
+
+  loksabha_election: _Indian_Loksabha_Election_ @hasInverse(field: "pre_poll_coalitions")
+  political_parties: [_Indian_Political_Party_Loksabha_Election_]
+
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
 }
 
 # which politician was part of which party and from when to when
@@ -1246,8 +1286,8 @@ type _Indian_Political_Party_ {
 type _Indian_Political_Party_Member_ {
   id: ID!
 
-  politician: _Indian_Politician_ @hasInverse(field: "")
-  party: _Indian_Political_Party_ @hasInverse(field: "")
+  politician: _Indian_Politician_ @hasInverse(field: "political_party_memberships")
+  party: _Indian_Political_Party_ @hasInverse(field: "members")
 
   member_from: _Date_Time_
   member_to: _Date_Time_
