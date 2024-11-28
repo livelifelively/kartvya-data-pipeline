@@ -1,6 +1,6 @@
-import { createGraphQLClient } from "../../generic/generic.utils";
-import { createGovernmentSystem } from "../../government-system/government-system.create";
-import { update_Name_Change_Name_Case } from "../../name/name.update";
+import { createGraphQLClient } from "../generic/generic.utils";
+import { createGovernmentSystem } from "../government-system/government-system.create";
+import { update_Name_Change_Name_Case } from "../name/name.update";
 
 /**
  * change names to lowercase
