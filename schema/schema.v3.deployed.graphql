@@ -130,6 +130,8 @@ type _Name_ {
   language: [_Language_] @hasInverse(field: "names")
   script: [_Script_] @hasInverse(field: "names")
 
+  person: [_Person_] @hasInverse(field: "names")
+
   # NAMES OF public policy domains like defence, healthcare etc.
   public_policy_domain: [_Public_Policy_Domain_] @hasInverse(field: "names")
 
@@ -176,6 +178,8 @@ type _Name_ {
 
 type _Person_ {
   id: ID!
+
+  name: [_Name_] @hasInverse(field: "person")
 
   born: _Date_Time_
   died: _Date_Time_
