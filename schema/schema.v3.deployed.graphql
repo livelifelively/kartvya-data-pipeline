@@ -179,7 +179,7 @@ type _Name_ {
 type _Person_ {
   id: ID!
 
-  name: [_Name_] @hasInverse(field: "person")
+  names: [_Name_] @hasInverse(field: "person")
 
   born: _Date_Time_
   died: _Date_Time_
@@ -353,7 +353,7 @@ type _Country_Government_ {
   governs_country: _Country_ @hasInverse(field: "government")
 
   # official declaration of government system
-  active_government_system_official: _Government_System_ @hasInverse(field: "active_official_system_of")
+  active_government_system_type_official: _Government_System_Type_ @hasInverse(field: "active_official_system_type_of")
 
   # world country governments
   # to add country specific data to each one
@@ -366,52 +366,52 @@ type _Country_Government_ {
   node_updates: [_Node_Update_]
 }
 
-type _Government_System_ {
+type _Government_System_Type_ {
   id: ID!
 
   name_id: String! @id
   description: String
   # if official system definition
-  active_official_system_of: _Country_Government_ @hasInverse(field: "active_government_system_official")
+  active_official_system_type_of: _Country_Government_ @hasInverse(field: "active_government_system_type_official")
 
   # what is the current status of the authority
-  authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_instance")
+  authority_status_type: [_Government_System_Types_Authority_Status_] @hasInverse(field: "government_system_type")
 
   # where does the authority reside? monarchy - in the family or individual, republic - in the people
-  authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_instance")
+  authority_source_type: [_Government_System_Types_Authority_Source_]! @hasInverse(field: "government_system_type")
 
   # where is authority concentrated?
   authority_concentration_type: [_Government_System_Types_Authority_Concentration_!]!
-    @hasInverse(field: "government_instance")
+    @hasInverse(field: "government_system_type")
 
   # how is authority distributed?
   authority_distribution_type: _Government_System_Types_Authority_Distribution_!
-    @hasInverse(field: "government_instance")
+    @hasInverse(field: "government_system_type")
 
   # if authority origin is heriditary i.e. monarchy
-  monarchy_type: _Government_System_Types_Monarchy_ @hasInverse(field: "government_instance")
+  monarchy_type: _Government_System_Types_Monarchy_ @hasInverse(field: "government_system_type")
 
   # if authority concentrated as autocracy
-  autocratic_type: _Government_System_Types_Autocratic_ @hasInverse(field: "government_instance")
+  autocratic_type: _Government_System_Types_Autocratic_ @hasInverse(field: "government_system_type")
 
   # if authority concentrated as oligarchy
-  oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_instance")
+  oligarchy_type: _Government_System_Types_Oligarchy_ @hasInverse(field: "government_system_type")
 
   # If authority is concentrated in elected representatives
-  democracy_type: [_Government_System_Types_Democracy_] @hasInverse(field: "government_instance")
+  democracy_type: [_Government_System_Types_Democracy_] @hasInverse(field: "government_system_type")
 
   # if democracy, how many parties are capable of authority
-  partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_instance")
+  partisan_system_type: _Government_System_Types_Partisan_Systems_ @hasInverse(field: "government_system_type")
 
   # system of selecting head of the state
   head_of_state_or_government_system_type: _Government_System_Types_Head_Of_State_Or_Government!
-    @hasInverse(field: "government_instance")
+    @hasInverse(field: "government_system_type")
 
   # how is the state related to religion
-  religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_instance")
+  religious_ideology_type: _Government_System_Types_Religion_! @hasInverse(field: "government_system_type")
 
   # how does the state control the resources flow
-  economic_system_type: [_Government_System_Types_Economic_System_!]! @hasInverse(field: "government_instance")
+  economic_system_type: [_Government_System_Types_Economic_System_!]! @hasInverse(field: "government_system_type")
 
   established: _Country_Event_
   disestablished: _Country_Event_
@@ -444,7 +444,7 @@ type _Government_System_Types_Authority_Status_ {
   objective_and_focus: String!
   international_recognition: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "authority_status_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "authority_status_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -462,7 +462,7 @@ type _Government_System_Types_Authority_Source_ {
   governance_mechanisms: String!
   role_of_leadership: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "authority_source_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "authority_source_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -480,7 +480,7 @@ type _Government_System_Types_Authority_Concentration_ {
   power_hierarchy: [String!]
   public_access_to_means_of_peaceful_power_transfer: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "authority_concentration_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "authority_concentration_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -498,7 +498,7 @@ type _Government_System_Types_Authority_Distribution_ {
   law_uniformity: String!
   central_authority_role: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "authority_distribution_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "authority_distribution_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -517,7 +517,7 @@ type _Government_System_Types_Monarchy_ {
   power_source: String!
   reign_term: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "monarchy_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "monarchy_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -535,7 +535,7 @@ type _Government_System_Types_Autocratic_ {
   formation_context: String!
   governance_style: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "autocratic_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "autocratic_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -553,7 +553,7 @@ type _Government_System_Types_Oligarchy_ {
   governance_focus: String!
   stability_and_order: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "oligarchy_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "oligarchy_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -571,7 +571,7 @@ type _Government_System_Types_Democracy_ {
   participation_level: String!
   system_stability: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "democracy_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "democracy_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -589,7 +589,7 @@ type _Government_System_Types_Partisan_Systems_ {
   political_stability: String!
   representation: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "partisan_system_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "partisan_system_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -607,7 +607,7 @@ type _Government_System_Types_Head_Of_State_Or_Government {
   authority_scope: String!
   government_integration: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "head_of_state_or_government_system_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "head_of_state_or_government_system_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -625,7 +625,7 @@ type _Government_System_Types_Religion_ {
   state_support: String!
   legal_framework: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "religious_ideology_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "religious_ideology_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -643,7 +643,7 @@ type _Government_System_Types_Economic_System_ {
   economic_drivers: String!
   governance_approach: String!
 
-  government_instance: [_Government_System_] @hasInverse(field: "economic_system_type")
+  government_system_type: [_Government_System_Type_] @hasInverse(field: "economic_system_type")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -813,7 +813,7 @@ type _Indian_Union_Government_ {
   departments: [_Indian_Union_Government_Department_] @hasInverse(field: "union_government")
 
   established_on: _Date_Time_
-  destablished_on: _Date_Time_
+  disestablished_on: _Date_Time_
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1074,7 +1074,7 @@ type _Indian_Loksabha_Constituency_ {
   # active_loksabha_member: _Indian_Loksabha_Member_
 
   established_on: _Date_Time_
-  destablished_on: _Date_Time_
+  disestablished_on: _Date_Time_
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1261,7 +1261,7 @@ type _Indian_Political_Party_ {
   # political_spectrum_position: [_Political_Spectrum_Position_]
 
   established_on: _Date_Time_
-  destablished_on: _Date_Time_
+  disestablished_on: _Date_Time_
 
   is_national_party: Boolean
 
