@@ -1,19 +1,19 @@
-const { chromium } = require('playwright');
-const path = require('path');
-const fs = require('fs');
+const { chromium } = require("playwright");
+const path = require("path");
+const fs = require("fs");
 
-const { sortBy, keyBy, map, forEach } = require('lodash');
+const { sortBy, keyBy, map, forEach } = require("lodash");
 
-const issuesVcs = require('./state-vsc-navboxes.issues.json');
+const issuesVcs = require("./state-vsc-navboxes.issues.json");
 
-const outputFilePath = path.join(__dirname, 'vc-data.json');
-const errorFile = path.join(__dirname, 'vc_errors.json');
+const outputFilePath = path.join(__dirname, "vc-data.json");
+const errorFile = path.join(__dirname, "vc_errors.json");
 
 async function openPage(context, url) {
   try {
     const page = await context.newPage();
     await page.goto(url);
-    await page.waitForEvent('requestfinished');
+    await page.waitForEvent("requestfinished");
 
     return page;
   } catch (error) {
@@ -51,17 +51,23 @@ async function processListOfWikipediaPages(pageUrls) {
 
   const allPagesResults = [];
 
-  for (const url of pageUrls) {
-    const result = await extractDataFromWikipediaPage(context, url);
-    console.log('finished processing url: ', url);
-    if (result) {
-      allPagesResults.push({
-        url,
-        result,
-      });
+  try {
+    for (const url of pageUrls) {
+      const result = await extractDataFromWikipediaPage(context, url);
+      console.log("finished processing url: ", url);
+      if (result) {
+        allPagesResults.push({
+          url,
+          result,
+        });
+      }
     }
+    console.log("DONE!!!");
+  } catch (error) {
+    console.error("Error processing pages:", error);
+  } finally {
+    await browser.close(); // Ensure the browser closes
   }
-  console.log('DONE!!!');
 
   return allPagesResults;
 }
@@ -71,10 +77,10 @@ async function processVidhansabhaPage(page) {
   const result = await page.evaluate(() => {
     function readAndRemoveSup(element) {
       links = [];
-      element.querySelectorAll('sup').forEach((val) => {
+      element.querySelectorAll("sup").forEach((val) => {
         let link = {
-          text: val.querySelector('a').innerText,
-          href: val.querySelector('a').href,
+          text: val.querySelector("a").innerText,
+          href: val.querySelector("a").href,
         };
 
         links.push(link);
@@ -87,7 +93,7 @@ async function processVidhansabhaPage(page) {
 
     function getAllAnchorLinks(node) {
       let links = [];
-      let linkNodes = node.querySelectorAll('a');
+      let linkNodes = node.querySelectorAll("a");
 
       if (linkNodes.length && linkNodes.length === 1) {
         return linkNodes[0].href;
@@ -101,12 +107,12 @@ async function processVidhansabhaPage(page) {
     }
 
     function extractFromVidhansabhaInfoBox() {
-      let t = document.querySelectorAll('.infobox.vcard');
+      let t = document.querySelectorAll(".infobox.vcard");
 
       const classesCategories = [
         {
-          className: 'infobox-above',
-          nodeName: 'TH',
+          className: "infobox-above",
+          nodeName: "TH",
           colSpan: 2,
           dataFunction: (element, data) => {
             data.sup = readAndRemoveSup(element);
@@ -119,14 +125,14 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-subheader',
-          nodeName: 'TD',
+          className: "infobox-subheader",
+          nodeName: "TD",
           colSpan: 2,
           dataFunction: (element, data) => {
             let sup = readAndRemoveSup(element);
 
             const subheaderLinks = [];
-            element.querySelectorAll('a').forEach((val) => {
+            element.querySelectorAll("a").forEach((val) => {
               subheaderLinks.push({
                 text: val.innerText,
                 href: val.href,
@@ -144,8 +150,8 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-image',
-          nodeName: 'TD',
+          className: "infobox-image",
+          nodeName: "TD",
           colSpan: 2,
           dataFunction: (element, data) => {
             // don't need images yet
@@ -153,13 +159,13 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-header',
-          nodeName: 'TH',
+          className: "infobox-header",
+          nodeName: "TH",
           colSpan: 2,
           dataFunction: (element, data) => {
             let sup = readAndRemoveSup(element);
             const sectionTitleLinks = [];
-            element.querySelectorAll('a').forEach((val) => {
+            element.querySelectorAll("a").forEach((val) => {
               sectionTitleLinks.push({
                 text: val.innerText,
                 href: val.href,
@@ -179,15 +185,15 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-label',
-          nodeName: 'TH',
+          className: "infobox-label",
+          nodeName: "TH",
           colSpan: 1,
           dataFunction: (element, data) => {
             let sup = readAndRemoveSup(element);
 
             data.sections[data.sections.length - 1].subSections.push({
               title: element.innerText,
-              type: 'infobox-label',
+              type: "infobox-label",
               sup,
             });
 
@@ -195,14 +201,14 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-data',
-          nodeName: 'TD',
+          className: "infobox-data",
+          nodeName: "TD",
           colSpan: 1,
           dataFunction: (element, data) => {
             let sup = readAndRemoveSup(element);
 
             const sectionValueLinks = [];
-            element.querySelectorAll('a').forEach((val) => {
+            element.querySelectorAll("a").forEach((val) => {
               sectionValueLinks.push({
                 text: val.innerText,
                 href: val.href,
@@ -221,14 +227,14 @@ async function processVidhansabhaPage(page) {
           },
         },
         {
-          className: 'infobox-full-data',
-          nodeName: 'TD',
+          className: "infobox-full-data",
+          nodeName: "TD",
           colSpan: 2,
           dataFunction: (element, data) => {
             let sup = readAndRemoveSup(element);
 
             const sectionValueLinks = [];
-            element.querySelectorAll('a').forEach((val) => {
+            element.querySelectorAll("a").forEach((val) => {
               sectionValueLinks.push({
                 text: val.innerText,
                 href: val.href,
@@ -237,7 +243,7 @@ async function processVidhansabhaPage(page) {
 
             const subSection = data.sections[data.sections.length - 1].subSections;
             subSection.push({
-              type: 'infobox-full-data',
+              type: "infobox-full-data",
               text: element.innerText,
               links: sectionValueLinks,
               sup,
@@ -249,13 +255,13 @@ async function processVidhansabhaPage(page) {
       ];
 
       let data = {
-        heading: '',
+        heading: "",
         sections: [],
       };
 
       t.forEach((eachTable) => {
-        eachTable.querySelectorAll('tbody tr').forEach((eachRow) => {
-          eachRow.querySelectorAll('td, th').forEach((eachCell) => {
+        eachTable.querySelectorAll("tbody tr").forEach((eachRow) => {
+          eachRow.querySelectorAll("td, th").forEach((eachCell) => {
             const category = classesCategories.filter(
               (val) =>
                 eachCell.classList.contains(val.className) &&
@@ -274,28 +280,28 @@ async function processVidhansabhaPage(page) {
 
       // refine data
       let constituencyDetailsRaw = data.sections.find((val) => {
-        return val.title.toLowerCase() === 'constituency details';
+        return val.title.toLowerCase() === "constituency details";
       });
 
       const allDataFields = {
-        country: 'country',
-        region: 'region',
-        state: 'state',
-        division: 'division',
-        district: 'district',
-        ls_constituency: 'loksabha_constituency',
-        loksabha_constituency: 'loksabha_constituency',
-        established: 'established',
-        total_electors: 'total_electors',
-        total_voters: 'total_electors',
-        reservation: 'reservation',
-        abolished: 'abolished',
+        country: "country",
+        region: "region",
+        state: "state",
+        division: "division",
+        district: "district",
+        ls_constituency: "loksabha_constituency",
+        loksabha_constituency: "loksabha_constituency",
+        established: "established",
+        total_electors: "total_electors",
+        total_voters: "total_electors",
+        reservation: "reservation",
+        abolished: "abolished",
       };
 
       let constituencyDetails = {};
       constituencyDetailsRaw?.subSections.map((val) => {
         let title = val.title.toLowerCase();
-        let key = title.toLowerCase().split(' ').join('_');
+        let key = title.toLowerCase().split(" ").join("_");
 
         if (allDataFields[key]) {
           if (val.value.links.length) {
@@ -316,17 +322,17 @@ async function processVidhansabhaPage(page) {
 
     function findGeoJSONMaps() {
       let mapURLs = [];
-      document.querySelectorAll('.mw-kartographer-link').forEach((val) => {
+      document.querySelectorAll(".mw-kartographer-link").forEach((val) => {
         mapURLs.push(val.href);
       });
       return mapURLs;
     }
 
     function getWikidataQID() {
-      let link = document.getElementById('t-wikibase').querySelector('a').href;
-      let linkChunks = link.split('/');
+      let link = document.getElementById("t-wikibase").querySelector("a").href;
+      let linkChunks = link.split("/");
 
-      let qid = '';
+      let qid = "";
       while (qid.length === 0) {
         qid = linkChunks.pop();
       }
@@ -335,13 +341,13 @@ async function processVidhansabhaPage(page) {
     }
 
     function getLastEditedOnDate() {
-      let dateStr = document.getElementById('footer-info-lastmod').innerText.split('This page was last edited on ')[1];
+      let dateStr = document.getElementById("footer-info-lastmod").innerText.split("This page was last edited on ")[1];
 
       // Remove the " at " and " (UTC)." parts to make it easier to parse
       const parts = dateStr.match(/(\d{1,2}) (\w+) (\d{4}), at (\d{2}:\d{2})/);
 
       if (!parts) {
-        throw new Error('Invalid date format');
+        throw new Error("Invalid date format");
       }
 
       // Extracted parts
@@ -359,7 +365,7 @@ async function processVidhansabhaPage(page) {
 
     function extractDataFromWikipediaNavbox() {
       // get the titles
-      let table = document.querySelectorAll('.navbox > table > tbody > tr > th.navbox-title');
+      let table = document.querySelectorAll(".navbox > table > tbody > tr > th.navbox-title");
 
       let navBoxes = [];
 
@@ -386,59 +392,59 @@ async function processVidhansabhaPage(page) {
     function extractDataFromWikipediaNavboxTables(startTableRowNode, navboxData) {
       let nextRow = startTableRowNode;
 
-      while (nextRow && nextRow.nodeName === 'TR') {
+      while (nextRow && nextRow.nodeName === "TR") {
         let dataRow = {};
 
         const firstElementChild = nextRow.firstElementChild;
         const lastElementChild = nextRow.lastElementChild;
 
-        if (firstElementChild.nodeName === 'TH' && firstElementChild.classList.contains('navbox-group')) {
+        if (firstElementChild.nodeName === "TH" && firstElementChild.classList.contains("navbox-group")) {
           dataRow.label = {
             text: firstElementChild.innerText,
             href: getAllAnchorLinks(firstElementChild),
           };
           dataRow.data = [];
 
-          const nestedTables = lastElementChild.querySelectorAll('table');
+          const nestedTables = lastElementChild.querySelectorAll("table");
           if (nestedTables.length) {
             nestedTables.forEach((val) => {
-              const nestedTableFirstRow = val.querySelector('tbody').firstElementChild;
+              const nestedTableFirstRow = val.querySelector("tbody").firstElementChild;
               const nestedTableData = extractDataFromWikipediaNavboxTables(nestedTableFirstRow, dataRow.data);
 
               dataRow.data.concat(nestedTableData);
             });
           } else {
-            if (lastElementChild.querySelector('dl')) {
-              const dds = lastElementChild.querySelector('dl').querySelectorAll('dd');
+            if (lastElementChild.querySelector("dl")) {
+              const dds = lastElementChild.querySelector("dl").querySelectorAll("dd");
 
               dds.forEach((val) => {
                 dataRow.data.push({
                   text: val.innerText,
-                  href: val.querySelector('a').href,
+                  href: val.querySelector("a").href,
                 });
               });
-            } else if (lastElementChild.querySelector('ul')) {
+            } else if (lastElementChild.querySelector("ul")) {
               lastElementChild
-                .querySelector('ul')
-                .querySelectorAll('li')
+                .querySelector("ul")
+                .querySelectorAll("li")
                 .forEach((val) => {
                   dataRow.data.push({
                     text: val.innerText,
-                    href: val.querySelector('a').href,
+                    href: val.querySelector("a").href,
                   });
                 });
-            } else if (lastElementChild.querySelector('ol')) {
+            } else if (lastElementChild.querySelector("ol")) {
               lastElementChild
-                .querySelector('ol')
-                .querySelectorAll('li')
+                .querySelector("ol")
+                .querySelectorAll("li")
                 .forEach((val) => {
                   dataRow.data.push({
                     text: val.innerText,
-                    href: val.querySelector('a').href,
+                    href: val.querySelector("a").href,
                   });
                 });
             } else {
-              console.log('HAS SOMETHING ELSE');
+              console.log("HAS SOMETHING ELSE");
               console.log(lastElementChild);
               dataRow.data.push({
                 html: lastElementChild.innerHTML,
