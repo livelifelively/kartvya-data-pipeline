@@ -1,6 +1,6 @@
 import { createGraphQLClient } from "../generic/generic.utils";
 
-export async function upsert_Name_(name: string, languageScriptNameEn: string) {
+export async function upsert_Name_(name: string, languageScriptNameEn: string = "english_latin") {
   const graphQLClient = await createGraphQLClient();
 
   // GraphQL query to check if the name exists
@@ -20,37 +20,38 @@ export async function upsert_Name_(name: string, languageScriptNameEn: string) {
   try {
     let response: any = await graphQLClient.request(query, variables);
 
-    const names = response.data.data.query_Name_;
+    const names = response.query_Name_;
 
     // Check if the name was found
     if (names.length > 0) {
       const nameData = names[0];
       const nameId = nameData.id;
-      // Check if the language script is already linked
-      if (nameData.language_script.some((ls: any) => ls.name_en === languageScriptNameEn)) {
-        return nameData; // Return name data
-      }
+      // // Check if the language script is already linked
+      // if (nameData.language_script.some((ls: any) => ls.name_en === languageScriptNameEn)) {
+      //   return nameData; // Return name data
+      // }
 
-      const updatedNameLanguageScripts = [...nameData.language_script, { name_en: languageScriptNameEn }];
+      // const updatedNameLanguageScripts = [...nameData.language_script, { name_en: languageScriptNameEn }];
 
-      // Mutation to add a new language script if not already present
-      const updateMutation = `
-              mutation update_Name_($nameId: ID!, $languageScriptNameEn: String!) {
-                update_Name_(input: {
-                  filter: {id: [$nameId]},
-                  set: {
-                    language_script: ${updatedNameLanguageScripts}
-                  }
-                }) {
-                  name {
-                    id
-                  }
-                }
-              }`;
+      // // Mutation to add a new language script if not already present
+      // const updateMutation = `
+      //         mutation update_Name_($nameId: ID!, $languageScriptNameEn: String!) {
+      //           update_Name_(input: {
+      //             filter: {id: [$nameId]},
+      //             set: {
+      //               language_script: ${updatedNameLanguageScripts}
+      //             }
+      //           }) {
+      //             name {
+      //               id
+      //             }
+      //           }
+      //         }`;
 
-      response = await graphQLClient.request(updateMutation, { nameId, languageScriptNameEn });
+      // response = await graphQLClient.request(updateMutation, { nameId, languageScriptNameEn });
 
-      return response.data.data.update_Name_.name.id;
+      // return response.data.data.update_Name_.name.id;
+      return nameId;
     } else {
       // Mutation to add a new name if not exists
       const addMutation = `
@@ -59,14 +60,14 @@ export async function upsert_Name_(name: string, languageScriptNameEn: string) {
                   name: $name,
                   language_script: [{name_en: $languageScriptNameEn}]
                 }]) {
-                  name {
+                  _Name_ {
                     id
                   }
                 }
               }`;
 
       response = await graphQLClient.request(addMutation, { name, languageScriptNameEn });
-      return response.data.data.add_Name_.name.id;
+      return response.add_Name_._Name_.id;
     }
   } catch (error) {
     console.error("Error in upsert_Name_:", error);
@@ -90,5 +91,5 @@ export async function update_Name_Change_Name_Case(graphQLClient: any, nameId: s
               }`;
 
   const response = await graphQLClient.request(updateMutation, { nameId, newName });
-  return response.data.update_Name_;
+  return response.data;
 }
