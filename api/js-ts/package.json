@@ -7,12 +7,19 @@
     "start": "node build/app.js",
     "dev": "nodemon --exec ts-node src/app.ts",
     "lint": "eslint src/**/*.ts",
-    "test": "jest"
+    "test": "jest",
+    "fetch-schema": "node src/0.dgraph-db/fetch-deployed-schema.js",
+    "generate-types": "npx graphql-codegen",
+    "update-types": "npm run fetch-schema && npm run generate-types"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@graphql-codegen/cli": "^5.0.3",
+    "@graphql-codegen/typescript": "^4.1.2",
+    "@graphql-codegen/typescript-operations": "^4.4.0",
+    "@graphql-codegen/typescript-resolvers": "^4.4.1",
     "@types/node": "^22.7.5",
     "@typescript-eslint/eslint-plugin": "^8.8.1",
     "@typescript-eslint/parser": "^8.8.1",
