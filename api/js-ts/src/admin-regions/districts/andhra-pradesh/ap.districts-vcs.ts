@@ -1,8 +1,8 @@
 export const districtVCs = [
   {
     district: {
-      name: 'Srikakulam',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Srikakulam',
+      name: "Srikakulam",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Amadalavalasa_Assembly_constituency" title="Amadalavalasa Assembly constituency">Amadalavalasa</a>',
@@ -16,44 +16,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Amadalavalasa',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Amadalavalasa_Assembly_constituency',
+        name: "Amadalavalasa",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Amadalavalasa_Assembly_constituency",
       },
       {
-        name: 'Etcherla',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Etcherla_Assembly_constituency',
+        name: "Etcherla",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Etcherla_Assembly_constituency",
       },
       {
-        name: 'Ichchapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Ichchapuram_Assembly_constituency',
+        name: "Ichchapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Ichchapuram_Assembly_constituency",
       },
       {
-        name: 'Narasannapeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Narasannapeta_Assembly_constituency',
+        name: "Narasannapeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Narasannapeta_Assembly_constituency",
       },
       {
-        name: 'Palasa',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Palasa_Assembly_constituency',
+        name: "Palasa",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Palasa_Assembly_constituency",
       },
       {
-        name: 'Pathapatnam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pathapatnam_Assembly_constituency',
+        name: "Pathapatnam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pathapatnam_Assembly_constituency",
       },
       {
-        name: 'Srikakulam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Srikakulam_Assembly_constituency',
+        name: "Srikakulam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_Assembly_constituency",
       },
       {
-        name: 'Tekkali',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tekkali_Assembly_constituency',
+        name: "Tekkali",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tekkali_Assembly_constituency",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Parvathipuram Manyam',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district',
+      name: "Parvathipuram Manyam",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Parvathipuram_Assembly_constituency" title="Parvathipuram Assembly constituency">Parvathipuram</a>',
@@ -63,28 +63,28 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Parvathipuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Parvathipuram_Assembly_constituency',
+        name: "Parvathipuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Parvathipuram_Assembly_constituency",
       },
       {
-        name: 'Palakonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Palakonda_Assembly_constituency',
+        name: "Palakonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Palakonda_Assembly_constituency",
       },
       {
-        name: 'Kurupam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kurupam_Assembly_constituency',
+        name: "Kurupam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kurupam_Assembly_constituency",
       },
       {
-        name: 'Saluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Salur_Assembly_constituency',
+        name: "Saluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Salur_Assembly_constituency",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Vizianagaram',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Vizianagaram',
+      name: "Vizianagaram",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Vizianagaram_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Bobbili_Assembly_constituency" title="Bobbili Assembly constituency">Bobbili</a>',
@@ -97,40 +97,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Bobbili',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Bobbili_Assembly_constituency',
+        name: "Bobbili",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Bobbili_Assembly_constituency",
       },
       {
-        name: 'Cheepurupalli',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Cheepurupalli_Assembly_constituency',
+        name: "Cheepurupalli",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Cheepurupalli_Assembly_constituency",
       },
       {
-        name: 'Gajapathinagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gajapathinagaram_Assembly_constituency',
+        name: "Gajapathinagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gajapathinagaram_Assembly_constituency",
       },
       {
-        name: 'Nellimarla',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nellimarla_Assembly_constituency',
+        name: "Nellimarla",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nellimarla_Assembly_constituency",
       },
       {
-        name: 'Srungavarapukota',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Srungavarapukota_Assembly_constituency',
+        name: "Srungavarapukota",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Srungavarapukota_Assembly_constituency",
       },
       {
-        name: 'Rajam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajam_Assembly_constituency',
+        name: "Rajam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajam_Assembly_constituency",
       },
       {
-        name: 'Vizianagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vizianagaram_Assembly_constituency',
+        name: "Vizianagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vizianagaram_Assembly_constituency",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Visakhapatnam',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Visakhapatnam',
+      name: "Visakhapatnam",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Bheemili_Assembly_constituency" title="Bheemili Assembly constituency">Bheemili</a>',
@@ -143,40 +143,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Bheemili',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Bheemili_Assembly_constituency',
+        name: "Bheemili",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Bheemili_Assembly_constituency",
       },
       {
-        name: 'Gajuwaka',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gajuwaka_Assembly_constituency',
+        name: "Gajuwaka",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gajuwaka_Assembly_constituency",
       },
       {
-        name: 'Pendurthi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pendurthi_Assembly_constituency',
+        name: "Pendurthi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pendurthi_Assembly_constituency",
       },
       {
-        name: 'Visakhapatnam Thurpu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Visakhapatnam_East_Assembly_constituency',
+        name: "Visakhapatnam Thurpu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_East_Assembly_constituency",
       },
       {
-        name: 'Visakhapatnam Uttaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Visakhapatnam_North_Assembly_constituency',
+        name: "Visakhapatnam Uttaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_North_Assembly_constituency",
       },
       {
-        name: 'Visakhapatnam Dakhinam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Visakhapatnam_South_Assembly_constituency',
+        name: "Visakhapatnam Dakhinam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_South_Assembly_constituency",
       },
       {
-        name: 'Visakhapatnam Padamara',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Visakhapatnam_West_Assembly_constituency',
+        name: "Visakhapatnam Padamara",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_West_Assembly_constituency",
       },
     ],
-    partialVidhanSabha: ['Pendurthi'],
+    partialVidhanSabha: ["Pendurthi"],
   },
   {
     district: {
-      name: 'Anakapalli',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Anakapalli_district',
+      name: "Anakapalli",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Anakapalli_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Chodavaram_Assembly_constituency" title="Chodavaram Assembly constituency">Chodavaram</a>',
@@ -189,40 +189,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Chodavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chodavaram_Assembly_constituency',
+        name: "Chodavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chodavaram_Assembly_constituency",
       },
       {
-        name: 'Madugula',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Madugula_Assembly_constituency',
+        name: "Madugula",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Madugula_Assembly_constituency",
       },
       {
-        name: 'Anakapalli',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Anakapalli_Assembly_constituency',
+        name: "Anakapalli",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Anakapalli_Assembly_constituency",
       },
       {
-        name: 'Pendurthi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pendurthi_Assembly_constituency',
+        name: "Pendurthi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pendurthi_Assembly_constituency",
       },
       {
-        name: 'Elamanchili',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Elamanchili_Assembly_constituency',
+        name: "Elamanchili",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Elamanchili_Assembly_constituency",
       },
       {
-        name: 'Payakaraopeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Payakaraopet_Assembly_constituency',
+        name: "Payakaraopeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Payakaraopet_Assembly_constituency",
       },
       {
-        name: 'Narsipatnam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Narsipatnam_Assembly_constituency',
+        name: "Narsipatnam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Narsipatnam_Assembly_constituency",
       },
     ],
-    partialVidhanSabha: ['Pendurthi'],
+    partialVidhanSabha: ["Pendurthi"],
   },
   {
     district: {
-      name: 'Alluri district',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district',
+      name: "Alluri district",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Araku_Valley_Assembly_constituency" title="Araku Valley Assembly constituency">Araku Loya</a>',
@@ -231,24 +231,24 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Araku Loya',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Araku_Valley_Assembly_constituency',
+        name: "Araku Loya",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Araku_Valley_Assembly_constituency",
       },
       {
-        name: 'Paderu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Paderu_Assembly_constituency',
+        name: "Paderu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Paderu_Assembly_constituency",
       },
       {
-        name: 'Rampachodavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rampachodavaram_Assembly_constituency',
+        name: "Rampachodavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rampachodavaram_Assembly_constituency",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Kakinada',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Kakinada_district',
+      name: "Kakinada",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Jaggampeta_Assembly_constituency" title="Jaggampeta Assembly constituency">Jaggampeta</a>',
@@ -262,40 +262,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Jaggampeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Jaggampeta_Assembly_constituency',
+        name: "Jaggampeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Jaggampeta_Assembly_constituency",
       },
       {
-        name: 'Kakinada Nagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kakinada_City_Assembly_constituency',
+        name: "Kakinada Nagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_City_Assembly_constituency",
       },
       {
-        name: 'Kakinada Graminam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kakinada_Rural_Assembly_constituency',
+        name: "Kakinada Graminam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_Rural_Assembly_constituency",
       },
       {
-        name: 'Peddapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Peddapuram_Assembly_constituency',
+        name: "Peddapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Peddapuram_Assembly_constituency",
       },
       {
-        name: 'Pithapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pithapuram_Assembly_constituency',
+        name: "Pithapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pithapuram_Assembly_constituency",
       },
       {
-        name: 'Prathipadu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Prathipadu,_Kakinada_Assembly_constituency',
+        name: "Prathipadu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Prathipadu,_Kakinada_Assembly_constituency",
       },
       {
-        name: 'Tuni',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tuni_Assembly_constituency',
+        name: "Tuni",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tuni_Assembly_constituency",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'East Godavari',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/East_Godavari',
+      name: "East Godavari",
+      wikipedia_page: "https://en.wikipedia.org/wiki/East_Godavari_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Anaparthy_(Assembly_constituency)" class="mw-redirect" title="Anaparthy (Assembly constituency)">Anaparthy</a>',
@@ -308,40 +308,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Anaparthy',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Anaparthy_(Assembly_constituency)',
+        name: "Anaparthy",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Anaparthy_(Assembly_constituency)",
       },
       {
-        name: 'Rajanagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajanagram_(Assembly_constituency)',
+        name: "Rajanagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajanagram_(Assembly_constituency)",
       },
       {
-        name: 'Rajamahendravaram City',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajahmundry_City_(Assembly_constituency)',
+        name: "Rajamahendravaram City",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajahmundry_City_(Assembly_constituency)",
       },
       {
-        name: 'Rajamahendravaram Rural',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajahmundry_Rural_(Assembly_constituency)',
+        name: "Rajamahendravaram Rural",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajahmundry_Rural_(Assembly_constituency)",
       },
       {
-        name: 'Kovvuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kovvur_(Assembly_constituency)',
+        name: "Kovvuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kovvur_(Assembly_constituency)",
       },
       {
-        name: 'Nidadavole',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nidadavole_(Assembly_constituency)',
+        name: "Nidadavole",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nidadavole_(Assembly_constituency)",
       },
       {
-        name: 'Gopalapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gopalapuram_(Assembly_constituency)',
+        name: "Gopalapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gopalapuram_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Konaseema',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Konaseema_district',
+      name: "Konaseema",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Konaseema_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Ramachandrapuram_(Assembly_constituency)" class="mw-redirect" title="Ramachandrapuram (Assembly constituency)">Ramachandrapuram</a>',
@@ -354,40 +354,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Ramachandrapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Ramachandrapuram_(Assembly_constituency)',
+        name: "Ramachandrapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Ramachandrapuram_(Assembly_constituency)",
       },
       {
-        name: 'Mummidivaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mummidivaram_(Assembly_constituency)',
+        name: "Mummidivaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mummidivaram_(Assembly_constituency)",
       },
       {
-        name: 'Amalapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Amalapuram_(Assembly_constituency)',
+        name: "Amalapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Amalapuram_(Assembly_constituency)",
       },
       {
-        name: 'Razole',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Razole_(Assembly_constituency)',
+        name: "Razole",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Razole_(Assembly_constituency)",
       },
       {
-        name: 'Gannavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gannavaram_(SC)_(Assembly_constituency)',
+        name: "Gannavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gannavaram_(SC)_(Assembly_constituency)",
       },
       {
-        name: 'Kothapeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kothapeta_(Assembly_constituency)',
+        name: "Kothapeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kothapeta_(Assembly_constituency)",
       },
       {
-        name: 'Mandapeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mandapeta_(Assembly_constituency)',
+        name: "Mandapeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mandapeta_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Eluru',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Eluru_district',
+      name: "Eluru",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Eluru_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Unguturu_(Assembly_constituency)" class="mw-redirect" title="Unguturu (Assembly constituency)">Unguturu</a>',
@@ -400,40 +400,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Unguturu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Unguturu_(Assembly_constituency)',
+        name: "Unguturu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Unguturu_(Assembly_constituency)",
       },
       {
-        name: 'Denduluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Denduluru_(Assembly_constituency)',
+        name: "Denduluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Denduluru_(Assembly_constituency)",
       },
       {
-        name: 'Eluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Eluru_(Assembly_constituency)',
+        name: "Eluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Eluru_(Assembly_constituency)",
       },
       {
-        name: 'Polavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Polavaram_(Assembly_constituency)',
+        name: "Polavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Polavaram_(Assembly_constituency)",
       },
       {
-        name: 'Chintalapudi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chintalapudi_(Assembly_constituency)',
+        name: "Chintalapudi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chintalapudi_(Assembly_constituency)",
       },
       {
-        name: 'Nuzavidu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nuzvid_(Assembly_constituency)',
+        name: "Nuzavidu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nuzvid_(Assembly_constituency)",
       },
       {
-        name: 'Kaikaluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kaikalur_(Assembly_constituency)',
+        name: "Kaikaluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kaikalur_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'West Godavari',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/West_Godavari',
+      name: "West Godavari",
+      wikipedia_page: "https://en.wikipedia.org/wiki/West_Godavari_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Bhimavaram_(Assembly_constituency)" class="mw-redirect" title="Bhimavaram (Assembly constituency)">Bhimavaram</a>',
@@ -447,40 +447,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Bhimavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Bhimavaram_(Assembly_constituency)',
+        name: "Bhimavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Bhimavaram_(Assembly_constituency)",
       },
       {
-        name: 'Narasapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Narasapuram_(Assembly_constituency)',
+        name: "Narasapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Narasapuram_(Assembly_constituency)",
       },
       {
-        name: 'Palakollu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Palakol_(Assembly_constituency)',
+        name: "Palakollu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Palakol_(Assembly_constituency)",
       },
       {
-        name: 'Tadepalligudem',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tadepalligudem_(Assembly_constituency)',
+        name: "Tadepalligudem",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tadepalligudem_(Assembly_constituency)",
       },
       {
-        name: 'Tanuku',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tanuku_(Assembly_constituency)',
+        name: "Tanuku",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tanuku_(Assembly_constituency)",
       },
       {
-        name: 'Undi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Undi_(Assembly_constituency)',
+        name: "Undi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Undi_(Assembly_constituency)",
       },
       {
-        name: 'Unguturu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Unguturu,_West_Godavari_district',
+        name: "Unguturu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Unguturu,_West_Godavari_district",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'NTR',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/NTR_district',
+      name: "NTR",
+      wikipedia_page: "https://en.wikipedia.org/wiki/NTR_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Tiruvuru_(Assembly_constituency)" class="mw-redirect" title="Tiruvuru (Assembly constituency)">Tiruvuru</a>',
@@ -495,44 +495,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Tiruvuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tiruvuru_(Assembly_constituency)',
+        name: "Tiruvuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tiruvuru_(Assembly_constituency)",
       },
       {
-        name: 'Gannavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency',
+        name: "Gannavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency",
       },
       {
-        name: 'Vijayawada Pdamara',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vijayawada_West_(Assembly_constituency)',
+        name: "Vijayawada Pdamara",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vijayawada_West_(Assembly_constituency)",
       },
       {
-        name: 'Vijayawada Madya',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vijayawada_Central_(Assembly_constituency)',
+        name: "Vijayawada Madya",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vijayawada_Central_(Assembly_constituency)",
       },
       {
-        name: 'Vijayawada Thurpu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vijayawada_East_(Assembly_constituency)',
+        name: "Vijayawada Thurpu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vijayawada_East_(Assembly_constituency)",
       },
       {
-        name: 'Mylavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mylavaram_(Assembly_constituency)',
+        name: "Mylavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mylavaram_(Assembly_constituency)",
       },
       {
-        name: 'Nandigama',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nandigama_(Assembly_constituency)',
+        name: "Nandigama",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nandigama_(Assembly_constituency)",
       },
       {
-        name: 'Jaggayyapeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Jaggayyapeta_(Assembly_constituency)',
+        name: "Jaggayyapeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Jaggayyapeta_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Gannavaram'],
+    partialVidhanSabha: ["Gannavaram"],
   },
   {
     district: {
-      name: 'Krishna',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Krishna_district',
+      name: "Krishna",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Krishna_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Avanigadda_(Assembly_constituency)" class="mw-redirect" title="Avanigadda (Assembly constituency)">Avanigadda</a>',
@@ -547,44 +547,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Avanigadda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Avanigadda_(Assembly_constituency)',
+        name: "Avanigadda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Avanigadda_(Assembly_constituency)",
       },
       {
-        name: 'Gannavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency',
+        name: "Gannavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency",
       },
       {
-        name: 'Gudivada',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gudivada_(Assembly_constituency)',
+        name: "Gudivada",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gudivada_(Assembly_constituency)",
       },
       {
-        name: 'Pedana',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pedana_(Assembly_constituency)',
+        name: "Pedana",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pedana_(Assembly_constituency)",
       },
       {
-        name: 'Machilipatnam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Machilipatnam',
+        name: "Machilipatnam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Machilipatnam",
       },
       {
-        name: 'Machilipatnam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Machilipatnam_(Assembly_constituency)',
+        name: "Machilipatnam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Machilipatnam_(Assembly_constituency)",
       },
       {
-        name: 'Pamarru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pamarru_(Assembly_constituency)',
+        name: "Pamarru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pamarru_(Assembly_constituency)",
       },
       {
-        name: 'Penamaluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Penamaluru_(Assembly_constituency)',
+        name: "Penamaluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Penamaluru_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Gannavaram'],
+    partialVidhanSabha: ["Gannavaram"],
   },
   {
     district: {
-      name: 'Guntur',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Guntur',
+      name: "Guntur",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Tadikonda_(Assembly_constituency)" class="mw-redirect" title="Tadikonda (Assembly constituency)">Tadikonda</a>',
@@ -597,40 +597,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Tadikonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tadikonda_(Assembly_constituency)',
+        name: "Tadikonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tadikonda_(Assembly_constituency)",
       },
       {
-        name: 'Mangalagiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mangalagiri_(Assembly_constituency)',
+        name: "Mangalagiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mangalagiri_(Assembly_constituency)",
       },
       {
-        name: 'Ponnuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Ponnuru_(Assembly_constituency)',
+        name: "Ponnuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Ponnuru_(Assembly_constituency)",
       },
       {
-        name: 'Tenali',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tenali_(Assembly_constituency)',
+        name: "Tenali",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tenali_(Assembly_constituency)",
       },
       {
-        name: 'Prathipadu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Prathipadu_(SC)_(Assembly_constituency)',
+        name: "Prathipadu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Prathipadu_(SC)_(Assembly_constituency)",
       },
       {
-        name: 'Gunturu Padamara',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Guntur_West_(Assembly_constituency)',
+        name: "Gunturu Padamara",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_West_(Assembly_constituency)",
       },
       {
-        name: 'Gunturu Thurpu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Guntur_East_(Assembly_constituency)',
+        name: "Gunturu Thurpu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_East_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Palnadu',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Palnadu_district',
+      name: "Palnadu",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Palnadu_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Narasaraopet_(Assembly_constituency)" class="mw-redirect" title="Narasaraopet (Assembly constituency)">Narasaraopet</a>',
@@ -643,40 +643,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Narasaraopet',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Narasaraopet_(Assembly_constituency)',
+        name: "Narasaraopet",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Narasaraopet_(Assembly_constituency)",
       },
       {
-        name: 'Chilakaluripet',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chilakaluripet_(Assembly_constituency)',
+        name: "Chilakaluripet",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chilakaluripet_(Assembly_constituency)",
       },
       {
-        name: 'Sattenapalle',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Sattenapalle_(Assembly_constituency)',
+        name: "Sattenapalle",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Sattenapalle_(Assembly_constituency)",
       },
       {
-        name: 'Gurazala',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gurazala_(Assembly_constituency)',
+        name: "Gurazala",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gurazala_(Assembly_constituency)",
       },
       {
-        name: 'Pedakurapadu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pedakurapadu_(Assembly_constituency)',
+        name: "Pedakurapadu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pedakurapadu_(Assembly_constituency)",
       },
       {
-        name: 'Macherla',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Macherla_(Assembly_constituency)',
+        name: "Macherla",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Macherla_(Assembly_constituency)",
       },
       {
-        name: 'Vinukonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vinukonda_(Assembly_constituency)',
+        name: "Vinukonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vinukonda_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Bapatla',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Bapatla_district',
+      name: "Bapatla",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Bapatla_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Vemuru_(Assembly_constituency)" class="mw-redirect" title="Vemuru (Assembly constituency)">Vemuru</a>',
@@ -688,36 +688,36 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Vemuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Vemuru_(Assembly_constituency)',
+        name: "Vemuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Vemuru_(Assembly_constituency)",
       },
       {
-        name: 'Repalle',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Repalle_(Assembly_constituency)',
+        name: "Repalle",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Repalle_(Assembly_constituency)",
       },
       {
-        name: 'Bapatla',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Bapatla_(Assembly_constituency)',
+        name: "Bapatla",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Bapatla_(Assembly_constituency)",
       },
       {
-        name: 'Parchuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Parchur_(Assembly_constituency)',
+        name: "Parchuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Parchur_(Assembly_constituency)",
       },
       {
-        name: 'Addanki',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Addanki_(Assembly_constituency)',
+        name: "Addanki",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Addanki_(Assembly_constituency)",
       },
       {
-        name: 'Chirala',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chirala_(Assembly_constituency)',
+        name: "Chirala",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chirala_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Prakasam',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Prakasam_district',
+      name: "Prakasam",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Prakasam_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Santhanuthalapadu_(Assembly_constituency)" class="mw-redirect" title="Santhanuthalapadu (Assembly constituency)">Santhanuthalapadu</a>',
@@ -731,44 +731,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Santhanuthalapadu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Santhanuthalapadu_(Assembly_constituency)',
+        name: "Santhanuthalapadu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Santhanuthalapadu_(Assembly_constituency)",
       },
       {
-        name: 'Yerragondapalem',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Yerragondapalem_(Assembly_constituency)',
+        name: "Yerragondapalem",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Yerragondapalem_(Assembly_constituency)",
       },
       {
-        name: 'Darsi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Darsi_(Assembly_constituency)',
+        name: "Darsi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Darsi_(Assembly_constituency)",
       },
       {
-        name: 'Ongole',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Ongole_(Assembly_constituency)',
+        name: "Ongole",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Ongole_(Assembly_constituency)",
       },
       {
-        name: 'Kondapi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kondapi_(Assembly_constituency)',
+        name: "Kondapi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kondapi_(Assembly_constituency)",
       },
       {
-        name: 'Markapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Markapuram_(Assembly_constituency)',
+        name: "Markapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Markapuram_(Assembly_constituency)",
       },
       {
-        name: 'Giddaluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Giddalur_(Assembly_constituency)',
+        name: "Giddaluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Giddalur_(Assembly_constituency)",
       },
       {
-        name: 'Kanigiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kanigiri_(Assembly_constituency)',
+        name: "Kanigiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kanigiri_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Sri Potti Sriramulu Nellore',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Sri_Potti_Sriramulu_Nellore_district',
+      name: "Sri Potti Sriramulu Nellore",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Potti_Sriramulu_Nellore_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Sarvepalli_(Assembly_constituency)" class="mw-redirect" title="Sarvepalli (Assembly constituency)">Sarvepalli</a>',
@@ -782,44 +782,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Sarvepalli',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Sarvepalli_(Assembly_constituency)',
+        name: "Sarvepalli",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Sarvepalli_(Assembly_constituency)",
       },
       {
-        name: 'Kandukuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kandukur_(Assembly_constituency)',
+        name: "Kandukuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kandukur_(Assembly_constituency)",
       },
       {
-        name: 'Kavali',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kavali_(Assembly_constituency)',
+        name: "Kavali",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kavali_(Assembly_constituency)",
       },
       {
-        name: 'Atmakuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Atmakur_(Assembly_constituency)',
+        name: "Atmakuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Atmakur_(Assembly_constituency)",
       },
       {
-        name: 'Kovuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kovur_(Assembly_constituency)',
+        name: "Kovuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kovur_(Assembly_constituency)",
       },
       {
-        name: 'Nellore Nagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nellore_City_(Assembly_constituency)',
+        name: "Nellore Nagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nellore_City_(Assembly_constituency)",
       },
       {
-        name: 'Nellore Graminam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nellore_Rural_(Assembly_constituency)',
+        name: "Nellore Graminam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nellore_Rural_(Assembly_constituency)",
       },
       {
-        name: 'Udayagiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Udayagiri_(Assembly_constituency)',
+        name: "Udayagiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Udayagiri_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Kurnool',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Kurnool_district',
+      name: "Kurnool",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Kurnool_(Assembly_constituency)" class="mw-redirect" title="Kurnool (Assembly constituency)">Kurnool</a>',
@@ -833,44 +833,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Kurnool',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kurnool_(Assembly_constituency)',
+        name: "Kurnool",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_(Assembly_constituency)",
       },
       {
-        name: 'Kodumuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kodumur_(Assembly_constituency)',
+        name: "Kodumuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kodumur_(Assembly_constituency)",
       },
       {
-        name: 'Yemmiganur',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Yemmiganur_(Assembly_constituency)',
+        name: "Yemmiganur",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Yemmiganur_(Assembly_constituency)",
       },
       {
-        name: 'Mantralayam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mantralayam_(Assembly_constituency)',
+        name: "Mantralayam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mantralayam_(Assembly_constituency)",
       },
       {
-        name: 'Adoni',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Adoni_(Assembly_constituency)',
+        name: "Adoni",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Adoni_(Assembly_constituency)",
       },
       {
-        name: 'Aluru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Alur_(Assembly_constituency)',
+        name: "Aluru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Alur_(Assembly_constituency)",
       },
       {
-        name: 'Pattikonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pattikonda_(Assembly_constituency)',
+        name: "Pattikonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pattikonda_(Assembly_constituency)",
       },
       {
-        name: 'Panyam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Panyam_(Assembly_constituency)',
+        name: "Panyam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Panyam_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Panyam'],
+    partialVidhanSabha: ["Panyam"],
   },
   {
     district: {
-      name: 'Nandyala',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Nandyal_district',
+      name: "Nandyala",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Allagadda_(Assembly_constituency)" class="mw-redirect" title="Allagadda (Assembly constituency)">Allagadda</a>',
@@ -883,40 +883,40 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Allagadda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Allagadda_(Assembly_constituency)',
+        name: "Allagadda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Allagadda_(Assembly_constituency)",
       },
       {
-        name: 'Srisailam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Srisailam_(Assembly_constituency)',
+        name: "Srisailam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Srisailam_(Assembly_constituency)",
       },
       {
-        name: 'Nandikotkuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nandikotkur_(Assembly_constituency)',
+        name: "Nandikotkuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nandikotkur_(Assembly_constituency)",
       },
       {
-        name: 'Nandyala',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nandyal_(Assembly_constituency)',
+        name: "Nandyala",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_(Assembly_constituency)",
       },
       {
-        name: 'Banaganapalle',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Banaganapalle_(Assembly_constituency)',
+        name: "Banaganapalle",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Banaganapalle_(Assembly_constituency)",
       },
       {
-        name: 'Dhonachalam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Dhone_(Assembly_constituency)',
+        name: "Dhonachalam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Dhone_(Assembly_constituency)",
       },
       {
-        name: 'Panyam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Panyam_(Assembly_constituency)',
+        name: "Panyam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Panyam_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Panyam'],
+    partialVidhanSabha: ["Panyam"],
   },
   {
     district: {
-      name: 'Kadapa',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Kadapa_district',
+      name: "Kadapa",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Badvel_Assembly_constituency" title="Badvel Assembly constituency">Badvelu</a>',
@@ -930,44 +930,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Badvelu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Badvel_Assembly_constituency',
+        name: "Badvelu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Badvel_Assembly_constituency",
       },
       {
-        name: 'Jammalamadugu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Jammalamadugu_Assembly_constituency',
+        name: "Jammalamadugu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Jammalamadugu_Assembly_constituency",
       },
       {
-        name: 'Kadapa',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kadapa_Assembly_constituency',
+        name: "Kadapa",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_Assembly_constituency",
       },
       {
-        name: 'Kamalapuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kamalapuram_Assembly_constituency',
+        name: "Kamalapuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kamalapuram_Assembly_constituency",
       },
       {
-        name: 'Mydukuru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Mydukur_Assembly_constituency',
+        name: "Mydukuru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Mydukur_Assembly_constituency",
       },
       {
-        name: 'Proddaturu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Proddatur_Assembly_constituency',
+        name: "Proddaturu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Proddatur_Assembly_constituency",
       },
       {
-        name: 'Pulivendula',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pulivendla_(Assembly_constituency)',
+        name: "Pulivendula",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pulivendla_(Assembly_constituency)",
       },
       {
-        name: 'Rajampeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajampet_Assembly_constituency',
+        name: "Rajampeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajampet_Assembly_constituency",
       },
     ],
-    partialVidhanSabha: ['Rajampeta'],
+    partialVidhanSabha: ["Rajampeta"],
   },
   {
     district: {
-      name: 'Anantapuram',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Anantapuram_district',
+      name: "Anantapuram",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Anantapuram_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Raptadu_(Assembly_constituency)" class="mw-redirect" title="Raptadu (Assembly constituency)">Raptadu</a>',
@@ -981,44 +981,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Raptadu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Raptadu_(Assembly_constituency)',
+        name: "Raptadu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Raptadu_(Assembly_constituency)",
       },
       {
-        name: 'Rayadurgam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rayadurg_(Assembly_constituency)',
+        name: "Rayadurgam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rayadurg_(Assembly_constituency)",
       },
       {
-        name: 'Uravakonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Uravakonda_(Assembly_constituency)',
+        name: "Uravakonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Uravakonda_(Assembly_constituency)",
       },
       {
-        name: 'Guntakallu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Guntakal_(Assembly_constituency)',
+        name: "Guntakallu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Guntakal_(Assembly_constituency)",
       },
       {
-        name: 'Tadpatri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tadpatri_(Assembly_constituency)',
+        name: "Tadpatri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tadpatri_(Assembly_constituency)",
       },
       {
-        name: 'Singanamala',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Singanamala_(Assembly_constituency)',
+        name: "Singanamala",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Singanamala_(Assembly_constituency)",
       },
       {
-        name: 'Anantapuram Nagaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Anantapur_Urban_(Assembly_constituency)',
+        name: "Anantapuram Nagaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Anantapur_Urban_(Assembly_constituency)",
       },
       {
-        name: 'Kalyandurgam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kalyandurg_(Assembly_constituency)',
+        name: "Kalyandurgam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kalyandurg_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Sri Sathya Sai',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district',
+      name: "Sri Sathya Sai",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Madakasira_(Assembly_constituency)" class="mw-redirect" title="Madakasira (Assembly constituency)">Madakasira</a>',
@@ -1030,36 +1030,36 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Madakasira',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Madakasira_(Assembly_constituency)',
+        name: "Madakasira",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Madakasira_(Assembly_constituency)",
       },
       {
-        name: 'Hindupuram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Hindupur_(Assembly_constituency)',
+        name: "Hindupuram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Hindupur_(Assembly_constituency)",
       },
       {
-        name: 'Penukonda',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Penukonda_(Assembly_constituency)',
+        name: "Penukonda",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Penukonda_(Assembly_constituency)",
       },
       {
-        name: 'Puttaparthi',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Puttaparthi_(Assembly_constituency)',
+        name: "Puttaparthi",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Puttaparthi_(Assembly_constituency)",
       },
       {
-        name: 'Dharmavaram',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Dharmavaram_(Assembly_constituency)',
+        name: "Dharmavaram",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Dharmavaram_(Assembly_constituency)",
       },
       {
-        name: 'Kadiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kadiri_(Assembly_constituency)',
+        name: "Kadiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kadiri_(Assembly_constituency)",
       },
     ],
     partialVidhanSabha: [],
   },
   {
     district: {
-      name: 'Annamayya',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Annamayya_district',
+      name: "Annamayya",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Annamayya_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Rajampet_(Assembly_constituency)" class="mw-redirect" title="Rajampet (Assembly constituency)">Rajampeta</a>',
@@ -1071,36 +1071,36 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Rajampeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rajampet_(Assembly_constituency)',
+        name: "Rajampeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rajampet_(Assembly_constituency)",
       },
       {
-        name: 'Koduru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kodur_(Assembly_constituency)',
+        name: "Koduru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kodur_(Assembly_constituency)",
       },
       {
-        name: 'Rayachoti',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Rayachoti_(Assembly_constituency)',
+        name: "Rayachoti",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Rayachoti_(Assembly_constituency)",
       },
       {
-        name: 'Thamballapalle',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Thamballapalle_(Assembly_constituency)',
+        name: "Thamballapalle",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Thamballapalle_(Assembly_constituency)",
       },
       {
-        name: 'Pileru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Pileru_(Assembly_constituency)',
+        name: "Pileru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Pileru_(Assembly_constituency)",
       },
       {
-        name: 'Madanapalle',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Madanapalle_(Assembly_constituency)',
+        name: "Madanapalle",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Madanapalle_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Rajampeta'],
+    partialVidhanSabha: ["Rajampeta"],
   },
   {
     district: {
-      name: 'Tirupati',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Tirupati_district',
+      name: "Tirupati",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Tirupati_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Tirupati_(Assembly_constituency)" class="mw-redirect" title="Tirupati (Assembly constituency)">Tirupati</a>',
@@ -1114,44 +1114,44 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Tirupati',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Tirupati_(Assembly_constituency)',
+        name: "Tirupati",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Tirupati_(Assembly_constituency)",
       },
       {
-        name: 'Sullurpeta',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Sullurpeta_(SC)(Assembly_constituency)',
+        name: "Sullurpeta",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Sullurpeta_(SC)(Assembly_constituency)",
       },
       {
-        name: 'Venkatagiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Venkatagiri_(Assembly_constituency)',
+        name: "Venkatagiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Venkatagiri_(Assembly_constituency)",
       },
       {
-        name: 'Guduru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gudur_(SC)_(Assembly_constituency)',
+        name: "Guduru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gudur_(SC)_(Assembly_constituency)",
       },
       {
-        name: 'Srikalahasti',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Srikalahasti_(Assembly_constituency)',
+        name: "Srikalahasti",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Srikalahasti_(Assembly_constituency)",
       },
       {
-        name: 'Satyavedu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Satyavedu_(SC)(Assembly_constituency)',
+        name: "Satyavedu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Satyavedu_(SC)(Assembly_constituency)",
       },
       {
-        name: 'Chandragiri',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chandragiri_(Assembly_constituency)',
+        name: "Chandragiri",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chandragiri_(Assembly_constituency)",
       },
       {
-        name: 'Nagari',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nagari_(Assembly_constituency)',
+        name: "Nagari",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nagari_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Nagari'],
+    partialVidhanSabha: ["Nagari"],
   },
   {
     district: {
-      name: 'Chittoor',
-      wikipedia_page: 'https://en.wikipedia.org/wiki/Chittoor_district',
+      name: "Chittoor",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Chittoor_district",
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Chittoor_Assembly_constituency" title="Chittoor Assembly constituency">Chittoor</a>',
@@ -1164,34 +1164,34 @@ export const districtVCs = [
     ],
     vidhansabhaConstituenciesChildren: [
       {
-        name: 'Chittoor',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Chittoor_Assembly_constituency',
+        name: "Chittoor",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Chittoor_Assembly_constituency",
       },
       {
-        name: 'Gangadhara Nellore',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Gangadhara_Nellore_(SC)_(Assembly_constituency)',
+        name: "Gangadhara Nellore",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Gangadhara_Nellore_(SC)_(Assembly_constituency)",
       },
       {
-        name: 'Kuppam',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Kuppam_(Assembly_constituency)',
+        name: "Kuppam",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Kuppam_(Assembly_constituency)",
       },
       {
-        name: 'Nagari',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Nagari_(Assembly_constituency)',
+        name: "Nagari",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Nagari_(Assembly_constituency)",
       },
       {
-        name: 'Palamaneru',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Palamaner_(Assembly_constituency)',
+        name: "Palamaneru",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Palamaner_(Assembly_constituency)",
       },
       {
-        name: 'Puthalapattu',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Puthalapattu_Assembly_constituency',
+        name: "Puthalapattu",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Puthalapattu_Assembly_constituency",
       },
       {
-        name: 'Punganur',
-        wikipedia_page: 'https://en.wikipedia.org/wiki/Punganur_(Assembly_constituency)',
+        name: "Punganur",
+        wikipedia_page: "https://en.wikipedia.org/wiki/Punganur_(Assembly_constituency)",
       },
     ],
-    partialVidhanSabha: ['Nagari'],
+    partialVidhanSabha: ["Nagari"],
   },
 ];
