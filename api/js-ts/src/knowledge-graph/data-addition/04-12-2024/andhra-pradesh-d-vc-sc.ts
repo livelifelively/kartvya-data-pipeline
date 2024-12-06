@@ -1,8 +1,8 @@
 import { districtVCs } from "../../../admin-regions/districts/andhra-pradesh/ap.districts-vcs";
 import { map } from "lodash";
 
-let allDistricts: any = {
-  "https://en.wikipedia.org/wiki/Srikakulam_district": {
+let allDistricts: any = [
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_district",
     wikidata_qid: "Q15395",
     vidhansabha_constituencies: [
@@ -87,9 +87,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Srikakulam",
   },
-
-  "https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district",
     wikidata_qid: "Q110714856",
     vidhansabha_constituencies: [
@@ -134,9 +134,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Parvathipuram Manyam",
   },
-
-  "https://en.wikipedia.org/wiki/Vizianagaram_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Vizianagaram_district",
     wikidata_qid: "Q15392",
     vidhansabha_constituencies: [
@@ -211,9 +211,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Vizianagaram",
   },
-
-  "https://en.wikipedia.org/wiki/Visakhapatnam_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_district",
     wikidata_qid: "Q15394",
     vidhansabha_constituencies: [
@@ -281,9 +281,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Visakhapatnam",
   },
-
-  "https://en.wikipedia.org/wiki/Anakapalli_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Anakapalli_district",
     wikidata_qid: "Q110714857",
     vidhansabha_constituencies: [
@@ -358,9 +358,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Anakapalli",
   },
-
-  "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district",
     wikidata_qid: "Q110714850",
     vidhansabha_constituencies: [
@@ -395,9 +395,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Alluri Sitharama Raju",
   },
-
-  "https://en.wikipedia.org/wiki/Kakinada_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_district",
     wikidata_qid: "Q110714860",
     vidhansabha_constituencies: [
@@ -472,9 +472,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Kakinada",
   },
-
-  "https://en.wikipedia.org/wiki/East_Godavari_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/East_Godavari_district",
     wikidata_qid: "Q15338",
     vidhansabha_constituencies: [
@@ -549,9 +549,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "East Godavari",
   },
-
-  "https://en.wikipedia.org/wiki/Konaseema_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Konaseema_district",
     wikidata_qid: "Q110714859",
     vidhansabha_constituencies: [
@@ -626,9 +626,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Konaseema",
   },
-
-  "https://en.wikipedia.org/wiki/Eluru_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Eluru_district",
     wikidata_qid: "Q110714851",
     vidhansabha_constituencies: [
@@ -703,9 +703,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Eluru",
   },
-
-  "https://en.wikipedia.org/wiki/West_Godavari_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/West_Godavari_district",
     wikidata_qid: "Q15404",
     vidhansabha_constituencies: [
@@ -780,9 +780,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "West Godavari",
   },
-
-  "https://en.wikipedia.org/wiki/NTR_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/NTR_district",
     wikidata_qid: "Q110876763",
     vidhansabha_constituencies: [
@@ -867,9 +867,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "NTR",
   },
-
-  "https://en.wikipedia.org/wiki/Krishna_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Krishna_district",
     wikidata_qid: "Q15382",
     vidhansabha_constituencies: [
@@ -944,9 +944,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Krishna",
   },
-
-  "https://en.wikipedia.org/wiki/Guntur_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_district",
     wikidata_qid: "Q15341",
     vidhansabha_constituencies: [
@@ -1021,9 +1021,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Guntur",
   },
-
-  "https://en.wikipedia.org/wiki/Palnadu_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Palnadu_district",
     wikidata_qid: "Q110714862",
     vidhansabha_constituencies: [
@@ -1091,9 +1091,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Palnadu",
   },
-
-  "https://en.wikipedia.org/wiki/Bapatla_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Bapatla_district",
     wikidata_qid: "Q110876712",
     vidhansabha_constituencies: [
@@ -1158,9 +1158,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Bapatla",
   },
-
-  "https://en.wikipedia.org/wiki/Prakasam_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Prakasam_district",
     wikidata_qid: "Q15390",
     vidhansabha_constituencies: [
@@ -1245,9 +1245,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Prakasam",
   },
-
-  "https://en.wikipedia.org/wiki/Nellore_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Nellore_district",
     wikidata_qid: "Q15383",
     vidhansabha_constituencies: [
@@ -1332,9 +1332,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Nellore",
   },
-
-  "https://en.wikipedia.org/wiki/Kurnool_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_district",
     wikidata_qid: "Q15381",
     vidhansabha_constituencies: [
@@ -1409,9 +1409,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Kurnool",
   },
-
-  "https://en.wikipedia.org/wiki/Nandyal_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_district",
     wikidata_qid: "Q110714861",
     vidhansabha_constituencies: [
@@ -1486,9 +1486,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Nandyal",
   },
-
-  "https://en.wikipedia.org/wiki/Kadapa_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_district",
     wikidata_qid: "Q15342",
     vidhansabha_constituencies: [
@@ -1573,9 +1573,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Kadapa",
   },
-
-  "https://en.wikipedia.org/wiki/Anantapur_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Anantapur_district",
     wikidata_qid: "Q15212",
     vidhansabha_constituencies: [
@@ -1660,9 +1660,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Anantapur",
   },
-
-  "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district",
     wikidata_qid: "Q110714863",
     vidhansabha_constituencies: [
@@ -1727,9 +1727,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Sri Sathya Sai",
   },
-
-  "https://en.wikipedia.org/wiki/Annamayya_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Annamayya_district",
     wikidata_qid: "Q110714854",
     vidhansabha_constituencies: [
@@ -1794,9 +1794,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Annamayya",
   },
-
-  "https://en.wikipedia.org/wiki/Tirupati_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Tirupati_district",
     wikidata_qid: "Q110714853",
     vidhansabha_constituencies: [
@@ -1871,9 +1871,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Tirupati",
   },
-
-  "https://en.wikipedia.org/wiki/Chittoor_district": {
+  {
     wikipedia_page: "https://en.wikipedia.org/wiki/Chittoor_district",
     wikidata_qid: "Q15213",
     vidhansabha_constituencies: [
@@ -1948,8 +1948,9 @@ let allDistricts: any = {
         },
       },
     ],
+    name: "Chittoor",
   },
-};
+];
 
 (async () => {
   // let districts = districtVCs.map((dvs) => {
