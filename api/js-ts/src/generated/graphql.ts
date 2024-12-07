@@ -90,7 +90,7 @@ export type AccountFilter = {
 };
 
 export enum AccountHasFilter {
-  AccessToken = "accessToken",
+  AccessToken = "access_token",
   ExpiresAt = "expires_at",
   IdToken = "id_token",
   Provider = "provider",
@@ -377,6 +377,12 @@ export type Add_Geo_Input = {
   india_state_union_territory_divisions?: InputMaybe<_Country_Region_Ref>;
   india_vidhansabha_constituency_divisions?: InputMaybe<_Country_Region_Ref>;
   india_zonal_council_divisions?: InputMaybe<_Country_Region_Ref>;
+  indian_districts_boundaries?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  indian_loksabha_constituencies_boundaries?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  indian_states_union_territories_boundaries?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  indian_vidhansabha_constituencies_boundaries?: InputMaybe<
+    Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>
+  >;
   location?: InputMaybe<PointRef>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
@@ -753,6 +759,71 @@ export type Add_Government_System_Types_Religion_Payload_Government_System_Types
   order?: InputMaybe<_Government_System_Types_Religion_Order>;
 };
 
+export type Add_Indian_Administrative_DivisionsInput = {
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type Add_Indian_Administrative_DivisionsPayload = {
+  __typename?: "Add_Indian_Administrative_DivisionsPayload";
+  _Indian_Administrative_Divisions?: Maybe<Array<Maybe<_Indian_Administrative_Divisions>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+};
+
+export type Add_Indian_District_Input = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id: Scalars["String"]["input"];
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type Add_Indian_District_Payload = {
+  __typename?: "Add_Indian_District_Payload";
+  _Indian_District_?: Maybe<Array<Maybe<_Indian_District_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_District_Payload_Indian_District_Args = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type Add_Indian_District_Region_Input = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_District_Ref>;
+};
+
+export type Add_Indian_District_Region_Payload = {
+  __typename?: "Add_Indian_District_Region_Payload";
+  _Indian_District_Region_?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_District_Region_Payload_Indian_District_Region_Args = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
 export type Add_Indian_Government_Official_Role_Input = {
   description?: InputMaybe<Scalars["String"]["input"]>;
   loksabha_members?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Member_Ref>>>;
@@ -776,6 +847,7 @@ export type Add_Indian_Government_Official_Role_Payload_Indian_Government_Offici
 };
 
 export type Add_Indian_Government_System_Input = {
+  administrative_divisions?: InputMaybe<_Indian_Administrative_DivisionsRef>;
   cabinet_ministers?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Cabinet_Minister_Ref>>>;
   country?: InputMaybe<_Country_Government_Ref>;
   loksabha?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
@@ -819,6 +891,23 @@ export type Add_Indian_Legal_Document_Payload_Indian_Legal_Document_Args = {
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Legal_Document_Order>;
+};
+
+export type Add_Indian_Legislative_DivisionsInput = {
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type Add_Indian_Legislative_DivisionsPayload = {
+  __typename?: "Add_Indian_Legislative_DivisionsPayload";
+  _Indian_Legislative_Divisions?: Maybe<Array<Maybe<_Indian_Legislative_Divisions>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
 };
 
 export type Add_Indian_Loksabha_Constituency_Election_Candidate_Input = {
@@ -924,14 +1013,20 @@ export type Add_Indian_Loksabha_Constituency_Election_Result_Payload_Indian_Loks
   };
 
 export type Add_Indian_Loksabha_Constituency_Input = {
-  disestablished_on?: InputMaybe<_Date_Time_Ref>;
+  constituency_number: Scalars["String"]["input"];
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   elections?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Election_Ref>>>;
-  established_on?: InputMaybe<_Date_Time_Ref>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
   loksabha_members?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Member_Ref>>>;
   loksabhas?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  name_id: Scalars["String"]["input"];
   names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
 };
 
 export type Add_Indian_Loksabha_Constituency_Payload = {
@@ -945,6 +1040,28 @@ export type Add_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constituenc
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type Add_Indian_Loksabha_Constituency_Region_Input = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Loksabha_Constituency_Ref>;
+};
+
+export type Add_Indian_Loksabha_Constituency_Region_Payload = {
+  __typename?: "Add_Indian_Loksabha_Constituency_Region_Payload";
+  _Indian_Loksabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
 };
 
 export type Add_Indian_Loksabha_Election_Input = {
@@ -1238,6 +1355,53 @@ export type Add_Indian_Prime_Minister_Payload_Indian_Prime_Minister_Args = {
   order?: InputMaybe<_Indian_Prime_Minister_Order>;
 };
 
+export type Add_Indian_State_Union_Territory_Input = {
+  category?: InputMaybe<_Indian_State_Or_Union_Territory_Category_>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id: Scalars["String"]["input"];
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type Add_Indian_State_Union_Territory_Payload = {
+  __typename?: "Add_Indian_State_Union_Territory_Payload";
+  _Indian_State_Union_Territory_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type Add_Indian_State_Union_Territory_Region_Input = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_State_Union_Territory_Ref>;
+};
+
+export type Add_Indian_State_Union_Territory_Region_Payload = {
+  __typename?: "Add_Indian_State_Union_Territory_Region_Payload";
+  _Indian_State_Union_Territory_Region_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
 export type Add_Indian_Union_Council_Of_Ministers_Input = {
   council_member_ministers?: InputMaybe<_Indian_Union_Government_Cabinet_Minister_Ref>;
   government?: InputMaybe<_Indian_Union_Government_Ref>;
@@ -1457,6 +1621,55 @@ export type Add_Indian_Union_Government_Payload_Indian_Union_Government_Args = {
   order?: InputMaybe<_Indian_Union_Government_Order>;
 };
 
+export type Add_Indian_Vidhansabha_Constituency_Input = {
+  constituency_number: Scalars["String"]["input"];
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id: Scalars["String"]["input"];
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Payload = {
+  __typename?: "Add_Indian_Vidhansabha_Constituency_Payload";
+  _Indian_Vidhansabha_Constituency_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Region_Input = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Vidhansabha_Constituency_Ref>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Region_Payload = {
+  __typename?: "Add_Indian_Vidhansabha_Constituency_Region_Payload";
+  _Indian_Vidhansabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
+};
+
 export type Add_Language_Input = {
   name_en: Scalars["String"]["input"];
   names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
@@ -1530,14 +1743,17 @@ export type Add_Name_Input = {
     Array<InputMaybe<_Government_System_Types_Partisan_Systems_Ref>>
   >;
   government_system_type_religion?: InputMaybe<Array<InputMaybe<_Government_System_Types_Religion_Ref>>>;
+  indian_district?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   indian_government_official_role?: InputMaybe<Array<InputMaybe<_Indian_Government_Official_Role_Ref>>>;
   indian_legal_document?: InputMaybe<Array<InputMaybe<_Indian_Legal_Document_Ref>>>;
   indian_loksabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
   indian_loksabha_election?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Election_Ref>>>;
   indian_political_party?: InputMaybe<Array<InputMaybe<_Indian_Political_Party_Ref>>>;
+  indian_state_union_territory?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
   indian_union_government_department?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Department_Ref>>>;
   indian_union_government_ministry?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Ministry_Ref>>>;
   indian_union_parliament_loksabha?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  indian_vidhansabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
   language?: InputMaybe<Array<InputMaybe<_Language_Ref>>>;
   language_script?: InputMaybe<Array<InputMaybe<_Language_Script_Ref>>>;
   name: Scalars["String"]["input"];
@@ -2062,6 +2278,47 @@ export type Delete_Government_System_Types_Religion_Payload_Government_System_Ty
   order?: InputMaybe<_Government_System_Types_Religion_Order>;
 };
 
+export type Delete_Indian_Administrative_DivisionsPayload = {
+  __typename?: "Delete_Indian_Administrative_DivisionsPayload";
+  _Indian_Administrative_Divisions?: Maybe<Array<Maybe<_Indian_Administrative_Divisions>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+};
+
+export type Delete_Indian_District_Payload = {
+  __typename?: "Delete_Indian_District_Payload";
+  _Indian_District_?: Maybe<Array<Maybe<_Indian_District_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_District_Payload_Indian_District_Args = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type Delete_Indian_District_Region_Payload = {
+  __typename?: "Delete_Indian_District_Region_Payload";
+  _Indian_District_Region_?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_District_Region_Payload_Indian_District_Region_Args = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
 export type Delete_Indian_Government_Official_Role_Payload = {
   __typename?: "Delete_Indian_Government_Official_Role_Payload";
   _Indian_Government_Official_Role_?: Maybe<Array<Maybe<_Indian_Government_Official_Role_>>>;
@@ -2102,6 +2359,19 @@ export type Delete_Indian_Legal_Document_Payload_Indian_Legal_Document_Args = {
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Legal_Document_Order>;
+};
+
+export type Delete_Indian_Legislative_DivisionsPayload = {
+  __typename?: "Delete_Indian_Legislative_DivisionsPayload";
+  _Indian_Legislative_Divisions?: Maybe<Array<Maybe<_Indian_Legislative_Divisions>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
 };
 
 export type Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload = {
@@ -2179,6 +2449,20 @@ export type Delete_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constitu
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type Delete_Indian_Loksabha_Constituency_Region_Payload = {
+  __typename?: "Delete_Indian_Loksabha_Constituency_Region_Payload";
+  _Indian_Loksabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
 };
 
 export type Delete_Indian_Loksabha_Election_Payload = {
@@ -2352,6 +2636,34 @@ export type Delete_Indian_Prime_Minister_Payload_Indian_Prime_Minister_Args = {
   order?: InputMaybe<_Indian_Prime_Minister_Order>;
 };
 
+export type Delete_Indian_State_Union_Territory_Payload = {
+  __typename?: "Delete_Indian_State_Union_Territory_Payload";
+  _Indian_State_Union_Territory_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type Delete_Indian_State_Union_Territory_Region_Payload = {
+  __typename?: "Delete_Indian_State_Union_Territory_Region_Payload";
+  _Indian_State_Union_Territory_Region_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
 export type Delete_Indian_Union_Council_Of_Ministers_Payload = {
   __typename?: "Delete_Indian_Union_Council_Of_Ministers_Payload";
   _Indian_Union_Council_Of_Ministers_?: Maybe<Array<Maybe<_Indian_Union_Council_Of_Ministers_>>>;
@@ -2465,6 +2777,34 @@ export type Delete_Indian_Union_Government_Payload_Indian_Union_Government_Args 
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Union_Government_Order>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_Payload = {
+  __typename?: "Delete_Indian_Vidhansabha_Constituency_Payload";
+  _Indian_Vidhansabha_Constituency_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_Region_Payload = {
+  __typename?: "Delete_Indian_Vidhansabha_Constituency_Region_Payload";
+  _Indian_Vidhansabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
+  msg?: Maybe<Scalars["String"]["output"]>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
 };
 
 export type Delete_Language_Payload = {
@@ -2715,15 +3055,20 @@ export type Mutation = {
   add_Government_System_Types_Oligarchy_?: Maybe<Add_Government_System_Types_Oligarchy_Payload>;
   add_Government_System_Types_Partisan_Systems_?: Maybe<Add_Government_System_Types_Partisan_Systems_Payload>;
   add_Government_System_Types_Religion_?: Maybe<Add_Government_System_Types_Religion_Payload>;
+  add_Indian_Administrative_Divisions?: Maybe<Add_Indian_Administrative_DivisionsPayload>;
+  add_Indian_District_?: Maybe<Add_Indian_District_Payload>;
+  add_Indian_District_Region_?: Maybe<Add_Indian_District_Region_Payload>;
   add_Indian_Government_Official_Role_?: Maybe<Add_Indian_Government_Official_Role_Payload>;
   add_Indian_Government_System_?: Maybe<Add_Indian_Government_System_Payload>;
   add_Indian_Legal_Document_?: Maybe<Add_Indian_Legal_Document_Payload>;
+  add_Indian_Legislative_Divisions?: Maybe<Add_Indian_Legislative_DivisionsPayload>;
   add_Indian_Loksabha_?: Maybe<Add_Indian_Loksabha_Payload>;
   add_Indian_Loksabha_Constituency_?: Maybe<Add_Indian_Loksabha_Constituency_Payload>;
   add_Indian_Loksabha_Constituency_Election_?: Maybe<Add_Indian_Loksabha_Constituency_Election_Payload>;
   add_Indian_Loksabha_Constituency_Election_Candidate_?: Maybe<Add_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   add_Indian_Loksabha_Constituency_Election_Result_?: Maybe<Add_Indian_Loksabha_Constituency_Election_Result_Payload>;
   add_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<Add_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload>;
+  add_Indian_Loksabha_Constituency_Region_?: Maybe<Add_Indian_Loksabha_Constituency_Region_Payload>;
   add_Indian_Loksabha_Election_?: Maybe<Add_Indian_Loksabha_Election_Payload>;
   add_Indian_Loksabha_Election_Phase_?: Maybe<Add_Indian_Loksabha_Election_Phase_Payload>;
   add_Indian_Loksabha_Election_Result_?: Maybe<Add_Indian_Loksabha_Election_Result_Payload>;
@@ -2735,6 +3080,8 @@ export type Mutation = {
   add_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_?: Maybe<Add_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload>;
   add_Indian_Politician_?: Maybe<Add_Indian_Politician_Payload>;
   add_Indian_Prime_Minister_?: Maybe<Add_Indian_Prime_Minister_Payload>;
+  add_Indian_State_Union_Territory_?: Maybe<Add_Indian_State_Union_Territory_Payload>;
+  add_Indian_State_Union_Territory_Region_?: Maybe<Add_Indian_State_Union_Territory_Region_Payload>;
   add_Indian_Union_Council_Of_Ministers_?: Maybe<Add_Indian_Union_Council_Of_Ministers_Payload>;
   add_Indian_Union_Government_?: Maybe<Add_Indian_Union_Government_Payload>;
   add_Indian_Union_Government_Cabinet_?: Maybe<Add_Indian_Union_Government_Cabinet_Payload>;
@@ -2743,6 +3090,8 @@ export type Mutation = {
   add_Indian_Union_Government_Minister_Of_State_?: Maybe<Add_Indian_Union_Government_Minister_Of_State_Payload>;
   add_Indian_Union_Government_Minister_Of_State_Independent_Charge_?: Maybe<Add_Indian_Union_Government_Minister_Of_State_Independent_Charge_Payload>;
   add_Indian_Union_Government_Ministry_?: Maybe<Add_Indian_Union_Government_Ministry_Payload>;
+  add_Indian_Vidhansabha_Constituency_?: Maybe<Add_Indian_Vidhansabha_Constituency_Payload>;
+  add_Indian_Vidhansabha_Constituency_Region_?: Maybe<Add_Indian_Vidhansabha_Constituency_Region_Payload>;
   add_Language_?: Maybe<Add_Language_Payload>;
   add_Language_Script_?: Maybe<Add_Language_Script_Payload>;
   add_Name_?: Maybe<Add_Name_Payload>;
@@ -2774,15 +3123,20 @@ export type Mutation = {
   delete_Government_System_Types_Oligarchy_?: Maybe<Delete_Government_System_Types_Oligarchy_Payload>;
   delete_Government_System_Types_Partisan_Systems_?: Maybe<Delete_Government_System_Types_Partisan_Systems_Payload>;
   delete_Government_System_Types_Religion_?: Maybe<Delete_Government_System_Types_Religion_Payload>;
+  delete_Indian_Administrative_Divisions?: Maybe<Delete_Indian_Administrative_DivisionsPayload>;
+  delete_Indian_District_?: Maybe<Delete_Indian_District_Payload>;
+  delete_Indian_District_Region_?: Maybe<Delete_Indian_District_Region_Payload>;
   delete_Indian_Government_Official_Role_?: Maybe<Delete_Indian_Government_Official_Role_Payload>;
   delete_Indian_Government_System_?: Maybe<Delete_Indian_Government_System_Payload>;
   delete_Indian_Legal_Document_?: Maybe<Delete_Indian_Legal_Document_Payload>;
+  delete_Indian_Legislative_Divisions?: Maybe<Delete_Indian_Legislative_DivisionsPayload>;
   delete_Indian_Loksabha_?: Maybe<Delete_Indian_Loksabha_Payload>;
   delete_Indian_Loksabha_Constituency_?: Maybe<Delete_Indian_Loksabha_Constituency_Payload>;
   delete_Indian_Loksabha_Constituency_Election_?: Maybe<Delete_Indian_Loksabha_Constituency_Election_Payload>;
   delete_Indian_Loksabha_Constituency_Election_Candidate_?: Maybe<Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   delete_Indian_Loksabha_Constituency_Election_Result_?: Maybe<Delete_Indian_Loksabha_Constituency_Election_Result_Payload>;
   delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload>;
+  delete_Indian_Loksabha_Constituency_Region_?: Maybe<Delete_Indian_Loksabha_Constituency_Region_Payload>;
   delete_Indian_Loksabha_Election_?: Maybe<Delete_Indian_Loksabha_Election_Payload>;
   delete_Indian_Loksabha_Election_Phase_?: Maybe<Delete_Indian_Loksabha_Election_Phase_Payload>;
   delete_Indian_Loksabha_Election_Result_?: Maybe<Delete_Indian_Loksabha_Election_Result_Payload>;
@@ -2794,6 +3148,8 @@ export type Mutation = {
   delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_?: Maybe<Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload>;
   delete_Indian_Politician_?: Maybe<Delete_Indian_Politician_Payload>;
   delete_Indian_Prime_Minister_?: Maybe<Delete_Indian_Prime_Minister_Payload>;
+  delete_Indian_State_Union_Territory_?: Maybe<Delete_Indian_State_Union_Territory_Payload>;
+  delete_Indian_State_Union_Territory_Region_?: Maybe<Delete_Indian_State_Union_Territory_Region_Payload>;
   delete_Indian_Union_Council_Of_Ministers_?: Maybe<Delete_Indian_Union_Council_Of_Ministers_Payload>;
   delete_Indian_Union_Government_?: Maybe<Delete_Indian_Union_Government_Payload>;
   delete_Indian_Union_Government_Cabinet_?: Maybe<Delete_Indian_Union_Government_Cabinet_Payload>;
@@ -2802,6 +3158,8 @@ export type Mutation = {
   delete_Indian_Union_Government_Minister_Of_State_?: Maybe<Delete_Indian_Union_Government_Minister_Of_State_Payload>;
   delete_Indian_Union_Government_Minister_Of_State_Independent_Charge_?: Maybe<Delete_Indian_Union_Government_Minister_Of_State_Independent_Charge_Payload>;
   delete_Indian_Union_Government_Ministry_?: Maybe<Delete_Indian_Union_Government_Ministry_Payload>;
+  delete_Indian_Vidhansabha_Constituency_?: Maybe<Delete_Indian_Vidhansabha_Constituency_Payload>;
+  delete_Indian_Vidhansabha_Constituency_Region_?: Maybe<Delete_Indian_Vidhansabha_Constituency_Region_Payload>;
   delete_Language_?: Maybe<Delete_Language_Payload>;
   delete_Language_Script_?: Maybe<Delete_Language_Script_Payload>;
   delete_Name_?: Maybe<Delete_Name_Payload>;
@@ -2833,15 +3191,20 @@ export type Mutation = {
   update_Government_System_Types_Oligarchy_?: Maybe<Update_Government_System_Types_Oligarchy_Payload>;
   update_Government_System_Types_Partisan_Systems_?: Maybe<Update_Government_System_Types_Partisan_Systems_Payload>;
   update_Government_System_Types_Religion_?: Maybe<Update_Government_System_Types_Religion_Payload>;
+  update_Indian_Administrative_Divisions?: Maybe<Update_Indian_Administrative_DivisionsPayload>;
+  update_Indian_District_?: Maybe<Update_Indian_District_Payload>;
+  update_Indian_District_Region_?: Maybe<Update_Indian_District_Region_Payload>;
   update_Indian_Government_Official_Role_?: Maybe<Update_Indian_Government_Official_Role_Payload>;
   update_Indian_Government_System_?: Maybe<Update_Indian_Government_System_Payload>;
   update_Indian_Legal_Document_?: Maybe<Update_Indian_Legal_Document_Payload>;
+  update_Indian_Legislative_Divisions?: Maybe<Update_Indian_Legislative_DivisionsPayload>;
   update_Indian_Loksabha_?: Maybe<Update_Indian_Loksabha_Payload>;
   update_Indian_Loksabha_Constituency_?: Maybe<Update_Indian_Loksabha_Constituency_Payload>;
   update_Indian_Loksabha_Constituency_Election_?: Maybe<Update_Indian_Loksabha_Constituency_Election_Payload>;
   update_Indian_Loksabha_Constituency_Election_Candidate_?: Maybe<Update_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   update_Indian_Loksabha_Constituency_Election_Result_?: Maybe<Update_Indian_Loksabha_Constituency_Election_Result_Payload>;
   update_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<Update_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload>;
+  update_Indian_Loksabha_Constituency_Region_?: Maybe<Update_Indian_Loksabha_Constituency_Region_Payload>;
   update_Indian_Loksabha_Election_?: Maybe<Update_Indian_Loksabha_Election_Payload>;
   update_Indian_Loksabha_Election_Phase_?: Maybe<Update_Indian_Loksabha_Election_Phase_Payload>;
   update_Indian_Loksabha_Election_Result_?: Maybe<Update_Indian_Loksabha_Election_Result_Payload>;
@@ -2853,6 +3216,8 @@ export type Mutation = {
   update_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_?: Maybe<Update_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload>;
   update_Indian_Politician_?: Maybe<Update_Indian_Politician_Payload>;
   update_Indian_Prime_Minister_?: Maybe<Update_Indian_Prime_Minister_Payload>;
+  update_Indian_State_Union_Territory_?: Maybe<Update_Indian_State_Union_Territory_Payload>;
+  update_Indian_State_Union_Territory_Region_?: Maybe<Update_Indian_State_Union_Territory_Region_Payload>;
   update_Indian_Union_Council_Of_Ministers_?: Maybe<Update_Indian_Union_Council_Of_Ministers_Payload>;
   update_Indian_Union_Government_?: Maybe<Update_Indian_Union_Government_Payload>;
   update_Indian_Union_Government_Cabinet_?: Maybe<Update_Indian_Union_Government_Cabinet_Payload>;
@@ -2861,6 +3226,8 @@ export type Mutation = {
   update_Indian_Union_Government_Minister_Of_State_?: Maybe<Update_Indian_Union_Government_Minister_Of_State_Payload>;
   update_Indian_Union_Government_Minister_Of_State_Independent_Charge_?: Maybe<Update_Indian_Union_Government_Minister_Of_State_Independent_Charge_Payload>;
   update_Indian_Union_Government_Ministry_?: Maybe<Update_Indian_Union_Government_Ministry_Payload>;
+  update_Indian_Vidhansabha_Constituency_?: Maybe<Update_Indian_Vidhansabha_Constituency_Payload>;
+  update_Indian_Vidhansabha_Constituency_Region_?: Maybe<Update_Indian_Vidhansabha_Constituency_Region_Payload>;
   update_Language_?: Maybe<Update_Language_Payload>;
   update_Language_Script_?: Maybe<Update_Language_Script_Payload>;
   update_Name_?: Maybe<Update_Name_Payload>;
@@ -2979,6 +3346,19 @@ export type MutationAdd_Government_System_Types_Religion_Args = {
   upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
 };
 
+export type MutationAdd_Indian_Administrative_DivisionsArgs = {
+  input: Array<Add_Indian_Administrative_DivisionsInput>;
+};
+
+export type MutationAdd_Indian_District_Args = {
+  input: Array<Add_Indian_District_Input>;
+  upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
+};
+
+export type MutationAdd_Indian_District_Region_Args = {
+  input: Array<Add_Indian_District_Region_Input>;
+};
+
 export type MutationAdd_Indian_Government_Official_Role_Args = {
   input: Array<Add_Indian_Government_Official_Role_Input>;
   upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
@@ -2993,12 +3373,17 @@ export type MutationAdd_Indian_Legal_Document_Args = {
   upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
 };
 
+export type MutationAdd_Indian_Legislative_DivisionsArgs = {
+  input: Array<Add_Indian_Legislative_DivisionsInput>;
+};
+
 export type MutationAdd_Indian_Loksabha_Args = {
   input: Array<Add_Indian_Loksabha_Input>;
 };
 
 export type MutationAdd_Indian_Loksabha_Constituency_Args = {
   input: Array<Add_Indian_Loksabha_Constituency_Input>;
+  upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
 };
 
 export type MutationAdd_Indian_Loksabha_Constituency_Election_Args = {
@@ -3015,6 +3400,10 @@ export type MutationAdd_Indian_Loksabha_Constituency_Election_Result_Args = {
 
 export type MutationAdd_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args = {
   input: Array<Add_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Input>;
+};
+
+export type MutationAdd_Indian_Loksabha_Constituency_Region_Args = {
+  input: Array<Add_Indian_Loksabha_Constituency_Region_Input>;
 };
 
 export type MutationAdd_Indian_Loksabha_Election_Args = {
@@ -3063,6 +3452,15 @@ export type MutationAdd_Indian_Prime_Minister_Args = {
   input: Array<Add_Indian_Prime_Minister_Input>;
 };
 
+export type MutationAdd_Indian_State_Union_Territory_Args = {
+  input: Array<Add_Indian_State_Union_Territory_Input>;
+  upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
+};
+
+export type MutationAdd_Indian_State_Union_Territory_Region_Args = {
+  input: Array<Add_Indian_State_Union_Territory_Region_Input>;
+};
+
 export type MutationAdd_Indian_Union_Council_Of_Ministers_Args = {
   input: Array<Add_Indian_Union_Council_Of_Ministers_Input>;
 };
@@ -3095,6 +3493,15 @@ export type MutationAdd_Indian_Union_Government_Minister_Of_State_Independent_Ch
 export type MutationAdd_Indian_Union_Government_Ministry_Args = {
   input: Array<Add_Indian_Union_Government_Ministry_Input>;
   upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
+};
+
+export type MutationAdd_Indian_Vidhansabha_Constituency_Args = {
+  input: Array<Add_Indian_Vidhansabha_Constituency_Input>;
+  upsert?: InputMaybe<Scalars["Boolean"]["input"]>;
+};
+
+export type MutationAdd_Indian_Vidhansabha_Constituency_Region_Args = {
+  input: Array<Add_Indian_Vidhansabha_Constituency_Region_Input>;
 };
 
 export type MutationAdd_Language_Args = {
@@ -3227,6 +3634,18 @@ export type MutationDelete_Government_System_Types_Religion_Args = {
   filter: _Government_System_Types_Religion_Filter;
 };
 
+export type MutationDelete_Indian_Administrative_DivisionsArgs = {
+  filter: _Indian_Administrative_DivisionsFilter;
+};
+
+export type MutationDelete_Indian_District_Args = {
+  filter: _Indian_District_Filter;
+};
+
+export type MutationDelete_Indian_District_Region_Args = {
+  filter: _Indian_District_Region_Filter;
+};
+
 export type MutationDelete_Indian_Government_Official_Role_Args = {
   filter: _Indian_Government_Official_Role_Filter;
 };
@@ -3237,6 +3656,10 @@ export type MutationDelete_Indian_Government_System_Args = {
 
 export type MutationDelete_Indian_Legal_Document_Args = {
   filter: _Indian_Legal_Document_Filter;
+};
+
+export type MutationDelete_Indian_Legislative_DivisionsArgs = {
+  filter: _Indian_Legislative_DivisionsFilter;
 };
 
 export type MutationDelete_Indian_Loksabha_Args = {
@@ -3261,6 +3684,10 @@ export type MutationDelete_Indian_Loksabha_Constituency_Election_Result_Args = {
 
 export type MutationDelete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args = {
   filter: _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Filter;
+};
+
+export type MutationDelete_Indian_Loksabha_Constituency_Region_Args = {
+  filter: _Indian_Loksabha_Constituency_Region_Filter;
 };
 
 export type MutationDelete_Indian_Loksabha_Election_Args = {
@@ -3307,6 +3734,14 @@ export type MutationDelete_Indian_Prime_Minister_Args = {
   filter: _Indian_Prime_Minister_Filter;
 };
 
+export type MutationDelete_Indian_State_Union_Territory_Args = {
+  filter: _Indian_State_Union_Territory_Filter;
+};
+
+export type MutationDelete_Indian_State_Union_Territory_Region_Args = {
+  filter: _Indian_State_Union_Territory_Region_Filter;
+};
+
 export type MutationDelete_Indian_Union_Council_Of_Ministers_Args = {
   filter: _Indian_Union_Council_Of_Ministers_Filter;
 };
@@ -3337,6 +3772,14 @@ export type MutationDelete_Indian_Union_Government_Minister_Of_State_Independent
 
 export type MutationDelete_Indian_Union_Government_Ministry_Args = {
   filter: _Indian_Union_Government_Ministry_Filter;
+};
+
+export type MutationDelete_Indian_Vidhansabha_Constituency_Args = {
+  filter: _Indian_Vidhansabha_Constituency_Filter;
+};
+
+export type MutationDelete_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter: _Indian_Vidhansabha_Constituency_Region_Filter;
 };
 
 export type MutationDelete_Language_Args = {
@@ -3463,6 +3906,18 @@ export type MutationUpdate_Government_System_Types_Religion_Args = {
   input: Update_Government_System_Types_Religion_Input;
 };
 
+export type MutationUpdate_Indian_Administrative_DivisionsArgs = {
+  input: Update_Indian_Administrative_DivisionsInput;
+};
+
+export type MutationUpdate_Indian_District_Args = {
+  input: Update_Indian_District_Input;
+};
+
+export type MutationUpdate_Indian_District_Region_Args = {
+  input: Update_Indian_District_Region_Input;
+};
+
 export type MutationUpdate_Indian_Government_Official_Role_Args = {
   input: Update_Indian_Government_Official_Role_Input;
 };
@@ -3473,6 +3928,10 @@ export type MutationUpdate_Indian_Government_System_Args = {
 
 export type MutationUpdate_Indian_Legal_Document_Args = {
   input: Update_Indian_Legal_Document_Input;
+};
+
+export type MutationUpdate_Indian_Legislative_DivisionsArgs = {
+  input: Update_Indian_Legislative_DivisionsInput;
 };
 
 export type MutationUpdate_Indian_Loksabha_Args = {
@@ -3497,6 +3956,10 @@ export type MutationUpdate_Indian_Loksabha_Constituency_Election_Result_Args = {
 
 export type MutationUpdate_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args = {
   input: Update_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Input;
+};
+
+export type MutationUpdate_Indian_Loksabha_Constituency_Region_Args = {
+  input: Update_Indian_Loksabha_Constituency_Region_Input;
 };
 
 export type MutationUpdate_Indian_Loksabha_Election_Args = {
@@ -3543,6 +4006,14 @@ export type MutationUpdate_Indian_Prime_Minister_Args = {
   input: Update_Indian_Prime_Minister_Input;
 };
 
+export type MutationUpdate_Indian_State_Union_Territory_Args = {
+  input: Update_Indian_State_Union_Territory_Input;
+};
+
+export type MutationUpdate_Indian_State_Union_Territory_Region_Args = {
+  input: Update_Indian_State_Union_Territory_Region_Input;
+};
+
 export type MutationUpdate_Indian_Union_Council_Of_Ministers_Args = {
   input: Update_Indian_Union_Council_Of_Ministers_Input;
 };
@@ -3573,6 +4044,14 @@ export type MutationUpdate_Indian_Union_Government_Minister_Of_State_Independent
 
 export type MutationUpdate_Indian_Union_Government_Ministry_Args = {
   input: Update_Indian_Union_Government_Ministry_Input;
+};
+
+export type MutationUpdate_Indian_Vidhansabha_Constituency_Args = {
+  input: Update_Indian_Vidhansabha_Constituency_Input;
+};
+
+export type MutationUpdate_Indian_Vidhansabha_Constituency_Region_Args = {
+  input: Update_Indian_Vidhansabha_Constituency_Region_Input;
 };
 
 export type MutationUpdate_Language_Args = {
@@ -3678,15 +4157,20 @@ export type Query = {
   aggregate_Government_System_Types_Oligarchy_?: Maybe<_Government_System_Types_Oligarchy_AggregateResult>;
   aggregate_Government_System_Types_Partisan_Systems_?: Maybe<_Government_System_Types_Partisan_Systems_AggregateResult>;
   aggregate_Government_System_Types_Religion_?: Maybe<_Government_System_Types_Religion_AggregateResult>;
+  aggregate_Indian_Administrative_Divisions?: Maybe<_Indian_Administrative_DivisionsAggregateResult>;
+  aggregate_Indian_District_?: Maybe<_Indian_District_AggregateResult>;
+  aggregate_Indian_District_Region_?: Maybe<_Indian_District_Region_AggregateResult>;
   aggregate_Indian_Government_Official_Role_?: Maybe<_Indian_Government_Official_Role_AggregateResult>;
   aggregate_Indian_Government_System_?: Maybe<_Indian_Government_System_AggregateResult>;
   aggregate_Indian_Legal_Document_?: Maybe<_Indian_Legal_Document_AggregateResult>;
+  aggregate_Indian_Legislative_Divisions?: Maybe<_Indian_Legislative_DivisionsAggregateResult>;
   aggregate_Indian_Loksabha_?: Maybe<_Indian_Loksabha_AggregateResult>;
   aggregate_Indian_Loksabha_Constituency_?: Maybe<_Indian_Loksabha_Constituency_AggregateResult>;
   aggregate_Indian_Loksabha_Constituency_Election_?: Maybe<_Indian_Loksabha_Constituency_Election_AggregateResult>;
   aggregate_Indian_Loksabha_Constituency_Election_Candidate_?: Maybe<_Indian_Loksabha_Constituency_Election_Candidate_AggregateResult>;
   aggregate_Indian_Loksabha_Constituency_Election_Result_?: Maybe<_Indian_Loksabha_Constituency_Election_Result_AggregateResult>;
   aggregate_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_AggregateResult>;
+  aggregate_Indian_Loksabha_Constituency_Region_?: Maybe<_Indian_Loksabha_Constituency_Region_AggregateResult>;
   aggregate_Indian_Loksabha_Election_?: Maybe<_Indian_Loksabha_Election_AggregateResult>;
   aggregate_Indian_Loksabha_Election_Phase_?: Maybe<_Indian_Loksabha_Election_Phase_AggregateResult>;
   aggregate_Indian_Loksabha_Election_Result_?: Maybe<_Indian_Loksabha_Election_Result_AggregateResult>;
@@ -3698,6 +4182,8 @@ export type Query = {
   aggregate_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_?: Maybe<_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_AggregateResult>;
   aggregate_Indian_Politician_?: Maybe<_Indian_Politician_AggregateResult>;
   aggregate_Indian_Prime_Minister_?: Maybe<_Indian_Prime_Minister_AggregateResult>;
+  aggregate_Indian_State_Union_Territory_?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
+  aggregate_Indian_State_Union_Territory_Region_?: Maybe<_Indian_State_Union_Territory_Region_AggregateResult>;
   aggregate_Indian_Union_Council_Of_Ministers_?: Maybe<_Indian_Union_Council_Of_Ministers_AggregateResult>;
   aggregate_Indian_Union_Government_?: Maybe<_Indian_Union_Government_AggregateResult>;
   aggregate_Indian_Union_Government_Cabinet_?: Maybe<_Indian_Union_Government_Cabinet_AggregateResult>;
@@ -3706,6 +4192,8 @@ export type Query = {
   aggregate_Indian_Union_Government_Minister_Of_State_?: Maybe<_Indian_Union_Government_Minister_Of_State_AggregateResult>;
   aggregate_Indian_Union_Government_Minister_Of_State_Independent_Charge_?: Maybe<_Indian_Union_Government_Minister_Of_State_Independent_Charge_AggregateResult>;
   aggregate_Indian_Union_Government_Ministry_?: Maybe<_Indian_Union_Government_Ministry_AggregateResult>;
+  aggregate_Indian_Vidhansabha_Constituency_?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
+  aggregate_Indian_Vidhansabha_Constituency_Region_?: Maybe<_Indian_Vidhansabha_Constituency_Region_AggregateResult>;
   aggregate_Language_?: Maybe<_Language_AggregateResult>;
   aggregate_Language_Script_?: Maybe<_Language_Script_AggregateResult>;
   aggregate_Name_?: Maybe<_Name_AggregateResult>;
@@ -3737,15 +4225,20 @@ export type Query = {
   get_Government_System_Types_Oligarchy_?: Maybe<_Government_System_Types_Oligarchy_>;
   get_Government_System_Types_Partisan_Systems_?: Maybe<_Government_System_Types_Partisan_Systems_>;
   get_Government_System_Types_Religion_?: Maybe<_Government_System_Types_Religion_>;
+  get_Indian_Administrative_Divisions?: Maybe<_Indian_Administrative_Divisions>;
+  get_Indian_District_?: Maybe<_Indian_District_>;
+  get_Indian_District_Region_?: Maybe<_Indian_District_Region_>;
   get_Indian_Government_Official_Role_?: Maybe<_Indian_Government_Official_Role_>;
   get_Indian_Government_System_?: Maybe<_Indian_Government_System_>;
   get_Indian_Legal_Document_?: Maybe<_Indian_Legal_Document_>;
+  get_Indian_Legislative_Divisions?: Maybe<_Indian_Legislative_Divisions>;
   get_Indian_Loksabha_?: Maybe<_Indian_Loksabha_>;
   get_Indian_Loksabha_Constituency_?: Maybe<_Indian_Loksabha_Constituency_>;
   get_Indian_Loksabha_Constituency_Election_?: Maybe<_Indian_Loksabha_Constituency_Election_>;
   get_Indian_Loksabha_Constituency_Election_Candidate_?: Maybe<_Indian_Loksabha_Constituency_Election_Candidate_>;
   get_Indian_Loksabha_Constituency_Election_Result_?: Maybe<_Indian_Loksabha_Constituency_Election_Result_>;
   get_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_>;
+  get_Indian_Loksabha_Constituency_Region_?: Maybe<_Indian_Loksabha_Constituency_Region_>;
   get_Indian_Loksabha_Election_?: Maybe<_Indian_Loksabha_Election_>;
   get_Indian_Loksabha_Election_Phase_?: Maybe<_Indian_Loksabha_Election_Phase_>;
   get_Indian_Loksabha_Election_Result_?: Maybe<_Indian_Loksabha_Election_Result_>;
@@ -3757,6 +4250,8 @@ export type Query = {
   get_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_?: Maybe<_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_>;
   get_Indian_Politician_?: Maybe<_Indian_Politician_>;
   get_Indian_Prime_Minister_?: Maybe<_Indian_Prime_Minister_>;
+  get_Indian_State_Union_Territory_?: Maybe<_Indian_State_Union_Territory_>;
+  get_Indian_State_Union_Territory_Region_?: Maybe<_Indian_State_Union_Territory_Region_>;
   get_Indian_Union_Council_Of_Ministers_?: Maybe<_Indian_Union_Council_Of_Ministers_>;
   get_Indian_Union_Government_?: Maybe<_Indian_Union_Government_>;
   get_Indian_Union_Government_Cabinet_?: Maybe<_Indian_Union_Government_Cabinet_>;
@@ -3765,6 +4260,8 @@ export type Query = {
   get_Indian_Union_Government_Minister_Of_State_?: Maybe<_Indian_Union_Government_Minister_Of_State_>;
   get_Indian_Union_Government_Minister_Of_State_Independent_Charge_?: Maybe<_Indian_Union_Government_Minister_Of_State_Independent_Charge_>;
   get_Indian_Union_Government_Ministry_?: Maybe<_Indian_Union_Government_Ministry_>;
+  get_Indian_Vidhansabha_Constituency_?: Maybe<_Indian_Vidhansabha_Constituency_>;
+  get_Indian_Vidhansabha_Constituency_Region_?: Maybe<_Indian_Vidhansabha_Constituency_Region_>;
   get_Language_?: Maybe<_Language_>;
   get_Language_Script_?: Maybe<_Language_Script_>;
   get_Name_?: Maybe<_Name_>;
@@ -3802,9 +4299,13 @@ export type Query = {
   query_Government_System_Types_Oligarchy_?: Maybe<Array<Maybe<_Government_System_Types_Oligarchy_>>>;
   query_Government_System_Types_Partisan_Systems_?: Maybe<Array<Maybe<_Government_System_Types_Partisan_Systems_>>>;
   query_Government_System_Types_Religion_?: Maybe<Array<Maybe<_Government_System_Types_Religion_>>>;
+  query_Indian_Administrative_Divisions?: Maybe<Array<Maybe<_Indian_Administrative_Divisions>>>;
+  query_Indian_District_?: Maybe<Array<Maybe<_Indian_District_>>>;
+  query_Indian_District_Region_?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
   query_Indian_Government_Official_Role_?: Maybe<Array<Maybe<_Indian_Government_Official_Role_>>>;
   query_Indian_Government_System_?: Maybe<Array<Maybe<_Indian_Government_System_>>>;
   query_Indian_Legal_Document_?: Maybe<Array<Maybe<_Indian_Legal_Document_>>>;
+  query_Indian_Legislative_Divisions?: Maybe<Array<Maybe<_Indian_Legislative_Divisions>>>;
   query_Indian_Loksabha_?: Maybe<Array<Maybe<_Indian_Loksabha_>>>;
   query_Indian_Loksabha_Constituency_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_>>>;
   query_Indian_Loksabha_Constituency_Election_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Election_>>>;
@@ -3817,6 +4318,7 @@ export type Query = {
   query_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: Maybe<
     Array<Maybe<_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_>>
   >;
+  query_Indian_Loksabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
   query_Indian_Loksabha_Election_?: Maybe<Array<Maybe<_Indian_Loksabha_Election_>>>;
   query_Indian_Loksabha_Election_Phase_?: Maybe<Array<Maybe<_Indian_Loksabha_Election_Phase_>>>;
   query_Indian_Loksabha_Election_Result_?: Maybe<Array<Maybe<_Indian_Loksabha_Election_Result_>>>;
@@ -3830,6 +4332,8 @@ export type Query = {
   >;
   query_Indian_Politician_?: Maybe<Array<Maybe<_Indian_Politician_>>>;
   query_Indian_Prime_Minister_?: Maybe<Array<Maybe<_Indian_Prime_Minister_>>>;
+  query_Indian_State_Union_Territory_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  query_Indian_State_Union_Territory_Region_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
   query_Indian_Union_Council_Of_Ministers_?: Maybe<Array<Maybe<_Indian_Union_Council_Of_Ministers_>>>;
   query_Indian_Union_Government_?: Maybe<Array<Maybe<_Indian_Union_Government_>>>;
   query_Indian_Union_Government_Cabinet_?: Maybe<Array<Maybe<_Indian_Union_Government_Cabinet_>>>;
@@ -3840,6 +4344,8 @@ export type Query = {
     Array<Maybe<_Indian_Union_Government_Minister_Of_State_Independent_Charge_>>
   >;
   query_Indian_Union_Government_Ministry_?: Maybe<Array<Maybe<_Indian_Union_Government_Ministry_>>>;
+  query_Indian_Vidhansabha_Constituency_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  query_Indian_Vidhansabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
   query_Language_?: Maybe<Array<Maybe<_Language_>>>;
   query_Language_Script_?: Maybe<Array<Maybe<_Language_Script_>>>;
   query_Name_?: Maybe<Array<Maybe<_Name_>>>;
@@ -3944,6 +4450,18 @@ export type QueryAggregate_Government_System_Types_Religion_Args = {
   filter?: InputMaybe<_Government_System_Types_Religion_Filter>;
 };
 
+export type QueryAggregate_Indian_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+};
+
+export type QueryAggregate_Indian_District_Args = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
+export type QueryAggregate_Indian_District_Region_Args = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+};
+
 export type QueryAggregate_Indian_Government_Official_Role_Args = {
   filter?: InputMaybe<_Indian_Government_Official_Role_Filter>;
 };
@@ -3954,6 +4472,10 @@ export type QueryAggregate_Indian_Government_System_Args = {
 
 export type QueryAggregate_Indian_Legal_Document_Args = {
   filter?: InputMaybe<_Indian_Legal_Document_Filter>;
+};
+
+export type QueryAggregate_Indian_Legislative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
 };
 
 export type QueryAggregate_Indian_Loksabha_Args = {
@@ -3978,6 +4500,10 @@ export type QueryAggregate_Indian_Loksabha_Constituency_Election_Result_Args = {
 
 export type QueryAggregate_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args = {
   filter?: InputMaybe<_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Filter>;
+};
+
+export type QueryAggregate_Indian_Loksabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
 };
 
 export type QueryAggregate_Indian_Loksabha_Election_Args = {
@@ -4024,6 +4550,14 @@ export type QueryAggregate_Indian_Prime_Minister_Args = {
   filter?: InputMaybe<_Indian_Prime_Minister_Filter>;
 };
 
+export type QueryAggregate_Indian_State_Union_Territory_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type QueryAggregate_Indian_State_Union_Territory_Region_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+};
+
 export type QueryAggregate_Indian_Union_Council_Of_Ministers_Args = {
   filter?: InputMaybe<_Indian_Union_Council_Of_Ministers_Filter>;
 };
@@ -4054,6 +4588,14 @@ export type QueryAggregate_Indian_Union_Government_Minister_Of_State_Independent
 
 export type QueryAggregate_Indian_Union_Government_Ministry_Args = {
   filter?: InputMaybe<_Indian_Union_Government_Ministry_Filter>;
+};
+
+export type QueryAggregate_Indian_Vidhansabha_Constituency_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
+export type QueryAggregate_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
 };
 
 export type QueryAggregate_Language_Args = {
@@ -4196,6 +4738,19 @@ export type QueryGet_Government_System_Types_Religion_Args = {
   name_id?: InputMaybe<Scalars["String"]["input"]>;
 };
 
+export type QueryGet_Indian_Administrative_DivisionsArgs = {
+  id: Scalars["ID"]["input"];
+};
+
+export type QueryGet_Indian_District_Args = {
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+};
+
+export type QueryGet_Indian_District_Region_Args = {
+  id: Scalars["ID"]["input"];
+};
+
 export type QueryGet_Indian_Government_Official_Role_Args = {
   id?: InputMaybe<Scalars["ID"]["input"]>;
   name_id?: InputMaybe<Scalars["String"]["input"]>;
@@ -4210,12 +4765,18 @@ export type QueryGet_Indian_Legal_Document_Args = {
   name_id?: InputMaybe<Scalars["String"]["input"]>;
 };
 
+export type QueryGet_Indian_Legislative_DivisionsArgs = {
+  id: Scalars["ID"]["input"];
+};
+
 export type QueryGet_Indian_Loksabha_Args = {
   id: Scalars["ID"]["input"];
 };
 
 export type QueryGet_Indian_Loksabha_Constituency_Args = {
-  id: Scalars["ID"]["input"];
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
 };
 
 export type QueryGet_Indian_Loksabha_Constituency_Election_Args = {
@@ -4231,6 +4792,10 @@ export type QueryGet_Indian_Loksabha_Constituency_Election_Result_Args = {
 };
 
 export type QueryGet_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args = {
+  id: Scalars["ID"]["input"];
+};
+
+export type QueryGet_Indian_Loksabha_Constituency_Region_Args = {
   id: Scalars["ID"]["input"];
 };
 
@@ -4280,6 +4845,15 @@ export type QueryGet_Indian_Prime_Minister_Args = {
   id: Scalars["ID"]["input"];
 };
 
+export type QueryGet_Indian_State_Union_Territory_Args = {
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+};
+
+export type QueryGet_Indian_State_Union_Territory_Region_Args = {
+  id: Scalars["ID"]["input"];
+};
+
 export type QueryGet_Indian_Union_Council_Of_Ministers_Args = {
   id: Scalars["ID"]["input"];
 };
@@ -4312,6 +4886,16 @@ export type QueryGet_Indian_Union_Government_Minister_Of_State_Independent_Charg
 export type QueryGet_Indian_Union_Government_Ministry_Args = {
   id?: InputMaybe<Scalars["ID"]["input"]>;
   name_id?: InputMaybe<Scalars["String"]["input"]>;
+};
+
+export type QueryGet_Indian_Vidhansabha_Constituency_Args = {
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+};
+
+export type QueryGet_Indian_Vidhansabha_Constituency_Region_Args = {
+  id: Scalars["ID"]["input"];
 };
 
 export type QueryGet_Language_Args = {
@@ -4513,6 +5097,26 @@ export type QueryQuery_Government_System_Types_Religion_Args = {
   order?: InputMaybe<_Government_System_Types_Religion_Order>;
 };
 
+export type QueryQuery_Indian_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+};
+
+export type QueryQuery_Indian_District_Args = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type QueryQuery_Indian_District_Region_Args = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
 export type QueryQuery_Indian_Government_Official_Role_Args = {
   filter?: InputMaybe<_Indian_Government_Official_Role_Filter>;
   first?: InputMaybe<Scalars["Int"]["input"]>;
@@ -4532,6 +5136,12 @@ export type QueryQuery_Indian_Legal_Document_Args = {
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Legal_Document_Order>;
+};
+
+export type QueryQuery_Indian_Legislative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
 };
 
 export type QueryQuery_Indian_Loksabha_Args = {
@@ -4574,6 +5184,13 @@ export type QueryQuery_Indian_Loksabha_Constituency_Election_Result_Candidate_Da
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Order>;
+};
+
+export type QueryQuery_Indian_Loksabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
 };
 
 export type QueryQuery_Indian_Loksabha_Election_Args = {
@@ -4653,6 +5270,20 @@ export type QueryQuery_Indian_Prime_Minister_Args = {
   order?: InputMaybe<_Indian_Prime_Minister_Order>;
 };
 
+export type QueryQuery_Indian_State_Union_Territory_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type QueryQuery_Indian_State_Union_Territory_Region_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
 export type QueryQuery_Indian_Union_Council_Of_Ministers_Args = {
   filter?: InputMaybe<_Indian_Union_Council_Of_Ministers_Filter>;
   first?: InputMaybe<Scalars["Int"]["input"]>;
@@ -4707,6 +5338,20 @@ export type QueryQuery_Indian_Union_Government_Ministry_Args = {
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Union_Government_Ministry_Order>;
+};
+
+export type QueryQuery_Indian_Vidhansabha_Constituency_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type QueryQuery_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
 };
 
 export type QueryQuery_Language_Args = {
@@ -5328,6 +5973,62 @@ export type Update_Government_System_Types_Religion_Payload_Government_System_Ty
   order?: InputMaybe<_Government_System_Types_Religion_Order>;
 };
 
+export type Update_Indian_Administrative_DivisionsInput = {
+  filter: _Indian_Administrative_DivisionsFilter;
+  remove?: InputMaybe<_Indian_Administrative_DivisionsPatch>;
+  set?: InputMaybe<_Indian_Administrative_DivisionsPatch>;
+};
+
+export type Update_Indian_Administrative_DivisionsPayload = {
+  __typename?: "Update_Indian_Administrative_DivisionsPayload";
+  _Indian_Administrative_Divisions?: Maybe<Array<Maybe<_Indian_Administrative_Divisions>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+};
+
+export type Update_Indian_District_Input = {
+  filter: _Indian_District_Filter;
+  remove?: InputMaybe<_Indian_District_Patch>;
+  set?: InputMaybe<_Indian_District_Patch>;
+};
+
+export type Update_Indian_District_Payload = {
+  __typename?: "Update_Indian_District_Payload";
+  _Indian_District_?: Maybe<Array<Maybe<_Indian_District_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_District_Payload_Indian_District_Args = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type Update_Indian_District_Region_Input = {
+  filter: _Indian_District_Region_Filter;
+  remove?: InputMaybe<_Indian_District_Region_Patch>;
+  set?: InputMaybe<_Indian_District_Region_Patch>;
+};
+
+export type Update_Indian_District_Region_Payload = {
+  __typename?: "Update_Indian_District_Region_Payload";
+  _Indian_District_Region_?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_District_Region_Payload_Indian_District_Region_Args = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
 export type Update_Indian_Government_Official_Role_Input = {
   filter: _Indian_Government_Official_Role_Filter;
   remove?: InputMaybe<_Indian_Government_Official_Role_Patch>;
@@ -5383,6 +6084,24 @@ export type Update_Indian_Legal_Document_Payload_Indian_Legal_Document_Args = {
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Legal_Document_Order>;
+};
+
+export type Update_Indian_Legislative_DivisionsInput = {
+  filter: _Indian_Legislative_DivisionsFilter;
+  remove?: InputMaybe<_Indian_Legislative_DivisionsPatch>;
+  set?: InputMaybe<_Indian_Legislative_DivisionsPatch>;
+};
+
+export type Update_Indian_Legislative_DivisionsPayload = {
+  __typename?: "Update_Indian_Legislative_DivisionsPayload";
+  _Indian_Legislative_Divisions?: Maybe<Array<Maybe<_Indian_Legislative_Divisions>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
 };
 
 export type Update_Indian_Loksabha_Constituency_Election_Candidate_Input = {
@@ -5485,6 +6204,25 @@ export type Update_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constitu
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type Update_Indian_Loksabha_Constituency_Region_Input = {
+  filter: _Indian_Loksabha_Constituency_Region_Filter;
+  remove?: InputMaybe<_Indian_Loksabha_Constituency_Region_Patch>;
+  set?: InputMaybe<_Indian_Loksabha_Constituency_Region_Patch>;
+};
+
+export type Update_Indian_Loksabha_Constituency_Region_Payload = {
+  __typename?: "Update_Indian_Loksabha_Constituency_Region_Payload";
+  _Indian_Loksabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
 };
 
 export type Update_Indian_Loksabha_Election_Input = {
@@ -5718,6 +6456,44 @@ export type Update_Indian_Prime_Minister_Payload_Indian_Prime_Minister_Args = {
   order?: InputMaybe<_Indian_Prime_Minister_Order>;
 };
 
+export type Update_Indian_State_Union_Territory_Input = {
+  filter: _Indian_State_Union_Territory_Filter;
+  remove?: InputMaybe<_Indian_State_Union_Territory_Patch>;
+  set?: InputMaybe<_Indian_State_Union_Territory_Patch>;
+};
+
+export type Update_Indian_State_Union_Territory_Payload = {
+  __typename?: "Update_Indian_State_Union_Territory_Payload";
+  _Indian_State_Union_Territory_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type Update_Indian_State_Union_Territory_Region_Input = {
+  filter: _Indian_State_Union_Territory_Region_Filter;
+  remove?: InputMaybe<_Indian_State_Union_Territory_Region_Patch>;
+  set?: InputMaybe<_Indian_State_Union_Territory_Region_Patch>;
+};
+
+export type Update_Indian_State_Union_Territory_Region_Payload = {
+  __typename?: "Update_Indian_State_Union_Territory_Region_Payload";
+  _Indian_State_Union_Territory_Region_?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
 export type Update_Indian_Union_Council_Of_Ministers_Input = {
   filter: _Indian_Union_Council_Of_Ministers_Filter;
   remove?: InputMaybe<_Indian_Union_Council_Of_Ministers_Patch>;
@@ -5871,6 +6647,44 @@ export type Update_Indian_Union_Government_Payload_Indian_Union_Government_Args 
   first?: InputMaybe<Scalars["Int"]["input"]>;
   offset?: InputMaybe<Scalars["Int"]["input"]>;
   order?: InputMaybe<_Indian_Union_Government_Order>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Input = {
+  filter: _Indian_Vidhansabha_Constituency_Filter;
+  remove?: InputMaybe<_Indian_Vidhansabha_Constituency_Patch>;
+  set?: InputMaybe<_Indian_Vidhansabha_Constituency_Patch>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Payload = {
+  __typename?: "Update_Indian_Vidhansabha_Constituency_Payload";
+  _Indian_Vidhansabha_Constituency_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Region_Input = {
+  filter: _Indian_Vidhansabha_Constituency_Region_Filter;
+  remove?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Patch>;
+  set?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Patch>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Region_Payload = {
+  __typename?: "Update_Indian_Vidhansabha_Constituency_Region_Payload";
+  _Indian_Vidhansabha_Constituency_Region_?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
+  numUids?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
 };
 
 export type Update_Language_Input = {
@@ -6880,6 +7694,14 @@ export type _Geo_ = {
   india_state_union_territory_divisions?: Maybe<_Country_Region_>;
   india_vidhansabha_constituency_divisions?: Maybe<_Country_Region_>;
   india_zonal_council_divisions?: Maybe<_Country_Region_>;
+  indian_districts_boundaries?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
+  indian_districts_boundariesAggregate?: Maybe<_Indian_District_Region_AggregateResult>;
+  indian_loksabha_constituencies_boundaries?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
+  indian_loksabha_constituencies_boundariesAggregate?: Maybe<_Indian_Loksabha_Constituency_Region_AggregateResult>;
+  indian_states_union_territories_boundaries?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
+  indian_states_union_territories_boundariesAggregate?: Maybe<_Indian_State_Union_Territory_Region_AggregateResult>;
+  indian_vidhansabha_constituencies_boundaries?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
+  indian_vidhansabha_constituencies_boundariesAggregate?: Maybe<_Indian_Vidhansabha_Constituency_Region_AggregateResult>;
   location?: Maybe<Point>;
   node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
   node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
@@ -6917,6 +7739,50 @@ export type _Geo_India_Vidhansabha_Constituency_DivisionsArgs = {
 
 export type _Geo_India_Zonal_Council_DivisionsArgs = {
   filter?: InputMaybe<_Country_Region_Filter>;
+};
+
+export type _Geo_Indian_Districts_BoundariesArgs = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
+export type _Geo_Indian_Districts_BoundariesAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+};
+
+export type _Geo_Indian_Loksabha_Constituencies_BoundariesArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
+};
+
+export type _Geo_Indian_Loksabha_Constituencies_BoundariesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+};
+
+export type _Geo_Indian_States_Union_Territories_BoundariesArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
+export type _Geo_Indian_States_Union_Territories_BoundariesAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+};
+
+export type _Geo_Indian_Vidhansabha_Constituencies_BoundariesArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
+};
+
+export type _Geo_Indian_Vidhansabha_Constituencies_BoundariesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
 };
 
 export type _Geo_Node_UpdatesArgs = {
@@ -6964,6 +7830,10 @@ export enum _Geo_HasFilter {
   IndiaStateUnionTerritoryDivisions = "india_state_union_territory_divisions",
   IndiaVidhansabhaConstituencyDivisions = "india_vidhansabha_constituency_divisions",
   IndiaZonalCouncilDivisions = "india_zonal_council_divisions",
+  IndianDistrictsBoundaries = "indian_districts_boundaries",
+  IndianLoksabhaConstituenciesBoundaries = "indian_loksabha_constituencies_boundaries",
+  IndianStatesUnionTerritoriesBoundaries = "indian_states_union_territories_boundaries",
+  IndianVidhansabhaConstituenciesBoundaries = "indian_vidhansabha_constituencies_boundaries",
   Location = "location",
   NodeCreatedOn = "node_created_on",
   NodeUpdates = "node_updates",
@@ -6992,6 +7862,12 @@ export type _Geo_Patch = {
   india_state_union_territory_divisions?: InputMaybe<_Country_Region_Ref>;
   india_vidhansabha_constituency_divisions?: InputMaybe<_Country_Region_Ref>;
   india_zonal_council_divisions?: InputMaybe<_Country_Region_Ref>;
+  indian_districts_boundaries?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  indian_loksabha_constituencies_boundaries?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  indian_states_union_territories_boundaries?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  indian_vidhansabha_constituencies_boundaries?: InputMaybe<
+    Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>
+  >;
   location?: InputMaybe<PointRef>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
@@ -7019,6 +7895,12 @@ export type _Geo_Ref = {
   india_state_union_territory_divisions?: InputMaybe<_Country_Region_Ref>;
   india_vidhansabha_constituency_divisions?: InputMaybe<_Country_Region_Ref>;
   india_zonal_council_divisions?: InputMaybe<_Country_Region_Ref>;
+  indian_districts_boundaries?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  indian_loksabha_constituencies_boundaries?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  indian_states_union_territories_boundaries?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  indian_vidhansabha_constituencies_boundaries?: InputMaybe<
+    Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>
+  >;
   location?: InputMaybe<PointRef>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
@@ -8890,6 +9772,326 @@ export type _Government_System_Types_Religion_Ref = {
   state_support?: InputMaybe<Scalars["String"]["input"]>;
 };
 
+export type _Indian_Administrative_Divisions = {
+  __typename?: "_Indian_Administrative_Divisions";
+  districts?: Maybe<Array<Maybe<_Indian_District_>>>;
+  districtsAggregate?: Maybe<_Indian_District_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  states_union_territories?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  states_union_territoriesAggregate?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
+};
+
+export type _Indian_Administrative_DivisionsDistrictsArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type _Indian_Administrative_DivisionsDistrictsAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
+export type _Indian_Administrative_DivisionsStates_Union_TerritoriesArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type _Indian_Administrative_DivisionsStates_Union_TerritoriesAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type _Indian_Administrative_DivisionsAggregateResult = {
+  __typename?: "_Indian_Administrative_DivisionsAggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type _Indian_Administrative_DivisionsFilter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_Administrative_DivisionsFilter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_Administrative_DivisionsHasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_Administrative_DivisionsFilter>>>;
+};
+
+export enum _Indian_Administrative_DivisionsHasFilter {
+  Districts = "districts",
+  StatesUnionTerritories = "states_union_territories",
+}
+
+export type _Indian_Administrative_DivisionsPatch = {
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type _Indian_Administrative_DivisionsRef = {
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type _Indian_District_ = {
+  __typename?: "_Indian_District_";
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  id: Scalars["ID"]["output"];
+  loksabha_constituencies?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_>>>;
+  loksabha_constituenciesAggregate?: Maybe<_Indian_Loksabha_Constituency_AggregateResult>;
+  name_id: Scalars["String"]["output"];
+  names?: Maybe<Array<Maybe<_Name_>>>;
+  namesAggregate?: Maybe<_Name_AggregateResult>;
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  regions?: Maybe<Array<Maybe<_Indian_District_Region_>>>;
+  regionsAggregate?: Maybe<_Indian_District_Region_AggregateResult>;
+  states_union_territories?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  states_union_territoriesAggregate?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
+  vidhansabha_constituencies?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  vidhansabha_constituenciesAggregate?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
+};
+
+export type _Indian_District_Loksabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type _Indian_District_Loksabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+};
+
+export type _Indian_District_NamesArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Name_Order>;
+};
+
+export type _Indian_District_NamesAggregateArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+};
+
+export type _Indian_District_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_District_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_District_RegionsArgs = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Region_Order>;
+};
+
+export type _Indian_District_RegionsAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Region_Filter>;
+};
+
+export type _Indian_District_States_Union_TerritoriesArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type _Indian_District_States_Union_TerritoriesAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type _Indian_District_Vidhansabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type _Indian_District_Vidhansabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
+export type _Indian_District_AggregateResult = {
+  __typename?: "_Indian_District_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  name_idMax?: Maybe<Scalars["String"]["output"]>;
+  name_idMin?: Maybe<Scalars["String"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_District_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_District_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_District_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  name_id?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
+  not?: InputMaybe<_Indian_District_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_District_Filter>>>;
+};
+
+export enum _Indian_District_HasFilter {
+  Disestablished = "disestablished",
+  Established = "established",
+  LoksabhaConstituencies = "loksabha_constituencies",
+  NameId = "name_id",
+  Names = "names",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Regions = "regions",
+  StatesUnionTerritories = "states_union_territories",
+  VidhansabhaConstituencies = "vidhansabha_constituencies",
+}
+
+export type _Indian_District_Order = {
+  asc?: InputMaybe<_Indian_District_Orderable>;
+  desc?: InputMaybe<_Indian_District_Orderable>;
+  then?: InputMaybe<_Indian_District_Order>;
+};
+
+export enum _Indian_District_Orderable {
+  Disestablished = "disestablished",
+  Established = "established",
+  NameId = "name_id",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_District_Patch = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_District_Ref = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_District_Region_ = {
+  __typename?: "_Indian_District_Region_";
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  geo_boundary?: Maybe<Array<Maybe<_Geo_>>>;
+  geo_boundaryAggregate?: Maybe<_Geo_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  self?: Maybe<_Indian_District_>;
+};
+
+export type _Indian_District_Region_Geo_BoundaryArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Geo_Order>;
+};
+
+export type _Indian_District_Region_Geo_BoundaryAggregateArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+};
+
+export type _Indian_District_Region_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_District_Region_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_District_Region_SelfArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
+export type _Indian_District_Region_AggregateResult = {
+  __typename?: "_Indian_District_Region_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_District_Region_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_District_Region_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_District_Region_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_District_Region_Filter>>>;
+};
+
+export enum _Indian_District_Region_HasFilter {
+  Disestablished = "disestablished",
+  Established = "established",
+  GeoBoundary = "geo_boundary",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Self = "self",
+}
+
+export type _Indian_District_Region_Order = {
+  asc?: InputMaybe<_Indian_District_Region_Orderable>;
+  desc?: InputMaybe<_Indian_District_Region_Orderable>;
+  then?: InputMaybe<_Indian_District_Region_Order>;
+};
+
+export enum _Indian_District_Region_Orderable {
+  Disestablished = "disestablished",
+  Established = "established",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_District_Region_Patch = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_District_Ref>;
+};
+
+export type _Indian_District_Region_Ref = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_District_Ref>;
+};
+
 export type _Indian_Government_Official_Role_ = {
   __typename?: "_Indian_Government_Official_Role_";
   description?: Maybe<Scalars["String"]["output"]>;
@@ -8999,6 +10201,7 @@ export type _Indian_Government_Official_Role_Ref = {
 
 export type _Indian_Government_System_ = {
   __typename?: "_Indian_Government_System_";
+  administrative_divisions?: Maybe<_Indian_Administrative_Divisions>;
   cabinet_ministers?: Maybe<Array<Maybe<_Indian_Union_Government_Cabinet_Minister_>>>;
   cabinet_ministersAggregate?: Maybe<_Indian_Union_Government_Cabinet_Minister_AggregateResult>;
   country?: Maybe<_Country_Government_>;
@@ -9014,6 +10217,10 @@ export type _Indian_Government_System_ = {
   prime_ministersAggregate?: Maybe<_Indian_Prime_Minister_AggregateResult>;
   union_governments?: Maybe<Array<Maybe<_Indian_Union_Government_>>>;
   union_governmentsAggregate?: Maybe<_Indian_Union_Government_AggregateResult>;
+};
+
+export type _Indian_Government_System_Administrative_DivisionsArgs = {
+  filter?: InputMaybe<_Indian_Administrative_DivisionsFilter>;
 };
 
 export type _Indian_Government_System_Cabinet_MinistersArgs = {
@@ -9102,6 +10309,7 @@ export type _Indian_Government_System_Filter = {
 };
 
 export enum _Indian_Government_System_HasFilter {
+  AdministrativeDivisions = "administrative_divisions",
   CabinetMinisters = "cabinet_ministers",
   Country = "country",
   Loksabha = "loksabha",
@@ -9123,6 +10331,7 @@ export enum _Indian_Government_System_Orderable {
 }
 
 export type _Indian_Government_System_Patch = {
+  administrative_divisions?: InputMaybe<_Indian_Administrative_DivisionsRef>;
   cabinet_ministers?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Cabinet_Minister_Ref>>>;
   country?: InputMaybe<_Country_Government_Ref>;
   loksabha?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
@@ -9134,6 +10343,7 @@ export type _Indian_Government_System_Patch = {
 };
 
 export type _Indian_Government_System_Ref = {
+  administrative_divisions?: InputMaybe<_Indian_Administrative_DivisionsRef>;
   cabinet_ministers?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Cabinet_Minister_Ref>>>;
   country?: InputMaybe<_Country_Government_Ref>;
   id?: InputMaybe<Scalars["ID"]["input"]>;
@@ -9259,6 +10469,66 @@ export type _Indian_Legal_Document_Ref = {
   names?: InputMaybe<Array<_Name_Ref>>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+};
+
+export type _Indian_Legislative_Divisions = {
+  __typename?: "_Indian_Legislative_Divisions";
+  id: Scalars["ID"]["output"];
+  loksabha_constituencies?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_>>>;
+  loksabha_constituenciesAggregate?: Maybe<_Indian_Loksabha_Constituency_AggregateResult>;
+  vidhansabha_constituencies?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  vidhansabha_constituenciesAggregate?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
+};
+
+export type _Indian_Legislative_DivisionsLoksabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type _Indian_Legislative_DivisionsLoksabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+};
+
+export type _Indian_Legislative_DivisionsVidhansabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type _Indian_Legislative_DivisionsVidhansabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
+export type _Indian_Legislative_DivisionsAggregateResult = {
+  __typename?: "_Indian_Legislative_DivisionsAggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+};
+
+export type _Indian_Legislative_DivisionsFilter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_Legislative_DivisionsFilter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_Legislative_DivisionsHasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_Legislative_DivisionsFilter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_Legislative_DivisionsFilter>>>;
+};
+
+export enum _Indian_Legislative_DivisionsHasFilter {
+  LoksabhaConstituencies = "loksabha_constituencies",
+  VidhansabhaConstituencies = "vidhansabha_constituencies",
+}
+
+export type _Indian_Legislative_DivisionsPatch = {
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_Legislative_DivisionsRef = {
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
 };
 
 export type _Indian_Loksabha_ = {
@@ -9389,24 +10659,41 @@ export type _Indian_Loksabha_AggregateResult = {
 
 export type _Indian_Loksabha_Constituency_ = {
   __typename?: "_Indian_Loksabha_Constituency_";
-  disestablished_on?: Maybe<_Date_Time_>;
+  constituency_number: Scalars["String"]["output"];
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  districts?: Maybe<Array<Maybe<_Indian_District_>>>;
+  districtsAggregate?: Maybe<_Indian_District_AggregateResult>;
   elections?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Election_>>>;
   electionsAggregate?: Maybe<_Indian_Loksabha_Constituency_Election_AggregateResult>;
-  established_on?: Maybe<_Date_Time_>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
   id: Scalars["ID"]["output"];
   loksabha_members?: Maybe<Array<Maybe<_Indian_Loksabha_Member_>>>;
   loksabha_membersAggregate?: Maybe<_Indian_Loksabha_Member_AggregateResult>;
   loksabhas?: Maybe<Array<Maybe<_Indian_Loksabha_>>>;
   loksabhasAggregate?: Maybe<_Indian_Loksabha_AggregateResult>;
+  name_id: Scalars["String"]["output"];
   names?: Maybe<Array<Maybe<_Name_>>>;
   namesAggregate?: Maybe<_Name_AggregateResult>;
   node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
   node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
   node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  regions?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_Region_>>>;
+  regionsAggregate?: Maybe<_Indian_Loksabha_Constituency_Region_AggregateResult>;
+  states_union_territories?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  states_union_territoriesAggregate?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
+  vidhansabha_constituencies?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  vidhansabha_constituenciesAggregate?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
 };
 
-export type _Indian_Loksabha_Constituency_Disestablished_OnArgs = {
-  filter?: InputMaybe<_Date_Time_Filter>;
+export type _Indian_Loksabha_Constituency_DistrictsArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_DistrictsAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
 };
 
 export type _Indian_Loksabha_Constituency_ElectionsArgs = {
@@ -9418,10 +10705,6 @@ export type _Indian_Loksabha_Constituency_ElectionsArgs = {
 
 export type _Indian_Loksabha_Constituency_ElectionsAggregateArgs = {
   filter?: InputMaybe<_Indian_Loksabha_Constituency_Election_Filter>;
-};
-
-export type _Indian_Loksabha_Constituency_Established_OnArgs = {
-  filter?: InputMaybe<_Date_Time_Filter>;
 };
 
 export type _Indian_Loksabha_Constituency_Loksabha_MembersArgs = {
@@ -9468,9 +10751,50 @@ export type _Indian_Loksabha_Constituency_Node_UpdatesAggregateArgs = {
   filter?: InputMaybe<_Node_Update_Filter>;
 };
 
+export type _Indian_Loksabha_Constituency_RegionsArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_RegionsAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+};
+
+export type _Indian_Loksabha_Constituency_States_Union_TerritoriesArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_States_Union_TerritoriesAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type _Indian_Loksabha_Constituency_Vidhansabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_Vidhansabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
 export type _Indian_Loksabha_Constituency_AggregateResult = {
   __typename?: "_Indian_Loksabha_Constituency_AggregateResult";
+  constituency_numberMax?: Maybe<Scalars["String"]["output"]>;
+  constituency_numberMin?: Maybe<Scalars["String"]["output"]>;
   count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  name_idMax?: Maybe<Scalars["String"]["output"]>;
+  name_idMin?: Maybe<Scalars["String"]["output"]>;
   node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
   node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
 };
@@ -9930,21 +11254,29 @@ export type _Indian_Loksabha_Constituency_Election_Result_Ref = {
 
 export type _Indian_Loksabha_Constituency_Filter = {
   and?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Filter>>>;
+  constituency_number?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
   has?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_HasFilter>>>;
   id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  name_id?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
   not?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
   or?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Filter>>>;
 };
 
 export enum _Indian_Loksabha_Constituency_HasFilter {
-  DisestablishedOn = "disestablished_on",
+  ConstituencyNumber = "constituency_number",
+  Disestablished = "disestablished",
+  Districts = "districts",
   Elections = "elections",
-  EstablishedOn = "established_on",
+  Established = "established",
   LoksabhaMembers = "loksabha_members",
   Loksabhas = "loksabhas",
+  NameId = "name_id",
   Names = "names",
   NodeCreatedOn = "node_created_on",
   NodeUpdates = "node_updates",
+  Regions = "regions",
+  StatesUnionTerritories = "states_union_territories",
+  VidhansabhaConstituencies = "vidhansabha_constituencies",
 }
 
 export type _Indian_Loksabha_Constituency_Order = {
@@ -9954,30 +11286,144 @@ export type _Indian_Loksabha_Constituency_Order = {
 };
 
 export enum _Indian_Loksabha_Constituency_Orderable {
+  ConstituencyNumber = "constituency_number",
+  Disestablished = "disestablished",
+  Established = "established",
+  NameId = "name_id",
   NodeCreatedOn = "node_created_on",
 }
 
 export type _Indian_Loksabha_Constituency_Patch = {
-  disestablished_on?: InputMaybe<_Date_Time_Ref>;
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   elections?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Election_Ref>>>;
-  established_on?: InputMaybe<_Date_Time_Ref>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
   loksabha_members?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Member_Ref>>>;
   loksabhas?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
   names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
 };
 
 export type _Indian_Loksabha_Constituency_Ref = {
-  disestablished_on?: InputMaybe<_Date_Time_Ref>;
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   elections?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Election_Ref>>>;
-  established_on?: InputMaybe<_Date_Time_Ref>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
   id?: InputMaybe<Scalars["ID"]["input"]>;
   loksabha_members?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Member_Ref>>>;
   loksabhas?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
   names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
   node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
   node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_ = {
+  __typename?: "_Indian_Loksabha_Constituency_Region_";
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  geo_boundary?: Maybe<Array<Maybe<_Geo_>>>;
+  geo_boundaryAggregate?: Maybe<_Geo_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  self?: Maybe<_Indian_Loksabha_Constituency_>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Geo_BoundaryArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Geo_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Geo_BoundaryAggregateArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_SelfArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_AggregateResult = {
+  __typename?: "_Indian_Loksabha_Constituency_Region_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Region_Filter>>>;
+};
+
+export enum _Indian_Loksabha_Constituency_Region_HasFilter {
+  Disestablished = "disestablished",
+  Established = "established",
+  GeoBoundary = "geo_boundary",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Self = "self",
+}
+
+export type _Indian_Loksabha_Constituency_Region_Order = {
+  asc?: InputMaybe<_Indian_Loksabha_Constituency_Region_Orderable>;
+  desc?: InputMaybe<_Indian_Loksabha_Constituency_Region_Orderable>;
+  then?: InputMaybe<_Indian_Loksabha_Constituency_Region_Order>;
+};
+
+export enum _Indian_Loksabha_Constituency_Region_Orderable {
+  Disestablished = "disestablished",
+  Established = "established",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_Loksabha_Constituency_Region_Patch = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Loksabha_Constituency_Ref>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Ref = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Loksabha_Constituency_Ref>;
 };
 
 export type _Indian_Loksabha_Election_ = {
@@ -11353,6 +12799,261 @@ export type _Indian_Prime_Minister_Ref = {
   tenure_start?: InputMaybe<_Date_Time_Ref>;
 };
 
+export enum _Indian_State_Or_Union_Territory_Category_ {
+  State = "State",
+  UnionTerritory = "Union_Territory",
+}
+
+export type _Indian_State_Union_Territory_ = {
+  __typename?: "_Indian_State_Union_Territory_";
+  category?: Maybe<_Indian_State_Or_Union_Territory_Category_>;
+  districts?: Maybe<Array<Maybe<_Indian_District_>>>;
+  districtsAggregate?: Maybe<_Indian_District_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  loksabha_constituencies?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_>>>;
+  loksabha_constituenciesAggregate?: Maybe<_Indian_Loksabha_Constituency_AggregateResult>;
+  name_id: Scalars["String"]["output"];
+  names?: Maybe<Array<Maybe<_Name_>>>;
+  namesAggregate?: Maybe<_Name_AggregateResult>;
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  regions?: Maybe<Array<Maybe<_Indian_State_Union_Territory_Region_>>>;
+  regionsAggregate?: Maybe<_Indian_State_Union_Territory_Region_AggregateResult>;
+  vidhansabha_constituencies?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  vidhansabha_constituenciesAggregate?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
+};
+
+export type _Indian_State_Union_Territory_DistrictsArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type _Indian_State_Union_Territory_DistrictsAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Loksabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type _Indian_State_Union_Territory_Loksabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+};
+
+export type _Indian_State_Union_Territory_NamesArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Name_Order>;
+};
+
+export type _Indian_State_Union_Territory_NamesAggregateArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_State_Union_Territory_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_State_Union_Territory_RegionsArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
+export type _Indian_State_Union_Territory_RegionsAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Vidhansabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type _Indian_State_Union_Territory_Vidhansabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
+export type _Indian_State_Union_Territory_AggregateResult = {
+  __typename?: "_Indian_State_Union_Territory_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  name_idMax?: Maybe<Scalars["String"]["output"]>;
+  name_idMin?: Maybe<Scalars["String"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_State_Union_Territory_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  name_id?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
+  not?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Filter>>>;
+};
+
+export enum _Indian_State_Union_Territory_HasFilter {
+  Category = "category",
+  Districts = "districts",
+  LoksabhaConstituencies = "loksabha_constituencies",
+  NameId = "name_id",
+  Names = "names",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Regions = "regions",
+  VidhansabhaConstituencies = "vidhansabha_constituencies",
+}
+
+export type _Indian_State_Union_Territory_Order = {
+  asc?: InputMaybe<_Indian_State_Union_Territory_Orderable>;
+  desc?: InputMaybe<_Indian_State_Union_Territory_Orderable>;
+  then?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export enum _Indian_State_Union_Territory_Orderable {
+  NameId = "name_id",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_State_Union_Territory_Patch = {
+  category?: InputMaybe<_Indian_State_Or_Union_Territory_Category_>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_State_Union_Territory_Ref = {
+  category?: InputMaybe<_Indian_State_Or_Union_Territory_Category_>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Ref>>>;
+  vidhansabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
+};
+
+export type _Indian_State_Union_Territory_Region_ = {
+  __typename?: "_Indian_State_Union_Territory_Region_";
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  geo_boundary?: Maybe<Array<Maybe<_Geo_>>>;
+  geo_boundaryAggregate?: Maybe<_Geo_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  self?: Maybe<_Indian_State_Union_Territory_>;
+};
+
+export type _Indian_State_Union_Territory_Region_Geo_BoundaryArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Geo_Order>;
+};
+
+export type _Indian_State_Union_Territory_Region_Geo_BoundaryAggregateArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Region_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_State_Union_Territory_Region_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Region_SelfArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type _Indian_State_Union_Territory_Region_AggregateResult = {
+  __typename?: "_Indian_State_Union_Territory_Region_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_State_Union_Territory_Region_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_State_Union_Territory_Region_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Region_Filter>>>;
+};
+
+export enum _Indian_State_Union_Territory_Region_HasFilter {
+  Disestablished = "disestablished",
+  Established = "established",
+  GeoBoundary = "geo_boundary",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Self = "self",
+}
+
+export type _Indian_State_Union_Territory_Region_Order = {
+  asc?: InputMaybe<_Indian_State_Union_Territory_Region_Orderable>;
+  desc?: InputMaybe<_Indian_State_Union_Territory_Region_Orderable>;
+  then?: InputMaybe<_Indian_State_Union_Territory_Region_Order>;
+};
+
+export enum _Indian_State_Union_Territory_Region_Orderable {
+  Disestablished = "disestablished",
+  Established = "established",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_State_Union_Territory_Region_Patch = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_State_Union_Territory_Ref>;
+};
+
+export type _Indian_State_Union_Territory_Region_Ref = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_State_Union_Territory_Ref>;
+};
+
 export type _Indian_Union_Council_Of_Ministers_ = {
   __typename?: "_Indian_Union_Council_Of_Ministers_";
   council_member_ministers?: Maybe<_Indian_Union_Government_Cabinet_Minister_>;
@@ -12509,6 +14210,274 @@ export type _Indian_Union_Government_Ref = {
   prime_minister?: InputMaybe<_Indian_Prime_Minister_Ref>;
 };
 
+export type _Indian_Vidhansabha_Constituency_ = {
+  __typename?: "_Indian_Vidhansabha_Constituency_";
+  constituency_number: Scalars["String"]["output"];
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  districts?: Maybe<Array<Maybe<_Indian_District_>>>;
+  districtsAggregate?: Maybe<_Indian_District_AggregateResult>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  id: Scalars["ID"]["output"];
+  loksabha_constituencies?: Maybe<Array<Maybe<_Indian_Loksabha_Constituency_>>>;
+  loksabha_constituenciesAggregate?: Maybe<_Indian_Loksabha_Constituency_AggregateResult>;
+  name_id: Scalars["String"]["output"];
+  names?: Maybe<Array<Maybe<_Name_>>>;
+  namesAggregate?: Maybe<_Name_AggregateResult>;
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  regions?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_Region_>>>;
+  regionsAggregate?: Maybe<_Indian_Vidhansabha_Constituency_Region_AggregateResult>;
+  states_union_territories?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  states_union_territoriesAggregate?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
+};
+
+export type _Indian_Vidhansabha_Constituency_DistrictsArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_DistrictsAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Loksabha_ConstituenciesArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Loksabha_Constituency_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Loksabha_ConstituenciesAggregateArgs = {
+  filter?: InputMaybe<_Indian_Loksabha_Constituency_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_NamesArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Name_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_NamesAggregateArgs = {
+  filter?: InputMaybe<_Name_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_RegionsArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_RegionsAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_States_Union_TerritoriesArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_States_Union_TerritoriesAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_AggregateResult = {
+  __typename?: "_Indian_Vidhansabha_Constituency_AggregateResult";
+  constituency_numberMax?: Maybe<Scalars["String"]["output"]>;
+  constituency_numberMin?: Maybe<Scalars["String"]["output"]>;
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  name_idMax?: Maybe<Scalars["String"]["output"]>;
+  name_idMin?: Maybe<Scalars["String"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Filter>>>;
+  constituency_number?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  name_id?: InputMaybe<StringExactFilter_StringFullTextFilter_StringTermFilter>;
+  not?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Filter>>>;
+};
+
+export enum _Indian_Vidhansabha_Constituency_HasFilter {
+  ConstituencyNumber = "constituency_number",
+  Disestablished = "disestablished",
+  Districts = "districts",
+  Established = "established",
+  LoksabhaConstituencies = "loksabha_constituencies",
+  NameId = "name_id",
+  Names = "names",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Regions = "regions",
+  StatesUnionTerritories = "states_union_territories",
+}
+
+export type _Indian_Vidhansabha_Constituency_Order = {
+  asc?: InputMaybe<_Indian_Vidhansabha_Constituency_Orderable>;
+  desc?: InputMaybe<_Indian_Vidhansabha_Constituency_Orderable>;
+  then?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export enum _Indian_Vidhansabha_Constituency_Orderable {
+  ConstituencyNumber = "constituency_number",
+  Disestablished = "disestablished",
+  Established = "established",
+  NameId = "name_id",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_Vidhansabha_Constituency_Patch = {
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Ref = {
+  constituency_number?: InputMaybe<Scalars["String"]["input"]>;
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  districts?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  loksabha_constituencies?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
+  name_id?: InputMaybe<Scalars["String"]["input"]>;
+  names?: InputMaybe<Array<InputMaybe<_Name_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  regions?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Ref>>>;
+  states_union_territories?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_ = {
+  __typename?: "_Indian_Vidhansabha_Constituency_Region_";
+  disestablished?: Maybe<Scalars["DateTime"]["output"]>;
+  established?: Maybe<Scalars["DateTime"]["output"]>;
+  geo_boundary?: Maybe<Array<Maybe<_Geo_>>>;
+  geo_boundaryAggregate?: Maybe<_Geo_AggregateResult>;
+  id: Scalars["ID"]["output"];
+  node_created_on?: Maybe<Scalars["DateTime"]["output"]>;
+  node_updates?: Maybe<Array<Maybe<_Node_Update_>>>;
+  node_updatesAggregate?: Maybe<_Node_Update_AggregateResult>;
+  self?: Maybe<_Indian_Vidhansabha_Constituency_>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Geo_BoundaryArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Geo_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Geo_BoundaryAggregateArgs = {
+  filter?: InputMaybe<_Geo_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Node_UpdatesArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Node_Update_Order>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Node_UpdatesAggregateArgs = {
+  filter?: InputMaybe<_Node_Update_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_SelfArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_AggregateResult = {
+  __typename?: "_Indian_Vidhansabha_Constituency_Region_AggregateResult";
+  count?: Maybe<Scalars["Int"]["output"]>;
+  disestablishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  disestablishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMax?: Maybe<Scalars["DateTime"]["output"]>;
+  establishedMin?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMax?: Maybe<Scalars["DateTime"]["output"]>;
+  node_created_onMin?: Maybe<Scalars["DateTime"]["output"]>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Filter = {
+  and?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>>>;
+  has?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_HasFilter>>>;
+  id?: InputMaybe<Array<Scalars["ID"]["input"]>>;
+  not?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>;
+  or?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Region_Filter>>>;
+};
+
+export enum _Indian_Vidhansabha_Constituency_Region_HasFilter {
+  Disestablished = "disestablished",
+  Established = "established",
+  GeoBoundary = "geo_boundary",
+  NodeCreatedOn = "node_created_on",
+  NodeUpdates = "node_updates",
+  Self = "self",
+}
+
+export type _Indian_Vidhansabha_Constituency_Region_Order = {
+  asc?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Orderable>;
+  desc?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Orderable>;
+  then?: InputMaybe<_Indian_Vidhansabha_Constituency_Region_Order>;
+};
+
+export enum _Indian_Vidhansabha_Constituency_Region_Orderable {
+  Disestablished = "disestablished",
+  Established = "established",
+  NodeCreatedOn = "node_created_on",
+}
+
+export type _Indian_Vidhansabha_Constituency_Region_Patch = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Vidhansabha_Constituency_Ref>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Ref = {
+  disestablished?: InputMaybe<Scalars["DateTime"]["input"]>;
+  established?: InputMaybe<Scalars["DateTime"]["input"]>;
+  geo_boundary?: InputMaybe<Array<InputMaybe<_Geo_Ref>>>;
+  id?: InputMaybe<Scalars["ID"]["input"]>;
+  node_created_on?: InputMaybe<Scalars["DateTime"]["input"]>;
+  node_updates?: InputMaybe<Array<InputMaybe<_Node_Update_Ref>>>;
+  self?: InputMaybe<_Indian_Vidhansabha_Constituency_Ref>;
+};
+
 export type _Language_ = {
   __typename?: "_Language_";
   id: Scalars["ID"]["output"];
@@ -12762,6 +14731,8 @@ export type _Name_ = {
   government_system_type_religion?: Maybe<Array<Maybe<_Government_System_Types_Religion_>>>;
   government_system_type_religionAggregate?: Maybe<_Government_System_Types_Religion_AggregateResult>;
   id: Scalars["ID"]["output"];
+  indian_district?: Maybe<Array<Maybe<_Indian_District_>>>;
+  indian_districtAggregate?: Maybe<_Indian_District_AggregateResult>;
   indian_government_official_role?: Maybe<Array<Maybe<_Indian_Government_Official_Role_>>>;
   indian_government_official_roleAggregate?: Maybe<_Indian_Government_Official_Role_AggregateResult>;
   indian_legal_document?: Maybe<Array<Maybe<_Indian_Legal_Document_>>>;
@@ -12772,12 +14743,16 @@ export type _Name_ = {
   indian_loksabha_electionAggregate?: Maybe<_Indian_Loksabha_Election_AggregateResult>;
   indian_political_party?: Maybe<Array<Maybe<_Indian_Political_Party_>>>;
   indian_political_partyAggregate?: Maybe<_Indian_Political_Party_AggregateResult>;
+  indian_state_union_territory?: Maybe<Array<Maybe<_Indian_State_Union_Territory_>>>;
+  indian_state_union_territoryAggregate?: Maybe<_Indian_State_Union_Territory_AggregateResult>;
   indian_union_government_department?: Maybe<Array<Maybe<_Indian_Union_Government_Department_>>>;
   indian_union_government_departmentAggregate?: Maybe<_Indian_Union_Government_Department_AggregateResult>;
   indian_union_government_ministry?: Maybe<Array<Maybe<_Indian_Union_Government_Ministry_>>>;
   indian_union_government_ministryAggregate?: Maybe<_Indian_Union_Government_Ministry_AggregateResult>;
   indian_union_parliament_loksabha?: Maybe<Array<Maybe<_Indian_Loksabha_>>>;
   indian_union_parliament_loksabhaAggregate?: Maybe<_Indian_Loksabha_AggregateResult>;
+  indian_vidhansabha_constituency?: Maybe<Array<Maybe<_Indian_Vidhansabha_Constituency_>>>;
+  indian_vidhansabha_constituencyAggregate?: Maybe<_Indian_Vidhansabha_Constituency_AggregateResult>;
   language?: Maybe<Array<Maybe<_Language_>>>;
   languageAggregate?: Maybe<_Language_AggregateResult>;
   language_script?: Maybe<Array<Maybe<_Language_Script_>>>;
@@ -12959,6 +14934,17 @@ export type _Name_Government_System_Type_ReligionAggregateArgs = {
   filter?: InputMaybe<_Government_System_Types_Religion_Filter>;
 };
 
+export type _Name_Indian_DistrictArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_District_Order>;
+};
+
+export type _Name_Indian_DistrictAggregateArgs = {
+  filter?: InputMaybe<_Indian_District_Filter>;
+};
+
 export type _Name_Indian_Government_Official_RoleArgs = {
   filter?: InputMaybe<_Indian_Government_Official_Role_Filter>;
   first?: InputMaybe<Scalars["Int"]["input"]>;
@@ -13014,6 +15000,17 @@ export type _Name_Indian_Political_PartyAggregateArgs = {
   filter?: InputMaybe<_Indian_Political_Party_Filter>;
 };
 
+export type _Name_Indian_State_Union_TerritoryArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_State_Union_Territory_Order>;
+};
+
+export type _Name_Indian_State_Union_TerritoryAggregateArgs = {
+  filter?: InputMaybe<_Indian_State_Union_Territory_Filter>;
+};
+
 export type _Name_Indian_Union_Government_DepartmentArgs = {
   filter?: InputMaybe<_Indian_Union_Government_Department_Filter>;
   first?: InputMaybe<Scalars["Int"]["input"]>;
@@ -13045,6 +15042,17 @@ export type _Name_Indian_Union_Parliament_LoksabhaArgs = {
 
 export type _Name_Indian_Union_Parliament_LoksabhaAggregateArgs = {
   filter?: InputMaybe<_Indian_Loksabha_Filter>;
+};
+
+export type _Name_Indian_Vidhansabha_ConstituencyArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
+  first?: InputMaybe<Scalars["Int"]["input"]>;
+  offset?: InputMaybe<Scalars["Int"]["input"]>;
+  order?: InputMaybe<_Indian_Vidhansabha_Constituency_Order>;
+};
+
+export type _Name_Indian_Vidhansabha_ConstituencyAggregateArgs = {
+  filter?: InputMaybe<_Indian_Vidhansabha_Constituency_Filter>;
 };
 
 export type _Name_LanguageArgs = {
@@ -13148,14 +15156,17 @@ export enum _Name_HasFilter {
   GovernmentSystemTypeOligarchy = "government_system_type_oligarchy",
   GovernmentSystemTypePartisanSystems = "government_system_type_partisan_systems",
   GovernmentSystemTypeReligion = "government_system_type_religion",
+  IndianDistrict = "indian_district",
   IndianGovernmentOfficialRole = "indian_government_official_role",
   IndianLegalDocument = "indian_legal_document",
   IndianLoksabhaConstituency = "indian_loksabha_constituency",
   IndianLoksabhaElection = "indian_loksabha_election",
   IndianPoliticalParty = "indian_political_party",
+  IndianStateUnionTerritory = "indian_state_union_territory",
   IndianUnionGovernmentDepartment = "indian_union_government_department",
   IndianUnionGovernmentMinistry = "indian_union_government_ministry",
   IndianUnionParliamentLoksabha = "indian_union_parliament_loksabha",
+  IndianVidhansabhaConstituency = "indian_vidhansabha_constituency",
   Language = "language",
   LanguageScript = "language_script",
   Name = "name",
@@ -13206,14 +15217,17 @@ export type _Name_Patch = {
     Array<InputMaybe<_Government_System_Types_Partisan_Systems_Ref>>
   >;
   government_system_type_religion?: InputMaybe<Array<InputMaybe<_Government_System_Types_Religion_Ref>>>;
+  indian_district?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   indian_government_official_role?: InputMaybe<Array<InputMaybe<_Indian_Government_Official_Role_Ref>>>;
   indian_legal_document?: InputMaybe<Array<InputMaybe<_Indian_Legal_Document_Ref>>>;
   indian_loksabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
   indian_loksabha_election?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Election_Ref>>>;
   indian_political_party?: InputMaybe<Array<InputMaybe<_Indian_Political_Party_Ref>>>;
+  indian_state_union_territory?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
   indian_union_government_department?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Department_Ref>>>;
   indian_union_government_ministry?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Ministry_Ref>>>;
   indian_union_parliament_loksabha?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  indian_vidhansabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
   language?: InputMaybe<Array<InputMaybe<_Language_Ref>>>;
   language_script?: InputMaybe<Array<InputMaybe<_Language_Script_Ref>>>;
   name?: InputMaybe<Scalars["String"]["input"]>;
@@ -13254,14 +15268,17 @@ export type _Name_Ref = {
   >;
   government_system_type_religion?: InputMaybe<Array<InputMaybe<_Government_System_Types_Religion_Ref>>>;
   id?: InputMaybe<Scalars["ID"]["input"]>;
+  indian_district?: InputMaybe<Array<InputMaybe<_Indian_District_Ref>>>;
   indian_government_official_role?: InputMaybe<Array<InputMaybe<_Indian_Government_Official_Role_Ref>>>;
   indian_legal_document?: InputMaybe<Array<InputMaybe<_Indian_Legal_Document_Ref>>>;
   indian_loksabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Constituency_Ref>>>;
   indian_loksabha_election?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Election_Ref>>>;
   indian_political_party?: InputMaybe<Array<InputMaybe<_Indian_Political_Party_Ref>>>;
+  indian_state_union_territory?: InputMaybe<Array<InputMaybe<_Indian_State_Union_Territory_Ref>>>;
   indian_union_government_department?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Department_Ref>>>;
   indian_union_government_ministry?: InputMaybe<Array<InputMaybe<_Indian_Union_Government_Ministry_Ref>>>;
   indian_union_parliament_loksabha?: InputMaybe<Array<InputMaybe<_Indian_Loksabha_Ref>>>;
+  indian_vidhansabha_constituency?: InputMaybe<Array<InputMaybe<_Indian_Vidhansabha_Constituency_Ref>>>;
   language?: InputMaybe<Array<InputMaybe<_Language_Ref>>>;
   language_script?: InputMaybe<Array<InputMaybe<_Language_Script_Ref>>>;
   name?: InputMaybe<Scalars["String"]["input"]>;
@@ -13889,12 +15906,20 @@ export type ResolversTypes = {
   Add_Government_System_Types_Partisan_Systems_Payload: ResolverTypeWrapper<Add_Government_System_Types_Partisan_Systems_Payload>;
   Add_Government_System_Types_Religion_Input: Add_Government_System_Types_Religion_Input;
   Add_Government_System_Types_Religion_Payload: ResolverTypeWrapper<Add_Government_System_Types_Religion_Payload>;
+  Add_Indian_Administrative_DivisionsInput: Add_Indian_Administrative_DivisionsInput;
+  Add_Indian_Administrative_DivisionsPayload: ResolverTypeWrapper<Add_Indian_Administrative_DivisionsPayload>;
+  Add_Indian_District_Input: Add_Indian_District_Input;
+  Add_Indian_District_Payload: ResolverTypeWrapper<Add_Indian_District_Payload>;
+  Add_Indian_District_Region_Input: Add_Indian_District_Region_Input;
+  Add_Indian_District_Region_Payload: ResolverTypeWrapper<Add_Indian_District_Region_Payload>;
   Add_Indian_Government_Official_Role_Input: Add_Indian_Government_Official_Role_Input;
   Add_Indian_Government_Official_Role_Payload: ResolverTypeWrapper<Add_Indian_Government_Official_Role_Payload>;
   Add_Indian_Government_System_Input: Add_Indian_Government_System_Input;
   Add_Indian_Government_System_Payload: ResolverTypeWrapper<Add_Indian_Government_System_Payload>;
   Add_Indian_Legal_Document_Input: Add_Indian_Legal_Document_Input;
   Add_Indian_Legal_Document_Payload: ResolverTypeWrapper<Add_Indian_Legal_Document_Payload>;
+  Add_Indian_Legislative_DivisionsInput: Add_Indian_Legislative_DivisionsInput;
+  Add_Indian_Legislative_DivisionsPayload: ResolverTypeWrapper<Add_Indian_Legislative_DivisionsPayload>;
   Add_Indian_Loksabha_Constituency_Election_Candidate_Input: Add_Indian_Loksabha_Constituency_Election_Candidate_Input;
   Add_Indian_Loksabha_Constituency_Election_Candidate_Payload: ResolverTypeWrapper<Add_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   Add_Indian_Loksabha_Constituency_Election_Input: Add_Indian_Loksabha_Constituency_Election_Input;
@@ -13905,6 +15930,8 @@ export type ResolversTypes = {
   Add_Indian_Loksabha_Constituency_Election_Result_Payload: ResolverTypeWrapper<Add_Indian_Loksabha_Constituency_Election_Result_Payload>;
   Add_Indian_Loksabha_Constituency_Input: Add_Indian_Loksabha_Constituency_Input;
   Add_Indian_Loksabha_Constituency_Payload: ResolverTypeWrapper<Add_Indian_Loksabha_Constituency_Payload>;
+  Add_Indian_Loksabha_Constituency_Region_Input: Add_Indian_Loksabha_Constituency_Region_Input;
+  Add_Indian_Loksabha_Constituency_Region_Payload: ResolverTypeWrapper<Add_Indian_Loksabha_Constituency_Region_Payload>;
   Add_Indian_Loksabha_Election_Input: Add_Indian_Loksabha_Election_Input;
   Add_Indian_Loksabha_Election_Payload: ResolverTypeWrapper<Add_Indian_Loksabha_Election_Payload>;
   Add_Indian_Loksabha_Election_Phase_Input: Add_Indian_Loksabha_Election_Phase_Input;
@@ -13929,6 +15956,10 @@ export type ResolversTypes = {
   Add_Indian_Politician_Payload: ResolverTypeWrapper<Add_Indian_Politician_Payload>;
   Add_Indian_Prime_Minister_Input: Add_Indian_Prime_Minister_Input;
   Add_Indian_Prime_Minister_Payload: ResolverTypeWrapper<Add_Indian_Prime_Minister_Payload>;
+  Add_Indian_State_Union_Territory_Input: Add_Indian_State_Union_Territory_Input;
+  Add_Indian_State_Union_Territory_Payload: ResolverTypeWrapper<Add_Indian_State_Union_Territory_Payload>;
+  Add_Indian_State_Union_Territory_Region_Input: Add_Indian_State_Union_Territory_Region_Input;
+  Add_Indian_State_Union_Territory_Region_Payload: ResolverTypeWrapper<Add_Indian_State_Union_Territory_Region_Payload>;
   Add_Indian_Union_Council_Of_Ministers_Input: Add_Indian_Union_Council_Of_Ministers_Input;
   Add_Indian_Union_Council_Of_Ministers_Payload: ResolverTypeWrapper<Add_Indian_Union_Council_Of_Ministers_Payload>;
   Add_Indian_Union_Government_Cabinet_Input: Add_Indian_Union_Government_Cabinet_Input;
@@ -13945,6 +15976,10 @@ export type ResolversTypes = {
   Add_Indian_Union_Government_Ministry_Input: Add_Indian_Union_Government_Ministry_Input;
   Add_Indian_Union_Government_Ministry_Payload: ResolverTypeWrapper<Add_Indian_Union_Government_Ministry_Payload>;
   Add_Indian_Union_Government_Payload: ResolverTypeWrapper<Add_Indian_Union_Government_Payload>;
+  Add_Indian_Vidhansabha_Constituency_Input: Add_Indian_Vidhansabha_Constituency_Input;
+  Add_Indian_Vidhansabha_Constituency_Payload: ResolverTypeWrapper<Add_Indian_Vidhansabha_Constituency_Payload>;
+  Add_Indian_Vidhansabha_Constituency_Region_Input: Add_Indian_Vidhansabha_Constituency_Region_Input;
+  Add_Indian_Vidhansabha_Constituency_Region_Payload: ResolverTypeWrapper<Add_Indian_Vidhansabha_Constituency_Region_Payload>;
   Add_Language_Input: Add_Language_Input;
   Add_Language_Payload: ResolverTypeWrapper<Add_Language_Payload>;
   Add_Language_Script_Input: Add_Language_Script_Input;
@@ -13993,14 +16028,19 @@ export type ResolversTypes = {
   Delete_Government_System_Types_Oligarchy_Payload: ResolverTypeWrapper<Delete_Government_System_Types_Oligarchy_Payload>;
   Delete_Government_System_Types_Partisan_Systems_Payload: ResolverTypeWrapper<Delete_Government_System_Types_Partisan_Systems_Payload>;
   Delete_Government_System_Types_Religion_Payload: ResolverTypeWrapper<Delete_Government_System_Types_Religion_Payload>;
+  Delete_Indian_Administrative_DivisionsPayload: ResolverTypeWrapper<Delete_Indian_Administrative_DivisionsPayload>;
+  Delete_Indian_District_Payload: ResolverTypeWrapper<Delete_Indian_District_Payload>;
+  Delete_Indian_District_Region_Payload: ResolverTypeWrapper<Delete_Indian_District_Region_Payload>;
   Delete_Indian_Government_Official_Role_Payload: ResolverTypeWrapper<Delete_Indian_Government_Official_Role_Payload>;
   Delete_Indian_Government_System_Payload: ResolverTypeWrapper<Delete_Indian_Government_System_Payload>;
   Delete_Indian_Legal_Document_Payload: ResolverTypeWrapper<Delete_Indian_Legal_Document_Payload>;
+  Delete_Indian_Legislative_DivisionsPayload: ResolverTypeWrapper<Delete_Indian_Legislative_DivisionsPayload>;
   Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   Delete_Indian_Loksabha_Constituency_Election_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Election_Payload>;
   Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload>;
   Delete_Indian_Loksabha_Constituency_Election_Result_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Election_Result_Payload>;
   Delete_Indian_Loksabha_Constituency_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Payload>;
+  Delete_Indian_Loksabha_Constituency_Region_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Constituency_Region_Payload>;
   Delete_Indian_Loksabha_Election_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Election_Payload>;
   Delete_Indian_Loksabha_Election_Phase_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Election_Phase_Payload>;
   Delete_Indian_Loksabha_Election_Result_Payload: ResolverTypeWrapper<Delete_Indian_Loksabha_Election_Result_Payload>;
@@ -14013,6 +16053,8 @@ export type ResolversTypes = {
   Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload: ResolverTypeWrapper<Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload>;
   Delete_Indian_Politician_Payload: ResolverTypeWrapper<Delete_Indian_Politician_Payload>;
   Delete_Indian_Prime_Minister_Payload: ResolverTypeWrapper<Delete_Indian_Prime_Minister_Payload>;
+  Delete_Indian_State_Union_Territory_Payload: ResolverTypeWrapper<Delete_Indian_State_Union_Territory_Payload>;
+  Delete_Indian_State_Union_Territory_Region_Payload: ResolverTypeWrapper<Delete_Indian_State_Union_Territory_Region_Payload>;
   Delete_Indian_Union_Council_Of_Ministers_Payload: ResolverTypeWrapper<Delete_Indian_Union_Council_Of_Ministers_Payload>;
   Delete_Indian_Union_Government_Cabinet_Minister_Payload: ResolverTypeWrapper<Delete_Indian_Union_Government_Cabinet_Minister_Payload>;
   Delete_Indian_Union_Government_Cabinet_Payload: ResolverTypeWrapper<Delete_Indian_Union_Government_Cabinet_Payload>;
@@ -14021,6 +16063,8 @@ export type ResolversTypes = {
   Delete_Indian_Union_Government_Minister_Of_State_Payload: ResolverTypeWrapper<Delete_Indian_Union_Government_Minister_Of_State_Payload>;
   Delete_Indian_Union_Government_Ministry_Payload: ResolverTypeWrapper<Delete_Indian_Union_Government_Ministry_Payload>;
   Delete_Indian_Union_Government_Payload: ResolverTypeWrapper<Delete_Indian_Union_Government_Payload>;
+  Delete_Indian_Vidhansabha_Constituency_Payload: ResolverTypeWrapper<Delete_Indian_Vidhansabha_Constituency_Payload>;
+  Delete_Indian_Vidhansabha_Constituency_Region_Payload: ResolverTypeWrapper<Delete_Indian_Vidhansabha_Constituency_Region_Payload>;
   Delete_Language_Payload: ResolverTypeWrapper<Delete_Language_Payload>;
   Delete_Language_Script_Payload: ResolverTypeWrapper<Delete_Language_Script_Payload>;
   Delete_Name_Payload: ResolverTypeWrapper<Delete_Name_Payload>;
@@ -14122,12 +16166,20 @@ export type ResolversTypes = {
   Update_Government_System_Types_Partisan_Systems_Payload: ResolverTypeWrapper<Update_Government_System_Types_Partisan_Systems_Payload>;
   Update_Government_System_Types_Religion_Input: Update_Government_System_Types_Religion_Input;
   Update_Government_System_Types_Religion_Payload: ResolverTypeWrapper<Update_Government_System_Types_Religion_Payload>;
+  Update_Indian_Administrative_DivisionsInput: Update_Indian_Administrative_DivisionsInput;
+  Update_Indian_Administrative_DivisionsPayload: ResolverTypeWrapper<Update_Indian_Administrative_DivisionsPayload>;
+  Update_Indian_District_Input: Update_Indian_District_Input;
+  Update_Indian_District_Payload: ResolverTypeWrapper<Update_Indian_District_Payload>;
+  Update_Indian_District_Region_Input: Update_Indian_District_Region_Input;
+  Update_Indian_District_Region_Payload: ResolverTypeWrapper<Update_Indian_District_Region_Payload>;
   Update_Indian_Government_Official_Role_Input: Update_Indian_Government_Official_Role_Input;
   Update_Indian_Government_Official_Role_Payload: ResolverTypeWrapper<Update_Indian_Government_Official_Role_Payload>;
   Update_Indian_Government_System_Input: Update_Indian_Government_System_Input;
   Update_Indian_Government_System_Payload: ResolverTypeWrapper<Update_Indian_Government_System_Payload>;
   Update_Indian_Legal_Document_Input: Update_Indian_Legal_Document_Input;
   Update_Indian_Legal_Document_Payload: ResolverTypeWrapper<Update_Indian_Legal_Document_Payload>;
+  Update_Indian_Legislative_DivisionsInput: Update_Indian_Legislative_DivisionsInput;
+  Update_Indian_Legislative_DivisionsPayload: ResolverTypeWrapper<Update_Indian_Legislative_DivisionsPayload>;
   Update_Indian_Loksabha_Constituency_Election_Candidate_Input: Update_Indian_Loksabha_Constituency_Election_Candidate_Input;
   Update_Indian_Loksabha_Constituency_Election_Candidate_Payload: ResolverTypeWrapper<Update_Indian_Loksabha_Constituency_Election_Candidate_Payload>;
   Update_Indian_Loksabha_Constituency_Election_Input: Update_Indian_Loksabha_Constituency_Election_Input;
@@ -14138,6 +16190,8 @@ export type ResolversTypes = {
   Update_Indian_Loksabha_Constituency_Election_Result_Payload: ResolverTypeWrapper<Update_Indian_Loksabha_Constituency_Election_Result_Payload>;
   Update_Indian_Loksabha_Constituency_Input: Update_Indian_Loksabha_Constituency_Input;
   Update_Indian_Loksabha_Constituency_Payload: ResolverTypeWrapper<Update_Indian_Loksabha_Constituency_Payload>;
+  Update_Indian_Loksabha_Constituency_Region_Input: Update_Indian_Loksabha_Constituency_Region_Input;
+  Update_Indian_Loksabha_Constituency_Region_Payload: ResolverTypeWrapper<Update_Indian_Loksabha_Constituency_Region_Payload>;
   Update_Indian_Loksabha_Election_Input: Update_Indian_Loksabha_Election_Input;
   Update_Indian_Loksabha_Election_Payload: ResolverTypeWrapper<Update_Indian_Loksabha_Election_Payload>;
   Update_Indian_Loksabha_Election_Phase_Input: Update_Indian_Loksabha_Election_Phase_Input;
@@ -14162,6 +16216,10 @@ export type ResolversTypes = {
   Update_Indian_Politician_Payload: ResolverTypeWrapper<Update_Indian_Politician_Payload>;
   Update_Indian_Prime_Minister_Input: Update_Indian_Prime_Minister_Input;
   Update_Indian_Prime_Minister_Payload: ResolverTypeWrapper<Update_Indian_Prime_Minister_Payload>;
+  Update_Indian_State_Union_Territory_Input: Update_Indian_State_Union_Territory_Input;
+  Update_Indian_State_Union_Territory_Payload: ResolverTypeWrapper<Update_Indian_State_Union_Territory_Payload>;
+  Update_Indian_State_Union_Territory_Region_Input: Update_Indian_State_Union_Territory_Region_Input;
+  Update_Indian_State_Union_Territory_Region_Payload: ResolverTypeWrapper<Update_Indian_State_Union_Territory_Region_Payload>;
   Update_Indian_Union_Council_Of_Ministers_Input: Update_Indian_Union_Council_Of_Ministers_Input;
   Update_Indian_Union_Council_Of_Ministers_Payload: ResolverTypeWrapper<Update_Indian_Union_Council_Of_Ministers_Payload>;
   Update_Indian_Union_Government_Cabinet_Input: Update_Indian_Union_Government_Cabinet_Input;
@@ -14178,6 +16236,10 @@ export type ResolversTypes = {
   Update_Indian_Union_Government_Ministry_Input: Update_Indian_Union_Government_Ministry_Input;
   Update_Indian_Union_Government_Ministry_Payload: ResolverTypeWrapper<Update_Indian_Union_Government_Ministry_Payload>;
   Update_Indian_Union_Government_Payload: ResolverTypeWrapper<Update_Indian_Union_Government_Payload>;
+  Update_Indian_Vidhansabha_Constituency_Input: Update_Indian_Vidhansabha_Constituency_Input;
+  Update_Indian_Vidhansabha_Constituency_Payload: ResolverTypeWrapper<Update_Indian_Vidhansabha_Constituency_Payload>;
+  Update_Indian_Vidhansabha_Constituency_Region_Input: Update_Indian_Vidhansabha_Constituency_Region_Input;
+  Update_Indian_Vidhansabha_Constituency_Region_Payload: ResolverTypeWrapper<Update_Indian_Vidhansabha_Constituency_Region_Payload>;
   Update_Language_Input: Update_Language_Input;
   Update_Language_Payload: ResolverTypeWrapper<Update_Language_Payload>;
   Update_Language_Script_Input: Update_Language_Script_Input;
@@ -14365,6 +16427,28 @@ export type ResolversTypes = {
   _Government_System_Types_Religion_Orderable: _Government_System_Types_Religion_Orderable;
   _Government_System_Types_Religion_Patch: _Government_System_Types_Religion_Patch;
   _Government_System_Types_Religion_Ref: _Government_System_Types_Religion_Ref;
+  _Indian_Administrative_Divisions: ResolverTypeWrapper<_Indian_Administrative_Divisions>;
+  _Indian_Administrative_DivisionsAggregateResult: ResolverTypeWrapper<_Indian_Administrative_DivisionsAggregateResult>;
+  _Indian_Administrative_DivisionsFilter: _Indian_Administrative_DivisionsFilter;
+  _Indian_Administrative_DivisionsHasFilter: _Indian_Administrative_DivisionsHasFilter;
+  _Indian_Administrative_DivisionsPatch: _Indian_Administrative_DivisionsPatch;
+  _Indian_Administrative_DivisionsRef: _Indian_Administrative_DivisionsRef;
+  _Indian_District_: ResolverTypeWrapper<_Indian_District_>;
+  _Indian_District_AggregateResult: ResolverTypeWrapper<_Indian_District_AggregateResult>;
+  _Indian_District_Filter: _Indian_District_Filter;
+  _Indian_District_HasFilter: _Indian_District_HasFilter;
+  _Indian_District_Order: _Indian_District_Order;
+  _Indian_District_Orderable: _Indian_District_Orderable;
+  _Indian_District_Patch: _Indian_District_Patch;
+  _Indian_District_Ref: _Indian_District_Ref;
+  _Indian_District_Region_: ResolverTypeWrapper<_Indian_District_Region_>;
+  _Indian_District_Region_AggregateResult: ResolverTypeWrapper<_Indian_District_Region_AggregateResult>;
+  _Indian_District_Region_Filter: _Indian_District_Region_Filter;
+  _Indian_District_Region_HasFilter: _Indian_District_Region_HasFilter;
+  _Indian_District_Region_Order: _Indian_District_Region_Order;
+  _Indian_District_Region_Orderable: _Indian_District_Region_Orderable;
+  _Indian_District_Region_Patch: _Indian_District_Region_Patch;
+  _Indian_District_Region_Ref: _Indian_District_Region_Ref;
   _Indian_Government_Official_Role_: ResolverTypeWrapper<_Indian_Government_Official_Role_>;
   _Indian_Government_Official_Role_AggregateResult: ResolverTypeWrapper<_Indian_Government_Official_Role_AggregateResult>;
   _Indian_Government_Official_Role_Filter: _Indian_Government_Official_Role_Filter;
@@ -14391,6 +16475,12 @@ export type ResolversTypes = {
   _Indian_Legal_Document_Orderable: _Indian_Legal_Document_Orderable;
   _Indian_Legal_Document_Patch: _Indian_Legal_Document_Patch;
   _Indian_Legal_Document_Ref: _Indian_Legal_Document_Ref;
+  _Indian_Legislative_Divisions: ResolverTypeWrapper<_Indian_Legislative_Divisions>;
+  _Indian_Legislative_DivisionsAggregateResult: ResolverTypeWrapper<_Indian_Legislative_DivisionsAggregateResult>;
+  _Indian_Legislative_DivisionsFilter: _Indian_Legislative_DivisionsFilter;
+  _Indian_Legislative_DivisionsHasFilter: _Indian_Legislative_DivisionsHasFilter;
+  _Indian_Legislative_DivisionsPatch: _Indian_Legislative_DivisionsPatch;
+  _Indian_Legislative_DivisionsRef: _Indian_Legislative_DivisionsRef;
   _Indian_Loksabha_: ResolverTypeWrapper<_Indian_Loksabha_>;
   _Indian_Loksabha_AggregateResult: ResolverTypeWrapper<_Indian_Loksabha_AggregateResult>;
   _Indian_Loksabha_Constituency_: ResolverTypeWrapper<_Indian_Loksabha_Constituency_>;
@@ -14433,6 +16523,14 @@ export type ResolversTypes = {
   _Indian_Loksabha_Constituency_Orderable: _Indian_Loksabha_Constituency_Orderable;
   _Indian_Loksabha_Constituency_Patch: _Indian_Loksabha_Constituency_Patch;
   _Indian_Loksabha_Constituency_Ref: _Indian_Loksabha_Constituency_Ref;
+  _Indian_Loksabha_Constituency_Region_: ResolverTypeWrapper<_Indian_Loksabha_Constituency_Region_>;
+  _Indian_Loksabha_Constituency_Region_AggregateResult: ResolverTypeWrapper<_Indian_Loksabha_Constituency_Region_AggregateResult>;
+  _Indian_Loksabha_Constituency_Region_Filter: _Indian_Loksabha_Constituency_Region_Filter;
+  _Indian_Loksabha_Constituency_Region_HasFilter: _Indian_Loksabha_Constituency_Region_HasFilter;
+  _Indian_Loksabha_Constituency_Region_Order: _Indian_Loksabha_Constituency_Region_Order;
+  _Indian_Loksabha_Constituency_Region_Orderable: _Indian_Loksabha_Constituency_Region_Orderable;
+  _Indian_Loksabha_Constituency_Region_Patch: _Indian_Loksabha_Constituency_Region_Patch;
+  _Indian_Loksabha_Constituency_Region_Ref: _Indian_Loksabha_Constituency_Region_Ref;
   _Indian_Loksabha_Election_: ResolverTypeWrapper<_Indian_Loksabha_Election_>;
   _Indian_Loksabha_Election_AggregateResult: ResolverTypeWrapper<_Indian_Loksabha_Election_AggregateResult>;
   _Indian_Loksabha_Election_Filter: _Indian_Loksabha_Election_Filter;
@@ -14527,6 +16625,23 @@ export type ResolversTypes = {
   _Indian_Prime_Minister_Orderable: _Indian_Prime_Minister_Orderable;
   _Indian_Prime_Minister_Patch: _Indian_Prime_Minister_Patch;
   _Indian_Prime_Minister_Ref: _Indian_Prime_Minister_Ref;
+  _Indian_State_Or_Union_Territory_Category_: _Indian_State_Or_Union_Territory_Category_;
+  _Indian_State_Union_Territory_: ResolverTypeWrapper<_Indian_State_Union_Territory_>;
+  _Indian_State_Union_Territory_AggregateResult: ResolverTypeWrapper<_Indian_State_Union_Territory_AggregateResult>;
+  _Indian_State_Union_Territory_Filter: _Indian_State_Union_Territory_Filter;
+  _Indian_State_Union_Territory_HasFilter: _Indian_State_Union_Territory_HasFilter;
+  _Indian_State_Union_Territory_Order: _Indian_State_Union_Territory_Order;
+  _Indian_State_Union_Territory_Orderable: _Indian_State_Union_Territory_Orderable;
+  _Indian_State_Union_Territory_Patch: _Indian_State_Union_Territory_Patch;
+  _Indian_State_Union_Territory_Ref: _Indian_State_Union_Territory_Ref;
+  _Indian_State_Union_Territory_Region_: ResolverTypeWrapper<_Indian_State_Union_Territory_Region_>;
+  _Indian_State_Union_Territory_Region_AggregateResult: ResolverTypeWrapper<_Indian_State_Union_Territory_Region_AggregateResult>;
+  _Indian_State_Union_Territory_Region_Filter: _Indian_State_Union_Territory_Region_Filter;
+  _Indian_State_Union_Territory_Region_HasFilter: _Indian_State_Union_Territory_Region_HasFilter;
+  _Indian_State_Union_Territory_Region_Order: _Indian_State_Union_Territory_Region_Order;
+  _Indian_State_Union_Territory_Region_Orderable: _Indian_State_Union_Territory_Region_Orderable;
+  _Indian_State_Union_Territory_Region_Patch: _Indian_State_Union_Territory_Region_Patch;
+  _Indian_State_Union_Territory_Region_Ref: _Indian_State_Union_Territory_Region_Ref;
   _Indian_Union_Council_Of_Ministers_: ResolverTypeWrapper<_Indian_Union_Council_Of_Ministers_>;
   _Indian_Union_Council_Of_Ministers_AggregateResult: ResolverTypeWrapper<_Indian_Union_Council_Of_Ministers_AggregateResult>;
   _Indian_Union_Council_Of_Ministers_Filter: _Indian_Union_Council_Of_Ministers_Filter;
@@ -14591,6 +16706,22 @@ export type ResolversTypes = {
   _Indian_Union_Government_Orderable: _Indian_Union_Government_Orderable;
   _Indian_Union_Government_Patch: _Indian_Union_Government_Patch;
   _Indian_Union_Government_Ref: _Indian_Union_Government_Ref;
+  _Indian_Vidhansabha_Constituency_: ResolverTypeWrapper<_Indian_Vidhansabha_Constituency_>;
+  _Indian_Vidhansabha_Constituency_AggregateResult: ResolverTypeWrapper<_Indian_Vidhansabha_Constituency_AggregateResult>;
+  _Indian_Vidhansabha_Constituency_Filter: _Indian_Vidhansabha_Constituency_Filter;
+  _Indian_Vidhansabha_Constituency_HasFilter: _Indian_Vidhansabha_Constituency_HasFilter;
+  _Indian_Vidhansabha_Constituency_Order: _Indian_Vidhansabha_Constituency_Order;
+  _Indian_Vidhansabha_Constituency_Orderable: _Indian_Vidhansabha_Constituency_Orderable;
+  _Indian_Vidhansabha_Constituency_Patch: _Indian_Vidhansabha_Constituency_Patch;
+  _Indian_Vidhansabha_Constituency_Ref: _Indian_Vidhansabha_Constituency_Ref;
+  _Indian_Vidhansabha_Constituency_Region_: ResolverTypeWrapper<_Indian_Vidhansabha_Constituency_Region_>;
+  _Indian_Vidhansabha_Constituency_Region_AggregateResult: ResolverTypeWrapper<_Indian_Vidhansabha_Constituency_Region_AggregateResult>;
+  _Indian_Vidhansabha_Constituency_Region_Filter: _Indian_Vidhansabha_Constituency_Region_Filter;
+  _Indian_Vidhansabha_Constituency_Region_HasFilter: _Indian_Vidhansabha_Constituency_Region_HasFilter;
+  _Indian_Vidhansabha_Constituency_Region_Order: _Indian_Vidhansabha_Constituency_Region_Order;
+  _Indian_Vidhansabha_Constituency_Region_Orderable: _Indian_Vidhansabha_Constituency_Region_Orderable;
+  _Indian_Vidhansabha_Constituency_Region_Patch: _Indian_Vidhansabha_Constituency_Region_Patch;
+  _Indian_Vidhansabha_Constituency_Region_Ref: _Indian_Vidhansabha_Constituency_Region_Ref;
   _Language_: ResolverTypeWrapper<_Language_>;
   _Language_AggregateResult: ResolverTypeWrapper<_Language_AggregateResult>;
   _Language_Filter: _Language_Filter;
@@ -14713,12 +16844,20 @@ export type ResolversParentTypes = {
   Add_Government_System_Types_Partisan_Systems_Payload: Add_Government_System_Types_Partisan_Systems_Payload;
   Add_Government_System_Types_Religion_Input: Add_Government_System_Types_Religion_Input;
   Add_Government_System_Types_Religion_Payload: Add_Government_System_Types_Religion_Payload;
+  Add_Indian_Administrative_DivisionsInput: Add_Indian_Administrative_DivisionsInput;
+  Add_Indian_Administrative_DivisionsPayload: Add_Indian_Administrative_DivisionsPayload;
+  Add_Indian_District_Input: Add_Indian_District_Input;
+  Add_Indian_District_Payload: Add_Indian_District_Payload;
+  Add_Indian_District_Region_Input: Add_Indian_District_Region_Input;
+  Add_Indian_District_Region_Payload: Add_Indian_District_Region_Payload;
   Add_Indian_Government_Official_Role_Input: Add_Indian_Government_Official_Role_Input;
   Add_Indian_Government_Official_Role_Payload: Add_Indian_Government_Official_Role_Payload;
   Add_Indian_Government_System_Input: Add_Indian_Government_System_Input;
   Add_Indian_Government_System_Payload: Add_Indian_Government_System_Payload;
   Add_Indian_Legal_Document_Input: Add_Indian_Legal_Document_Input;
   Add_Indian_Legal_Document_Payload: Add_Indian_Legal_Document_Payload;
+  Add_Indian_Legislative_DivisionsInput: Add_Indian_Legislative_DivisionsInput;
+  Add_Indian_Legislative_DivisionsPayload: Add_Indian_Legislative_DivisionsPayload;
   Add_Indian_Loksabha_Constituency_Election_Candidate_Input: Add_Indian_Loksabha_Constituency_Election_Candidate_Input;
   Add_Indian_Loksabha_Constituency_Election_Candidate_Payload: Add_Indian_Loksabha_Constituency_Election_Candidate_Payload;
   Add_Indian_Loksabha_Constituency_Election_Input: Add_Indian_Loksabha_Constituency_Election_Input;
@@ -14729,6 +16868,8 @@ export type ResolversParentTypes = {
   Add_Indian_Loksabha_Constituency_Election_Result_Payload: Add_Indian_Loksabha_Constituency_Election_Result_Payload;
   Add_Indian_Loksabha_Constituency_Input: Add_Indian_Loksabha_Constituency_Input;
   Add_Indian_Loksabha_Constituency_Payload: Add_Indian_Loksabha_Constituency_Payload;
+  Add_Indian_Loksabha_Constituency_Region_Input: Add_Indian_Loksabha_Constituency_Region_Input;
+  Add_Indian_Loksabha_Constituency_Region_Payload: Add_Indian_Loksabha_Constituency_Region_Payload;
   Add_Indian_Loksabha_Election_Input: Add_Indian_Loksabha_Election_Input;
   Add_Indian_Loksabha_Election_Payload: Add_Indian_Loksabha_Election_Payload;
   Add_Indian_Loksabha_Election_Phase_Input: Add_Indian_Loksabha_Election_Phase_Input;
@@ -14753,6 +16894,10 @@ export type ResolversParentTypes = {
   Add_Indian_Politician_Payload: Add_Indian_Politician_Payload;
   Add_Indian_Prime_Minister_Input: Add_Indian_Prime_Minister_Input;
   Add_Indian_Prime_Minister_Payload: Add_Indian_Prime_Minister_Payload;
+  Add_Indian_State_Union_Territory_Input: Add_Indian_State_Union_Territory_Input;
+  Add_Indian_State_Union_Territory_Payload: Add_Indian_State_Union_Territory_Payload;
+  Add_Indian_State_Union_Territory_Region_Input: Add_Indian_State_Union_Territory_Region_Input;
+  Add_Indian_State_Union_Territory_Region_Payload: Add_Indian_State_Union_Territory_Region_Payload;
   Add_Indian_Union_Council_Of_Ministers_Input: Add_Indian_Union_Council_Of_Ministers_Input;
   Add_Indian_Union_Council_Of_Ministers_Payload: Add_Indian_Union_Council_Of_Ministers_Payload;
   Add_Indian_Union_Government_Cabinet_Input: Add_Indian_Union_Government_Cabinet_Input;
@@ -14769,6 +16914,10 @@ export type ResolversParentTypes = {
   Add_Indian_Union_Government_Ministry_Input: Add_Indian_Union_Government_Ministry_Input;
   Add_Indian_Union_Government_Ministry_Payload: Add_Indian_Union_Government_Ministry_Payload;
   Add_Indian_Union_Government_Payload: Add_Indian_Union_Government_Payload;
+  Add_Indian_Vidhansabha_Constituency_Input: Add_Indian_Vidhansabha_Constituency_Input;
+  Add_Indian_Vidhansabha_Constituency_Payload: Add_Indian_Vidhansabha_Constituency_Payload;
+  Add_Indian_Vidhansabha_Constituency_Region_Input: Add_Indian_Vidhansabha_Constituency_Region_Input;
+  Add_Indian_Vidhansabha_Constituency_Region_Payload: Add_Indian_Vidhansabha_Constituency_Region_Payload;
   Add_Language_Input: Add_Language_Input;
   Add_Language_Payload: Add_Language_Payload;
   Add_Language_Script_Input: Add_Language_Script_Input;
@@ -14816,14 +16965,19 @@ export type ResolversParentTypes = {
   Delete_Government_System_Types_Oligarchy_Payload: Delete_Government_System_Types_Oligarchy_Payload;
   Delete_Government_System_Types_Partisan_Systems_Payload: Delete_Government_System_Types_Partisan_Systems_Payload;
   Delete_Government_System_Types_Religion_Payload: Delete_Government_System_Types_Religion_Payload;
+  Delete_Indian_Administrative_DivisionsPayload: Delete_Indian_Administrative_DivisionsPayload;
+  Delete_Indian_District_Payload: Delete_Indian_District_Payload;
+  Delete_Indian_District_Region_Payload: Delete_Indian_District_Region_Payload;
   Delete_Indian_Government_Official_Role_Payload: Delete_Indian_Government_Official_Role_Payload;
   Delete_Indian_Government_System_Payload: Delete_Indian_Government_System_Payload;
   Delete_Indian_Legal_Document_Payload: Delete_Indian_Legal_Document_Payload;
+  Delete_Indian_Legislative_DivisionsPayload: Delete_Indian_Legislative_DivisionsPayload;
   Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload: Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload;
   Delete_Indian_Loksabha_Constituency_Election_Payload: Delete_Indian_Loksabha_Constituency_Election_Payload;
   Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload: Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload;
   Delete_Indian_Loksabha_Constituency_Election_Result_Payload: Delete_Indian_Loksabha_Constituency_Election_Result_Payload;
   Delete_Indian_Loksabha_Constituency_Payload: Delete_Indian_Loksabha_Constituency_Payload;
+  Delete_Indian_Loksabha_Constituency_Region_Payload: Delete_Indian_Loksabha_Constituency_Region_Payload;
   Delete_Indian_Loksabha_Election_Payload: Delete_Indian_Loksabha_Election_Payload;
   Delete_Indian_Loksabha_Election_Phase_Payload: Delete_Indian_Loksabha_Election_Phase_Payload;
   Delete_Indian_Loksabha_Election_Result_Payload: Delete_Indian_Loksabha_Election_Result_Payload;
@@ -14836,6 +16990,8 @@ export type ResolversParentTypes = {
   Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload: Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload;
   Delete_Indian_Politician_Payload: Delete_Indian_Politician_Payload;
   Delete_Indian_Prime_Minister_Payload: Delete_Indian_Prime_Minister_Payload;
+  Delete_Indian_State_Union_Territory_Payload: Delete_Indian_State_Union_Territory_Payload;
+  Delete_Indian_State_Union_Territory_Region_Payload: Delete_Indian_State_Union_Territory_Region_Payload;
   Delete_Indian_Union_Council_Of_Ministers_Payload: Delete_Indian_Union_Council_Of_Ministers_Payload;
   Delete_Indian_Union_Government_Cabinet_Minister_Payload: Delete_Indian_Union_Government_Cabinet_Minister_Payload;
   Delete_Indian_Union_Government_Cabinet_Payload: Delete_Indian_Union_Government_Cabinet_Payload;
@@ -14844,6 +17000,8 @@ export type ResolversParentTypes = {
   Delete_Indian_Union_Government_Minister_Of_State_Payload: Delete_Indian_Union_Government_Minister_Of_State_Payload;
   Delete_Indian_Union_Government_Ministry_Payload: Delete_Indian_Union_Government_Ministry_Payload;
   Delete_Indian_Union_Government_Payload: Delete_Indian_Union_Government_Payload;
+  Delete_Indian_Vidhansabha_Constituency_Payload: Delete_Indian_Vidhansabha_Constituency_Payload;
+  Delete_Indian_Vidhansabha_Constituency_Region_Payload: Delete_Indian_Vidhansabha_Constituency_Region_Payload;
   Delete_Language_Payload: Delete_Language_Payload;
   Delete_Language_Script_Payload: Delete_Language_Script_Payload;
   Delete_Name_Payload: Delete_Name_Payload;
@@ -14940,12 +17098,20 @@ export type ResolversParentTypes = {
   Update_Government_System_Types_Partisan_Systems_Payload: Update_Government_System_Types_Partisan_Systems_Payload;
   Update_Government_System_Types_Religion_Input: Update_Government_System_Types_Religion_Input;
   Update_Government_System_Types_Religion_Payload: Update_Government_System_Types_Religion_Payload;
+  Update_Indian_Administrative_DivisionsInput: Update_Indian_Administrative_DivisionsInput;
+  Update_Indian_Administrative_DivisionsPayload: Update_Indian_Administrative_DivisionsPayload;
+  Update_Indian_District_Input: Update_Indian_District_Input;
+  Update_Indian_District_Payload: Update_Indian_District_Payload;
+  Update_Indian_District_Region_Input: Update_Indian_District_Region_Input;
+  Update_Indian_District_Region_Payload: Update_Indian_District_Region_Payload;
   Update_Indian_Government_Official_Role_Input: Update_Indian_Government_Official_Role_Input;
   Update_Indian_Government_Official_Role_Payload: Update_Indian_Government_Official_Role_Payload;
   Update_Indian_Government_System_Input: Update_Indian_Government_System_Input;
   Update_Indian_Government_System_Payload: Update_Indian_Government_System_Payload;
   Update_Indian_Legal_Document_Input: Update_Indian_Legal_Document_Input;
   Update_Indian_Legal_Document_Payload: Update_Indian_Legal_Document_Payload;
+  Update_Indian_Legislative_DivisionsInput: Update_Indian_Legislative_DivisionsInput;
+  Update_Indian_Legislative_DivisionsPayload: Update_Indian_Legislative_DivisionsPayload;
   Update_Indian_Loksabha_Constituency_Election_Candidate_Input: Update_Indian_Loksabha_Constituency_Election_Candidate_Input;
   Update_Indian_Loksabha_Constituency_Election_Candidate_Payload: Update_Indian_Loksabha_Constituency_Election_Candidate_Payload;
   Update_Indian_Loksabha_Constituency_Election_Input: Update_Indian_Loksabha_Constituency_Election_Input;
@@ -14956,6 +17122,8 @@ export type ResolversParentTypes = {
   Update_Indian_Loksabha_Constituency_Election_Result_Payload: Update_Indian_Loksabha_Constituency_Election_Result_Payload;
   Update_Indian_Loksabha_Constituency_Input: Update_Indian_Loksabha_Constituency_Input;
   Update_Indian_Loksabha_Constituency_Payload: Update_Indian_Loksabha_Constituency_Payload;
+  Update_Indian_Loksabha_Constituency_Region_Input: Update_Indian_Loksabha_Constituency_Region_Input;
+  Update_Indian_Loksabha_Constituency_Region_Payload: Update_Indian_Loksabha_Constituency_Region_Payload;
   Update_Indian_Loksabha_Election_Input: Update_Indian_Loksabha_Election_Input;
   Update_Indian_Loksabha_Election_Payload: Update_Indian_Loksabha_Election_Payload;
   Update_Indian_Loksabha_Election_Phase_Input: Update_Indian_Loksabha_Election_Phase_Input;
@@ -14980,6 +17148,10 @@ export type ResolversParentTypes = {
   Update_Indian_Politician_Payload: Update_Indian_Politician_Payload;
   Update_Indian_Prime_Minister_Input: Update_Indian_Prime_Minister_Input;
   Update_Indian_Prime_Minister_Payload: Update_Indian_Prime_Minister_Payload;
+  Update_Indian_State_Union_Territory_Input: Update_Indian_State_Union_Territory_Input;
+  Update_Indian_State_Union_Territory_Payload: Update_Indian_State_Union_Territory_Payload;
+  Update_Indian_State_Union_Territory_Region_Input: Update_Indian_State_Union_Territory_Region_Input;
+  Update_Indian_State_Union_Territory_Region_Payload: Update_Indian_State_Union_Territory_Region_Payload;
   Update_Indian_Union_Council_Of_Ministers_Input: Update_Indian_Union_Council_Of_Ministers_Input;
   Update_Indian_Union_Council_Of_Ministers_Payload: Update_Indian_Union_Council_Of_Ministers_Payload;
   Update_Indian_Union_Government_Cabinet_Input: Update_Indian_Union_Government_Cabinet_Input;
@@ -14996,6 +17168,10 @@ export type ResolversParentTypes = {
   Update_Indian_Union_Government_Ministry_Input: Update_Indian_Union_Government_Ministry_Input;
   Update_Indian_Union_Government_Ministry_Payload: Update_Indian_Union_Government_Ministry_Payload;
   Update_Indian_Union_Government_Payload: Update_Indian_Union_Government_Payload;
+  Update_Indian_Vidhansabha_Constituency_Input: Update_Indian_Vidhansabha_Constituency_Input;
+  Update_Indian_Vidhansabha_Constituency_Payload: Update_Indian_Vidhansabha_Constituency_Payload;
+  Update_Indian_Vidhansabha_Constituency_Region_Input: Update_Indian_Vidhansabha_Constituency_Region_Input;
+  Update_Indian_Vidhansabha_Constituency_Region_Payload: Update_Indian_Vidhansabha_Constituency_Region_Payload;
   Update_Language_Input: Update_Language_Input;
   Update_Language_Payload: Update_Language_Payload;
   Update_Language_Script_Input: Update_Language_Script_Input;
@@ -15139,6 +17315,23 @@ export type ResolversParentTypes = {
   _Government_System_Types_Religion_Order: _Government_System_Types_Religion_Order;
   _Government_System_Types_Religion_Patch: _Government_System_Types_Religion_Patch;
   _Government_System_Types_Religion_Ref: _Government_System_Types_Religion_Ref;
+  _Indian_Administrative_Divisions: _Indian_Administrative_Divisions;
+  _Indian_Administrative_DivisionsAggregateResult: _Indian_Administrative_DivisionsAggregateResult;
+  _Indian_Administrative_DivisionsFilter: _Indian_Administrative_DivisionsFilter;
+  _Indian_Administrative_DivisionsPatch: _Indian_Administrative_DivisionsPatch;
+  _Indian_Administrative_DivisionsRef: _Indian_Administrative_DivisionsRef;
+  _Indian_District_: _Indian_District_;
+  _Indian_District_AggregateResult: _Indian_District_AggregateResult;
+  _Indian_District_Filter: _Indian_District_Filter;
+  _Indian_District_Order: _Indian_District_Order;
+  _Indian_District_Patch: _Indian_District_Patch;
+  _Indian_District_Ref: _Indian_District_Ref;
+  _Indian_District_Region_: _Indian_District_Region_;
+  _Indian_District_Region_AggregateResult: _Indian_District_Region_AggregateResult;
+  _Indian_District_Region_Filter: _Indian_District_Region_Filter;
+  _Indian_District_Region_Order: _Indian_District_Region_Order;
+  _Indian_District_Region_Patch: _Indian_District_Region_Patch;
+  _Indian_District_Region_Ref: _Indian_District_Region_Ref;
   _Indian_Government_Official_Role_: _Indian_Government_Official_Role_;
   _Indian_Government_Official_Role_AggregateResult: _Indian_Government_Official_Role_AggregateResult;
   _Indian_Government_Official_Role_Filter: _Indian_Government_Official_Role_Filter;
@@ -15158,6 +17351,11 @@ export type ResolversParentTypes = {
   _Indian_Legal_Document_Order: _Indian_Legal_Document_Order;
   _Indian_Legal_Document_Patch: _Indian_Legal_Document_Patch;
   _Indian_Legal_Document_Ref: _Indian_Legal_Document_Ref;
+  _Indian_Legislative_Divisions: _Indian_Legislative_Divisions;
+  _Indian_Legislative_DivisionsAggregateResult: _Indian_Legislative_DivisionsAggregateResult;
+  _Indian_Legislative_DivisionsFilter: _Indian_Legislative_DivisionsFilter;
+  _Indian_Legislative_DivisionsPatch: _Indian_Legislative_DivisionsPatch;
+  _Indian_Legislative_DivisionsRef: _Indian_Legislative_DivisionsRef;
   _Indian_Loksabha_: _Indian_Loksabha_;
   _Indian_Loksabha_AggregateResult: _Indian_Loksabha_AggregateResult;
   _Indian_Loksabha_Constituency_: _Indian_Loksabha_Constituency_;
@@ -15190,6 +17388,12 @@ export type ResolversParentTypes = {
   _Indian_Loksabha_Constituency_Order: _Indian_Loksabha_Constituency_Order;
   _Indian_Loksabha_Constituency_Patch: _Indian_Loksabha_Constituency_Patch;
   _Indian_Loksabha_Constituency_Ref: _Indian_Loksabha_Constituency_Ref;
+  _Indian_Loksabha_Constituency_Region_: _Indian_Loksabha_Constituency_Region_;
+  _Indian_Loksabha_Constituency_Region_AggregateResult: _Indian_Loksabha_Constituency_Region_AggregateResult;
+  _Indian_Loksabha_Constituency_Region_Filter: _Indian_Loksabha_Constituency_Region_Filter;
+  _Indian_Loksabha_Constituency_Region_Order: _Indian_Loksabha_Constituency_Region_Order;
+  _Indian_Loksabha_Constituency_Region_Patch: _Indian_Loksabha_Constituency_Region_Patch;
+  _Indian_Loksabha_Constituency_Region_Ref: _Indian_Loksabha_Constituency_Region_Ref;
   _Indian_Loksabha_Election_: _Indian_Loksabha_Election_;
   _Indian_Loksabha_Election_AggregateResult: _Indian_Loksabha_Election_AggregateResult;
   _Indian_Loksabha_Election_Filter: _Indian_Loksabha_Election_Filter;
@@ -15260,6 +17464,18 @@ export type ResolversParentTypes = {
   _Indian_Prime_Minister_Order: _Indian_Prime_Minister_Order;
   _Indian_Prime_Minister_Patch: _Indian_Prime_Minister_Patch;
   _Indian_Prime_Minister_Ref: _Indian_Prime_Minister_Ref;
+  _Indian_State_Union_Territory_: _Indian_State_Union_Territory_;
+  _Indian_State_Union_Territory_AggregateResult: _Indian_State_Union_Territory_AggregateResult;
+  _Indian_State_Union_Territory_Filter: _Indian_State_Union_Territory_Filter;
+  _Indian_State_Union_Territory_Order: _Indian_State_Union_Territory_Order;
+  _Indian_State_Union_Territory_Patch: _Indian_State_Union_Territory_Patch;
+  _Indian_State_Union_Territory_Ref: _Indian_State_Union_Territory_Ref;
+  _Indian_State_Union_Territory_Region_: _Indian_State_Union_Territory_Region_;
+  _Indian_State_Union_Territory_Region_AggregateResult: _Indian_State_Union_Territory_Region_AggregateResult;
+  _Indian_State_Union_Territory_Region_Filter: _Indian_State_Union_Territory_Region_Filter;
+  _Indian_State_Union_Territory_Region_Order: _Indian_State_Union_Territory_Region_Order;
+  _Indian_State_Union_Territory_Region_Patch: _Indian_State_Union_Territory_Region_Patch;
+  _Indian_State_Union_Territory_Region_Ref: _Indian_State_Union_Territory_Region_Ref;
   _Indian_Union_Council_Of_Ministers_: _Indian_Union_Council_Of_Ministers_;
   _Indian_Union_Council_Of_Ministers_AggregateResult: _Indian_Union_Council_Of_Ministers_AggregateResult;
   _Indian_Union_Council_Of_Ministers_Filter: _Indian_Union_Council_Of_Ministers_Filter;
@@ -15308,6 +17524,18 @@ export type ResolversParentTypes = {
   _Indian_Union_Government_Order: _Indian_Union_Government_Order;
   _Indian_Union_Government_Patch: _Indian_Union_Government_Patch;
   _Indian_Union_Government_Ref: _Indian_Union_Government_Ref;
+  _Indian_Vidhansabha_Constituency_: _Indian_Vidhansabha_Constituency_;
+  _Indian_Vidhansabha_Constituency_AggregateResult: _Indian_Vidhansabha_Constituency_AggregateResult;
+  _Indian_Vidhansabha_Constituency_Filter: _Indian_Vidhansabha_Constituency_Filter;
+  _Indian_Vidhansabha_Constituency_Order: _Indian_Vidhansabha_Constituency_Order;
+  _Indian_Vidhansabha_Constituency_Patch: _Indian_Vidhansabha_Constituency_Patch;
+  _Indian_Vidhansabha_Constituency_Ref: _Indian_Vidhansabha_Constituency_Ref;
+  _Indian_Vidhansabha_Constituency_Region_: _Indian_Vidhansabha_Constituency_Region_;
+  _Indian_Vidhansabha_Constituency_Region_AggregateResult: _Indian_Vidhansabha_Constituency_Region_AggregateResult;
+  _Indian_Vidhansabha_Constituency_Region_Filter: _Indian_Vidhansabha_Constituency_Region_Filter;
+  _Indian_Vidhansabha_Constituency_Region_Order: _Indian_Vidhansabha_Constituency_Region_Order;
+  _Indian_Vidhansabha_Constituency_Region_Patch: _Indian_Vidhansabha_Constituency_Region_Patch;
+  _Indian_Vidhansabha_Constituency_Region_Ref: _Indian_Vidhansabha_Constituency_Region_Ref;
   _Language_: _Language_;
   _Language_AggregateResult: _Language_AggregateResult;
   _Language_Filter: _Language_Filter;
@@ -15927,6 +18155,48 @@ export type Add_Government_System_Types_Religion_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Add_Indian_Administrative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_Administrative_DivisionsPayload"] = ResolversParentTypes["Add_Indian_Administrative_DivisionsPayload"]
+> = {
+  _Indian_Administrative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_District_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_District_Payload"] = ResolversParentTypes["Add_Indian_District_Payload"]
+> = {
+  _Indian_District_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_District_Payload_Indian_District_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_District_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_District_Region_Payload"] = ResolversParentTypes["Add_Indian_District_Region_Payload"]
+> = {
+  _Indian_District_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_District_Region_Payload_Indian_District_Region_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Add_Indian_Government_Official_Role_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Add_Indian_Government_Official_Role_Payload"] = ResolversParentTypes["Add_Indian_Government_Official_Role_Payload"]
@@ -15964,6 +18234,20 @@ export type Add_Indian_Legal_Document_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Add_Indian_Legal_Document_Payload_Indian_Legal_Document_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_Legislative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_Legislative_DivisionsPayload"] = ResolversParentTypes["Add_Indian_Legislative_DivisionsPayload"]
+> = {
+  _Indian_Legislative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Legislative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -16034,6 +18318,20 @@ export type Add_Indian_Loksabha_Constituency_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Add_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constituency_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_Loksabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_Loksabha_Constituency_Region_Payload"] = ResolversParentTypes["Add_Indian_Loksabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -16207,6 +18505,34 @@ export type Add_Indian_Prime_Minister_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Add_Indian_State_Union_Territory_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_State_Union_Territory_Payload"] = ResolversParentTypes["Add_Indian_State_Union_Territory_Payload"]
+> = {
+  _Indian_State_Union_Territory_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_State_Union_Territory_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_State_Union_Territory_Region_Payload"] = ResolversParentTypes["Add_Indian_State_Union_Territory_Region_Payload"]
+> = {
+  _Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Add_Indian_Union_Council_Of_Ministers_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Add_Indian_Union_Council_Of_Ministers_Payload"] = ResolversParentTypes["Add_Indian_Union_Council_Of_Ministers_Payload"]
@@ -16314,6 +18640,34 @@ export type Add_Indian_Union_Government_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Add_Indian_Union_Government_Payload_Indian_Union_Government_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_Vidhansabha_Constituency_Payload"] = ResolversParentTypes["Add_Indian_Vidhansabha_Constituency_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Add_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Add_Indian_Vidhansabha_Constituency_Region_Payload"] = ResolversParentTypes["Add_Indian_Vidhansabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Add_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -16780,6 +19134,51 @@ export type Delete_Government_System_Types_Religion_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Delete_Indian_Administrative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_Administrative_DivisionsPayload"] = ResolversParentTypes["Delete_Indian_Administrative_DivisionsPayload"]
+> = {
+  _Indian_Administrative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_District_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_District_Payload"] = ResolversParentTypes["Delete_Indian_District_Payload"]
+> = {
+  _Indian_District_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_District_Payload_Indian_District_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_District_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_District_Region_Payload"] = ResolversParentTypes["Delete_Indian_District_Region_Payload"]
+> = {
+  _Indian_District_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_District_Region_Payload_Indian_District_Region_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Delete_Indian_Government_Official_Role_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Delete_Indian_Government_Official_Role_Payload"] = ResolversParentTypes["Delete_Indian_Government_Official_Role_Payload"]
@@ -16819,6 +19218,21 @@ export type Delete_Indian_Legal_Document_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Delete_Indian_Legal_Document_Payload_Indian_Legal_Document_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_Legislative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_Legislative_DivisionsPayload"] = ResolversParentTypes["Delete_Indian_Legislative_DivisionsPayload"]
+> = {
+  _Indian_Legislative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Legislative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs>
   >;
   msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
@@ -16894,6 +19308,21 @@ export type Delete_Indian_Loksabha_Constituency_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Delete_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constituency_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_Loksabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_Loksabha_Constituency_Region_Payload"] = ResolversParentTypes["Delete_Indian_Loksabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args>
   >;
   msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
@@ -17080,6 +19509,36 @@ export type Delete_Indian_Prime_Minister_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Delete_Indian_State_Union_Territory_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_State_Union_Territory_Payload"] = ResolversParentTypes["Delete_Indian_State_Union_Territory_Payload"]
+> = {
+  _Indian_State_Union_Territory_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_State_Union_Territory_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_State_Union_Territory_Region_Payload"] = ResolversParentTypes["Delete_Indian_State_Union_Territory_Region_Payload"]
+> = {
+  _Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Delete_Indian_Union_Council_Of_Ministers_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Delete_Indian_Union_Council_Of_Ministers_Payload"] = ResolversParentTypes["Delete_Indian_Union_Council_Of_Ministers_Payload"]
@@ -17194,6 +19653,36 @@ export type Delete_Indian_Union_Government_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Delete_Indian_Union_Government_Payload_Indian_Union_Government_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_Vidhansabha_Constituency_Payload"] = ResolversParentTypes["Delete_Indian_Vidhansabha_Constituency_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args>
+  >;
+  msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Delete_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Delete_Indian_Vidhansabha_Constituency_Region_Payload"] = ResolversParentTypes["Delete_Indian_Vidhansabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Delete_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args>
   >;
   msg?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
@@ -17474,6 +19963,24 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationAdd_Government_System_Types_Religion_Args, "input">
   >;
+  add_Indian_Administrative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_Administrative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_Administrative_DivisionsArgs, "input">
+  >;
+  add_Indian_District_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_District_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_District_Args, "input">
+  >;
+  add_Indian_District_Region_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_District_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_District_Region_Args, "input">
+  >;
   add_Indian_Government_Official_Role_?: Resolver<
     Maybe<ResolversTypes["Add_Indian_Government_Official_Role_Payload"]>,
     ParentType,
@@ -17491,6 +19998,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationAdd_Indian_Legal_Document_Args, "input">
+  >;
+  add_Indian_Legislative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_Legislative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_Legislative_DivisionsArgs, "input">
   >;
   add_Indian_Loksabha_?: Resolver<
     Maybe<ResolversTypes["Add_Indian_Loksabha_Payload"]>,
@@ -17527,6 +20040,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationAdd_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args, "input">
+  >;
+  add_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_Loksabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_Loksabha_Constituency_Region_Args, "input">
   >;
   add_Indian_Loksabha_Election_?: Resolver<
     Maybe<ResolversTypes["Add_Indian_Loksabha_Election_Payload"]>,
@@ -17594,6 +20113,18 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationAdd_Indian_Prime_Minister_Args, "input">
   >;
+  add_Indian_State_Union_Territory_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_State_Union_Territory_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_State_Union_Territory_Args, "input">
+  >;
+  add_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_State_Union_Territory_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_State_Union_Territory_Region_Args, "input">
+  >;
   add_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<ResolversTypes["Add_Indian_Union_Council_Of_Ministers_Payload"]>,
     ParentType,
@@ -17641,6 +20172,18 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationAdd_Indian_Union_Government_Ministry_Args, "input">
+  >;
+  add_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_Vidhansabha_Constituency_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_Vidhansabha_Constituency_Args, "input">
+  >;
+  add_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Add_Indian_Vidhansabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationAdd_Indian_Vidhansabha_Constituency_Region_Args, "input">
   >;
   add_Language_?: Resolver<
     Maybe<ResolversTypes["Add_Language_Payload"]>,
@@ -17828,6 +20371,24 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationDelete_Government_System_Types_Religion_Args, "filter">
   >;
+  delete_Indian_Administrative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_Administrative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_Administrative_DivisionsArgs, "filter">
+  >;
+  delete_Indian_District_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_District_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_District_Args, "filter">
+  >;
+  delete_Indian_District_Region_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_District_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_District_Region_Args, "filter">
+  >;
   delete_Indian_Government_Official_Role_?: Resolver<
     Maybe<ResolversTypes["Delete_Indian_Government_Official_Role_Payload"]>,
     ParentType,
@@ -17845,6 +20406,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationDelete_Indian_Legal_Document_Args, "filter">
+  >;
+  delete_Indian_Legislative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_Legislative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_Legislative_DivisionsArgs, "filter">
   >;
   delete_Indian_Loksabha_?: Resolver<
     Maybe<ResolversTypes["Delete_Indian_Loksabha_Payload"]>,
@@ -17881,6 +20448,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationDelete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args, "filter">
+  >;
+  delete_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_Loksabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_Loksabha_Constituency_Region_Args, "filter">
   >;
   delete_Indian_Loksabha_Election_?: Resolver<
     Maybe<ResolversTypes["Delete_Indian_Loksabha_Election_Payload"]>,
@@ -17948,6 +20521,18 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationDelete_Indian_Prime_Minister_Args, "filter">
   >;
+  delete_Indian_State_Union_Territory_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_State_Union_Territory_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_State_Union_Territory_Args, "filter">
+  >;
+  delete_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_State_Union_Territory_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_State_Union_Territory_Region_Args, "filter">
+  >;
   delete_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<ResolversTypes["Delete_Indian_Union_Council_Of_Ministers_Payload"]>,
     ParentType,
@@ -17995,6 +20580,18 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationDelete_Indian_Union_Government_Ministry_Args, "filter">
+  >;
+  delete_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_Vidhansabha_Constituency_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_Vidhansabha_Constituency_Args, "filter">
+  >;
+  delete_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Delete_Indian_Vidhansabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationDelete_Indian_Vidhansabha_Constituency_Region_Args, "filter">
   >;
   delete_Language_?: Resolver<
     Maybe<ResolversTypes["Delete_Language_Payload"]>,
@@ -18182,6 +20779,24 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationUpdate_Government_System_Types_Religion_Args, "input">
   >;
+  update_Indian_Administrative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_Administrative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_Administrative_DivisionsArgs, "input">
+  >;
+  update_Indian_District_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_District_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_District_Args, "input">
+  >;
+  update_Indian_District_Region_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_District_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_District_Region_Args, "input">
+  >;
   update_Indian_Government_Official_Role_?: Resolver<
     Maybe<ResolversTypes["Update_Indian_Government_Official_Role_Payload"]>,
     ParentType,
@@ -18199,6 +20814,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationUpdate_Indian_Legal_Document_Args, "input">
+  >;
+  update_Indian_Legislative_Divisions?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_Legislative_DivisionsPayload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_Legislative_DivisionsArgs, "input">
   >;
   update_Indian_Loksabha_?: Resolver<
     Maybe<ResolversTypes["Update_Indian_Loksabha_Payload"]>,
@@ -18235,6 +20856,12 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationUpdate_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args, "input">
+  >;
+  update_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_Loksabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_Loksabha_Constituency_Region_Args, "input">
   >;
   update_Indian_Loksabha_Election_?: Resolver<
     Maybe<ResolversTypes["Update_Indian_Loksabha_Election_Payload"]>,
@@ -18302,6 +20929,18 @@ export type MutationResolvers<
     ContextType,
     RequireFields<MutationUpdate_Indian_Prime_Minister_Args, "input">
   >;
+  update_Indian_State_Union_Territory_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_State_Union_Territory_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_State_Union_Territory_Args, "input">
+  >;
+  update_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_State_Union_Territory_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_State_Union_Territory_Region_Args, "input">
+  >;
   update_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<ResolversTypes["Update_Indian_Union_Council_Of_Ministers_Payload"]>,
     ParentType,
@@ -18349,6 +20988,18 @@ export type MutationResolvers<
     ParentType,
     ContextType,
     RequireFields<MutationUpdate_Indian_Union_Government_Ministry_Args, "input">
+  >;
+  update_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_Vidhansabha_Constituency_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_Vidhansabha_Constituency_Args, "input">
+  >;
+  update_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["Update_Indian_Vidhansabha_Constituency_Region_Payload"]>,
+    ParentType,
+    ContextType,
+    RequireFields<MutationUpdate_Indian_Vidhansabha_Constituency_Region_Args, "input">
   >;
   update_Language_?: Resolver<
     Maybe<ResolversTypes["Update_Language_Payload"]>,
@@ -18567,6 +21218,24 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryAggregate_Government_System_Types_Religion_Args>
   >;
+  aggregate_Indian_Administrative_Divisions?: Resolver<
+    Maybe<ResolversTypes["_Indian_Administrative_DivisionsAggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_Administrative_DivisionsArgs>
+  >;
+  aggregate_Indian_District_?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_District_Args>
+  >;
+  aggregate_Indian_District_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_District_Region_Args>
+  >;
   aggregate_Indian_Government_Official_Role_?: Resolver<
     Maybe<ResolversTypes["_Indian_Government_Official_Role_AggregateResult"]>,
     ParentType,
@@ -18584,6 +21253,12 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryAggregate_Indian_Legal_Document_Args>
+  >;
+  aggregate_Indian_Legislative_Divisions?: Resolver<
+    Maybe<ResolversTypes["_Indian_Legislative_DivisionsAggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_Legislative_DivisionsArgs>
   >;
   aggregate_Indian_Loksabha_?: Resolver<
     Maybe<ResolversTypes["_Indian_Loksabha_AggregateResult"]>,
@@ -18620,6 +21295,12 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryAggregate_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args>
+  >;
+  aggregate_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_Loksabha_Constituency_Region_Args>
   >;
   aggregate_Indian_Loksabha_Election_?: Resolver<
     Maybe<ResolversTypes["_Indian_Loksabha_Election_AggregateResult"]>,
@@ -18687,6 +21368,18 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryAggregate_Indian_Prime_Minister_Args>
   >;
+  aggregate_Indian_State_Union_Territory_?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_State_Union_Territory_Args>
+  >;
+  aggregate_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_State_Union_Territory_Region_Args>
+  >;
   aggregate_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<ResolversTypes["_Indian_Union_Council_Of_Ministers_AggregateResult"]>,
     ParentType,
@@ -18734,6 +21427,18 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryAggregate_Indian_Union_Government_Ministry_Args>
+  >;
+  aggregate_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_Vidhansabha_Constituency_Args>
+  >;
+  aggregate_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryAggregate_Indian_Vidhansabha_Constituency_Region_Args>
   >;
   aggregate_Language_?: Resolver<
     Maybe<ResolversTypes["_Language_AggregateResult"]>,
@@ -18906,6 +21611,24 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryGet_Government_System_Types_Religion_Args>
   >;
+  get_Indian_Administrative_Divisions?: Resolver<
+    Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_Administrative_DivisionsArgs, "id">
+  >;
+  get_Indian_District_?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryGet_Indian_District_Args>
+  >;
+  get_Indian_District_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_Region_"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_District_Region_Args, "id">
+  >;
   get_Indian_Government_Official_Role_?: Resolver<
     Maybe<ResolversTypes["_Indian_Government_Official_Role_"]>,
     ParentType,
@@ -18924,6 +21647,12 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryGet_Indian_Legal_Document_Args>
   >;
+  get_Indian_Legislative_Divisions?: Resolver<
+    Maybe<ResolversTypes["_Indian_Legislative_Divisions"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_Legislative_DivisionsArgs, "id">
+  >;
   get_Indian_Loksabha_?: Resolver<
     Maybe<ResolversTypes["_Indian_Loksabha_"]>,
     ParentType,
@@ -18934,7 +21663,7 @@ export type QueryResolvers<
     Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>,
     ParentType,
     ContextType,
-    RequireFields<QueryGet_Indian_Loksabha_Constituency_Args, "id">
+    Partial<QueryGet_Indian_Loksabha_Constituency_Args>
   >;
   get_Indian_Loksabha_Constituency_Election_?: Resolver<
     Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Election_"]>,
@@ -18959,6 +21688,12 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     RequireFields<QueryGet_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args, "id">
+  >;
+  get_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_Loksabha_Constituency_Region_Args, "id">
   >;
   get_Indian_Loksabha_Election_?: Resolver<
     Maybe<ResolversTypes["_Indian_Loksabha_Election_"]>,
@@ -19026,6 +21761,18 @@ export type QueryResolvers<
     ContextType,
     RequireFields<QueryGet_Indian_Prime_Minister_Args, "id">
   >;
+  get_Indian_State_Union_Territory_?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryGet_Indian_State_Union_Territory_Args>
+  >;
+  get_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_State_Union_Territory_Region_Args, "id">
+  >;
   get_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<ResolversTypes["_Indian_Union_Council_Of_Ministers_"]>,
     ParentType,
@@ -19073,6 +21820,18 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryGet_Indian_Union_Government_Ministry_Args>
+  >;
+  get_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>,
+    ParentType,
+    ContextType,
+    Partial<QueryGet_Indian_Vidhansabha_Constituency_Args>
+  >;
+  get_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>,
+    ParentType,
+    ContextType,
+    RequireFields<QueryGet_Indian_Vidhansabha_Constituency_Region_Args, "id">
   >;
   get_Language_?: Resolver<
     Maybe<ResolversTypes["_Language_"]>,
@@ -19250,6 +22009,24 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryQuery_Government_System_Types_Religion_Args>
   >;
+  query_Indian_Administrative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_Administrative_DivisionsArgs>
+  >;
+  query_Indian_District_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_District_Args>
+  >;
+  query_Indian_District_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_District_Region_Args>
+  >;
   query_Indian_Government_Official_Role_?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Government_Official_Role_"]>>>,
     ParentType,
@@ -19267,6 +22044,12 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryQuery_Indian_Legal_Document_Args>
+  >;
+  query_Indian_Legislative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Legislative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_Legislative_DivisionsArgs>
   >;
   query_Indian_Loksabha_?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_"]>>>,
@@ -19303,6 +22086,12 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryQuery_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Args>
+  >;
+  query_Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_Loksabha_Constituency_Region_Args>
   >;
   query_Indian_Loksabha_Election_?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Election_"]>>>,
@@ -19370,6 +22159,18 @@ export type QueryResolvers<
     ContextType,
     Partial<QueryQuery_Indian_Prime_Minister_Args>
   >;
+  query_Indian_State_Union_Territory_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_State_Union_Territory_Args>
+  >;
+  query_Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_State_Union_Territory_Region_Args>
+  >;
   query_Indian_Union_Council_Of_Ministers_?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Union_Council_Of_Ministers_"]>>>,
     ParentType,
@@ -19417,6 +22218,18 @@ export type QueryResolvers<
     ParentType,
     ContextType,
     Partial<QueryQuery_Indian_Union_Government_Ministry_Args>
+  >;
+  query_Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_Vidhansabha_Constituency_Args>
+  >;
+  query_Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<QueryQuery_Indian_Vidhansabha_Constituency_Region_Args>
   >;
   query_Language_?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Language_"]>>>,
@@ -19813,6 +22626,48 @@ export type Update_Government_System_Types_Religion_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Update_Indian_Administrative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_Administrative_DivisionsPayload"] = ResolversParentTypes["Update_Indian_Administrative_DivisionsPayload"]
+> = {
+  _Indian_Administrative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_Administrative_DivisionsPayload_Indian_Administrative_DivisionsArgs>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_District_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_District_Payload"] = ResolversParentTypes["Update_Indian_District_Payload"]
+> = {
+  _Indian_District_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_District_Payload_Indian_District_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_District_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_District_Region_Payload"] = ResolversParentTypes["Update_Indian_District_Region_Payload"]
+> = {
+  _Indian_District_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_District_Region_Payload_Indian_District_Region_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Update_Indian_Government_Official_Role_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Update_Indian_Government_Official_Role_Payload"] = ResolversParentTypes["Update_Indian_Government_Official_Role_Payload"]
@@ -19850,6 +22705,20 @@ export type Update_Indian_Legal_Document_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Update_Indian_Legal_Document_Payload_Indian_Legal_Document_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_Legislative_DivisionsPayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_Legislative_DivisionsPayload"] = ResolversParentTypes["Update_Indian_Legislative_DivisionsPayload"]
+> = {
+  _Indian_Legislative_Divisions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Legislative_Divisions"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_Legislative_DivisionsPayload_Indian_Legislative_DivisionsArgs>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -19920,6 +22789,20 @@ export type Update_Indian_Loksabha_Constituency_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Update_Indian_Loksabha_Constituency_Payload_Indian_Loksabha_Constituency_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_Loksabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_Loksabha_Constituency_Region_Payload"] = ResolversParentTypes["Update_Indian_Loksabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Loksabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_Loksabha_Constituency_Region_Payload_Indian_Loksabha_Constituency_Region_Args>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -20093,6 +22976,34 @@ export type Update_Indian_Prime_Minister_PayloadResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type Update_Indian_State_Union_Territory_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_State_Union_Territory_Payload"] = ResolversParentTypes["Update_Indian_State_Union_Territory_Payload"]
+> = {
+  _Indian_State_Union_Territory_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_State_Union_Territory_Payload_Indian_State_Union_Territory_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_State_Union_Territory_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_State_Union_Territory_Region_Payload"] = ResolversParentTypes["Update_Indian_State_Union_Territory_Region_Payload"]
+> = {
+  _Indian_State_Union_Territory_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_State_Union_Territory_Region_Payload_Indian_State_Union_Territory_Region_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type Update_Indian_Union_Council_Of_Ministers_PayloadResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["Update_Indian_Union_Council_Of_Ministers_Payload"] = ResolversParentTypes["Update_Indian_Union_Council_Of_Ministers_Payload"]
@@ -20200,6 +23111,34 @@ export type Update_Indian_Union_Government_PayloadResolvers<
     ParentType,
     ContextType,
     Partial<Update_Indian_Union_Government_Payload_Indian_Union_Government_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_Vidhansabha_Constituency_Payload"] = ResolversParentTypes["Update_Indian_Vidhansabha_Constituency_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_Vidhansabha_Constituency_Payload_Indian_Vidhansabha_Constituency_Args>
+  >;
+  numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type Update_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["Update_Indian_Vidhansabha_Constituency_Region_Payload"] = ResolversParentTypes["Update_Indian_Vidhansabha_Constituency_Region_Payload"]
+> = {
+  _Indian_Vidhansabha_Constituency_Region_?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<Update_Indian_Vidhansabha_Constituency_Region_Payload_Indian_Vidhansabha_Constituency_Region_Args>
   >;
   numUids?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -20851,6 +23790,54 @@ export type _Geo_Resolvers<
     ParentType,
     ContextType,
     Partial<_Geo_India_Zonal_Council_DivisionsArgs>
+  >;
+  indian_districts_boundaries?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Districts_BoundariesArgs>
+  >;
+  indian_districts_boundariesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Districts_BoundariesAggregateArgs>
+  >;
+  indian_loksabha_constituencies_boundaries?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Loksabha_Constituencies_BoundariesArgs>
+  >;
+  indian_loksabha_constituencies_boundariesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Loksabha_Constituencies_BoundariesAggregateArgs>
+  >;
+  indian_states_union_territories_boundaries?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_States_Union_Territories_BoundariesArgs>
+  >;
+  indian_states_union_territories_boundariesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_States_Union_Territories_BoundariesAggregateArgs>
+  >;
+  indian_vidhansabha_constituencies_boundaries?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Vidhansabha_Constituencies_BoundariesArgs>
+  >;
+  indian_vidhansabha_constituencies_boundariesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Geo_Indian_Vidhansabha_Constituencies_BoundariesAggregateArgs>
   >;
   location?: Resolver<Maybe<ResolversTypes["Point"]>, ParentType, ContextType>;
   node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
@@ -21926,6 +24913,201 @@ export type _Government_System_Types_Religion_AggregateResultResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type _Indian_Administrative_DivisionsResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Administrative_Divisions"] = ResolversParentTypes["_Indian_Administrative_Divisions"]
+> = {
+  districts?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Administrative_DivisionsDistrictsArgs>
+  >;
+  districtsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Administrative_DivisionsDistrictsAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  states_union_territories?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Administrative_DivisionsStates_Union_TerritoriesArgs>
+  >;
+  states_union_territoriesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Administrative_DivisionsStates_Union_TerritoriesAggregateArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Administrative_DivisionsAggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Administrative_DivisionsAggregateResult"] = ResolversParentTypes["_Indian_Administrative_DivisionsAggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_District_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_District_"] = ResolversParentTypes["_Indian_District_"]
+> = {
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  loksabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Loksabha_ConstituenciesArgs>
+  >;
+  loksabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Loksabha_ConstituenciesAggregateArgs>
+  >;
+  name_id?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
+  names?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Name_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_NamesArgs>
+  >;
+  namesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Name_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_NamesAggregateArgs>
+  >;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Node_UpdatesAggregateArgs>
+  >;
+  regions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_RegionsArgs>
+  >;
+  regionsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_RegionsAggregateArgs>
+  >;
+  states_union_territories?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_States_Union_TerritoriesArgs>
+  >;
+  states_union_territoriesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_States_Union_TerritoriesAggregateArgs>
+  >;
+  vidhansabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Vidhansabha_ConstituenciesArgs>
+  >;
+  vidhansabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Vidhansabha_ConstituenciesAggregateArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_District_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_District_AggregateResult"] = ResolversParentTypes["_Indian_District_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  name_idMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  name_idMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_District_Region_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_District_Region_"] = ResolversParentTypes["_Indian_District_Region_"]
+> = {
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  geo_boundary?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Geo_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Region_Geo_BoundaryArgs>
+  >;
+  geo_boundaryAggregate?: Resolver<
+    Maybe<ResolversTypes["_Geo_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Region_Geo_BoundaryAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Region_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Region_Node_UpdatesAggregateArgs>
+  >;
+  self?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_District_Region_SelfArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_District_Region_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_District_Region_AggregateResult"] = ResolversParentTypes["_Indian_District_Region_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type _Indian_Government_Official_Role_Resolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Indian_Government_Official_Role_"] = ResolversParentTypes["_Indian_Government_Official_Role_"]
@@ -21991,6 +25173,12 @@ export type _Indian_Government_System_Resolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Indian_Government_System_"] = ResolversParentTypes["_Indian_Government_System_"]
 > = {
+  administrative_divisions?: Resolver<
+    Maybe<ResolversTypes["_Indian_Administrative_Divisions"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Government_System_Administrative_DivisionsArgs>
+  >;
   cabinet_ministers?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Union_Government_Cabinet_Minister_"]>>>,
     ParentType,
@@ -22126,6 +25314,46 @@ export type _Indian_Legal_Document_AggregateResultResolvers<
   name_idMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
   node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Legislative_DivisionsResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Legislative_Divisions"] = ResolversParentTypes["_Indian_Legislative_Divisions"]
+> = {
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  loksabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Legislative_DivisionsLoksabha_ConstituenciesArgs>
+  >;
+  loksabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Legislative_DivisionsLoksabha_ConstituenciesAggregateArgs>
+  >;
+  vidhansabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Legislative_DivisionsVidhansabha_ConstituenciesArgs>
+  >;
+  vidhansabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Legislative_DivisionsVidhansabha_ConstituenciesAggregateArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Legislative_DivisionsAggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Legislative_DivisionsAggregateResult"] = ResolversParentTypes["_Indian_Legislative_DivisionsAggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -22265,11 +25493,19 @@ export type _Indian_Loksabha_Constituency_Resolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Indian_Loksabha_Constituency_"] = ResolversParentTypes["_Indian_Loksabha_Constituency_"]
 > = {
-  disestablished_on?: Resolver<
-    Maybe<ResolversTypes["_Date_Time_"]>,
+  constituency_number?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  districts?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
     ParentType,
     ContextType,
-    Partial<_Indian_Loksabha_Constituency_Disestablished_OnArgs>
+    Partial<_Indian_Loksabha_Constituency_DistrictsArgs>
+  >;
+  districtsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_DistrictsAggregateArgs>
   >;
   elections?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Election_"]>>>,
@@ -22283,12 +25519,7 @@ export type _Indian_Loksabha_Constituency_Resolvers<
     ContextType,
     Partial<_Indian_Loksabha_Constituency_ElectionsAggregateArgs>
   >;
-  established_on?: Resolver<
-    Maybe<ResolversTypes["_Date_Time_"]>,
-    ParentType,
-    ContextType,
-    Partial<_Indian_Loksabha_Constituency_Established_OnArgs>
-  >;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
   loksabha_members?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Member_"]>>>,
@@ -22314,6 +25545,7 @@ export type _Indian_Loksabha_Constituency_Resolvers<
     ContextType,
     Partial<_Indian_Loksabha_Constituency_LoksabhasAggregateArgs>
   >;
+  name_id?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
   names?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Name_"]>>>,
     ParentType,
@@ -22339,6 +25571,42 @@ export type _Indian_Loksabha_Constituency_Resolvers<
     ContextType,
     Partial<_Indian_Loksabha_Constituency_Node_UpdatesAggregateArgs>
   >;
+  regions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_RegionsArgs>
+  >;
+  regionsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_RegionsAggregateArgs>
+  >;
+  states_union_territories?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_States_Union_TerritoriesArgs>
+  >;
+  states_union_territoriesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_States_Union_TerritoriesAggregateArgs>
+  >;
+  vidhansabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Vidhansabha_ConstituenciesArgs>
+  >;
+  vidhansabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Vidhansabha_ConstituenciesAggregateArgs>
+  >;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -22346,7 +25614,15 @@ export type _Indian_Loksabha_Constituency_AggregateResultResolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Indian_Loksabha_Constituency_AggregateResult"] = ResolversParentTypes["_Indian_Loksabha_Constituency_AggregateResult"]
 > = {
+  constituency_numberMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  constituency_numberMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  name_idMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  name_idMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
   node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
   node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
@@ -22624,6 +25900,61 @@ export type _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Aggrega
   votes_percentageMax?: Resolver<Maybe<ResolversTypes["Float"]>, ParentType, ContextType>;
   votes_percentageMin?: Resolver<Maybe<ResolversTypes["Float"]>, ParentType, ContextType>;
   votes_percentageSum?: Resolver<Maybe<ResolversTypes["Float"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Loksabha_Constituency_Region_"] = ResolversParentTypes["_Indian_Loksabha_Constituency_Region_"]
+> = {
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  geo_boundary?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Geo_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Region_Geo_BoundaryArgs>
+  >;
+  geo_boundaryAggregate?: Resolver<
+    Maybe<ResolversTypes["_Geo_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Region_Geo_BoundaryAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Region_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Region_Node_UpdatesAggregateArgs>
+  >;
+  self?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Loksabha_Constituency_Region_SelfArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Loksabha_Constituency_Region_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Loksabha_Constituency_Region_AggregateResult"] = ResolversParentTypes["_Indian_Loksabha_Constituency_Region_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
@@ -23432,6 +26763,156 @@ export type _Indian_Prime_Minister_AggregateResultResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type _Indian_State_Union_Territory_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_State_Union_Territory_"] = ResolversParentTypes["_Indian_State_Union_Territory_"]
+> = {
+  category?: Resolver<Maybe<ResolversTypes["_Indian_State_Or_Union_Territory_Category_"]>, ParentType, ContextType>;
+  districts?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_DistrictsArgs>
+  >;
+  districtsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_DistrictsAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  loksabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Loksabha_ConstituenciesArgs>
+  >;
+  loksabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Loksabha_ConstituenciesAggregateArgs>
+  >;
+  name_id?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
+  names?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Name_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_NamesArgs>
+  >;
+  namesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Name_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_NamesAggregateArgs>
+  >;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Node_UpdatesAggregateArgs>
+  >;
+  regions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_RegionsArgs>
+  >;
+  regionsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_RegionsAggregateArgs>
+  >;
+  vidhansabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Vidhansabha_ConstituenciesArgs>
+  >;
+  vidhansabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Vidhansabha_ConstituenciesAggregateArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_State_Union_Territory_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_State_Union_Territory_AggregateResult"] = ResolversParentTypes["_Indian_State_Union_Territory_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  name_idMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  name_idMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_State_Union_Territory_Region_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_State_Union_Territory_Region_"] = ResolversParentTypes["_Indian_State_Union_Territory_Region_"]
+> = {
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  geo_boundary?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Geo_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Region_Geo_BoundaryArgs>
+  >;
+  geo_boundaryAggregate?: Resolver<
+    Maybe<ResolversTypes["_Geo_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Region_Geo_BoundaryAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Region_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Region_Node_UpdatesAggregateArgs>
+  >;
+  self?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_State_Union_Territory_Region_SelfArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_State_Union_Territory_Region_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_State_Union_Territory_Region_AggregateResult"] = ResolversParentTypes["_Indian_State_Union_Territory_Region_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type _Indian_Union_Council_Of_Ministers_Resolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Indian_Union_Council_Of_Ministers_"] = ResolversParentTypes["_Indian_Union_Council_Of_Ministers_"]
@@ -24160,6 +27641,164 @@ export type _Indian_Union_Government_Ministry_AggregateResultResolvers<
   __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
 };
 
+export type _Indian_Vidhansabha_Constituency_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Vidhansabha_Constituency_"] = ResolversParentTypes["_Indian_Vidhansabha_Constituency_"]
+> = {
+  constituency_number?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  districts?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_DistrictsArgs>
+  >;
+  districtsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_DistrictsAggregateArgs>
+  >;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  loksabha_constituencies?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Loksabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Loksabha_ConstituenciesArgs>
+  >;
+  loksabha_constituenciesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Loksabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Loksabha_ConstituenciesAggregateArgs>
+  >;
+  name_id?: Resolver<ResolversTypes["String"], ParentType, ContextType>;
+  names?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Name_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_NamesArgs>
+  >;
+  namesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Name_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_NamesAggregateArgs>
+  >;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Node_UpdatesAggregateArgs>
+  >;
+  regions?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_RegionsArgs>
+  >;
+  regionsAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_Region_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_RegionsAggregateArgs>
+  >;
+  states_union_territories?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_States_Union_TerritoriesArgs>
+  >;
+  states_union_territoriesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_States_Union_TerritoriesAggregateArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Vidhansabha_Constituency_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Vidhansabha_Constituency_AggregateResult"] = ResolversParentTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]
+> = {
+  constituency_numberMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  constituency_numberMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  name_idMax?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  name_idMin?: Resolver<Maybe<ResolversTypes["String"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_Resolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Vidhansabha_Constituency_Region_"] = ResolversParentTypes["_Indian_Vidhansabha_Constituency_Region_"]
+> = {
+  disestablished?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  established?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  geo_boundary?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Geo_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Region_Geo_BoundaryArgs>
+  >;
+  geo_boundaryAggregate?: Resolver<
+    Maybe<ResolversTypes["_Geo_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Region_Geo_BoundaryAggregateArgs>
+  >;
+  id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  node_created_on?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_updates?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Node_Update_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Region_Node_UpdatesArgs>
+  >;
+  node_updatesAggregate?: Resolver<
+    Maybe<ResolversTypes["_Node_Update_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Region_Node_UpdatesAggregateArgs>
+  >;
+  self?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>,
+    ParentType,
+    ContextType,
+    Partial<_Indian_Vidhansabha_Constituency_Region_SelfArgs>
+  >;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
+export type _Indian_Vidhansabha_Constituency_Region_AggregateResultResolvers<
+  ContextType = any,
+  ParentType extends ResolversParentTypes["_Indian_Vidhansabha_Constituency_Region_AggregateResult"] = ResolversParentTypes["_Indian_Vidhansabha_Constituency_Region_AggregateResult"]
+> = {
+  count?: Resolver<Maybe<ResolversTypes["Int"]>, ParentType, ContextType>;
+  disestablishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  disestablishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  establishedMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMax?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  node_created_onMin?: Resolver<Maybe<ResolversTypes["DateTime"]>, ParentType, ContextType>;
+  __isTypeOf?: IsTypeOfResolverFn<ParentType, ContextType>;
+};
+
 export type _Language_Resolvers<
   ContextType = any,
   ParentType extends ResolversParentTypes["_Language_"] = ResolversParentTypes["_Language_"]
@@ -24446,6 +28085,18 @@ export type _Name_Resolvers<
     Partial<_Name_Government_System_Type_ReligionAggregateArgs>
   >;
   id?: Resolver<ResolversTypes["ID"], ParentType, ContextType>;
+  indian_district?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_District_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_DistrictArgs>
+  >;
+  indian_districtAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_District_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_DistrictAggregateArgs>
+  >;
   indian_government_official_role?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Government_Official_Role_"]>>>,
     ParentType,
@@ -24506,6 +28157,18 @@ export type _Name_Resolvers<
     ContextType,
     Partial<_Name_Indian_Political_PartyAggregateArgs>
   >;
+  indian_state_union_territory?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_State_Union_Territory_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_State_Union_TerritoryArgs>
+  >;
+  indian_state_union_territoryAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_State_Union_Territory_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_State_Union_TerritoryAggregateArgs>
+  >;
   indian_union_government_department?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Indian_Union_Government_Department_"]>>>,
     ParentType,
@@ -24541,6 +28204,18 @@ export type _Name_Resolvers<
     ParentType,
     ContextType,
     Partial<_Name_Indian_Union_Parliament_LoksabhaAggregateArgs>
+  >;
+  indian_vidhansabha_constituency?: Resolver<
+    Maybe<Array<Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_"]>>>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_Vidhansabha_ConstituencyArgs>
+  >;
+  indian_vidhansabha_constituencyAggregate?: Resolver<
+    Maybe<ResolversTypes["_Indian_Vidhansabha_Constituency_AggregateResult"]>,
+    ParentType,
+    ContextType,
+    Partial<_Name_Indian_Vidhansabha_ConstituencyAggregateArgs>
   >;
   language?: Resolver<
     Maybe<Array<Maybe<ResolversTypes["_Language_"]>>>,
@@ -24909,14 +28584,19 @@ export type Resolvers<ContextType = any> = {
   Add_Government_System_Types_Oligarchy_Payload?: Add_Government_System_Types_Oligarchy_PayloadResolvers<ContextType>;
   Add_Government_System_Types_Partisan_Systems_Payload?: Add_Government_System_Types_Partisan_Systems_PayloadResolvers<ContextType>;
   Add_Government_System_Types_Religion_Payload?: Add_Government_System_Types_Religion_PayloadResolvers<ContextType>;
+  Add_Indian_Administrative_DivisionsPayload?: Add_Indian_Administrative_DivisionsPayloadResolvers<ContextType>;
+  Add_Indian_District_Payload?: Add_Indian_District_PayloadResolvers<ContextType>;
+  Add_Indian_District_Region_Payload?: Add_Indian_District_Region_PayloadResolvers<ContextType>;
   Add_Indian_Government_Official_Role_Payload?: Add_Indian_Government_Official_Role_PayloadResolvers<ContextType>;
   Add_Indian_Government_System_Payload?: Add_Indian_Government_System_PayloadResolvers<ContextType>;
   Add_Indian_Legal_Document_Payload?: Add_Indian_Legal_Document_PayloadResolvers<ContextType>;
+  Add_Indian_Legislative_DivisionsPayload?: Add_Indian_Legislative_DivisionsPayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Constituency_Election_Candidate_Payload?: Add_Indian_Loksabha_Constituency_Election_Candidate_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Constituency_Election_Payload?: Add_Indian_Loksabha_Constituency_Election_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload?: Add_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Constituency_Election_Result_Payload?: Add_Indian_Loksabha_Constituency_Election_Result_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Constituency_Payload?: Add_Indian_Loksabha_Constituency_PayloadResolvers<ContextType>;
+  Add_Indian_Loksabha_Constituency_Region_Payload?: Add_Indian_Loksabha_Constituency_Region_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Election_Payload?: Add_Indian_Loksabha_Election_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Election_Phase_Payload?: Add_Indian_Loksabha_Election_Phase_PayloadResolvers<ContextType>;
   Add_Indian_Loksabha_Election_Result_Payload?: Add_Indian_Loksabha_Election_Result_PayloadResolvers<ContextType>;
@@ -24929,6 +28609,8 @@ export type Resolvers<ContextType = any> = {
   Add_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload?: Add_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_PayloadResolvers<ContextType>;
   Add_Indian_Politician_Payload?: Add_Indian_Politician_PayloadResolvers<ContextType>;
   Add_Indian_Prime_Minister_Payload?: Add_Indian_Prime_Minister_PayloadResolvers<ContextType>;
+  Add_Indian_State_Union_Territory_Payload?: Add_Indian_State_Union_Territory_PayloadResolvers<ContextType>;
+  Add_Indian_State_Union_Territory_Region_Payload?: Add_Indian_State_Union_Territory_Region_PayloadResolvers<ContextType>;
   Add_Indian_Union_Council_Of_Ministers_Payload?: Add_Indian_Union_Council_Of_Ministers_PayloadResolvers<ContextType>;
   Add_Indian_Union_Government_Cabinet_Minister_Payload?: Add_Indian_Union_Government_Cabinet_Minister_PayloadResolvers<ContextType>;
   Add_Indian_Union_Government_Cabinet_Payload?: Add_Indian_Union_Government_Cabinet_PayloadResolvers<ContextType>;
@@ -24937,6 +28619,8 @@ export type Resolvers<ContextType = any> = {
   Add_Indian_Union_Government_Minister_Of_State_Payload?: Add_Indian_Union_Government_Minister_Of_State_PayloadResolvers<ContextType>;
   Add_Indian_Union_Government_Ministry_Payload?: Add_Indian_Union_Government_Ministry_PayloadResolvers<ContextType>;
   Add_Indian_Union_Government_Payload?: Add_Indian_Union_Government_PayloadResolvers<ContextType>;
+  Add_Indian_Vidhansabha_Constituency_Payload?: Add_Indian_Vidhansabha_Constituency_PayloadResolvers<ContextType>;
+  Add_Indian_Vidhansabha_Constituency_Region_Payload?: Add_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<ContextType>;
   Add_Language_Payload?: Add_Language_PayloadResolvers<ContextType>;
   Add_Language_Script_Payload?: Add_Language_Script_PayloadResolvers<ContextType>;
   Add_Name_Payload?: Add_Name_PayloadResolvers<ContextType>;
@@ -24969,14 +28653,19 @@ export type Resolvers<ContextType = any> = {
   Delete_Government_System_Types_Oligarchy_Payload?: Delete_Government_System_Types_Oligarchy_PayloadResolvers<ContextType>;
   Delete_Government_System_Types_Partisan_Systems_Payload?: Delete_Government_System_Types_Partisan_Systems_PayloadResolvers<ContextType>;
   Delete_Government_System_Types_Religion_Payload?: Delete_Government_System_Types_Religion_PayloadResolvers<ContextType>;
+  Delete_Indian_Administrative_DivisionsPayload?: Delete_Indian_Administrative_DivisionsPayloadResolvers<ContextType>;
+  Delete_Indian_District_Payload?: Delete_Indian_District_PayloadResolvers<ContextType>;
+  Delete_Indian_District_Region_Payload?: Delete_Indian_District_Region_PayloadResolvers<ContextType>;
   Delete_Indian_Government_Official_Role_Payload?: Delete_Indian_Government_Official_Role_PayloadResolvers<ContextType>;
   Delete_Indian_Government_System_Payload?: Delete_Indian_Government_System_PayloadResolvers<ContextType>;
   Delete_Indian_Legal_Document_Payload?: Delete_Indian_Legal_Document_PayloadResolvers<ContextType>;
+  Delete_Indian_Legislative_DivisionsPayload?: Delete_Indian_Legislative_DivisionsPayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Constituency_Election_Candidate_Payload?: Delete_Indian_Loksabha_Constituency_Election_Candidate_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Constituency_Election_Payload?: Delete_Indian_Loksabha_Constituency_Election_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload?: Delete_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Constituency_Election_Result_Payload?: Delete_Indian_Loksabha_Constituency_Election_Result_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Constituency_Payload?: Delete_Indian_Loksabha_Constituency_PayloadResolvers<ContextType>;
+  Delete_Indian_Loksabha_Constituency_Region_Payload?: Delete_Indian_Loksabha_Constituency_Region_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Election_Payload?: Delete_Indian_Loksabha_Election_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Election_Phase_Payload?: Delete_Indian_Loksabha_Election_Phase_PayloadResolvers<ContextType>;
   Delete_Indian_Loksabha_Election_Result_Payload?: Delete_Indian_Loksabha_Election_Result_PayloadResolvers<ContextType>;
@@ -24989,6 +28678,8 @@ export type Resolvers<ContextType = any> = {
   Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload?: Delete_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_PayloadResolvers<ContextType>;
   Delete_Indian_Politician_Payload?: Delete_Indian_Politician_PayloadResolvers<ContextType>;
   Delete_Indian_Prime_Minister_Payload?: Delete_Indian_Prime_Minister_PayloadResolvers<ContextType>;
+  Delete_Indian_State_Union_Territory_Payload?: Delete_Indian_State_Union_Territory_PayloadResolvers<ContextType>;
+  Delete_Indian_State_Union_Territory_Region_Payload?: Delete_Indian_State_Union_Territory_Region_PayloadResolvers<ContextType>;
   Delete_Indian_Union_Council_Of_Ministers_Payload?: Delete_Indian_Union_Council_Of_Ministers_PayloadResolvers<ContextType>;
   Delete_Indian_Union_Government_Cabinet_Minister_Payload?: Delete_Indian_Union_Government_Cabinet_Minister_PayloadResolvers<ContextType>;
   Delete_Indian_Union_Government_Cabinet_Payload?: Delete_Indian_Union_Government_Cabinet_PayloadResolvers<ContextType>;
@@ -24997,6 +28688,8 @@ export type Resolvers<ContextType = any> = {
   Delete_Indian_Union_Government_Minister_Of_State_Payload?: Delete_Indian_Union_Government_Minister_Of_State_PayloadResolvers<ContextType>;
   Delete_Indian_Union_Government_Ministry_Payload?: Delete_Indian_Union_Government_Ministry_PayloadResolvers<ContextType>;
   Delete_Indian_Union_Government_Payload?: Delete_Indian_Union_Government_PayloadResolvers<ContextType>;
+  Delete_Indian_Vidhansabha_Constituency_Payload?: Delete_Indian_Vidhansabha_Constituency_PayloadResolvers<ContextType>;
+  Delete_Indian_Vidhansabha_Constituency_Region_Payload?: Delete_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<ContextType>;
   Delete_Language_Payload?: Delete_Language_PayloadResolvers<ContextType>;
   Delete_Language_Script_Payload?: Delete_Language_Script_PayloadResolvers<ContextType>;
   Delete_Name_Payload?: Delete_Name_PayloadResolvers<ContextType>;
@@ -25037,14 +28730,19 @@ export type Resolvers<ContextType = any> = {
   Update_Government_System_Types_Oligarchy_Payload?: Update_Government_System_Types_Oligarchy_PayloadResolvers<ContextType>;
   Update_Government_System_Types_Partisan_Systems_Payload?: Update_Government_System_Types_Partisan_Systems_PayloadResolvers<ContextType>;
   Update_Government_System_Types_Religion_Payload?: Update_Government_System_Types_Religion_PayloadResolvers<ContextType>;
+  Update_Indian_Administrative_DivisionsPayload?: Update_Indian_Administrative_DivisionsPayloadResolvers<ContextType>;
+  Update_Indian_District_Payload?: Update_Indian_District_PayloadResolvers<ContextType>;
+  Update_Indian_District_Region_Payload?: Update_Indian_District_Region_PayloadResolvers<ContextType>;
   Update_Indian_Government_Official_Role_Payload?: Update_Indian_Government_Official_Role_PayloadResolvers<ContextType>;
   Update_Indian_Government_System_Payload?: Update_Indian_Government_System_PayloadResolvers<ContextType>;
   Update_Indian_Legal_Document_Payload?: Update_Indian_Legal_Document_PayloadResolvers<ContextType>;
+  Update_Indian_Legislative_DivisionsPayload?: Update_Indian_Legislative_DivisionsPayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Constituency_Election_Candidate_Payload?: Update_Indian_Loksabha_Constituency_Election_Candidate_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Constituency_Election_Payload?: Update_Indian_Loksabha_Constituency_Election_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Payload?: Update_Indian_Loksabha_Constituency_Election_Result_Candidate_Data_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Constituency_Election_Result_Payload?: Update_Indian_Loksabha_Constituency_Election_Result_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Constituency_Payload?: Update_Indian_Loksabha_Constituency_PayloadResolvers<ContextType>;
+  Update_Indian_Loksabha_Constituency_Region_Payload?: Update_Indian_Loksabha_Constituency_Region_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Election_Payload?: Update_Indian_Loksabha_Election_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Election_Phase_Payload?: Update_Indian_Loksabha_Election_Phase_PayloadResolvers<ContextType>;
   Update_Indian_Loksabha_Election_Result_Payload?: Update_Indian_Loksabha_Election_Result_PayloadResolvers<ContextType>;
@@ -25057,6 +28755,8 @@ export type Resolvers<ContextType = any> = {
   Update_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_Payload?: Update_Indian_Political_Party_Pre_Poll_Coalition_Loksabha_Election_PayloadResolvers<ContextType>;
   Update_Indian_Politician_Payload?: Update_Indian_Politician_PayloadResolvers<ContextType>;
   Update_Indian_Prime_Minister_Payload?: Update_Indian_Prime_Minister_PayloadResolvers<ContextType>;
+  Update_Indian_State_Union_Territory_Payload?: Update_Indian_State_Union_Territory_PayloadResolvers<ContextType>;
+  Update_Indian_State_Union_Territory_Region_Payload?: Update_Indian_State_Union_Territory_Region_PayloadResolvers<ContextType>;
   Update_Indian_Union_Council_Of_Ministers_Payload?: Update_Indian_Union_Council_Of_Ministers_PayloadResolvers<ContextType>;
   Update_Indian_Union_Government_Cabinet_Minister_Payload?: Update_Indian_Union_Government_Cabinet_Minister_PayloadResolvers<ContextType>;
   Update_Indian_Union_Government_Cabinet_Payload?: Update_Indian_Union_Government_Cabinet_PayloadResolvers<ContextType>;
@@ -25065,6 +28765,8 @@ export type Resolvers<ContextType = any> = {
   Update_Indian_Union_Government_Minister_Of_State_Payload?: Update_Indian_Union_Government_Minister_Of_State_PayloadResolvers<ContextType>;
   Update_Indian_Union_Government_Ministry_Payload?: Update_Indian_Union_Government_Ministry_PayloadResolvers<ContextType>;
   Update_Indian_Union_Government_Payload?: Update_Indian_Union_Government_PayloadResolvers<ContextType>;
+  Update_Indian_Vidhansabha_Constituency_Payload?: Update_Indian_Vidhansabha_Constituency_PayloadResolvers<ContextType>;
+  Update_Indian_Vidhansabha_Constituency_Region_Payload?: Update_Indian_Vidhansabha_Constituency_Region_PayloadResolvers<ContextType>;
   Update_Language_Payload?: Update_Language_PayloadResolvers<ContextType>;
   Update_Language_Script_Payload?: Update_Language_Script_PayloadResolvers<ContextType>;
   Update_Name_Payload?: Update_Name_PayloadResolvers<ContextType>;
@@ -25115,12 +28817,20 @@ export type Resolvers<ContextType = any> = {
   _Government_System_Types_Partisan_Systems_AggregateResult?: _Government_System_Types_Partisan_Systems_AggregateResultResolvers<ContextType>;
   _Government_System_Types_Religion_?: _Government_System_Types_Religion_Resolvers<ContextType>;
   _Government_System_Types_Religion_AggregateResult?: _Government_System_Types_Religion_AggregateResultResolvers<ContextType>;
+  _Indian_Administrative_Divisions?: _Indian_Administrative_DivisionsResolvers<ContextType>;
+  _Indian_Administrative_DivisionsAggregateResult?: _Indian_Administrative_DivisionsAggregateResultResolvers<ContextType>;
+  _Indian_District_?: _Indian_District_Resolvers<ContextType>;
+  _Indian_District_AggregateResult?: _Indian_District_AggregateResultResolvers<ContextType>;
+  _Indian_District_Region_?: _Indian_District_Region_Resolvers<ContextType>;
+  _Indian_District_Region_AggregateResult?: _Indian_District_Region_AggregateResultResolvers<ContextType>;
   _Indian_Government_Official_Role_?: _Indian_Government_Official_Role_Resolvers<ContextType>;
   _Indian_Government_Official_Role_AggregateResult?: _Indian_Government_Official_Role_AggregateResultResolvers<ContextType>;
   _Indian_Government_System_?: _Indian_Government_System_Resolvers<ContextType>;
   _Indian_Government_System_AggregateResult?: _Indian_Government_System_AggregateResultResolvers<ContextType>;
   _Indian_Legal_Document_?: _Indian_Legal_Document_Resolvers<ContextType>;
   _Indian_Legal_Document_AggregateResult?: _Indian_Legal_Document_AggregateResultResolvers<ContextType>;
+  _Indian_Legislative_Divisions?: _Indian_Legislative_DivisionsResolvers<ContextType>;
+  _Indian_Legislative_DivisionsAggregateResult?: _Indian_Legislative_DivisionsAggregateResultResolvers<ContextType>;
   _Indian_Loksabha_?: _Indian_Loksabha_Resolvers<ContextType>;
   _Indian_Loksabha_AggregateResult?: _Indian_Loksabha_AggregateResultResolvers<ContextType>;
   _Indian_Loksabha_Constituency_?: _Indian_Loksabha_Constituency_Resolvers<ContextType>;
@@ -25133,6 +28843,8 @@ export type Resolvers<ContextType = any> = {
   _Indian_Loksabha_Constituency_Election_Result_AggregateResult?: _Indian_Loksabha_Constituency_Election_Result_AggregateResultResolvers<ContextType>;
   _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_?: _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_Resolvers<ContextType>;
   _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_AggregateResult?: _Indian_Loksabha_Constituency_Election_Result_Candidate_Data_AggregateResultResolvers<ContextType>;
+  _Indian_Loksabha_Constituency_Region_?: _Indian_Loksabha_Constituency_Region_Resolvers<ContextType>;
+  _Indian_Loksabha_Constituency_Region_AggregateResult?: _Indian_Loksabha_Constituency_Region_AggregateResultResolvers<ContextType>;
   _Indian_Loksabha_Election_?: _Indian_Loksabha_Election_Resolvers<ContextType>;
   _Indian_Loksabha_Election_AggregateResult?: _Indian_Loksabha_Election_AggregateResultResolvers<ContextType>;
   _Indian_Loksabha_Election_Phase_?: _Indian_Loksabha_Election_Phase_Resolvers<ContextType>;
@@ -25155,6 +28867,10 @@ export type Resolvers<ContextType = any> = {
   _Indian_Politician_AggregateResult?: _Indian_Politician_AggregateResultResolvers<ContextType>;
   _Indian_Prime_Minister_?: _Indian_Prime_Minister_Resolvers<ContextType>;
   _Indian_Prime_Minister_AggregateResult?: _Indian_Prime_Minister_AggregateResultResolvers<ContextType>;
+  _Indian_State_Union_Territory_?: _Indian_State_Union_Territory_Resolvers<ContextType>;
+  _Indian_State_Union_Territory_AggregateResult?: _Indian_State_Union_Territory_AggregateResultResolvers<ContextType>;
+  _Indian_State_Union_Territory_Region_?: _Indian_State_Union_Territory_Region_Resolvers<ContextType>;
+  _Indian_State_Union_Territory_Region_AggregateResult?: _Indian_State_Union_Territory_Region_AggregateResultResolvers<ContextType>;
   _Indian_Union_Council_Of_Ministers_?: _Indian_Union_Council_Of_Ministers_Resolvers<ContextType>;
   _Indian_Union_Council_Of_Ministers_AggregateResult?: _Indian_Union_Council_Of_Ministers_AggregateResultResolvers<ContextType>;
   _Indian_Union_Government_?: _Indian_Union_Government_Resolvers<ContextType>;
@@ -25171,6 +28887,10 @@ export type Resolvers<ContextType = any> = {
   _Indian_Union_Government_Minister_Of_State_Independent_Charge_AggregateResult?: _Indian_Union_Government_Minister_Of_State_Independent_Charge_AggregateResultResolvers<ContextType>;
   _Indian_Union_Government_Ministry_?: _Indian_Union_Government_Ministry_Resolvers<ContextType>;
   _Indian_Union_Government_Ministry_AggregateResult?: _Indian_Union_Government_Ministry_AggregateResultResolvers<ContextType>;
+  _Indian_Vidhansabha_Constituency_?: _Indian_Vidhansabha_Constituency_Resolvers<ContextType>;
+  _Indian_Vidhansabha_Constituency_AggregateResult?: _Indian_Vidhansabha_Constituency_AggregateResultResolvers<ContextType>;
+  _Indian_Vidhansabha_Constituency_Region_?: _Indian_Vidhansabha_Constituency_Region_Resolvers<ContextType>;
+  _Indian_Vidhansabha_Constituency_Region_AggregateResult?: _Indian_Vidhansabha_Constituency_Region_AggregateResultResolvers<ContextType>;
   _Language_?: _Language_Resolvers<ContextType>;
   _Language_AggregateResult?: _Language_AggregateResultResolvers<ContextType>;
   _Language_Script_?: _Language_Script_Resolvers<ContextType>;
