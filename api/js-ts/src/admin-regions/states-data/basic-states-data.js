@@ -12,7 +12,7 @@ const heads = [
   "Additional official\nlanguages",
 ];
 
-module.exports = [
+const states = [
   {
     State: {
       links: [
@@ -2267,3 +2267,642 @@ module.exports = [
     },
   },
 ];
+
+const uts = [
+  {
+    State: {
+      links: [
+        {
+          text: "Andaman and Nicobar Islands",
+          href: "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
+        },
+      ],
+      text: "Andaman and Nicobar Islands",
+    },
+    ISO: {
+      links: [],
+      text: "IN-AN",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "AN",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Eastern",
+          href: "https://en.wikipedia.org/wiki/Eastern_Zonal_Council",
+        },
+      ],
+      text: "Eastern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Sri Vijaya Puram",
+          href: "https://en.wikipedia.org/wiki/Sri_Vijaya_Puram",
+        },
+      ],
+      text: "Sri Vijaya Puram",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Sri Vijaya Puram",
+          href: "https://en.wikipedia.org/wiki/Sri_Vijaya_Puram",
+        },
+      ],
+      text: "Sri Vijaya Puram",
+    },
+    Established: {
+      links: [],
+      text: "1 November 1956",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "380,581",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "8,249",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Hindi",
+          href: "https://en.wikipedia.org/wiki/Hindi",
+        },
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "Hindi, English",
+    },
+    "Additional official\nlanguages": {
+      links: [],
+      text: "—",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Chandigarh",
+          href: "https://en.wikipedia.org/wiki/Chandigarh",
+        },
+      ],
+      text: "Chandigarh",
+    },
+    ISO: {
+      links: [],
+      text: "IN-CH",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "CH",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Northern",
+          href: "https://en.wikipedia.org/wiki/Northern_Zonal_Council",
+        },
+      ],
+      text: "Northern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Chandigarh",
+          href: "https://en.wikipedia.org/wiki/Chandigarh",
+        },
+      ],
+      text: "Chandigarh",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Chandigarh",
+          href: "https://en.wikipedia.org/wiki/Chandigarh",
+        },
+      ],
+      text: "Chandigarh",
+    },
+    Established: {
+      links: [],
+      text: "1 November 1966",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "1,055,450",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "114",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "English",
+    },
+    "Additional official\nlanguages": {
+      links: [],
+      text: "—",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Dadra and Nagar Haveli and Daman and Diu",
+          href: "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
+        },
+      ],
+      text: "Dadra and Nagar Haveli and Daman and Diu",
+    },
+    ISO: {
+      links: [],
+      text: "IN-DH",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "DD",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Western",
+          href: "https://en.wikipedia.org/wiki/Western_Zonal_Council",
+        },
+      ],
+      text: "Western",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Daman",
+          href: "https://en.wikipedia.org/wiki/Daman,_India",
+        },
+      ],
+      text: "Daman",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Silvassa",
+          href: "https://en.wikipedia.org/wiki/Silvassa",
+        },
+      ],
+      text: "Silvassa",
+    },
+    Established: {
+      links: [],
+      text: "26 January 2020",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "587,106",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "603",
+    },
+    "Official\nlanguages": {
+      links: [],
+      text: "Hindi, English",
+    },
+    "Additional official\nlanguages": {
+      links: [
+        {
+          text: "Gujarati",
+          href: "https://en.wikipedia.org/wiki/Gujarati_language",
+        },
+      ],
+      text: "Gujarati",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Delhi",
+          href: "https://en.wikipedia.org/wiki/Delhi",
+        },
+      ],
+      text: "Delhi",
+    },
+    ISO: {
+      links: [],
+      text: "IN-DL",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "DL",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Northern",
+          href: "https://en.wikipedia.org/wiki/Northern_Zonal_Council",
+        },
+      ],
+      text: "Northern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "New Delhi",
+          href: "https://en.wikipedia.org/wiki/New_Delhi",
+        },
+      ],
+      text: "New Delhi",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Delhi",
+          href: "https://en.wikipedia.org/wiki/Delhi",
+        },
+      ],
+      text: "Delhi",
+    },
+    Established: {
+      links: [],
+      text: "1 November 1956",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "16,787,941",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "1,484",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Hindi",
+          href: "https://en.wikipedia.org/wiki/Hindi",
+        },
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "Hindi, English",
+    },
+    "Additional official\nlanguages": {
+      links: [
+        {
+          text: "Urdu",
+          href: "https://en.wikipedia.org/wiki/Urdu",
+        },
+        {
+          text: "Punjabi",
+          href: "https://en.wikipedia.org/wiki/Punjabi_language",
+        },
+      ],
+      text: "Urdu, Punjabi",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Jammu and Kashmir",
+          href: "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(union_territory)",
+        },
+      ],
+      text: "Jammu and Kashmir",
+    },
+    ISO: {
+      links: [],
+      text: "IN-JK",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "JK",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Northern",
+          href: "https://en.wikipedia.org/wiki/Northern_Zonal_Council",
+        },
+      ],
+      text: "Northern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Srinagar",
+          href: "https://en.wikipedia.org/wiki/Srinagar",
+        },
+        {
+          text: "Jammu",
+          href: "https://en.wikipedia.org/wiki/Jammu",
+        },
+      ],
+      text: "Srinagar (Summer)\nJammu (Winter)",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Srinagar",
+          href: "https://en.wikipedia.org/wiki/Srinagar",
+        },
+      ],
+      text: "Srinagar",
+    },
+    Established: {
+      links: [],
+      text: "31 October 2019",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "12,258,433",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "42,241",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Dogri",
+          href: "https://en.wikipedia.org/wiki/Dogri_language",
+        },
+        {
+          text: "Kashmiri",
+          href: "https://en.wikipedia.org/wiki/Kashmiri_language",
+        },
+        {
+          text: "Urdu",
+          href: "https://en.wikipedia.org/wiki/Urdu_language",
+        },
+      ],
+      text: "Dogri, English, Hindi, Kashmiri, Urdu",
+    },
+    "Additional official\nlanguages": {
+      links: [],
+      text: "—",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Ladakh",
+          href: "https://en.wikipedia.org/wiki/Ladakh",
+        },
+      ],
+      text: "Ladakh",
+    },
+    ISO: {
+      links: [],
+      text: "IN-LA",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "LA",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Northern",
+          href: "https://en.wikipedia.org/wiki/Northern_Zonal_Council",
+        },
+      ],
+      text: "Northern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Leh",
+          href: "https://en.wikipedia.org/wiki/Leh",
+        },
+        {
+          text: "Kargil",
+          href: "https://en.wikipedia.org/wiki/Kargil",
+        },
+      ],
+      text: "Leh (Summer)\nKargil (Winter)",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Leh",
+          href: "https://en.wikipedia.org/wiki/Leh",
+        },
+      ],
+      text: "Leh",
+    },
+    Established: {
+      links: [],
+      text: "31 October 2019",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "290,492",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "59,146",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Hindi",
+          href: "https://en.wikipedia.org/wiki/Hindi",
+        },
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "Hindi, English",
+    },
+    "Additional official\nlanguages": {
+      links: [],
+      text: "—",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Lakshadweep",
+          href: "https://en.wikipedia.org/wiki/Lakshadweep",
+        },
+      ],
+      text: "Lakshadweep",
+    },
+    ISO: {
+      links: [],
+      text: "IN-LD",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "LD",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Southern",
+          href: "https://en.wikipedia.org/wiki/Southern_Zonal_Council",
+        },
+      ],
+      text: "Southern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Kavaratti",
+          href: "https://en.wikipedia.org/wiki/Kavaratti",
+        },
+      ],
+      text: "Kavaratti",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Kavaratti",
+          href: "https://en.wikipedia.org/wiki/Kavaratti",
+        },
+      ],
+      text: "Kavaratti",
+    },
+    Established: {
+      links: [],
+      text: "1 November 1956",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "64,473",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "32",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Hindi",
+          href: "https://en.wikipedia.org/wiki/Hindi",
+        },
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "Hindi, English",
+    },
+    "Additional official\nlanguages": {
+      links: [
+        {
+          text: "Malayalam",
+          href: "https://en.wikipedia.org/wiki/Malayalam_language",
+        },
+      ],
+      text: "Malayalam",
+    },
+  },
+  {
+    State: {
+      links: [
+        {
+          text: "Puducherry",
+          href: "https://en.wikipedia.org/wiki/Puducherry_(union_territory)",
+        },
+      ],
+      text: "Puducherry",
+    },
+    ISO: {
+      links: [],
+      text: "IN-PY",
+    },
+    "Vehicle\ncode": {
+      links: [],
+      text: "PY",
+    },
+    Zone: {
+      links: [
+        {
+          text: "Southern",
+          href: "https://en.wikipedia.org/wiki/Southern_Zonal_Council",
+        },
+      ],
+      text: "Southern",
+    },
+    Capital: {
+      links: [
+        {
+          text: "Pondicherry",
+          href: "https://en.wikipedia.org/wiki/Pondicherry",
+        },
+      ],
+      text: "Pondicherry",
+    },
+    "Largest city": {
+      links: [
+        {
+          text: "Pondicherry",
+          href: "https://en.wikipedia.org/wiki/Pondicherry",
+        },
+      ],
+      text: "Pondicherry",
+    },
+    Established: {
+      links: [],
+      text: "16 August 1962",
+    },
+    "Population\n(2011)": {
+      links: [],
+      text: "1,247,953",
+    },
+    "Area\n(km)": {
+      links: [],
+      text: "479",
+    },
+    "Official\nlanguages": {
+      links: [
+        {
+          text: "Tamil",
+          href: "https://en.wikipedia.org/wiki/Tamil_language",
+        },
+        {
+          text: "French",
+          href: "https://en.wikipedia.org/wiki/French_language",
+        },
+        {
+          text: "English",
+          href: "https://en.wikipedia.org/wiki/English_language",
+        },
+      ],
+      text: "Tamil, French, English",
+    },
+    "Additional official\nlanguages": {
+      links: [
+        {
+          text: "Telugu",
+          href: "https://en.wikipedia.org/wiki/Telugu_language",
+        },
+        {
+          text: "Malayalam",
+          href: "https://en.wikipedia.org/wiki/Malayalam_language",
+        },
+      ],
+      text: "Telugu, Malayalam",
+    },
+  },
+];
+
+module.exports = {
+  states,
+  uts,
+};

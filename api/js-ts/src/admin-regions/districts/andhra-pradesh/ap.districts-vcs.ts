@@ -221,7 +221,7 @@ export const districtVCs = [
   },
   {
     district: {
-      name: "Alluri district",
+      name: "Alluri Sitharama Raju",
       wikipedia_page: "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district",
     },
     vidhansabhaConstituenciesHTML: [
@@ -769,6 +769,7 @@ export const districtVCs = [
     district: {
       name: "Sri Potti Sriramulu Nellore",
       wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Potti_Sriramulu_Nellore_district",
+      other_names: ["Nellore", "Sri Potti Sriramulu"],
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Sarvepalli_(Assembly_constituency)" class="mw-redirect" title="Sarvepalli (Assembly constituency)">Sarvepalli</a>',
@@ -869,8 +870,9 @@ export const districtVCs = [
   },
   {
     district: {
-      name: "Nandyala",
+      name: "Nandyal",
       wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_district",
+      other_names: ["Nandyala"],
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Allagadda_(Assembly_constituency)" class="mw-redirect" title="Allagadda (Assembly constituency)">Allagadda</a>',
@@ -915,8 +917,9 @@ export const districtVCs = [
   },
   {
     district: {
-      name: "Kadapa",
+      name: "Y.S.R.",
       wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_district",
+      other_names: ["YSR", "YSR Kadapa", "Kadapa"],
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Badvel_Assembly_constituency" title="Badvel Assembly constituency">Badvelu</a>',
@@ -966,8 +969,9 @@ export const districtVCs = [
   },
   {
     district: {
-      name: "Anantapuram",
+      name: "Anantpur",
       wikipedia_page: "https://en.wikipedia.org/wiki/Anantapuram_district",
+      other_names: ["Anantapuram"],
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Raptadu_(Assembly_constituency)" class="mw-redirect" title="Raptadu (Assembly constituency)">Raptadu</a>',
