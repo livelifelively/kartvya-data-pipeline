@@ -1,5 +1,9 @@
 import { districtVCs } from "../../../admin-regions/districts/andhra-pradesh/ap.districts-vcs";
-import { map } from "lodash";
+import { map, keyBy } from "lodash";
+import districtMaps from "../../../admin-regions/states/andhra-pradesh/ap.d.geo.json";
+import { upsert_Name_ } from "../../name/name.update";
+import { createNodeType } from "../../generic/generic.create";
+import { createGraphQLClient } from "../../generic/generic.utils";
 
 let allDistricts: any = [
   {
@@ -1952,78 +1956,97 @@ let allDistricts: any = [
   },
 ];
 
+function polygonToMultiPolygon(feature: any) {
+  let newFeature = { ...feature };
+  if (feature.geometry.type === "Polygon") {
+    newFeature.geometry.type = "MultiPolygon";
+    newFeature.geometry.coordinates = [feature.geometry.coordinates];
+  }
+
+  return newFeature;
+}
+
+function multiPolygonToDgraphMultiPolygon(multiPolygon: any) {
+  let toReturn: any = {
+    polygons: multiPolygon.map((polygon: any) => {
+      return {
+        coordinates: polygon.map((coordinate: any) => {
+          return {
+            points: coordinate.map((point: any) => {
+              return {
+                latitude: point[1],
+                longitude: point[0],
+              };
+            }),
+          };
+        }),
+      };
+    }),
+  };
+
+  return toReturn;
+}
+
 (async () => {
-  // let districts = districtVCs.map((dvs) => {
-  //   return dvs.district.wikipedia_page;
-  //   // return {
-  //   //   // name: dvs.district.name,
-  //   //   // wikipedia_page: dvs.district.wikipedia_page,
-  //   //   // complete_vidhansabha_constituencies: dvs.vidhansabhaConstituenciesChildren.map((val) => {
-  //   //   //   return {
-  //   //   //     ...val,
-  //   //   //     name: val.name,
-  //   //   //   };
-  //   //   // }),
-  //   //   // partial_vidhansabha_constituencies: dvs.partialVidhanSabha.map((val) => {
-  //   //   //   return val;
-  //   //   // }),
-  //   // };
+  const keyedMap = keyBy(districtMaps, "properties.dtname");
+  console.log(Object.keys(keyedMap));
+
+  for (let d of districtVCs) {
+    if (!keyedMap[d.district.name]) {
+      console.log(d.district.name);
+    }
+  }
+
+  // const graphQLClient = await createGraphQLClient();
+  // for (let d of allDistricts) {
+  //   let name_id = `in-d-ap-${d.name.toLowerCase().split(" ").join("-")}`;
+  //   let toSaveDistrict = {
+  //     name_id,
+  //     names: [{ name: d.name }],
+  //     states_union_territories: [{ name_id: "in-sut-andhra-pradesh" }],
+  //     node_created_on: new Date(),
+  //     wikidata_qid: d.wikidata_qid,
+  //     wikipedia_page: d.wikipedia_page,
+  //   };
+  //   let districtMap = keyedMap[toSaveDistrict.wikidata_qid];
+  //   let geo = {
+  //     precision: 9,
+  //     category: "Region",
+  //     area: multiPolygonToDgraphMultiPolygon(districtMap.geometry.coordinates),
+  //   };
+  //   // save name
+  //   const nameId = await upsert_Name_(d.name);
+  //   // save district
+  //   const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
+  //   const geoId = await createNodeType("_Geo_", graphQLClient, geo);
+  //   let toSaveDistrictRegion = {
+  //     self: { name_id },
+  //     geo_boundary: {
+  //       id: geoId,
+  //     },
+  //     node_created_on: new Date(),
+  //   };
+  //   // save district region
+  //   const districtRegionId = await createNodeType("_Indian_District_Region_", graphQLClient, toSaveDistrictRegion);
+  //   console.log({ name_id, nameId, districtId, districtRegionId });
+  // }
+  // map(keyedMap, (val: any) => {
+  //   console.log({
+  //     id: val.id,
+  //     properties: val.properties,
+  //   });
   // });
-
-  // let vcs = districtVCs.reduce((agg: any, dvs: any) => {
-  //   for (let vcs of dvs.vidhansabhaConstituenciesChildren) {
-  //     agg[vcs.name] = vcs;
-  //   }
-
-  //   return agg;
-  // }, {});
-
   // {
   //   name_id: String! @id @search(by: [exact, term, fulltext])
   //   names: [_Name_] @hasInverse(field: "indian_district")
   //   states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "districts")
   //   loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "districts")
   //   vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "districts")
-
   //   established_on: DateTime
   //   disestablished_on: DateTime
-
   //   node_created_on: DateTime
   //   node_updates: [_Node_Update_]
   // }
-
-  // console.log(JSON.stringify(districts, null, 2));
-
-  // const list = districts.reduce((agg: any, val: any) => {
-  //   agg[val] = { wikipedia_page: val };
-  //   return agg;
-  // }, {});
-
-  // // console.log(JSON.stringify(vcs, null, 2));
-  // console.log(JSON.stringify(list, null, 2));
-
-  // name_id: String! @id @search(by: [exact, term, fulltext])
-  // names: [_Name_] @hasInverse(field: "indian_district")
-  // states_union_territories: [_Indian_State_Union_Territory_]
-  // regions: [_Indian_District_Region_] @hasInverse(field: "self")
-  // wikidata_qid: String @search(by: [hash])
-  // wikipedia_page: String @search(by: [fulltext])
-  // node_created_on: DateTime
-
-  // loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "districts")
-  // vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "districts")
-  // established_on: DateTime
-  // disestablished_on: DateTime
-
-  allDistricts = map(allDistricts, (val: any) => {
-    let name: any = val.wikipedia_page.split("/").pop();
-    name = name.split("_district")[0].split("_").join(" ");
-    return {
-      ...val,
-      name,
-    };
-  });
-  console.log(JSON.stringify(allDistricts));
 })();
 
 /**
