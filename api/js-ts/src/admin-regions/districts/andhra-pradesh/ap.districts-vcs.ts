@@ -971,7 +971,7 @@ export const districtVCs = [
     district: {
       name: "Anantpur",
       wikipedia_page: "https://en.wikipedia.org/wiki/Anantapuram_district",
-      other_names: ["Anantapuram"],
+      other_names: ["Anantapuram", "Anantapur"],
     },
     vidhansabhaConstituenciesHTML: [
       '<a href="/wiki/Raptadu_(Assembly_constituency)" class="mw-redirect" title="Raptadu (Assembly constituency)">Raptadu</a>',

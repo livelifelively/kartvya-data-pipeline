@@ -5,6 +5,8 @@ import { upsert_Name_ } from "../../name/name.update";
 import { createNodeType } from "../../generic/generic.create";
 import { createGraphQLClient } from "../../generic/generic.utils";
 
+// import andhraDistrictsMap from "../../../admin-regions/states/andhra-pradesh/ap.d.geo.json";
+
 let allDistricts: any = [
   {
     wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_district",
@@ -1336,7 +1338,7 @@ let allDistricts: any = [
         },
       },
     ],
-    name: "Nellore",
+    name: "Sri Potti Sriramulu Nellore",
   },
   {
     wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_district",
@@ -1577,7 +1579,7 @@ let allDistricts: any = [
         },
       },
     ],
-    name: "Kadapa",
+    name: "Y.S.R.",
   },
   {
     wikipedia_page: "https://en.wikipedia.org/wiki/Anantapur_district",
@@ -1664,7 +1666,7 @@ let allDistricts: any = [
         },
       },
     ],
-    name: "Anantapur",
+    name: "Anantpur",
   },
   {
     wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district",
@@ -1989,47 +1991,53 @@ function multiPolygonToDgraphMultiPolygon(multiPolygon: any) {
 
 (async () => {
   const keyedMap = keyBy(districtMaps, "properties.dtname");
-  console.log(Object.keys(keyedMap));
+  // console.log(Object.keys(keyedMap));
 
-  for (let d of districtVCs) {
-    if (!keyedMap[d.district.name]) {
-      console.log(d.district.name);
+  // verify if has all districts as per allDistricts list
+  for (let d of allDistricts) {
+    if (!keyedMap[d.name]) {
+      console.log(d.name);
     }
   }
 
-  // const graphQLClient = await createGraphQLClient();
-  // for (let d of allDistricts) {
-  //   let name_id = `in-d-ap-${d.name.toLowerCase().split(" ").join("-")}`;
-  //   let toSaveDistrict = {
-  //     name_id,
-  //     names: [{ name: d.name }],
-  //     states_union_territories: [{ name_id: "in-sut-andhra-pradesh" }],
-  //     node_created_on: new Date(),
-  //     wikidata_qid: d.wikidata_qid,
-  //     wikipedia_page: d.wikipedia_page,
-  //   };
-  //   let districtMap = keyedMap[toSaveDistrict.wikidata_qid];
-  //   let geo = {
-  //     precision: 9,
-  //     category: "Region",
-  //     area: multiPolygonToDgraphMultiPolygon(districtMap.geometry.coordinates),
-  //   };
-  //   // save name
-  //   const nameId = await upsert_Name_(d.name);
-  //   // save district
-  //   const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
-  //   const geoId = await createNodeType("_Geo_", graphQLClient, geo);
-  //   let toSaveDistrictRegion = {
-  //     self: { name_id },
-  //     geo_boundary: {
-  //       id: geoId,
-  //     },
-  //     node_created_on: new Date(),
-  //   };
-  //   // save district region
-  //   const districtRegionId = await createNodeType("_Indian_District_Region_", graphQLClient, toSaveDistrictRegion);
-  //   console.log({ name_id, nameId, districtId, districtRegionId });
-  // }
+  const graphQLClient = await createGraphQLClient();
+  for (let d of allDistricts) {
+    let name_id = `in-d-ap-${d.name.toLowerCase().split(" ").join("-")}`;
+    let toSaveDistrict = {
+      name_id,
+      names: [{ name: d.name }],
+      states_union_territories: [{ name_id: "in-sut-andhra-pradesh" }],
+      node_created_on: new Date(),
+      wikidata_qid: d.wikidata_qid,
+      wikipedia_page: d.wikipedia_page,
+    };
+
+    const districtMap = polygonToMultiPolygon(keyedMap[d.name]);
+
+    let geo = {
+      precision: 9,
+      category: "Region",
+      area: multiPolygonToDgraphMultiPolygon(districtMap.geometry.coordinates),
+    };
+
+    // console.log(toSaveDistrict);
+    // console.log(JSON.stringify(geo));
+    // save name
+    const nameId = await upsert_Name_(d.name);
+    // save district
+    // const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
+    // const geoId = await createNodeType("_Geo_", graphQLClient, geo);
+    // let toSaveDistrictRegion = {
+    //   self: { name_id },
+    //   geo_boundary: {
+    //     id: geoId,
+    //   },
+    //   node_created_on: new Date(),
+    // };
+    // // save district region
+    // const districtRegionId = await createNodeType("_Indian_District_Region_", graphQLClient, toSaveDistrictRegion);
+    // console.log({ name_id, nameId, districtId, districtRegionId });
+  }
   // map(keyedMap, (val: any) => {
   //   console.log({
   //     id: val.id,
