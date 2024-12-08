@@ -2,6 +2,7 @@ const districts = require("../districts/india.d.geojson");
 
 const fs = require("fs");
 const path = require("path");
+const { groupBy } = require("lodash");
 
 // console.log(districts_geo.features.length);
 let x = {
@@ -3394,9 +3395,30 @@ let x = {
   id: 729,
 };
 
-const andhraDistricts = districts?.features?.filter((val) => {
-  return val.properties.stname === "ANDHRA PRADESH";
+let allStatesUts = {};
+
+districts?.features?.map((val) => {
+  if (!allStatesUts[val.properties.stname]) {
+    allStatesUts[val.properties.stname] = true;
+  }
 });
 
-const outputPath = path.join(__dirname, "andhra-pradesh", "ap.d.geo.json");
-fs.writeFileSync(outputPath, JSON.stringify(andhraDistricts, null, 2));
+allStatesUts = Object.keys(allStatesUts);
+
+for (let sut of allStatesUts) {
+  // console.log(sut);
+  const stateUtDistricts = districts?.features?.filter((val) => {
+    return val.properties.stname === sut;
+  });
+
+  let smallerName = sut.split(",").join("").split("and").join("").split("&").join("");
+  let stateName = smallerName.split(" ").join("-").toLowerCase();
+
+  let newDir = path.join(__dirname, stateName);
+  fs.mkdirSync(newDir, { recursive: true });
+
+  console.log("saving districts for state/ut ", sut);
+
+  const outputPath = path.join(newDir, "d.geo.json");
+  fs.writeFileSync(outputPath, JSON.stringify(stateUtDistricts, null, 2));
+}
