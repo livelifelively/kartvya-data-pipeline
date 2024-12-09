@@ -40,16 +40,24 @@ async function getDirectories(dirPath: string) {
   const targetPath = path.join(__dirname, "states-uts");
   const directories = await getDirectories(targetPath);
 
+  // console.log(directories);
+  const osm_wikidata: any = {};
+
   for (let d of directories) {
     const filePath = path.join(__dirname, "states-uts", d, `sut.json`);
 
     try {
       const data: any = await fs.readFileSync(filePath, "utf8");
       let dataParsed: any = JSON.parse(data);
-      console.log(dataParsed.osm_id);
-      // console.log(`Contents of ${filePath}:`, data);
+      osm_wikidata[dataParsed.osm_id] = {
+        osm_id: dataParsed.osm_id,
+        wikidata_qid: dataParsed.extratags.wikidata,
+        filePath,
+      };
     } catch (err: any) {
       console.error(`Error reading file ${filePath}:`, err.message);
     }
   }
+
+  console.log(JSON.stringify(osm_wikidata));
 })();
