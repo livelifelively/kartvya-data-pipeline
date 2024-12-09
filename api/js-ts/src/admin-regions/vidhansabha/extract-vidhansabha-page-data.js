@@ -4,10 +4,12 @@ const fs = require("fs");
 
 const { sortBy, keyBy, map, forEach } = require("lodash");
 
-const issuesVcs = require("./state-vsc-navboxes.issues.json");
+// const issuesVcs = require("./state-vsc-navboxes.issues.json");
+const stateDirPath = "../states/andhra-pradesh";
+const { vidhansabhaConstituencies } = require(`${stateDirPath}/scripts/vidhan-sabha`);
 
-const outputFilePath = path.join(__dirname, "vc-data.json");
-const errorFile = path.join(__dirname, "vc_errors.json");
+const outputFilePath = path.join(__dirname, stateDirPath, "vc-data.json");
+const errorFile = path.join(__dirname, stateDirPath, "vc_errors.json");
 
 async function openPage(context, url) {
   try {
@@ -46,7 +48,7 @@ function logError(errorData) {
 }
 
 async function processListOfWikipediaPages(pageUrls) {
-  const browser = await chromium.launch({ headless: true });
+  const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
   const allPagesResults = [];
@@ -467,14 +469,14 @@ async function processVidhansabhaPage(page) {
 
     function extractDataFromVidhansabhaPage() {
       let infoBox = extractFromVidhansabhaInfoBox();
-      const maps = findGeoJSONMaps();
+      // const maps = findGeoJSONMaps();
       const lastUpdatedOn = getLastEditedOnDate();
       const wikidataQID = getWikidataQID();
       const wikipediaPage = getWikipediaPageUrl();
 
       return {
         infoBox,
-        maps,
+        // maps,
         lastUpdatedOn,
         wikidataQID,
         wikipediaPage,
@@ -488,22 +490,16 @@ async function processVidhansabhaPage(page) {
 }
 
 (async () => {
-  const statesUrls = map(issuesVcs, (val, key) => {
-    return {
-      state: key,
-      urls: val.notFound.map((v) => v.href),
-    };
-  });
+  // const urls = vidhansabhaConstituencies.map((val) => val.href);
+  const urls = ["https://en.wikipedia.org/wiki/Araku_Valley_Assembly_constituency"];
+  // console.log(urls);
+  let results = await processListOfWikipediaPages(urls);
+  // results = { results, state: statesUrls[i].state };
+  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
 
-  for (let i = 0; i < statesUrls.length; i++) {
-    let results = await processListOfWikipediaPages(statesUrls[i].urls);
-
-    if (!results.length) continue;
-
-    results = { results, state: statesUrls[i].state };
-
-    const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
-    existingResults.push(results);
-    fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
-  }
+  // for (let i = 0; i < statesUrls.length; i++) {
+  //   const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
+  //   existingResults.push(results);
+  //   fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
+  // }
 })();
