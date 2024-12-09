@@ -231,11 +231,11 @@ type _Geo_ {
 
   precision: Int @search
 
+  # source details
   source_name: String
   source_url: String
-
   # original stringified data
-  original_data_from_source: String
+  source_data: String
 
   country_boundary_actual: _Country_Region_ @hasInverse(field: "geo_boundary_self_actual")
   country_boundary_self_official: _Country_Region_ @hasInverse(field: "geo_boundary_self_official")
