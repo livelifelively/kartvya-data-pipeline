@@ -6,7 +6,7 @@ const fs = require("fs");
 const { sortBy, keyBy, map, forEach } = require("lodash");
 
 const stateDirPath = "../states/andhra-pradesh";
-const { allAPLoksabha } = require(`${stateDirPath}/scripts/loksabha`);
+const { allLoksabhaSeats } = require(`${stateDirPath}/scripts/loksabha`);
 
 const outputFilePath = path.join(__dirname, stateDirPath, "lc-data.json");
 const errorFile = path.join(__dirname, stateDirPath, "lc_errors.json");
@@ -493,7 +493,7 @@ async function processLoksabhaPage(page) {
 }
 
 (async () => {
-  const urls = map(allAPLoksabha, (val) => val.href);
+  const urls = map(allLoksabhaSeats, (val) => val.href);
   // console.log(urls);
   let results = await processListOfWikipediaPages(urls);
   // results = { results, state: statesUrls[i].state };

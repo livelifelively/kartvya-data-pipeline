@@ -1,5 +1,18 @@
+import { keyBy, groupBy, forEach } from "lodash";
+
 import { districtVCs } from "../../../districts/andhra-pradesh/ap.districts-vcs";
-import { allDistricts } from "./districts";
+import { allDistricts, multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./districts";
+import vcData from "../vc-data.json";
+import { json_All_AC } from "../ap.vc.geojson";
+
+import fs from "fs";
+import path from "path";
+
+import { vcdata2 } from "../vc-data-1.json";
+import { geoData } from "./vc-data-geo.json";
+import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
+import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
+import { createNodeType } from "../../../../knowledge-graph/generic/generic.create";
 
 //
 function getVCDLCTriads() {
@@ -32,7 +45,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Ichchapuram",
     href: "https://en.wikipedia.org/wiki/Ichchapuram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "1",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -47,7 +60,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Palasa",
     href: "https://en.wikipedia.org/wiki/Palasa_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "2",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -62,7 +75,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tekkali",
     href: "https://en.wikipedia.org/wiki/Tekkali_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "3",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -77,7 +90,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pathapatnam",
     href: "https://en.wikipedia.org/wiki/Pathapatnam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "4",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -92,7 +105,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Srikakulam",
     href: "https://en.wikipedia.org/wiki/Srikakulam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "5",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -107,7 +120,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Amadalavalasa",
     href: "https://en.wikipedia.org/wiki/Amadalavalasa_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "6",
     district: {
       name_id: "in-d-ap-srikakulam",
@@ -122,8 +135,8 @@ export const vidhansabhaConstituencies = [
   {
     name: "Narasannapeta",
     href: "https://en.wikipedia.org/wiki/Narasannapeta_(Assembly_constituency)",
-    reservation: "None",
-    number: "7",
+    reservation: "NONE",
+    number: "8",
     district: {
       name_id: "in-d-ap-srikakulam",
       wikidata_qid: "Q15395",
@@ -137,8 +150,8 @@ export const vidhansabhaConstituencies = [
   {
     name: "Etcherla",
     href: "https://en.wikipedia.org/wiki/Etcherla_Assembly_constituency",
-    reservation: "None",
-    number: "8",
+    reservation: "NONE",
+    number: "7",
     district: {
       name_id: "in-d-ap-srikakulam",
       wikidata_qid: "Q15395",
@@ -153,7 +166,7 @@ export const vidhansabhaConstituencies = [
     name: "Parvathipuram",
     href: "https://en.wikipedia.org/wiki/Parvathipuram_Assembly_constituency",
     reservation: "SC",
-    number: "10",
+    number: "12",
     district: {
       name_id: "in-d-ap-parvathipuram-manyam",
       wikidata_qid: "Q110714856",
@@ -165,7 +178,7 @@ export const vidhansabhaConstituencies = [
     name: "Palakonda",
     href: "https://en.wikipedia.org/wiki/Palakonda_Assembly_constituency",
     reservation: "ST",
-    number: "11",
+    number: "10",
     district: {
       name_id: "in-d-ap-parvathipuram-manyam",
       wikidata_qid: "Q110714856",
@@ -177,7 +190,7 @@ export const vidhansabhaConstituencies = [
     name: "Kurupam",
     href: "https://en.wikipedia.org/wiki/Kurupam_Assembly_constituency",
     reservation: "ST",
-    number: "12",
+    number: "11",
     district: {
       name_id: "in-d-ap-parvathipuram-manyam",
       wikidata_qid: "Q110714856",
@@ -215,7 +228,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Bobbili",
     href: "https://en.wikipedia.org/wiki/Bobbili_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "14",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -230,7 +243,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Cheepurupalli",
     href: "https://en.wikipedia.org/wiki/Cheepurupalli_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "15",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -245,7 +258,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Gajapathinagaram",
     href: "https://en.wikipedia.org/wiki/Gajapathinagaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "16",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -260,7 +273,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nellimarla",
     href: "https://en.wikipedia.org/wiki/Nellimarla_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "17",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -275,7 +288,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Vizianagaram",
     href: "https://en.wikipedia.org/wiki/Vizianagaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "18",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -290,7 +303,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Srungavarapukota",
     href: "https://en.wikipedia.org/wiki/Srungavarapukota_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "19",
     district: {
       name_id: "in-d-ap-vizianagaram",
@@ -306,6 +319,7 @@ export const vidhansabhaConstituencies = [
     name: "Bheemili",
     href: "https://en.wikipedia.org/wiki/Bhimli_(Assembly_constituency)",
     number: "20",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -320,6 +334,7 @@ export const vidhansabhaConstituencies = [
     name: "Visakhapatnam East",
     href: "https://en.wikipedia.org/wiki/Visakhapatnam_East_(Assembly_constituency)",
     number: "21",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -333,7 +348,8 @@ export const vidhansabhaConstituencies = [
   {
     name: "Visakhapatnam West",
     href: "https://en.wikipedia.org/wiki/Visakhapatnam_West_(Assembly_constituency)",
-    number: "22",
+    number: "24",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -348,6 +364,7 @@ export const vidhansabhaConstituencies = [
     name: "Visakhapatnam North",
     href: "https://en.wikipedia.org/wiki/Visakhapatnam_North_(Assembly_constituency)",
     number: "23",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -361,7 +378,8 @@ export const vidhansabhaConstituencies = [
   {
     name: "Visakhapatnam South",
     href: "https://en.wikipedia.org/wiki/Visakhapatnam_South_(Assembly_constituency)",
-    number: "24",
+    number: "22",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -376,6 +394,7 @@ export const vidhansabhaConstituencies = [
     name: "Gajuwaka",
     href: "https://en.wikipedia.org/wiki/Gajuwaka_(Assembly_constituency)",
     number: "25",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -387,9 +406,10 @@ export const vidhansabhaConstituencies = [
     },
   },
   {
-    name: "Pendurthi (partially)",
+    name: "Pendurthi",
     href: "https://en.wikipedia.org/wiki/Pendurthi_(Assembly_constituency)",
     number: "31",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-visakhapatnam",
       wikidata_qid: "Q15394",
@@ -403,7 +423,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Chodavaram",
     href: "https://en.wikipedia.org/wiki/Chodavaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "26",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -418,7 +438,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Madugula",
     href: "https://en.wikipedia.org/wiki/Madugula_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "27",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -433,7 +453,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Anakapalli",
     href: "https://en.wikipedia.org/wiki/Anakapalli_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "30",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -446,9 +466,9 @@ export const vidhansabhaConstituencies = [
     },
   },
   {
-    name: "Pendurthi (partially)",
+    name: "Pendurthi",
     href: "https://en.wikipedia.org/wiki/Pendurthi_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "31",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -463,7 +483,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Elamanchili",
     href: "https://en.wikipedia.org/wiki/Elamanchili_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "32",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -493,7 +513,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Narsipatnam",
     href: "https://en.wikipedia.org/wiki/Narsipatnam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "34",
     district: {
       name_id: "in-d-ap-anakapalli",
@@ -544,7 +564,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tuni",
     href: "https://en.wikipedia.org/wiki/Tuni_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "35",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -556,7 +576,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Prathipadu",
     href: "https://en.wikipedia.org/wiki/Prathipadu,_Kakinada_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "36",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -568,7 +588,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pithapuram",
     href: "https://en.wikipedia.org/wiki/Pithapuram_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "37",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -580,7 +600,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kakinada Rural",
     href: "https://en.wikipedia.org/wiki/Kakinada_Rural_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "38",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -592,7 +612,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Peddapuram",
     href: "https://en.wikipedia.org/wiki/Peddapuram_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "39",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -604,7 +624,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kakinada City",
     href: "https://en.wikipedia.org/wiki/Kakinada_City_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "41",
     district: {
       name_id: "in-d-ap-kakinada",
@@ -616,8 +636,8 @@ export const vidhansabhaConstituencies = [
   {
     name: "Jaggampeta",
     href: "https://en.wikipedia.org/wiki/Jaggampeta_Assembly_constituency",
-    reservation: "None",
-    number: "42",
+    reservation: "NONE",
+    number: "52",
     district: {
       name_id: "in-d-ap-kakinada",
       wikidata_qid: "Q110714860",
@@ -628,7 +648,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Anaparthy",
     href: "https://en.wikipedia.org/wiki/Anaparthy_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "40",
     district: {
       name_id: "in-d-ap-east-godavari",
@@ -643,7 +663,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rajanagaram",
     href: "https://en.wikipedia.org/wiki/Rajanagram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "49",
     district: {
       name_id: "in-d-ap-east-godavari",
@@ -658,7 +678,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rajamahendravaram City",
     href: "https://en.wikipedia.org/wiki/Rajahmundry_City_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "50",
     district: {
       name_id: "in-d-ap-east-godavari",
@@ -673,7 +693,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rajamahendravaram Rural",
     href: "https://en.wikipedia.org/wiki/Rajahmundry_Rural_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "51",
     district: {
       name_id: "in-d-ap-east-godavari",
@@ -703,7 +723,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nidadavole",
     href: "https://en.wikipedia.org/wiki/Nidadavole_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "55",
     district: {
       name_id: "in-d-ap-east-godavari",
@@ -733,7 +753,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Ramachandrapuram",
     href: "https://en.wikipedia.org/wiki/Ramachandrapuram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "42",
     district: {
       name_id: "in-d-ap-konaseema",
@@ -748,7 +768,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mummidivaram",
     href: "https://en.wikipedia.org/wiki/Mummidivaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "43",
     district: {
       name_id: "in-d-ap-konaseema",
@@ -808,7 +828,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kothapeta",
     href: "https://en.wikipedia.org/wiki/Kothapeta_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "47",
     district: {
       name_id: "in-d-ap-konaseema",
@@ -823,7 +843,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mandapeta",
     href: "https://en.wikipedia.org/wiki/Mandapeta_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "48",
     district: {
       name_id: "in-d-ap-konaseema",
@@ -838,7 +858,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Unguturu",
     href: "https://en.wikipedia.org/wiki/Unguturu_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "63",
     district: {
       name_id: "in-d-ap-eluru",
@@ -850,7 +870,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Denduluru",
     href: "https://en.wikipedia.org/wiki/Denduluru_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "64",
     district: {
       name_id: "in-d-ap-eluru",
@@ -862,7 +882,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Eluru",
     href: "https://en.wikipedia.org/wiki/Eluru_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "65",
     district: {
       name_id: "in-d-ap-eluru",
@@ -898,7 +918,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nuzvid",
     href: "https://en.wikipedia.org/wiki/Nuzvid_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "70",
     district: {
       name_id: "in-d-ap-eluru",
@@ -910,7 +930,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kaikalur",
     href: "https://en.wikipedia.org/wiki/Kaikalur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "73",
     district: {
       name_id: "in-d-ap-eluru",
@@ -922,7 +942,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Achanta",
     href: "https://en.wikipedia.org/wiki/Achanta_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "56",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -937,7 +957,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Palakollu",
     href: "https://en.wikipedia.org/wiki/Palakollu_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "57",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -952,7 +972,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Narasapuram",
     href: "https://en.wikipedia.org/wiki/Narasapuram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "58",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -967,7 +987,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Bhimavaram",
     href: "https://en.wikipedia.org/wiki/Bhimavaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "59",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -982,7 +1002,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Undi",
     href: "https://en.wikipedia.org/wiki/Undi_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "60",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -997,7 +1017,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tanuku",
     href: "https://en.wikipedia.org/wiki/Tanuku_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "61",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -1012,7 +1032,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tadepalligudem",
     href: "https://en.wikipedia.org/wiki/Tadepalligudem_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "62",
     district: {
       name_id: "in-d-ap-west-godavari",
@@ -1027,7 +1047,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Gannavaram (Part)",
     href: "https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "71",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1057,7 +1077,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Vijayawada West",
     href: "https://en.wikipedia.org/wiki/Vijayawada_West_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "79",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1072,7 +1092,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Vijayawada Central",
     href: "https://en.wikipedia.org/wiki/Vijayawada_Central_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "80",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1087,7 +1107,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Vijayawada East",
     href: "https://en.wikipedia.org/wiki/Vijayawada_East_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "81",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1102,7 +1122,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mylavaram",
     href: "https://en.wikipedia.org/wiki/Mylavaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "82",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1132,7 +1152,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Jaggayyapeta",
     href: "https://en.wikipedia.org/wiki/Jaggayyapeta_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "84",
     district: {
       name_id: "in-d-ap-ntr",
@@ -1147,7 +1167,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Gannavaram",
     href: "https://en.wikipedia.org/wiki/Gannavaram,_Krishna_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "71",
     district: {
       name_id: "in-d-ap-krishna",
@@ -1162,7 +1182,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Gudivada",
     href: "https://en.wikipedia.org/wiki/Gudivada_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "72",
     district: {
       name_id: "in-d-ap-krishna",
@@ -1177,7 +1197,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pedana",
     href: "https://en.wikipedia.org/wiki/Pedana_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "74",
     district: {
       name_id: "in-d-ap-krishna",
@@ -1207,7 +1227,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Avanigadda",
     href: "https://en.wikipedia.org/wiki/Avanigadda_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "76",
     district: {
       name_id: "in-d-ap-krishna",
@@ -1237,7 +1257,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Penamaluru",
     href: "https://en.wikipedia.org/wiki/Penamaluru_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "78",
     district: {
       name_id: "in-d-ap-krishna",
@@ -1264,7 +1284,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mangalagiri",
     href: "https://en.wikipedia.org/wiki/Mangalagiri_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "87",
     district: {
       name_id: "in-d-ap-guntur",
@@ -1276,7 +1296,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Ponnur",
     href: "https://en.wikipedia.org/wiki/Ponnuru_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "88",
     district: {
       name_id: "in-d-ap-guntur",
@@ -1288,7 +1308,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tenali",
     href: "https://en.wikipedia.org/wiki/Tenali_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "91",
     district: {
       name_id: "in-d-ap-guntur",
@@ -1312,7 +1332,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Guntur West",
     href: "https://en.wikipedia.org/wiki/Guntur_West_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "94",
     district: {
       name_id: "in-d-ap-guntur",
@@ -1324,7 +1344,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Guntur East",
     href: "https://en.wikipedia.org/wiki/Guntur_East_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "95",
     district: {
       name_id: "in-d-ap-guntur",
@@ -1337,6 +1357,7 @@ export const vidhansabhaConstituencies = [
     name: "Pedakurapadu",
     href: "https://en.wikipedia.org/wiki/Pedakurapadu_(Assembly_constituency)",
     number: "85",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1351,6 +1372,7 @@ export const vidhansabhaConstituencies = [
     name: "Chilakaluripeta",
     href: "https://en.wikipedia.org/wiki/Chilakaluripet_(Assembly_constituency)",
     number: "96",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1365,6 +1387,7 @@ export const vidhansabhaConstituencies = [
     name: "Narasaraopeta",
     href: "https://en.wikipedia.org/wiki/Narasaraopet_(Assembly_constituency)",
     number: "97",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1379,6 +1402,7 @@ export const vidhansabhaConstituencies = [
     name: "Sattenapalle",
     href: "https://en.wikipedia.org/wiki/Sattenapalle_(Assembly_constituency)",
     number: "98",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1393,6 +1417,7 @@ export const vidhansabhaConstituencies = [
     name: "Vinukonda",
     href: "https://en.wikipedia.org/wiki/Vinukonda_(Assembly_constituency)",
     number: "99",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1407,6 +1432,7 @@ export const vidhansabhaConstituencies = [
     name: "Gurajala",
     href: "https://en.wikipedia.org/wiki/Gurajala_(Assembly_constituency)",
     number: "100",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1421,6 +1447,7 @@ export const vidhansabhaConstituencies = [
     name: "Macherla",
     href: "https://en.wikipedia.org/wiki/Macherla_(Assembly_constituency)",
     number: "101",
+    reservation: "NONE",
     district: {
       name_id: "in-d-ap-palnadu",
       wikidata_qid: "Q110714862",
@@ -1446,7 +1473,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Repalle",
     href: "https://en.wikipedia.org/wiki/Repalle_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "90",
     district: {
       name_id: "in-d-ap-bapatla",
@@ -1458,7 +1485,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Bapatla",
     href: "https://en.wikipedia.org/wiki/Bapatla_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "92",
     district: {
       name_id: "in-d-ap-bapatla",
@@ -1470,7 +1497,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Parchur",
     href: "https://en.wikipedia.org/wiki/Parchur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "104",
     district: {
       name_id: "in-d-ap-bapatla",
@@ -1482,7 +1509,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Addanki",
     href: "https://en.wikipedia.org/wiki/Addanki_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "105",
     district: {
       name_id: "in-d-ap-bapatla",
@@ -1494,7 +1521,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Chirala",
     href: "https://en.wikipedia.org/wiki/Chirala_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "106",
     district: {
       name_id: "in-d-ap-bapatla",
@@ -1530,7 +1557,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Darsi",
     href: "https://en.wikipedia.org/wiki/Darsi_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "103",
     district: {
       name_id: "in-d-ap-prakasam",
@@ -1542,7 +1569,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Ongole",
     href: "https://en.wikipedia.org/wiki/Ongole_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "108",
     district: {
       name_id: "in-d-ap-prakasam",
@@ -1566,7 +1593,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Markapuram",
     href: "https://en.wikipedia.org/wiki/Markapuram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "111",
     district: {
       name_id: "in-d-ap-prakasam",
@@ -1578,7 +1605,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Giddalur",
     href: "https://en.wikipedia.org/wiki/Giddalur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "112",
     district: {
       name_id: "in-d-ap-prakasam",
@@ -1590,7 +1617,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kanigiri",
     href: "https://en.wikipedia.org/wiki/Kanigiri_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "113",
     district: {
       name_id: "in-d-ap-prakasam",
@@ -1602,7 +1629,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kandukur",
     href: "https://en.wikipedia.org/wiki/Kandukur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "109",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1614,7 +1641,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kavali",
     href: "https://en.wikipedia.org/wiki/Kavali_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "114",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1626,7 +1653,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Atmakur",
     href: "https://en.wikipedia.org/wiki/Atmakur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "115",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1638,7 +1665,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kovuru",
     href: "https://en.wikipedia.org/wiki/Kovur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "116",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1650,7 +1677,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nellore City",
     href: "https://en.wikipedia.org/wiki/Nellore_City_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "117",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1662,7 +1689,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nellore Rural",
     href: "https://en.wikipedia.org/wiki/Nellore_Rural_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "118",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1674,7 +1701,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Udayagiri",
     href: "https://en.wikipedia.org/wiki/Udayagiri_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "123",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1686,7 +1713,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Sarvepalli",
     href: "https://en.wikipedia.org/wiki/Sarvepalli_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "119",
     district: {
       name_id: "in-d-ap-sri-potti-sriramulu-nellore",
@@ -1698,7 +1725,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kurnool",
     href: "https://en.wikipedia.org/wiki/Kurnool_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "137",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1722,7 +1749,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Yemmiganur",
     href: "https://en.wikipedia.org/wiki/Yemmiganur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "144",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1734,7 +1761,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mantralayam",
     href: "https://en.wikipedia.org/wiki/Mantralayam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "145",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1746,7 +1773,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Adoni",
     href: "https://en.wikipedia.org/wiki/Adoni_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "146",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1758,7 +1785,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Alur",
     href: "https://en.wikipedia.org/wiki/Alur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "147",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1770,7 +1797,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pattikonda",
     href: "https://en.wikipedia.org/wiki/Pattikonda_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "142",
     district: {
       name_id: "in-d-ap-kurnool",
@@ -1782,7 +1809,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Allagadda",
     href: "https://en.wikipedia.org/wiki/Allagadda_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "134",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1794,7 +1821,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Srisailam",
     href: "https://en.wikipedia.org/wiki/Srisailam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "135",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1818,7 +1845,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nandyal",
     href: "https://en.wikipedia.org/wiki/Nandyal_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "139",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1830,7 +1857,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Banaganapalle",
     href: "https://en.wikipedia.org/wiki/Banaganapalle_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "140",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1842,7 +1869,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Dhone",
     href: "https://en.wikipedia.org/wiki/Dhone_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "141",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1852,9 +1879,9 @@ export const vidhansabhaConstituencies = [
     loksabha_constituency: { name: "Nandyal", href: "https://en.wikipedia.org/wiki/Nandyal_(Lok_Sabha_constituency)" },
   },
   {
-    name: "Panyam (partially)",
+    name: "Panyam",
     href: "https://en.wikipedia.org/wiki/Panyam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "138",
     district: {
       name_id: "in-d-ap-nandyal",
@@ -1878,7 +1905,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Jammalamadugu",
     href: "https://en.wikipedia.org/wiki/Jammalamadugu_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "131",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1890,7 +1917,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kadapa",
     href: "https://en.wikipedia.org/wiki/Kadapa_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "126",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1902,7 +1929,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kamalapuram",
     href: "https://en.wikipedia.org/wiki/Kamalapuram_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "130",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1914,7 +1941,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Mydukur",
     href: "https://en.wikipedia.org/wiki/Mydukur_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "133",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1926,7 +1953,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Proddatur",
     href: "https://en.wikipedia.org/wiki/Proddatur_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "132",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1938,7 +1965,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pulivendula",
     href: "https://en.wikipedia.org/wiki/Pulivendla_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "129",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1948,9 +1975,9 @@ export const vidhansabhaConstituencies = [
     loksabha_constituency: { name: "Kadapa", href: "https://en.wikipedia.org/wiki/Kadapa_(Lok_Sabha_constituency)" },
   },
   {
-    name: "Rajampet (partial)",
+    name: "Rajampet",
     href: "https://en.wikipedia.org/wiki/Rajampet_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "125",
     district: {
       name_id: "in-d-ap-y.s.r.",
@@ -1962,7 +1989,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rayadurgam",
     href: "https://en.wikipedia.org/wiki/Rayadurg_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "148",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -1977,7 +2004,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Uravakonda",
     href: "https://en.wikipedia.org/wiki/Uravakonda_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "149",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -1992,7 +2019,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Guntakallu",
     href: "https://en.wikipedia.org/wiki/Guntakal_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "150",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -2007,7 +2034,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tadpatri",
     href: "https://en.wikipedia.org/wiki/Tadpatri_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "151",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -2037,7 +2064,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Anantapuram Urban",
     href: "https://en.wikipedia.org/wiki/Anantapur_Urban_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "153",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -2052,7 +2079,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kalyandurgam",
     href: "https://en.wikipedia.org/wiki/Kalyandurg_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "154",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -2067,7 +2094,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Raptadu",
     href: "https://en.wikipedia.org/wiki/Raptadu_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "155",
     district: {
       name_id: "in-d-ap-anantpur",
@@ -2097,7 +2124,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Hindupuram",
     href: "https://en.wikipedia.org/wiki/Hindupur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "157",
     district: {
       name_id: "in-d-ap-sri-sathya-sai",
@@ -2112,7 +2139,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Penukonda",
     href: "https://en.wikipedia.org/wiki/Penukonda_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "158",
     district: {
       name_id: "in-d-ap-sri-sathya-sai",
@@ -2127,7 +2154,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Puttaparthi",
     href: "https://en.wikipedia.org/wiki/Puttaparthi_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "159",
     district: {
       name_id: "in-d-ap-sri-sathya-sai",
@@ -2142,7 +2169,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Dharmavaram",
     href: "https://en.wikipedia.org/wiki/Dharmavaram_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "160",
     district: {
       name_id: "in-d-ap-sri-sathya-sai",
@@ -2157,7 +2184,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kadiri",
     href: "https://en.wikipedia.org/wiki/Kadiri_Assembly_constituency",
-    reservation: "None",
+    reservation: "NONE",
     number: "161",
     district: {
       name_id: "in-d-ap-sri-sathya-sai",
@@ -2172,7 +2199,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rajampet",
     href: "https://en.wikipedia.org/wiki/Rajampet_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "125",
     district: {
       name_id: "in-d-ap-annamayya",
@@ -2202,7 +2229,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Rayachoti",
     href: "https://en.wikipedia.org/wiki/Rayachoti_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "128",
     district: {
       name_id: "in-d-ap-annamayya",
@@ -2217,7 +2244,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Thamballapalle",
     href: "https://en.wikipedia.org/wiki/Thamballapalle_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "162",
     district: {
       name_id: "in-d-ap-annamayya",
@@ -2232,7 +2259,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Pileru",
     href: "https://en.wikipedia.org/wiki/Pileru_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "163",
     district: {
       name_id: "in-d-ap-annamayya",
@@ -2247,7 +2274,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Madanapalle",
     href: "https://en.wikipedia.org/wiki/Madanapalle_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "164",
     district: {
       name_id: "in-d-ap-annamayya",
@@ -2262,7 +2289,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Chandragiri",
     href: "https://en.wikipedia.org/wiki/Chandragiri_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "166",
     district: {
       name_id: "in-d-ap-tirupati",
@@ -2274,7 +2301,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Tirupati",
     href: "https://en.wikipedia.org/wiki/Tirupati_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "167",
     district: {
       name_id: "in-d-ap-tirupati",
@@ -2304,7 +2331,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Venkatagiri",
     href: "https://en.wikipedia.org/wiki/Venkatagiri_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "122",
     district: {
       name_id: "in-d-ap-tirupati",
@@ -2334,7 +2361,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Srikalahasti",
     href: "https://en.wikipedia.org/wiki/Srikalahasti_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "168",
     district: {
       name_id: "in-d-ap-tirupati",
@@ -2364,7 +2391,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Nagari",
     href: "https://en.wikipedia.org/wiki/Nagari_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "170",
     district: {
       name_id: "in-d-ap-chittoor",
@@ -2388,7 +2415,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Chittoor",
     href: "https://en.wikipedia.org/wiki/Chittoor_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "172",
     district: {
       name_id: "in-d-ap-chittoor",
@@ -2412,7 +2439,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Palamaner",
     href: "https://en.wikipedia.org/wiki/Palamaner_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "174",
     district: {
       name_id: "in-d-ap-chittoor",
@@ -2424,7 +2451,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Kuppam",
     href: "https://en.wikipedia.org/wiki/Kuppam_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "175",
     district: {
       name_id: "in-d-ap-chittoor",
@@ -2436,7 +2463,7 @@ export const vidhansabhaConstituencies = [
   {
     name: "Punganur",
     href: "https://en.wikipedia.org/wiki/Punganur_(Assembly_constituency)",
-    reservation: "None",
+    reservation: "NONE",
     number: "165",
     district: {
       name_id: "in-d-ap-chittoor",
@@ -2452,7 +2479,78 @@ export const vidhansabhaConstituencies = [
 // match names and/or add names
 // save all vcs
 
-// update triads
+// let vcData2GroupBy = groupBy(vcDataV2, "constituency_number");
 
-// get list of all lcs
-// fetch data for all
+// // console.log(Object.keys(vcData2GroupBy).length);
+// forEach(vcData2GroupBy, (val: any, key: any) => {
+//   if (val.length > 1) {
+//     console.log(JSON.stringify(val, null, 2));
+//   }
+// });
+
+// (async () => {
+//   // let mapPropsArray = json_All_AC.features.map((val: any) => val.properties);
+//   // let mapProps: any = keyBy(json_All_AC.features, "properties.AC_NO");
+//   // console.log(
+//   //   Object.keys(mapProps).length,
+//   //   mapPropsArray.length,
+//   //   vidhansabhaConstituencies.length,
+//   //   Object.keys(keyedVCs).length
+//   // );
+//   // let multiNames: any = {};
+//   // for (let i = 1; i <= 175; i++) {
+//   //   // if (!keyedVCs[`${i}`]) console.log(i);
+//   //   if (keyedVCs[`${i}`].name !== mapProps[i].AC_NAME) {
+//   //     multiNames[i] = { availableName: keyedVCs[`${i}`].name, newName: mapProps[i].AC_NAME };
+//   //   }
+//   //   // if (!keyedVCs[`${i}`].reservation) console.log(keyedVCs[`${i}`]);
+//   // }
+//   // console.log(JSON.stringify(multiNames));
+//   // console.log(mapPropsArray.filter((val: any) => !mapProps[val.AC_NO]));
+//   // console.log(vcDataV2.length);
+//   // for (let vc in vcdata2) {
+//   //   // if (!mapProps[vcDataV2[vc].constituency_number]) console.log(mapProps[vcDataV2[vc].constituency_number]);
+//   //   vcdata2[vc].geo = mapProps[vcdata2[vc].constituency_number];
+//   //   // console.log(mapProps[vcDataV2[vc].constituency_number].properties.AC_NAME);
+//   // }
+//   // // console.log(JSON.stringify(vcdata2));
+//   // const outputFilePath = path.join(__dirname, "lc-data-geo.json");
+//   // fs.writeFileSync(outputFilePath, JSON.stringify(vcdata2, null, 2));
+//   // const graphQLClient = await createGraphQLClient();
+//   // for (let g of geoData) {
+//   //   let toSaveVC = {
+//   //     names: g.names,
+//   //     name_id: g.name_id,
+//   //     wikidata_qid: g.wikidata_qid,
+//   //     wikipedia_page: g.wikipedia_page,
+//   //     established_on_string: g.established_on_string,
+//   //     districts: g.districts,
+//   //     states_union_territories: g.states_union_territories,
+//   //     node_created_on: new Date(),
+//   //     reservation: g.reservation,
+//   //     constituency_number: g.constituency_number,
+//   //   };
+//   //   for (let n of toSaveVC.names) {
+//   //     const nameId = await upsert_Name_(n.name);
+//   //   }
+//   //   const vcMap = polygonToMultiPolygon(g.geo);
+//   //   let geo = {
+//   //     category: "Region",
+//   //     source_name: "Election Commission Of India",
+//   //     source_url: `https://results.eci.gov.in/ResultAcGenNov2024/ac/${g.geo.properties.ST_CODE}.js`,
+//   //     source_data: `${g.geo}`,
+//   //     area: multiPolygonToDgraphMultiPolygon(vcMap.geometry.coordinates),
+//   //   };
+//   //   const vcId = await createNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, toSaveVC);
+//   //   const geoId = await createNodeType("_Geo_", graphQLClient, geo);
+//   //   let toSaveVCRegion = {
+//   //     self: { name_id: toSaveVC.name_id },
+//   //     geo_boundary: {
+//   //       id: geoId,
+//   //     },
+//   //     node_created_on: new Date(),
+//   //   };
+//   //   const vcRegionId = await createNodeType("_Indian_Vidhansabha_Constituency_Region_", graphQLClient, toSaveVCRegion);
+//   //   console.log({ name_id: toSaveVC.name_id, vcId, vcRegionId, geoId });
+//   // }
+// })();

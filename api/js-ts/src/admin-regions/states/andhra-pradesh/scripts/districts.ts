@@ -2024,7 +2024,7 @@ async function runScripts() {
       // console.log(toSaveDistrict);
       // console.log(JSON.stringify(geo));
       // save name
-      const nameId = await upsert_Name_(d.name);
+      // const nameId = await upsert_Name_(d.name);
       // save district
       // const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
       // const geoId = await createNodeType("_Geo_", graphQLClient, geo);
