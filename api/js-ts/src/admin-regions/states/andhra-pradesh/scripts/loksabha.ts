@@ -1,10 +1,19 @@
 import { districtVCs } from "../../../districts/andhra-pradesh/ap.districts-vcs";
-import { allDistricts } from "./districts";
+import { allDistricts, multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./districts";
 import { vidhansabhaConstituencies } from "./vidhan-sabha";
 import { forEach, groupBy, keyBy, map } from "lodash";
 import lcData from "../lc-data.json";
 import { geoData } from "./vc-data-geo.json";
 import { json_All_PC } from "../ap.lc.geojson";
+import { allLoksabhaSeatsGeo } from "./lc-data-geo";
+
+import toSaveLC from "./lc-data-geo.json";
+
+import fs from "fs";
+import path from "path";
+import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
+import { createNodeType } from "../../../../knowledge-graph/generic/generic.create";
+import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
 
 export let allLoksabhaSeats: any = {
   Srikakulam: {
@@ -532,7 +541,7 @@ let rem = {
   },
 };
 
-function getLoksabhaConstituencies() {
+async function getLoksabhaConstituencies() {
   let ls: any = {};
 
   // vidhansabhaConstituencies.forEach((vc: any) => {
@@ -625,53 +634,101 @@ function getLoksabhaConstituencies() {
 
   // console.log(JSON.stringify(allLoksabhaSeats));
 
-  json_All_PC.forEach((val: any) => {
-    // return ;
-    if (!allLoksabhaSeats[val.properties.PC_NAME]) console.log(val.properties.PC_NAME);
-  });
+  // json_All_PC.forEach((val: any) => {
+  //   // return ;
+  //   // if (allLoksabhaSeats[val.properties.PC_NAME]) console.log(val.properties.PC_NAME);
+  //   allLoksabhaSeats[val.properties.PC_NAME].geo = val;
+  // });
 
-  // let toSaveLC = {
-  //   name_id: `in-lc-ap-${}`
-  // };
+  // let x = map(allLoksabhaSeatsGeo, (val: any, key: string) => {
+  //   return {
+  //     names: val.name.map((v: any) => {
+  //       return { name: v };
+  //     }),
+  //     name_id: `in-lc-ap-${key.toLowerCase().split(" ").join("-")}`,
+  //     vidhansabha_constituencies: Object.keys(val.vcs).map((v) => {
+  //       return {
+  //         name_id: v,
+  //       };
+  //     }),
+  //     districts: Object.keys(val.d).map((v) => {
+  //       return {
+  //         name_id: v,
+  //       };
+  //     }),
+  //     states_union_territories: [
+  //       {
+  //         name_id: "in-sut-andhra-pradesh",
+  //       },
+  //     ],
+  //     established_on_string: val.established,
+  //     reservation: val.reservation,
+  //     wikidata_qid: val.wikidata_qid,
+  //     wikipedia_page: val.wikipedia_page,
+  //     constituency_number: val.geo.properties.PC_No,
+  //     geo: val.geo,
+  //   };
+  // });
 
-  // get d ids
-  // get vc ids
-  // get self data
-  // get self geo
-  // get self region
+  const graphQLClient = await createGraphQLClient();
 
-  // key by href
-  //
+  for (let lc of toSaveLC) {
+    for (let n of lc.names) {
+      const nameId = await upsert_Name_(n.name);
+    }
+    const lcMap = polygonToMultiPolygon(lc.geo);
+    let geoData = {
+      category: "Region",
+      source_name: "Election Commission Of India",
+      source_url: `https://results.eci.gov.in/PcResultGenJune2024/pc/${lc.geo.properties.ST_CODE}.js`,
+      source_data: `${JSON.stringify(lc.geo)}`,
+      area: multiPolygonToDgraphMultiPolygon(lcMap.geometry.coordinates),
+    };
+
+    const { geo, ...rest } = lc;
+
+    // "names"
+    // "name_id": "in-lc-ap-srikakulam",
+    // "vidhansabha_constituencies":
+    // "districts":
+    // "established_on_string": "1952",
+    // "reservation": "NONE",
+    // "wikidata_qid": "Q3764487",
+    // "wikipedia_page": "https://en.wikipedia.org/wiki/Srikakulam_Lok_Sabha_constituency",
+    // "constituency_number": 2,
+
+    const lcId = await createNodeType("_Indian_Loksabha_Constituency_", graphQLClient, {
+      ...rest,
+      constituency_number: rest.constituency_number.toString(),
+    });
+    const geoId = await createNodeType("_Geo_", graphQLClient, geoData);
+
+    let toSaveLCRegion = {
+      self: { name_id: lc.name_id },
+      geo_boundary: {
+        id: geoId,
+      },
+      node_created_on: new Date(),
+    };
+    const lcRegionId = await createNodeType("_Indian_Loksabha_Constituency_Region_", graphQLClient, toSaveLCRegion);
+
+    console.log({ name_id: lc.name_id, lcId, lcRegionId, geoId });
+  }
+
+  // const outputFilePath = path.join(__dirname, "lc-data-geo.json");
+  // fs.writeFileSync(outputFilePath, JSON.stringify(x, null, 2));
 }
 
-getLoksabhaConstituencies();
-
-// name_id: String! @id @search(by: [exact, term, fulltext])
-
-// names: [_Name_] @hasInverse(field: "indian_loksabha_constituency")
-
-// wikidata_qid: String @search(by: [hash])
-// wikipedia_page: String @search(by: [fulltext])
-
-// reservation: _Indian_Legislative_Constituency_Reservation_ @search
-
-// constituency_number: String @search(by: [exact, term, fulltext])
+(async () => {
+  await getLoksabhaConstituencies();
+})();
 
 // # region connections - district, vsc, state
-// states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "loksabha_constituencies")
-// districts: [_Indian_District_] @hasInverse(field: "loksabha_constituencies")
 
 // sub_districts: [_Indian_Sub_District_] @hasInverse(field: "loksabha_constituencies")
-// vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "loksabha_constituencies")
 
 // # region
 // regions: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "self")
-
-// established_on_string: String
-// disestablished_on_string: String
-
-// established_on: DateTime
-// disestablished_on: DateTime
 
 // node_created_on: DateTime
 // node_updates: [_Node_Update_]
