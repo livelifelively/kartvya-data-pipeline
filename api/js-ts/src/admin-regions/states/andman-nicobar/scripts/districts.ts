@@ -1,30 +1,76 @@
-// states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "districts")
-// sub_districts: [_Indian_Sub_District_] @hasInverse(field: "districts")
-// loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "districts")
-// vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "districts")
-// regions: [_Indian_District_Region_] @hasInverse(field: "self")
-// wikidata_qid: String @search(by: [hash])
-// osm_id: String @search(by: [hash])
-
+import path from "path";
+import fs from "fs";
+import { map } from "lodash";
 import { districts } from "../../../districts/all-states-districts-list";
 import { queryNodeType } from "../../../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
 import { fetchByRelationId, fetchDistrictsForState } from "../../../../maps/india-osm/states.fetch-geojsons";
 import districtsGeoSOI from "../../../districts/india.d.geojson";
-
-import path from "path";
-import fs from "fs";
-import { map } from "lodash";
 import { processListOfWikipediaPages } from "../../../districts/extract-district-page-data";
 
-let districtsProgressDir = path.join(__dirname, "distrit-progress-logs");
-fs.mkdirSync(districtsProgressDir, { recursive: true });
+interface District {
+  names: string[];
+  wikipedia_page: string;
+  states_union_territories: string;
+}
 
-// current status of the process and meta data
-const progressStatus: any = [];
+interface StateDistricts {
+  state: string;
+  sut: { name_id: string }[];
+  districts: District[];
+}
 
-function logProgress(progressData: any, status: "SUCCESS" | "FAILURE" | "PARTIAL") {
-  let existingLogs: any = [];
+interface ProgressData {
+  message: string;
+  data: any;
+  key: string;
+  timeStamp?: Date;
+}
+
+interface ProgressStatus {
+  logFile: string;
+  status: "SUCCESS" | "FAILURE" | "PARTIAL";
+}
+
+interface OSMData {
+  localname: string;
+  admin_level: number;
+}
+
+interface OSMDetails {
+  id: string;
+}
+
+interface GeoJSONFeature {
+  type: string;
+  properties: {
+    stname: string;
+    [key: string]: any;
+  };
+  geometry: {
+    type: string;
+    coordinates: any[];
+  };
+}
+
+interface GeoJSON {
+  type: string;
+  features: GeoJSONFeature[];
+}
+
+const progressStatusFile = path.join(__dirname, "logs", "progressStatus.json");
+const districtsProgressDir = path.join(__dirname, "distrit-progress-logs");
+
+function initializeDirectories(): void {
+  fs.mkdirSync(districtsProgressDir, { recursive: true });
+  fs.mkdirSync(path.dirname(progressStatusFile), { recursive: true });
+  if (!fs.existsSync(progressStatusFile)) {
+    fs.writeFileSync(progressStatusFile, JSON.stringify([]));
+  }
+}
+
+function logProgress(progressData: ProgressData, status: "SUCCESS" | "FAILURE" | "PARTIAL"): void {
+  const progressStatus: ProgressStatus[] = JSON.parse(fs.readFileSync(progressStatusFile, "utf8"));
   const progressDataLogFile = path.join(districtsProgressDir, `${progressStatus.length}.${progressData.key}.log.json`);
 
   progressStatus.push({
@@ -32,46 +78,31 @@ function logProgress(progressData: any, status: "SUCCESS" | "FAILURE" | "PARTIAL
     status,
   });
 
+  let existingLogs: ProgressData[] = [];
   if (fs.existsSync(progressDataLogFile)) {
-    existingLogs = fs.readFileSync(progressDataLogFile, "utf8");
+    existingLogs = JSON.parse(fs.readFileSync(progressDataLogFile, "utf8"));
   }
 
   existingLogs.push({ ...progressData, timeStamp: new Date() });
   fs.writeFileSync(progressDataLogFile, JSON.stringify(existingLogs, null, 2));
+  fs.writeFileSync(progressStatusFile, JSON.stringify(progressStatus, null, 2));
 
   console.log(
-    progressStatus.map((val: any, index: any) => {
-      return {
-        step: index,
-        ...val,
-      };
-    })
+    progressStatus.map((val, index) => ({
+      step: index,
+      ...val,
+    }))
   );
 }
 
-async function fetchDetailsFromWikipediaUrls(districtsList: any) {
-  const urls = map(districtsList, (val) => val.wikipedia_page);
-  //   const outputFilePath = path.join(__dirname, "d-data.json");
-  let results = await processListOfWikipediaPages(urls);
-
-  //   fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
-
-  return results;
-}
-
-(async () => {
-  const stateName = "andaman and nicobar islands";
-  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateName);
-  let stateDistricts: any = {};
+async function fetchStateDistricts(stateName: string): Promise<StateDistricts> {
   try {
-    stateDistricts = districts.find((val: any) => val.state === stateName);
-    stateDistricts.districts = stateDistricts?.districts.map((val: any) => {
-      return {
-        names: [val.name],
-        wikipedia_page: val.wikipedia_page,
-        states_union_territories: stateDistricts.name_id,
-      };
-    });
+    const stateDistricts = districts.find((val: any) => val.state === stateName) as any;
+    stateDistricts.districts = stateDistricts?.districts.map((val: any) => ({
+      names: [val.name],
+      wikipedia_page: val.wikipedia_page,
+      states_union_territories: stateDistricts.name_id,
+    }));
 
     logProgress(
       {
@@ -81,26 +112,30 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "SUCCESS"
     );
+    return stateDistricts;
   } catch (e) {
     logProgress(
       {
         message: "DISTRICTS: names, wikipedia_page, states_union_territories",
-        data: stateDistricts,
+        data: {},
         key: "STATE_DISTRICTS_LIST",
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
+async function fetchStateOSMData(stateDistricts: StateDistricts): Promise<OSMData> {
   const graphQLClient = await createGraphQLClient();
-  let stateOSMData: any = {};
   try {
-    const stateDetails = await queryNodeType("_Indian_State_Union_Territory_", graphQLClient, stateDistricts.name_id, [
-      "osm_id",
-      "id",
-      "regions { geo_boundary { source_data } } ",
-    ]);
-    stateOSMData = JSON.parse(stateDetails[0].regions[0].geo_boundary[0].source_data);
+    const stateDetails = await queryNodeType(
+      "_Indian_State_Union_Territory_",
+      graphQLClient,
+      stateDistricts.sut[0].name_id,
+      ["osm_id", "id", "regions { geo_boundary { source_data } } "]
+    );
+    const stateOSMData = JSON.parse(stateDetails[0].regions[0].geo_boundary[0].source_data) as OSMData;
 
     logProgress(
       {
@@ -114,6 +149,7 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "SUCCESS"
     );
+    return stateOSMData;
   } catch (e) {
     logProgress(
       {
@@ -123,11 +159,17 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
-  let districtsOSMList: any = [];
+async function fetchDistrictsOSMRelationIds(stateOSMData: OSMData): Promise<any> {
   try {
-    districtsOSMList = await fetchDistrictsForState(stateOSMData.localname, stateOSMData.admin_level.toString(), 5);
+    const districtsOSMList = await fetchDistrictsForState(
+      stateOSMData.localname,
+      stateOSMData.admin_level.toString(),
+      5
+    );
 
     logProgress(
       {
@@ -139,6 +181,7 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "SUCCESS"
     );
+    return districtsOSMList;
   } catch (e) {
     logProgress(
       {
@@ -148,10 +191,13 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
-  let districtsOSMDetails: any = [];
-  let districtsOSMDetailsStepSuccessStatus: any = "SUCCESS";
+async function fetchDistrictsOSMDetails(districtsOSMList: any): Promise<any[]> {
+  let districtsOSMDetails: any[] = [];
+  let districtsOSMDetailsStepSuccessStatus: "SUCCESS" | "PARTIAL" = "SUCCESS";
   try {
     for (let osmd of districtsOSMList.districtsRelationIds) {
       try {
@@ -176,6 +222,7 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       districtsOSMDetailsStepSuccessStatus
     );
+    return districtsOSMDetails;
   } catch (e) {
     logProgress(
       {
@@ -185,22 +232,26 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
-  let districtsWikiDetails: any = [];
+async function fetchDistrictsWikiDetails(stateDistricts: StateDistricts): Promise<any[]> {
   try {
-    districtsWikiDetails = await fetchDetailsFromWikipediaUrls(stateDistricts.districts);
+    const urls = map(stateDistricts.districts, (val) => val.wikipedia_page);
+    const results = await processListOfWikipediaPages(urls);
 
     logProgress(
       {
         message: "FETCHED DISTRICT WIKI DETAILS",
         data: {
-          districtsWikiDetails,
+          districtsWikiDetails: results,
         },
         key: "STATE_DISTRICTS_WIKI_DATA",
       },
       "SUCCESS"
     );
+    return results;
   } catch (e) {
     logProgress(
       {
@@ -210,21 +261,29 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
-  let districtFeaturesSOI = districtsGeoSOI?.features?.filter((dist: any) => {
-    return dist.properties.stname.toLowerCase === stateName;
-  });
-  if (districtFeaturesSOI.length) {
-    logProgress(
-      {
-        message: "FETCHED DISTRICT SOI GEO FEATURES",
-        data: districtFeaturesSOI,
-        key: "STATE_DISTRICTS_SOI_GEO_DATA",
-      },
-      "SUCCESS"
+async function fetchDistrictSOIGeoFeatures(stateName: string): Promise<GeoJSONFeature[]> {
+  try {
+    const districtFeaturesSOI = (districtsGeoSOI as any)?.features?.filter(
+      (dist: any) => dist.properties.stname.toLowerCase() === stateName
     );
-  } else {
+    if (districtFeaturesSOI.length) {
+      logProgress(
+        {
+          message: "FETCHED DISTRICT SOI GEO FEATURES",
+          data: districtFeaturesSOI,
+          key: "STATE_DISTRICTS_SOI_GEO_DATA",
+        },
+        "SUCCESS"
+      );
+      return districtFeaturesSOI;
+    } else {
+      throw new Error("No SOI geo features found");
+    }
+  } catch (e) {
     logProgress(
       {
         message: "FETCHED DISTRICT SOI GEO FEATURES",
@@ -233,37 +292,25 @@ async function fetchDetailsFromWikipediaUrls(districtsList: any) {
       },
       "FAILURE"
     );
+    throw e;
   }
+}
 
-  // stateDistricts.districts
-  // for every district assemble the data from all the sources
-  // JSON.stringify(districtsOSMDetails);
+(async () => {
+  initializeDirectories();
+  const stateName = "andaman and nicobar islands";
+  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateName);
+
+  try {
+    const stateDistricts = await fetchStateDistricts(stateName);
+    // const stateOSMData = await fetchStateOSMData(stateDistricts);
+    // const districtsOSMList = await fetchDistrictsOSMRelationIds(stateOSMData);
+    // const districtsOSMDetails = await fetchDistrictsOSMDetails(districtsOSMList);
+    // const districtsWikiDetails = await fetchDistrictsWikiDetails(stateDistricts);
+    // const districtSOIGeoFeatures = await fetchDistrictSOIGeoFeatures(stateName);
+
+    // Further processing can be done here with the fetched data
+  } catch (error) {
+    console.error("Error in processing: ", error);
+  }
 })();
-
-/**
- * 1. get state osm id
- * 2. get geo from OSM
- */
-// get state osm id
-// fetch all districts in it
-// check for duplicate name districts
-// check for osm-district name in our districts
-// make up for missing districts
-// fetch district geo from OSM
-
-/**
- * 3. get wikidata id
- */
-// for the list of all urls
-// fetch latest wikipedia pages and wikidata qids
-
-/**
- * 4. get geo from SOI
- */
-
-// create names - DONE
-// create district
-// create geo
-// create region
-
-// console.log(stateDistricts);
