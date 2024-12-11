@@ -41,6 +41,33 @@ export async function updateNodeType(
   return response[`update${nodetype}`][nodetype][0].id;
 }
 
+export async function queryNodeType(nodetype: string, graphQLClient: any, idOrNameId: string, fields: string[]) {
+  // Determine the variable name based on the id type
+  const isNameId = typeof idOrNameId === "string" && idOrNameId.length > 0;
+  const variableName = isNameId ? "name_id" : "id";
+
+  // Construct the query
+  const query = `
+      query Get${nodetype}($value: String!) {
+          query${nodetype}(filter: {${variableName}: {eq: $value}}) {
+              ${fields.join("\n")}
+          }
+      }
+  `;
+
+  const variables = {
+    value: idOrNameId,
+  };
+
+  try {
+    const response = await graphQLClient.request(query, variables);
+    return response[`query${nodetype}`] || [];
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+}
+
 // export async function upsertNodeType(nodetype: string, graphQLClient: any, nodeData: any) {
 //   const query = `
 //     query Query${nodetype}
