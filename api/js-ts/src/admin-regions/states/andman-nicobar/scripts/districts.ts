@@ -422,7 +422,7 @@ async function fetchDistrictSOIGeoFeatures(stateName: string, iteration: Progres
 function transformDistrictsWikipediaData(
   districtsWikiDetails: WikiDistrictResult[],
   stateDistricts: StateDistricts
-): DistrictsTransformationWikidata[] {
+): { transformedDistricts: DistrictsTransformationWikidata[]; status: "SUCCESS" | "FAILURE" | "PARTIAL" } {
   const keyedDistricts: Record<string, District> = keyBy(stateDistricts.districts, "wikipedia_page");
   const transformedDistricts: DistrictsTransformationWikidata[] = [];
   const missingUrls: string[] = [];
@@ -448,13 +448,13 @@ function transformDistrictsWikipediaData(
     status = "PARTIAL";
   }
 
-  return transformedDistricts;
+  return { transformedDistricts, status };
 }
 
 function transformDistrictsWithOSM(
   districtsOSMDetails: any[],
   districtsWithWikidata: DistrictsTransformationWikidata[]
-): DistrictsTransformationOSM[] {
+): { transformedDistricts: DistrictsTransformationOSM[]; status: "SUCCESS" | "FAILURE" | "PARTIAL" } {
   const transformedDistricts: DistrictsTransformationOSM[] = [];
   const unmatchedDistricts: DistrictsTransformationWikidata[] = [];
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
@@ -483,14 +483,14 @@ function transformDistrictsWithOSM(
     }
   });
 
-  return transformedDistricts;
+  return { transformedDistricts, status };
 }
 
 function transformDistrictsWithSOIGeo(
   districtsGeoSOI: GeoJSONFeature[],
   districtsWithOSM: DistrictsTransformationOSM[],
   stateName: string
-): DistrictsTransformationSOIGeo[] {
+): { transformedDistricts: DistrictsTransformationSOIGeo[]; status: "SUCCESS" | "FAILURE" | "PARTIAL" } {
   const transformedDistricts: DistrictsTransformationSOIGeo[] = [];
   const unmatchedDistricts: DistrictsTransformationOSM[] = [];
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
@@ -516,7 +516,7 @@ function transformDistrictsWithSOIGeo(
     }
   });
 
-  return transformedDistricts;
+  return { transformedDistricts, status };
 }
 
 async function orchestrationFunction(steps: Step[], iteration: ProgressIteration): Promise<void> {
@@ -543,7 +543,7 @@ async function orchestrationFunction(steps: Step[], iteration: ProgressIteration
         "SUCCESS",
         iteration
       );
-    } catch (error) {
+    } catch (error: any) {
       step.status = "FAILURE";
       logProgress(
         {
