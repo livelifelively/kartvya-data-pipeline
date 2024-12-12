@@ -104,16 +104,31 @@ interface DistrictsTransformationSOIGeo extends DistrictsTransformationOSM {
   geo_soi: any;
 }
 
-// interface ExtractDistrictStep1 {
-//   name_id: string;
-//   names: string[];
-//   states_union_territories: string[];
-//   wikipedia_page: string;
-//   // osm_id: string;
-//   // established_on?: string;
-//   // disestablished_on?: string;
-//   // node_created_on: string;
-// }
+interface Step {
+  name: string;
+  function: (input: any) => Promise<any>;
+  input: any;
+  output?: any;
+  status: "PENDING" | "SUCCESS" | "FAILURE" | "PARTIAL";
+}
+
+interface ProgressData {
+  message: string;
+  data: any;
+  key: string;
+}
+
+interface ProgressStep {
+  step: number;
+  logFile: string;
+  status: "SUCCESS" | "FAILURE" | "PARTIAL";
+}
+
+interface ProgressIteration {
+  iteration: number;
+  timeStamp: Date;
+  steps: ProgressStep[];
+}
 
 const districtsProgressDir = path.join(__dirname, "district-pipeline-logs");
 const progressStatusFile = path.join(districtsProgressDir, "progressStatus.json");
@@ -406,8 +421,7 @@ async function fetchDistrictSOIGeoFeatures(stateName: string, iteration: Progres
 
 function transformDistrictsWikipediaData(
   districtsWikiDetails: WikiDistrictResult[],
-  stateDistricts: StateDistricts,
-  iteration: ProgressIteration
+  stateDistricts: StateDistricts
 ): DistrictsTransformationWikidata[] {
   const keyedDistricts: Record<string, District> = keyBy(stateDistricts.districts, "wikipedia_page");
   const transformedDistricts: DistrictsTransformationWikidata[] = [];
@@ -434,23 +448,12 @@ function transformDistrictsWikipediaData(
     status = "PARTIAL";
   }
 
-  logProgress(
-    {
-      message: `Districts matched and transformed with ${status}`,
-      data: { keyedDistricts, missingUrls, transformedDistricts },
-      key: `WIKIPEDIA_MATCH_STEP_${status}`,
-    },
-    status,
-    iteration
-  );
-
   return transformedDistricts;
 }
 
 function transformDistrictsWithOSM(
   districtsOSMDetails: any[],
-  districtsWithWikidata: DistrictsTransformationWikidata[],
-  iteration: ProgressIteration
+  districtsWithWikidata: DistrictsTransformationWikidata[]
 ): DistrictsTransformationOSM[] {
   const transformedDistricts: DistrictsTransformationOSM[] = [];
   const unmatchedDistricts: DistrictsTransformationWikidata[] = [];
@@ -472,6 +475,7 @@ function transformDistrictsWithOSM(
         ...district,
         osm_id: matchedOSMDetail.osm_id.toString(),
         match_quality: matchQuality,
+        geo_osm: matchedOSMDetail,
       });
     } else {
       unmatchedDistricts.push(district);
@@ -479,24 +483,13 @@ function transformDistrictsWithOSM(
     }
   });
 
-  logProgress(
-    {
-      message: `Districts transformed with OSM data with ${status}`,
-      data: { unmatchedDistricts, transformedDistricts },
-      key: `OSM_TRANSFORMATION_STEP_${status}`,
-    },
-    status,
-    iteration
-  );
-
   return transformedDistricts;
 }
 
 function transformDistrictsWithSOIGeo(
   districtsGeoSOI: GeoJSONFeature[],
   districtsWithOSM: DistrictsTransformationOSM[],
-  stateName: string,
-  iteration: ProgressIteration
+  stateName: string
 ): DistrictsTransformationSOIGeo[] {
   const transformedDistricts: DistrictsTransformationSOIGeo[] = [];
   const unmatchedDistricts: DistrictsTransformationOSM[] = [];
@@ -523,17 +516,65 @@ function transformDistrictsWithSOIGeo(
     }
   });
 
-  logProgress(
-    {
-      message: `Districts transformed with Geo data with ${status}`,
-      data: { unmatchedDistricts, transformedDistricts },
-      key: `GEO_TRANSFORMATION_STEP_${status}`,
-    },
-    status,
-    iteration
-  );
-
   return transformedDistricts;
+}
+
+async function orchestrationFunction(steps: Step[], iteration: ProgressIteration): Promise<void> {
+  for (let i = 0; i < steps.length; i++) {
+    const step = steps[i];
+
+    // Check if the step has already been completed successfully
+    const progressStep = iteration.steps.find((s) => s.step === i);
+    if (progressStep && progressStep.status === "SUCCESS") {
+      console.log(`Step ${i} (${step.name}) already completed successfully.`);
+      continue;
+    }
+
+    try {
+      console.log(`Executing step ${i} (${step.name})...`);
+      step.output = await step.function(step.input);
+      step.status = "SUCCESS";
+      logProgress(
+        {
+          message: `Step ${i} (${step.name}) completed successfully.`,
+          data: step.output,
+          key: `STEP_${i}_${step.name}_SUCCESS`,
+        },
+        "SUCCESS",
+        iteration
+      );
+    } catch (error) {
+      step.status = "FAILURE";
+      logProgress(
+        {
+          message: `Step ${i} (${step.name}) failed.`,
+          data: { error: error.message },
+          key: `STEP_${i}_${step.name}_FAILURE`,
+        },
+        "FAILURE",
+        iteration
+      );
+      console.error(`Step ${i} (${step.name}) failed. Manual intervention required.`);
+      throw new Error(`Step ${i} (${step.name}) failed. Manual intervention required.`);
+    }
+
+    // Update the progress iteration with the current step status
+    iteration.steps.push({
+      step: i,
+      logFile: `step_${i}_${step.name}.log.json`,
+      status: step.status,
+    });
+
+    // Save the updated iteration status to the progress status file
+    const progressStatus: ProgressIteration[] = JSON.parse(fs.readFileSync(progressStatusFile, "utf8"));
+    const existingIterationIndex = progressStatus.findIndex((iter) => iter.iteration === iteration.iteration);
+    if (existingIterationIndex !== -1) {
+      progressStatus[existingIterationIndex] = iteration;
+    } else {
+      progressStatus.push(iteration);
+    }
+    fs.writeFileSync(progressStatusFile, JSON.stringify(progressStatus, null, 2));
+  }
 }
 
 (async () => {
@@ -543,26 +584,65 @@ function transformDistrictsWithSOIGeo(
 
   const iteration = getCurrentIteration();
 
+  const steps: Step[] = [
+    {
+      name: "Fetch State Districts",
+      function: fetchStateDistricts,
+      input: stateName,
+      status: "PENDING",
+    },
+    {
+      name: "Fetch State OSM Data",
+      function: fetchStateOSMData,
+      input: null, // Will be set after the first step
+      status: "PENDING",
+    },
+    {
+      name: "Fetch Districts OSM Relation IDs",
+      function: fetchDistrictsOSMRelationIds,
+      input: null, // Will be set after the second step
+      status: "PENDING",
+    },
+    {
+      name: "Fetch Districts OSM Details",
+      function: fetchDistrictsOSMDetails,
+      input: null, // Will be set after the third step
+      status: "PENDING",
+    },
+    {
+      name: "Fetch Districts Wiki Details",
+      function: fetchDistrictsWikiDetails,
+      input: null, // Will be set after the first step
+      status: "PENDING",
+    },
+    {
+      name: "Fetch District SOI Geo Features",
+      function: fetchDistrictSOIGeoFeatures,
+      input: stateName,
+      status: "PENDING",
+    },
+    {
+      name: "Append Wikipedia Data",
+      function: transformDistrictsWikipediaData,
+      input: null, // Will be set after the fifth step
+      status: "PENDING",
+    },
+    {
+      name: "Transform Districts with OSM",
+      function: transformDistrictsWithOSM,
+      input: null, // Will be set after the fourth and seventh steps
+      status: "PENDING",
+    },
+    {
+      name: "Transform Districts with SOI Geo",
+      function: transformDistrictsWithSOIGeo,
+      input: null, // Will be set after the sixth and seventh steps
+      status: "PENDING",
+    },
+  ];
+
   try {
-    const stateDistricts = await fetchStateDistricts(stateName, iteration);
-
-    const stateOSMData = await fetchStateOSMData(stateDistricts, iteration);
-    const districtsOSMList = await fetchDistrictsOSMRelationIds(stateOSMData, iteration);
-
-    const districtsWikiDetails = await fetchDistrictsWikiDetails(stateDistricts, iteration);
-    const districtsWithWikidata = transformDistrictsWikipediaData(districtsWikiDetails, stateDistricts, iteration);
-
-    const districtsOSMDetails = await fetchDistrictsOSMDetails(districtsOSMList, iteration);
-    const districtsWithOSM = transformDistrictsWithOSM(districtsOSMDetails, districtsWithWikidata, iteration);
-
-    const districtsWithGeo = transformDistrictsWithSOIGeo(
-      districtsGeoSOI.features,
-      districtsWithOSM,
-      stateName,
-      iteration
-    );
-
-    console.log(JSON.stringify(districtsWithGeo));
+    await orchestrationFunction(steps, iteration);
   } catch (error) {
     console.error("Error in processing: ", error);
   }
