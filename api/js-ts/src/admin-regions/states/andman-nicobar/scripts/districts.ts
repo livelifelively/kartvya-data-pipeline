@@ -114,6 +114,7 @@ interface Step {
   input: any;
   output?: any;
   status?: "SUCCESS" | "FAILURE" | "PARTIAL";
+  key: string;
 }
 
 interface ProgressData {
@@ -203,7 +204,11 @@ function logProgress(
   );
 }
 
-async function fetchStateDistricts(stateName: string, iteration: ProgressIteration): Promise<StateDistricts> {
+async function fetchStateDistricts(
+  outputs: Record<string, any>
+): Promise<{ stateDistricts: StateDistricts; status: "SUCCESS" | "FAILURE" | "PARTIAL" }> {
+  const { stateName } = outputs;
+
   try {
     const stateDistricts = districts.find((val: any) => val.state === stateName) as any;
     stateDistricts.districts = stateDistricts?.districts.map((val: any) => ({
@@ -212,32 +217,16 @@ async function fetchStateDistricts(stateName: string, iteration: ProgressIterati
       states_union_territories: stateDistricts.name_id,
     }));
 
-    logProgress(
-      {
-        message: "DISTRICTS: names, wikipedia_page, states_union_territories",
-        data: stateDistricts,
-        key: "STATE_DISTRICTS_LIST",
-      },
-      "SUCCESS",
-      iteration
-    );
-    return stateDistricts;
+    return { stateDistricts, status: "SUCCESS" };
   } catch (e) {
-    logProgress(
-      {
-        message: "DISTRICTS: names, wikipedia_page, states_union_territories",
-        data: {},
-        key: "STATE_DISTRICTS_LIST",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
 
-async function fetchStateOSMData(stateDistricts: StateDistricts, iteration: ProgressIteration): Promise<StateOSMData> {
+async function fetchStateOSMData(outputs: Record<string, any>): Promise<any> {
+  const { stateDistricts } = outputs;
   const graphQLClient = await createGraphQLClient();
+
   try {
     const stateDetails = await queryNodeType("_Indian_State_Union_Territory_", graphQLClient, stateDistricts.name_id, [
       "osm_id",
@@ -247,36 +236,20 @@ async function fetchStateOSMData(stateDistricts: StateDistricts, iteration: Prog
     const stateOSMData: any = JSON.parse(stateDetails[0].regions[0].geo_boundary[0].source_data);
 
     const relevantData = {
-      osm_id: stateDetails[0].osm_id,
-      id: stateDetails[0].id,
+      state_union_territory_id: stateDetails[0].id,
+      state_union_territory_osm_id: stateDetails[0].osm_id,
       state_osm_data: { localname: stateOSMData.localname, admin_level: stateOSMData.admin_level },
     };
 
-    logProgress(
-      {
-        message: "FETCHED STATE OSM DATA",
-        data: relevantData,
-        key: "STATE_OSM_DATA",
-      },
-      "SUCCESS",
-      iteration
-    );
-    return relevantData;
+    return { relevantData, status: "SUCCESS" };
   } catch (e) {
-    logProgress(
-      {
-        message: "FETCHED STATE OSM DATA",
-        data: {},
-        key: "STATE_OSM_DATA",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
 
-async function fetchDistrictsOSMRelationIds(stateOSMData: StateOSMData, iteration: ProgressIteration): Promise<any> {
+async function fetchDistrictsOSMRelationIds(outputs: Record<string, any>): Promise<any> {
+  const { stateOSMData } = outputs;
+
   try {
     const districtsOSMList = await fetchDistrictsForState(
       stateOSMData.state_osm_data.localname,
@@ -284,40 +257,22 @@ async function fetchDistrictsOSMRelationIds(stateOSMData: StateOSMData, iteratio
       5
     );
 
-    logProgress(
-      {
-        message: "FETCHED DISTRICTS RELATION IDS",
-        data: {
-          districtsRelationIds: districtsOSMList.elements,
-        },
-        key: "STATE_DISTRICTS_OSM_RELATION_IDS",
-      },
-      "SUCCESS",
-      iteration
-    );
     return {
       districtsRelationIds: districtsOSMList.elements,
+      status: "SUCCESS",
     };
   } catch (e) {
-    logProgress(
-      {
-        message: "FETCHED DISTRICTS RELATION IDS",
-        data: {},
-        key: "STATE_DISTRICTS_OSM_RELATION_IDS",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
 
-async function fetchDistrictsOSMDetails(districtsOSMList: any, iteration: ProgressIteration): Promise<any[]> {
+async function fetchDistrictsOSMDetails(outputs: Record<string, any>): Promise<any> {
+  const { districtsRelationIds } = outputs;
   let districtsOSMDetails: any[] = [];
   let districtsOSMDetailsStepSuccessStatus: "SUCCESS" | "PARTIAL" | "FAILURE" = "SUCCESS";
 
   try {
-    for (let osmd of districtsOSMList.districtsRelationIds) {
+    for (let osmd of districtsRelationIds) {
       try {
         let osmDistrict = await fetchByRelationId(osmd.id);
         districtsOSMDetails.push(osmDistrict);
@@ -330,95 +285,38 @@ async function fetchDistrictsOSMDetails(districtsOSMList: any, iteration: Progre
       }
     }
 
-    logProgress(
-      {
-        message: "FETCHED DISTRICT OSM DETAILS",
-        data: {
-          districtsOSMDetails,
-        },
-        key: "STATE_DISTRICTS_OSM_DATA",
-      },
-      districtsOSMDetailsStepSuccessStatus,
-      iteration
-    );
-    return districtsOSMDetails;
+    return { districtsOSMDetails, status: districtsOSMDetailsStepSuccessStatus };
   } catch (e) {
-    logProgress(
-      {
-        message: "FETCHED DISTRICT OSM DETAILS",
-        data: {
-          districtsOSMDetails,
-          error: e,
-        },
-        key: "STATE_DISTRICTS_OSM_DATA",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
 
-async function fetchDistrictsWikiDetails(stateDistricts: StateDistricts, iteration: ProgressIteration): Promise<any[]> {
+async function fetchDistrictsWikiDetails(outputs: Record<string, any>): Promise<any> {
+  const { stateDistricts } = outputs;
+
   try {
     const urls = map(stateDistricts.districts, (val) => val.wikipedia_page);
-    const results = await processListOfWikipediaPages(urls);
+    const districtsWikiDetails = await processListOfWikipediaPages(urls);
 
-    logProgress(
-      {
-        message: "FETCHED DISTRICT WIKI DETAILS",
-        data: {
-          districtsWikiDetails: results,
-        },
-        key: "STATE_DISTRICTS_WIKI_DATA",
-      },
-      "SUCCESS",
-      iteration
-    );
-    return results;
+    return { districtsWikiDetails, status: "SUCCESS" };
   } catch (e) {
-    logProgress(
-      {
-        message: "FETCHED DISTRICT WIKI DETAILS",
-        data: {},
-        key: "STATE_DISTRICTS_WIKI_DATA",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
+async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>): Promise<any> {
+  const { stateName } = outputs;
 
-async function fetchDistrictSOIGeoFeatures(stateName: string, iteration: ProgressIteration): Promise<GeoJSONFeature[]> {
   try {
     const districtFeaturesSOI = (districtsGeoSOI as GeoJSON)?.features?.filter(
-      (dist) => dist.properties.stname.toLowerCase() === stateName
+      (dist) => dist.properties.stname.toLowerCase() === stateName.toLowerCase()
     );
+
     if (districtFeaturesSOI.length) {
-      logProgress(
-        {
-          message: "FETCHED DISTRICT SOI GEO FEATURES",
-          data: districtFeaturesSOI,
-          key: "STATE_DISTRICTS_SOI_GEO_DATA",
-        },
-        "SUCCESS",
-        iteration
-      );
-      return districtFeaturesSOI;
+      return { districtFeaturesSOI, status: "SUCCESS" };
     } else {
       throw new Error("No SOI geo features found");
     }
   } catch (e) {
-    logProgress(
-      {
-        message: "FETCHED DISTRICT SOI GEO FEATURES",
-        data: {},
-        key: "STATE_DISTRICTS_SOI_GEO_DATA",
-      },
-      "FAILURE",
-      iteration
-    );
     throw e;
   }
 }
@@ -607,47 +505,57 @@ async function orchestrationFunction(steps: Step[], iteration: ProgressIteration
     {
       name: "Fetch State Districts",
       function: fetchStateDistricts,
+      key: "STATE_DISTRICTS_LIST",
       input: stateName,
     },
     {
       name: "Fetch State OSM Data",
       function: fetchStateOSMData,
+      key: "STATE_OSM_DATA",
       input: null,
     },
     {
       name: "Fetch Districts OSM Relation IDs",
       function: fetchDistrictsOSMRelationIds,
+      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
       input: null, // Will be set after the second step
     },
     {
       name: "Fetch Districts OSM Details",
       function: fetchDistrictsOSMDetails,
+      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
+
       input: null, // Will be set after the third step
     },
     {
       name: "Fetch Districts Wiki Details",
       function: fetchDistrictsWikiDetails,
+      key: "STATE_DISTRICTS_WIKI_DATA",
       input: null, // Will be set after the first step
     },
     {
       name: "Fetch District SOI Geo Features",
       function: fetchDistrictSOIGeoFeatures,
+      key: "STATE_DISTRICTS_SOI_GEO_DATA",
       input: stateName,
     },
     {
       name: "Append Wikipedia Data",
       function: transformDistrictsWikipediaData,
       input: null, // Will be set after the fifth step
+      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
     {
       name: "Transform Districts with OSM",
       function: transformDistrictsWithOSM,
       input: null, // Will be set after the fourth and seventh steps
+      key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
     {
       name: "Transform Districts with SOI Geo",
       function: transformDistrictsWithSOIGeo,
       input: null, // Will be set after the sixth and seventh steps
+      key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
   ];
 
