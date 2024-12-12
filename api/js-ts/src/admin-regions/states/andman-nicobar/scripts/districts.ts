@@ -106,7 +106,7 @@ interface DistrictsTransformationSOIGeo extends DistrictsTransformationOSM {
 
 interface Step {
   name: string;
-  function: (input: any) => Promise<any>;
+  function: any;
   input: any;
   output?: any;
   status: "PENDING" | "SUCCESS" | "FAILURE" | "PARTIAL";
