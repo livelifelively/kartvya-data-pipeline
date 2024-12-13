@@ -21,12 +21,15 @@ async function openPage(context, url) {
 }
 
 async function extractDataFromWikipediaPage(context, url, state) {
+  let toReturn = { data: {}, error: {}, success: false };
   try {
     const page = await openPage(context, url);
     const list = await processDistrictPage(page);
 
     await page.close();
-    return list;
+
+    toReturn.data = list;
+    toReturn.success = true;
   } catch (error) {
     const errorData = {
       district: url,
@@ -34,8 +37,12 @@ async function extractDataFromWikipediaPage(context, url, state) {
       message: error.toString(),
       timestamp: new Date().toISOString(),
     };
-    logError(errorData);
+
+    toReturn.error = errorData;
+    toReturn.success = false;
   }
+
+  return toReturn;
 }
 
 function logError(errorData) {
@@ -466,16 +473,22 @@ export async function processListOfWikipediaPages(pageUrls) {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
-  const allPagesResults = [];
+  const allPagesResults = { success: [], failure: [] };
 
   try {
     for (const url of pageUrls) {
       const result = await extractDataFromWikipediaPage(context, url);
       console.log("finished processing url: ", url);
-      if (result) {
-        allPagesResults.push({
+
+      if (result.success) {
+        allPagesResults.success.push({
           url,
-          result,
+          ...result.data,
+        });
+      } else {
+        allPagesResults.failure.push({
+          url,
+          ...result.error,
         });
       }
     }
