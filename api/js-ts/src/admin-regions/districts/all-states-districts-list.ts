@@ -1,4 +1,4 @@
-export const districts = [
+export const districtsList = [
   {
     state: "andhra pradesh",
     name_id: "in-sut-andhra-pradesh",
