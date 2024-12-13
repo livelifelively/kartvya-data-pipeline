@@ -1,34 +1,34 @@
-const { chromium } = require('playwright');
-const { concat, snakeCase, lowerCase, camelCase } = require('lodash');
+const { chromium } = require("playwright");
+const { concat, snakeCase, lowerCase, camelCase } = require("lodash");
 
-const { categoriesDataForVidhansabhaConstituencies } = require('./categories');
-const fs = require('fs');
-const path = require('path');
+// const { categoriesDataForVidhansabhaConstituencies } = require("./categories");
+const fs = require("fs");
+const path = require("path");
 
 async function processPageTitleToTitleTillEnd(page) {
   return await page.evaluate(() => {
     function getHeadingType(heading) {
-      if (heading.classList.contains('mw-heading2')) return 'H2';
-      if (heading.classList.contains('mw-heading3')) return 'H3';
+      if (heading.classList.contains("mw-heading2")) return "H2";
+      if (heading.classList.contains("mw-heading3")) return "H3";
     }
 
     function fetchTableFromWikipediaPage(tableElement) {
       let titles = [];
-      tableElement.querySelectorAll('thead th').forEach((val) => {
+      tableElement.querySelectorAll("thead th").forEach((val) => {
         for (let i = 0; i < val.colSpan; i++) {
           titles.push(val.innerText);
         }
       });
 
       let tableContent = [];
-      tableElement.querySelectorAll('tbody tr').forEach((tr, trIndex) => {
-        let tds = tr.querySelectorAll('td, th');
+      tableElement.querySelectorAll("tbody tr").forEach((tr, trIndex) => {
+        let tds = tr.querySelectorAll("td, th");
         let rowContent = [];
 
         tds.forEach((cell, cellIndex) => {
           rowContent.push({
             text: cell.innerText,
-            href: cell.querySelector('a')?.href,
+            href: cell.querySelector("a")?.href,
             rowSpan: cell.rowSpan,
             colSpan: cell.colSpan,
             index: cellIndex,
@@ -39,8 +39,8 @@ async function processPageTitleToTitleTillEnd(page) {
 
       let newTableContent = tableContent.reduce(
         (agg, val, idx) => {
-          if (idx === 0) agg['maxLength'] = val.length;
-          let newVal = new Array(agg['maxLength']);
+          if (idx === 0) agg["maxLength"] = val.length;
+          let newVal = new Array(agg["maxLength"]);
 
           // i is pointer to values in the array with overall length smaller than number of titles
           // because it has values being filled from previous rows with larger rowspans
@@ -77,9 +77,9 @@ async function processPageTitleToTitleTillEnd(page) {
       const toSave = newTableContent.tableContent.map((val) => {
         let toReturn = {};
         for (let i = 0; i < titles.length; i++) {
-          if (val[i].text) {
+          if (val[i]?.text) {
             toReturn[titles[i]] = {};
-            (toReturn[titles[i]].text = val[i].text), (toReturn[titles[i]].href = val[i].href);
+            (toReturn[titles[i]].text = val[i]?.text), (toReturn[titles[i]].href = val[i].href);
           }
         }
 
@@ -91,7 +91,7 @@ async function processPageTitleToTitleTillEnd(page) {
 
     function fetchDataFromElement(element, pointedToElement) {
       switch (element.nodeName) {
-        case 'TABLE':
+        case "TABLE":
           element.data = fetchTableFromWikipediaPage(pointedToElement);
           break;
 
@@ -154,19 +154,19 @@ async function processPageTitleToTitleTillEnd(page) {
       sectionOrSubsection.elements = traverseClassifyAndProcessElementsTillNext(current.nextElementSibling, next);
 
       switch (getHeadingType(current)) {
-        case 'H2':
-          sectionOrSubsection.title = current.querySelector('h2')?.innerText;
+        case "H2":
+          sectionOrSubsection.title = current.querySelector("h2")?.innerText;
           sectionOrSubsection.subSections = [];
 
-          console.log('finished processing H2 ', sectionOrSubsection.title);
+          console.log("finished processing H2 ", sectionOrSubsection.title);
 
           sections.push(sectionOrSubsection);
           break;
 
-        case 'H3':
-          sectionOrSubsection.title = current.querySelector('h3')?.innerText;
+        case "H3":
+          sectionOrSubsection.title = current.querySelector("h3")?.innerText;
 
-          console.log('finished processing H3 ', sectionOrSubsection.title);
+          console.log("finished processing H3 ", sectionOrSubsection.title);
 
           sections[sections.length - 1].subSections.push(sectionOrSubsection);
           break;
@@ -178,13 +178,13 @@ async function processPageTitleToTitleTillEnd(page) {
     }
 
     function extractDataFromWikipediaMainContent() {
-      let allHeadings = document.querySelectorAll('.mw-heading');
+      let allHeadings = document.querySelectorAll(".mw-heading");
       let sections = [];
       allHeadings.forEach((val, idx) => {
         // get child elements till either the next heading element or the end of document element '.navbox-styles'
         let next = allHeadings[idx + 1];
         if (allHeadings.length - 1 === idx) {
-          next = document.querySelector('.navbox-styles');
+          next = document.querySelector(".navbox-styles");
         }
         getHeadingChildElementsAndAddToSections(val, next, sections);
       });
@@ -195,6 +195,7 @@ async function processPageTitleToTitleTillEnd(page) {
     try {
       return extractDataFromWikipediaMainContent();
     } catch (e) {
+      // console.error(e);
       return { error: e, url: location.href };
     }
   });
@@ -204,7 +205,7 @@ async function openPage(context, url) {
   try {
     const page = await context.newPage();
     await page.goto(url);
-    await page.waitForEvent('requestfinished');
+    await page.waitForEvent("requestfinished");
 
     return page;
   } catch (error) {
@@ -216,7 +217,7 @@ async function extractDataFromWikipediaMainContent(context, url) {
   const page = await openPage(context, url);
   const list = await processPageTitleToTitleTillEnd(page);
 
-  await page.close();
+  // await page.close();
   return list;
 }
 
@@ -228,13 +229,13 @@ async function processListOfWikipediaPages(pageUrls) {
 
   for (const url of pageUrls) {
     const result = await extractDataFromWikipediaMainContent(context, url);
-    console.log('finished processing url: ', url);
+    console.log("finished processing url: ", url);
     results.push({
       url,
       result,
     });
   }
-  console.log('DONE!!!');
+  console.log("DONE!!!");
 
   return results;
 }
@@ -242,17 +243,17 @@ async function processListOfWikipediaPages(pageUrls) {
 (async () => {
   // const urls = categoriesDataForVidhansabhaConstituencies.data.active;
   const urls = [
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Bihar_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Madhya_Pradesh_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Mizoram_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Sikkim_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Tripura_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Nagaland_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Telangana_Legislative_Assembly',
-    'https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Andhra_Pradesh_Legislative_Assembly',
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Bihar_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Madhya_Pradesh_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Mizoram_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Sikkim_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Tripura_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Nagaland_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Telangana_Legislative_Assembly",
+    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Andhra_Pradesh_Legislative_Assembly",
   ];
 
-  const outputFilePath = path.join(__dirname, 'd-vc-lc_1.json');
+  const outputFilePath = path.join(__dirname, "d-vc-lc_1.json");
 
   const results = await processListOfWikipediaPages(urls);
 
