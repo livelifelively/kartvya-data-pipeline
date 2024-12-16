@@ -1,0 +1,9 @@
+# Path to your GraphQL schema file
+schema: "./src/0.dgraph-db/deployed-schema/deployed-dgraph-schema.graphql"
+
+# Output file for TypeScript types
+generates:
+  src/generated/graphql.ts:
+    plugins:
+      - "typescript"
+      - "typescript-resolvers"

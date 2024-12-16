@@ -1,4 +1,4 @@
-import { createGraphQLClient, EntityDataType, evaluateVariablesForRegionType } from './generic.utils';
+import { createGraphQLClient, EntityDataType, evaluateVariablesForRegionType } from "./generic.utils";
 
 export const getAdministrativeEntityRegionTypeUniqueOrIdFieldsByRegionId = async (
   regionType: string,
@@ -7,9 +7,9 @@ export const getAdministrativeEntityRegionTypeUniqueOrIdFieldsByRegionId = async
   const graphQLClient = await createGraphQLClient();
 
   function joinAllFields(entityCategory: any) {
-    return `${entityCategory.id.join(' ')}
-    ${entityCategory.otherIdentifiers.join(' ')}
-    ${entityCategory.sourceDataIds.join(' ')}`;
+    return `${entityCategory.id.join(" ")}
+    ${entityCategory.otherIdentifiers.join(" ")}
+    ${entityCategory.sourceDataIds.join(" ")}`;
   }
 
   const { nodeType, regionNamePrefix, toFetch } = evaluateVariablesForRegionType(regionType);
