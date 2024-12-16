@@ -241,7 +241,7 @@ import {
         "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/maps/india-osm/states-uts/Tripura/sut.json",
     },
     {
-      name_id: "in-sut-andaman-and-nicobar-islands",
+      name_id: "in-sut-andaman-nicobar-islands",
       wikipedia_page: "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands",
       wikidata_qid: "Q40888",
       osm_id: 2025855,
@@ -257,7 +257,7 @@ import {
         "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/maps/india-osm/states-uts/Chandigarh/sut.json",
     },
     {
-      name_id: "in-sut-dadra-and-nagar-haveli-and-daman-and-diu",
+      name_id: "in-sut-dadra-nagar-haveli-daman-diu",
       wikipedia_page: "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_and_Daman_and_Diu",
       wikidata_qid: "Q77997266",
       osm_id: 1952530,
@@ -273,7 +273,7 @@ import {
         "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/maps/india-osm/states-uts/Delhi/sut.json",
     },
     {
-      name_id: "in-sut-jammu-and-kashmir",
+      name_id: "in-sut-jammu-kashmir",
       wikipedia_page: "https://en.wikipedia.org/wiki/Jammu_and_Kashmir_(union_territory)",
       wikidata_qid: "Q66278313",
       osm_id: 1943188,
