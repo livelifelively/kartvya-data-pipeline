@@ -1,6 +1,10 @@
 import axios from "axios";
 
-export async function fetchDistrictsForState(parentName: string, parentAdminLevel: string, childrenAdminLevel: number) {
+export async function fetchDistrictsOSMRelationIdsForState(
+  parentName: string,
+  parentAdminLevel: string,
+  childrenAdminLevel: number
+) {
   const query = `
        [out:json];
        area[name="${parentName}"]["admin_level"="${parentAdminLevel}"]->.searchArea;
