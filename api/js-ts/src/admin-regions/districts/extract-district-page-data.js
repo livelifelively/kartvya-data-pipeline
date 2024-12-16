@@ -483,12 +483,12 @@ export async function processListOfWikipediaPages(pageUrls) {
       if (result.success) {
         allPagesResults.success.push({
           url,
-          ...result.data,
+          results: result.data,
         });
       } else {
         allPagesResults.failure.push({
           url,
-          ...result.error,
+          errors: result.error,
         });
       }
     }
