@@ -1,11 +1,11 @@
 const heads = [
   "State",
-  "ISO",
-  "Vehicle\ncode",
+  "iso_code",
+  "vehicle_code",
   "Zone",
   "Capital",
   "Largest city",
-  "Statehood",
+  "established_on",
   "Population\n(2011)",
   "Area\n(km)",
   "Official\nlanguages",
@@ -23,11 +23,11 @@ const states = [
       ],
       text: "Kerala",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-KL",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "KL",
     },
@@ -58,7 +58,7 @@ const states = [
       ],
       text: "Thiruvananthapuram",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -99,11 +99,11 @@ const states = [
       ],
       text: "Himachal Pradesh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-HP",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "HP",
     },
@@ -138,7 +138,7 @@ const states = [
       ],
       text: "Shimla",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "25 January 1971",
     },
@@ -179,11 +179,11 @@ const states = [
       ],
       text: "Meghalaya",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-ML",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "ML",
     },
@@ -214,7 +214,7 @@ const states = [
       ],
       text: "Shillong",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "21 January 1972",
     },
@@ -250,11 +250,11 @@ const states = [
       ],
       text: "Jharkhand",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-JH",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "JH",
     },
@@ -285,7 +285,7 @@ const states = [
       ],
       text: "Jamshedpur",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "15 November 2000",
     },
@@ -386,11 +386,11 @@ const states = [
       ],
       text: "Chhattisgarh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-CG",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "CG",
     },
@@ -421,7 +421,7 @@ const states = [
       ],
       text: "Raipur",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 2000",
     },
@@ -462,11 +462,11 @@ const states = [
       ],
       text: "Bihar",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-BR",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "BR",
     },
@@ -497,7 +497,7 @@ const states = [
       ],
       text: "Patna",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -538,11 +538,11 @@ const states = [
       ],
       text: "Goa",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-GA",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "GA",
     },
@@ -573,7 +573,7 @@ const states = [
       ],
       text: "Vasco da Gama",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "30 May 1987",
     },
@@ -614,11 +614,11 @@ const states = [
       ],
       text: "Maharashtra",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-MH",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "MH",
     },
@@ -653,7 +653,7 @@ const states = [
       ],
       text: "Mumbai",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 May 1960",
     },
@@ -689,11 +689,11 @@ const states = [
       ],
       text: "Uttar Pradesh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-UP",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "UP",
     },
@@ -724,7 +724,7 @@ const states = [
       ],
       text: "Lucknow",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -765,11 +765,11 @@ const states = [
       ],
       text: "West Bengal",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-WB",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "WB",
     },
@@ -800,7 +800,7 @@ const states = [
       ],
       text: "Kolkata",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -885,11 +885,11 @@ const states = [
       ],
       text: "Nagaland",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-NL",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "NL",
     },
@@ -920,7 +920,7 @@ const states = [
       ],
       text: "Dimapur",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 December 1963",
     },
@@ -956,11 +956,11 @@ const states = [
       ],
       text: "Rajasthan",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-RJ",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "RJ",
     },
@@ -991,7 +991,7 @@ const states = [
       ],
       text: "Jaipur",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -1032,11 +1032,11 @@ const states = [
       ],
       text: "Arunachal Pradesh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-AR",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "AR",
     },
@@ -1067,7 +1067,7 @@ const states = [
       ],
       text: "Itanagar",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "20 February 1987",
     },
@@ -1103,11 +1103,11 @@ const states = [
       ],
       text: "Manipur",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-MN",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "MN",
     },
@@ -1138,7 +1138,7 @@ const states = [
       ],
       text: "Imphal",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "21 January 1972",
     },
@@ -1179,11 +1179,11 @@ const states = [
       ],
       text: "Telangana",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-TS",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "TG",
     },
@@ -1214,7 +1214,7 @@ const states = [
       ],
       text: "Hyderabad",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "2 June 2014",
     },
@@ -1255,11 +1255,11 @@ const states = [
       ],
       text: "Sikkim",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-SK",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "SK",
     },
@@ -1290,7 +1290,7 @@ const states = [
       ],
       text: "Gangtok",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "16 May 1975",
     },
@@ -1371,11 +1371,11 @@ const states = [
       ],
       text: "Gujarat",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-GJ",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "GJ",
     },
@@ -1406,7 +1406,7 @@ const states = [
       ],
       text: "Ahmedabad",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 May 1960",
     },
@@ -1446,11 +1446,11 @@ const states = [
       ],
       text: "Assam",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-AS",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "AS",
     },
@@ -1481,7 +1481,7 @@ const states = [
       ],
       text: "Guwahati",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -1530,11 +1530,11 @@ const states = [
       ],
       text: "Tamil Nadu",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-TN",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "TN",
     },
@@ -1565,7 +1565,7 @@ const states = [
       ],
       text: "Chennai",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -1606,11 +1606,11 @@ const states = [
       ],
       text: "Punjab",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-PB",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "PB",
     },
@@ -1641,7 +1641,7 @@ const states = [
       ],
       text: "Ludhiana",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1966",
     },
@@ -1677,11 +1677,11 @@ const states = [
       ],
       text: "Haryana",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-HR",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "HR",
     },
@@ -1712,7 +1712,7 @@ const states = [
       ],
       text: "Faridabad",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1966",
     },
@@ -1753,11 +1753,11 @@ const states = [
       ],
       text: "Odisha",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-OD",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "OD",
     },
@@ -1788,7 +1788,7 @@ const states = [
       ],
       text: "Bhubaneswar",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "26 January 1950",
     },
@@ -1824,11 +1824,11 @@ const states = [
       ],
       text: "Madhya Pradesh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-MP",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "MP",
     },
@@ -1859,7 +1859,7 @@ const states = [
       ],
       text: "Indore",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -1895,11 +1895,11 @@ const states = [
       ],
       text: "Uttarakhand",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-UK",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "UK",
     },
@@ -1934,7 +1934,7 @@ const states = [
       ],
       text: "Dehradun",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "9 November 2000",
     },
@@ -1975,11 +1975,11 @@ const states = [
       ],
       text: "Karnataka",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-KA",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "KA",
     },
@@ -2010,7 +2010,7 @@ const states = [
       ],
       text: "Bengaluru",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -2046,11 +2046,11 @@ const states = [
       ],
       text: "Andhra Pradesh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-AP",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "AP",
     },
@@ -2081,7 +2081,7 @@ const states = [
       ],
       text: "Visakhapatnam",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -2122,11 +2122,11 @@ const states = [
       ],
       text: "Mizoram",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-MZ",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "MZ",
     },
@@ -2157,7 +2157,7 @@ const states = [
       ],
       text: "Aizawl",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "20 February 1987",
     },
@@ -2197,11 +2197,11 @@ const states = [
       ],
       text: "Tripura",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-TR",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "TR",
     },
@@ -2232,7 +2232,7 @@ const states = [
       ],
       text: "Agartala",
     },
-    Statehood: {
+    established_on: {
       links: [],
       text: "21 January 1972",
     },
@@ -2279,11 +2279,11 @@ const uts = [
       ],
       text: "Andaman and Nicobar Islands",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-AN",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "AN",
     },
@@ -2314,7 +2314,7 @@ const uts = [
       ],
       text: "Sri Vijaya Puram",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -2354,11 +2354,11 @@ const uts = [
       ],
       text: "Chandigarh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-CH",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "CH",
     },
@@ -2389,7 +2389,7 @@ const uts = [
       ],
       text: "Chandigarh",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "1 November 1966",
     },
@@ -2425,11 +2425,11 @@ const uts = [
       ],
       text: "Dadra and Nagar Haveli and Daman and Diu",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-DH",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "DD",
     },
@@ -2460,7 +2460,7 @@ const uts = [
       ],
       text: "Silvassa",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "26 January 2020",
     },
@@ -2496,11 +2496,11 @@ const uts = [
       ],
       text: "Delhi",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-DL",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "DL",
     },
@@ -2531,7 +2531,7 @@ const uts = [
       ],
       text: "Delhi",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -2580,11 +2580,11 @@ const uts = [
       ],
       text: "Jammu and Kashmir",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-JK",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "JK",
     },
@@ -2619,7 +2619,7 @@ const uts = [
       ],
       text: "Srinagar",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "31 October 2019",
     },
@@ -2663,11 +2663,11 @@ const uts = [
       ],
       text: "Ladakh",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-LA",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "LA",
     },
@@ -2702,7 +2702,7 @@ const uts = [
       ],
       text: "Leh",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "31 October 2019",
     },
@@ -2742,11 +2742,11 @@ const uts = [
       ],
       text: "Lakshadweep",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-LD",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "LD",
     },
@@ -2777,7 +2777,7 @@ const uts = [
       ],
       text: "Kavaratti",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "1 November 1956",
     },
@@ -2822,11 +2822,11 @@ const uts = [
       ],
       text: "Puducherry",
     },
-    ISO: {
+    iso_code: {
       links: [],
       text: "IN-PY",
     },
-    "Vehicle\ncode": {
+    vehicle_code: {
       links: [],
       text: "PY",
     },
@@ -2857,7 +2857,7 @@ const uts = [
       ],
       text: "Pondicherry",
     },
-    Established: {
+    established_on: {
       links: [],
       text: "16 August 1962",
     },
