@@ -24,21 +24,28 @@ async function openPage(context, url) {
 }
 
 async function extractDataFromWikipediaPage(context, url, state) {
+  let toReturn = { data: {}, error: {}, success: false };
   try {
     const page = await openPage(context, url);
     const list = await processLoksabhaPage(page);
 
     await page.close();
-    return list;
+
+    toReturn.data = list;
+    toReturn.success = true;
   } catch (error) {
     const errorData = {
-      vidhansabha: url,
+      loksabha: url,
       state,
       message: error.toString(),
       timestamp: new Date().toISOString(),
     };
-    logError(errorData);
+
+    toReturn.error = errorData;
+    toReturn.success = false;
   }
+
+  return toReturn;
 }
 
 function logError(errorData) {
@@ -47,20 +54,26 @@ function logError(errorData) {
   fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
 }
 
-async function processListOfWikipediaPages(pageUrls) {
+export async function processListOfWikipediaPages(pageUrls) {
   const browser = await chromium.launch({ headless: false });
   const context = await browser.newContext();
 
-  const allPagesResults = [];
+  const allPagesResults = { success: [], failure: [] };
 
   try {
     for (const url of pageUrls) {
       const result = await extractDataFromWikipediaPage(context, url);
       console.log("finished processing url: ", url);
-      if (result) {
-        allPagesResults.push({
+
+      if (result.success) {
+        allPagesResults.success.push({
           url,
-          result,
+          results: result.data,
+        });
+      } else {
+        allPagesResults.failure.push({
+          url,
+          errors: result.error,
         });
       }
     }
@@ -492,16 +505,16 @@ async function processLoksabhaPage(page) {
   return result;
 }
 
-(async () => {
-  const urls = map(allLoksabhaSeats, (val) => val.href);
-  // console.log(urls);
-  let results = await processListOfWikipediaPages(urls);
-  // results = { results, state: statesUrls[i].state };
-  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
+// (async () => {
+//   const urls = map(allLoksabhaSeats, (val) => val.href);
+//   // console.log(urls);
+//   let results = await processListOfWikipediaPages(urls);
+//   // results = { results, state: statesUrls[i].state };
+//   fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
 
-  // for (let i = 0; i < statesUrls.length; i++) {
-  //   const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
-  //   existingResults.push(results);
-  //   fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
-  // }
-})();
+//   // for (let i = 0; i < statesUrls.length; i++) {
+//   //   const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
+//   //   existingResults.push(results);
+//   //   fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
+//   // }
+// })();
