@@ -4625,7 +4625,7 @@ export const districtsList = [
   },
   {
     state: "andaman and nicobar islands",
-    name_id: "in-sut-andaman-and-nicobar-islands",
+    name_id: "in-sut-andaman-nicobar-islands",
     districts: [
       {
         name: "Nicobar",
@@ -4661,7 +4661,7 @@ export const districtsList = [
   },
   {
     state: "dadra nagar haveli, daman and diu",
-    name_id: "in-sut-dadra-and-nagar-haveli-and-daman-and-diu",
+    name_id: "in-sut-dadra-nagar-haveli-daman-diu",
     districts: [
       {
         name: "Daman",
@@ -4685,7 +4685,7 @@ export const districtsList = [
   },
   {
     state: "jammu and kashmir",
-    name_id: "in-sut-jammu-and-kashmir",
+    name_id: "in-sut-jammu-kashmir",
     districts: [
       {
         name: "Anantnag",
