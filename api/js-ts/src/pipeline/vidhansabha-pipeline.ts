@@ -16,6 +16,8 @@ import { generateNameId } from "../knowledge-graph/region-names/region-names.uti
 interface VidhansabhaConstituency {
   names: string[];
   wikipedia_page: string;
+  reservation?: "SC" | "ST" | "NONE";
+  constituency_number?: string;
   // states_union_territories: string;
 }
 
@@ -66,6 +68,7 @@ interface VidhansabhaConstituencyTransformationWikidata extends VidhansabhaConst
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
+  // reservation?: string;
 }
 
 interface VidhansabhaConstituencyTransformationECIGeo extends VidhansabhaConstituencyTransformationWikidata {
@@ -173,12 +176,12 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
 
   const transformedVidhansabhaConstituenciesWikipedia: VidhansabhaConstituencyTransformationWikidata[] = [];
   let vidhansabhaConstituenciesNotTransformedWikipedia: any;
-  const missingUrls: string[] = [];
+  const missingUrlsAndIssues: any[] = [];
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
 
   vidhansabhaConstituenciesWikiDetails.forEach((wikiVidhansabhaConstituency: any) => {
     if (!keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url]) {
-      missingUrls.push(wikiVidhansabhaConstituency.url);
+      missingUrlsAndIssues.push(wikiVidhansabhaConstituency.url);
       status = "PARTIAL";
     } else {
       if (wikiVidhansabhaConstituency.results.wikidata_qid) {
@@ -187,7 +190,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           return agg;
         }, []);
 
-        transformedVidhansabhaConstituenciesWikipedia.push({
+        const toPush: VidhansabhaConstituencyTransformationWikidata = {
           wikidata_qid: wikiVidhansabhaConstituency.results.wikidata_qid,
           id_url: wikiVidhansabhaConstituency.urls,
           wikipedia_page: wikiVidhansabhaConstituency.results.wikidata_page,
@@ -197,7 +200,27 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
             `in-lc-${stateUT.vehicle_code.toLowerCase()}-`,
             keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].names[0]
           ),
-        });
+          reservation: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].reservation,
+        };
+
+        transformedVidhansabhaConstituenciesWikipedia.push();
+
+        if (wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.established) {
+          toPush.established_on_string = wikiVidhansabhaConstituency.results.infobox.constituencyDetails.established;
+        }
+
+        if (wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.reservation) {
+          if (
+            toPush.reservation &&
+            toPush.reservation.toLowerCase() !==
+              wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.reservation.toLowerCase()
+          ) {
+            missingUrlsAndIssues.push({ ...toPush, ISSUE: "RESERVATION STATUS NOT CLEAR" });
+          }
+          if (!toPush.reservation)
+            toPush.reservation =
+              wikiVidhansabhaConstituency.results.infobox.constituencyDetails.reservation.toUpperCase();
+        }
 
         delete keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url];
       }
@@ -218,6 +241,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
   return {
     transformedVidhansabhaConstituenciesWikipedia,
     vidhansabhaConstituenciesNotTransformedWikipedia,
+    vidhansabhaConstituenciesMissingUrlsAndIssues: missingUrlsAndIssues,
     status,
   };
 }
@@ -397,6 +421,7 @@ async function sampleFunction(stateUT) {
     vidhansabhaConstituenciesNotTransformedWikipedia: [],
     transformedVidhansabhaConstituenciesECIGeo: [],
     unmatchedVidhansabhaConstituenciesECIGeo: [],
+    vidhansabhaConstituenciesMissingUrlsAndIssues: [],
   };
 
   const vidhansabhaConstituenciesProgressDir = path.join(__dirname, "vidhansabha-constituency-pipeline-logs");
