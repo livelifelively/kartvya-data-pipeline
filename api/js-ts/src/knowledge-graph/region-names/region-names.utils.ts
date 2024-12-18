@@ -1,21 +1,28 @@
-import { createRegionName } from './region-names.create';
-import { getRegionName } from './region-names.read';
+import { createRegionName } from "./region-names.create";
+import { getRegionName } from "./region-names.read";
 
-export async function saveRegionNames(graphQLClient: any, names: any) {
-  const regionNameIds = [];
+export function generateNameId(prefix: string, name: string) {
+  let smallerName = name.split(",").join("").split("and").join("").split("&").join("");
+  let nameIdSuffix = smallerName.split(" ").join("-").toLowerCase();
+
+  return `${prefix}${nameIdSuffix}`;
+}
+
+export async function saveRegionNames(graphQLClient: any, names: { name: string; language: string }[]) {
+  const regionNameIds: any = [];
 
   for (let i = 0; i < names.length; i++) {
-    const name = names[i];
+    const name: any = names[i];
     try {
       const savedName = await getRegionName(graphQLClient, name.name);
 
       if (!savedName) {
         const regionToSave: any = {};
-        if (name.language === 'english') {
-          regionToSave.language_script = { name_en: 'english_latin' };
+        if (name.language === "english") {
+          regionToSave.language_script = { name_en: "english_latin" };
         }
-        if (name.language === 'hindi') {
-          regionToSave.language_script = { name_en: 'hindi_devanagari' };
+        if (name.language === "hindi") {
+          regionToSave.language_script = { name_en: "hindi_devanagari" };
         }
         regionToSave.name = name.name;
 
