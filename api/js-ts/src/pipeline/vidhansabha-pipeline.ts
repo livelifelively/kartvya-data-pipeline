@@ -1,5 +1,6 @@
 import path from "path";
-import { groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
+import fs from "fs";
+import { flatten, groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
 
 import { queryNodeType, createNodeType } from "../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
@@ -20,6 +21,8 @@ interface VidhansabhaConstituency {
   constituency_number?: string;
   // states_union_territories: string;
 }
+
+type StepStatus = "SUCCESS" | "FAILURE" | "PARTIAL";
 
 interface StateVidhansabhaConstituencies {
   state: string;
@@ -58,6 +61,7 @@ interface WikiVidhansabhaConstituencyResult {
     wikipedia_page?: string;
     last_updated_on?: string;
   };
+  errors?: any;
 }
 
 interface VidhansabhaConstituencyTransformationWikidata extends VidhansabhaConstituency {
@@ -68,7 +72,7 @@ interface VidhansabhaConstituencyTransformationWikidata extends VidhansabhaConst
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
-  // reservation?: string;
+  reservation?: "SC" | "ST" | "NONE";
 }
 
 interface VidhansabhaConstituencyTransformationECIGeo extends VidhansabhaConstituencyTransformationWikidata {
@@ -87,7 +91,7 @@ export async function fetchStateVidhansabhaConstituencies(outputs: Record<string
       // vidhansabha_constituency_number: val.vidhansabha_constituency_number,
       names: [val.vidhansabha_constituency_name],
       wikipedia_page: val.vidhansabha_constituency_wikipedia_page,
-      states_union_territories: stateUT.name_id,
+      // states_union_territories: stateUT.name_id,
     }));
 
     return {
@@ -100,17 +104,24 @@ export async function fetchStateVidhansabhaConstituencies(outputs: Record<string
   }
 }
 
-export async function fetchVidhansabhaConstituenciesWikiDetails(outputs: Record<string, any>): Promise<any> {
+export async function fetchVidhansabhaConstituenciesWikiDetails(outputs: Record<string, any>): Promise<{
+  vidhansabhaConstituenciesWikiDetails: WikiVidhansabhaConstituencyResult[];
+  vidhansabhaConstituenciesWikiDetailsFailed: WikiVidhansabhaConstituencyResult[];
+  status: StepStatus;
+}> {
   const { stateVidhansabhaConstituencies } = outputs;
 
-  let status: "SUCCESS" | "PARTIAL" | "FAILURE" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
   try {
     const urls = map(stateVidhansabhaConstituencies, (val) => val.wikipedia_page);
     const { success, failure } = await processListOfWikipediaPages(urls);
 
     if (failure.length) status = "PARTIAL";
 
-    let keyedSuccessfulResults: Record<string, any[]> = groupBy(success, "results.wikipedia_page");
+    let keyedSuccessfulResults: Record<string, WikiVidhansabhaConstituencyResult[]> = groupBy(
+      success,
+      "results.wikipedia_page"
+    );
 
     // merge urls
     keyedSuccessfulResults = reduce(
@@ -133,7 +144,7 @@ export async function fetchVidhansabhaConstituenciesWikiDetails(outputs: Record<
     );
 
     return {
-      vidhansabhaConstituenciesWikiDetails: Object.values(keyedSuccessfulResults),
+      vidhansabhaConstituenciesWikiDetails: flatten(Object.values(keyedSuccessfulResults)),
       vidhansabhaConstituenciesWikiDetailsFailed: failure,
       status,
     };
@@ -142,12 +153,22 @@ export async function fetchVidhansabhaConstituenciesWikiDetails(outputs: Record<
   }
 }
 
-export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record<string, any>): Promise<any> {
-  const { stateUT } = outputs;
-  const vidhansabhaConstituenciesGeoECI = require("../d.geo.json");
+export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record<string, any>): Promise<{
+  vidhansabhaConstituencyFeaturesECI?: GeoJSONFeature[];
+  status: StepStatus;
+}> {
+  const { stateUT, progressDir } = outputs;
+
+  const geojsonFile = path.join(progressDir, "../../d.geo.json");
+  let vidhansabhaConstituenciesGeoECI: any;
+  if (fs.existsSync(geojsonFile)) {
+    vidhansabhaConstituenciesGeoECI = JSON.parse(fs.readFileSync(geojsonFile, "utf8"));
+  } else {
+    throw new Error("Geojson file not found!");
+  }
 
   try {
-    const vidhansabhaConstituencyFeaturesECI = vidhansabhaConstituenciesGeoECI?.filter(
+    const vidhansabhaConstituencyFeaturesECI: GeoJSONFeature[] = vidhansabhaConstituenciesGeoECI?.filter(
       (dist: any) => dist.properties.stname.toLowerCase() === stateUT.state_name.toLowerCase()
     );
 
@@ -161,7 +182,12 @@ export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record
   }
 }
 
-export async function transformVidhansabhaConstituenciesWikipediaData(outputs: Record<string, any>): Promise<any> {
+export async function transformVidhansabhaConstituenciesWikipediaData(outputs: Record<string, any>): Promise<{
+  transformedVidhansabhaConstituenciesWikipedia: VidhansabhaConstituencyTransformationWikidata[];
+  vidhansabhaConstituenciesNotTransformedWikipedia: any;
+  vidhansabhaConstituenciesMissingUrlsAndIssues: any;
+  status: StepStatus;
+}> {
   const {
     vidhansabhaConstituenciesWikiDetails,
     vidhansabhaConstituenciesWikiDetailsFailed,
@@ -177,7 +203,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
   const transformedVidhansabhaConstituenciesWikipedia: VidhansabhaConstituencyTransformationWikidata[] = [];
   let vidhansabhaConstituenciesNotTransformedWikipedia: any;
   const missingUrlsAndIssues: any[] = [];
-  let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
 
   vidhansabhaConstituenciesWikiDetails.forEach((wikiVidhansabhaConstituency: any) => {
     if (!keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url]) {
@@ -246,12 +272,16 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
   };
 }
 
-export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Record<string, any>): Promise<any> {
+export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Record<string, any>): Promise<{
+  transformedVidhansabhaConstituenciesECIGeo: VidhansabhaConstituencyTransformationECIGeo[];
+  unmatchedVidhansabhaConstituenciesECIGeo: VidhansabhaConstituencyTransformationWikidata[];
+  status: StepStatus;
+}> {
   const { vidhansabhaConstituencyFeaturesECI, transformedVidhansabhaConstituenciesWikipedia } = outputs;
 
   const transformedVidhansabhaConstituenciesECIGeo: VidhansabhaConstituencyTransformationECIGeo[] = [];
   const unmatchedVidhansabhaConstituencies: VidhansabhaConstituencyTransformationWikidata[] = [];
-  let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
 
   transformedVidhansabhaConstituenciesWikipedia.forEach(
     (vidhansabhaConstituency: VidhansabhaConstituencyTransformationWikidata) => {
@@ -279,7 +309,10 @@ export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Reco
   };
 }
 
-export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Record<string, any>) {
+export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Record<string, any>): Promise<{
+  savedToKnowledgeGraph: any;
+  status: StepStatus;
+}> {
   const { transformedVidhansabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
