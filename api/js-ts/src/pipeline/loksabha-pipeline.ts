@@ -66,7 +66,7 @@ interface LoksabhaConstituencyTransformationWikidata extends LoksabhaConstituenc
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
-  reservation?: string;
+  reservation?: "SC" | "ST" | "NONE";
 }
 
 interface LoksabhaConstituencyTransformationECIGeo extends LoksabhaConstituencyTransformationWikidata {
@@ -207,7 +207,7 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
         }
 
         if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.reservation) {
-          toPush.reservation = wikiLoksabhaConstituency.results.infobox.constituencyDetails.reservation;
+          toPush.reservation = wikiLoksabhaConstituency.results.infobox.constituencyDetails.reservation.toUpperCase();
         }
 
         delete keyedLoksabhaConstituencies[wikiLoksabhaConstituency.url];
