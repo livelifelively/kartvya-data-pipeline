@@ -66,6 +66,7 @@ interface LoksabhaConstituencyTransformationWikidata extends LoksabhaConstituenc
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
+  reservation?: string;
 }
 
 interface LoksabhaConstituencyTransformationECIGeo extends LoksabhaConstituencyTransformationWikidata {
@@ -187,7 +188,7 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
           return agg;
         }, []);
 
-        transformedLoksabhaConstituenciesWikipedia.push({
+        const toPush: LoksabhaConstituencyTransformationWikidata = {
           wikidata_qid: wikiLoksabhaConstituency.results.wikidata_qid,
           id_url: wikiLoksabhaConstituency.urls,
           wikipedia_page: wikiLoksabhaConstituency.results.wikidata_page,
@@ -197,7 +198,17 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
             `in-lc-${stateUT.vehicle_code.toLowerCase()}-`,
             keyedLoksabhaConstituencies[wikiLoksabhaConstituency.urls[0]].names[0]
           ),
-        });
+        };
+
+        transformedLoksabhaConstituenciesWikipedia.push();
+
+        if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.established) {
+          toPush.established_on_string = wikiLoksabhaConstituency.results.infobox.constituencyDetails.established;
+        }
+
+        if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.reservation) {
+          toPush.reservation = wikiLoksabhaConstituency.results.infobox.constituencyDetails.reservation;
+        }
 
         delete keyedLoksabhaConstituencies[wikiLoksabhaConstituency.url];
       }
