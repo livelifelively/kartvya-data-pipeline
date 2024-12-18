@@ -1,5 +1,6 @@
 import path from "path";
-import { groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
+import fs from "fs";
+import { flatten, groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
 
 import { queryNodeType, createNodeType } from "../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
@@ -18,6 +19,8 @@ interface LoksabhaConstituency {
   wikipedia_page: string;
   // states_union_territories: string;
 }
+
+type StepStatus = "SUCCESS" | "FAILURE" | "PARTIAL";
 
 interface StateLoksabhaConstituencies {
   state: string;
@@ -49,13 +52,14 @@ interface StateLoksabhaConstituencyTransformationWikidata {
 }
 
 interface WikiLoksabhaConstituencyResult {
-  url: string;
-  results: {
+  urls: string[];
+  results?: {
     infobox?: any;
     wikidata_qid?: string;
     wikipedia_page?: string;
     last_updated_on?: string;
   };
+  errors?: any;
 }
 
 interface LoksabhaConstituencyTransformationWikidata extends LoksabhaConstituency {
@@ -76,16 +80,16 @@ interface LoksabhaConstituencyTransformationECIGeo extends LoksabhaConstituencyT
 export async function fetchStateLoksabhaConstituencies(outputs: Record<string, any>): Promise<{
   stateLoksabhaConstituencies: LoksabhaConstituency[];
   loksabhaConstituenciesCount: number;
-  status: "SUCCESS" | "FAILURE" | "PARTIAL";
+  status: StepStatus;
 }> {
-  const { stateUT, vcDLcList } = outputs;
+  const { vcDLcList } = outputs;
 
   try {
     const stateLoksabhaConstituencies: LoksabhaConstituency[] = vcDLcList.map((val: any) => ({
       // loksabha_constituency_number: val.loksabha_constituency_number,
       names: [val.loksabha_constituency_name],
       wikipedia_page: val.loksabha_constituency_wikipedia_page,
-      states_union_territories: stateUT.name_id,
+      // states_union_territories: stateUT.name_id,
     }));
 
     return {
@@ -98,17 +102,24 @@ export async function fetchStateLoksabhaConstituencies(outputs: Record<string, a
   }
 }
 
-export async function fetchLoksabhaConstituenciesWikiDetails(outputs: Record<string, any>): Promise<any> {
+export async function fetchLoksabhaConstituenciesWikiDetails(outputs: Record<string, any>): Promise<{
+  loksabhaConstituenciesWikiDetails: WikiLoksabhaConstituencyResult[];
+  loksabhaConstituenciesWikiDetailsFailed: WikiLoksabhaConstituencyResult[];
+  status: StepStatus;
+}> {
   const { stateLoksabhaConstituencies } = outputs;
 
-  let status: "SUCCESS" | "PARTIAL" | "FAILURE" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
   try {
     const urls = map(stateLoksabhaConstituencies, (val) => val.wikipedia_page);
     const { success, failure } = await processListOfWikipediaPages(urls);
 
     if (failure.length) status = "PARTIAL";
 
-    let keyedSuccessfulResults: Record<string, any[]> = groupBy(success, "results.wikipedia_page");
+    let keyedSuccessfulResults: Record<string, WikiLoksabhaConstituencyResult[]> = groupBy(
+      success,
+      "results.wikipedia_page"
+    );
 
     // merge urls
     keyedSuccessfulResults = reduce(
@@ -131,7 +142,7 @@ export async function fetchLoksabhaConstituenciesWikiDetails(outputs: Record<str
     );
 
     return {
-      loksabhaConstituenciesWikiDetails: Object.values(keyedSuccessfulResults),
+      loksabhaConstituenciesWikiDetails: flatten(Object.values(keyedSuccessfulResults)),
       loksabhaConstituenciesWikiDetailsFailed: failure,
       status,
     };
@@ -140,12 +151,22 @@ export async function fetchLoksabhaConstituenciesWikiDetails(outputs: Record<str
   }
 }
 
-export async function fetchLoksabhaConstituencyECIGeoFeatures(outputs: Record<string, any>): Promise<any> {
-  const { stateUT } = outputs;
-  const loksabhaConstituenciesGeoECI = require("../d.geo.json");
+export async function fetchLoksabhaConstituencyECIGeoFeatures(outputs: Record<string, any>): Promise<{
+  loksabhaConstituencyFeaturesECI?: GeoJSONFeature[];
+  status: StepStatus;
+}> {
+  const { stateUT, progressDir } = outputs;
+
+  const geojsonFile = path.join(progressDir, "../../d.geo.json");
+  let loksabhaConstituenciesGeoECI: any;
+  if (fs.existsSync(geojsonFile)) {
+    loksabhaConstituenciesGeoECI = JSON.parse(fs.readFileSync(geojsonFile, "utf8"));
+  } else {
+    throw new Error("Geojson file not found!");
+  }
 
   try {
-    const loksabhaConstituencyFeaturesECI = loksabhaConstituenciesGeoECI?.filter(
+    const loksabhaConstituencyFeaturesECI: GeoJSONFeature[] = loksabhaConstituenciesGeoECI?.filter(
       (dist: any) => dist.properties.stname.toLowerCase() === stateUT.state_name.toLowerCase()
     );
 
@@ -159,7 +180,11 @@ export async function fetchLoksabhaConstituencyECIGeoFeatures(outputs: Record<st
   }
 }
 
-export async function transformLoksabhaConstituenciesWikipediaData(outputs: Record<string, any>): Promise<any> {
+export async function transformLoksabhaConstituenciesWikipediaData(outputs: Record<string, any>): Promise<{
+  transformedLoksabhaConstituenciesWikipedia: LoksabhaConstituencyTransformationWikidata[];
+  loksabhaConstituenciesNotTransformedWikipedia: any;
+  status: StepStatus;
+}> {
   const {
     loksabhaConstituenciesWikiDetails,
     loksabhaConstituenciesWikiDetailsFailed,
@@ -175,7 +200,7 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
   const transformedLoksabhaConstituenciesWikipedia: LoksabhaConstituencyTransformationWikidata[] = [];
   let loksabhaConstituenciesNotTransformedWikipedia: any;
   const missingUrls: string[] = [];
-  let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
 
   loksabhaConstituenciesWikiDetails.forEach((wikiLoksabhaConstituency: any) => {
     if (!keyedLoksabhaConstituencies[wikiLoksabhaConstituency.url]) {
@@ -233,12 +258,16 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
   };
 }
 
-export async function transformLoksabhaConstituenciesWithECIGeo(outputs: Record<string, any>): Promise<any> {
+export async function transformLoksabhaConstituenciesWithECIGeo(outputs: Record<string, any>): Promise<{
+  transformedLoksabhaConstituenciesECIGeo: LoksabhaConstituencyTransformationECIGeo[];
+  unmatchedLoksabhaConstituenciesECIGeo: LoksabhaConstituencyTransformationWikidata[];
+  status: StepStatus;
+}> {
   const { loksabhaConstituencyFeaturesECI, transformedLoksabhaConstituenciesWikipedia } = outputs;
 
   const transformedLoksabhaConstituenciesECIGeo: LoksabhaConstituencyTransformationECIGeo[] = [];
   const unmatchedLoksabhaConstituencies: LoksabhaConstituencyTransformationWikidata[] = [];
-  let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
+  let status: StepStatus = "SUCCESS";
 
   transformedLoksabhaConstituenciesWikipedia.forEach(
     (loksabhaConstituency: LoksabhaConstituencyTransformationWikidata) => {
@@ -266,7 +295,10 @@ export async function transformLoksabhaConstituenciesWithECIGeo(outputs: Record<
   };
 }
 
-export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Record<string, any>) {
+export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Record<string, any>): Promise<{
+  savedToKnowledgeGraph: any;
+  status: StepStatus;
+}> {
   const { transformedLoksabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
