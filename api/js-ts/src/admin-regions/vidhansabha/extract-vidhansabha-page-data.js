@@ -481,18 +481,18 @@ async function processVidhansabhaPage(page) {
     }
 
     function extractDataFromVidhansabhaPage() {
-      let infoBox = extractFromVidhansabhaInfoBox();
+      let infobox = extractFromVidhansabhaInfoBox();
       // const maps = findGeoJSONMaps();
-      const lastUpdatedOn = getLastEditedOnDate();
-      const wikidataQID = getWikidataQID();
-      const wikipediaPage = getWikipediaPageUrl();
+      const last_updated_on = getLastEditedOnDate();
+      const wikidata_qid = getWikidataQID();
+      const wikipedia_page = getWikipediaPageUrl();
 
       return {
-        infoBox,
+        infobox,
         // maps,
-        lastUpdatedOn,
-        wikidataQID,
-        wikipediaPage,
+        last_updated_on,
+        wikidata_qid,
+        wikipedia_page,
       };
     }
 
