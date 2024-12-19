@@ -95,8 +95,8 @@ function logProgress(
   fs.writeFileSync(progressFile, JSON.stringify(progressStatus, null, 2));
 }
 
-// Original orchestration function (unchanged)
-async function orchestrationFunction(outputs: Record<string, any>, steps: PipelineStep[]): Promise<void> {
+// Modified orchestration function to return the last executed step output
+async function orchestrationFunction(outputs: Record<string, any>, steps: PipelineStep[]): Promise<any> {
   const previousIteration = getLastIteration(outputs.progressFile);
   const currentIteration = createNewIteration(outputs.progressFile);
 
@@ -115,6 +115,8 @@ async function orchestrationFunction(outputs: Record<string, any>, steps: Pipeli
     }
   }
 
+  let lastStepOutput = null;
+
   for (let i = 0; i < steps.length; i++) {
     const step = steps[i];
     const progressStep = currentIteration.steps.find((s) => s.step === i);
@@ -122,6 +124,7 @@ async function orchestrationFunction(outputs: Record<string, any>, steps: Pipeli
     if (progressStep && progressStep.status === "SUCCESS") {
       console.log(`Step ${i} (${step.name}) already completed successfully.`);
       outputs = { ...outputs, ...step.output };
+      lastStepOutput = step.output;
       continue;
     }
 
@@ -132,6 +135,7 @@ async function orchestrationFunction(outputs: Record<string, any>, steps: Pipeli
       step.status = status;
       step.output = stepOutputs;
       outputs = { ...outputs, ...stepOutputs };
+      lastStepOutput = stepOutputs;
 
       if (step.status !== "SUCCESS") {
         throw new Error();
@@ -176,15 +180,24 @@ async function orchestrationFunction(outputs: Record<string, any>, steps: Pipeli
     }
     fs.writeFileSync(outputs.progressFile, JSON.stringify(progressStatus, null, 2));
   }
+
+  return lastStepOutput;
 }
 
-// New function to call the orchestration function with configuration
-export async function runPipeline(steps: PipelineStep[], initialOutputs: any, progressDir: any, progressFile: any) {
+// New function to call the orchestration function with configuration and return the last executed step output
+export async function runPipeline(
+  steps: PipelineStep[],
+  initialOutputs: any,
+  progressDir: any,
+  progressFile: any
+): Promise<any> {
   initializeDirectories(progressDir, progressFile);
 
   try {
-    await orchestrationFunction({ ...initialOutputs, progressDir, progressFile }, steps);
+    const lastStepOutput = await orchestrationFunction({ ...initialOutputs, progressDir, progressFile }, steps);
+    return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
+    throw error;
   }
 }
