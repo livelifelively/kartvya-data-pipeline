@@ -6,13 +6,11 @@ import { queryNodeType, createNodeType } from "../knowledge-graph/generic/generi
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
 
 import { upsert_Name_ } from "../knowledge-graph/name/name.update";
-import {
-  multiPolygonToDgraphMultiPolygon,
-  polygonToMultiPolygon,
-} from "../admin-regions/states/andhra-pradesh/scripts/districts";
+
 import { processListOfWikipediaPages } from "../admin-regions/vidhansabha/extract-vidhansabha-page-data";
 import { PipelineStep, runPipeline } from "./pipeline";
 import { generateNameId } from "../knowledge-graph/region-names/region-names.utils";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./pipeline-utils";
 
 interface VidhansabhaConstituency {
   names: string[];
@@ -91,6 +89,8 @@ export async function fetchStateVidhansabhaConstituencies(outputs: Record<string
       // vidhansabha_constituency_number: val.vidhansabha_constituency_number,
       names: [val.vidhansabha_constituency_name],
       wikipedia_page: val.vidhansabha_constituency_wikipedia_page,
+      reservation: val.reservation,
+      constituency_number: val.vidhansabha_constituency_number,
       // states_union_territories: stateUT.name_id,
     }));
 
@@ -211,7 +211,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
       status = "PARTIAL";
     } else {
       if (wikiVidhansabhaConstituency.results.wikidata_qid) {
-        const allNames = wikiVidhansabhaConstituency.urls.reduce((agg, url) => {
+        const allNames = wikiVidhansabhaConstituency.urls.reduce((agg: any, url: any) => {
           agg = agg.concat(keyedVidhansabhaConstituencies[url].names);
           return agg;
         }, []);
@@ -400,7 +400,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
   return { savedToKnowledgeGraph, status: "SUCCESS" };
 }
 
-async function sampleFunction(stateUT) {
+async function sampleFunction(stateUT: any) {
   console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.state_name);
 
   const steps: PipelineStep[] = [

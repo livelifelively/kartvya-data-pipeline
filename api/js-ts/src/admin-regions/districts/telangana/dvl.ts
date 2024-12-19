@@ -9,7 +9,7 @@ import {
 } from "../../../pipeline/loksabha-pipeline";
 import { PipelineStep, runPipeline } from "../../../pipeline/pipeline";
 import dataVDL from "./tl.d-vc.json";
-import { groupBy, map, uniqWith, isEqual, reduce } from "lodash";
+import { groupBy, map, uniqWith, isEqual, reduce, forEach } from "lodash";
 import {
   fetchStateVidhansabhaConstituencies,
   fetchVidhansabhaConstituenciesWikiDetails,
@@ -29,7 +29,10 @@ import {
   transformDistrictsWithSOIGeo,
 } from "../../../pipeline/districts-pipeline";
 
-function getDistrictsByURL() {
+import { stateDistrictsList } from "../state-wise-districts-count-list-urls";
+import { stateLoksabhaConstituenciesCountList } from "../../loksabha/state-wise-loksabha-constituencies-count-list-urls";
+
+function getDistrictsByURL(stateUT: any) {
   // get all districts, can be repeated
   let d: any = [];
   dataVDL.forEach((val: any) => {
@@ -48,14 +51,21 @@ function getDistrictsByURL() {
     {}
   );
 
+  let dGroupedByNames = groupBy(Object.values(dGroupedByURL).flat(), "text");
+  let withSameName: any = [];
+  forEach(dGroupedByNames, (val: any, key: string) => {
+    if (val.length > 1) withSameName.push(val);
+  });
+  if (withSameName.length) console.log("DISTRICTS WITH COMMON NAMES", JSON.stringify(withSameName, null, 2));
+
   // merge values with same url but different names
   dGroupedByURL = reduce(
     dGroupedByURL,
     (agg: any, val: any, idx: any) => {
       agg[idx] = val.reduce((agg1: any, val1: any) => {
-        agg1.text = agg1.text || [];
-        agg1.text.push(val1.text);
-        agg1.href = val1.href;
+        agg1.names = agg1.names || [];
+        agg1.names.push(val1.text);
+        agg1.wikipedia_page = val1.href;
 
         return agg1;
       }, {});
@@ -64,23 +74,45 @@ function getDistrictsByURL() {
     {}
   );
 
+  if (stateUT.districtsCount && Object.values(dGroupedByURL).flat().length !== stateUT.districtsCount) {
+    console.log(
+      "DISTRICTS COUNT MISMATCH",
+      ` should be ${stateUT.districtsCount}`,
+      ` is ${Object.values(dGroupedByURL).flat().length}`
+    );
+  }
+  // console.log(`${Object.values(dGroupedByURL).flat().length} districts found`);
+  console.log("=====================");
+
   return dGroupedByURL;
 }
 
-function getVidhansabhaConstituenciesList() {
+function getVidhansabhaConstituenciesList(stateUT: any) {
+  let vGroupedByNames = groupBy(dataVDL, "name_2.text");
+
+  let withSameName: any = [];
+  forEach(vGroupedByNames, (val: any, key: string) => {
+    if (val.length > 1) withSameName.push(val);
+  });
+  if (withSameName.length) console.log("VIDHAN SABHA WITH COMMON NAMES", JSON.stringify(withSameName, null, 2));
+
   let v = dataVDL.map((val: any) => {
     return {
-      vidhansabha_constituency_number: val.ac_no,
-      vidhansabha_constituency_name: val.name_2.text,
-      vidhansabha_constituency_wikipedia_page: val.name_2.href,
+      constituency_number: val.ac_no,
+      names: [val.name_2.text],
+      wikipedia_page: val.name_2.href,
       reservation: val.reservation,
     };
   });
 
+  if (v.length !== stateUT.vidhansabhaConstituenciesCount) {
+    console.log("VIDHANSABHA COUNT MISMATCH", ` should be ${stateUT.districtsCount}`, ` is ${v.length}`);
+  }
+
   return v;
 }
 
-function getLoksabhaConstituenciesByURL() {
+function getLoksabhaConstituenciesByURL(stateUT: any) {
   let l: any = [];
   dataVDL.forEach((val: any) => {
     l.push(val.loksabhaConstituency);
@@ -98,14 +130,21 @@ function getLoksabhaConstituenciesByURL() {
     {}
   );
 
+  let lGroupedByNames = groupBy(Object.values(lGroupedByURL).flat, "text");
+  let withSameName: any = [];
+  forEach(lGroupedByNames, (val: any, key: string) => {
+    if (val.length > 1) withSameName.push(val);
+  });
+  if (withSameName.length) console.log("LOK SABHA WITH COMMON NAMES", JSON.stringify(withSameName, null, 2));
+
   // merge values with same url but different names
   lGroupedByURL = reduce(
     lGroupedByURL,
     (agg: any, val: any, idx: any) => {
       agg[idx] = val.reduce((agg1: any, val1: any) => {
-        agg1.text = agg1.text || [];
-        agg1.text.push(val1.text);
-        agg1.href = val1.href;
+        agg1.names = agg1.names || [];
+        agg1.names.push(val1.text);
+        agg1.wikipedia_page = val1.href;
 
         return agg1;
       }, {});
@@ -114,12 +153,23 @@ function getLoksabhaConstituenciesByURL() {
     {}
   );
 
+  if (
+    stateUT.loksabhaConstituenciesCount &&
+    Object.values(lGroupedByURL).flat().length !== stateUT.loksabhaConstituenciesCount
+  ) {
+    console.log(
+      "LOKSABHA CONSTITUENCIES COUNT MISMATCH",
+      ` should be ${stateUT.loksabhaConstituenciesCount}`,
+      ` is ${Object.values(lGroupedByURL).flat().length}`
+    );
+  }
+  console.log("=====================");
+
   return lGroupedByURL;
 }
 
-async function loksabhaConstituenciesPipeline(stateUT, loksabhaConstituenciesList) {
-  console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.name);
-
+async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenciesList: any) {
+  // console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.name);
   const steps: PipelineStep[] = [
     {
       name: "Fetch State Loksabha_Constituency",
@@ -158,7 +208,6 @@ async function loksabhaConstituenciesPipeline(stateUT, loksabhaConstituenciesLis
     //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
     // },
   ];
-
   let outputs: Record<string, any> = {
     stateUT,
     loksabhaConstituenciesList,
@@ -172,18 +221,17 @@ async function loksabhaConstituenciesPipeline(stateUT, loksabhaConstituenciesLis
     transformedLoksabhaConstituenciesECIGeo: [],
     unmatchedLoksabhaConstituenciesECIGeo: [],
   };
-
   const loksabhaConstituenciesProgressDir = path.join(__dirname, "loksabha-constituency-pipeline-logs");
   const progressStatusFile = path.join(loksabhaConstituenciesProgressDir, "progressStatus.json");
-
   try {
-    await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
+    const lastStepOutput = await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
+    return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
-async function vidhansabhaConstituenciesPipeline(stateUT, vidhansabhaConstituenciesList) {
+async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConstituenciesList: any) {
   console.log("VIDHANSABHA PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
@@ -243,13 +291,14 @@ async function vidhansabhaConstituenciesPipeline(stateUT, vidhansabhaConstituenc
   const progressStatusFile = path.join(vidhansabhaConstituenciesProgressDir, "progressStatus.json");
 
   try {
-    await runPipeline(steps, outputs, vidhansabhaConstituenciesProgressDir, progressStatusFile);
+    const lastStepOutput = await runPipeline(steps, outputs, vidhansabhaConstituenciesProgressDir, progressStatusFile);
+    return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
-async function districtsPipeline(stateUT, districtsList) {
+async function districtsPipeline(stateUT: any, districtsList: any) {
   console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
@@ -346,26 +395,42 @@ async function districtsPipeline(stateUT, districtsList) {
   const progressStatusFile = path.join(districtsProgressDir, "progressStatus.json");
 
   try {
-    await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+    const lastStepOutput = await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+    return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
 (async () => {
-  const stateUT = {
-    state_name: "Telangana",
+  let stateUT: any = {
+    state_name: "telangana",
     name_id: "in-sut-telangana",
     vehicle_code: "TG",
+    vidhansabhaConstituenciesCount: 119,
   };
 
-  const d = getDistrictsByURL();
-  const v = getVidhansabhaConstituenciesList();
-  const l = getLoksabhaConstituenciesByURL();
+  const stateLoksabhaConstituencies = stateLoksabhaConstituenciesCountList.find(
+    (val: any) => val.stateNameId === stateUT.name_id
+  );
+  const stateDistrictData = stateDistrictsList.find((val: any) => val.regionId === stateUT.name_id);
 
-  await districtsPipeline(stateUT, Object.values(d));
-  await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  await vidhansabhaConstituenciesPipeline(stateUT, v);
+  stateUT.loksabhaConstituenciesCount = stateLoksabhaConstituencies?.loksabhaConstituenciesCount;
+  stateUT.districtsCount = stateDistrictData?.numberOfDistricts;
+
+  const d = getDistrictsByURL(stateUT);
+  const v = getVidhansabhaConstituenciesList(stateUT);
+  const l = getLoksabhaConstituenciesByURL(stateUT);
+
+  console.log(d);
+  console.log(v);
+  console.log(l);
+
+  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+
+  return;
 })();
 
 // keyedLoksabhaConstituencies = reduce(
