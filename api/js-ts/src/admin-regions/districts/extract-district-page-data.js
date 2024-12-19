@@ -1,12 +1,12 @@
 const { chromium } = require("playwright");
 
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 
-const { sortBy, keyBy, map, forEach } = require("lodash");
+// const { sortBy, keyBy, map, forEach } = require("lodash");
 
-const outputFilePath = path.join(__dirname, "d-data.json");
-const errorFile = path.join(__dirname, "d_errors.json");
+// const outputFilePath = path.join(__dirname, "d-data.json");
+// const errorFile = path.join(__dirname, "d_errors.json");
 
 async function openPage(context, url) {
   try {
@@ -45,11 +45,11 @@ async function extractDataFromWikipediaPage(context, url, state) {
   return toReturn;
 }
 
-function logError(errorData) {
-  const existingErrors = fs.existsSync(errorFile) ? JSON.parse(fs.readFileSync(errorFile)) : [];
-  existingErrors.push(errorData);
-  fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
-}
+// function logError(errorData) {
+//   const existingErrors = fs.existsSync(errorFile) ? JSON.parse(fs.readFileSync(errorFile)) : [];
+//   existingErrors.push(errorData);
+//   fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
+// }
 
 async function processDistrictPage(page) {
   // Use the injected functions

@@ -1,15 +1,15 @@
 const { chromium } = require("playwright");
 
-const path = require("path");
+// const path = require("path");
 const fs = require("fs");
 
-const { sortBy, keyBy, map, forEach } = require("lodash");
+// const { sortBy, keyBy, map, forEach } = require("lodash");
 
-const stateDirPath = "../states/andhra-pradesh";
-const { allLoksabhaSeats } = require(`${stateDirPath}/scripts/loksabha`);
+// const stateDirPath = "../states/andhra-pradesh";
+// const { allLoksabhaSeats } = require(`${stateDirPath}/scripts/loksabha`);
 
-const outputFilePath = path.join(__dirname, stateDirPath, "lc-data.json");
-const errorFile = path.join(__dirname, stateDirPath, "lc_errors.json");
+// const outputFilePath = path.join(__dirname, stateDirPath, "lc-data.json");
+// const errorFile = path.join(__dirname, stateDirPath, "lc_errors.json");
 
 async function openPage(context, url) {
   try {

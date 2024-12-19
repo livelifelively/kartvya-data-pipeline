@@ -6,12 +6,10 @@ import { createNodeType, queryNodeType } from "../knowledge-graph/generic/generi
 import { fetchByRelationId, fetchDistrictsOSMRelationIdsForState } from "../maps/india-osm/states.fetch-geojsons";
 import { processListOfWikipediaPages } from "../admin-regions/districts/extract-district-page-data";
 import { generateNameId } from "../knowledge-graph/region-names/region-names.utils";
-import {
-  multiPolygonToDgraphMultiPolygon,
-  polygonToMultiPolygon,
-} from "../admin-regions/states/andhra-pradesh/scripts/districts";
+
 import { upsert_Name_ } from "../knowledge-graph/name/name.update";
 import { runPipeline } from "./pipeline";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./pipeline-utils";
 
 interface District {
   names: string[];

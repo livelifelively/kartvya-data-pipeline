@@ -1,15 +1,15 @@
 const { chromium } = require("playwright");
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 
 const { sortBy, keyBy, map, forEach } = require("lodash");
 
 // const issuesVcs = require("./state-vsc-navboxes.issues.json");
-const stateDirPath = "../states/andhra-pradesh";
-const { vidhansabhaConstituencies } = require(`${stateDirPath}/scripts/vidhan-sabha`);
+// const stateDirPath = "../states/andhra-pradesh";
+// const { vidhansabhaConstituencies } = require(`${stateDirPath}/scripts/vidhan-sabha`);
 
-const outputFilePath = path.join(__dirname, stateDirPath, "vc-data.json");
-const errorFile = path.join(__dirname, stateDirPath, "vc_errors.json");
+// const outputFilePath = path.join(__dirname, stateDirPath, "vc-data.json");
+// const errorFile = path.join(__dirname, stateDirPath, "vc_errors.json");
 
 async function openPage(context, url) {
   try {
@@ -48,11 +48,11 @@ async function extractDataFromWikipediaPage(context, url, state) {
   return toReturn;
 }
 
-function logError(errorData) {
-  const existingErrors = fs.existsSync(errorFile) ? JSON.parse(fs.readFileSync(errorFile)) : [];
-  existingErrors.push(errorData);
-  fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
-}
+// function logError(errorData) {
+//   const existingErrors = fs.existsSync(errorFile) ? JSON.parse(fs.readFileSync(errorFile)) : [];
+//   existingErrors.push(errorData);
+//   fs.writeFileSync(errorFile, JSON.stringify(existingErrors, null, 2));
+// }
 
 export async function processListOfWikipediaPages(pageUrls) {
   const browser = await chromium.launch({ headless: false });

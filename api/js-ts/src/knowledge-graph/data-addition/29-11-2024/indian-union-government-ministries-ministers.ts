@@ -8127,456 +8127,456 @@ let groupedMoSKeyed: any = {
   ],
 };
 
-(async () => {
-  const graphQLClient = await createGraphQLClient();
-
-  // for (let p of policyDomains) {
-  //   // will need domains to ministries mapping before we can do this
-  //   // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
-  //   //   public_policy_domain: { name_id: p.name },
-  //   //   node_created_on: new Date(),
-  //   // });
-  // }
-  // for (let d of ministriesDomains) {
-  //   let nameId = await createName(graphQLClient, {
-  //     name: d.name,
-  //     language_script: { name_en: "english_latin" },
-  //     node_created_on: new Date(),
-  //   });
-
-  //   await addPublicPolicyDomain(graphQLClient, {
-  //     names: [{ name: "nuclear" }],
-  //     name_id: "nuclear",
-  //     description: "",
-  //     node_created_on: new Date(),
-  //   });
-  // }
-
-  // for (let d of policyDomains) {
-  // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
-  //   name_id: "electronics-and-information-technology",
-  //   public_policy_domain: { name_id: "electronics-and-information-technology" },
-  //   node_created_on: new Date(),
-  // });
-  // }
-
-  // {
-  //   "name_id": "electronics-and-information-technology",
-  //   "description": "Development, regulation, and promotion of electronics manufacturing, information technology services, and digital infrastructure, including software development, telecommunications, and the integration of technology in various sectors."
-  // }
-
-  // let nameId = await createName(graphQLClient, {
-  //   // name: "electronics-and-information technology",
-  //   name: "electronics and information technology",
-  //   language_script: { name_en: "english_latin" },
-  //   node_created_on: new Date(),
-  // });
-
-  // await addPublicPolicyDomain(graphQLClient, {
-  //   names: [
-  //     { name: "electronics" },
-  //     { name: "electronics and information technology" },
-  //     { name: "information technology" },
-  //   ],
-  //   name_id: "electronics-and-information-technology",
-  //   description:
-  //     "Development, regulation, and promotion of electronics manufacturing, information technology services, and digital infrastructure, including software development, telecommunications, and the integration of technology in various sectors.",
-  //   node_created_on: new Date(),
-  // });
-
-  // name_id: String! @search(by: [exact, term, fulltext])
-  // names: [_Name_!]! @hasInverse(field: "indian_union_government_ministry")
-
-  // # broad categories for public policy.  *:* relation with ministries
-  // # e.g. health, fisheries, agriculture, road infrastructure
-  // policy_domains: [_Public_Policy_Domain_]
-
-  // # objective is self updated listing that connects to all ministries in the domain
-  // policy_domain_ministries_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
-  //   @hasInverse(field: "indian_union_government_ministries")
-
-  // name_id: String! @search(by: [exact, term, fulltext])
-  // names: [_Name_!]! @hasInverse(field: "indian_union_government_ministry")
-  // # broad categories for public policy.  *:* relation with ministries
-  // # e.g. health, fisheries, agriculture, road infrastructure
-  // policy_domains: [_Public_Policy_Domain_]
-  // # objective is self updated listing that connects to all ministries in the domain
-  // policy_domain_ministries_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
-  //   @hasInverse(field: "indian_union_government_ministries")
-
-  // {
-  //   name_id: ministry.split(",").join('').split(" ").join("-"),
-  //   names: [{name: ministry}],
-  //   policy_domains: domains.map(val => {
-  //     return {
-  //       name_id: val
-  //     }
-  //   })
-  //   policy_domain_ministries_list: domains.map(val => {
-  //     return {
-  //       name_id: val
-  //     }
-  //   })
-  // }
-
-  // for (let md of ministryDomains2) {
-  //   // console.log(md);
-  //   // create ministry
-  //   await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
-  //     ...md,
-  //     node_created_on: new Date(),
-  //   });
-  //   console.log("done!");
-  // }
-
-  // create person
-  // create politicians
-  // create ministers
-  //
-
-  // {
-  //   name_id: "personnel-public-grievances-and-pensions",
-  //   names: [
-  //     {
-  //       name: "Ministry of Personnel, Public Grievances and Pensions",
-  //     },
-  //   ],
-  //   policy_domains: [
-  //     {
-  //       name_id: "government-officials",
-  //     },
-  //   ],
-  //   policy_domain_ministries_list: [
-  //     {
-  //       name_id: "government-officials",
-  //     },
-  //   ],
-  // },
-
-  // let cabinetMinistersIds = [];
-  // let ministriesIds: any = [];
-  // let pm = {
-  //   href: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
-  //   text: "Prime Minister",
-  //   url: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
-  //   result: {
-  //     wikidata_qid: "Q192711",
-  //     wikipedia_page: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
-  //   },
-  //   ministryNameId: "0x9be95fc60d",
-  // };
-  // let pmId = "";
-  // let toSavePM: any = {};
-  // let loksabha: any = {
-  //   names: [
-  //     {
-  //       name: "18th Lok Sabha",
-  //     },
-  //     {
-  //       name: "18th Loksabha",
-  //     },
-  //     {
-  //       name: "loksabha",
-  //     },
-  //     {
-  //       name: "lok sabha",
-  //     },
-  //   ],
-
-  //   loksabha_number: 18,
-  // };
-
-  // for (let lsn of loksabha.names) {
-  //   await createName(graphQLClient, {
-  //     name: lsn.name,
-  //     language_script: { name_en: "english_latin" },
-  //     node_created_on: new Date(),
-  //   });
-  // }
-
-  // for (let mpc of allInOneMinisteries) {
-  //   const { person, ministries } = mpc;
-
-  //   const personId = await createNodeType("_Person_", graphQLClient, {
-  //     ...person,
-  //     node_created_on: new Date(),
-  //   });
-
-  //   const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
-  //     person: { id: personId },
-  //     node_created_on: new Date(),
-  //   });
-
-  //   if (person.wikidata_qid === "Q1058") {
-  //     // add pm
-  //     toSavePM = {
-  //       position_held_by: politicianId,
-  //       // wikidata_qid: "Q192711",
-  //       // wikipedia_page: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
-  //     };
-  //   }
-
-  //   for (let m of ministries) {
-  //     const ministryId = await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
-  //       ...ministriesDomainsKeyed[m.name_id],
-  //       wikidata_qid: m.wikidata_qid,
-  //       wikipedia_page: m.wikipedia_page,
-  //       node_created_on: new Date(),
-  //     });
-
-  //     const cabinetMinisterId = await createNodeType("_Indian_Union_Government_Cabinet_Minister_", graphQLClient, {
-  //       position_held_by: { id: politicianId },
-  //       ministry: { id: ministryId },
-  //       // tenure_start:
-  //       node_created_on: new Date(),
-  //     });
-
-  //     cabinetMinistersIds.push({ id: cabinetMinisterId });
-  //     ministriesIds.push({ id: ministryId });
-
-  //     // position_held_by
-  //     // ministry
-  //   }
-  // }
-  // let cabinet: any = {};
-
-  // cabinet.ministries = ministriesIds;
-  // cabinet.cabinet_ministers = cabinetMinistersIds;
-
-  // const cabinetId = await createNodeType("_Indian_Union_Government_Cabinet_", graphQLClient, {
-  //   ...cabinet,
-  //   // tenure_start:
-  //   node_created_on: new Date(),
-  // });
-  // // ministries
-  // toSavePM.ministries = ministriesIds;
-  // toSavePM.cabinet = { id: cabinetId };
-
-  // pmId = await createNodeType("_Indian_Prime_Minister_", graphQLClient, {
-  //   ...toSavePM2,
-  //   node_created_on: new Date(),
-  // });
-
-  // let unionGovernmentId = await createNodeType("_Indian_Union_Government_", graphQLClient, {
-  //   prime_minister: { id: pmId },
-  //   cabinet: { id: cabinetId },
-  //   ministries: ministriesIds,
-  //   node_created_on: new Date(),
-  // });
-
-  // loksabha.prime_minister = { id: pmId };
-  // loksabha.cabinet = { id: cabinetId };
-  // loksabha.union_government = { id: unionGovernmentId };
-
-  // await createNodeType("_Indian_Loksabha_", graphQLClient, {
-  //   ...loksabha,
-  //   node_created_on: new Date(),
-  // });
-
-  // ministersOfState = await fetchWikiDataQids(ministersOfState);
-
-  // // console.log(JSON.stringify(ministersOfState, null, 2));
-  // const outputFilePath = path.join(__dirname, "ministers-of-state.json");
-  // fs.writeFileSync(outputFilePath, JSON.stringify(ministersOfState, null, 2));
-
-  // upsert names of ministries
-  // for (let i of independentCharge) {
-  //   const { portfolio, minister } = i;
-
-  //   // let ministerNameId = await upsert_Name_(minister.text);
-
-  //   // let person = {
-  //   //   names: [
-  //   //     {
-  //   //       id: ministerNameId,
-  //   //     },
-  //   //   ],
-  //   //   wikidata_qid: minister.result.wikidata_qid,
-  //   //   wikipedia_page: minister.result.wikipedia_page,
-  //   // };
-
-  //   // const personId = await createNodeType("_Person_", graphQLClient, {
-  //   //   ...person,
-  //   //   node_created_on: new Date(),
-  //   // });
-
-  //   // const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
-  //   //   person: { id: personId },
-  //   //   node_created_on: new Date(),
-  //   // });
-
-  //   for (let p of portfolio) {
-  //     // let portfolioNameId = await upsert_Name_(p.text);
-
-  //     console.log(p.text);
-
-  //     //     const ministryId = await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
-  //     //       ...ministriesDomainsKeyed[m.name_id],
-  //     //       wikidata_qid: m.wikidata_qid,
-  //     //       wikipedia_page: m.wikipedia_page,
-  //     //       node_created_on: new Date(),
-  //     //     });
-  //   }
-
-  //   // for (let mpc of allInOneMinisteries) {
-
-  //   //   for (let m of ministries) {
-
-  //   //     const cabinetMinisterId = await createNodeType("_Indian_Union_Government_Cabinet_Minister_", graphQLClient, {
-  //   //       position_held_by: { id: politicianId },
-  //   //       ministry: { id: ministryId },
-  //   //       // tenure_start:
-  //   //       node_created_on: new Date(),
-  //   //     });
-
-  //   //     cabinetMinistersIds.push({ id: cabinetMinisterId });
-  //   //     ministriesIds.push({ id: ministryId });
-
-  //   //     // position_held_by
-  //   //     // ministry
-  //   //   }
-  //   // }
-  // }
-
-  // for (let pn of policyDomainsNew) {
-  //   // console.log(pn);
-  //   // let nameId = await createName(graphQLClient, {
-  //   //   name: pn.name,
-  //   //   language_script: { name_en: "english_latin" },
-  //   //   node_created_on: new Date(),
-  //   // });
-  //   // await addPublicPolicyDomain(graphQLClient, {
-  //   //   name_id: pn.name_id,
-  //   //   description: pn.description,
-  //   //   names: [{ name: pn.name }],
-  //   //   node_created_on: new Date(),
-  //   // });
-  //   // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
-  //   //   name_id: pn.name_id,
-  //   //   public_policy_domain: { name_id: pn.name_id },
-  //   //   node_created_on: new Date(),
-  //   // });
-  //   // {
-  //   //   name_id: "personnel-public-grievances-and-pensions",
-  //   //   names: [
-  //   //     {
-  //   //       name: "Ministry of Personnel, Public Grievances and Pensions",
-  //   //     },
-  //   //   ],
-  //   //   policy_domains: [
-  //   //     {
-  //   //       name_id: "government-officials",
-  //   //     },
-  //   //   ],
-  //   //   policy_domain_ministries_list: [
-  //   //     {
-  //   //       name_id: "government-officials",
-  //   //     },
-  //   //   ],
-  // }
-
-  // for (let md of ministryDomains2) {
-  //   // console.log(md);
-  //   // create ministry
-  //   await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
-  //     ...md,
-  //     node_created_on: new Date(),
-  //   });
-  //   console.log("done!");
-  // }
-
-  // for (let ic of ministersOfState) {
-  //   const { portfolio, minister } = ic;
-
-  //   console.log(portfolio);
-  //   console.log(minister);
-
-  //   // const nameId = await upsert_Name_(minister.text);
-
-  //   // let person = {
-  //   //   names: [{ id: nameId }],
-  //   //   wikipedia_page: minister.result.wikipedia_page,
-  //   //   wikidata_qid: minister.result.wikidata_qid,
-  //   // };
-
-  //   let politicianId = await get_Politician_By_Person_Wikidata_Qid(graphQLClient, minister.wikidata_qid);
-
-  //   // console.log(politicianId);
-
-  //   // get person by wikipedia_qid
-  //   // const personId = await createNodeType("_Person_", graphQLClient, {
-  //   //   ...person,
-  //   //   node_created_on: new Date(),
-  //   // });
-
-  //   // get politician
-  //   // const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
-  //   //   person: { id: personId },
-  //   //   node_created_on: new Date(),
-  //   // });
-
-  //   // let isICMOf = [];
-
-  //   // for (let p of portfolio) {
-  //   //   // get ministry id
-  //   //   // let ministryId = await upsert_Indian_Union_Government_Ministry(p.text);
-  //   //   // // isICMOf.push();
-  //   //   // const mosId = await createNodeType("_Indian_Union_Government_Minister_Of_State_", graphQLClient, {
-  //   //   //   position_held_by: { id: politicianId },
-  //   //   //   ministry: { name_id: ministryId },
-  //   //   //   node_created_on: new Date(),
-  //   //   //   cabinet: { id: "0x9be95fc96e" },
-  //   //   // });
-  //   // }
-
-  //   // for (let mic of ministryDomains2) {
-  //   //   // let ministryId = await upsert_Indian_Union_Government_Ministry(mic);
-  //   //   let ministryId = await create_Indian_Union_Government_Ministry(mic);
-  //   //   console.log(ministryId, mic.name_id);
-  //   // }
-  // }
-
-  // Q87570577
-
-  // let ics = Object.keys(groupedMoS);
-  // let groupedMoSAgg: any = {};
-
-  // for (let ic of ics) {
-  //   // console.log(groupedMoS[ic]);
-
-  //   groupedMoSAgg[ic] = groupedMoSAgg[ic] || [];
-  //   groupedMoSAgg[ic] = groupedMoSAgg[ic].concat(groupedMoS[ic].map((v: any) => v.portfolio).flat());
-  //   // console.log()
-  // }
-
-  // console.log(JSON.stringify(groupedMoSAgg));
-
-  // let ics = Object.keys(groupedMoSKeyed);
-  // for (let ic of ics) {
-  //   let politicianId = await get_Politician_By_Person_Wikidata_Qid(graphQLClient, ic);
-
-  //   // console.log(groupedMoSKeyed[ic]);
-  //   // let toSave: any = { politicianId, ministries: [] };
-
-  //   for (let p of groupedMoSKeyed[ic]) {
-  //     // get ministry id
-  //     let ministryId = await upsert_Indian_Union_Government_Ministry(p.text);
-
-  //     // console.log({
-  //     //   politicianId,
-  //     //   ministryId,
-  //     //   node_created_on: new Date(),
-  //     // });
-
-  //     // isICMOf.push();
-  //     const mosId = await createNodeType("_Indian_Union_Government_Minister_Of_State_", graphQLClient, {
-  //       position_held_by: { id: politicianId },
-  //       ministry: { name_id: ministryId },
-  //       node_created_on: new Date(),
-  //       cabinet: { id: "0x9be95fc96e" },
-  //     });
-
-  //     // console.log(politicianId, p.text);
-  //   }
-  // }
-})();
+// (async () => {
+//   const graphQLClient = await createGraphQLClient();
+
+//   // for (let p of policyDomains) {
+//   //   // will need domains to ministries mapping before we can do this
+//   //   // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
+//   //   //   public_policy_domain: { name_id: p.name },
+//   //   //   node_created_on: new Date(),
+//   //   // });
+//   // }
+//   // for (let d of ministriesDomains) {
+//   //   let nameId = await createName(graphQLClient, {
+//   //     name: d.name,
+//   //     language_script: { name_en: "english_latin" },
+//   //     node_created_on: new Date(),
+//   //   });
+
+//   //   await addPublicPolicyDomain(graphQLClient, {
+//   //     names: [{ name: "nuclear" }],
+//   //     name_id: "nuclear",
+//   //     description: "",
+//   //     node_created_on: new Date(),
+//   //   });
+//   // }
+
+//   // for (let d of policyDomains) {
+//   // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
+//   //   name_id: "electronics-and-information-technology",
+//   //   public_policy_domain: { name_id: "electronics-and-information-technology" },
+//   //   node_created_on: new Date(),
+//   // });
+//   // }
+
+//   // {
+//   //   "name_id": "electronics-and-information-technology",
+//   //   "description": "Development, regulation, and promotion of electronics manufacturing, information technology services, and digital infrastructure, including software development, telecommunications, and the integration of technology in various sectors."
+//   // }
+
+//   // let nameId = await createName(graphQLClient, {
+//   //   // name: "electronics-and-information technology",
+//   //   name: "electronics and information technology",
+//   //   language_script: { name_en: "english_latin" },
+//   //   node_created_on: new Date(),
+//   // });
+
+//   // await addPublicPolicyDomain(graphQLClient, {
+//   //   names: [
+//   //     { name: "electronics" },
+//   //     { name: "electronics and information technology" },
+//   //     { name: "information technology" },
+//   //   ],
+//   //   name_id: "electronics-and-information-technology",
+//   //   description:
+//   //     "Development, regulation, and promotion of electronics manufacturing, information technology services, and digital infrastructure, including software development, telecommunications, and the integration of technology in various sectors.",
+//   //   node_created_on: new Date(),
+//   // });
+
+//   // name_id: String! @search(by: [exact, term, fulltext])
+//   // names: [_Name_!]! @hasInverse(field: "indian_union_government_ministry")
+
+//   // # broad categories for public policy.  *:* relation with ministries
+//   // # e.g. health, fisheries, agriculture, road infrastructure
+//   // policy_domains: [_Public_Policy_Domain_]
+
+//   // # objective is self updated listing that connects to all ministries in the domain
+//   // policy_domain_ministries_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
+//   //   @hasInverse(field: "indian_union_government_ministries")
+
+//   // name_id: String! @search(by: [exact, term, fulltext])
+//   // names: [_Name_!]! @hasInverse(field: "indian_union_government_ministry")
+//   // # broad categories for public policy.  *:* relation with ministries
+//   // # e.g. health, fisheries, agriculture, road infrastructure
+//   // policy_domains: [_Public_Policy_Domain_]
+//   // # objective is self updated listing that connects to all ministries in the domain
+//   // policy_domain_ministries_list: [_Public_Policy_Domain_Government_Ministries_Departments_]
+//   //   @hasInverse(field: "indian_union_government_ministries")
+
+//   // {
+//   //   name_id: ministry.split(",").join('').split(" ").join("-"),
+//   //   names: [{name: ministry}],
+//   //   policy_domains: domains.map(val => {
+//   //     return {
+//   //       name_id: val
+//   //     }
+//   //   })
+//   //   policy_domain_ministries_list: domains.map(val => {
+//   //     return {
+//   //       name_id: val
+//   //     }
+//   //   })
+//   // }
+
+//   // for (let md of ministryDomains2) {
+//   //   // console.log(md);
+//   //   // create ministry
+//   //   await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
+//   //     ...md,
+//   //     node_created_on: new Date(),
+//   //   });
+//   //   console.log("done!");
+//   // }
+
+//   // create person
+//   // create politicians
+//   // create ministers
+//   //
+
+//   // {
+//   //   name_id: "personnel-public-grievances-and-pensions",
+//   //   names: [
+//   //     {
+//   //       name: "Ministry of Personnel, Public Grievances and Pensions",
+//   //     },
+//   //   ],
+//   //   policy_domains: [
+//   //     {
+//   //       name_id: "government-officials",
+//   //     },
+//   //   ],
+//   //   policy_domain_ministries_list: [
+//   //     {
+//   //       name_id: "government-officials",
+//   //     },
+//   //   ],
+//   // },
+
+//   // let cabinetMinistersIds = [];
+//   // let ministriesIds: any = [];
+//   // let pm = {
+//   //   href: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+//   //   text: "Prime Minister",
+//   //   url: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+//   //   result: {
+//   //     wikidata_qid: "Q192711",
+//   //     wikipedia_page: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+//   //   },
+//   //   ministryNameId: "0x9be95fc60d",
+//   // };
+//   // let pmId = "";
+//   // let toSavePM: any = {};
+//   // let loksabha: any = {
+//   //   names: [
+//   //     {
+//   //       name: "18th Lok Sabha",
+//   //     },
+//   //     {
+//   //       name: "18th Loksabha",
+//   //     },
+//   //     {
+//   //       name: "loksabha",
+//   //     },
+//   //     {
+//   //       name: "lok sabha",
+//   //     },
+//   //   ],
+
+//   //   loksabha_number: 18,
+//   // };
+
+//   // for (let lsn of loksabha.names) {
+//   //   await createName(graphQLClient, {
+//   //     name: lsn.name,
+//   //     language_script: { name_en: "english_latin" },
+//   //     node_created_on: new Date(),
+//   //   });
+//   // }
+
+//   // for (let mpc of allInOneMinisteries) {
+//   //   const { person, ministries } = mpc;
+
+//   //   const personId = await createNodeType("_Person_", graphQLClient, {
+//   //     ...person,
+//   //     node_created_on: new Date(),
+//   //   });
+
+//   //   const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
+//   //     person: { id: personId },
+//   //     node_created_on: new Date(),
+//   //   });
+
+//   //   if (person.wikidata_qid === "Q1058") {
+//   //     // add pm
+//   //     toSavePM = {
+//   //       position_held_by: politicianId,
+//   //       // wikidata_qid: "Q192711",
+//   //       // wikipedia_page: "https://en.wikipedia.org/wiki/Prime_Minister_of_India",
+//   //     };
+//   //   }
+
+//   //   for (let m of ministries) {
+//   //     const ministryId = await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
+//   //       ...ministriesDomainsKeyed[m.name_id],
+//   //       wikidata_qid: m.wikidata_qid,
+//   //       wikipedia_page: m.wikipedia_page,
+//   //       node_created_on: new Date(),
+//   //     });
+
+//   //     const cabinetMinisterId = await createNodeType("_Indian_Union_Government_Cabinet_Minister_", graphQLClient, {
+//   //       position_held_by: { id: politicianId },
+//   //       ministry: { id: ministryId },
+//   //       // tenure_start:
+//   //       node_created_on: new Date(),
+//   //     });
+
+//   //     cabinetMinistersIds.push({ id: cabinetMinisterId });
+//   //     ministriesIds.push({ id: ministryId });
+
+//   //     // position_held_by
+//   //     // ministry
+//   //   }
+//   // }
+//   // let cabinet: any = {};
+
+//   // cabinet.ministries = ministriesIds;
+//   // cabinet.cabinet_ministers = cabinetMinistersIds;
+
+//   // const cabinetId = await createNodeType("_Indian_Union_Government_Cabinet_", graphQLClient, {
+//   //   ...cabinet,
+//   //   // tenure_start:
+//   //   node_created_on: new Date(),
+//   // });
+//   // // ministries
+//   // toSavePM.ministries = ministriesIds;
+//   // toSavePM.cabinet = { id: cabinetId };
+
+//   // pmId = await createNodeType("_Indian_Prime_Minister_", graphQLClient, {
+//   //   ...toSavePM2,
+//   //   node_created_on: new Date(),
+//   // });
+
+//   // let unionGovernmentId = await createNodeType("_Indian_Union_Government_", graphQLClient, {
+//   //   prime_minister: { id: pmId },
+//   //   cabinet: { id: cabinetId },
+//   //   ministries: ministriesIds,
+//   //   node_created_on: new Date(),
+//   // });
+
+//   // loksabha.prime_minister = { id: pmId };
+//   // loksabha.cabinet = { id: cabinetId };
+//   // loksabha.union_government = { id: unionGovernmentId };
+
+//   // await createNodeType("_Indian_Loksabha_", graphQLClient, {
+//   //   ...loksabha,
+//   //   node_created_on: new Date(),
+//   // });
+
+//   // ministersOfState = await fetchWikiDataQids(ministersOfState);
+
+//   // // console.log(JSON.stringify(ministersOfState, null, 2));
+//   // const outputFilePath = path.join(__dirname, "ministers-of-state.json");
+//   // fs.writeFileSync(outputFilePath, JSON.stringify(ministersOfState, null, 2));
+
+//   // upsert names of ministries
+//   // for (let i of independentCharge) {
+//   //   const { portfolio, minister } = i;
+
+//   //   // let ministerNameId = await upsert_Name_(minister.text);
+
+//   //   // let person = {
+//   //   //   names: [
+//   //   //     {
+//   //   //       id: ministerNameId,
+//   //   //     },
+//   //   //   ],
+//   //   //   wikidata_qid: minister.result.wikidata_qid,
+//   //   //   wikipedia_page: minister.result.wikipedia_page,
+//   //   // };
+
+//   //   // const personId = await createNodeType("_Person_", graphQLClient, {
+//   //   //   ...person,
+//   //   //   node_created_on: new Date(),
+//   //   // });
+
+//   //   // const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
+//   //   //   person: { id: personId },
+//   //   //   node_created_on: new Date(),
+//   //   // });
+
+//   //   for (let p of portfolio) {
+//   //     // let portfolioNameId = await upsert_Name_(p.text);
+
+//   //     console.log(p.text);
+
+//   //     //     const ministryId = await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
+//   //     //       ...ministriesDomainsKeyed[m.name_id],
+//   //     //       wikidata_qid: m.wikidata_qid,
+//   //     //       wikipedia_page: m.wikipedia_page,
+//   //     //       node_created_on: new Date(),
+//   //     //     });
+//   //   }
+
+//   //   // for (let mpc of allInOneMinisteries) {
+
+//   //   //   for (let m of ministries) {
+
+//   //   //     const cabinetMinisterId = await createNodeType("_Indian_Union_Government_Cabinet_Minister_", graphQLClient, {
+//   //   //       position_held_by: { id: politicianId },
+//   //   //       ministry: { id: ministryId },
+//   //   //       // tenure_start:
+//   //   //       node_created_on: new Date(),
+//   //   //     });
+
+//   //   //     cabinetMinistersIds.push({ id: cabinetMinisterId });
+//   //   //     ministriesIds.push({ id: ministryId });
+
+//   //   //     // position_held_by
+//   //   //     // ministry
+//   //   //   }
+//   //   // }
+//   // }
+
+//   // for (let pn of policyDomainsNew) {
+//   //   // console.log(pn);
+//   //   // let nameId = await createName(graphQLClient, {
+//   //   //   name: pn.name,
+//   //   //   language_script: { name_en: "english_latin" },
+//   //   //   node_created_on: new Date(),
+//   //   // });
+//   //   // await addPublicPolicyDomain(graphQLClient, {
+//   //   //   name_id: pn.name_id,
+//   //   //   description: pn.description,
+//   //   //   names: [{ name: pn.name }],
+//   //   //   node_created_on: new Date(),
+//   //   // });
+//   //   // await createNodeType("_Public_Policy_Domain_Government_Ministries_Departments_", graphQLClient, {
+//   //   //   name_id: pn.name_id,
+//   //   //   public_policy_domain: { name_id: pn.name_id },
+//   //   //   node_created_on: new Date(),
+//   //   // });
+//   //   // {
+//   //   //   name_id: "personnel-public-grievances-and-pensions",
+//   //   //   names: [
+//   //   //     {
+//   //   //       name: "Ministry of Personnel, Public Grievances and Pensions",
+//   //   //     },
+//   //   //   ],
+//   //   //   policy_domains: [
+//   //   //     {
+//   //   //       name_id: "government-officials",
+//   //   //     },
+//   //   //   ],
+//   //   //   policy_domain_ministries_list: [
+//   //   //     {
+//   //   //       name_id: "government-officials",
+//   //   //     },
+//   //   //   ],
+//   // }
+
+//   // for (let md of ministryDomains2) {
+//   //   // console.log(md);
+//   //   // create ministry
+//   //   await createNodeType("_Indian_Union_Government_Ministry_", graphQLClient, {
+//   //     ...md,
+//   //     node_created_on: new Date(),
+//   //   });
+//   //   console.log("done!");
+//   // }
+
+//   // for (let ic of ministersOfState) {
+//   //   const { portfolio, minister } = ic;
+
+//   //   console.log(portfolio);
+//   //   console.log(minister);
+
+//   //   // const nameId = await upsert_Name_(minister.text);
+
+//   //   // let person = {
+//   //   //   names: [{ id: nameId }],
+//   //   //   wikipedia_page: minister.result.wikipedia_page,
+//   //   //   wikidata_qid: minister.result.wikidata_qid,
+//   //   // };
+
+//   //   let politicianId = await get_Politician_By_Person_Wikidata_Qid(graphQLClient, minister.wikidata_qid);
+
+//   //   // console.log(politicianId);
+
+//   //   // get person by wikipedia_qid
+//   //   // const personId = await createNodeType("_Person_", graphQLClient, {
+//   //   //   ...person,
+//   //   //   node_created_on: new Date(),
+//   //   // });
+
+//   //   // get politician
+//   //   // const politicianId = await createNodeType("_Indian_Politician_", graphQLClient, {
+//   //   //   person: { id: personId },
+//   //   //   node_created_on: new Date(),
+//   //   // });
+
+//   //   // let isICMOf = [];
+
+//   //   // for (let p of portfolio) {
+//   //   //   // get ministry id
+//   //   //   // let ministryId = await upsert_Indian_Union_Government_Ministry(p.text);
+//   //   //   // // isICMOf.push();
+//   //   //   // const mosId = await createNodeType("_Indian_Union_Government_Minister_Of_State_", graphQLClient, {
+//   //   //   //   position_held_by: { id: politicianId },
+//   //   //   //   ministry: { name_id: ministryId },
+//   //   //   //   node_created_on: new Date(),
+//   //   //   //   cabinet: { id: "0x9be95fc96e" },
+//   //   //   // });
+//   //   // }
+
+//   //   // for (let mic of ministryDomains2) {
+//   //   //   // let ministryId = await upsert_Indian_Union_Government_Ministry(mic);
+//   //   //   let ministryId = await create_Indian_Union_Government_Ministry(mic);
+//   //   //   console.log(ministryId, mic.name_id);
+//   //   // }
+//   // }
+
+//   // Q87570577
+
+//   // let ics = Object.keys(groupedMoS);
+//   // let groupedMoSAgg: any = {};
+
+//   // for (let ic of ics) {
+//   //   // console.log(groupedMoS[ic]);
+
+//   //   groupedMoSAgg[ic] = groupedMoSAgg[ic] || [];
+//   //   groupedMoSAgg[ic] = groupedMoSAgg[ic].concat(groupedMoS[ic].map((v: any) => v.portfolio).flat());
+//   //   // console.log()
+//   // }
+
+//   // console.log(JSON.stringify(groupedMoSAgg));
+
+//   // let ics = Object.keys(groupedMoSKeyed);
+//   // for (let ic of ics) {
+//   //   let politicianId = await get_Politician_By_Person_Wikidata_Qid(graphQLClient, ic);
+
+//   //   // console.log(groupedMoSKeyed[ic]);
+//   //   // let toSave: any = { politicianId, ministries: [] };
+
+//   //   for (let p of groupedMoSKeyed[ic]) {
+//   //     // get ministry id
+//   //     let ministryId = await upsert_Indian_Union_Government_Ministry(p.text);
+
+//   //     // console.log({
+//   //     //   politicianId,
+//   //     //   ministryId,
+//   //     //   node_created_on: new Date(),
+//   //     // });
+
+//   //     // isICMOf.push();
+//   //     const mosId = await createNodeType("_Indian_Union_Government_Minister_Of_State_", graphQLClient, {
+//   //       position_held_by: { id: politicianId },
+//   //       ministry: { name_id: ministryId },
+//   //       node_created_on: new Date(),
+//   //       cabinet: { id: "0x9be95fc96e" },
+//   //     });
+
+//   //     // console.log(politicianId, p.text);
+//   //   }
+//   // }
+// })();

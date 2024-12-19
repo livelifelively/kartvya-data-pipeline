@@ -7,10 +7,7 @@ import vcListByState from "../../../admin-regions/vidhansabha/vc-list-by-state-d
 import fs from "fs";
 
 import { keyBy } from "lodash";
-import {
-  multiPolygonToDgraphMultiPolygon,
-  polygonToMultiPolygon,
-} from "../../../admin-regions/states/andhra-pradesh/scripts/districts";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../../pipeline/pipeline-utils";
 
 (async () => {
   const graphQLClient = await createGraphQLClient();

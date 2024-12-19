@@ -11,8 +11,8 @@ import {
 } from "../../../../maps/india-osm/states.fetch-geojsons";
 
 import { processListOfWikipediaPages } from "../../../districts/extract-district-page-data";
-import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../andhra-pradesh/scripts/districts";
 import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../../../pipeline/pipeline-utils";
 
 interface District {
   names: string[];
@@ -672,78 +672,78 @@ async function orchestrationFunction(stateName: string, steps: Step[]): Promise<
   }
 }
 
-(async () => {
-  initializeDirectories();
-  const stateName = "andaman and nicobar islands";
-  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateName);
+// (async () => {
+//   initializeDirectories();
+//   const stateName = "andaman and nicobar islands";
+//   console.log("DISTRICTS PROCESSING INITIALIZED: ", stateName);
 
-  const steps: Step[] = [
-    {
-      name: "Fetch State Districts",
-      function: fetchStateDistricts,
-      key: "STATE_DISTRICTS_LIST",
-      input: stateName,
-    },
-    {
-      name: "Fetch State OSM Data",
-      function: fetchStateOSMData,
-      key: "STATE_OSM_DATA",
-      input: null,
-    },
-    {
-      name: "Fetch Districts OSM Relation IDs",
-      function: fetchDistrictsOSMRelationIds,
-      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
-      input: null, // Will be set after the second step
-    },
-    {
-      name: "Fetch Districts OSM Details",
-      function: fetchDistrictsOSMDetails,
-      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
+//   const steps: Step[] = [
+//     {
+//       name: "Fetch State Districts",
+//       function: fetchStateDistricts,
+//       key: "STATE_DISTRICTS_LIST",
+//       input: stateName,
+//     },
+//     {
+//       name: "Fetch State OSM Data",
+//       function: fetchStateOSMData,
+//       key: "STATE_OSM_DATA",
+//       input: null,
+//     },
+//     {
+//       name: "Fetch Districts OSM Relation IDs",
+//       function: fetchDistrictsOSMRelationIds,
+//       key: "STATE_DISTRICTS_OSM_RELATION_IDS",
+//       input: null, // Will be set after the second step
+//     },
+//     {
+//       name: "Fetch Districts OSM Details",
+//       function: fetchDistrictsOSMDetails,
+//       key: "STATE_DISTRICTS_OSM_RELATION_IDS",
 
-      input: null, // Will be set after the third step
-    },
-    {
-      name: "Fetch Districts Wiki Details",
-      function: fetchDistrictsWikiDetails,
-      key: "STATE_DISTRICTS_WIKI_DATA",
-      input: null, // Will be set after the first step
-    },
-    {
-      name: "Fetch District SOI Geo Features",
-      function: fetchDistrictSOIGeoFeatures,
-      key: "STATE_DISTRICTS_SOI_GEO_DATA",
-      input: stateName,
-    },
-    {
-      name: "Append Wikipedia Data",
-      function: transformDistrictsWikipediaData,
-      input: null, // Will be set after the fifth step
-      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    },
-    {
-      name: "Transform Districts with OSM",
-      function: transformDistrictsWithOSM,
-      input: null, // Will be set after the fourth and seventh steps
-      key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    },
-    {
-      name: "Transform Districts with SOI Geo",
-      function: transformDistrictsWithSOIGeo,
-      input: null, // Will be set after the sixth and seventh steps
-      key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    },
-    {
-      name: "Save Districts to KnowledgeGraph",
-      function: addDistrictDataToKnowledgeGraph,
-      input: null,
-      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    },
-  ];
+//       input: null, // Will be set after the third step
+//     },
+//     {
+//       name: "Fetch Districts Wiki Details",
+//       function: fetchDistrictsWikiDetails,
+//       key: "STATE_DISTRICTS_WIKI_DATA",
+//       input: null, // Will be set after the first step
+//     },
+//     {
+//       name: "Fetch District SOI Geo Features",
+//       function: fetchDistrictSOIGeoFeatures,
+//       key: "STATE_DISTRICTS_SOI_GEO_DATA",
+//       input: stateName,
+//     },
+//     {
+//       name: "Append Wikipedia Data",
+//       function: transformDistrictsWikipediaData,
+//       input: null, // Will be set after the fifth step
+//       key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+//     },
+//     {
+//       name: "Transform Districts with OSM",
+//       function: transformDistrictsWithOSM,
+//       input: null, // Will be set after the fourth and seventh steps
+//       key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+//     },
+//     {
+//       name: "Transform Districts with SOI Geo",
+//       function: transformDistrictsWithSOIGeo,
+//       input: null, // Will be set after the sixth and seventh steps
+//       key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+//     },
+//     {
+//       name: "Save Districts to KnowledgeGraph",
+//       function: addDistrictDataToKnowledgeGraph,
+//       input: null,
+//       key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+//     },
+//   ];
 
-  try {
-    await orchestrationFunction(stateName, steps);
-  } catch (error) {
-    console.error("Error in processing: ", error);
-  }
-})();
+//   try {
+//     await orchestrationFunction(stateName, steps);
+//   } catch (error) {
+//     console.error("Error in processing: ", error);
+//   }
+// })();

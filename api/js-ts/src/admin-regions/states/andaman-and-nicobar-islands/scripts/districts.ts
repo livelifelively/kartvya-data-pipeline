@@ -115,33 +115,33 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   }
 }
 
-(async () => {
-  const stateUT = {
-    state_name: "andaman and nicobar islands",
-    name_id: "in-sut-andaman-nicobar-islands",
-    vehicle_code: "AN",
-  };
+// (async () => {
+//   const stateUT = {
+//     state_name: "andaman and nicobar islands",
+//     name_id: "in-sut-andaman-nicobar-islands",
+//     vehicle_code: "AN",
+//   };
 
-  const districtsList = [
-    {
-      name: "Nicobar",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Nicobar_district",
-      headquarter_name: "Car Nicobar",
-      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Car_Nicobar",
-    },
-    {
-      name: "North and Middle Andaman",
-      wikipedia_page: "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
-      headquarter_name: "Mayabunder",
-      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Mayabunder",
-    },
-    {
-      name: "South Andaman",
-      wikipedia_page: "https://en.wikipedia.org/wiki/South_Andaman_district",
-      headquarter_name: "Port Blair",
-      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Port_Blair",
-    },
-  ];
+//   const districtsList = [
+//     {
+//       name: "Nicobar",
+//       wikipedia_page: "https://en.wikipedia.org/wiki/Nicobar_district",
+//       headquarter_name: "Car Nicobar",
+//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Car_Nicobar",
+//     },
+//     {
+//       name: "North and Middle Andaman",
+//       wikipedia_page: "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
+//       headquarter_name: "Mayabunder",
+//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Mayabunder",
+//     },
+//     {
+//       name: "South Andaman",
+//       wikipedia_page: "https://en.wikipedia.org/wiki/South_Andaman_district",
+//       headquarter_name: "Port Blair",
+//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Port_Blair",
+//     },
+//   ];
 
-  await districtsPipeline(stateUT, districtsList);
-})();
+//   await districtsPipeline(stateUT, districtsList);
+// })();

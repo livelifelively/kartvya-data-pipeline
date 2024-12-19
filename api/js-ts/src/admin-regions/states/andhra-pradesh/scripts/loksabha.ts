@@ -1,11 +1,10 @@
 import { districtVCs } from "../../../districts/andhra-pradesh/ap.districts-vcs";
-import { allDistricts, multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./districts";
+import { allDistricts } from "./districts";
 import { vidhansabhaConstituencies } from "./vidhan-sabha";
 import { forEach, groupBy, keyBy, map } from "lodash";
 import lcData from "../lc-data.json";
 import { geoData } from "./vc-data-geo.json";
 import { json_All_PC } from "../ap.lc.geojson";
-import { allLoksabhaSeatsGeo } from "./lc-data-geo";
 
 import toSaveLC from "./lc-data-geo.json";
 
@@ -14,6 +13,7 @@ import path from "path";
 import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
 import { createNodeType } from "../../../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../../../pipeline/pipeline-utils";
 
 export let allLoksabhaSeats: any = {
   Srikakulam: {
@@ -719,9 +719,9 @@ async function getLoksabhaConstituencies() {
   // fs.writeFileSync(outputFilePath, JSON.stringify(x, null, 2));
 }
 
-(async () => {
-  await getLoksabhaConstituencies();
-})();
+// (async () => {
+//   await getLoksabhaConstituencies();
+// })();
 
 // # region connections - district, vsc, state
 

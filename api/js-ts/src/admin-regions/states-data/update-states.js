@@ -220,28 +220,28 @@ let suts = [
   },
 ];
 
-(async () => {
-  const graphQLClient = await createGraphQLClient();
+// (async () => {
+//   const graphQLClient = await createGraphQLClient();
 
-  for (let s of suts) {
-    try {
-      const name_id = s.name_id.split("and-").join("");
-      if (name_id !== s.name_id) {
-        console.log(name_id, s.name_id);
+//   for (let s of suts) {
+//     try {
+//       const name_id = s.name_id.split("and-").join("");
+//       if (name_id !== s.name_id) {
+//         console.log(name_id, s.name_id);
 
-        // await updateNodeType("_Indian_State_Union_Territory_", graphQLClient, {
-        //   filter: { name_id: { eq: s.name_id } },
-        //   set: {
-        //     // vehicle_code: s.vehicle_code,
-        //     // established_on: new Date(s.established_on),
-        //     // iso_code: s.iso_code,
-        //     name_id: name_id,
-        //   },
-        // });
-      }
-    } catch (e) {
-      console.error(e);
-      console.log(JSON.stringify(s));
-    }
-  }
-})();
+//         // await updateNodeType("_Indian_State_Union_Territory_", graphQLClient, {
+//         //   filter: { name_id: { eq: s.name_id } },
+//         //   set: {
+//         //     // vehicle_code: s.vehicle_code,
+//         //     // established_on: new Date(s.established_on),
+//         //     // iso_code: s.iso_code,
+//         //     name_id: name_id,
+//         //   },
+//         // });
+//       }
+//     } catch (e) {
+//       console.error(e);
+//       console.log(JSON.stringify(s));
+//     }
+//   }
+// })();

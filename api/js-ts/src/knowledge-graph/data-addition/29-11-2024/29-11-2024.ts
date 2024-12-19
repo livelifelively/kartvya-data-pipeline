@@ -604,32 +604,32 @@ async function processListOfWikipediaPage(url) {
   };
 }
 
-(async () => {
-  const graphQLClient = await createGraphQLClient();
+// (async () => {
+//   const graphQLClient = await createGraphQLClient();
 
-  for (let m in ministeries) {
-    for (let p in ministeries[m].portfolio) {
-      console.log(ministeries[m].portfolio[p].href);
-      const result = await processListOfWikipediaPage(ministeries[m].portfolio[p].href);
-      ministeries[m].portfolio[p] = { ...ministeries[m].portfolio[p], ...result };
-    }
-    console.log(ministeries[m].minister.href);
-    const result = await processListOfWikipediaPage(ministeries[m].minister);
-    ministeries[m].minister = { ...ministeries[m].minister, ...result };
-  }
+//   for (let m in ministeries) {
+//     for (let p in ministeries[m].portfolio) {
+//       console.log(ministeries[m].portfolio[p].href);
+//       const result = await processListOfWikipediaPage(ministeries[m].portfolio[p].href);
+//       ministeries[m].portfolio[p] = { ...ministeries[m].portfolio[p], ...result };
+//     }
+//     console.log(ministeries[m].minister.href);
+//     const result = await processListOfWikipediaPage(ministeries[m].minister);
+//     ministeries[m].minister = { ...ministeries[m].minister, ...result };
+//   }
 
-  console.log(ministeries);
+//   console.log(ministeries);
 
-  //   let indian_union_government = {
+//   //   let indian_union_government = {
 
-  //   };
+//   //   };
 
-  //   await createNodeType("_Indian_Union_Government_", graphQLClient);
+//   //   await createNodeType("_Indian_Union_Government_", graphQLClient);
 
-  // ADD POLITICIANS
-  // 1. add names
-  // 2. add person
-  // 3. add politician
-  // 4. add positions
-  // 5. add ministeries
-})();
+//   // ADD POLITICIANS
+//   // 1. add names
+//   // 2. add person
+//   // 3. add politician
+//   // 4. add positions
+//   // 5. add ministeries
+// })();

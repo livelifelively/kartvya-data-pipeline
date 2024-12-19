@@ -6,13 +6,11 @@ import { queryNodeType, createNodeType } from "../knowledge-graph/generic/generi
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
 
 import { upsert_Name_ } from "../knowledge-graph/name/name.update";
-import {
-  multiPolygonToDgraphMultiPolygon,
-  polygonToMultiPolygon,
-} from "../admin-regions/states/andhra-pradesh/scripts/districts";
+
 import { processListOfWikipediaPages } from "../admin-regions/loksabha/extract-loksabha-page-data";
 import { PipelineStep, runPipeline } from "./pipeline";
 import { generateNameId } from "../knowledge-graph/region-names/region-names.utils";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./pipeline-utils";
 
 interface LoksabhaConstituency {
   names: string[];
@@ -208,7 +206,7 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
       status = "PARTIAL";
     } else {
       if (wikiLoksabhaConstituency.results.wikidata_qid) {
-        const allNames = wikiLoksabhaConstituency.urls.reduce((agg, url) => {
+        const allNames = wikiLoksabhaConstituency.urls.reduce((agg: any, url: any) => {
           agg = agg.concat(keyedLoksabhaConstituencies[url].names);
           return agg;
         }, []);
@@ -386,7 +384,7 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
   return { savedToKnowledgeGraph, status: "SUCCESS" };
 }
 
-async function sampleFunction(stateUT) {
+async function sampleFunction(stateUT: any) {
   console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.state_name);
 
   const steps: PipelineStep[] = [

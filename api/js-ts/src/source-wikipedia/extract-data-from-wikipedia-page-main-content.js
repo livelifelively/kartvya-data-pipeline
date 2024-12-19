@@ -240,22 +240,22 @@ async function processListOfWikipediaPages(pageUrls) {
   return results;
 }
 
-(async () => {
-  // const urls = categoriesDataForVidhansabhaConstituencies.data.active;
-  const urls = [
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Bihar_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Madhya_Pradesh_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Mizoram_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Sikkim_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Tripura_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Nagaland_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Telangana_Legislative_Assembly",
-    "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Andhra_Pradesh_Legislative_Assembly",
-  ];
+// (async () => {
+//   // const urls = categoriesDataForVidhansabhaConstituencies.data.active;
+//   const urls = [
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Bihar_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Madhya_Pradesh_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Mizoram_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Sikkim_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Tripura_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Nagaland_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Telangana_Legislative_Assembly",
+//     "https://en.wikipedia.org/wiki/List_of_constituencies_of_the_Andhra_Pradesh_Legislative_Assembly",
+//   ];
 
-  const outputFilePath = path.join(__dirname, "d-vc-lc_1.json");
+//   const outputFilePath = path.join(__dirname, "d-vc-lc_1.json");
 
-  const results = await processListOfWikipediaPages(urls);
+//   const results = await processListOfWikipediaPages(urls);
 
-  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
-})();
+//   fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
+// })();

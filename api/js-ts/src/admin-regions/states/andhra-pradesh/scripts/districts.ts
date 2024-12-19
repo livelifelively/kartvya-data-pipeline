@@ -4,6 +4,7 @@ import districtMaps from "../ap.d.geo.json";
 import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
 import { createNodeType } from "../../../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
+import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../../../pipeline/pipeline-utils";
 
 // import andhraDistrictsMap from "../../../admin-regions/states/andhra-pradesh/ap.d.geo.json";
 
@@ -1957,37 +1958,6 @@ export let allDistricts: any = [
     name: "Chittoor",
   },
 ];
-
-export function polygonToMultiPolygon(feature: any) {
-  let newFeature = { ...feature };
-  if (feature.geometry.type === "Polygon") {
-    newFeature.geometry.type = "MultiPolygon";
-    newFeature.geometry.coordinates = [feature.geometry.coordinates];
-  }
-
-  return newFeature;
-}
-
-export function multiPolygonToDgraphMultiPolygon(multiPolygon: any) {
-  let toReturn: any = {
-    polygons: multiPolygon.map((polygon: any) => {
-      return {
-        coordinates: polygon.map((coordinate: any) => {
-          return {
-            points: coordinate.map((point: any) => {
-              return {
-                latitude: point[1],
-                longitude: point[0],
-              };
-            }),
-          };
-        }),
-      };
-    }),
-  };
-
-  return toReturn;
-}
 
 async function runScripts() {
   {
