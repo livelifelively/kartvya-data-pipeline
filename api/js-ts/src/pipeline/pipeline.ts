@@ -8,6 +8,7 @@ export interface PipelineStep {
   input: any;
   output?: any;
   status?: "SUCCESS" | "FAILURE" | "PARTIAL";
+  error?: any;
   key: string;
 }
 
@@ -178,7 +179,7 @@ async function orchestrationFunction(
         {
           message: `Step ${i} (${step.name}) failed.`,
           data: { ...step.output },
-          error: step.status !== "PARTIAL" ? { error: error.message } : {},
+          error: step.status !== "PARTIAL" ? { error: [error.message, step.error] } : {},
           key: `STEP_${i}_${step.status}_${step.name}`,
         },
         step.status,

@@ -291,7 +291,7 @@ export async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>):
     if (districtFeaturesSOI?.length) {
       return { districtFeaturesSOI, status: "SUCCESS" };
     } else {
-      return { status: "FAILURE" };
+      return { status: "FAILURE", error: "NO DISTRICTS FEATURES FOUND IN SOI DATA" };
     }
   } catch (e) {
     throw e;
@@ -435,6 +435,7 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
   if (districtFeaturesSOI.length !== allMatchedDistrictsOSMWiki.length) {
     return {
       status: "FAILURE",
+      error: "DISTRICTS COUNT MISMATCH. DATA MAY NOT BE SUITABLE FOR USAGE.",
     };
   }
 

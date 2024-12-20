@@ -155,7 +155,7 @@ export async function fetchLoksabhaConstituencyECIGeoFeatures(outputs: Record<st
 }> {
   const { stateUT, progressDir } = outputs;
 
-  const geojsonFile = path.join(progressDir, "../../d.geo.json");
+  const geojsonFile = path.join(progressDir, "../lc.geo.json");
   let loksabhaConstituenciesGeoECI: any;
   if (fs.existsSync(geojsonFile)) {
     loksabhaConstituenciesGeoECI = JSON.parse(fs.readFileSync(geojsonFile, "utf8"));
@@ -165,7 +165,7 @@ export async function fetchLoksabhaConstituencyECIGeoFeatures(outputs: Record<st
 
   try {
     const loksabhaConstituencyFeaturesECI: GeoJSONFeature[] = loksabhaConstituenciesGeoECI?.filter(
-      (dist: any) => dist.properties.stname.toLowerCase() === stateUT.state_name.toLowerCase()
+      (dist: any) => dist.properties.STATE_NAME.toLowerCase() === stateUT.name.toLowerCase()
     );
 
     if (loksabhaConstituencyFeaturesECI?.length) {
@@ -214,7 +214,7 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
         const toPush: LoksabhaConstituencyTransformationWikidata = {
           wikidata_qid: wikiLoksabhaConstituency.results.wikidata_qid,
           id_url: wikiLoksabhaConstituency.urls,
-          wikipedia_page: wikiLoksabhaConstituency.results.wikidata_page,
+          wikipedia_page: wikiLoksabhaConstituency.results.wikipedia_page,
           names: allNames,
           states_union_territories: stateUT.name_id,
           name_id: generateNameId(
@@ -223,15 +223,16 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
           ),
         };
 
-        transformedLoksabhaConstituenciesWikipedia.push();
-
         if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.established) {
-          toPush.established_on_string = wikiLoksabhaConstituency.results.infobox.constituencyDetails.established;
+          toPush.established_on_string = wikiLoksabhaConstituency.results.infobox.constituencyDetails.established?.text;
         }
 
         if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.reservation) {
-          toPush.reservation = wikiLoksabhaConstituency.results.infobox.constituencyDetails.reservation.toUpperCase();
+          toPush.reservation =
+            wikiLoksabhaConstituency.results.infobox.constituencyDetails.reservation.text.toUpperCase();
         }
+
+        transformedLoksabhaConstituenciesWikipedia.push(toPush);
 
         delete keyedLoksabhaConstituencies[wikiLoksabhaConstituency.url];
       }
@@ -271,7 +272,7 @@ export async function transformLoksabhaConstituenciesWithECIGeo(outputs: Record<
     (loksabhaConstituency: LoksabhaConstituencyTransformationWikidata) => {
       const matchedGeoDetail = loksabhaConstituencyFeaturesECI.find((geoDetail: GeoJSONFeature) => {
         const lowerCaseLoksabhaConstituencyNames = loksabhaConstituency.names.map((n) => n.toLowerCase());
-        return lowerCaseLoksabhaConstituencyNames.includes(geoDetail.properties.dtname.toLowerCase());
+        return lowerCaseLoksabhaConstituencyNames.includes(geoDetail.properties.PC_NAME.toLowerCase());
       });
 
       if (matchedGeoDetail) {
