@@ -366,7 +366,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   ];
 
   let outputs: Record<string, any> = {
-    stateUT: {},
+    stateUT,
     districtsList,
     districtsCount: 0,
     districts: [],
@@ -386,6 +386,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     fullMatchDistrictsOSMWiki: [],
     partialMatchDistrictsOSMWiki: [],
     allMatchedDistrictsOSMWiki: [],
+    matchDistrictsOSMWikiStatistics: {},
     unmatchedDistrictsOSMWiki: [],
     transformedDistrictsSOIGeo: [],
     unmatchedDistrictsSOIGeo: [],
@@ -404,7 +405,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
 (async () => {
   let stateUT: any = {
-    state_name: "telangana",
+    name: "telangana",
     name_id: "in-sut-telangana",
     vehicle_code: "TG",
     vidhansabhaConstituenciesCount: 119,
@@ -427,8 +428,11 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   console.log(l);
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+
+  console.log(districtsLastStep.map((val: any) => val.id_url));
+
+  // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
+  // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
 
   return;
 })();
