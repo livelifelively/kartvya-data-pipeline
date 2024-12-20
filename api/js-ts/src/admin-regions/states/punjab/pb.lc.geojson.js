@@ -1,4 +1,4 @@
-var json_All_AC = [
+[
   {
     type: "Feature",
     properties: { PC_NAME: "Anandpur Sahib", STATE_NAME: "Punjab", PC_No: 6, FID: 1, ST_CODE: "S19" },
