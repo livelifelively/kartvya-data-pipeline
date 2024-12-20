@@ -95,9 +95,27 @@ function logProgress(
   fs.writeFileSync(progressFile, JSON.stringify(progressStatus, null, 2));
 }
 
-// Modified orchestration function to return the last executed step output
-async function orchestrationFunction(outputs: Record<string, any>, steps: PipelineStep[]): Promise<any> {
+// Modified orchestration function to return the last executed step output or previously saved result if all steps were successful
+async function orchestrationFunction(
+  outputs: Record<string, any>,
+  steps: PipelineStep[],
+  resumeFromLastSuccessful: boolean
+): Promise<any> {
   const previousIteration = getLastIteration(outputs.progressFile);
+
+  // Check if the previous iteration was completely successful
+  if (
+    resumeFromLastSuccessful &&
+    previousIteration &&
+    previousIteration.steps.length === steps.length &&
+    previousIteration.steps.every((step) => step.status === "SUCCESS")
+  ) {
+    console.log("All steps were previously completed successfully. Returning the last step output.");
+    const lastStep = previousIteration.steps[previousIteration.steps.length - 1];
+    const lastStepOutput = JSON.parse(fs.readFileSync(lastStep.logFile, "utf8"));
+    return lastStepOutput.data;
+  }
+
   const currentIteration = createNewIteration(outputs.progressFile);
 
   if (
@@ -189,12 +207,17 @@ export async function runPipeline(
   steps: PipelineStep[],
   initialOutputs: any,
   progressDir: any,
-  progressFile: any
+  progressFile: any,
+  resumeFromLastSuccessful: boolean = true
 ): Promise<any> {
   initializeDirectories(progressDir, progressFile);
 
   try {
-    const lastStepOutput = await orchestrationFunction({ ...initialOutputs, progressDir, progressFile }, steps);
+    const lastStepOutput = await orchestrationFunction(
+      { ...initialOutputs, progressDir, progressFile },
+      steps,
+      resumeFromLastSuccessful
+    );
     return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
