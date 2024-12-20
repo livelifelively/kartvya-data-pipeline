@@ -1,10 +1,10 @@
-var json_All_AC = [
+[
   {
-    type: "Feature",
-    properties: { PC_NAME: "Nalgonda", STATE_NAME: "Telangana", PC_No: 13, FID: 1, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Nalgonda", "STATE_NAME": "Telangana", "PC_No": 13, "FID": 1, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.5849508, 17.3186928],
           [79.5831943, 17.3209811],
@@ -731,17 +731,17 @@ var json_All_AC = [
           [79.5960555, 17.3175048],
           [79.5931595, 17.318626],
           [79.5873387, 17.3176611],
-          [79.5849508, 17.3186928],
-        ],
-      ],
-    },
+          [79.5849508, 17.3186928]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Bhongir", STATE_NAME: "Telangana", PC_No: 14, FID: 2, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Bhongir", "STATE_NAME": "Telangana", "PC_No": 14, "FID": 2, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.0597588, 18.0163],
           [79.0568602, 18.0194611],
@@ -1681,17 +1681,17 @@ var json_All_AC = [
           [79.0802136, 18.0182077],
           [79.073841, 18.0148919],
           [79.0673931, 18.0134741],
-          [79.0597588, 18.0163],
-        ],
-      ],
-    },
+          [79.0597588, 18.0163]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Warangal (SC)", STATE_NAME: "Telangana", PC_No: 15, FID: 3, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Warangal", "STATE_NAME": "Telangana", "PC_No": 15, "FID": 3, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [80.0556476, 18.5174176],
           [80.0529194, 18.5187045],
@@ -2350,17 +2350,17 @@ var json_All_AC = [
           [80.0665306, 18.5198623],
           [80.0628704, 18.5176592],
           [80.0596581, 18.5168044],
-          [80.0556476, 18.5174176],
-        ],
-      ],
-    },
+          [80.0556476, 18.5174176]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Peddapalle (SC)", STATE_NAME: "Telangana", PC_No: 2, FID: 4, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Peddapalle", "STATE_NAME": "Telangana", "PC_No": 2, "FID": 4, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.5493231, 19.2446691],
           [79.548539, 19.2476717],
@@ -3156,7 +3156,7 @@ var json_All_AC = [
           [79.5562483, 19.2315651],
           [79.5557747, 19.2375738],
           [79.5546003, 19.2406694],
-          [79.5493231, 19.2446691],
+          [79.5493231, 19.2446691]
         ],
         [
           [79.4792758, 19.1776153],
@@ -3168,17 +3168,17 @@ var json_All_AC = [
           [79.4776315, 19.1773016],
           [79.4779204, 19.177761],
           [79.4787887, 19.1779495],
-          [79.4792758, 19.1776153],
-        ],
-      ],
-    },
+          [79.4792758, 19.1776153]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Khammam", STATE_NAME: "Telangana", PC_No: 17, FID: 5, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Khammam", "STATE_NAME": "Telangana", "PC_No": 17, "FID": 5, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [80.65858, 17.8624651],
           [80.5999168, 17.8664911],
@@ -3942,17 +3942,17 @@ var json_All_AC = [
           [80.7081419, 17.8539971],
           [80.7081545, 17.8622883],
           [80.6955254, 17.8599046],
-          [80.65858, 17.8624651],
-        ],
-      ],
-    },
+          [80.65858, 17.8624651]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Mahabubabad (ST)", STATE_NAME: "Telangana", PC_No: 16, FID: 6, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Mahabubabad", "STATE_NAME": "Telangana", "PC_No": 16, "FID": 6, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [80.4883868, 18.6267032],
           [80.4834433, 18.6281003],
@@ -4929,17 +4929,17 @@ var json_All_AC = [
           [80.5138132, 18.6131377],
           [80.5106747, 18.6156585],
           [80.4981504, 18.6176352],
-          [80.4883868, 18.6267032],
-        ],
-      ],
-    },
+          [80.4883868, 18.6267032]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Adilabad (ST)", STATE_NAME: "Telangana", PC_No: 1, FID: 7, ST_CODE: "S29" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Adilabad", "STATE_NAME": "Telangana", "PC_No": 1, "FID": 7, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [79.4788614, 19.1763233],
@@ -4951,8 +4951,8 @@ var json_All_AC = [
             [79.4776315, 19.1773016],
             [79.4776665, 19.1768119],
             [79.4780881, 19.1763205],
-            [79.4788614, 19.1763233],
-          ],
+            [79.4788614, 19.1763233]
+          ]
         ],
         [
           [
@@ -6033,18 +6033,18 @@ var json_All_AC = [
             [78.3657412, 19.8829042],
             [78.3576717, 19.8822588],
             [78.3466976, 19.8813939],
-            [78.3362405, 19.8832092],
-          ],
-        ],
-      ],
-    },
+            [78.3362405, 19.8832092]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Nizamabad", STATE_NAME: "Telangana", PC_No: 4, FID: 8, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Nizamabad", "STATE_NAME": "Telangana", "PC_No": 4, "FID": 8, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.00188, 19.0310388],
           [79.0021758, 19.0384586],
@@ -6682,17 +6682,17 @@ var json_All_AC = [
           [79.0057116, 19.0105549],
           [79.0066249, 19.0218116],
           [79.0033612, 19.0268804],
-          [79.00188, 19.0310388],
-        ],
-      ],
-    },
+          [79.00188, 19.0310388]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Medak", STATE_NAME: "Telangana", PC_No: 6, FID: 9, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Medak", "STATE_NAME": "Telangana", "PC_No": 6, "FID": 9, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.8883873, 18.2365541],
           [78.8712059, 18.241224],
@@ -7572,17 +7572,17 @@ var json_All_AC = [
           [78.9029851, 18.247075],
           [78.897352, 18.242837],
           [78.8918069, 18.235631],
-          [78.8883873, 18.2365541],
-        ],
-      ],
-    },
+          [78.8883873, 18.2365541]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Chevella", STATE_NAME: "Telangana", PC_No: 10, FID: 10, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Chevella", "STATE_NAME": "Telangana", "PC_No": 10, "FID": 10, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.8177714, 17.6278606],
           [77.8159681, 17.6278954],
@@ -8663,17 +8663,17 @@ var json_All_AC = [
           [77.8246418, 17.6337154],
           [77.8242774, 17.6277793],
           [77.820434, 17.6277796],
-          [77.8177714, 17.6278606],
-        ],
-      ],
-    },
+          [77.8177714, 17.6278606]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Mahbubnagar", STATE_NAME: "Telangana", PC_No: 11, FID: 11, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Mahbubnagar", "STATE_NAME": "Telangana", "PC_No": 11, "FID": 11, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.7949477, 17.2437826],
           [77.7926048, 17.2452446],
@@ -9765,17 +9765,17 @@ var json_All_AC = [
           [77.7789118, 17.2220534],
           [77.7830694, 17.2235548],
           [77.7952664, 17.2363039],
-          [77.7949477, 17.2437826],
-        ],
-      ],
-    },
+          [77.7949477, 17.2437826]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Zahirabad", STATE_NAME: "Telangana", PC_No: 5, FID: 12, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Zahirabad", "STATE_NAME": "Telangana", "PC_No": 5, "FID": 12, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.8124015, 18.6481923],
           [77.8053877, 18.6495525],
@@ -10774,17 +10774,23 @@ var json_All_AC = [
           [77.8135774, 18.640549],
           [77.8145266, 18.6422201],
           [77.8147601, 18.6465124],
-          [77.8124015, 18.6481923],
-        ],
-      ],
-    },
+          [77.8124015, 18.6481923]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Nagarkurnool (SC)", STATE_NAME: "Telangana", PC_No: 12, FID: 13, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Nagarkurnool",
+      "STATE_NAME": "Telangana",
+      "PC_No": 12,
+      "FID": 13,
+      "ST_CODE": "S29"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.454828, 16.9769684],
           [78.454262, 16.9792227],
@@ -11617,17 +11623,17 @@ var json_All_AC = [
           [78.4682285, 16.9801694],
           [78.4639176, 16.9784435],
           [78.4600824, 16.976904],
-          [78.454828, 16.9769684],
-        ],
-      ],
-    },
+          [78.454828, 16.9769684]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Karimnagar", STATE_NAME: "Telangana", PC_No: 3, FID: 14, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Karimnagar", "STATE_NAME": "Telangana", "PC_No": 3, "FID": 14, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.8409603, 18.8487051],
           [78.8421781, 18.8511032],
@@ -12204,17 +12210,17 @@ var json_All_AC = [
           [78.8359311, 18.8442487],
           [78.8387711, 18.8473065],
           [78.8407538, 18.8467421],
-          [78.8409603, 18.8487051],
-        ],
-      ],
-    },
+          [78.8409603, 18.8487051]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Malkajgiri", STATE_NAME: "Telangana", PC_No: 7, FID: 15, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Malkajgiri", "STATE_NAME": "Telangana", "PC_No": 7, "FID": 15, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.4609621, 17.6962588],
           [78.4592236, 17.6976772],
@@ -12560,17 +12566,17 @@ var json_All_AC = [
           [78.4775494, 17.6869877],
           [78.4738006, 17.688538],
           [78.4669559, 17.6913699],
-          [78.4609621, 17.6962588],
-        ],
-      ],
-    },
+          [78.4609621, 17.6962588]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Hyderabad", STATE_NAME: "Telangana", PC_No: 9, FID: 16, ST_CODE: "S29" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Hyderabad", "STATE_NAME": "Telangana", "PC_No": 9, "FID": 16, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [78.415082, 17.4023281],
@@ -12625,8 +12631,8 @@ var json_All_AC = [
             [78.4210509, 17.3877584],
             [78.4288614, 17.3895542],
             [78.4179331, 17.3967677],
-            [78.415082, 17.4023281],
-          ],
+            [78.415082, 17.4023281]
+          ]
         ],
         [
           [
@@ -12755,18 +12761,18 @@ var json_All_AC = [
             [78.5150287, 17.3859958],
             [78.514124, 17.3873007],
             [78.5129768, 17.3873199],
-            [78.5108067, 17.3878165],
-          ],
-        ],
-      ],
-    },
+            [78.5108067, 17.3878165]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Secunderabad", STATE_NAME: "Telangana", PC_No: 8, FID: 17, ST_CODE: "S29" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Secunderabad", "STATE_NAME": "Telangana", "PC_No": 8, "FID": 17, "ST_CODE": "S29" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.514124, 17.3873007],
           [78.5159014, 17.3877762],
@@ -12950,9 +12956,9 @@ var json_All_AC = [
           [78.5101781, 17.3886329],
           [78.5108067, 17.3878165],
           [78.5129768, 17.3873199],
-          [78.514124, 17.3873007],
-        ],
-      ],
-    },
-  },
-];
+          [78.514124, 17.3873007]
+        ]
+      ]
+    }
+  }
+]

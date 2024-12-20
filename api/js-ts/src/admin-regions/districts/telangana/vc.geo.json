@@ -1,12 +1,12 @@
-var json_All_AC = {
-  type: "FeatureCollection",
-  features: [
+{
+  "type": "FeatureCollection",
+  "features": [
     {
-      type: "Feature",
-      id: 0,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.412113764935071, 17.422743070428755],
             [78.415594159796655, 17.429401291605746],
@@ -52,18 +52,18 @@ var json_All_AC = {
             [78.413334416656198, 17.406712970255938],
             [78.413848445985863, 17.4067129668327],
             [78.412113717613096, 17.416199015202881],
-            [78.412113764935071, 17.422743070428755],
-          ],
-        ],
+            [78.412113764935071, 17.422743070428755]
+          ]
+        ]
       },
-      properties: { FID: 0, AC_NO: 62, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Sanathnagar" },
+      "properties": { "FID": 0, "AC_NO": 62, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Sanathnagar" }
     },
     {
-      type: "Feature",
-      id: 1,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.515464131375595, 17.386268779173161],
             [78.51432184423993, 17.386268786845811],
@@ -114,18 +114,18 @@ var json_All_AC = {
             [78.516430057959965, 17.381607163428306],
             [78.51652525295917, 17.382273466725191],
             [78.516382486713312, 17.384938682534994],
-            [78.515464131375595, 17.386268779173161],
-          ],
-        ],
+            [78.515464131375595, 17.386268779173161]
+          ]
+        ]
       },
-      properties: { FID: 1, AC_NO: 58, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Malakpet" },
+      "properties": { "FID": 1, "AC_NO": 58, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Malakpet" }
     },
     {
-      type: "Feature",
-      id: 2,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.471060670154316, 17.436735056544606],
             [78.471251077692472, 17.440352133435464],
@@ -174,18 +174,18 @@ var json_All_AC = {
             [78.476391354750888, 17.437877255418513],
             [78.474868282073416, 17.434831305704343],
             [78.47144141730692, 17.434640956253048],
-            [78.471060670154316, 17.436735056544606],
-          ],
-        ],
+            [78.471060670154316, 17.436735056544606]
+          ]
+        ]
       },
-      properties: { FID: 2, AC_NO: 57, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Musheerabad" },
+      "properties": { "FID": 2, "AC_NO": 57, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Musheerabad" }
     },
     {
-      type: "Feature",
-      id: 3,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.490860099068001, 17.405894575607295],
             [78.488575548785121, 17.409321296513834],
@@ -234,18 +234,18 @@ var json_All_AC = {
             [78.506211736951556, 17.404773049078482],
             [78.496590087681469, 17.400599333931567],
             [78.495854270074716, 17.400276312739805],
-            [78.490860099068001, 17.405894575607295],
-          ],
-        ],
+            [78.490860099068001, 17.405894575607295]
+          ]
+        ]
       },
-      properties: { FID: 3, AC_NO: 60, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Khairatabad" },
+      "properties": { "FID": 3, "AC_NO": 60, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Khairatabad" }
     },
     {
-      type: "Feature",
-      id: 4,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.455447758392296, 17.380930301514077],
             [78.454876618604729, 17.381453830181041],
@@ -293,18 +293,18 @@ var json_All_AC = {
             [78.45944575903809, 17.380073598437335],
             [78.458255874768952, 17.379978420619725],
             [78.457637135667596, 17.379978424751648],
-            [78.455447758392296, 17.380930301514077],
-          ],
-        ],
+            [78.455447758392296, 17.380930301514077]
+          ]
+        ]
       },
-      properties: { FID: 4, AC_NO: 65, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Goshamahal" },
+      "properties": { "FID": 4, "AC_NO": 65, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Goshamahal" }
     },
     {
-      type: "Feature",
-      id: 5,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.493419241076012, 17.372390115571609],
             [78.49222935945599, 17.372532902634479],
@@ -351,18 +351,18 @@ var json_All_AC = {
             [78.497322368440607, 17.373563875675071],
             [78.496569298688158, 17.372985412685754],
             [78.49413316754358, 17.372009365941217],
-            [78.493419241076012, 17.372390115571609],
-          ],
-        ],
+            [78.493419241076012, 17.372390115571609]
+          ]
+        ]
       },
-      properties: { FID: 5, AC_NO: 66, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Charminar" },
+      "properties": { "FID": 5, "AC_NO": 66, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Charminar" }
     },
     {
-      type: "Feature",
-      id: 6,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.423725319119427, 17.480876151253543],
             [78.428008919333251, 17.483731710273847],
@@ -433,18 +433,18 @@ var json_All_AC = {
             [78.435857954788872, 17.478410687967067],
             [78.431786831487685, 17.477053739840972],
             [78.422136763403117, 17.474189078893552],
-            [78.423725319119427, 17.480876151253543],
-          ],
-        ],
+            [78.423725319119427, 17.480876151253543]
+          ]
+        ]
       },
-      properties: { FID: 6, AC_NO: 46, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kukatpally" },
+      "properties": { "FID": 6, "AC_NO": 46, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kukatpally" }
     },
     {
-      type: "Feature",
-      id: 7,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.507439558371104, 17.328402731617459],
             [78.507455913511066, 17.328495478103818],
@@ -480,18 +480,18 @@ var json_All_AC = {
             [78.506856583162246, 17.322385201036358],
             [78.508684263447847, 17.322445453727703],
             [78.508580323681286, 17.324567642687363],
-            [78.507439558371104, 17.328402731617459],
-          ],
-        ],
+            [78.507439558371104, 17.328402731617459]
+          ]
+        ]
       },
-      properties: { FID: 7, AC_NO: 67, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Chandrayangutta" },
+      "properties": { "FID": 7, "AC_NO": 67, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Chandrayangutta" }
     },
     {
-      type: "Feature",
-      id: 8,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.881926191913138, 17.582193638551789],
             [78.877974373387389, 17.57587117901998],
@@ -748,18 +748,18 @@ var json_All_AC = {
             [78.902232924770743, 17.574127551926647],
             [78.899335025977877, 17.572582103408042],
             [78.897770846059544, 17.571747926481564],
-            [78.881926191913138, 17.582193638551789],
-          ],
-        ],
+            [78.881926191913138, 17.582193638551789]
+          ]
+        ]
       },
-      properties: { FID: 8, AC_NO: 94, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bhongir" },
+      "properties": { "FID": 8, "AC_NO": 94, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Bhongir" }
     },
     {
-      type: "Feature",
-      id: 9,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.622781491640367, 18.011412516725599],
             [79.621924851399186, 18.020407626964783],
@@ -851,18 +851,18 @@ var json_All_AC = {
             [79.62918446789935, 18.008457532094496],
             [79.626208333146295, 18.008842460538578],
             [79.623495395380871, 18.008271363941365],
-            [79.622781491640367, 18.011412516725599],
-          ],
-        ],
+            [79.622781491640367, 18.011412516725599]
+          ]
+        ]
       },
-      properties: { FID: 9, AC_NO: 106, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Warangal East" },
+      "properties": { "FID": 9, "AC_NO": 106, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Warangal East" }
     },
     {
-      type: "Feature",
-      id: 10,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.611571177811371, 18.029461444644522],
             [79.611721973034165, 18.030969194808041],
@@ -964,18 +964,18 @@ var json_All_AC = {
             [79.610063287622893, 18.0210180528263],
             [79.612174263218108, 18.024335087873556],
             [79.612777412282824, 18.026898259753303],
-            [79.611571177811371, 18.029461444644522],
-          ],
-        ],
+            [79.611571177811371, 18.029461444644522]
+          ]
+        ]
       },
-      properties: { FID: 10, AC_NO: 105, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Warangal West" },
+      "properties": { "FID": 10, "AC_NO": 105, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Warangal West" }
     },
     {
-      type: "Feature",
-      id: 11,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.02435690598378, 18.106703454696468],
             [80.021962236312447, 18.108437477108922],
@@ -1242,18 +1242,18 @@ var json_All_AC = {
             [80.018497746467233, 18.020453294368529],
             [80.020877600072822, 18.030566816206004],
             [80.02296020828696, 18.066559107714504],
-            [80.02435690598378, 18.106703454696468],
-          ],
-        ],
+            [80.02435690598378, 18.106703454696468]
+          ]
+        ]
       },
-      properties: { FID: 11, AC_NO: 103, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Narsampet" },
+      "properties": { "FID": 11, "AC_NO": 103, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Narsampet" }
     },
     {
-      type: "Feature",
-      id: 12,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.715029054368657, 18.233062555938222],
             [79.716516433582015, 18.23603711599327],
@@ -1631,18 +1631,18 @@ var json_All_AC = {
             [79.727820126210759, 18.213132824268197],
             [79.72276321790774, 18.224138779353481],
             [79.717706258502119, 18.229195591205794],
-            [79.715029054368657, 18.233062555938222],
-          ],
-        ],
+            [79.715029054368657, 18.233062555938222]
+          ]
+        ]
       },
-      properties: { FID: 12, AC_NO: 104, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Parkal" },
+      "properties": { "FID": 12, "AC_NO": 104, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Parkal" }
     },
     {
-      type: "Feature",
-      id: 13,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.597975136130557, 18.139570125462402],
             [79.590733222696301, 18.141361329057794],
@@ -2067,18 +2067,24 @@ var json_All_AC = {
             [79.61094764479401, 18.140049208301651],
             [79.605835514601154, 18.139407645481498],
             [79.604276940953966, 18.139212046925074],
-            [79.597975136130557, 18.139570125462402],
-          ],
-        ],
+            [79.597975136130557, 18.139570125462402]
+          ]
+        ]
       },
-      properties: { FID: 13, AC_NO: 107, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Waradhanapet (SC)" },
+      "properties": {
+        "FID": 13,
+        "AC_NO": 107,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Waradhanapet (SC)"
+      }
     },
     {
-      type: "Feature",
-      id: 14,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.064547647468828, 16.617586587264761],
             [78.061870427926067, 16.619966258688073],
@@ -2405,18 +2411,18 @@ var json_All_AC = {
             [78.070199524739721, 16.607770477580807],
             [78.065737492312749, 16.611934900023776],
             [78.065519654628289, 16.612969615983701],
-            [78.064547647468828, 16.617586587264761],
-          ],
-        ],
+            [78.064547647468828, 16.617586587264761]
+          ]
+        ]
       },
-      properties: { FID: 14, AC_NO: 78, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Wanaparthy" },
+      "properties": { "FID": 14, "AC_NO": 78, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Wanaparthy" }
     },
     {
-      type: "Feature",
-      id: 15,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.333071865210044, 16.39271156968849],
             [78.325040158475645, 16.392414162864682],
@@ -2663,18 +2669,18 @@ var json_All_AC = {
             [78.356869504396883, 16.391819050538349],
             [78.349730208969675, 16.391521639158331],
             [78.343483296869536, 16.387059826857801],
-            [78.333071865210044, 16.39271156968849],
-          ],
-        ],
+            [78.333071865210044, 16.39271156968849]
+          ]
+        ]
       },
-      properties: { FID: 15, AC_NO: 85, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kollapur" },
+      "properties": { "FID": 15, "AC_NO": 85, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kollapur" }
     },
     {
-      type: "Feature",
-      id: 16,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.591639379217341, 17.447058870271398],
             [77.574418206671027, 17.453158478923342],
@@ -3006,18 +3012,18 @@ var json_All_AC = {
             [77.611837948706778, 17.443188426429636],
             [77.605701152799654, 17.4420463704007],
             [77.597126047521115, 17.441636389290419],
-            [77.591639379217341, 17.447058870271398],
-          ],
-        ],
+            [77.591639379217341, 17.447058870271398]
+          ]
+        ]
       },
-      properties: { FID: 16, AC_NO: 56, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Tandur" },
+      "properties": { "FID": 16, "AC_NO": 56, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Tandur" }
     },
     {
-      type: "Feature",
-      id: 17,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.790581841528521, 17.304951212507909],
             [79.786613397130736, 17.312470854625726],
@@ -3295,18 +3301,18 @@ var json_All_AC = {
             [79.813633522864762, 17.273288460011226],
             [79.80867294109683, 17.279437998310911],
             [79.806585157472327, 17.282382322988418],
-            [79.790581841528521, 17.304951212507909],
-          ],
-        ],
+            [79.790581841528521, 17.304951212507909]
+          ]
+        ]
       },
-      properties: { FID: 17, AC_NO: 90, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kodad" },
+      "properties": { "FID": 17, "AC_NO": 90, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kodad" }
     },
     {
-      type: "Feature",
-      id: 18,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.60818122707235, 17.491926408501737],
             [79.599042953758669, 17.494972435446069],
@@ -3646,18 +3652,24 @@ var json_All_AC = {
             [79.623286955118033, 17.484816144614271],
             [79.621346142400171, 17.485301004377373],
             [79.614070882707537, 17.487118532098172],
-            [79.60818122707235, 17.491926408501737],
-          ],
-        ],
+            [79.60818122707235, 17.491926408501737]
+          ]
+        ]
       },
-      properties: { FID: 18, AC_NO: 96, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Thungathurthi (SC)" },
+      "properties": {
+        "FID": 18,
+        "AC_NO": 96,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Thungathurthi (SC)"
+      }
     },
     {
-      type: "Feature",
-      id: 19,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.766576019780146, 16.985289159663477],
             [79.766027076277766, 16.987631295324562],
@@ -3857,18 +3869,18 @@ var json_All_AC = {
             [79.768143632634875, 16.963662896914858],
             [79.766953617247523, 16.963927342167064],
             [79.765668570646923, 16.967211273837204],
-            [79.766576019780146, 16.985289159663477],
-          ],
-        ],
+            [79.766576019780146, 16.985289159663477]
+          ]
+        ]
       },
-      properties: { FID: 19, AC_NO: 89, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Huzurnagar" },
+      "properties": { "FID": 19, "AC_NO": 89, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Huzurnagar" }
     },
     {
-      type: "Feature",
-      id: 20,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.586437409358993, 17.317620458284093],
             [79.584676272756681, 17.319903344612964],
@@ -4200,18 +4212,18 @@ var json_All_AC = {
             [79.597541172289695, 17.316445711081371],
             [79.59465081040716, 17.317557362663962],
             [79.588817165140838, 17.31657934196738],
-            [79.586437409358993, 17.317620458284093],
-          ],
-        ],
+            [79.586437409358993, 17.317620458284093]
+          ]
+        ]
       },
-      properties: { FID: 20, AC_NO: 91, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Suryapet" },
+      "properties": { "FID": 20, "AC_NO": 91, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Suryapet" }
     },
     {
-      type: "Feature",
-      id: 21,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.5989569676874, 18.544462637711973],
             [78.591908925137517, 18.549506811241411],
@@ -4404,18 +4416,18 @@ var json_All_AC = {
             [78.623507662215644, 18.522622868061223],
             [78.620651974316559, 18.526906276038055],
             [78.613512728464769, 18.534045305953587],
-            [78.5989569676874, 18.544462637711973],
-          ],
-        ],
+            [78.5989569676874, 18.544462637711973]
+          ]
+        ]
       },
-      properties: { FID: 21, AC_NO: 29, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Sircilla" },
+      "properties": { "FID": 21, "AC_NO": 29, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Sircilla" }
     },
     {
-      type: "Feature",
-      id: 22,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.061191087877887, 18.015317609291294],
             [79.058318192648244, 18.018443282638824],
@@ -4632,18 +4644,18 @@ var json_All_AC = {
             [79.081657093867321, 18.017221185612915],
             [79.07523169824249, 18.01388971214881],
             [79.068806317856016, 18.012461964798941],
-            [79.061191087877887, 18.015317609291294],
-          ],
-        ],
+            [79.061191087877887, 18.015317609291294]
+          ]
+        ]
       },
-      properties: { FID: 22, AC_NO: 98, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Jangoan" },
+      "properties": { "FID": 22, "AC_NO": 98, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Jangoan" }
     },
     {
-      type: "Feature",
-      id: 23,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.889786324173272, 18.235582640444591],
             [78.872594839222771, 18.24020289060746],
@@ -5031,18 +5043,18 @@ var json_All_AC = {
             [78.904374972428926, 18.2460851474907],
             [78.898742213654771, 18.241843836389634],
             [78.893203444280488, 18.234664281215373],
-            [78.889786324173272, 18.235582640444591],
-          ],
-        ],
+            [78.889786324173272, 18.235582640444591]
+          ]
+        ]
       },
-      properties: { FID: 23, AC_NO: 33, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Siddipet" },
+      "properties": { "FID": 23, "AC_NO": 33, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Siddipet" }
     },
     {
-      type: "Feature",
-      id: 24,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.995749856992745, 18.053483284737919],
             [77.994094433592693, 18.053998015954555],
@@ -5518,18 +5530,18 @@ var json_All_AC = {
             [78.007226059262862, 18.05273386193814],
             [78.002466524503461, 18.052733893474137],
             [77.998220342872628, 18.05271512150588],
-            [77.995749856992745, 18.053483284737919],
-          ],
-        ],
+            [77.995749856992745, 18.053483284737919]
+          ]
+        ]
       },
-      properties: { FID: 24, AC_NO: 36, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Andole (SC)" },
+      "properties": { "FID": 24, "AC_NO": 36, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Andole (SC)" }
     },
     {
-      type: "Feature",
-      id: 25,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.263540081226367, 17.965835634755528],
             [78.26096621928528, 17.966398660028506],
@@ -5881,18 +5893,18 @@ var json_All_AC = {
             [78.275239715316545, 17.9661880164638],
             [78.270899113206156, 17.965922306557161],
             [78.264503486314894, 17.965624892426636],
-            [78.263540081226367, 17.965835634755528],
-          ],
-        ],
+            [78.263540081226367, 17.965835634755528]
+          ]
+        ]
       },
-      properties: { FID: 25, AC_NO: 37, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Narsapur" },
+      "properties": { "FID": 25, "AC_NO": 37, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Narsapur" }
     },
     {
-      type: "Feature",
-      id: 26,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.645222662783226, 17.945368777950822],
             [77.644217379407124, 17.946337370763622],
@@ -6191,18 +6203,18 @@ var json_All_AC = {
             [77.652879394393295, 17.940044709885292],
             [77.649609747871622, 17.939805499217012],
             [77.643578473677948, 17.941162514019403],
-            [77.645222662783226, 17.945368777950822],
-          ],
-        ],
+            [77.645222662783226, 17.945368777950822]
+          ]
+        ]
       },
-      properties: { FID: 26, AC_NO: 38, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Zaheerabad (SC)" },
+      "properties": { "FID": 26, "AC_NO": 38, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Zaheerabad (SC)" }
     },
     {
-      type: "Feature",
-      id: 27,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.935609264506184, 17.725173802661573],
             [77.929822034379143, 17.724826488668658],
@@ -6493,18 +6505,18 @@ var json_All_AC = {
             [77.94427910569047, 17.712822535412016],
             [77.939043626710983, 17.714012397843295],
             [77.937615785103432, 17.71663003105186],
-            [77.935609264506184, 17.725173802661573],
-          ],
-        ],
+            [77.935609264506184, 17.725173802661573]
+          ]
+        ]
       },
-      properties: { FID: 27, AC_NO: 39, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Sangareddy" },
+      "properties": { "FID": 27, "AC_NO": 39, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Sangareddy" }
     },
     {
-      type: "Feature",
-      id: 28,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.374007664304429, 17.701178586832935],
             [78.369819342238657, 17.710316499898049],
@@ -6725,18 +6737,18 @@ var json_All_AC = {
             [78.397043846440866, 17.706889609177431],
             [78.386001714525875, 17.704795585314255],
             [78.377053758990641, 17.70022670376493],
-            [78.374007664304429, 17.701178586832935],
-          ],
-        ],
+            [78.374007664304429, 17.701178586832935]
+          ]
+        ]
       },
-      properties: { FID: 28, AC_NO: 40, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Patancheru" },
+      "properties": { "FID": 28, "AC_NO": 40, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Patancheru" }
     },
     {
-      type: "Feature",
-      id: 29,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.700714566194534, 17.394499350099455],
             [78.700049626614842, 17.394857384334756],
@@ -6974,18 +6986,18 @@ var json_All_AC = {
             [78.730391590127951, 17.388313122304357],
             [78.723252317319066, 17.391585198351947],
             [78.711650937768965, 17.388610707849324],
-            [78.700714566194534, 17.394499350099455],
-          ],
-        ],
+            [78.700714566194534, 17.394499350099455]
+          ]
+        ]
       },
-      properties: { FID: 29, AC_NO: 48, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Ibrahimpatnam" },
+      "properties": { "FID": 29, "AC_NO": 48, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Ibrahimpatnam" }
     },
     {
-      type: "Feature",
-      id: 30,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.599064978903087, 17.370843377139526],
             [78.595495340662637, 17.372271194859842],
@@ -7052,18 +7064,18 @@ var json_All_AC = {
             [78.595634699504231, 17.352524153758843],
             [78.596040569830237, 17.355249020821521],
             [78.597300617476961, 17.363708526978805],
-            [78.599064978903087, 17.370843377139526],
-          ],
-        ],
+            [78.599064978903087, 17.370843377139526]
+          ]
+        ]
       },
-      properties: { FID: 30, AC_NO: 49, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Lal Bahadur Nagar" },
+      "properties": { "FID": 30, "AC_NO": 49, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Lal Bahadur Nagar" }
     },
     {
-      type: "Feature",
-      id: 31,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.324374107478135, 17.408310440343037],
             [78.321451653498698, 17.40801461322943],
@@ -7513,18 +7525,18 @@ var json_All_AC = {
             [78.329331072947156, 17.407405202452292],
             [78.3282221308027, 17.408193486261503],
             [78.326837425821353, 17.408125671958008],
-            [78.324374107478135, 17.408310440343037],
-          ],
-        ],
+            [78.324374107478135, 17.408310440343037]
+          ]
+        ]
       },
-      properties: { FID: 31, AC_NO: 51, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Rajendranagar" },
+      "properties": { "FID": 31, "AC_NO": 51, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Rajendranagar" }
     },
     {
-      type: "Feature",
-      id: 32,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.458410203610299, 17.363303948354453],
             [78.449118750946596, 17.370985296276416],
@@ -7590,18 +7602,18 @@ var json_All_AC = {
             [78.460340349970522, 17.352340780226147],
             [78.462339384720806, 17.356738371921352],
             [78.462796302648087, 17.357138151230963],
-            [78.458410203610299, 17.363303948354453],
-          ],
-        ],
+            [78.458410203610299, 17.363303948354453]
+          ]
+        ]
       },
-      properties: { FID: 32, AC_NO: 69, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bahadurpura" },
+      "properties": { "FID": 32, "AC_NO": 69, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Bahadurpura" }
     },
     {
-      type: "Feature",
-      id: 33,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.515691769454207, 17.325847908412545],
             [78.513899382516627, 17.327072437911461],
@@ -7875,18 +7887,18 @@ var json_All_AC = {
             [78.521881198858068, 17.327051674072841],
             [78.518457822141002, 17.326077407607439],
             [78.516564722195213, 17.325646168987998],
-            [78.515691769454207, 17.325847908412545],
-          ],
-        ],
+            [78.515691769454207, 17.325847908412545]
+          ]
+        ]
       },
-      properties: { FID: 33, AC_NO: 50, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Maheswaram" },
+      "properties": { "FID": 33, "AC_NO": 50, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Maheswaram" }
     },
     {
-      type: "Feature",
-      id: 34,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.819022296687123, 17.626834303921115],
             [77.817220985934341, 17.626873456195039],
@@ -8318,18 +8330,18 @@ var json_All_AC = {
             [77.825893737807817, 17.632677510615533],
             [77.825512934435707, 17.626775961996493],
             [77.821705308066285, 17.62677598620094],
-            [77.819022296687123, 17.626834303921115],
-          ],
-        ],
+            [77.819022296687123, 17.626834303921115]
+          ]
+        ]
       },
-      properties: { FID: 34, AC_NO: 55, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Vicarabad (SC)" },
+      "properties": { "FID": 34, "AC_NO": 55, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Vicarabad (SC)" }
     },
     {
-      type: "Feature",
-      id: 35,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.346528121767548, 17.521229565397284],
             [78.338497662563285, 17.523788861163808],
@@ -8469,18 +8481,18 @@ var json_All_AC = {
             [78.382223948653206, 17.429136612906102],
             [78.345813722586769, 17.456264940819391],
             [78.343672041742551, 17.471256791933158],
-            [78.346528121767548, 17.521229565397284],
-          ],
-        ],
+            [78.346528121767548, 17.521229565397284]
+          ]
+        ]
       },
-      properties: { FID: 35, AC_NO: 52, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Serilingampally" },
+      "properties": { "FID": 35, "AC_NO": 52, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Serilingampally" }
     },
     {
-      type: "Feature",
-      id: 36,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.108546643991957, 17.478076094610866],
             [78.106842758011609, 17.478116175561251],
@@ -8967,18 +8979,18 @@ var json_All_AC = {
             [78.139034919338542, 17.48242832150175],
             [78.130571839772472, 17.483337451975029],
             [78.115007804198157, 17.47792410689506],
-            [78.108546643991957, 17.478076094610866],
-          ],
-        ],
+            [78.108546643991957, 17.478076094610866]
+          ]
+        ]
       },
-      properties: { FID: 36, AC_NO: 53, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Chevella (SC)" },
+      "properties": { "FID": 36, "AC_NO": 53, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Chevella (SC)" }
     },
     {
-      type: "Feature",
-      id: 37,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.483029218949866, 18.820377507263846],
             [79.477048328251627, 18.824437235948896],
@@ -9097,18 +9109,18 @@ var json_All_AC = {
             [79.49920615952297, 18.804197030341225],
             [79.490439116266572, 18.813906909221259],
             [79.488798819509242, 18.815339276758664],
-            [79.483029218949866, 18.820377507263846],
-          ],
-        ],
+            [79.483029218949866, 18.820377507263846]
+          ]
+        ]
       },
-      properties: { FID: 37, AC_NO: 23, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Ramagundam" },
+      "properties": { "FID": 37, "AC_NO": 23, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Ramagundam" }
     },
     {
-      type: "Feature",
-      id: 38,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.39762247577147, 18.684728562141949],
             [79.389761759250817, 18.687872778476638],
@@ -9288,18 +9300,18 @@ var json_All_AC = {
             [79.41219600575819, 18.685765613055352],
             [79.407609995808912, 18.685790437174891],
             [79.398685855816538, 18.684303220036174],
-            [79.39762247577147, 18.684728562141949],
-          ],
-        ],
+            [79.39762247577147, 18.684728562141949]
+          ]
+        ]
       },
-      properties: { FID: 38, AC_NO: 25, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Peddapalle" },
+      "properties": { "FID": 38, "AC_NO": 25, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Peddapalle" }
     },
     {
-      type: "Feature",
-      id: 39,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.429712717730297, 18.963420298769226],
             [78.425024495152428, 18.967686918304924],
@@ -9515,18 +9527,18 @@ var json_All_AC = {
             [78.457444846829219, 18.964929781378892],
             [78.452469008310331, 18.961461985161989],
             [78.445683805857556, 18.960708157568323],
-            [78.429712717730297, 18.963420298769226],
-          ],
-        ],
+            [78.429712717730297, 18.963420298769226]
+          ]
+        ]
       },
-      properties: { FID: 39, AC_NO: 19, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Balkonda" },
+      "properties": { "FID": 39, "AC_NO": 19, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Balkonda" }
     },
     {
-      type: "Feature",
-      id: 40,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 40,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.290894509926588, 18.917034278857749],
             [78.286950520663879, 18.922555703244527],
@@ -9708,18 +9720,18 @@ var json_All_AC = {
             [78.304982709744365, 18.913036348101315],
             [78.301175106580388, 18.916463087166633],
             [78.295463659202412, 18.916082382352911],
-            [78.290894509926588, 18.917034278857749],
-          ],
-        ],
+            [78.290894509926588, 18.917034278857749]
+          ]
+        ]
       },
-      properties: { FID: 40, AC_NO: 11, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Armur" },
+      "properties": { "FID": 40, "AC_NO": 11, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Armur" }
     },
     {
-      type: "Feature",
-      id: 41,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 41,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.071434798499894, 18.88527023723568],
             [78.070601022034552, 18.891384672635198],
@@ -9942,18 +9954,18 @@ var json_All_AC = {
             [78.068916460626284, 18.860064507877262],
             [78.071077710428014, 18.869207528482796],
             [78.071123212550717, 18.871254330419521],
-            [78.071434798499894, 18.88527023723568],
-          ],
-        ],
+            [78.071434798499894, 18.88527023723568]
+          ]
+        ]
       },
-      properties: { FID: 41, AC_NO: 12, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bodhan" },
+      "properties": { "FID": 41, "AC_NO": 12, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Bodhan" }
     },
     {
-      type: "Feature",
-      id: 42,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 42,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.040724110919172, 18.651683187392969],
             [78.034822365556934, 18.651895893984296],
@@ -10026,18 +10038,18 @@ var json_All_AC = {
             [78.05295294470487, 18.650141275529617],
             [78.052314928233301, 18.65157677475608],
             [78.050719860506518, 18.651417286586096],
-            [78.040724110919172, 18.651683187392969],
-          ],
-        ],
+            [78.040724110919172, 18.651683187392969]
+          ]
+        ]
       },
-      properties: { FID: 42, AC_NO: 17, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nizamabad (Urban)" },
+      "properties": { "FID": 42, "AC_NO": 17, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nizamabad (Urban)" }
     },
     {
-      type: "Feature",
-      id: 43,
-      geometry: {
-        type: "MultiPolygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 43,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
           [
             [
               [78.01342526316472, 18.564004122625217],
@@ -10074,8 +10086,8 @@ var json_All_AC = {
               [78.003335080606618, 18.568763511243031],
               [78.004157665884676, 18.561853671975861],
               [78.004286927719292, 18.560767846751904],
-              [78.01342526316472, 18.564004122625217],
-            ],
+              [78.01342526316472, 18.564004122625217]
+            ]
           ],
           [
             [
@@ -10462,19 +10474,19 @@ var json_All_AC = {
               [78.128675273104903, 18.702103087684012],
               [78.129450333288233, 18.71313618888119],
               [78.129725944002558, 18.717059552696178],
-              [78.106750049616295, 18.736763845710762],
-            ],
-          ],
-        ],
+              [78.106750049616295, 18.736763845710762]
+            ]
+          ]
+        ]
       },
-      properties: { FID: 43, AC_NO: 18, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nizamabad (Rural)" },
+      "properties": { "FID": 43, "AC_NO": 18, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nizamabad (Rural)" }
     },
     {
-      type: "Feature",
-      id: 44,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 44,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.978191850701606, 19.320160752222225],
             [77.974651774727974, 19.322325336104129],
@@ -10785,18 +10797,18 @@ var json_All_AC = {
             [78.002821715330541, 19.303173914796197],
             [77.997177194352787, 19.304827322637728],
             [77.986784871800452, 19.308100672548058],
-            [77.978191850701606, 19.320160752222225],
-          ],
-        ],
+            [77.978191850701606, 19.320160752222225]
+          ]
+        ]
       },
-      properties: { FID: 44, AC_NO: 10, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Mudhole" },
+      "properties": { "FID": 44, "AC_NO": 10, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Mudhole" }
     },
     {
-      type: "Feature",
-      id: 45,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 45,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.300699017814381, 19.203647153379816],
             [78.296831957853172, 19.211678539949791],
@@ -11076,18 +11088,18 @@ var json_All_AC = {
             [78.315572497458461, 19.19383094184839],
             [78.306945879287383, 19.199482700861104],
             [78.302554315782501, 19.202410323976157],
-            [78.300699017814381, 19.203647153379816],
-          ],
-        ],
+            [78.300699017814381, 19.203647153379816]
+          ]
+        ]
       },
-      properties: { FID: 45, AC_NO: 9, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nirmal" },
+      "properties": { "FID": 45, "AC_NO": 9, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nirmal" }
     },
     {
-      type: "Feature",
-      id: 46,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 46,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.301223080896364, 17.148538171495968],
             [79.297011950546477, 17.153386576516436],
@@ -11360,18 +11372,18 @@ var json_All_AC = {
             [79.318318269136242, 17.144343474798067],
             [79.313748672789956, 17.144641510345437],
             [79.303947842768892, 17.143736930598273],
-            [79.301223080896364, 17.148538171495968],
-          ],
-        ],
+            [79.301223080896364, 17.148538171495968]
+          ]
+        ]
       },
-      properties: { FID: 46, AC_NO: 92, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nalgonda" },
+      "properties": { "FID": 46, "AC_NO": 92, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nalgonda" }
     },
     {
-      type: "Feature",
-      id: 47,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 47,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.250035687466635, 17.365564870896712],
             [79.247410346685243, 17.365762414104516],
@@ -11681,18 +11693,18 @@ var json_All_AC = {
             [79.286687385270326, 17.366717959837981],
             [79.269434074571208, 17.364933342311815],
             [79.258427660714446, 17.364933421428407],
-            [79.250035687466635, 17.365564870896712],
-          ],
-        ],
+            [79.250035687466635, 17.365564870896712]
+          ]
+        ]
       },
-      properties: { FID: 47, AC_NO: 95, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nakrekal (SC)" },
+      "properties": { "FID": 47, "AC_NO": 95, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nakrekal (SC)" }
     },
     {
-      type: "Feature",
-      id: 48,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 48,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.944207691578455, 17.329243549794242],
             [78.942655592357724, 17.32935996219685],
@@ -12019,18 +12031,18 @@ var json_All_AC = {
             [78.963978324404735, 17.333928752399576],
             [78.960170689040112, 17.332405799935337],
             [78.950270837537758, 17.328788791963682],
-            [78.944207691578455, 17.329243549794242],
-          ],
-        ],
+            [78.944207691578455, 17.329243549794242]
+          ]
+        ]
       },
-      properties: { FID: 48, AC_NO: 93, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Munugode" },
+      "properties": { "FID": 48, "AC_NO": 93, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Munugode" }
     },
     {
-      type: "Feature",
-      id: 49,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 49,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.555659657777852, 17.096085577302656],
             [79.548000297947041, 17.097486777325582],
@@ -12304,18 +12316,18 @@ var json_All_AC = {
             [79.575127355006174, 17.09653319606883],
             [79.571642527012074, 17.095030037051799],
             [79.564103429571603, 17.094426991629582],
-            [79.555659657777852, 17.096085577302656],
-          ],
-        ],
+            [79.555659657777852, 17.096085577302656]
+          ]
+        ]
       },
-      properties: { FID: 49, AC_NO: 88, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Miryalaguda" },
+      "properties": { "FID": 49, "AC_NO": 88, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Miryalaguda" }
     },
     {
-      type: "Feature",
-      id: 50,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 50,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.464446849117138, 16.955192667542477],
             [79.464306564954057, 16.957298969996121],
@@ -12698,18 +12710,18 @@ var json_All_AC = {
             [79.467925281833487, 16.951117173256996],
             [79.466869822194283, 16.952926479500022],
             [79.46637077877358, 16.953393231341821],
-            [79.464446849117138, 16.955192667542477],
-          ],
-        ],
+            [79.464446849117138, 16.955192667542477]
+          ]
+        ]
       },
-      properties: { FID: 50, AC_NO: 87, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nagarjuna Sagar" },
+      "properties": { "FID": 50, "AC_NO": 87, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nagarjuna Sagar" }
     },
     {
-      type: "Feature",
-      id: 51,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 51,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.790575354789439, 16.960464552235621],
             [78.784553862703731, 16.966980825297593],
@@ -13030,18 +13042,18 @@ var json_All_AC = {
             [78.80251753266856, 16.946447366957941],
             [78.790575257987086, 16.947138484212932],
             [78.790575278430296, 16.949953744462213],
-            [78.790575354789439, 16.960464552235621],
-          ],
-        ],
+            [78.790575354789439, 16.960464552235621]
+          ]
+        ]
       },
-      properties: { FID: 51, AC_NO: 86, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Devarakonda (ST)" },
+      "properties": { "FID": 51, "AC_NO": 86, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Devarakonda (ST)" }
     },
     {
-      type: "Feature",
-      id: 52,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 52,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.712686388054422, 16.742642223517617],
             [78.708402885746992, 16.752993748400634],
@@ -13444,18 +13456,18 @@ var json_All_AC = {
             [78.740172718642313, 16.74942405679672],
             [78.725894056944313, 16.739072654712629],
             [78.719111725294724, 16.738715751155041],
-            [78.712686388054422, 16.742642223517617],
-          ],
-        ],
+            [78.712686388054422, 16.742642223517617]
+          ]
+        ]
       },
-      properties: { FID: 52, AC_NO: 82, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Achampet (SC)" },
+      "properties": { "FID": 52, "AC_NO": 82, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Achampet (SC)" }
     },
     {
-      type: "Feature",
-      id: 53,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 53,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.380071961418466, 17.636588426741508],
             [78.378230628058475, 17.637387640765137],
@@ -13585,18 +13597,18 @@ var json_All_AC = {
             [78.396028881495369, 17.63410326977597],
             [78.392322535736852, 17.634529008611324],
             [78.389806632408124, 17.634471498362796],
-            [78.380071961418466, 17.636588426741508],
-          ],
-        ],
+            [78.380071961418466, 17.636588426741508]
+          ]
+        ]
       },
-      properties: { FID: 53, AC_NO: 45, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Quthbullapur" },
+      "properties": { "FID": 53, "AC_NO": 45, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Quthbullapur" }
     },
     {
-      type: "Feature",
-      id: 54,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 54,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.462289842009014, 17.695238201059059],
             [78.460556732661743, 17.696650834212662],
@@ -13830,18 +13842,18 @@ var json_All_AC = {
             [78.478886006586933, 17.685951827759364],
             [78.475134596617181, 17.687508561503915],
             [78.468286678444571, 17.690350262075725],
-            [78.462289842009014, 17.695238201059059],
-          ],
-        ],
+            [78.462289842009014, 17.695238201059059]
+          ]
+        ]
       },
-      properties: { FID: 54, AC_NO: 43, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Medchal" },
+      "properties": { "FID": 54, "AC_NO": 43, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Medchal" }
     },
     {
-      type: "Feature",
-      id: 55,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 55,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.79581700668848, 18.037376271400333],
             [78.795082603110487, 18.042763147007449],
@@ -14259,18 +14271,18 @@ var json_All_AC = {
             [78.807409738207866, 18.04176574958645],
             [78.80510752628507, 18.038341078396595],
             [78.802632554197345, 18.036437369698699],
-            [78.79581700668848, 18.037376271400333],
-          ],
-        ],
+            [78.79581700668848, 18.037376271400333]
+          ]
+        ]
       },
-      properties: { FID: 55, AC_NO: 42, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Gajwel" },
+      "properties": { "FID": 55, "AC_NO": 42, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Gajwel" }
     },
     {
-      type: "Feature",
-      id: 56,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 56,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.724367521901215, 18.245492806415758],
             [77.722539981036789, 18.246817385493824],
@@ -14617,18 +14629,18 @@ var json_All_AC = {
             [77.729501360365589, 18.241771863182723],
             [77.728916090704018, 18.243932088233901],
             [77.726882977353753, 18.243669634926221],
-            [77.724367521901215, 18.245492806415758],
-          ],
-        ],
+            [77.724367521901215, 18.245492806415758]
+          ]
+        ]
       },
-      properties: { FID: 56, AC_NO: 35, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Narayankhed" },
+      "properties": { "FID": 56, "AC_NO": 35, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Narayankhed" }
     },
     {
-      type: "Feature",
-      id: 57,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 57,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.256558354844316, 18.137701853957235],
             [78.250399257089398, 18.144316973479356],
@@ -15055,18 +15067,18 @@ var json_All_AC = {
             [78.261346135029996, 18.137415888660446],
             [78.26093201225828, 18.137415891487809],
             [78.256824577318142, 18.137415919524585],
-            [78.256558354844316, 18.137701853957235],
-          ],
-        ],
+            [78.256558354844316, 18.137701853957235]
+          ]
+        ]
       },
-      properties: { FID: 57, AC_NO: 34, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Medak" },
+      "properties": { "FID": 57, "AC_NO": 34, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Medak" }
     },
     {
-      type: "Feature",
-      id: 58,
-      geometry: {
-        type: "MultiPolygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 58,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
           [
             [
               [78.653938591132999, 18.209056521758477],
@@ -15581,8 +15593,8 @@ var json_All_AC = {
               [78.646664756382947, 18.208158253393925],
               [78.650432074782273, 18.207810489257326],
               [78.651823086070763, 18.207839457922223],
-              [78.653938591132999, 18.209056521758477],
-            ],
+              [78.653938591132999, 18.209056521758477]
+            ]
           ],
           [
             [
@@ -15619,19 +15631,19 @@ var json_All_AC = {
               [78.72258655000779, 18.228616629503424],
               [78.713259769767262, 18.2322413837407],
               [78.69652681260051, 18.230990499398555],
-              [78.684530749310667, 18.2336000569899],
-            ],
-          ],
-        ],
+              [78.684530749310667, 18.2336000569899]
+            ]
+          ]
+        ]
       },
-      properties: { FID: 58, AC_NO: 41, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Dubbak" },
+      "properties": { "FID": 58, "AC_NO": 41, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Dubbak" }
     },
     {
-      type: "Feature",
-      id: 59,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 59,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.535655932995709, 19.206722607017994],
             [79.536109303905931, 19.206338995940136],
@@ -16100,7 +16112,7 @@ var json_All_AC = {
             [79.527137502149401, 19.219206485437013],
             [79.529635457998808, 19.214548249202629],
             [79.531294307364973, 19.212392013097951],
-            [79.535655932995709, 19.206722607017994],
+            [79.535655932995709, 19.206722607017994]
           ],
           [
             [79.480747481694394, 19.176683128130772],
@@ -16112,18 +16124,18 @@ var json_All_AC = {
             [79.479120307434954, 19.176390264167466],
             [79.479413202722924, 19.176845848876916],
             [79.480291877227003, 19.177041093780343],
-            [79.480747481694394, 19.176683128130772],
-          ],
-        ],
+            [79.480747481694394, 19.176683128130772]
+          ]
+        ]
       },
-      properties: { FID: 59, AC_NO: 3, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bellampalle (SC)" },
+      "properties": { "FID": 59, "AC_NO": 3, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Bellampalle (SC)" }
     },
     {
-      type: "Feature",
-      id: 60,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 60,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.768632192137972, 19.056140054892065],
             [79.767299540203624, 19.058043793803925],
@@ -16423,18 +16435,18 @@ var json_All_AC = {
             [79.767705343693706, 19.048890873467109],
             [79.768513353696008, 19.051958753817793],
             [79.769012934018193, 19.053855578393264],
-            [79.768632192137972, 19.056140054892065],
-          ],
-        ],
+            [79.768632192137972, 19.056140054892065]
+          ]
+        ]
       },
-      properties: { FID: 60, AC_NO: 2, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Chennur (SC)" },
+      "properties": { "FID": 60, "AC_NO": 2, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Chennur (SC)" }
     },
     {
-      type: "Feature",
-      id: 61,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 61,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.234472081103704, 19.01408753294476],
             [79.235419122496964, 19.019453585539992],
@@ -16613,18 +16625,18 @@ var json_All_AC = {
             [79.24422417350236, 19.008983011547816],
             [79.237084890047782, 19.011362727987684],
             [79.233991191858024, 19.011362752194383],
-            [79.234472081103704, 19.01408753294476],
-          ],
-        ],
+            [79.234472081103704, 19.01408753294476]
+          ]
+        ]
       },
-      properties: { FID: 61, AC_NO: 4, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Mancherial" },
+      "properties": { "FID": 61, "AC_NO": 4, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Mancherial" }
     },
     {
-      type: "Feature",
-      id: 62,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 62,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.193701401714094, 16.755977581034902],
             [78.1979698966272, 16.761799473248914],
@@ -16883,18 +16895,18 @@ var json_All_AC = {
             [78.198698843205094, 16.746339946930703],
             [78.196023857003567, 16.748420422480905],
             [78.195486176395775, 16.748838605104883],
-            [78.193701401714094, 16.755977581034902],
-          ],
-        ],
+            [78.193701401714094, 16.755977581034902]
+          ]
+        ]
       },
-      properties: { FID: 62, AC_NO: 81, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nagarkurnool" },
+      "properties": { "FID": 62, "AC_NO": 81, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nagarkurnool" }
     },
     {
-      type: "Feature",
-      id: 63,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 63,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.283948973316967, 17.22097949412683],
             [78.278180928361749, 17.222936097017602],
@@ -17235,18 +17247,18 @@ var json_All_AC = {
             [78.291097213711794, 17.220044792803698],
             [78.289357262210544, 17.219657515320321],
             [78.288444846446282, 17.219454429601122],
-            [78.283948973316967, 17.22097949412683],
-          ],
-        ],
+            [78.283948973316967, 17.22097949412683]
+          ]
+        ]
       },
-      properties: { FID: 63, AC_NO: 84, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Shadnagar" },
+      "properties": { "FID": 63, "AC_NO": 84, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Shadnagar" }
     },
     {
-      type: "Feature",
-      id: 64,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 64,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.921661976204533, 17.309661809929086],
             [77.91862928689855, 17.310665710575329],
@@ -17596,18 +17608,18 @@ var json_All_AC = {
             [77.935110416060184, 17.30993360973239],
             [77.928333903613506, 17.309055256543772],
             [77.924422768836834, 17.308741569213101],
-            [77.921661976204533, 17.309661809929086],
-          ],
-        ],
+            [77.921661976204533, 17.309661809929086]
+          ]
+        ]
       },
-      properties: { FID: 64, AC_NO: 54, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Pargi" },
+      "properties": { "FID": 64, "AC_NO": 54, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Pargi" }
     },
     {
-      type: "Feature",
-      id: 65,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 65,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.534902057888701, 16.920300774398314],
             [77.53026152494165, 16.922085543850063],
@@ -17974,18 +17986,18 @@ var json_All_AC = {
             [77.546826366953567, 16.900749055623074],
             [77.540997738415882, 16.908135792731329],
             [77.5394491783116, 16.914075171801731],
-            [77.534902057888701, 16.920300774398314],
-          ],
-        ],
+            [77.534902057888701, 16.920300774398314]
+          ]
+        ]
       },
-      properties: { FID: 65, AC_NO: 73, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Narayanpet" },
+      "properties": { "FID": 65, "AC_NO": 73, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Narayanpet" }
     },
     {
-      type: "Feature",
-      id: 66,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 66,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.876969916961471, 16.648617301686375],
             [77.870566501956318, 16.651145042366604],
@@ -18356,18 +18368,18 @@ var json_All_AC = {
             [77.901027481016442, 16.648527238067565],
             [77.894602095537834, 16.645671691520196],
             [77.887610608528689, 16.644416901125698],
-            [77.876969916961471, 16.648617301686375],
-          ],
-        ],
+            [77.876969916961471, 16.648617301686375]
+          ]
+        ]
       },
-      properties: { FID: 66, AC_NO: 76, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Devarkadra" },
+      "properties": { "FID": 66, "AC_NO": 76, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Devarkadra" }
     },
     {
-      type: "Feature",
-      id: 67,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 67,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.796220972571476, 17.24268852982269],
             [77.793841216811657, 17.244175829811049],
@@ -18709,18 +18721,18 @@ var json_All_AC = {
             [77.78015740403599, 17.22097426391527],
             [77.784322005384269, 17.222461523331535],
             [77.796518393544304, 17.235252101008466],
-            [77.796220972571476, 17.24268852982269],
-          ],
-        ],
+            [77.796220972571476, 17.24268852982269]
+          ]
+        ]
       },
-      properties: { FID: 67, AC_NO: 72, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kodangal" },
+      "properties": { "FID": 67, "AC_NO": 72, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kodangal" }
     },
     {
-      type: "Feature",
-      id: 68,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 68,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.456156963768706, 16.975883728105437],
             [78.455593757514407, 16.978128649840468],
@@ -19025,18 +19037,18 @@ var json_All_AC = {
             [78.469564699932704, 16.97907190031335],
             [78.46525864108456, 16.977354450973028],
             [78.461415635316996, 16.975821688553701],
-            [78.456156963768706, 16.975883728105437],
-          ],
-        ],
+            [78.456156963768706, 16.975883728105437]
+          ]
+        ]
       },
-      properties: { FID: 68, AC_NO: 83, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kalwakurthy" },
+      "properties": { "FID": 68, "AC_NO": 83, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kalwakurthy" }
     },
     {
-      type: "Feature",
-      id: 69,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 69,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.023682707937482, 17.00199137784471],
             [78.015829507136743, 17.005917858290271],
@@ -19443,18 +19455,18 @@ var json_All_AC = {
             [78.039030813698673, 16.99594427429529],
             [78.030221466472256, 17.001758256693133],
             [78.024914806838581, 17.00111133488554],
-            [78.023682707937482, 17.00199137784471],
-          ],
-        ],
+            [78.023682707937482, 17.00199137784471]
+          ]
+        ]
       },
-      properties: { FID: 69, AC_NO: 75, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Jadcherla" },
+      "properties": { "FID": 69, "AC_NO": 75, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Jadcherla" }
     },
     {
-      type: "Feature",
-      id: 70,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 70,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.834219749088874, 16.85270819009919],
             [77.832258475608299, 16.853342932460876],
@@ -19677,18 +19689,18 @@ var json_All_AC = {
             [77.853374779615464, 16.85409811694737],
             [77.844456796260644, 16.85261973240079],
             [77.837868016853761, 16.851527472886747],
-            [77.834219749088874, 16.85270819009919],
-          ],
-        ],
+            [77.834219749088874, 16.85270819009919]
+          ]
+        ]
       },
-      properties: { FID: 70, AC_NO: 74, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Mahbubnagar" },
+      "properties": { "FID": 70, "AC_NO": 74, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Mahbubnagar" }
     },
     {
-      type: "Feature",
-      id: 71,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 71,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.513160387029885, 16.718266916107133],
             [77.512398889899416, 16.722645486344042],
@@ -20027,18 +20039,18 @@ var json_All_AC = {
             [77.514492938733582, 16.699610410454078],
             [77.519062203799905, 16.717886136895032],
             [77.515254576075563, 16.717505413575303],
-            [77.513160387029885, 16.718266916107133],
-          ],
-        ],
+            [77.513160387029885, 16.718266916107133]
+          ]
+        ]
       },
-      properties: { FID: 71, AC_NO: 77, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Makthal" },
+      "properties": { "FID": 71, "AC_NO": 77, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Makthal" }
     },
     {
-      type: "Feature",
-      id: 72,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 72,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.051809794768658, 17.586445116573515],
             [80.04959852645986, 17.582482556296014],
@@ -20294,18 +20306,18 @@ var json_All_AC = {
             [80.070093235218081, 17.579833047287551],
             [80.067808695175302, 17.58383088625607],
             [80.064001070045379, 17.583640543581147],
-            [80.051809794768658, 17.586445116573515],
-          ],
-        ],
+            [80.051809794768658, 17.586445116573515]
+          ]
+        ]
       },
-      properties: { FID: 72, AC_NO: 101, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Dornakal (ST)" },
+      "properties": { "FID": 72, "AC_NO": 101, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Dornakal (ST)" }
     },
     {
-      type: "Feature",
-      id: 73,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 73,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.997557005565369, 17.886176533784642],
             [79.988271832538217, 17.883596627809734],
@@ -20575,18 +20587,18 @@ var json_All_AC = {
             [80.005987751098687, 17.853887345301526],
             [80.001483434322637, 17.864759596871735],
             [79.998124488634261, 17.883081162219234],
-            [79.997557005565369, 17.886176533784642],
-          ],
-        ],
+            [79.997557005565369, 17.886176533784642]
+          ]
+        ]
       },
-      properties: { FID: 73, AC_NO: 102, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Mahabubabad (ST)" },
+      "properties": { "FID": 73, "AC_NO": 102, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Mahabubabad (ST)" }
     },
     {
-      type: "Feature",
-      id: 74,
-      geometry: {
-        type: "MultiPolygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 74,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
           [
             [
               [79.536109303905931, 19.206338995940136],
@@ -21082,8 +21094,8 @@ var json_All_AC = {
               [79.543386354559047, 19.193262290906681],
               [79.540173754530201, 19.202899941465937],
               [79.537834681957079, 19.204879101599239],
-              [79.536109303905931, 19.206338995940136],
-            ],
+              [79.536109303905931, 19.206338995940136]
+            ]
           ],
           [
             [
@@ -21096,19 +21108,19 @@ var json_All_AC = {
               [79.479120307434954, 19.176390264167466],
               [79.479152846254522, 19.175869591939545],
               [79.479575907280861, 19.175414001458805],
-              [79.48035694963356, 19.175413995162625],
-            ],
-          ],
-        ],
+              [79.48035694963356, 19.175413995162625]
+            ]
+          ]
+        ]
       },
-      properties: { FID: 74, AC_NO: 5, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Asifabad (ST)" },
+      "properties": { "FID": 74, "AC_NO": 5, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Asifabad (ST)" }
     },
     {
-      type: "Feature",
-      id: 75,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 75,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.601603871434875, 19.227434584374755],
             [79.600370043871251, 19.222764046933495],
@@ -21459,18 +21471,18 @@ var json_All_AC = {
             [79.589342028491089, 19.229551829190751],
             [79.595081215850087, 19.232113793323933],
             [79.603701833202294, 19.235376220593476],
-            [79.601603871434875, 19.227434584374755],
-          ],
-        ],
+            [79.601603871434875, 19.227434584374755]
+          ]
+        ]
       },
-      properties: { FID: 75, AC_NO: 1, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Sirpur" },
+      "properties": { "FID": 75, "AC_NO": 1, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Sirpur" }
     },
     {
-      type: "Feature",
-      id: 76,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 76,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.983700105257654, 17.383335135776768],
             [79.980342759484756, 17.393245969344122],
@@ -21718,18 +21730,18 @@ var json_All_AC = {
             [79.987978388200034, 17.361652796174106],
             [79.984226586466775, 17.3658334778317],
             [79.983660960250205, 17.366463762210163],
-            [79.983700105257654, 17.383335135776768],
-          ],
-        ],
+            [79.983700105257654, 17.383335135776768]
+          ]
+        ]
       },
-      properties: { FID: 76, AC_NO: 113, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Palair" },
+      "properties": { "FID": 76, "AC_NO": 113, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Palair" }
     },
     {
-      type: "Feature",
-      id: 77,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 77,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.210676702966609, 17.378183586629348],
             [80.205529331959951, 17.37864401099894],
@@ -21821,18 +21833,18 @@ var json_All_AC = {
             [80.25969979024589, 17.371996101941548],
             [80.24113767546676, 17.377231487341938],
             [80.215912167853972, 17.376279821965149],
-            [80.210676702966609, 17.378183586629348],
-          ],
-        ],
+            [80.210676702966609, 17.378183586629348]
+          ]
+        ]
       },
-      properties: { FID: 77, AC_NO: 112, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Khammam" },
+      "properties": { "FID": 77, "AC_NO": 112, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Khammam" }
     },
     {
-      type: "Feature",
-      id: 78,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 78,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.235775346947463, 17.582533280860908],
             [80.236655722129058, 17.564336456198436],
@@ -22169,18 +22181,18 @@ var json_All_AC = {
             [80.307109874588036, 17.580136669404727],
             [80.298162524059478, 17.57972380556668],
             [80.265143293832224, 17.579724067450254],
-            [80.235775346947463, 17.582533280860908],
-          ],
-        ],
+            [80.235775346947463, 17.582533280860908]
+          ]
+        ]
       },
-      properties: { FID: 78, AC_NO: 115, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Wyra (ST)" },
+      "properties": { "FID": 78, "AC_NO": 115, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Wyra (ST)" }
     },
     {
-      type: "Feature",
-      id: 79,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 79,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.227103901488945, 17.184545289669924],
             [80.228055855247618, 17.190256452509828],
@@ -22500,18 +22512,18 @@ var json_All_AC = {
             [80.231893197391386, 17.16539146100072],
             [80.231446062619398, 17.16725450636514],
             [80.227579772931449, 17.174788704453423],
-            [80.227103901488945, 17.184545289669924],
-          ],
-        ],
+            [80.227103901488945, 17.184545289669924]
+          ]
+        ]
       },
-      properties: { FID: 79, AC_NO: 114, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Madhira (SC)" },
+      "properties": { "FID": 79, "AC_NO": 114, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Madhira (SC)" }
     },
     {
-      type: "Feature",
-      id: 80,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 80,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.209374739848315, 18.54170150582814],
             [79.204734193261515, 18.541701541185073],
@@ -22637,18 +22649,18 @@ var json_All_AC = {
             [79.22329625505408, 18.527066497978058],
             [79.220797529083427, 18.530636005400563],
             [79.215086123571481, 18.534919434471359],
-            [79.209374739848315, 18.54170150582814],
-          ],
-        ],
+            [79.209374739848315, 18.54170150582814]
+          ]
+        ]
       },
-      properties: { FID: 80, AC_NO: 26, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Karimnagar" },
+      "properties": { "FID": 80, "AC_NO": 26, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Karimnagar" }
     },
     {
-      type: "Feature",
-      id: 81,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 81,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.203167415865863, 18.291128462471548],
             [79.196920549697751, 18.293805625425538],
@@ -22953,18 +22965,18 @@ var json_All_AC = {
             [79.218338259261486, 18.270603796645702],
             [79.212388864220671, 18.273280957295377],
             [79.210634287349762, 18.276676824796095],
-            [79.203167415865863, 18.291128462471548],
-          ],
-        ],
+            [79.203167415865863, 18.291128462471548]
+          ]
+        ]
       },
-      properties: { FID: 81, AC_NO: 32, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Husnabad" },
+      "properties": { "FID": 81, "AC_NO": 32, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Husnabad" }
     },
     {
-      type: "Feature",
-      id: 82,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 82,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.35725633250712, 18.444282949567047],
             [79.360573555465578, 18.446393776639532],
@@ -23291,18 +23303,18 @@ var json_All_AC = {
             [79.346701556732128, 18.440212101247258],
             [79.352129698194275, 18.438855083135532],
             [79.354994548734965, 18.437950410176878],
-            [79.35725633250712, 18.444282949567047],
-          ],
-        ],
+            [79.35725633250712, 18.444282949567047]
+          ]
+        ]
       },
-      properties: { FID: 82, AC_NO: 30, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Manakondur  (SC)" },
+      "properties": { "FID": 82, "AC_NO": 30, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Manakondur  (SC)" }
     },
     {
-      type: "Feature",
-      id: 83,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 83,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.376309932287128, 18.452080608352155],
             [79.374700386217768, 18.454560111732846],
@@ -23566,18 +23578,18 @@ var json_All_AC = {
             [79.401734845872824, 18.433620595131149],
             [79.38976978578998, 18.441406145537055],
             [79.378463504213329, 18.44876303396147],
-            [79.376309932287128, 18.452080608352155],
-          ],
-        ],
+            [79.376309932287128, 18.452080608352155]
+          ]
+        ]
       },
-      properties: { FID: 83, AC_NO: 31, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Huzurabad" },
+      "properties": { "FID": 83, "AC_NO": 31, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Huzurabad" }
     },
     {
-      type: "Feature",
-      id: 84,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 84,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.813651869562264, 18.647224210410538],
             [77.8066483622992, 18.648567975997832],
@@ -23796,18 +23808,18 @@ var json_All_AC = {
             [77.814841697451769, 18.639609289557175],
             [77.815793617718143, 18.641275045445649],
             [77.816031625422738, 18.645558432172031],
-            [77.813651869562264, 18.647224210410538],
-          ],
-        ],
+            [77.813651869562264, 18.647224210410538]
+          ]
+        ]
       },
-      properties: { FID: 84, AC_NO: 14, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Banswada" },
+      "properties": { "FID": 84, "AC_NO": 14, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Banswada" }
     },
     {
-      type: "Feature",
-      id: 85,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 85,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.760620761626797, 18.555864951242974],
             [77.758538520350825, 18.563598860405449],
@@ -24090,18 +24102,18 @@ var json_All_AC = {
             [77.769247292511807, 18.538017442120893],
             [77.764785264980247, 18.543371707248131],
             [77.762904699384379, 18.549013283953332],
-            [77.760620761626797, 18.555864951242974],
-          ],
-        ],
+            [77.760620761626797, 18.555864951242974]
+          ]
+        ]
       },
-      properties: { FID: 85, AC_NO: 13, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Jukkal (SC)" },
+      "properties": { "FID": 85, "AC_NO": 13, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Jukkal (SC)" }
     },
     {
-      type: "Feature",
-      id: 86,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 86,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.407700309275754, 18.469119542300273],
             [78.404844606433144, 18.471594408103169],
@@ -24373,18 +24385,18 @@ var json_All_AC = {
             [78.422169306705186, 18.470261677204849],
             [78.415696304338823, 18.46588314956994],
             [78.412079055503767, 18.465692802398749],
-            [78.407700309275754, 18.469119542300273],
-          ],
-        ],
+            [78.407700309275754, 18.469119542300273]
+          ]
+        ]
       },
-      properties: { FID: 86, AC_NO: 16, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kamareddy" },
+      "properties": { "FID": 86, "AC_NO": 16, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kamareddy" }
     },
     {
-      type: "Feature",
-      id: 87,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 87,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.065832056165789, 18.50839918835301],
             [78.0641662184333, 18.50839919972735],
@@ -24787,18 +24799,18 @@ var json_All_AC = {
             [78.090581575285526, 18.499118345517001],
             [78.08510810917987, 18.499118382957612],
             [78.081538455030795, 18.498880442158708],
-            [78.065832056165789, 18.50839918835301],
-          ],
-        ],
+            [78.065832056165789, 18.50839918835301]
+          ]
+        ]
       },
-      properties: { FID: 87, AC_NO: 15, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Yellareddy" },
+      "properties": { "FID": 87, "AC_NO": 15, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Yellareddy" }
     },
     {
-      type: "Feature",
-      id: 88,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 88,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.807093317685855, 16.287216490438595],
             [77.799873728529931, 16.291762006665021],
@@ -24993,18 +25005,18 @@ var json_All_AC = {
             [77.819080572823054, 16.2791717736763],
             [77.815937077328769, 16.281648383192561],
             [77.811759430081551, 16.284278665820722],
-            [77.807093317685855, 16.287216490438595],
-          ],
-        ],
+            [77.807093317685855, 16.287216490438595]
+          ]
+        ]
       },
-      properties: { FID: 88, AC_NO: 79, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Gadwal" },
+      "properties": { "FID": 88, "AC_NO": 79, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Gadwal" }
     },
     {
-      type: "Feature",
-      id: 89,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 89,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [77.92667750862617, 16.16920769692371],
             [77.924501545160865, 16.170312611797922],
@@ -25245,18 +25257,18 @@ var json_All_AC = {
             [77.937063238934385, 16.136197677691431],
             [77.935016953429979, 16.142541002353941],
             [77.932709173139045, 16.149920495256932],
-            [77.92667750862617, 16.16920769692371],
-          ],
-        ],
+            [77.92667750862617, 16.16920769692371]
+          ]
+        ]
       },
-      properties: { FID: 89, AC_NO: 80, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Alampur (SC)" },
+      "properties": { "FID": 89, "AC_NO": 80, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Alampur (SC)" }
     },
     {
-      type: "Feature",
-      id: 90,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 90,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.057184694481705, 18.516420236313543],
             [80.054475570301335, 18.51773606479323],
@@ -25588,18 +25600,18 @@ var json_All_AC = {
             [80.068098663701406, 18.518896958091538],
             [80.064383257405098, 18.51665237815892],
             [80.061209690136423, 18.515801000340531],
-            [80.057184694481705, 18.516420236313543],
-          ],
-        ],
+            [80.057184694481705, 18.516420236313543]
+          ]
+        ]
       },
-      properties: { FID: 90, AC_NO: 108, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bhupalpalle" },
+      "properties": { "FID": 90, "AC_NO": 108, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Bhupalpalle" }
     },
     {
-      type: "Feature",
-      id: 91,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 91,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.874780687316559, 18.828114996798561],
             [79.872023767255541, 18.829049533250448],
@@ -26045,18 +26057,18 @@ var json_All_AC = {
             [79.895541372826045, 18.829894974064374],
             [79.892436961097502, 18.828515885013108],
             [79.885647076041693, 18.827184829692058],
-            [79.874780687316559, 18.828114996798561],
-          ],
-        ],
+            [79.874780687316559, 18.828114996798561]
+          ]
+        ]
       },
-      properties: { FID: 91, AC_NO: 24, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Manthani" },
+      "properties": { "FID": 91, "AC_NO": 24, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Manthani" }
     },
     {
-      type: "Feature",
-      id: 92,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 92,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.375169284718481, 18.592418827464293],
             [80.372118457027796, 18.602091100484451],
@@ -26437,18 +26449,18 @@ var json_All_AC = {
             [80.383260299737259, 18.571953701617343],
             [80.380160188280129, 18.583468299371209],
             [80.379928742255402, 18.584327950752527],
-            [80.375169284718481, 18.592418827464293],
-          ],
-        ],
+            [80.375169284718481, 18.592418827464293]
+          ]
+        ]
       },
-      properties: { FID: 92, AC_NO: 109, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Mulug (ST)" },
+      "properties": { "FID": 92, "AC_NO": 109, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Mulug (ST)" }
     },
     {
-      type: "Feature",
-      id: 93,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 93,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.864746404920226, 17.803967874564673],
             [78.861908008950536, 17.799787549803163],
@@ -26830,18 +26842,18 @@ var json_All_AC = {
             [78.909587634183026, 17.802914991188576],
             [78.900846747905405, 17.802579542747914],
             [78.873777527374685, 17.801540707944444],
-            [78.864746404920226, 17.803967874564673],
-          ],
-        ],
+            [78.864746404920226, 17.803967874564673]
+          ]
+        ]
       },
-      properties: { FID: 93, AC_NO: 97, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Alair" },
+      "properties": { "FID": 93, "AC_NO": 97, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Alair" }
     },
     {
-      type: "Feature",
-      id: 94,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 94,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.470095804896459, 18.025536823461209],
             [79.463098346848, 18.027558276729554],
@@ -27119,18 +27131,24 @@ var json_All_AC = {
             [79.486420101352422, 18.033269276364063],
             [79.479042785078249, 18.02827205234567],
             [79.473807268309145, 18.024464641262448],
-            [79.470095804896459, 18.025536823461209],
-          ],
-        ],
+            [79.470095804896459, 18.025536823461209]
+          ]
+        ]
       },
-      properties: { FID: 94, AC_NO: 99, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Ghanpur (Station) (SC)" },
+      "properties": {
+        "FID": 94,
+        "AC_NO": 99,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Ghanpur (Station) (SC)"
+      }
     },
     {
-      type: "Feature",
-      id: 95,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 95,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.623286955118033, 17.484816144614271],
             [79.633961347781963, 17.488535369588522],
@@ -27387,18 +27405,18 @@ var json_All_AC = {
             [79.614070882707537, 17.487118532098172],
             [79.618953584809816, 17.485898720970667],
             [79.619088013478489, 17.485865137435788],
-            [79.623286955118033, 17.484816144614271],
-          ],
-        ],
+            [79.623286955118033, 17.484816144614271]
+          ]
+        ]
       },
-      properties: { FID: 95, AC_NO: 100, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Palakurthi" },
+      "properties": { "FID": 95, "AC_NO": 100, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Palakurthi" }
     },
     {
-      type: "Feature",
-      id: 96,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 96,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.003287255938261, 19.030121479212283],
             [79.003584789310864, 19.037557916279791],
@@ -27650,18 +27668,18 @@ var json_All_AC = {
             [79.00715420465265, 19.009596878177227],
             [79.008046714014739, 19.020900258949755],
             [79.00477457565627, 19.025957062482576],
-            [79.003287255938261, 19.030121479212283],
-          ],
-        ],
+            [79.003287255938261, 19.030121479212283]
+          ]
+        ]
       },
-      properties: { FID: 96, AC_NO: 21, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Jagtial" },
+      "properties": { "FID": 96, "AC_NO": 21, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Jagtial" }
     },
     {
-      type: "Feature",
-      id: 97,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 97,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.711786864537828, 19.018661328621327],
             [78.701795166051156, 19.022742445549493],
@@ -27879,18 +27897,18 @@ var json_All_AC = {
             [78.750341277597684, 19.007213907315638],
             [78.750418430854083, 19.010298885160886],
             [78.73806273075509, 19.007928931139876],
-            [78.711786864537828, 19.018661328621327],
-          ],
-        ],
+            [78.711786864537828, 19.018661328621327]
+          ]
+        ]
       },
-      properties: { FID: 97, AC_NO: 20, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Koratla" },
+      "properties": { "FID": 97, "AC_NO": 20, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Koratla" }
     },
     {
-      type: "Feature",
-      id: 98,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 98,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.005642421492951, 18.749458051207831],
             [79.006258052491333, 18.753435997379878],
@@ -28248,18 +28266,18 @@ var json_All_AC = {
             [79.004794800859514, 18.727079793331786],
             [79.005543955265352, 18.733446860943566],
             [79.00554404147681, 18.743798380491139],
-            [79.005642421492951, 18.749458051207831],
-          ],
-        ],
+            [79.005642421492951, 18.749458051207831]
+          ]
+        ]
       },
-      properties: { FID: 98, AC_NO: 27, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Choppadandi (SC)" },
+      "properties": { "FID": 98, "AC_NO": 27, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Choppadandi (SC)" }
     },
     {
-      type: "Feature",
-      id: 99,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 99,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.842361590394532, 18.847762205709049],
             [78.843565499204189, 18.850169865293154],
@@ -28567,18 +28585,18 @@ var json_All_AC = {
             [78.837316693330152, 18.84329957255968],
             [78.840172440267764, 18.846393109156061],
             [78.842143732987751, 18.845801731677401],
-            [78.842361590394532, 18.847762205709049],
-          ],
-        ],
+            [78.842361590394532, 18.847762205709049]
+          ]
+        ]
       },
-      properties: { FID: 99, AC_NO: 28, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Vemulawada" },
+      "properties": { "FID": 99, "AC_NO": 28, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Vemulawada" }
     },
     {
-      type: "Feature",
-      id: 100,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 100,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.188010181605918, 18.872117650135792],
             [79.186589478390061, 18.872383169478688],
@@ -28823,18 +28841,18 @@ var json_All_AC = {
             [79.228984932948023, 18.871114734924561],
             [79.213577467405116, 18.870340701032724],
             [79.200920303532243, 18.869704834453966],
-            [79.188010181605918, 18.872117650135792],
-          ],
-        ],
+            [79.188010181605918, 18.872117650135792]
+          ]
+        ]
       },
-      properties: { FID: 100, AC_NO: 22, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Dharmapuri  (SC)" },
+      "properties": { "FID": 100, "AC_NO": 22, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Dharmapuri  (SC)" }
     },
     {
-      type: "Feature",
-      id: 101,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 101,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.514318466688607, 17.445257614291357],
             [78.513404639506462, 17.445657402840762],
@@ -28881,18 +28899,18 @@ var json_All_AC = {
             [78.531351070102005, 17.444834775243404],
             [78.521644286934475, 17.444834840727424],
             [78.519370476141148, 17.444834856058065],
-            [78.514318466688607, 17.445257614291357],
-          ],
-        ],
+            [78.514318466688607, 17.445257614291357]
+          ]
+        ]
       },
-      properties: { FID: 101, AC_NO: 70, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Secunderabad" },
+      "properties": { "FID": 101, "AC_NO": 70, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Secunderabad" }
     },
     {
-      type: "Feature",
-      id: 102,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 102,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.45515802542414, 17.475395058272618],
             [78.45203883077383, 17.476398873478917],
@@ -28989,18 +29007,24 @@ var json_All_AC = {
             [78.465863531791953, 17.473434910240847],
             [78.463149462811629, 17.474339578722329],
             [78.460133823874983, 17.474339598973817],
-            [78.45515802542414, 17.475395058272618],
-          ],
-        ],
+            [78.45515802542414, 17.475395058272618]
+          ]
+        ]
       },
-      properties: { FID: 102, AC_NO: 71, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Secunderabad Cantt. (SC)" },
+      "properties": {
+        "FID": 102,
+        "AC_NO": 71,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Secunderabad Cantt. (SC)"
+      }
     },
     {
-      type: "Feature",
-      id: 103,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 103,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.554795663215671, 17.433054776167314],
             [78.554414909910349, 17.434292200008759],
@@ -29083,18 +29107,18 @@ var json_All_AC = {
             [78.545086207420724, 17.431627048069316],
             [78.550416879327841, 17.431055894761109],
             [78.552750199881316, 17.431470280154919],
-            [78.554795663215671, 17.433054776167314],
-          ],
-        ],
+            [78.554795663215671, 17.433054776167314]
+          ]
+        ]
       },
-      properties: { FID: 103, AC_NO: 59, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Amberpet" },
+      "properties": { "FID": 103, "AC_NO": 59, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Amberpet" }
     },
     {
-      type: "Feature",
-      id: 104,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 104,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.416418553421749, 17.401287333020182],
             [78.41567607031655, 17.401744231990953],
@@ -29148,18 +29172,18 @@ var json_All_AC = {
             [78.422385148778929, 17.386699957734336],
             [78.430190793595187, 17.388508444302506],
             [78.41925286650951, 17.395674429768469],
-            [78.416418553421749, 17.401287333020182],
-          ],
-        ],
+            [78.416418553421749, 17.401287333020182]
+          ]
+        ]
       },
-      properties: { FID: 104, AC_NO: 64, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Karwan" },
+      "properties": { "FID": 104, "AC_NO": 64, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Karwan" }
     },
     {
-      type: "Feature",
-      id: 105,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 105,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.572191241321619, 17.478335978456816],
             [78.56713808263919, 17.476593628268784],
@@ -29337,18 +29361,18 @@ var json_All_AC = {
             [78.599944554758537, 17.464556360603467],
             [78.593281194490388, 17.462414714861932],
             [78.584000126327041, 17.465032400503368],
-            [78.572191241321619, 17.478335978456816],
-          ],
-        ],
+            [78.572191241321619, 17.478335978456816]
+          ]
+        ]
       },
-      properties: { FID: 105, AC_NO: 47, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Uppal" },
+      "properties": { "FID": 105, "AC_NO": 47, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Uppal" }
     },
     {
-      type: "Feature",
-      id: 106,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 106,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.462605379795107, 17.336587640037251],
             [78.464363858686255, 17.336822081023783],
@@ -29389,18 +29413,18 @@ var json_All_AC = {
             [78.45999761102604, 17.345087590289122],
             [78.459140897293807, 17.345373155080487],
             [78.458637605047514, 17.341953425186709],
-            [78.462605379795107, 17.336587640037251],
-          ],
-        ],
+            [78.462605379795107, 17.336587640037251]
+          ]
+        ]
       },
-      properties: { FID: 106, AC_NO: 68, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Yakutpura" },
+      "properties": { "FID": 106, "AC_NO": 68, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Yakutpura" }
     },
     {
-      type: "Feature",
-      id: 107,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 107,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.454239060898601, 17.411770657114303],
             [78.446642840328778, 17.41074269566024],
@@ -29448,18 +29472,18 @@ var json_All_AC = {
             [78.463445210525279, 17.407988856959367],
             [78.46039911787814, 17.409131112847863],
             [78.457162636635118, 17.40913113449793],
-            [78.454239060898601, 17.411770657114303],
-          ],
-        ],
+            [78.454239060898601, 17.411770657114303]
+          ]
+        ]
       },
-      properties: { FID: 107, AC_NO: 63, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Nampally" },
+      "properties": { "FID": 107, "AC_NO": 63, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Nampally" }
     },
     {
-      type: "Feature",
-      id: 108,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 108,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.42885967591954, 17.460518080927585],
             [78.423207735145184, 17.460934558849445],
@@ -29527,18 +29551,18 @@ var json_All_AC = {
             [78.448730684557987, 17.455223211910731],
             [78.441412917124168, 17.457067494840931],
             [78.431953365188477, 17.459506706543909],
-            [78.42885967591954, 17.460518080927585],
-          ],
-        ],
+            [78.42885967591954, 17.460518080927585]
+          ]
+        ]
       },
-      properties: { FID: 108, AC_NO: 61, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Jubilee Hills" },
+      "properties": { "FID": 108, "AC_NO": 61, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Jubilee Hills" }
     },
     {
-      type: "Feature",
-      id: 109,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 109,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.535748445943767, 17.552781728996187],
             [78.52908514479256, 17.558730916614955],
@@ -29690,18 +29714,18 @@ var json_All_AC = {
             [78.552660886781979, 17.553244362277603],
             [78.548837142568573, 17.550401982935245],
             [78.543601653564323, 17.549926087827718],
-            [78.535748445943767, 17.552781728996187],
-          ],
-        ],
+            [78.535748445943767, 17.552781728996187]
+          ]
+        ]
       },
-      properties: { FID: 109, AC_NO: 44, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Malkajgiri" },
+      "properties": { "FID": 109, "AC_NO": 44, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Malkajgiri" }
     },
     {
-      type: "Feature",
-      id: 110,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 110,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.866469753852343, 17.331344763547005],
             [80.862186273502203, 17.341815275736735],
@@ -29984,18 +30008,18 @@ var json_All_AC = {
             [80.866469521502552, 17.30516857141923],
             [80.866731256701186, 17.313802898032399],
             [80.866945613756144, 17.320874282702306],
-            [80.866469753852343, 17.331344763547005],
-          ],
-        ],
+            [80.866469753852343, 17.331344763547005]
+          ]
+        ]
       },
-      properties: { FID: 110, AC_NO: 116, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Sathupalle (SC)" },
+      "properties": { "FID": 110, "AC_NO": 116, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Sathupalle (SC)" }
     },
     {
-      type: "Feature",
-      id: 111,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 111,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.660187761799847, 17.861413595973055],
             [80.601546301691371, 17.8654684778944],
@@ -30183,18 +30207,18 @@ var json_All_AC = {
             [80.709774928906, 17.852988174827757],
             [80.709775003855796, 17.861236278709857],
             [80.697165010350744, 17.858856727896558],
-            [80.660187761799847, 17.861413595973055],
-          ],
-        ],
+            [80.660187761799847, 17.861413595973055]
+          ]
+        ]
       },
-      properties: { FID: 111, AC_NO: 117, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Kothagudem" },
+      "properties": { "FID": 111, "AC_NO": 117, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Kothagudem" }
     },
     {
-      type: "Feature",
-      id: 112,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 112,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.686733120852708, 18.156987789008106],
             [80.675366071421308, 18.155111858546686],
@@ -30483,18 +30507,18 @@ var json_All_AC = {
             [80.69703974049601, 18.140882779496593],
             [80.694503043829855, 18.14491700779298],
             [80.692560620673547, 18.149079251098787],
-            [80.686733120852708, 18.156987789008106],
-          ],
-        ],
+            [80.686733120852708, 18.156987789008106]
+          ]
+        ]
       },
-      properties: { FID: 112, AC_NO: 110, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Pinapaka (ST)" },
+      "properties": { "FID": 112, "AC_NO": 110, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Pinapaka (ST)" }
     },
     {
-      type: "Feature",
-      id: 113,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 113,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.968846221048281, 17.589861930525235],
             [80.969473272288411, 17.590965948125827],
@@ -30732,18 +30756,24 @@ var json_All_AC = {
             [80.965157160158199, 17.572070648996206],
             [80.964526362731974, 17.575014366501367],
             [80.963192028607637, 17.579906873245527],
-            [80.968846221048281, 17.589861930525235],
-          ],
-        ],
+            [80.968846221048281, 17.589861930525235]
+          ]
+        ]
       },
-      properties: { FID: 113, AC_NO: 118, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Aswaraopeta (ST)" },
+      "properties": {
+        "FID": 113,
+        "AC_NO": 118,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Aswaraopeta (ST)"
+      }
     },
     {
-      type: "Feature",
-      id: 114,
-      geometry: {
-        type: "MultiPolygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 114,
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
           [
             [
               [80.489991781613483, 18.625754059037831],
@@ -31191,8 +31221,8 @@ var json_All_AC = {
               [80.515439914889939, 18.612170717846777],
               [80.512318538797942, 18.614702954690554],
               [80.499729944358478, 18.616684225624212],
-              [80.489991781613483, 18.625754059037831],
-            ],
+              [80.489991781613483, 18.625754059037831]
+            ]
           ],
           [
             [
@@ -31218,19 +31248,25 @@ var json_All_AC = {
               [80.908393679719666, 17.690973421233114],
               [80.906788490452797, 17.69195328179871],
               [80.905253541423832, 17.691810514765663],
-              [80.900202135914299, 17.692774078394073],
-            ],
-          ],
-        ],
+              [80.900202135914299, 17.692774078394073]
+            ]
+          ]
+        ]
       },
-      properties: { FID: 114, AC_NO: 119, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Bhadrachalam (ST)" },
+      "properties": {
+        "FID": 114,
+        "AC_NO": 119,
+        "ST_CODE": "S29",
+        "ST_NAME": "Telangana",
+        "AC_NAME": "Bhadrachalam (ST)"
+      }
     },
     {
-      type: "Feature",
-      id: 115,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 115,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [80.397578506574376, 17.731777034339039],
             [80.377588635014021, 17.748910715218841],
@@ -31510,18 +31546,18 @@ var json_All_AC = {
             [80.43089507385244, 17.716546970535095],
             [80.416140514054646, 17.714167434051298],
             [80.404717702889371, 17.720830561328221],
-            [80.397578506574376, 17.731777034339039],
-          ],
-        ],
+            [80.397578506574376, 17.731777034339039]
+          ]
+        ]
       },
-      properties: { FID: 115, AC_NO: 111, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Yellandu (ST)" },
+      "properties": { "FID": 115, "AC_NO": 111, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Yellandu (ST)" }
     },
     {
-      type: "Feature",
-      id: 116,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 116,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.575076383781791, 19.812950122380581],
             [78.5701178179837, 19.813518399389107],
@@ -31748,18 +31784,18 @@ var json_All_AC = {
             [78.596647216401308, 19.816498258230915],
             [78.593122741295232, 19.814559121117881],
             [78.586361831450432, 19.810836857003611],
-            [78.575076383781791, 19.812950122380581],
-          ],
-        ],
+            [78.575076383781791, 19.812950122380581]
+          ]
+        ]
       },
-      properties: { FID: 116, AC_NO: 7, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Adilabad" },
+      "properties": { "FID": 116, "AC_NO": 7, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Adilabad" }
     },
     {
-      type: "Feature",
-      id: 117,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 117,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.337588100306419, 19.882345823764243],
             [78.326577729788042, 19.889637526893672],
@@ -32140,18 +32176,18 @@ var json_All_AC = {
             [78.367094935361678, 19.882046576012044],
             [78.359002308367124, 19.881414197872669],
             [78.348027443284238, 19.880556593282332],
-            [78.337588100306419, 19.882345823764243],
-          ],
-        ],
+            [78.337588100306419, 19.882345823764243]
+          ]
+        ]
       },
-      properties: { FID: 117, AC_NO: 8, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Boath (ST)" },
+      "properties": { "FID": 117, "AC_NO": 8, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Boath (ST)" }
     },
     {
-      type: "Feature",
-      id: 118,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 118,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [78.766206903853515, 19.518245317342],
             [78.76780283275221, 19.527507714552474],
@@ -32486,11 +32522,11 @@ var json_All_AC = {
             [78.756497406114804, 19.513676439974233],
             [78.75725893851002, 19.514437926570999],
             [78.76297712737275, 19.515993682066508],
-            [78.766206903853515, 19.518245317342],
-          ],
-        ],
+            [78.766206903853515, 19.518245317342]
+          ]
+        ]
       },
-      properties: { FID: 118, AC_NO: 6, ST_CODE: "S29", ST_NAME: "Telangana", AC_NAME: "Khanapur (ST)" },
-    },
-  ],
-};
+      "properties": { "FID": 118, "AC_NO": 6, "ST_CODE": "S29", "ST_NAME": "Telangana", "AC_NAME": "Khanapur (ST)" }
+    }
+  ]
+}
