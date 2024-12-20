@@ -1,0 +1,70 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2024-12-20T15:54:49.435Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2024-12-20T16:28:04.015Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/2.STEP_3_PARTIAL_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2024-12-20T16:40:52.415Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/vidhansabha-constituency-pipeline-logs/3.STEP_3_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
