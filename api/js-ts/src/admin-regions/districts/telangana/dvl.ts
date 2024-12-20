@@ -171,12 +171,13 @@ function getLoksabhaConstituenciesByURL(stateUT: any) {
 async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenciesList: any) {
   // console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.name);
   const steps: PipelineStep[] = [
-    {
-      name: "Fetch State Loksabha_Constituency",
-      function: fetchStateLoksabhaConstituencies,
-      key: "STATE_LOKSABHA_LIST",
-      input: stateUT,
-    },
+    // // DONT NEED THIS STEP, ALREADY INPUT IS IN THE REQUIRED FORMAT
+    // {
+    //   name: "Fetch State Loksabha_Constituency",
+    //   function: fetchStateLoksabhaConstituencies,
+    //   key: "STATE_LOKSABHA_LIST",
+    //   input: stateUT,
+    // },
     {
       name: "Fetch Loksabha_Constituency Wiki Details",
       function: fetchLoksabhaConstituenciesWikiDetails,
@@ -210,8 +211,8 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
   ];
   let outputs: Record<string, any> = {
     stateUT,
-    loksabhaConstituenciesList,
-    stateLoksabhaConstituencies: [],
+    // loksabhaConstituenciesList,
+    stateLoksabhaConstituencies: loksabhaConstituenciesList,
     loksabhaConstituenciesCount: 0,
     loksabhaConstituenciesWikiDetails: [],
     loksabhaConstituenciesWikiDetailsFailed: [],
@@ -423,15 +424,31 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   const v = getVidhansabhaConstituenciesList(stateUT);
   const l = getLoksabhaConstituenciesByURL(stateUT);
 
-  console.log(d);
-  console.log(v);
-  console.log(l);
+  // console.log(d);
+  // console.log(v);
+  // console.log(l);
 
-  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  // const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  // const districtsIds = districtsLastStep.transformedDistrictsSOIGeo.map((val: any) => {
+  //   return {
+  //     id_url: val.id_url,
+  //     name_id: val.name_id,
+  //   };
+  // });
+  // console.log(districtsIds);
 
-  console.log(districtsLastStep.map((val: any) => val.id_url));
-
+  // console.log(Object.values(l));
   // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
+  // const loksabhaConstituenciesIds = loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.map(
+  //   (val: any) => {
+  //     return {
+  //       id_url: val.id_url,
+  //       name_id: val.name_id,
+  //     };
+  //   }
+  // );
+  // console.log(loksabhaConstituenciesIds);
+
   // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
 
   return;
