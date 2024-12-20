@@ -1,12 +1,12 @@
 {
-  type: 'FeatureCollection',
-  features: [
+  "type": "FeatureCollection",
+  "features": [
     {
-      type: 'Feature',
-      id: 0,
-      geometry: {
-        type: 'Polygon',
-        coordinates: [
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [79.992151714859958, 35.417217346409309],
             [79.98620360285328, 35.46777809674407],
@@ -6941,11 +6941,11 @@
             [79.947538376939804, 35.319063874981445],
             [79.96836162075968, 35.322036129009781],
             [79.995125945671916, 35.351782823359194],
-            [79.992151714859958, 35.417217346409309],
-          ],
-        ],
+            [79.992151714859958, 35.417217346409309]
+          ]
+        ]
       },
-      properties: { FID: 0, ST_CODE: 'U09', ST_NAME: 'Ladakh', AC_NO: 1, AC_NAME: 'Ladakh' },
-    },
-  ],
-};
+      "properties": { "FID": 0, "ST_CODE": "U09", "ST_NAME": "Ladakh", "AC_NO": 1, "AC_NAME": "Ladakh" }
+    }
+  ]
+}

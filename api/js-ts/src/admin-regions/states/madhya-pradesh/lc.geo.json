@@ -1,10 +1,10 @@
 [
   {
-    type: "Feature",
-    properties: { PC_NAME: "Balaghat", STATE_NAME: "Madhya Pradesh", PC_No: 15, FID: 1, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Balaghat", "STATE_NAME": "Madhya Pradesh", "PC_No": 15, "FID": 1, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.4802253, 22.525763],
           [79.4803144, 22.5280104],
@@ -1929,17 +1929,17 @@
           [79.4883373, 22.5273013],
           [79.4858851, 22.5271225],
           [79.4830107, 22.5256972],
-          [79.4802253, 22.525763],
-        ],
-      ],
-    },
+          [79.4802253, 22.525763]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Mandla (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 14, FID: 2, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Mandla (ST)", "STATE_NAME": "Madhya Pradesh", "PC_No": 14, "FID": 2, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [80.7000025, 23.366904],
           [80.6984549, 23.3704837],
@@ -4043,17 +4043,17 @@
           [80.7209004, 23.3586148],
           [80.704651, 23.3633285],
           [80.704252, 23.3634218],
-          [80.7000025, 23.366904],
-        ],
-      ],
-    },
+          [80.7000025, 23.366904]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Jabalpur", STATE_NAME: "Madhya Pradesh", PC_No: 13, FID: 3, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Jabalpur", "STATE_NAME": "Madhya Pradesh", "PC_No": 13, "FID": 3, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.81253, 23.4479548],
           [79.8117264, 23.4483258],
@@ -5048,17 +5048,17 @@
           [79.8225406, 23.4472767],
           [79.8186694, 23.4467927],
           [79.8151666, 23.4467884],
-          [79.81253, 23.4479548],
-        ],
-      ],
-    },
+          [79.81253, 23.4479548]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Sidhi", STATE_NAME: "Madhya Pradesh", PC_No: 11, FID: 4, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Sidhi", "STATE_NAME": "Madhya Pradesh", "PC_No": 11, "FID": 4, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [82.4466484, 24.6790871],
           [82.4448117, 24.6801015],
@@ -6163,17 +6163,23 @@
           [82.4639931, 24.6800617],
           [82.4583816, 24.6792622],
           [82.4488134, 24.677897],
-          [82.4466484, 24.6790871],
-        ],
-      ],
-    },
+          [82.4466484, 24.6790871]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Shahdol (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 12, FID: 5, ST_CODE: "S12" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Shahdol (ST)",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 12,
+      "FID": 5,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [80.7743342, 23.8342891],
@@ -6229,8 +6235,8 @@
             [80.7721521, 23.8278961],
             [80.7729658, 23.8297555],
             [80.7731504, 23.8324475],
-            [80.7743342, 23.8342891],
-          ],
+            [80.7743342, 23.8342891]
+          ]
         ],
         [
           [
@@ -8030,18 +8036,18 @@
             [81.0158461, 24.0490249],
             [81.0097492, 24.0581805],
             [81.0072653, 24.0618934],
-            [80.9948472, 24.0735575],
-          ],
-        ],
-      ],
-    },
+            [80.9948472, 24.0735575]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Chhindwara", STATE_NAME: "Madhya Pradesh", PC_No: 16, FID: 6, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Chhindwara", "STATE_NAME": "Madhya Pradesh", "PC_No": 16, "FID": 6, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.2339465, 22.7922829],
           [79.2338204, 22.7967898],
@@ -9471,17 +9477,23 @@
           [79.236739, 22.7696559],
           [79.2385752, 22.7734669],
           [79.2390121, 22.77821],
-          [79.2339465, 22.7922829],
-        ],
-      ],
-    },
+          [79.2339465, 22.7922829]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Tikamgarh (SC)", STATE_NAME: "Madhya Pradesh", PC_No: 6, FID: 7, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Tikamgarh (SC)",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 6,
+      "FID": 7,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.8855459, 25.5607761],
           [78.8827683, 25.5604022],
@@ -11491,7 +11503,7 @@
           [78.9103753, 25.5593447],
           [78.9059528, 25.5606052],
           [78.896797, 25.5593838],
-          [78.8855459, 25.5607761],
+          [78.8855459, 25.5607761]
         ],
         [
           [79.3738388, 25.0746239],
@@ -11604,17 +11616,17 @@
           [79.3719144, 25.0676088],
           [79.3749906, 25.0679623],
           [79.3755192, 25.0702413],
-          [79.3738388, 25.0746239],
-        ],
-      ],
-    },
+          [79.3738388, 25.0746239]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Damoh", STATE_NAME: "Madhya Pradesh", PC_No: 7, FID: 8, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Damoh", "STATE_NAME": "Madhya Pradesh", "PC_No": 7, "FID": 8, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [79.3580551, 24.67665],
           [79.3557122, 24.6799038],
@@ -13189,17 +13201,17 @@
           [79.3718667, 24.6515938],
           [79.3726364, 24.6522309],
           [79.3711258, 24.6581974],
-          [79.3580551, 24.67665],
-        ],
-      ],
-    },
+          [79.3580551, 24.67665]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Khajuraho", STATE_NAME: "Madhya Pradesh", PC_No: 8, FID: 9, ST_CODE: "S12" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Khajuraho", "STATE_NAME": "Madhya Pradesh", "PC_No": 8, "FID": 9, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [80.4441235, 25.1233339],
@@ -13214,8 +13226,8 @@
             [80.428053, 25.1227976],
             [80.4316325, 25.1212168],
             [80.4369415, 25.120968],
-            [80.4441235, 25.1233339],
-          ],
+            [80.4441235, 25.1233339]
+          ]
         ],
         [
           [
@@ -13230,8 +13242,8 @@
             [80.4769552, 25.0583625],
             [80.479645, 25.0547494],
             [80.4834616, 25.0542767],
-            [80.4848255, 25.0569054],
-          ],
+            [80.4848255, 25.0569054]
+          ]
         ],
         [
           [
@@ -15961,7 +15973,7 @@
             [80.3107354, 25.3873364],
             [80.3090493, 25.3918175],
             [80.3085784, 25.3923293],
-            [80.2953236, 25.407766],
+            [80.2953236, 25.407766]
           ],
           [
             [80.7669043, 23.8401964],
@@ -16019,18 +16031,24 @@
             [80.7514078, 23.8354863],
             [80.7556435, 23.838022],
             [80.7615413, 23.8388683],
-            [80.7669043, 23.8401964],
-          ],
-        ],
-      ],
-    },
+            [80.7669043, 23.8401964]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Hoshangabad", STATE_NAME: "Madhya Pradesh", PC_No: 17, FID: 10, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Hoshangabad",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 17,
+      "FID": 10,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.8392778, 23.2424881],
           [78.8380434, 23.2442187],
@@ -18001,17 +18019,17 @@
           [78.8406377, 23.2304455],
           [78.8399506, 23.232811],
           [78.8394859, 23.2380411],
-          [78.8392778, 23.2424881],
-        ],
-      ],
-    },
+          [78.8392778, 23.2424881]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Betul (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 29, FID: 11, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Betul (ST)", "STATE_NAME": "Madhya Pradesh", "PC_No": 29, "FID": 11, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.2064437, 22.5643015],
           [77.204472, 22.5665902],
@@ -19672,17 +19690,17 @@
           [77.2150604, 22.5598953],
           [77.2119165, 22.5604058],
           [77.2086102, 22.5622656],
-          [77.2064437, 22.5643015],
-        ],
-      ],
-    },
+          [77.2064437, 22.5643015]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Rewa", STATE_NAME: "Madhya Pradesh", PC_No: 10, FID: 12, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Rewa", "STATE_NAME": "Madhya Pradesh", "PC_No": 10, "FID": 12, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [81.5855878, 25.1866058],
           [81.5771842, 25.1913119],
@@ -20743,17 +20761,17 @@
           [81.5817963, 25.1682605],
           [81.5819581, 25.1703371],
           [81.5880224, 25.1837921],
-          [81.5855878, 25.1866058],
-        ],
-      ],
-    },
+          [81.5855878, 25.1866058]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Satna", STATE_NAME: "Madhya Pradesh", PC_No: 9, FID: 13, ST_CODE: "S12" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Satna", "STATE_NAME": "Madhya Pradesh", "PC_No": 9, "FID": 13, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [80.8631848, 25.1892153],
@@ -22345,8 +22363,8 @@
             [80.8648875, 25.1858628],
             [80.8644893, 25.1869436],
             [80.8641907, 25.1878535],
-            [80.8631848, 25.1892153],
-          ],
+            [80.8631848, 25.1892153]
+          ]
         ],
         [
           [
@@ -22369,18 +22387,18 @@
             [80.5142305, 25.0957773],
             [80.5128902, 25.0982606],
             [80.5094835, 25.1010158],
-            [80.5019223, 25.1041508],
-          ],
-        ],
-      ],
-    },
+            [80.5019223, 25.1041508]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Bhopal", STATE_NAME: "Madhya Pradesh", PC_No: 19, FID: 14, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Bhopal", "STATE_NAME": "Madhya Pradesh", "PC_No": 19, "FID": 14, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.2231939, 23.9001771],
           [77.2204947, 23.8913802],
@@ -23092,17 +23110,17 @@
           [77.2460116, 23.8985739],
           [77.2443058, 23.8992202],
           [77.2353779, 23.8983749],
-          [77.2231939, 23.9001771],
-        ],
-      ],
-    },
+          [77.2231939, 23.9001771]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Gwalior", STATE_NAME: "Madhya Pradesh", PC_No: 3, FID: 15, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Gwalior", "STATE_NAME": "Madhya Pradesh", "PC_No": 3, "FID": 15, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.3358572, 26.3497624],
           [78.3288889, 26.3519611],
@@ -24234,7 +24252,7 @@
           [78.348464, 26.3422192],
           [78.3438389, 26.3442772],
           [78.3385801, 26.347898],
-          [78.3358572, 26.3497624],
+          [78.3358572, 26.3497624]
         ],
         [
           [78.3953592, 25.5916244],
@@ -24268,17 +24286,17 @@
           [78.3879887, 25.5827821],
           [78.388784, 25.5828537],
           [78.3896263, 25.585972],
-          [78.3953592, 25.5916244],
-        ],
-      ],
-    },
+          [78.3953592, 25.5916244]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Guna", STATE_NAME: "Madhya Pradesh", PC_No: 4, FID: 16, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Guna", "STATE_NAME": "Madhya Pradesh", "PC_No": 4, "FID": 16, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.8669498, 25.5399487],
           [77.8667232, 25.5411911],
@@ -25331,17 +25349,17 @@
           [77.8778889, 25.4990362],
           [77.8720526, 25.5098076],
           [77.8683896, 25.5166395],
-          [77.8669498, 25.5399487],
-        ],
-      ],
-    },
+          [77.8669498, 25.5399487]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Sagar", STATE_NAME: "Madhya Pradesh", PC_No: 5, FID: 17, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Sagar", "STATE_NAME": "Madhya Pradesh", "PC_No": 5, "FID": 17, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.6223954, 24.308729],
           [77.6201425, 24.307939],
@@ -27610,17 +27628,17 @@
           [77.626437, 24.310106],
           [77.625029, 24.3088659],
           [77.6228294, 24.3088905],
-          [77.6223954, 24.308729],
-        ],
-      ],
-    },
+          [77.6223954, 24.308729]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Bhind (SC)", STATE_NAME: "Madhya Pradesh", PC_No: 2, FID: 18, ST_CODE: "S12" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Bhind (SC)", "STATE_NAME": "Madhya Pradesh", "PC_No": 2, "FID": 18, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [78.4122968, 25.5972699],
@@ -27652,8 +27670,8 @@
             [78.4287434, 25.5965828],
             [78.4241383, 25.596919],
             [78.4162817, 25.5964797],
-            [78.4122968, 25.5972699],
-          ],
+            [78.4122968, 25.5972699]
+          ]
         ],
         [
           [
@@ -28884,18 +28902,18 @@
             [78.7314391, 26.783104],
             [78.7258719, 26.7796096],
             [78.7229432, 26.7793391],
-            [78.7206659, 26.7805205],
-          ],
-        ],
-      ],
-    },
+            [78.7206659, 26.7805205]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Morena", STATE_NAME: "Madhya Pradesh", PC_No: 1, FID: 19, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Morena", "STATE_NAME": "Madhya Pradesh", "PC_No": 1, "FID": 19, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.3646463, 26.8688234],
           [78.362501, 26.8713086],
@@ -30347,17 +30365,17 @@
           [78.3748035, 26.8468238],
           [78.3701134, 26.8575727],
           [78.3668908, 26.8626019],
-          [78.3646463, 26.8688234],
-        ],
-      ],
-    },
+          [78.3646463, 26.8688234]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Rajgarh", STATE_NAME: "Madhya Pradesh", PC_No: 20, FID: 20, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Rajgarh", "STATE_NAME": "Madhya Pradesh", "PC_No": 20, "FID": 20, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [77.0843353, 24.6295959],
           [77.083185, 24.630529],
@@ -32038,17 +32056,17 @@
           [77.1083938, 24.6290197],
           [77.0986261, 24.6288132],
           [77.0866878, 24.6284719],
-          [77.0843353, 24.6295959],
-        ],
-      ],
-    },
+          [77.0843353, 24.6295959]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Vidisha", STATE_NAME: "Madhya Pradesh", PC_No: 18, FID: 21, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Vidisha", "STATE_NAME": "Madhya Pradesh", "PC_No": 18, "FID": 21, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [78.286299, 23.9108835],
           [78.2864473, 23.9123012],
@@ -35417,17 +35435,23 @@
           [78.2791576, 23.8991446],
           [78.2815277, 23.903376],
           [78.2840724, 23.9059001],
-          [78.286299, 23.9108835],
-        ],
-      ],
-    },
+          [78.286299, 23.9108835]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Ratlam (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 24, FID: 22, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Ratlam (ST)",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 24,
+      "FID": 22,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [75.0772825, 23.5297673],
           [75.0710319, 23.5315613],
@@ -37161,17 +37185,23 @@
           [75.0914288, 23.5299344],
           [75.0906843, 23.5297234],
           [75.0850132, 23.5282718],
-          [75.0772825, 23.5297673],
-        ],
-      ],
-    },
+          [75.0772825, 23.5297673]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Ujjain (SC)", STATE_NAME: "Madhya Pradesh", PC_No: 22, FID: 23, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Ujjain (SC)",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 22,
+      "FID": 23,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [75.4768267, 23.9147494],
           [75.4652475, 23.9166149],
@@ -38730,17 +38760,17 @@
           [75.4995813, 23.9005032],
           [75.4883611, 23.9100357],
           [75.4874254, 23.9108558],
-          [75.4768267, 23.9147494],
-        ],
-      ],
-    },
+          [75.4768267, 23.9147494]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Mandsour", STATE_NAME: "Madhya Pradesh", PC_No: 23, FID: 24, ST_CODE: "S12" },
-    geometry: {
-      type: "MultiPolygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Mandsour", "STATE_NAME": "Madhya Pradesh", "PC_No": 23, "FID": 24, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "MultiPolygon",
+      "coordinates": [
         [
           [
             [75.1820888, 25.047605],
@@ -40197,8 +40227,8 @@
             [75.1944149, 25.0376822],
             [75.191749, 25.038366],
             [75.1853141, 25.0425344],
-            [75.1820888, 25.047605],
-          ],
+            [75.1820888, 25.047605]
+          ]
         ],
         [
           [
@@ -40267,18 +40297,24 @@
             [75.4170964, 24.8638947],
             [75.4172743, 24.8686143],
             [75.4206521, 24.8773325],
-            [75.4206099, 24.8816445],
-          ],
-        ],
-      ],
-    },
+            [75.4206099, 24.8816445]
+          ]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Khargone (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 27, FID: 25, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": {
+      "PC_NAME": "Khargone (ST)",
+      "STATE_NAME": "Madhya Pradesh",
+      "PC_No": 27,
+      "FID": 25,
+      "ST_CODE": "S12"
+    },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [76.0525057, 22.4590296],
           [76.0501405, 22.4584107],
@@ -41819,17 +41855,17 @@
           [76.0566694, 22.4366505],
           [76.0558455, 22.4422779],
           [76.053641, 22.4523481],
-          [76.0525057, 22.4590296],
-        ],
-      ],
-    },
+          [76.0525057, 22.4590296]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Khandwa", STATE_NAME: "Madhya Pradesh", PC_No: 28, FID: 26, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Khandwa", "STATE_NAME": "Madhya Pradesh", "PC_No": 28, "FID": 26, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [76.373806, 22.7837696],
           [76.3729815, 22.7898317],
@@ -43397,17 +43433,17 @@
           [76.3846007, 22.7853771],
           [76.3800322, 22.7842487],
           [76.3762987, 22.7836486],
-          [76.373806, 22.7837696],
-        ],
-      ],
-    },
+          [76.373806, 22.7837696]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Indore", STATE_NAME: "Madhya Pradesh", PC_No: 26, FID: 27, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Indore", "STATE_NAME": "Madhya Pradesh", "PC_No": 26, "FID": 27, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [75.6079272, 23.0933705],
           [75.6021725, 23.0927689],
@@ -44423,17 +44459,17 @@
           [75.6201666, 23.0880247],
           [75.6154836, 23.0872065],
           [75.6087557, 23.0878219],
-          [75.6079272, 23.0933705],
-        ],
-      ],
-    },
+          [75.6079272, 23.0933705]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Dhar (ST)", STATE_NAME: "Madhya Pradesh", PC_No: 25, FID: 28, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Dhar (ST)", "STATE_NAME": "Madhya Pradesh", "PC_No": 25, "FID": 28, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [75.3060683, 23.1133833],
           [75.303294, 23.1150672],
@@ -45609,17 +45645,17 @@
           [75.3193051, 23.1121601],
           [75.3173699, 23.113114],
           [75.3119321, 23.1124323],
-          [75.3060683, 23.1133833],
-        ],
-      ],
-    },
+          [75.3060683, 23.1133833]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Dewas (SC)", STATE_NAME: "Madhya Pradesh", PC_No: 21, FID: 29, ST_CODE: "S12" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Dewas (SC)", "STATE_NAME": "Madhya Pradesh", "PC_No": 21, "FID": 29, "ST_CODE": "S12" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [75.986259, 23.9327191],
           [75.9799186, 23.9422189],
@@ -48052,9 +48088,9 @@
           [76.0030044, 23.9310161],
           [75.9953729, 23.929686],
           [75.9919733, 23.9291014],
-          [75.986259, 23.9327191],
-        ],
-      ],
-    },
-  },
-];
+          [75.986259, 23.9327191]
+        ]
+      ]
+    }
+  }
+]
