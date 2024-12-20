@@ -168,8 +168,8 @@ export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record
   }
 
   try {
-    const vidhansabhaConstituencyFeaturesECI: GeoJSONFeature[] = vidhansabhaConstituenciesGeoECI?.filter(
-      (dist: any) => dist.properties.STATE_NAME.toLowerCase() === stateUT.name.toLowerCase()
+    const vidhansabhaConstituencyFeaturesECI: GeoJSONFeature[] = vidhansabhaConstituenciesGeoECI?.features?.filter(
+      (dist: any) => dist.properties.ST_NAME.toLowerCase() === stateUT.name.toLowerCase()
     );
 
     if (vidhansabhaConstituencyFeaturesECI?.length) {
@@ -238,7 +238,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           if (
             toPush.reservation &&
             toPush.reservation.toLowerCase() !==
-              wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.reservation.toLowerCase()
+              wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.reservation.text.toLowerCase()
           ) {
             missingUrlsAndIssues.push({ ...toPush, ISSUE: "RESERVATION STATUS NOT CLEAR" });
           }
@@ -288,7 +288,7 @@ export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Reco
     (vidhansabhaConstituency: VidhansabhaConstituencyTransformationWikidata) => {
       const matchedGeoDetail = vidhansabhaConstituencyFeaturesECI.find((geoDetail: GeoJSONFeature) => {
         const lowerCaseVidhansabhaConstituencyNames = vidhansabhaConstituency.names.map((n) => n.toLowerCase());
-        return lowerCaseVidhansabhaConstituencyNames.includes(geoDetail.properties.PC_NAME.toLowerCase());
+        return lowerCaseVidhansabhaConstituencyNames.includes(geoDetail.properties.AC_NAME.toLowerCase());
       });
 
       if (matchedGeoDetail) {
