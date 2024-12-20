@@ -1,10 +1,10 @@
 [
   {
-    type: "Feature",
-    properties: { PC_NAME: "Tripura West", STATE_NAME: "Tripura", PC_No: 1, FID: 1, ST_CODE: "S23" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Tripura West", "STATE_NAME": "Tripura", "PC_No": 1, "FID": 1, "ST_CODE": "S23" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [91.422174, 24.1091771],
           [91.4219113, 24.1092449],
@@ -1215,17 +1215,17 @@
           [91.4284302, 24.1079989],
           [91.4252926, 24.1079163],
           [91.4238642, 24.1085049],
-          [91.422174, 24.1091771],
-        ],
-      ],
-    },
+          [91.422174, 24.1091771]
+        ]
+      ]
+    }
   },
   {
-    type: "Feature",
-    properties: { PC_NAME: "Tripura East (ST)", STATE_NAME: "Tripura", PC_No: 2, FID: 2, ST_CODE: "S23" },
-    geometry: {
-      type: "Polygon",
-      coordinates: [
+    "type": "Feature",
+    "properties": { "PC_NAME": "Tripura East", "STATE_NAME": "Tripura", "PC_No": 2, "FID": 2, "ST_CODE": "S23" },
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
         [
           [92.1851794, 24.5228576],
           [92.1814758, 24.5230236],
@@ -3604,9 +3604,9 @@
           [92.1927132, 24.5214795],
           [92.1912465, 24.5209957],
           [92.1889375, 24.5201824],
-          [92.1851794, 24.5228576],
-        ],
-      ],
-    },
-  },
-];
+          [92.1851794, 24.5228576]
+        ]
+      ]
+    }
+  }
+]
