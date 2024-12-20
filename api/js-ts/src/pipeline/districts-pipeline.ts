@@ -102,6 +102,9 @@ interface DistrictsTransformationOSM extends DistrictsTransformationWikidata {
   localnameMatch: Boolean;
   wikidataMatch: Boolean;
   geo_osm: any;
+  osm_localname?: string;
+  osm_wikidata_qid?: string;
+  calculated_wikipedia?: string;
 }
 
 interface DistrictsTransformationSOIGeo extends DistrictsTransformationOSM {
@@ -137,11 +140,11 @@ interface ProgressIteration {
 }
 
 export async function fetchStateDistricts(outputs: Record<string, any>): Promise<any> {
-  const { stateUT, districtsList, districts } = outputs;
+  const { stateUT, districtsList } = outputs;
 
   try {
     const districts = districtsList.map((val: any) => ({
-      names: [val.name],
+      names: val.names,
       wikipedia_page: val.wikipedia_page,
       states_union_territories: stateUT.name_id,
     }));
@@ -272,7 +275,7 @@ export async function fetchDistrictsWikiDetails(outputs: Record<string, any>): P
 export async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>): Promise<any> {
   const { stateUT, progressDir } = outputs;
 
-  const geojsonFile = path.join(progressDir, "../../d.geo.json");
+  const geojsonFile = path.join(progressDir, "../d.geo.json");
   let districtsGeoSOI: any;
   if (fs.existsSync(geojsonFile)) {
     districtsGeoSOI = JSON.parse(fs.readFileSync(geojsonFile, "utf8"));
@@ -282,7 +285,7 @@ export async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>):
 
   try {
     const districtFeaturesSOI = districtsGeoSOI?.filter(
-      (dist: any) => dist.properties.stname.toLowerCase() === stateUT.state_name.toLowerCase()
+      (dist: any) => dist.properties.stname.toLowerCase() === stateUT.name.toLowerCase()
     );
 
     if (districtFeaturesSOI?.length) {
@@ -347,8 +350,8 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
     });
 
     if (matchedOSMDetail) {
-      const localnameMatch = matchedOSMDetail.localname === district.names[0];
       const wikidataMatch = matchedOSMDetail.extratags?.wikidata === district.wikidata_qid;
+      const localnameMatch = district.names.includes(matchedOSMDetail.localname);
       // const matchQuality = localnameMatch && wikidataMatch ? "100%" : "50%";
 
       if (localnameMatch && wikidataMatch)
@@ -360,14 +363,35 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
           geo_osm: matchedOSMDetail,
         });
       else if (localnameMatch || wikidataMatch) {
-        partialMatchDistrictsOSMWiki.push({
+        let partiallyMatchedVal: DistrictsTransformationOSM = {
           ...district,
+          names: district.names.concat(matchedOSMDetail.localname),
           osm_id: matchedOSMDetail.osm_id.toString(),
           localnameMatch,
           wikidataMatch,
           geo_osm: matchedOSMDetail,
-        });
-        status = "PARTIAL";
+        };
+
+        // if urls match as well, simply push to names
+        if (
+          matchedOSMDetail.calculated_wikipedia ===
+          `en:${partiallyMatchedVal.wikipedia_page.split("https://en.wikipedia.org/wiki/")[1]}`
+        ) {
+          status = "SUCCESS";
+          // push name to names array
+          partiallyMatchedVal.names.push(matchedOSMDetail.localname);
+          fullMatchDistrictsOSMWiki.push(partiallyMatchedVal);
+        } else {
+          partiallyMatchedVal = {
+            ...partiallyMatchedVal,
+            osm_localname: matchedOSMDetail.localname,
+            osm_wikidata_qid: matchedOSMDetail.extratags?.wikidata,
+            calculated_wikipedia: matchedOSMDetail.calculated_wikipedia,
+          };
+
+          partialMatchDistrictsOSMWiki.push(partiallyMatchedVal);
+          status = "PARTIAL";
+        }
       }
     } else {
       unmatchedDistricts.push(district);
@@ -376,9 +400,26 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
   });
 
   return {
-    fullMatchDistrictsOSMWiki,
-    partialMatchDistrictsOSMWiki,
+    // fullMatchDistrictsOSMWiki,
+    // partialMatchDistrictsOSMWiki,
     allMatchedDistrictsOSMWiki: [...fullMatchDistrictsOSMWiki, ...partialMatchDistrictsOSMWiki],
+    matchDistrictsOSMWikiStatistics: {
+      fullMatched: fullMatchDistrictsOSMWiki.length,
+      partialMatched: partialMatchDistrictsOSMWiki.length,
+      partialMatchesBrief: partialMatchDistrictsOSMWiki.map((val) => {
+        return {
+          name_id: val.name_id,
+          id_url: val.id_url,
+          wikidata_qid: val.wikidata_qid,
+          wikipedia_page: val.wikipedia_page,
+          localnameMatch: val.localnameMatch,
+          wikidataMatch: val.wikidataMatch,
+          osm_localname: val.osm_localname,
+          osm_wikidata_qid: val.osm_wikidata_qid,
+          calculated_wikipedia: val.calculated_wikipedia,
+        };
+      }),
+    },
     unmatchedDistrictsOSMWiki: unmatchedDistricts,
     status,
   };
@@ -388,8 +429,14 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
   const { districtFeaturesSOI, allMatchedDistrictsOSMWiki } = outputs;
 
   const transformedDistrictsSOIGeo: DistrictsTransformationSOIGeo[] = [];
-  const unmatchedDistricts: DistrictsTransformationOSM[] = [];
+  const unmatchedDistricts: any[] = [];
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
+
+  if (districtFeaturesSOI.length !== allMatchedDistrictsOSMWiki.length) {
+    return {
+      status: "FAILURE",
+    };
+  }
 
   allMatchedDistrictsOSMWiki.forEach((district: DistrictsTransformationOSM) => {
     const matchedGeoDetail = districtFeaturesSOI.find((geoDetail: GeoJSONFeature) => {
@@ -403,7 +450,7 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
         geo_soi: matchedGeoDetail,
       });
     } else {
-      unmatchedDistricts.push(district);
+      unmatchedDistricts.push({ name_id: district.name_id, names: district.names });
       status = "PARTIAL";
     }
   });
@@ -509,7 +556,7 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
 
 async function sampleFunction(stateUT: any) {
   // const stateUT = { name: "andaman and nicobar islands", region_id: "in-sut-andaman-nicobar-islands" };
-  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.state_name);
+  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
     {
@@ -596,6 +643,7 @@ async function sampleFunction(stateUT: any) {
     fullMatchDistrictsOSMWiki: [],
     partialMatchDistrictsOSMWiki: [],
     allMatchedDistrictsOSMWiki: [],
+    matchDistrictsOSMWikiStatistics: {},
     unmatchedDistrictsOSMWiki: [],
     transformedDistrictsSOIGeo: [],
     unmatchedDistrictsSOIGeo: [],
