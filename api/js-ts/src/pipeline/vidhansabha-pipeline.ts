@@ -52,8 +52,8 @@ interface StateVidhansabhaConstituencyTransformationWikidata {
 }
 
 interface WikiVidhansabhaConstituencyResult {
-  url: string;
-  results: {
+  urls: string[];
+  results?: {
     infobox?: any;
     wikidata_qid?: string;
     wikipedia_page?: string;
@@ -80,7 +80,7 @@ interface VidhansabhaConstituencyTransformationECIGeo extends VidhansabhaConstit
 export async function fetchStateVidhansabhaConstituencies(outputs: Record<string, any>): Promise<{
   stateVidhansabhaConstituencies: VidhansabhaConstituency[];
   vidhansabhaConstituenciesCount: number;
-  status: "SUCCESS" | "FAILURE" | "PARTIAL";
+  status: StepStatus;
 }> {
   const { stateUT, vcDLcList } = outputs;
 
@@ -159,7 +159,7 @@ export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record
 }> {
   const { stateUT, progressDir } = outputs;
 
-  const geojsonFile = path.join(progressDir, "../../d.geo.json");
+  const geojsonFile = path.join(progressDir, "../vc.geo.json");
   let vidhansabhaConstituenciesGeoECI: any;
   if (fs.existsSync(geojsonFile)) {
     vidhansabhaConstituenciesGeoECI = JSON.parse(fs.readFileSync(geojsonFile, "utf8"));
@@ -169,7 +169,7 @@ export async function fetchVidhansabhaConstituencyECIGeoFeatures(outputs: Record
 
   try {
     const vidhansabhaConstituencyFeaturesECI: GeoJSONFeature[] = vidhansabhaConstituenciesGeoECI?.filter(
-      (dist: any) => dist.properties.stname.toLowerCase() === stateUT.state_name.toLowerCase()
+      (dist: any) => dist.properties.STATE_NAME.toLowerCase() === stateUT.name.toLowerCase()
     );
 
     if (vidhansabhaConstituencyFeaturesECI?.length) {
@@ -219,7 +219,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
         const toPush: VidhansabhaConstituencyTransformationWikidata = {
           wikidata_qid: wikiVidhansabhaConstituency.results.wikidata_qid,
           id_url: wikiVidhansabhaConstituency.urls,
-          wikipedia_page: wikiVidhansabhaConstituency.results.wikidata_page,
+          wikipedia_page: wikiVidhansabhaConstituency.results.wikipedia_page,
           names: allNames,
           states_union_territories: stateUT.name_id,
           name_id: generateNameId(
@@ -229,10 +229,9 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           reservation: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].reservation,
         };
 
-        transformedVidhansabhaConstituenciesWikipedia.push();
-
         if (wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.established) {
-          toPush.established_on_string = wikiVidhansabhaConstituency.results.infobox.constituencyDetails.established;
+          toPush.established_on_string =
+            wikiVidhansabhaConstituency.results.infobox.constituencyDetails.established?.text;
         }
 
         if (wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.reservation) {
@@ -245,8 +244,10 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           }
           if (!toPush.reservation)
             toPush.reservation =
-              wikiVidhansabhaConstituency.results.infobox.constituencyDetails.reservation.toUpperCase();
+              wikiVidhansabhaConstituency.results.infobox.constituencyDetails.reservation.text.toUpperCase();
         }
+
+        transformedVidhansabhaConstituenciesWikipedia.push(toPush);
 
         delete keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url];
       }
@@ -287,7 +288,7 @@ export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Reco
     (vidhansabhaConstituency: VidhansabhaConstituencyTransformationWikidata) => {
       const matchedGeoDetail = vidhansabhaConstituencyFeaturesECI.find((geoDetail: GeoJSONFeature) => {
         const lowerCaseVidhansabhaConstituencyNames = vidhansabhaConstituency.names.map((n) => n.toLowerCase());
-        return lowerCaseVidhansabhaConstituencyNames.includes(geoDetail.properties.dtname.toLowerCase());
+        return lowerCaseVidhansabhaConstituencyNames.includes(geoDetail.properties.PC_NAME.toLowerCase());
       });
 
       if (matchedGeoDetail) {
