@@ -1,0 +1,150 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2024-12-20T08:13:32.378Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_7_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2024-12-20T08:39:42.092Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/2.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/2.STEP_8_PARTIAL_Transform Districts with SOI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2024-12-20T08:47:01.926Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/2.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "/Users/dollyparmar/dev/kartvya/kartvya-data-pipeline/api/js-ts/src/admin-regions/districts/telangana/district-pipeline-logs/3.STEP_8_SUCCESS_Transform Districts with SOI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
