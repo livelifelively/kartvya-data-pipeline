@@ -236,12 +236,12 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
   console.log("VIDHANSABHA PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
-    {
-      name: "Fetch State Vidhansabha_Constituency",
-      function: fetchStateVidhansabhaConstituencies,
-      key: "STATE_VIDHANSABHA_LIST",
-      input: stateUT,
-    },
+    // {
+    //   name: "Fetch State Vidhansabha_Constituency",
+    //   function: fetchStateVidhansabhaConstituencies,
+    //   key: "STATE_VIDHANSABHA_LIST",
+    //   input: stateUT,
+    // },
     {
       name: "Fetch Vidhansabha_Constituency Wiki Details",
       function: fetchVidhansabhaConstituenciesWikiDetails,
@@ -277,7 +277,7 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
   let outputs: Record<string, any> = {
     stateUT,
     vidhansabhaConstituenciesList,
-    stateVidhansabhaConstituencies: [],
+    stateVidhansabhaConstituencies: vidhansabhaConstituenciesList,
     vidhansabhaConstituenciesCount: 0,
     vidhansabhaConstituenciesWikiDetails: [],
     vidhansabhaConstituenciesWikiDetailsFailed: [],
@@ -449,7 +449,17 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // );
   // console.log(loksabhaConstituenciesIds);
 
-  // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+  const vidhansabhaConstituenciesIds = vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.map(
+    (val: any) => {
+      return {
+        id_url: val.id_url,
+        name_id: val.name_id,
+      };
+    }
+  );
+
+  console.log(vidhansabhaConstituenciesIds);
 
   return;
 })();
