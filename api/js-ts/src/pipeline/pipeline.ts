@@ -71,10 +71,11 @@ function logProgress(
 ): void {
   const progressStatus: ProgressIteration[] = JSON.parse(fs.readFileSync(progressFile, "utf8"));
   const progressDataLogFile = path.join(progressDir, `${iteration.iteration}.${progressData.key}.log.json`);
+  const relativeLogFile = path.relative(progressDir, progressDataLogFile);
 
   iteration.steps.push({
     step: iteration.steps.length,
-    logFile: progressDataLogFile,
+    logFile: relativeLogFile,
     status,
   });
 
