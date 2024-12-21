@@ -434,7 +434,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
     return agg;
   }, {});
-  console.log(districtsKeyedByIdURL);
+  // console.log(districtsKeyedByIdURL);
 
   const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
   const loksabhaConstituenciesKeyedByIdURL =
@@ -445,7 +445,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
       return agg;
     }, {});
-  console.log(loksabhaConstituenciesKeyedByIdURL);
+  // console.log(loksabhaConstituenciesKeyedByIdURL);
 
   const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
   const vidhansabhaConstituenciesKeyedByIdURL =
@@ -456,13 +456,14 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
       return agg;
     }, {});
-  console.log(vidhansabhaConstituenciesKeyedByIdURL);
+  // console.log(vidhansabhaConstituenciesKeyedByIdURL);
 
   // iterate over dvl list, introduce name_ids
 
-  const nameIds = dataVDL.map((val: any) => {
+  const vcnameIds = dataVDL.map((val: any) => {
     return {
       vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].name_id,
+      vc_wiki: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].wikipedia_page,
       d_name_id: val.districts.map((v: any) => {
         return districtsKeyedByIdURL[v.href].name_id;
       }),
@@ -470,7 +471,34 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     };
   });
 
-  console.log(nameIds);
+  console.log(vcnameIds);
+
+  // const lcNameIds = groupBy(vcnameIds, "lc_name_id");
+
+  // const lcNameIdsConnections = reduce(
+  //   lcNameIds,
+  //   (agg: any, val: any, key: any) => {
+  //     const vcs: any = {};
+  //     const ds: any = {};
+
+  //     val.forEach((v: any) => {
+  //       vcs[v.vc_name_id] = true;
+  //       v.d_name_id.map((d: any) => {
+  //         ds[d] = true;
+  //       });
+  //     });
+
+  //     agg[key] = {
+  //       vcs: Object.keys(vcs),
+  //       ds: Object.keys(ds),
+  //     };
+
+  //     return agg;
+  //   },
+  //   {}
+  // );
+
+  // console.log(lcNameIdsConnections);
 
   return;
 })();
