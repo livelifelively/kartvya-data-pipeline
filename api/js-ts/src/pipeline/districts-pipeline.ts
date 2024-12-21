@@ -81,8 +81,9 @@ interface StateDistrictsTransformationWikidata {
 }
 
 interface WikiDistrictResult {
-  url: string;
-  results: {
+  urls: string[];
+  results?: {
+    infobox?: any;
     wikidata_qid?: string;
     wikipedia_page?: string;
     last_updated_on?: string;
@@ -91,7 +92,7 @@ interface WikiDistrictResult {
 
 interface DistrictsTransformationWikidata extends District {
   name_id: string;
-  id_url: string;
+  id_url: string[];
   wikidata_qid: string;
   wikipedia_page: string;
 }
@@ -307,22 +308,22 @@ export async function transformDistrictsWikipediaData(outputs: Record<string, an
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
 
   districtsWikiDetails.forEach((wikiDistrict: WikiDistrictResult) => {
-    if (!keyedDistricts[wikiDistrict.url]) {
-      missingUrls.push(wikiDistrict.url);
+    if (!keyedDistricts[wikiDistrict.urls[0]]) {
+      missingUrls.push(wikiDistrict.urls[0]);
       status = "PARTIAL";
     } else {
-      if (wikiDistrict.results.wikidata_qid) {
+      if (wikiDistrict.results?.wikidata_qid) {
         transformedDistrictsWikipedia.push({
-          ...keyedDistricts[wikiDistrict.url],
+          ...keyedDistricts[wikiDistrict.urls[0]],
           name_id: generateNameId(
             `in-d-${stateUT.vehicle_code.toLowerCase()}-`,
-            keyedDistricts[wikiDistrict.url].names[0]
+            keyedDistricts[wikiDistrict.urls[0]].names[0]
           ),
-          wikidata_qid: wikiDistrict.results.wikidata_qid,
-          id_url: wikiDistrict.url,
+          wikidata_qid: wikiDistrict.results?.wikidata_qid,
+          id_url: wikiDistrict.urls,
         });
 
-        delete keyedDistricts[wikiDistrict.url];
+        delete keyedDistricts[wikiDistrict.urls[0]];
       }
     }
   });

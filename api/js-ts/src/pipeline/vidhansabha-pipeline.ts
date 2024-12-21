@@ -206,8 +206,8 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
   let status: StepStatus = "SUCCESS";
 
   vidhansabhaConstituenciesWikiDetails.forEach((wikiVidhansabhaConstituency: any) => {
-    if (!keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url]) {
-      missingUrlsAndIssues.push(wikiVidhansabhaConstituency.url);
+    if (!keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]]) {
+      missingUrlsAndIssues.push(wikiVidhansabhaConstituency.urls[0]);
       status = "PARTIAL";
     } else {
       if (wikiVidhansabhaConstituency.results.wikidata_qid) {
@@ -249,7 +249,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
 
         transformedVidhansabhaConstituenciesWikipedia.push(toPush);
 
-        delete keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.url];
+        delete keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]];
       }
     }
   });
