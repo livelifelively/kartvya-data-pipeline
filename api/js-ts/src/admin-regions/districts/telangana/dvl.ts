@@ -428,26 +428,25 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(v);
   // console.log(l);
 
-  // const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  // const districtsIds = districtsLastStep.transformedDistrictsSOIGeo.map((val: any) => {
-  //   return {
-  //     id_url: val.id_url,
-  //     name_id: val.name_id,
-  //   };
-  // });
-  // console.log(districtsIds);
+  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  const districtsIds = districtsLastStep.transformedDistrictsSOIGeo.map((val: any) => {
+    return {
+      id_url: val.id_url,
+      name_id: val.name_id,
+    };
+  });
+  console.log(districtsIds);
 
-  // console.log(Object.values(l));
-  // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  // const loksabhaConstituenciesIds = loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.map(
-  //   (val: any) => {
-  //     return {
-  //       id_url: val.id_url,
-  //       name_id: val.name_id,
-  //     };
-  //   }
-  // );
-  // console.log(loksabhaConstituenciesIds);
+  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
+  const loksabhaConstituenciesIds = loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.map(
+    (val: any) => {
+      return {
+        id_url: val.id_url,
+        name_id: val.name_id,
+      };
+    }
+  );
+  console.log(loksabhaConstituenciesIds);
 
   const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
   const vidhansabhaConstituenciesIds = vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.map(
@@ -458,35 +457,9 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
       };
     }
   );
-
   console.log(vidhansabhaConstituenciesIds);
+
+  // iterate over
 
   return;
 })();
-
-// keyedLoksabhaConstituencies = reduce(
-//   keyedLoksabhaConstituencies,
-//   (agg: any, val: any, idx: any) => {
-//     agg[idx] = uniqWith(val, isEqual);
-//     return agg;
-//   },
-//   {}
-// );
-
-// // merge names
-// keyedLoksabhaConstituencies = reduce(
-//   keyedLoksabhaConstituencies,
-//   (agg: any, val: any, idx: any) => {
-//     agg[idx] = val.reduce((agg1: any, val1: any) => {
-//       agg1.names = agg1.names || [];
-//       agg1.names = agg1.names.concat(val1.names);
-
-//       agg1.wikipedia_page = val1.wikipedia_page;
-//       agg1.states_union_territories = val1.states_union_territories;
-
-//       return agg1;
-//     }, {});
-//     return agg;
-//   },
-//   {}
-// );
