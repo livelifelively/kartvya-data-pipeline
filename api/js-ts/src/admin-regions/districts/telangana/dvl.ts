@@ -429,37 +429,48 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(l);
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  const districtsIds = districtsLastStep.transformedDistrictsSOIGeo.map((val: any) => {
-    return {
-      id_url: val.id_url,
-      name_id: val.name_id,
-    };
-  });
-  console.log(districtsIds);
+  const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
+    agg[val.id_url] = val;
+
+    return agg;
+  }, {});
+  console.log(districtsKeyedByIdURL);
 
   const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  const loksabhaConstituenciesIds = loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.map(
-    (val: any) => {
-      return {
-        id_url: val.id_url,
-        name_id: val.name_id,
-      };
-    }
-  );
-  console.log(loksabhaConstituenciesIds);
+  const loksabhaConstituenciesKeyedByIdURL =
+    loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
+      val.id_url.forEach((v: any) => {
+        agg[v] = val;
+      });
+
+      return agg;
+    }, {});
+  console.log(loksabhaConstituenciesKeyedByIdURL);
 
   const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
-  const vidhansabhaConstituenciesIds = vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.map(
-    (val: any) => {
-      return {
-        id_url: val.id_url,
-        name_id: val.name_id,
-      };
-    }
-  );
-  console.log(vidhansabhaConstituenciesIds);
+  const vidhansabhaConstituenciesKeyedByIdURL =
+    vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
+      val.id_url.forEach((v: any) => {
+        agg[v] = val;
+      });
 
-  // iterate over
+      return agg;
+    }, {});
+  console.log(vidhansabhaConstituenciesKeyedByIdURL);
+
+  // iterate over dvl list, introduce name_ids
+
+  const nameIds = dataVDL.map((val: any) => {
+    return {
+      vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].name_id,
+      d_name_id: val.districts.map((v: any) => {
+        return districtsKeyedByIdURL[v.href].name_id;
+      }),
+      lc_name_id: loksabhaConstituenciesKeyedByIdURL[val.loksabhaConstituency.href].name_id,
+    };
+  });
+
+  console.log(nameIds);
 
   return;
 })();
