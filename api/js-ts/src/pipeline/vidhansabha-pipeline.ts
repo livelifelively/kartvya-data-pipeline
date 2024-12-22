@@ -223,7 +223,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           names: allNames,
           states_union_territories: stateUT.name_id,
           name_id: generateNameId(
-            `in-lc-${stateUT.vehicle_code.toLowerCase()}-`,
+            `in-vc-${stateUT.vehicle_code.toLowerCase()}-`,
             keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].names[0]
           ),
           reservation: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].reservation,
