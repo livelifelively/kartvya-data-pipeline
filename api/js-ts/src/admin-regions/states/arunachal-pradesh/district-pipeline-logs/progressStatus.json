@@ -250,5 +250,61 @@
         "status": "SUCCESS"
       }
     ]
+  },
+  {
+    "iteration": 8,
+    "timeStamp": "2024-12-22T18:06:56.088Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/4.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/5.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/6.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/7.STEP_8_SUCCESS_Transform Districts with SOI Geo.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 9,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/8.STEP_9_SUCCESS_Save Districts to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
+      }
+    ]
   }
 ]
