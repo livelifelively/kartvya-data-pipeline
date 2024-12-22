@@ -478,7 +478,7 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
   for (let td of transformedDistrictsSOIGeo) {
     const graphQLClient = await createGraphQLClient();
 
-    let toSaveDistrict = {
+    let toSaveDistrict: any = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
         return {
@@ -488,9 +488,11 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       states_union_territories: [{ name_id: td.states_union_territories }],
       wikipedia_page: td.wikipedia_page,
       wikidata_qid: td.wikidata_qid,
-      osm_id: td.osm_id,
+
       node_created_on: new Date(),
     };
+
+    if (td.osm_id) toSaveDistrict.osm_id = td.osm_id;
 
     let geo_osm, geo_soi;
     let geoOSMId, geoSOIId;
