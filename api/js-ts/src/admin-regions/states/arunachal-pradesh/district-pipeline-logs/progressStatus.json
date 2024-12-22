@@ -14,5 +14,241 @@
         "status": "FAILURE"
       }
     ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2024-12-22T13:41:27.549Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2024-12-22T14:03:44.841Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_5_PARTIAL_Fetch District SOI Geo Features.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 4,
+    "timeStamp": "2024-12-22T14:06:52.450Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/4.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "iteration": 5,
+    "timeStamp": "2024-12-22T14:36:04.129Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/4.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/5.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "iteration": 6,
+    "timeStamp": "2024-12-22T14:38:16.541Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/4.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/5.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/6.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "iteration": 7,
+    "timeStamp": "2024-12-22T15:03:44.087Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/2.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/3.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/4.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/5.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/6.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/district-pipeline-logs/7.STEP_8_SUCCESS_Transform Districts with SOI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
   }
 ]

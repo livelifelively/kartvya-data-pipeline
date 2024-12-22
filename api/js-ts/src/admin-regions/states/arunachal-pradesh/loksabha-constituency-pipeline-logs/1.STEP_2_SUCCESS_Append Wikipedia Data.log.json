@@ -1,0 +1,37 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q1659305",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arunachal_West_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Arunachal_West_Lok_Sabha_constituency",
+        "names": [
+          "Arunachal West"
+        ],
+        "states_union_territories": "in-sut-arunachal-pradesh",
+        "name_id": "in-lc-ar-arunachal-west",
+        "established_on_string": "1977",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q1659329",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arunachal_East_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Arunachal_East_Lok_Sabha_constituency",
+        "names": [
+          "Arunachal East"
+        ],
+        "states_union_territories": "in-sut-arunachal-pradesh",
+        "name_id": "in-lc-ar-arunachal-east",
+        "established_on_string": "1977",
+        "reservation": "NONE"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2024-12-22T17:29:20.687Z"
+}

@@ -1,0 +1,70 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2024-12-22T17:30:18.739Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2024-12-22T17:37:07.187Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/2.STEP_3_PARTIAL_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2024-12-22T17:44:47.308Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/arunachal-pradesh/vidhansabha-constituency-pipeline-logs/3.STEP_3_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
