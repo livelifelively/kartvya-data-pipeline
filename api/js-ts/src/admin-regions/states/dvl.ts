@@ -38,21 +38,6 @@ import { createGraphQLClient } from "../../knowledge-graph/generic/generic.utils
 import { updateNodeType } from "../../knowledge-graph/generic/generic.create";
 import { statesAndUnionTerritories } from "../states-data/update-states";
 
-// {
-//   "vidhansabha_constituency_number": "1",
-//   "vidhansabha_constituency_name": "Lumla",
-//   "vidhansabha_constituency_wikipedia_page": "https://en.wikipedia.org/wiki/Lumla_Assembly_constituency",
-//   "district_name": "Tawang",
-//   "district_wikipedia_page": "https://en.wikipedia.org/wiki/Tawang_district",
-//   "loksabha_constituency_name": "Arunachal West",
-//   "loksabha_constituency_wikipedia_page": "https://en.wikipedia.org/wiki/Arunachal_West_Lok_Sabha_constituency",
-//   "electors": {
-//     "year": "2024",
-//     "text": "9,917"
-//   },
-//   "reservation": "ST"
-// }
-
 function getDistrictsByURL(stateUT: any, dataVDL: any) {
   let d: any = [];
   dataVDL.forEach((val: any) => {
@@ -227,12 +212,12 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
     },
-    // {
-    //   name: "Save Loksabha_Constituency to KnowledgeGraph",
-    //   function: addLoksabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Loksabha_Constituency to KnowledgeGraph",
+      function: addLoksabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
   let outputs: Record<string, any> = {
     stateUT,
@@ -296,12 +281,12 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_VIDHANSABHA_CONSTITUENCY_DATA",
     },
-    // {
-    //   name: "Save Vidhansabha_Constituency to KnowledgeGraph",
-    //   function: addVidhansabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Vidhansabha_Constituency to KnowledgeGraph",
+      function: addVidhansabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
 
   let outputs: Record<string, any> = {
@@ -392,12 +377,12 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
-    // {
-    //   name: "Save Districts to KnowledgeGraph",
-    //   function: addDistrictDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Districts to KnowledgeGraph",
+      function: addDistrictDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
 
   let outputs: Record<string, any> = {
@@ -466,32 +451,22 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(v);
   // console.log(l);
 
-  // const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  // const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
-  //   val.id_url.forEach((v: any) => {
-  //     agg[v] = val;
-  //   });
+  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  const districtsKeyedByIdURL = districtsLastStep.savedToKnowledgeGraph.reduce((agg: any, val: any) => {
+    // const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
+    val.id_url.forEach((v: any) => {
+      agg[v] = val;
+    });
 
-  //   return agg;
-  // }, {});
+    return agg;
+  }, {});
   // console.log(districtsKeyedByIdURL);
 
-  // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  // const loksabhaConstituenciesKeyedByIdURL = loksabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
-  //   (agg: any, val: any) => {
-  //     val.id_url.forEach((v: any) => {
-  //       agg[v] = val;
-  //     });
-
-  //     return agg;
-  //   },
-  //   {}
-  // );
-  // console.log(loksabhaConstituenciesKeyedByIdURL);
-
-  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
-  const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
+  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
+  const loksabhaConstituenciesKeyedByIdURL = loksabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
     (agg: any, val: any) => {
+      // const loksabhaConstituenciesKeyedByIdURL =
+      //   loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
       val.id_url.forEach((v: any) => {
         agg[v] = val;
       });
@@ -500,79 +475,87 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     },
     {}
   );
-  // // console.log(vidhansabhaConstituenciesKeyedByIdURL);
+  // console.log(loksabhaConstituenciesKeyedByIdURL);
 
-  // // iterate over dvl list, introduce name_ids
-  // const vcnameIds = dataVDL.map((val: any) => {
-  //   return {
-  //     vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].name_id,
-  //     vc_wiki: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].wikipedia_page,
-  //     d_name_id: val.districts.map((v: any) => {
-  //       return districtsKeyedByIdURL[v.href].name_id;
-  //     }),
-  //     lc_name_id: loksabhaConstituenciesKeyedByIdURL[val.loksabhaConstituency.href].name_id,
-  //   };
-  // });
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+  const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
+    (agg: any, val: any) => {
+      // const vidhansabhaConstituenciesKeyedByIdURL =
+      //   vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
+      val.id_url.forEach((v: any) => {
+        agg[v] = val;
+      });
 
-  // // console.log(vcnameIds);
+      return agg;
+    },
+    {}
+  );
 
-  // const graphQLClient = await createGraphQLClient();
+  // iterate over dvl list, introduce name_ids
+  const vcnameIds = state.data.data.map((val: any) => {
+    return {
+      vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.vidhansabha_constituency_wikipedia_page].name_id,
+      vc_wiki: vidhansabhaConstituenciesKeyedByIdURL[val.vidhansabha_constituency_wikipedia_page].wikipedia_page,
+      d_name_id: districtsKeyedByIdURL[val.district_wikipedia_page].name_id,
+      lc_name_id: loksabhaConstituenciesKeyedByIdURL[val.loksabha_constituency_wikipedia_page].name_id,
+    };
+  });
 
-  // // for (let vcId of vcnameIds) {
-  // //   const id = await updateNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, {
-  // //     filter: { name_id: { eq: vcId.vc_name_id } },
-  // //     set: {
-  // //       districts: vcId.d_name_id.map((val: any) => {
-  // //         return { name_id: val };
-  // //       }),
-  // //       loksabha_constituencies: [{ name_id: vcId.lc_name_id }],
-  // //     },
-  // //   });
-  // //   console.log(id);
-  // // }
+  // console.log(vcnameIds);
 
-  // const lcNameIds = groupBy(vcnameIds, "lc_name_id");
+  const graphQLClient = await createGraphQLClient();
 
-  // const lcNameIdsConnections = reduce(
-  //   lcNameIds,
-  //   (agg: any, val: any, key: any) => {
-  //     const vcs: any = {};
-  //     const ds: any = {};
+  for (let vcId of vcnameIds) {
+    const id = await updateNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, {
+      filter: { name_id: { eq: vcId.vc_name_id } },
+      set: {
+        districts: [{ name_id: vcId.d_name_id }],
+        loksabha_constituencies: [{ name_id: vcId.lc_name_id }],
+      },
+    });
+    console.log(id);
+  }
 
-  //     val.forEach((v: any) => {
-  //       vcs[v.vc_name_id] = true;
-  //       v.d_name_id.map((d: any) => {
-  //         ds[d] = true;
-  //       });
-  //     });
+  const lcNameIds = groupBy(vcnameIds, "lc_name_id");
 
-  //     agg[key] = {
-  //       self: key,
-  //       vcs: Object.keys(vcs),
-  //       ds: Object.keys(ds),
-  //     };
+  const lcNameIdsConnections = reduce(
+    lcNameIds,
+    (agg: any, val: any, key: any) => {
+      const vcs: any = {};
+      const ds: any = {};
 
-  //     return agg;
-  //   },
-  //   {}
-  // );
+      val.forEach((v: any) => {
+        vcs[v.vc_name_id] = true;
+        ds[v.d_name_id] = true;
+      });
+
+      agg[key] = {
+        self: key,
+        vcs: Object.keys(vcs),
+        ds: Object.keys(ds),
+      };
+
+      return agg;
+    },
+    {}
+  );
 
   // console.log(lcNameIdsConnections);
 
-  // for (let lcId in lcNameIdsConnections) {
-  //   const id = await updateNodeType("_Indian_Loksabha_Constituency_", graphQLClient, {
-  //     filter: { name_id: { eq: lcNameIdsConnections[lcId].self } },
-  //     set: {
-  //       districts: lcNameIdsConnections[lcId].ds.map((val: any) => {
-  //         return { name_id: val };
-  //       }),
-  //       vidhansabha_constituencies: lcNameIdsConnections[lcId].vcs.map((val: any) => {
-  //         return { name_id: val };
-  //       }),
-  //     },
-  //   });
-  //   console.log(id);
-  // }
+  for (let lcId in lcNameIdsConnections) {
+    const id = await updateNodeType("_Indian_Loksabha_Constituency_", graphQLClient, {
+      filter: { name_id: { eq: lcNameIdsConnections[lcId].self } },
+      set: {
+        districts: lcNameIdsConnections[lcId].ds.map((val: any) => {
+          return { name_id: val };
+        }),
+        vidhansabha_constituencies: lcNameIdsConnections[lcId].vcs.map((val: any) => {
+          return { name_id: val };
+        }),
+      },
+    });
+    console.log(id);
+  }
 
   // update vcs, lcs with connections data
 
