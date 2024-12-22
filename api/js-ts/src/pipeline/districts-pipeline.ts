@@ -274,7 +274,7 @@ export async function fetchDistrictsWikiDetails(outputs: Record<string, any>): P
 }
 
 export async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>): Promise<any> {
-  const { stateUT, progressDir } = outputs;
+  const { stateUT, progressDir, districtsCount } = outputs;
 
   const geojsonFile = path.join(progressDir, "../d.geo.json");
   let districtsGeoSOI: any;
@@ -290,7 +290,14 @@ export async function fetchDistrictSOIGeoFeatures(outputs: Record<string, any>):
     );
 
     if (districtFeaturesSOI?.length) {
-      return { districtFeaturesSOI, status: "SUCCESS" };
+      if (districtsCount === districtFeaturesSOI?.length) {
+        return {
+          districtFeaturesSOI,
+          status: "SUCCESS",
+          districtFeaturesSOIDistrictsCount: districtFeaturesSOI.length,
+        };
+      }
+      return { districtFeaturesSOI, status: "PARTIAL", districtFeaturesSOIDistrictsCount: districtFeaturesSOI.length };
     } else {
       return { status: "FAILURE", error: "NO DISTRICTS FEATURES FOUND IN SOI DATA" };
     }
@@ -378,7 +385,7 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
           matchedOSMDetail.calculated_wikipedia ===
           `en:${partiallyMatchedVal.wikipedia_page.split("https://en.wikipedia.org/wiki/")[1]}`
         ) {
-          status = "SUCCESS";
+          // status = "SUCCESS";
           // push name to names array
           partiallyMatchedVal.names.push(matchedOSMDetail.localname);
           fullMatchDistrictsOSMWiki.push(partiallyMatchedVal);
@@ -391,14 +398,15 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
           };
 
           partialMatchDistrictsOSMWiki.push(partiallyMatchedVal);
-          status = "PARTIAL";
+          // status = "PARTIAL";
         }
       }
     } else {
       unmatchedDistricts.push(district);
-      status = "PARTIAL";
     }
   });
+
+  if (unmatchedDistricts.length > 0 || partialMatchDistrictsOSMWiki.length > 0) status = "PARTIAL";
 
   return {
     // fullMatchDistrictsOSMWiki,
@@ -420,6 +428,7 @@ export async function transformDistrictsWithOSM(outputs: Record<string, any>): P
           calculated_wikipedia: val.calculated_wikipedia,
         };
       }),
+      unmatched: unmatchedDistricts.length,
     },
     unmatchedDistrictsOSMWiki: unmatchedDistricts,
     status,
@@ -433,12 +442,12 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
   const unmatchedDistricts: any[] = [];
   let status: "SUCCESS" | "FAILURE" | "PARTIAL" = "SUCCESS";
 
-  if (districtFeaturesSOI.length !== allMatchedDistrictsOSMWiki.length) {
-    return {
-      status: "FAILURE",
-      error: "DISTRICTS COUNT MISMATCH. DATA MAY NOT BE SUITABLE FOR USAGE.",
-    };
-  }
+  // if (districtFeaturesSOI.length !== allMatchedDistrictsOSMWiki.length) {
+  //   return {
+  //     status: "FAILURE",
+  //     error: "DISTRICTS COUNT MISMATCH. DATA MAY NOT BE SUITABLE FOR USAGE.",
+  //   };
+  // }
 
   allMatchedDistrictsOSMWiki.forEach((district: DistrictsTransformationOSM) => {
     const matchedGeoDetail = districtFeaturesSOI.find((geoDetail: GeoJSONFeature) => {
@@ -452,10 +461,12 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
         geo_soi: matchedGeoDetail,
       });
     } else {
-      unmatchedDistricts.push({ name_id: district.name_id, names: district.names });
+      unmatchedDistricts.push(district);
       status = "PARTIAL";
     }
   });
+
+  if (unmatchedDistricts.length > 0) status = "PARTIAL";
 
   return { transformedDistrictsSOIGeo, unmatchedDistrictsSOIGeo: unmatchedDistricts, status };
 }
@@ -481,25 +492,32 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       node_created_on: new Date(),
     };
 
-    const districtMapOSM = polygonToMultiPolygon(td.geo_osm);
-    const districtMapSOI = polygonToMultiPolygon(td.geo_soi);
+    let geo_osm, geo_soi;
+    let geoOSMId, geoSOIId;
 
-    // states_union_territories
-    let geo_osm = {
-      category: "Region",
-      area: multiPolygonToDgraphMultiPolygon(districtMapOSM.geometry.coordinates),
-      source_name: "OpenStreetMap",
-      source_url: `https://nominatim.openstreetmap.org/details.php?osmtype=R&osmid=${toSaveDistrict.osm_id}&class=boundary&addressdetails=1&hierarchy=0&group_hierarchy=1&polygon_geojson=1&format=json`,
-      source_data: `${JSON.stringify(td.geo_osm)}`,
-    };
+    if (td.geo_osm) {
+      const districtMapOSM = polygonToMultiPolygon(td.geo_osm);
+      geo_osm = {
+        category: "Region",
+        area: multiPolygonToDgraphMultiPolygon(districtMapOSM.geometry.coordinates),
+        source_name: "OpenStreetMap",
+        source_url: `https://nominatim.openstreetmap.org/details.php?osmtype=R&osmid=${toSaveDistrict.osm_id}&class=boundary&addressdetails=1&hierarchy=0&group_hierarchy=1&polygon_geojson=1&format=json`,
+        source_data: `${JSON.stringify(td.geo_osm)}`,
+      };
+      geoOSMId = await createNodeType("_Geo_", graphQLClient, geo_osm);
+    }
 
-    let geo_soi = {
-      category: "Region",
-      area: multiPolygonToDgraphMultiPolygon(districtMapSOI.geometry.coordinates),
-      source_name: "Survey of India",
-      source_url: `https://onlinemaps.surveyofindia.gov.in/`,
-      source_data: `${JSON.stringify(td.geo_soi)}`,
-    };
+    if (td.geo_soi) {
+      const districtMapSOI = polygonToMultiPolygon(td.geo_soi);
+      geo_soi = {
+        category: "Region",
+        area: multiPolygonToDgraphMultiPolygon(districtMapSOI.geometry.coordinates),
+        source_name: "Survey of India",
+        source_url: `https://onlinemaps.surveyofindia.gov.in/`,
+        source_data: `${JSON.stringify(td.geo_soi)}`,
+      };
+      geoSOIId = await createNodeType("_Geo_", graphQLClient, geo_soi);
+    }
 
     let nameIds: any = [];
     for (let n of toSaveDistrict.names) {
@@ -509,23 +527,20 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
 
     const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
 
-    const geoSOIId = await createNodeType("_Geo_", graphQLClient, geo_soi);
-    const geoOSMId = await createNodeType("_Geo_", graphQLClient, geo_osm);
-
-    let toSaveDistrictRegion = {
+    let toSaveDistrictRegion: any = {
       self: { name_id: toSaveDistrict.name_id },
-      geo_boundary: [
-        {
-          id: geoSOIId,
-        },
-        {
-          id: geoOSMId,
-        },
-      ],
+      geo_boundary: [],
       node_created_on: new Date(),
     };
 
-    // save district region
+    if (geoOSMId) {
+      toSaveDistrictRegion.geo_boundary.push({ id: geoOSMId });
+    }
+
+    if (geoSOIId) {
+      toSaveDistrictRegion.geo_boundary.push({ id: geoSOIId });
+    }
+
     const districtRegionId = await createNodeType("_Indian_District_Region_", graphQLClient, toSaveDistrictRegion);
 
     savedToKnowledgeGraph.push({
@@ -539,14 +554,8 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
         toSaveDistrictRegion,
       },
       geo: {
-        geo_osm: {
-          geo_osm,
-          geoOSMId,
-        },
-        geo_soi: {
-          geo_soi,
-          geoSOIId,
-        },
+        geo_osm: geo_osm ? { geo_osm, geoOSMId } : null,
+        geo_soi: geo_soi ? { geo_soi, geoSOIId } : null,
       },
       id_url: td.id_url,
       name_id: td.name_id,
