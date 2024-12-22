@@ -430,11 +430,13 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
   const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
-    agg[val.id_url] = val;
+    val.id_url.forEach((v: any) => {
+      agg[v] = val;
+    });
 
     return agg;
   }, {});
-  // console.log(districtsKeyedByIdURL);
+  console.log(districtsKeyedByIdURL);
 
   const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
   const loksabhaConstituenciesKeyedByIdURL =
@@ -471,7 +473,7 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     };
   });
 
-  console.log(vcnameIds);
+  // console.log(vcnameIds);
 
   // const lcNameIds = groupBy(vcnameIds, "lc_name_id");
 
