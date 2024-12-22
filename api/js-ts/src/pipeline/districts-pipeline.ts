@@ -551,6 +551,14 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       id_url: td.id_url,
       name_id: td.name_id,
     });
+
+    console.log({
+      nameIds,
+      districtId,
+      districtRegionId,
+      id_url: td.id_url,
+      name_id: td.name_id,
+    });
   }
 
   return { savedToKnowledgeGraph, status: "SUCCESS" };

@@ -396,6 +396,14 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       id_url: td.id_url,
       name_id: td.name_id,
     });
+
+    console.log({
+      nameIds,
+      vidhansabhaConstituencyId,
+      vidhansabhaConstituencyRegionId,
+      id_url: td.id_url,
+      name_id: td.name_id,
+    });
   }
 
   return { savedToKnowledgeGraph, status: "SUCCESS" };
