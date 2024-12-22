@@ -2,6 +2,8 @@ import path from "path";
 import fs from "fs";
 import { keyBy, map, size } from "lodash";
 
+import { findProjectRoot } from "../file-utils/projectRoot";
+
 export interface PipelineStep {
   name: string;
   function: any;
@@ -49,6 +51,9 @@ function initializeDirectories(progressDir: string, progressFile: string): void 
 }
 
 function createNewIteration(progressFile: string): ProgressIteration {
+  const projectRoot = findProjectRoot();
+  const filePath = path.join(projectRoot, progressFile);
+
   const progressStatus: ProgressIteration[] = JSON.parse(fs.readFileSync(progressFile, "utf8"));
   return {
     iteration: progressStatus.length + 1,
@@ -62,16 +67,18 @@ function getLastIteration(progressFile: string): ProgressIteration {
   return progressStatus[progressStatus.length - 1];
 }
 
-function logProgress(
+async function logProgress(
   progressDir: string,
   progressFile: string,
   progressData: ProgressData,
   status: "SUCCESS" | "FAILURE" | "PARTIAL",
   iteration: ProgressIteration
-): void {
+): Promise<void> {
   const progressStatus: ProgressIteration[] = JSON.parse(fs.readFileSync(progressFile, "utf8"));
   const progressDataLogFile = path.join(progressDir, `${iteration.iteration}.${progressData.key}.log.json`);
-  const relativeLogFile = path.relative(progressDir, progressDataLogFile);
+  const projectRoot = await findProjectRoot();
+
+  const relativeLogFile = path.relative(projectRoot, progressDataLogFile);
 
   iteration.steps.push({
     step: iteration.steps.length,
@@ -127,7 +134,8 @@ async function orchestrationFunction(
     for (let s in previousIteration.steps) {
       if (previousIteration.steps[s].status === "SUCCESS") {
         currentIteration.steps[s] = { ...previousIteration.steps[s] };
-        const stepOutput = JSON.parse(fs.readFileSync(previousIteration.steps[s].logFile, "utf8"));
+        let stepOutput: any = await fs.readFileSync(previousIteration.steps[s].logFile, "utf8");
+        stepOutput = JSON.parse(stepOutput);
         outputs = { ...outputs, ...stepOutput.data };
       } else {
         break;
@@ -161,7 +169,7 @@ async function orchestrationFunction(
         throw new Error();
       }
 
-      logProgress(
+      await logProgress(
         outputs.progressDir,
         outputs.progressFile,
         {
@@ -174,7 +182,7 @@ async function orchestrationFunction(
       );
     } catch (error: any) {
       step.status = step.status || "FAILURE";
-      logProgress(
+      await logProgress(
         outputs.progressDir,
         outputs.progressFile,
         {
