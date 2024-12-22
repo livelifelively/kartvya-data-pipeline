@@ -37,6 +37,13 @@ import { stateLoksabhaConstituenciesCountList } from "../loksabha/state-wise-lok
 import { createGraphQLClient } from "../../knowledge-graph/generic/generic.utils";
 import { updateNodeType } from "../../knowledge-graph/generic/generic.create";
 import { statesAndUnionTerritories } from "../states-data/update-states";
+import {
+  keyByURLDistrictsVidhansabhaLoksabha,
+  prepareLoksabhaToDistrictsAndVidhansabha,
+  prepareVidhansabhaToDistrictsAndLoksabha,
+  saveConnectLoksabhaToDistrictsAndVidhansabhas,
+  saveConnectVidhansabhaToDistrictsAndLoksabhas,
+} from "../../pipeline/link-dvl-pipeline";
 
 function getDistrictsByURL(stateUT: any, dataVDL: any) {
   let d: any = [];
@@ -178,7 +185,11 @@ function getLoksabhaConstituenciesByURL(stateUT: any, dataVDL: any) {
   return lGroupedByURL;
 }
 
-async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenciesList: any) {
+async function loksabhaConstituenciesPipeline(
+  stateUT: any,
+  loksabhaConstituenciesList: any,
+  saveToKG: boolean = false
+) {
   // console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.name);
   const steps: PipelineStep[] = [
     // // DONT NEED THIS STEP, ALREADY INPUT IS IN THE REQUIRED FORMAT
@@ -212,13 +223,8 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
     },
-    {
-      name: "Save Loksabha_Constituency to KnowledgeGraph",
-      function: addLoksabhaConstituencyDataToKnowledgeGraph,
-      input: null,
-      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    },
   ];
+
   let outputs: Record<string, any> = {
     stateUT,
     // loksabhaConstituenciesList,
@@ -232,6 +238,16 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
     transformedLoksabhaConstituenciesECIGeo: [],
     unmatchedLoksabhaConstituenciesECIGeo: [],
   };
+
+  if (saveToKG) {
+    steps.push({
+      name: "Save Loksabha_Constituency to KnowledgeGraph",
+      function: addLoksabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    });
+  }
+
   const loksabhaConstituenciesProgressDir = path.join(
     __dirname,
     stateUT.name_id.split("in-sut-")[1],
@@ -241,13 +257,19 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
 
   try {
     const lastStepOutput = await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
-    return lastStepOutput;
+
+    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    return lastStepOutput.transformedLoksabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
-async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConstituenciesList: any) {
+async function vidhansabhaConstituenciesPipeline(
+  stateUT: any,
+  vidhansabhaConstituenciesList: any,
+  saveToKG: boolean = false
+) {
   console.log("VIDHANSABHA PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
@@ -281,12 +303,6 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_VIDHANSABHA_CONSTITUENCY_DATA",
     },
-    {
-      name: "Save Vidhansabha_Constituency to KnowledgeGraph",
-      function: addVidhansabhaConstituencyDataToKnowledgeGraph,
-      input: null,
-      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    },
   ];
 
   let outputs: Record<string, any> = {
@@ -301,7 +317,17 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
     vidhansabhaConstituenciesNotTransformedWikipedia: [],
     transformedVidhansabhaConstituenciesECIGeo: [],
     unmatchedVidhansabhaConstituenciesECIGeo: [],
+    savedToKnowledgeGraph: [],
   };
+
+  if (saveToKG) {
+    steps.push({
+      name: "Save Vidhansabha_Constituency to KnowledgeGraph",
+      function: addVidhansabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    });
+  }
 
   const vidhansabhaConstituenciesProgressDir = path.join(
     __dirname,
@@ -312,13 +338,15 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
 
   try {
     const lastStepOutput = await runPipeline(steps, outputs, vidhansabhaConstituenciesProgressDir, progressStatusFile);
-    return lastStepOutput;
+
+    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    return lastStepOutput.transformedVidhansabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
-async function districtsPipeline(stateUT: any, districtsList: any) {
+async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boolean = false) {
   console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
@@ -377,12 +405,6 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
-    {
-      name: "Save Districts to KnowledgeGraph",
-      function: addDistrictDataToKnowledgeGraph,
-      input: null,
-      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    },
   ];
 
   let outputs: Record<string, any> = {
@@ -412,16 +434,100 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     unmatchedDistrictsSOIGeo: [],
   };
 
+  if (saveToKG) {
+    steps.push({
+      name: "Save Districts to KnowledgeGraph",
+      function: addDistrictDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    });
+  }
+
   const districtsProgressDir = path.join(__dirname, stateUT.name_id.split("in-sut-")[1], "district-pipeline-logs");
   const progressStatusFile = path.join(districtsProgressDir, "progressStatus.json");
 
   try {
     const lastStepOutput = await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+
+    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    return lastStepOutput.transformedDistrictsSOIGeo;
+  } catch (error) {
+    console.error("Error in processing: ", error);
+  }
+}
+
+async function connectDVLPipeline(
+  stateUT: any,
+  districtsPreparedOrAndSavedToKG: any,
+  loksabhaConstituenciesPreparedOrAndSavedToKG: any,
+  vidhansabhaConstituenciesPreparedOrAndSavedToKG: any,
+  stateVCsData: any,
+  saveToKG: boolean = false
+) {
+  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
+
+  const steps: PipelineStep[] = [
+    {
+      name: "Key outputs by wikipedia page urls",
+      function: keyByURLDistrictsVidhansabhaLoksabha,
+      key: "KEY_OUTPUTS_BY_WIKIPEDIA_PAGE_URL",
+      input: null,
+    },
+    {
+      name: "Key outputs by wikipedia page urls",
+      function: prepareVidhansabhaToDistrictsAndLoksabha,
+      key: "PREPARE_VIDHANSABHA_CONNECTIONS",
+      input: null,
+    },
+    {
+      name: "Key outputs by wikipedia page urls",
+      function: prepareLoksabhaToDistrictsAndVidhansabha,
+      key: "PREPARE_LOKSABHA_CONNECTIONS",
+      input: null,
+    },
+  ];
+
+  let outputs: Record<string, any> = {
+    districtsPreparedOrAndSavedToKG,
+    loksabhaConstituenciesPreparedOrAndSavedToKG,
+    vidhansabhaConstituenciesPreparedOrAndSavedToKG,
+    stateVCsData,
+  };
+
+  if (saveToKG) {
+    steps.push({
+      name: "Key outputs by wikipedia page urls",
+      function: saveConnectVidhansabhaToDistrictsAndLoksabhas,
+      key: "SAVE_VIDHANSABHA_CONNECTIONS",
+      input: null,
+    });
+    steps.push({
+      name: "Key outputs by wikipedia page urls",
+      function: saveConnectLoksabhaToDistrictsAndVidhansabhas,
+      key: "SAVE_LOKSABHA_CONNECTIONS",
+      input: null,
+    });
+  }
+
+  const linkDVLProgressDir = path.join(__dirname, stateUT.name_id.split("in-sut-")[1], "link-dvl-pipeline-logs");
+  const progressStatusFile = path.join(linkDVLProgressDir, "progressStatus.json");
+
+  try {
+    const lastStepOutput = await runPipeline(steps, outputs, linkDVLProgressDir, progressStatusFile);
     return lastStepOutput;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
+
+// connectDistricsVidhansabhaConstituencesLoksabhaConstituencies(
+//    state.data.data,
+//    districtsLastStep.savedToKnowledgeGraph,
+//    loksabhaConstituenciesLastStep.savedToKnowledgeGraph,
+//    vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph
+// );
+// transformedDistrictsSOIGeo, transformedLoksabhaConstituenciesECIGeo, transformedVidhansabhaConstituenciesECIGeo
+// async function connectDistricsVidhansabhaConstituencesLoksabhaConstituencies() {}
 
 (async () => {
   const extraStateDetailsByNameId = keyBy(statesAndUnionTerritories, "name_id");
@@ -451,111 +557,20 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(v);
   // console.log(l);
 
-  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  const districtsKeyedByIdURL = districtsLastStep.savedToKnowledgeGraph.reduce((agg: any, val: any) => {
-    // const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
-    val.id_url.forEach((v: any) => {
-      agg[v] = val;
-    });
+  const saveToKG = false;
 
-    return agg;
-  }, {});
-  // console.log(districtsKeyedByIdURL);
+  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d), saveToKG);
+  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
 
-  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  const loksabhaConstituenciesKeyedByIdURL = loksabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
-    (agg: any, val: any) => {
-      // const loksabhaConstituenciesKeyedByIdURL =
-      //   loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
-      val.id_url.forEach((v: any) => {
-        agg[v] = val;
-      });
-
-      return agg;
-    },
-    {}
+  await connectDVLPipeline(
+    stateUT,
+    districtsLastStep,
+    loksabhaConstituenciesLastStep,
+    vidhansabhaConstituenciesLastStep,
+    state.data.data,
+    saveToKG
   );
-  // console.log(loksabhaConstituenciesKeyedByIdURL);
-
-  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
-  const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
-    (agg: any, val: any) => {
-      // const vidhansabhaConstituenciesKeyedByIdURL =
-      //   vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
-      val.id_url.forEach((v: any) => {
-        agg[v] = val;
-      });
-
-      return agg;
-    },
-    {}
-  );
-
-  // iterate over dvl list, introduce name_ids
-  const vcnameIds = state.data.data.map((val: any) => {
-    return {
-      vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.vidhansabha_constituency_wikipedia_page].name_id,
-      vc_wiki: vidhansabhaConstituenciesKeyedByIdURL[val.vidhansabha_constituency_wikipedia_page].wikipedia_page,
-      d_name_id: districtsKeyedByIdURL[val.district_wikipedia_page].name_id,
-      lc_name_id: loksabhaConstituenciesKeyedByIdURL[val.loksabha_constituency_wikipedia_page].name_id,
-    };
-  });
-
-  // console.log(vcnameIds);
-
-  const graphQLClient = await createGraphQLClient();
-
-  for (let vcId of vcnameIds) {
-    const id = await updateNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, {
-      filter: { name_id: { eq: vcId.vc_name_id } },
-      set: {
-        districts: [{ name_id: vcId.d_name_id }],
-        loksabha_constituencies: [{ name_id: vcId.lc_name_id }],
-      },
-    });
-    console.log(id);
-  }
-
-  const lcNameIds = groupBy(vcnameIds, "lc_name_id");
-
-  const lcNameIdsConnections = reduce(
-    lcNameIds,
-    (agg: any, val: any, key: any) => {
-      const vcs: any = {};
-      const ds: any = {};
-
-      val.forEach((v: any) => {
-        vcs[v.vc_name_id] = true;
-        ds[v.d_name_id] = true;
-      });
-
-      agg[key] = {
-        self: key,
-        vcs: Object.keys(vcs),
-        ds: Object.keys(ds),
-      };
-
-      return agg;
-    },
-    {}
-  );
-
-  // console.log(lcNameIdsConnections);
-
-  for (let lcId in lcNameIdsConnections) {
-    const id = await updateNodeType("_Indian_Loksabha_Constituency_", graphQLClient, {
-      filter: { name_id: { eq: lcNameIdsConnections[lcId].self } },
-      set: {
-        districts: lcNameIdsConnections[lcId].ds.map((val: any) => {
-          return { name_id: val };
-        }),
-        vidhansabha_constituencies: lcNameIdsConnections[lcId].vcs.map((val: any) => {
-          return { name_id: val };
-        }),
-      },
-    });
-    console.log(id);
-  }
 
   // update vcs, lcs with connections data
 
