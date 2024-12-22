@@ -2,7 +2,7 @@ import path from "path";
 import fs from "fs";
 import { keyBy, map, size } from "lodash";
 import { districtsList } from "../../../districts/all-states-districts-list";
-import DVCLC from "../../../../source-wikipedia/d-vc-lc.v3.json";
+import DVCLC from "../../../../source-wikipedia/d-vc-lc.v3";
 import { createNodeType, queryNodeType } from "../../../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
 import {
