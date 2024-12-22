@@ -1,6 +1,7 @@
 import path from "path";
 
 import {
+  addLoksabhaConstituencyDataToKnowledgeGraph,
   fetchLoksabhaConstituenciesWikiDetails,
   fetchLoksabhaConstituencyECIGeoFeatures,
   fetchStateLoksabhaConstituencies,
@@ -11,6 +12,7 @@ import { PipelineStep, runPipeline } from "../../../pipeline/pipeline";
 import dataVDL from "./tl.d-vc.json";
 import { groupBy, map, uniqWith, isEqual, reduce, forEach } from "lodash";
 import {
+  addVidhansabhaConstituencyDataToKnowledgeGraph,
   fetchStateVidhansabhaConstituencies,
   fetchVidhansabhaConstituenciesWikiDetails,
   fetchVidhansabhaConstituencyECIGeoFeatures,
@@ -18,6 +20,7 @@ import {
   transformVidhansabhaConstituenciesWithECIGeo,
 } from "../../../pipeline/vidhansabha-pipeline";
 import {
+  addDistrictDataToKnowledgeGraph,
   fetchDistrictSOIGeoFeatures,
   fetchDistrictsOSMDetails,
   fetchDistrictsOSMRelationIds,
@@ -31,6 +34,8 @@ import {
 
 import { stateDistrictsList } from "../state-wise-districts-count-list-urls";
 import { stateLoksabhaConstituenciesCountList } from "../../loksabha/state-wise-loksabha-constituencies-count-list-urls";
+import { updateNodeType } from "../../../knowledge-graph/generic/generic.create";
+import { createGraphQLClient } from "../../../knowledge-graph/generic/generic.utils";
 
 function getDistrictsByURL(stateUT: any) {
   // get all districts, can be repeated
@@ -202,12 +207,12 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
     },
-    // {
-    //   name: "Save Loksabha_Constituency to KnowledgeGraph",
-    //   function: addLoksabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Loksabha_Constituency to KnowledgeGraph",
+      function: addLoksabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
   let outputs: Record<string, any> = {
     stateUT,
@@ -266,12 +271,12 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_ECI_DATA_TRANSFORM_STATE_VIDHANSABHA_CONSTITUENCY_DATA",
     },
-    // {
-    //   name: "Save Vidhansabha_Constituency to KnowledgeGraph",
-    //   function: addVidhansabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Vidhansabha_Constituency to KnowledgeGraph",
+      function: addVidhansabhaConstituencyDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
 
   let outputs: Record<string, any> = {
@@ -358,12 +363,12 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
       input: null, // Will be set after the sixth and seventh steps
       key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
-    // {
-    //   name: "Save Districts to KnowledgeGraph",
-    //   function: addDistrictDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
+    {
+      name: "Save Districts to KnowledgeGraph",
+      function: addDistrictDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    },
   ];
 
   let outputs: Record<string, any> = {
@@ -429,39 +434,42 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(l);
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
+  const districtsKeyedByIdURL = districtsLastStep.savedToKnowledgeGraph.reduce((agg: any, val: any) => {
     val.id_url.forEach((v: any) => {
       agg[v] = val;
     });
 
     return agg;
   }, {});
-  console.log(districtsKeyedByIdURL);
+  // console.log(districtsKeyedByIdURL);
 
   const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
-  const loksabhaConstituenciesKeyedByIdURL =
-    loksabhaConstituenciesLastStep.transformedLoksabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
+  const loksabhaConstituenciesKeyedByIdURL = loksabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
+    (agg: any, val: any) => {
       val.id_url.forEach((v: any) => {
         agg[v] = val;
       });
 
       return agg;
-    }, {});
+    },
+    {}
+  );
   // console.log(loksabhaConstituenciesKeyedByIdURL);
 
   const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
-  const vidhansabhaConstituenciesKeyedByIdURL =
-    vidhansabhaConstituenciesLastStep.transformedVidhansabhaConstituenciesECIGeo.reduce((agg: any, val: any) => {
+  const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
+    (agg: any, val: any) => {
       val.id_url.forEach((v: any) => {
         agg[v] = val;
       });
 
       return agg;
-    }, {});
+    },
+    {}
+  );
   // console.log(vidhansabhaConstituenciesKeyedByIdURL);
 
   // iterate over dvl list, introduce name_ids
-
   const vcnameIds = dataVDL.map((val: any) => {
     return {
       vc_name_id: vidhansabhaConstituenciesKeyedByIdURL[val.name_2.href].name_id,
@@ -475,32 +483,65 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
 
   // console.log(vcnameIds);
 
-  // const lcNameIds = groupBy(vcnameIds, "lc_name_id");
+  const graphQLClient = await createGraphQLClient();
 
-  // const lcNameIdsConnections = reduce(
-  //   lcNameIds,
-  //   (agg: any, val: any, key: any) => {
-  //     const vcs: any = {};
-  //     const ds: any = {};
+  // for (let vcId of vcnameIds) {
+  //   const id = await updateNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, {
+  //     filter: { name_id: { eq: vcId.vc_name_id } },
+  //     set: {
+  //       districts: vcId.d_name_id.map((val: any) => {
+  //         return { name_id: val };
+  //       }),
+  //       loksabha_constituencies: [{ name_id: vcId.lc_name_id }],
+  //     },
+  //   });
+  //   console.log(id);
+  // }
 
-  //     val.forEach((v: any) => {
-  //       vcs[v.vc_name_id] = true;
-  //       v.d_name_id.map((d: any) => {
-  //         ds[d] = true;
-  //       });
-  //     });
+  const lcNameIds = groupBy(vcnameIds, "lc_name_id");
 
-  //     agg[key] = {
-  //       vcs: Object.keys(vcs),
-  //       ds: Object.keys(ds),
-  //     };
+  const lcNameIdsConnections = reduce(
+    lcNameIds,
+    (agg: any, val: any, key: any) => {
+      const vcs: any = {};
+      const ds: any = {};
 
-  //     return agg;
-  //   },
-  //   {}
-  // );
+      val.forEach((v: any) => {
+        vcs[v.vc_name_id] = true;
+        v.d_name_id.map((d: any) => {
+          ds[d] = true;
+        });
+      });
 
-  // console.log(lcNameIdsConnections);
+      agg[key] = {
+        self: key,
+        vcs: Object.keys(vcs),
+        ds: Object.keys(ds),
+      };
+
+      return agg;
+    },
+    {}
+  );
+
+  console.log(lcNameIdsConnections);
+
+  for (let lcId in lcNameIdsConnections) {
+    const id = await updateNodeType("_Indian_Loksabha_Constituency_", graphQLClient, {
+      filter: { name_id: { eq: lcNameIdsConnections[lcId].self } },
+      set: {
+        districts: lcNameIdsConnections[lcId].ds.map((val: any) => {
+          return { name_id: val };
+        }),
+        vidhansabha_constituencies: lcNameIdsConnections[lcId].vcs.map((val: any) => {
+          return { name_id: val };
+        }),
+      },
+    });
+    console.log(id);
+  }
+
+  // update vcs, lcs with connections data
 
   return;
 })();
