@@ -473,11 +473,10 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
 
 export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, any>) {
   const { transformedDistrictsSOIGeo } = outputs;
+  const graphQLClient = await createGraphQLClient();
 
   let savedToKnowledgeGraph: any = [];
   for (let td of transformedDistrictsSOIGeo) {
-    const graphQLClient = await createGraphQLClient();
-
     let toSaveDistrict: any = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {

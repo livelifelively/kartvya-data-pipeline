@@ -301,9 +301,9 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
   const { transformedLoksabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
-  for (let td of transformedLoksabhaConstituenciesECIGeo) {
-    const graphQLClient = await createGraphQLClient();
+  const graphQLClient = await createGraphQLClient();
 
+  for (let td of transformedLoksabhaConstituenciesECIGeo) {
     let toSaveLoksabhaConstituency = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {

@@ -317,9 +317,9 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
   const { transformedVidhansabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
-  for (let td of transformedVidhansabhaConstituenciesECIGeo) {
-    const graphQLClient = await createGraphQLClient();
+  const graphQLClient = await createGraphQLClient();
 
+  for (let td of transformedVidhansabhaConstituenciesECIGeo) {
     let toSaveVidhansabhaConstituency = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
