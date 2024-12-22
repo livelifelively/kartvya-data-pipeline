@@ -247,8 +247,13 @@ async function loksabhaConstituenciesPipeline(stateUT: any, loksabhaConstituenci
     transformedLoksabhaConstituenciesECIGeo: [],
     unmatchedLoksabhaConstituenciesECIGeo: [],
   };
-  const loksabhaConstituenciesProgressDir = path.join(__dirname, "loksabha-constituency-pipeline-logs");
+  const loksabhaConstituenciesProgressDir = path.join(
+    __dirname,
+    stateUT.name_id.split("in-sut-")[1],
+    "loksabha-constituency-pipeline-logs"
+  );
   const progressStatusFile = path.join(loksabhaConstituenciesProgressDir, "progressStatus.json");
+
   try {
     const lastStepOutput = await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
     return lastStepOutput;
@@ -313,7 +318,11 @@ async function vidhansabhaConstituenciesPipeline(stateUT: any, vidhansabhaConsti
     unmatchedVidhansabhaConstituenciesECIGeo: [],
   };
 
-  const vidhansabhaConstituenciesProgressDir = path.join(__dirname, "vidhansabha-constituency-pipeline-logs");
+  const vidhansabhaConstituenciesProgressDir = path.join(
+    __dirname,
+    stateUT.name_id.split("in-sut-")[1],
+    "vidhansabha-constituency-pipeline-logs"
+  );
   const progressStatusFile = path.join(vidhansabhaConstituenciesProgressDir, "progressStatus.json");
 
   try {
@@ -457,14 +466,14 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   // console.log(v);
   // console.log(l);
 
-  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
-  const districtsKeyedByIdURL = districtsLastStep.savedToKnowledgeGraph.reduce((agg: any, val: any) => {
-    val.id_url.forEach((v: any) => {
-      agg[v] = val;
-    });
+  // const districtsLastStep = await districtsPipeline(stateUT, Object.values(d));
+  // const districtsKeyedByIdURL = districtsLastStep.transformedDistrictsSOIGeo.reduce((agg: any, val: any) => {
+  //   val.id_url.forEach((v: any) => {
+  //     agg[v] = val;
+  //   });
 
-    return agg;
-  }, {});
+  //   return agg;
+  // }, {});
   // console.log(districtsKeyedByIdURL);
 
   // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l));
@@ -478,19 +487,19 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
   //   },
   //   {}
   // );
-  // // console.log(loksabhaConstituenciesKeyedByIdURL);
+  // console.log(loksabhaConstituenciesKeyedByIdURL);
 
-  // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
-  // const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
-  //   (agg: any, val: any) => {
-  //     val.id_url.forEach((v: any) => {
-  //       agg[v] = val;
-  //     });
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v);
+  const vidhansabhaConstituenciesKeyedByIdURL = vidhansabhaConstituenciesLastStep.savedToKnowledgeGraph.reduce(
+    (agg: any, val: any) => {
+      val.id_url.forEach((v: any) => {
+        agg[v] = val;
+      });
 
-  //     return agg;
-  //   },
-  //   {}
-  // );
+      return agg;
+    },
+    {}
+  );
   // // console.log(vidhansabhaConstituenciesKeyedByIdURL);
 
   // // iterate over dvl list, introduce name_ids
