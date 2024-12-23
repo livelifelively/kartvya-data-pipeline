@@ -1,0 +1,135 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2024-12-23T15:50:33.125Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_4_FAILURE_Fetch Districts Wiki Details.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2024-12-23T15:58:27.806Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_8_PARTIAL_Transform Districts with SOI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2024-12-23T16:04:47.037Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/2.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 8,
+        "logFile": "src/admin-regions/states/bihar/district-pipeline-logs/3.STEP_8_SUCCESS_Transform Districts with SOI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
