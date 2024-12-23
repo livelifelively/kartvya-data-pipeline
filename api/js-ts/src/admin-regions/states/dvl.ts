@@ -563,14 +563,14 @@ async function connectDVLPipeline(
   const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
   const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
 
-  await connectDVLPipeline(
-    stateUT,
-    districtsLastStep,
-    loksabhaConstituenciesLastStep,
-    vidhansabhaConstituenciesLastStep,
-    state.data.data,
-    saveToKG
-  );
+  // await connectDVLPipeline(
+  //   stateUT,
+  //   districtsLastStep,
+  //   loksabhaConstituenciesLastStep,
+  //   vidhansabhaConstituenciesLastStep,
+  //   state.data.data,
+  //   saveToKG
+  // );
 
   // update vcs, lcs with connections data
 
