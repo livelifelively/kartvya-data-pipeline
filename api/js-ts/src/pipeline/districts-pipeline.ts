@@ -468,7 +468,28 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
 
   if (unmatchedDistricts.length > 0) status = "PARTIAL";
 
-  return { transformedDistrictsSOIGeo, unmatchedDistrictsSOIGeo: unmatchedDistricts, status };
+  return {
+    transformedDistrictsSOIGeo: [...transformedDistrictsSOIGeo, ...unmatchedDistricts],
+    // unmatchedDistrictsSOIGeo: unmatchedDistricts,
+    matchDistrictsSOIOSMWikiStatistics: {
+      unmatchedDistrictsBrief: unmatchedDistricts.map((val) => {
+        return {
+          name_id: val.name_id,
+          names: val.names,
+          id_url: val.id_url,
+          wikidata_qid: val.wikidata_qid,
+          wikipedia_page: val.wikipedia_page,
+          localnameMatch: val.localnameMatch,
+          wikidataMatch: val.wikidataMatch,
+          osm_localname: val.osm_localname,
+          osm_wikidata_qid: val.osm_wikidata_qid,
+          calculated_wikipedia: val.calculated_wikipedia,
+        };
+      }),
+    },
+    unmatchedCount: unmatchedDistricts.length,
+    status,
+  };
 }
 
 export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, any>) {
