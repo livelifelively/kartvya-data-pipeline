@@ -223,7 +223,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
           names: allNames,
           states_union_territories: stateUT.name_id,
           name_id: generateNameId(
-            `in-lc-${stateUT.vehicle_code.toLowerCase()}-`,
+            `in-vc-${stateUT.vehicle_code.toLowerCase()}-`,
             keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].names[0]
           ),
           reservation: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].reservation,
@@ -317,9 +317,9 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
   const { transformedVidhansabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
-  for (let td of transformedVidhansabhaConstituenciesECIGeo) {
-    const graphQLClient = await createGraphQLClient();
+  const graphQLClient = await createGraphQLClient();
 
+  for (let td of transformedVidhansabhaConstituenciesECIGeo) {
     let toSaveVidhansabhaConstituency = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
@@ -393,6 +393,14 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
           geoECIId,
         },
       },
+      id_url: td.id_url,
+      name_id: td.name_id,
+    });
+
+    console.log({
+      nameIds,
+      vidhansabhaConstituencyId,
+      vidhansabhaConstituencyRegionId,
       id_url: td.id_url,
       name_id: td.name_id,
     });

@@ -67,7 +67,7 @@ export async function upsert_Name_(name: string, languageScriptNameEn: string = 
               }`;
 
       response = await graphQLClient.request(addMutation, { name, languageScriptNameEn });
-      return response.add_Name_._Name_.id;
+      return response.add_Name_._Name_[0].id;
     }
   } catch (error) {
     console.error("Error in upsert_Name_:", error);

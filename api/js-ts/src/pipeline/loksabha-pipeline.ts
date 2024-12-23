@@ -301,9 +301,9 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
   const { transformedLoksabhaConstituenciesECIGeo } = outputs;
 
   let savedToKnowledgeGraph: any = [];
-  for (let td of transformedLoksabhaConstituenciesECIGeo) {
-    const graphQLClient = await createGraphQLClient();
+  const graphQLClient = await createGraphQLClient();
 
+  for (let td of transformedLoksabhaConstituenciesECIGeo) {
     let toSaveLoksabhaConstituency = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
@@ -377,6 +377,14 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
           geoECIId,
         },
       },
+      id_url: td.id_url,
+      name_id: td.name_id,
+    });
+
+    console.log({
+      nameIds,
+      loksabhaConstituencyId,
+      loksabhaConstituencyRegionId,
       id_url: td.id_url,
       name_id: td.name_id,
     });

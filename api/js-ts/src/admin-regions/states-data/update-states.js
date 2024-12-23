@@ -1,7 +1,7 @@
 import { updateNodeType } from "../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../knowledge-graph/generic/generic.utils";
 
-let suts = [
+export const statesAndUnionTerritories = [
   {
     name_id: "in-sut-andaman-nicobar-islands",
     established_on: "1 November 1956",
@@ -223,7 +223,7 @@ let suts = [
 // (async () => {
 //   const graphQLClient = await createGraphQLClient();
 
-//   for (let s of suts) {
+//   for (let s of statesAndUnionTerritories) {
 //     try {
 //       const name_id = s.name_id.split("and-").join("");
 //       if (name_id !== s.name_id) {
