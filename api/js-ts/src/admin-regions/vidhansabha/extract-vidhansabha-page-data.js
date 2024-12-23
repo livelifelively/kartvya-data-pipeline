@@ -314,21 +314,23 @@ async function processVidhansabhaPage(page) {
       };
 
       let constituencyDetails = {};
-      constituencyDetailsRaw?.subSections.map((val) => {
-        let title = val.title.toLowerCase();
-        let key = title.toLowerCase().split(" ").join("_");
+      constituencyDetailsRaw?.subSections.forEach((val) => {
+        if (val.title) {
+          let title = val.title.toLowerCase();
+          let key = title.toLowerCase().split(" ").join("_");
 
-        if (allDataFields[key]) {
-          if (val.value.links.length) {
-            constituencyDetails[allDataFields[key]] =
-              val.value.links.length === 1 ? val.value.links[0] : [...val.value.links];
+          if (allDataFields[key]) {
+            if (val.value.links.length) {
+              constituencyDetails[allDataFields[key]] =
+                val.value.links.length === 1 ? val.value.links[0] : [...val.value.links];
+            } else {
+              constituencyDetails[allDataFields[key]] = { text: val.value.text };
+            }
           } else {
-            constituencyDetails[allDataFields[key]] = { text: val.value.text };
+            // data key is not expected one.
+            constituencyDetails.others = constituencyDetails.others || [];
+            constituencyDetails.others.push(val);
           }
-        } else {
-          // data key is not expected one.
-          constituencyDetails.others = constituencyDetails.others || [];
-          constituencyDetails.others.push(val);
         }
       });
 
