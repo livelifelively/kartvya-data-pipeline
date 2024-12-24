@@ -294,6 +294,7 @@ export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Reco
       if (matchedGeoDetail) {
         transformedVidhansabhaConstituenciesECIGeo.push({
           ...vidhansabhaConstituency,
+          constituency_number: vidhansabhaConstituency.constituency_number || matchedGeoDetail.properties.AC_NO,
           geo_eci: matchedGeoDetail,
         });
       } else {
