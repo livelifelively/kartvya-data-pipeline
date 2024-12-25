@@ -493,11 +493,13 @@ export async function transformDistrictsWithSOIGeo(outputs: Record<string, any>)
 }
 
 export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, any>) {
-  const { transformedDistrictsSOIGeo } = outputs;
+  // const { transformedDistrictsSOIGeo } = outputs;
+  const { allMatchedDistrictsOSMWiki } = outputs;
   const graphQLClient = await createGraphQLClient();
 
   let savedToKnowledgeGraph: any = [];
-  for (let td of transformedDistrictsSOIGeo) {
+  // for (let td of transformedDistrictsSOIGeo) {
+  for (let td of allMatchedDistrictsOSMWiki) {
     let toSaveDistrict: any = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
@@ -529,17 +531,17 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       geoOSMId = await createNodeType("_Geo_", graphQLClient, geo_osm);
     }
 
-    if (td.geo_soi) {
-      const districtMapSOI = polygonToMultiPolygon(td.geo_soi);
-      geo_soi = {
-        category: "Region",
-        area: multiPolygonToDgraphMultiPolygon(districtMapSOI.geometry.coordinates),
-        source_name: "Survey of India",
-        source_url: `https://onlinemaps.surveyofindia.gov.in/`,
-        source_data: `${JSON.stringify(td.geo_soi)}`,
-      };
-      geoSOIId = await createNodeType("_Geo_", graphQLClient, geo_soi);
-    }
+    // if (td.geo_soi) {
+    //   const districtMapSOI = polygonToMultiPolygon(td.geo_soi);
+    //   geo_soi = {
+    //     category: "Region",
+    //     area: multiPolygonToDgraphMultiPolygon(districtMapSOI.geometry.coordinates),
+    //     source_name: "Survey of India",
+    //     source_url: `https://onlinemaps.surveyofindia.gov.in/`,
+    //     source_data: `${JSON.stringify(td.geo_soi)}`,
+    //   };
+    //   geoSOIId = await createNodeType("_Geo_", graphQLClient, geo_soi);
+    // }
 
     let nameIds: any = [];
     for (let n of toSaveDistrict.names) {
@@ -559,9 +561,9 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       toSaveDistrictRegion.geo_boundary.push({ id: geoOSMId });
     }
 
-    if (geoSOIId) {
-      toSaveDistrictRegion.geo_boundary.push({ id: geoSOIId });
-    }
+    // if (geoSOIId) {
+    //   toSaveDistrictRegion.geo_boundary.push({ id: geoSOIId });
+    // }
 
     const districtRegionId = await createNodeType("_Indian_District_Region_", graphQLClient, toSaveDistrictRegion);
 
@@ -577,7 +579,7 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       },
       geo: {
         geo_osm: geo_osm ? { geo_osm, geoOSMId } : null,
-        geo_soi: geo_soi ? { geo_soi, geoSOIId } : null,
+        // geo_soi: geo_soi ? { geo_soi, geoSOIId } : null,
       },
       id_url: td.id_url,
       name_id: td.name_id,
