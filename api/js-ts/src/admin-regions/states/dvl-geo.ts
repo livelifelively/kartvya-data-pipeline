@@ -1,27 +1,54 @@
 import playwright from "playwright";
 import path from "path";
+import * as fs from "fs";
 
-(async () => {
-  // Get the relative path to the HTML file (you can change this)
-  const relativePath: string = "../../browser-scripts/geojson-comparison/index.html"; // Default relative path
+interface GeoJSON {
+  type: string;
+  features: any[];
+}
 
-  // Use path.resolve to make absolute path from relative path
-  const absolutePath: string = path.resolve(__dirname, relativePath);
+export const geoCompare = async (baseGeojsonData: GeoJSON, comparisonGeojsonData: GeoJSON) => {
+  try {
+    const browser = await playwright.chromium.launch({ headless: false });
 
-  // Launch browser
-  const browser = await playwright.chromium.launch({ headless: false });
+    const page = await browser.newPage();
+    await page.setViewportSize({ width: 1200, height: 800 });
 
-  // Create page
-  const page = await browser.newPage();
+    // Get the relative path to the HTML file
+    const relativePath: string = "../../browser-scripts/geojson-comparison/index.html";
+    const absolutePath: string = path.resolve(__dirname, relativePath);
 
-  // Set viewport size
-  await page.setViewportSize({ width: 1200, height: 800 });
+    await page.goto("file://" + absolutePath);
 
-  // Navigate to your HTML file
-  await page.goto("file://" + absolutePath);
+    // inject the data to the page
+    await page.evaluate(
+      ({ baseGeojsonData, comparisonGeojsonData }) => {
+        const baseInput = document.getElementById("base-geojson-input") as HTMLTextAreaElement;
+        const comparisonInput = document.getElementById("comparison-geojson-input") as HTMLTextAreaElement;
 
-  // Wait for any needed time or conditions here
+        if (baseInput) {
+          baseInput.value = JSON.stringify(baseGeojsonData);
+        }
 
-  // Close browser
-  // await browser.close();
-})();
+        if (comparisonInput) {
+          comparisonInput.value = comparisonGeojsonData ? JSON.stringify(comparisonGeojsonData) : "";
+        }
+
+        const renderButton = document.getElementById("render-button") as HTMLButtonElement;
+        if (renderButton) {
+          renderButton.click();
+        }
+      },
+      { baseGeojsonData, comparisonGeojsonData }
+    );
+
+    // Wait for a bit to render all the layers
+    await page.waitForTimeout(1000);
+
+    // Close browser
+    // await browser.close();
+  } catch (error) {
+    console.error("Error rendering:", error);
+    process.exit(1);
+  }
+};
