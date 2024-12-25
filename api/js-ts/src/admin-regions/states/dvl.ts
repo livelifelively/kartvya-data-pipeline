@@ -550,8 +550,8 @@ async function connectDVLPipeline(
   stateUT.districtsCount = stateDistrictData?.numberOfDistricts;
 
   const d = getDistrictsByURL(stateUT, state.data.data);
-  const v = getVidhansabhaConstituenciesList(stateUT, state.data.data);
-  const l = getLoksabhaConstituenciesByURL(stateUT, state.data.data);
+  // const l = getLoksabhaConstituenciesByURL(stateUT, state.data.data);
+  // const v = getVidhansabhaConstituenciesList(stateUT, state.data.data);
 
   // console.log(d);
   // console.log(v);
@@ -560,8 +560,8 @@ async function connectDVLPipeline(
   const saveToKG = false;
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d), saveToKG);
-  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
-  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
+  // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
+  // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
 
   // await connectDVLPipeline(
   //   stateUT,
