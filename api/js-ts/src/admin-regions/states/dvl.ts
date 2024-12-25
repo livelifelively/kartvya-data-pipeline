@@ -44,6 +44,7 @@ import {
   saveConnectLoksabhaToDistrictsAndVidhansabhas,
   saveConnectVidhansabhaToDistrictsAndLoksabhas,
 } from "../../pipeline/link-dvl-pipeline";
+import { geoCompare } from "./dvl-geo";
 
 function getDistrictsByURL(stateUT: any, dataVDL: any) {
   let d: any = [];
@@ -399,12 +400,13 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
       input: null, // Will be set after the fourth and seventh steps
       key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
-    {
-      name: "Transform Districts with SOI Geo",
-      function: transformDistrictsWithSOIGeo,
-      input: null, // Will be set after the sixth and seventh steps
-      key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    },
+    // SOI district boundaries are not always to the point as per present situation
+    // {
+    //   name: "Transform Districts with SOI Geo",
+    //   function: transformDistrictsWithSOIGeo,
+    //   input: null, // Will be set after the sixth and seventh steps
+    //   key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+    // },
   ];
 
   let outputs: Record<string, any> = {
@@ -531,7 +533,7 @@ async function connectDVLPipeline(
 
 (async () => {
   const extraStateDetailsByNameId = keyBy(statesAndUnionTerritories, "name_id");
-  let state: any = statesUTsVDL[0];
+  let state: any = statesUTsVDL[1];
 
   let stateUT: any = {
     name: state.state_name,
@@ -550,18 +552,71 @@ async function connectDVLPipeline(
   stateUT.districtsCount = stateDistrictData?.numberOfDistricts;
 
   const d = getDistrictsByURL(stateUT, state.data.data);
-  // const l = getLoksabhaConstituenciesByURL(stateUT, state.data.data);
-  // const v = getVidhansabhaConstituenciesList(stateUT, state.data.data);
+  const l = getLoksabhaConstituenciesByURL(stateUT, state.data.data);
+  const v = getVidhansabhaConstituenciesList(stateUT, state.data.data);
 
   // console.log(d);
   // console.log(v);
   // console.log(l);
 
-  const saveToKG = false;
+  const saveToKG = true;
 
   const districtsLastStep = await districtsPipeline(stateUT, Object.values(d), saveToKG);
-  // const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
-  // const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
+  const loksabhaConstituenciesLastStep = await loksabhaConstituenciesPipeline(stateUT, Object.values(l), saveToKG);
+  const vidhansabhaConstituenciesLastStep = await vidhansabhaConstituenciesPipeline(stateUT, v, saveToKG);
+
+  let districtsGeo = districtsLastStep.map((val: any) => {
+    return {
+      type: "Feature",
+      geometry: val.district.geo.geo_osm.geo_osm,
+      properties: {
+        name_id: val.district.toSaveDistrict.name_id,
+        wikipedia_page: val.district.toSaveDistrict.wikipedia_page,
+        wikidata_qid: val.district.toSaveDistrict.wikidata_qid,
+        osm_id: val.district.toSaveDistrict.osm_id,
+        geo_osm_id: val.district.geo.geoOSMId,
+      },
+    };
+  });
+
+  districtsGeo = {
+    type: "FeatureCollection",
+    features: districtsGeo,
+  };
+
+  let vidhansabhaConstituenciesGeo = vidhansabhaConstituenciesLastStep.map((val: any) => {
+    return {
+      name_id: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.name_id,
+      wikipedia_page: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikipedia_page,
+      wikidata_qid: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikidata_qid,
+      osm_id: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.osm_id,
+      geo_osm_id: val.vidhansabhaConstituency.geo.geoOSMId,
+      geometry: val.vidhansabhaConstituency.geo.geo_osm.geo_osm,
+    };
+  });
+
+  vidhansabhaConstituenciesGeo = {
+    type: "FeatureCollection",
+    features: vidhansabhaConstituenciesGeo,
+  };
+
+  let loksabhaConstituenciesGeo = loksabhaConstituenciesLastStep.map((val: any) => {
+    return {
+      name_id: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.name_id,
+      wikipedia_page: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.wikipedia_page,
+      wikidata_qid: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.wikidata_qid,
+      osm_id: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.osm_id,
+      geo_osm_id: val.loksabhaConstituency.geo.geoOSMId,
+      geometry: val.loksabhaConstituency.geo.geo_osm.geo_osm,
+    };
+  });
+
+  loksabhaConstituenciesGeo = {
+    type: "FeatureCollection",
+    features: loksabhaConstituenciesGeo,
+  };
+
+  await geoCompare(districtsGeo, vidhansabhaConstituenciesGeo);
 
   // await connectDVLPipeline(
   //   stateUT,
