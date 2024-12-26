@@ -330,6 +330,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       }),
 
       states_union_territories: [{ name_id: td.states_union_territories }],
+      established_on_string: td.established_on_string,
 
       wikipedia_page: td.wikipedia_page,
       wikidata_qid: td.wikidata_qid,
