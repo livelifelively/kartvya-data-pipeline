@@ -1423,6 +1423,9 @@ type _Indian_State_Union_Territory_Region_ {
 
   geo_boundary: [_Geo_] @hasInverse(field: "indian_states_union_territory_boundary")
 
+  established_on_string: String
+  disestablished_on_string: String
+
   established_on: DateTime
   disestablished_on: DateTime
 
@@ -1472,6 +1475,9 @@ type _Indian_District_Region_ {
 
   self: _Indian_District_ @hasInverse(field: "regions")
 
+  established_on_string: String
+  disestablished_on_string: String
+
   established_on: DateTime
   disestablished_on: DateTime
 
@@ -1512,6 +1518,9 @@ type _Indian_Sub_District_Region_ {
   id: ID!
 
   self: _Indian_Sub_District_ @hasInverse(field: "regions")
+
+  established_on_string: String
+  disestablished_on_string: String
 
   established_on: DateTime
   disestablished_on: DateTime
@@ -1581,6 +1590,9 @@ type _Indian_Loksabha_Constituency_Region_ {
 
   geo_boundary: [_Geo_] @hasInverse(field: "indian_loksabha_constituency_boundary")
 
+  established_on_string: String
+  disestablished_on_string: String
+
   established_on: DateTime
   disestablished_on: DateTime
 
@@ -1629,6 +1641,9 @@ type _Indian_Vidhansabha_Constituency_Region_ {
   id: ID!
 
   self: _Indian_Vidhansabha_Constituency_ @hasInverse(field: "regions")
+
+  established_on_string: String
+  disestablished_on_string: String
 
   established_on: DateTime
   disestablished_on: DateTime
