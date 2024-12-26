@@ -568,13 +568,13 @@ async function connectDVLPipeline(
   let districtsGeo = districtsLastStep.map((val: any) => {
     return {
       type: "Feature",
-      geometry: val.district.geo.geo_osm.geo_osm,
+      geometry: val.geo?.geo_osm?.geo_osm?.source_data ? JSON.parse(val.geo.geo_osm.geo_osm.source_data)?.geometry : {},
       properties: {
-        name_id: val.district.toSaveDistrict.name_id,
+        name_id: val.name_id,
         wikipedia_page: val.district.toSaveDistrict.wikipedia_page,
         wikidata_qid: val.district.toSaveDistrict.wikidata_qid,
         osm_id: val.district.toSaveDistrict.osm_id,
-        geo_osm_id: val.district.geo.geoOSMId,
+        geo_osm_id: val.geo.geo_osm.geoOSMId,
       },
     };
   });
@@ -584,30 +584,18 @@ async function connectDVLPipeline(
     features: districtsGeo,
   };
 
-  let vidhansabhaConstituenciesGeo = vidhansabhaConstituenciesLastStep.map((val: any) => {
-    return {
-      name_id: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.name_id,
-      wikipedia_page: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikipedia_page,
-      wikidata_qid: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikidata_qid,
-      osm_id: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.osm_id,
-      geo_osm_id: val.vidhansabhaConstituency.geo.geoOSMId,
-      geometry: val.vidhansabhaConstituency.geo.geo_osm.geo_osm,
-    };
-  });
-
-  vidhansabhaConstituenciesGeo = {
-    type: "FeatureCollection",
-    features: vidhansabhaConstituenciesGeo,
-  };
-
   let loksabhaConstituenciesGeo = loksabhaConstituenciesLastStep.map((val: any) => {
     return {
-      name_id: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.name_id,
-      wikipedia_page: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.wikipedia_page,
-      wikidata_qid: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.wikidata_qid,
-      osm_id: val.loksabhaConstituency.toSaveLoksabhaConstituencyRegion.osm_id,
-      geo_osm_id: val.loksabhaConstituency.geo.geoOSMId,
-      geometry: val.loksabhaConstituency.geo.geo_osm.geo_osm,
+      type: "Feature",
+      properties: {
+        name_id: val.name_id,
+        wikipedia_page: val.loksabhaConstituency.toSaveLoksabhaConstituency.wikipedia_page,
+        wikidata_qid: val.loksabhaConstituency.toSaveLoksabhaConstituency.wikidata_qid,
+        disestablished_on_string: val.loksabhaConstituency.toSaveLoksabhaConstituency.disestablished_on_string,
+        osm_id: val.loksabhaConstituency.toSaveLoksabhaConstituency.osm_id,
+        geo_eci_id: val.geo.geo_eci?.geoECIId,
+      },
+      geometry: val.geo?.geo_eci?.geo_eci ? JSON.parse(val.geo.geo_eci.geo_eci.source_data)?.geometry : null,
     };
   });
 
@@ -616,7 +604,27 @@ async function connectDVLPipeline(
     features: loksabhaConstituenciesGeo,
   };
 
-  await geoCompare(districtsGeo, vidhansabhaConstituenciesGeo);
+  let vidhansabhaConstituenciesGeo = vidhansabhaConstituenciesLastStep.map((val: any) => {
+    return {
+      type: "Feature",
+      properties: {
+        name_id: val.name_id,
+        wikipedia_page: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikipedia_page,
+        wikidata_qid: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikidata_qid,
+        disestablished_on_string: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.disestablished_on_string,
+        geo_eci_id: val.geo.geo_eci.geoECIId,
+      },
+      geometry: val.geo?.geo_eci?.geo_eci ? JSON.parse(val.geo.geo_eci.geo_eci.source_data)?.geometry : null,
+    };
+  });
+
+  vidhansabhaConstituenciesGeo = {
+    type: "FeatureCollection",
+    features: vidhansabhaConstituenciesGeo,
+  };
+
+  // await geoCompare(districtsGeo, vidhansabhaConstituenciesGeo);
+  await geoCompare(loksabhaConstituenciesGeo, vidhansabhaConstituenciesGeo);
 
   // await connectDVLPipeline(
   //   stateUT,

@@ -12,7 +12,7 @@ export const geoCompare = async (baseGeojsonData: GeoJSON, comparisonGeojsonData
     const browser = await playwright.chromium.launch({ headless: false });
 
     const page = await browser.newPage();
-    await page.setViewportSize({ width: 1200, height: 800 });
+    await page.setViewportSize({ width: 1800, height: 1200 });
 
     // Get the relative path to the HTML file
     const relativePath: string = "../../browser-scripts/geojson-comparison/index.html";
