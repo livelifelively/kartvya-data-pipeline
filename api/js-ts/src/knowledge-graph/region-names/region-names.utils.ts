@@ -2,8 +2,9 @@ import { createRegionName } from "./region-names.create";
 import { getRegionName } from "./region-names.read";
 
 export function generateNameId(prefix: string, name: string) {
-  let smallerName = name.split(",").join("").split("and").join("").split("&").join("");
+  let smallerName = name.split(", ").join("-").split(" and ").join("-").split(" & ").join("-");
   let nameIdSuffix = smallerName.split(" ").join("-").toLowerCase();
+  nameIdSuffix = nameIdSuffix.split("--").join("-");
 
   return `${prefix}${nameIdSuffix}`;
 }
