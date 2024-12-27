@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let comparisonGeojsonData = null;
   let currentComparisonIndex = -1; // Initialize to -1 to start from the first feature
   let mappingObject = {}; // Initialize mapping object
+  let localMapping = []; // Initialize local mapping array
 
   // Function to render a single comparison feature
   function renderComparisonFeature(feature) {
@@ -63,7 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     baseLayer.eachLayer((layer) => {
       const baseFeatureId = layer.feature.properties.name_id;
-      if (mappingObject[currentComparisonId] && mappingObject[currentComparisonId].includes(baseFeatureId)) {
+
+      debugger;
+
+      if (localMapping.includes(baseFeatureId)) {
         // Set the style to indicate mapping
         layer.setStyle({
           fillColor: "yellow",
@@ -89,13 +93,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Get the current comparison feature
     const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
-    // Extract name_id from current comparison feature
+
     if (currentComparisonFeature) {
+      // Extract name_id from current comparison feature
       const currentComparisonId = currentComparisonFeature.properties.name_id;
 
-      // Log the extracted ids for debugging
-      console.log("Clicked Base Feature ID:", baseFeatureId);
-      console.log("Current Comparison Feature ID:", currentComparisonId);
+      // Toggle base feature id in the local mapping array
+      if (localMapping.includes(baseFeatureId)) {
+        localMapping = localMapping.filter((id) => id !== baseFeatureId);
+      } else {
+        localMapping.push(baseFeatureId);
+      }
+
+      // Update the base layer style
+      updateBaseLayerStyles();
+
+      // Log only the local mapping for the current comparison feature
+      console.log("Local Mapping for Current Comparison Feature:", currentComparisonId, ":", localMapping);
     } else {
       console.log("No comparison feature is active at the moment.");
     }
@@ -108,15 +122,29 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Save mapping for current comparison layer
+    // Save local mapping to saved mapping before changing to new layer
     if (currentComparisonIndex > -1) {
-      saveMapping();
+      saveLocalMapping();
     }
 
+    // Get the current comparison feature id before the index is changed
+    let previousComparisonId;
+    if (currentComparisonIndex > -1 && comparisonGeojsonData.features[currentComparisonIndex]) {
+      previousComparisonId = comparisonGeojsonData.features[currentComparisonIndex].properties.name_id;
+    }
     currentComparisonIndex++;
     if (currentComparisonIndex >= comparisonGeojsonData.features.length) {
       currentComparisonIndex = 0; // loop back to the first feature
     }
+
+    // Load mapping from saved mapping or create new one to local mapping
+    const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+    if (currentComparisonFeature) {
+      const currentComparisonId = currentComparisonFeature.properties.name_id;
+      // Reset local mapping to a new one based on saved mapping if available
+      localMapping = mappingObject[currentComparisonId] ? [...mappingObject[currentComparisonId]] : [];
+    }
+
     const feature = comparisonGeojsonData.features[currentComparisonIndex];
     renderComparisonFeature(feature);
 
@@ -133,15 +161,30 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Save mapping for current comparison layer
+    // Save local mapping to saved mapping before changing to new layer
     if (currentComparisonIndex > -1) {
-      saveMapping();
+      saveLocalMapping();
+    }
+    // Get the current comparison feature id before the index is changed
+    let previousComparisonId;
+    if (currentComparisonIndex > -1 && comparisonGeojsonData.features[currentComparisonIndex]) {
+      previousComparisonId = comparisonGeojsonData.features[currentComparisonIndex].properties.name_id;
     }
 
     currentComparisonIndex--;
     if (currentComparisonIndex < 0) {
       currentComparisonIndex = comparisonGeojsonData.features.length - 1; // loop back to the last feature
     }
+
+    // Load mapping from saved mapping or create new one to local mapping
+    const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+    if (currentComparisonFeature) {
+      const currentComparisonId = currentComparisonFeature.properties.name_id;
+
+      // Reset local mapping to a new one based on saved mapping if available
+      localMapping = mappingObject[currentComparisonId] ? [...mappingObject[currentComparisonId]] : [];
+    }
+
     const feature = comparisonGeojsonData.features[currentComparisonIndex];
     renderComparisonFeature(feature);
 
@@ -151,11 +194,14 @@ document.addEventListener("DOMContentLoaded", function () {
     updateBaseLayerStyles();
   }
 
-  // Function to handle saving the mapping
-  function saveMapping() {
-    // This is where you could save the mapping to localStorage, a server, etc.
-    // For now, we'll just log the mapping.
-    console.log("Saved Mapping:", mappingObject);
+  // Function to handle saving local mapping to saved mapping
+  function saveLocalMapping() {
+    const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+    if (currentComparisonFeature) {
+      const currentComparisonId = currentComparisonFeature.properties.name_id;
+      mappingObject[currentComparisonId] = [...localMapping];
+      console.log("Saved Mapping:", mappingObject);
+    }
   }
 
   // Handle the render button click
@@ -183,16 +229,23 @@ document.addEventListener("DOMContentLoaded", function () {
       // Reset mapping
       mappingObject = {};
       currentComparisonIndex = -1;
+      localMapping = [];
 
       // Check if comparison GeoJSON is provided
       if (comparisonGeojsonData && comparisonGeojsonData.features.length > 0) {
         currentComparisonIndex = 0;
+        const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+        if (currentComparisonFeature) {
+          const currentComparisonId = currentComparisonFeature.properties.name_id;
+          localMapping = mappingObject[currentComparisonId] ? [...mappingObject[currentComparisonId]] : [];
+        }
+
         renderComparisonFeature(comparisonGeojsonData.features[currentComparisonIndex]); // Render the first comparison feature
         document.getElementById("next-button").disabled = false;
         document.getElementById("prev-button").disabled = false;
-        document.getElementById(
-          "comparison-result"
-        ).textContent = `Feature 1 of ${comparisonGeojsonData.features.length}`;
+        document.getElementById("comparison-result").textContent = `Feature ${currentComparisonIndex + 1} of ${
+          comparisonGeojsonData.features.length
+        }`;
       } else {
         document.getElementById("next-button").disabled = true;
         document.getElementById("prev-button").disabled = true;
