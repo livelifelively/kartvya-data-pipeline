@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let baseLayer = null; // Store the base layer
   let comparisonGeojsonData = null;
   let currentComparisonIndex = -1; // Initialize to -1 to start from the first feature
+  let mappingObject = {}; // Initialize mapping object
 
   // Function to render a single comparison feature
   function renderComparisonFeature(feature) {
@@ -29,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       isComparisonFeature: true, // Add a flag to identify the comparison layer
     }).addTo(map);
-    // map.fitBounds(L.geoJSON(feature).getBounds()); // Fit the map to the bounds of the feature
 
     renderBaseLayer();
   }
@@ -44,16 +44,61 @@ document.addEventListener("DOMContentLoaded", function () {
       },
       onEachFeature: function (feature, layer) {
         layer.on("click", function (e) {
-          console.log("Base Layer Feature Properties:", feature.properties);
+          // Extract name_id from base feature and current comparison feature and call the toggle mapping function
+          toggleBaseFeatureMapping(feature, layer);
         });
       },
     }).addTo(map);
 
     // Bring base layer to front
     baseLayer.bringToFront();
+    updateBaseLayerStyles();
+  }
 
-    // Fit the map to the bounds of the base layer
-    // map.fitBounds(L.geoJSON(baseGeojsonData).getBounds());
+  function updateBaseLayerStyles() {
+    if (!baseLayer || !comparisonGeojsonData || !comparisonGeojsonData.features[currentComparisonIndex]) return;
+
+    const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+    const currentComparisonId = currentComparisonFeature.properties.name_id;
+
+    baseLayer.eachLayer((layer) => {
+      const baseFeatureId = layer.feature.properties.name_id;
+      if (mappingObject[currentComparisonId] && mappingObject[currentComparisonId].includes(baseFeatureId)) {
+        // Set the style to indicate mapping
+        layer.setStyle({
+          fillColor: "yellow",
+          fillOpacity: 0.5,
+          weight: 3,
+          color: "green",
+        });
+      } else {
+        // Reset the style
+        layer.setStyle({
+          fillColor: null, // Use default fill
+          fillOpacity: 0,
+          weight: 2,
+          color: "blue",
+        });
+      }
+    });
+  }
+
+  function toggleBaseFeatureMapping(feature, layer) {
+    // Extract name_id from base feature
+    const baseFeatureId = feature.properties.name_id;
+
+    // Get the current comparison feature
+    const currentComparisonFeature = comparisonGeojsonData.features[currentComparisonIndex];
+    // Extract name_id from current comparison feature
+    if (currentComparisonFeature) {
+      const currentComparisonId = currentComparisonFeature.properties.name_id;
+
+      // Log the extracted ids for debugging
+      console.log("Clicked Base Feature ID:", baseFeatureId);
+      console.log("Current Comparison Feature ID:", currentComparisonId);
+    } else {
+      console.log("No comparison feature is active at the moment.");
+    }
   }
 
   // Function to handle the next feature button click
@@ -62,6 +107,12 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("No comparison GeoJSON or features to display.");
       return;
     }
+
+    // Save mapping for current comparison layer
+    if (currentComparisonIndex > -1) {
+      saveMapping();
+    }
+
     currentComparisonIndex++;
     if (currentComparisonIndex >= comparisonGeojsonData.features.length) {
       currentComparisonIndex = 0; // loop back to the first feature
@@ -72,6 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("comparison-result").textContent = `Feature ${currentComparisonIndex + 1} of ${
       comparisonGeojsonData.features.length
     }`;
+    updateBaseLayerStyles();
   }
 
   // Function to handle the previous feature button click
@@ -80,6 +132,12 @@ document.addEventListener("DOMContentLoaded", function () {
       alert("No comparison GeoJSON or features to display.");
       return;
     }
+
+    // Save mapping for current comparison layer
+    if (currentComparisonIndex > -1) {
+      saveMapping();
+    }
+
     currentComparisonIndex--;
     if (currentComparisonIndex < 0) {
       currentComparisonIndex = comparisonGeojsonData.features.length - 1; // loop back to the last feature
@@ -90,6 +148,14 @@ document.addEventListener("DOMContentLoaded", function () {
     document.getElementById("comparison-result").textContent = `Feature ${currentComparisonIndex + 1} of ${
       comparisonGeojsonData.features.length
     }`;
+    updateBaseLayerStyles();
+  }
+
+  // Function to handle saving the mapping
+  function saveMapping() {
+    // This is where you could save the mapping to localStorage, a server, etc.
+    // For now, we'll just log the mapping.
+    console.log("Saved Mapping:", mappingObject);
   }
 
   // Handle the render button click
@@ -114,9 +180,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
+      // Reset mapping
+      mappingObject = {};
+      currentComparisonIndex = -1;
+
       // Check if comparison GeoJSON is provided
       if (comparisonGeojsonData && comparisonGeojsonData.features.length > 0) {
-        showNextComparisonFeature(); // Render the first comparison feature
+        currentComparisonIndex = 0;
+        renderComparisonFeature(comparisonGeojsonData.features[currentComparisonIndex]); // Render the first comparison feature
         document.getElementById("next-button").disabled = false;
         document.getElementById("prev-button").disabled = false;
         document.getElementById(
@@ -127,11 +198,6 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("prev-button").disabled = true;
         alert("Base GeoJSON rendered. Please input the comparison GeoJSON.");
       }
-
-      // renderBaseLayer();
-
-      // reset index
-      currentComparisonIndex = -1;
     } catch (error) {
       alert("Invalid GeoJSON: " + error.message);
     }
