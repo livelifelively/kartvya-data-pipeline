@@ -29,39 +29,6 @@ export const geoCompare = async (baseGeojsonData: GeoJSON, comparisonGeojsonData
     if (comparisonJsonString) {
       await fillReactInput(page, "#comparison-geojson-input", comparisonJsonString);
     }
-    await page.click("#render-button");
-    // you can await for something to happen after clicking render
-    // await page.waitForTimeout(1000);
-
-    // inject the data to the page
-    // await page.evaluate(
-    //   async ({ baseGeojsonData, comparisonGeojsonData }) => {
-    //     // const baseInput = document.getElementById("base-geojson-input") as HTMLTextAreaElement;
-    //     // const comparisonInput = document.getElementById("comparison-geojson-input") as HTMLTextAreaElement;
-
-    //     // if (baseInput) {
-    //     //   baseInput.value = JSON.stringify(baseGeojsonData);
-    //     // }
-
-    //     // if (comparisonInput) {
-    //     //   comparisonInput.value = comparisonGeojsonData ? JSON.stringify(comparisonGeojsonData) : "";
-    //     // }
-
-    //     await fillReactInput(page, "#base-geojson-input", JSON.stringify(baseGeojsonData));
-    //     if (comparisonGeojsonData) {
-    //       await fillReactInput(page, "#comparison-geojson-input", JSON.stringify(comparisonGeojsonData));
-    //     }
-    //     await page.click("#render-button");
-
-    //     debugger;
-
-    //     const renderButton = document.getElementById("render-button") as HTMLButtonElement;
-    //     if (renderButton) {
-    //       renderButton.click();
-    //     }
-    //   },
-    //   { baseGeojsonData, comparisonGeojsonData }
-    // );
 
     // Wait for a bit to render all the layers
     await page.waitForTimeout(1000);
