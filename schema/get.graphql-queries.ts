@@ -1,5 +1,5 @@
-import { ALL_NODES } from './node-fields';
-import { ALL_SCALARS } from './scalar-fields';
+import { ALL_NODES } from "./node-fields";
+import { ALL_SCALARS } from "./scalar-fields";
 
 // Define a type for the node structure to ensure type safety
 type NodeField = {
@@ -21,7 +21,6 @@ type TypeDefinition = {
 
 //   // Start with scalar fields
 //   let queryFields = [...scalars];
-//   debugger;
 
 //   // Function to add node fields recursively
 //   function addNodeFields(nodeArray: NodeField[], currentLevel: number) {
@@ -59,9 +58,9 @@ export function generateGraphQLFields(type: any, level: number): string {
     nodeArray.forEach((node) => {
       const nodeScalars = ALL_SCALARS[`${node.fields}__SCALARS`];
       if (nodeScalars) {
-        const nodeFields = nodeScalars.join(' ');
+        const nodeFields = nodeScalars.join(" ");
         const nestedQuery = addNodeFields(ALL_NODES[`${node.fields}__NODES`] || [], currentLevel + 1, nodeScalars);
-        currentQuery.push(`${node.name} { ${nestedQuery.join(' ')} }`);
+        currentQuery.push(`${node.name} { ${nestedQuery.join(" ")} }`);
       }
     });
 
@@ -72,5 +71,5 @@ export function generateGraphQLFields(type: any, level: number): string {
     queryFields = addNodeFields(ALL_NODES[`${type}__NODES`] || [], 1, queryFields);
   }
 
-  return `{ ${queryFields.join(' ')} }`;
+  return `{ ${queryFields.join(" ")} }`;
 }
