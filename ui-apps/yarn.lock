@@ -4180,6 +4180,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@react-leaflet/core@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@react-leaflet/core@npm:2.1.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 10c0/d5218c79ab9decd458e1fa8a0ec3757542e3ea4e569afa151a32ef0e9ceb63a13174f3fbc740fe0d514df8b0b3e30d913bfb0b8b661dac13924934d7e430bfc9
+  languageName: node
+  linkType: hard
+
 "@sinclair/typebox@npm:^0.27.8":
   version: 0.27.8
   resolution: "@sinclair/typebox@npm:0.27.8"
@@ -7147,6 +7158,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/lodash@npm:^4":
+  version: 4.17.13
+  resolution: "@types/lodash@npm:4.17.13"
+  checksum: 10c0/c3d0b7efe7933ac0369b99f2f7bff9240d960680fdb74b41ed4bd1b3ca60cca1e31fe4046d9abbde778f941a41bc2a75eb629abf8659fa6c27b66efbbb0802a9
+  languageName: node
+  linkType: hard
+
 "@types/mime@npm:*":
   version: 3.0.1
   resolution: "@types/mime@npm:3.0.1"
@@ -9333,6 +9351,15 @@ __metadata:
   version: 0.5.0
   resolution: "cookie@npm:0.5.0"
   checksum: 10c0/c01ca3ef8d7b8187bae434434582288681273b5a9ed27521d4d7f9f7928fe0c920df0decd9f9d3bbd2d14ac432b8c8cf42b98b3bdd5bfe0e6edddeebebe8b61d
+  languageName: node
+  linkType: hard
+
+"copy-to-clipboard@npm:^3.3.3":
+  version: 3.3.3
+  resolution: "copy-to-clipboard@npm:3.3.3"
+  dependencies:
+    toggle-selection: "npm:^1.0.6"
+  checksum: 10c0/3ebf5e8ee00601f8c440b83ec08d838e8eabb068c1fae94a9cda6b42f288f7e1b552f3463635f419af44bf7675afc8d0390d30876cf5c2d5d35f86d9c56a3e5f
   languageName: node
   linkType: hard
 
@@ -13625,6 +13652,7 @@ __metadata:
     "@types/eslint-plugin-jsx-a11y": "npm:^6"
     "@types/jest": "npm:^29.5.12"
     "@types/leaflet": "npm:^1"
+    "@types/lodash": "npm:^4"
     "@types/node": "npm:^20.14.8"
     "@types/react": "npm:18.3.3"
     "@xstate/react": "npm:^5.0.1"
@@ -13636,6 +13664,7 @@ __metadata:
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     leaflet: "npm:^1.9.4"
+    lodash: "npm:^4.17.21"
     next: "npm:15.0.1"
     postcss: "npm:^8.4.38"
     postcss-preset-mantine: "npm:1.17.0"
@@ -13643,6 +13672,8 @@ __metadata:
     prettier: "npm:^3.3.2"
     react: "npm:18.3.1"
     react-dom: "npm:18.3.1"
+    react-leaflet: "npm:4.2.1"
+    react18-json-view: "npm:^0.2.9-canary.9"
     storybook: "npm:^8.1.10"
     storybook-dark-mode: "npm:^4.0.2"
     stylelint: "npm:^16.6.1"
@@ -15876,6 +15907,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-leaflet@npm:4.2.1":
+  version: 4.2.1
+  resolution: "react-leaflet@npm:4.2.1"
+  dependencies:
+    "@react-leaflet/core": "npm:^2.1.0"
+  peerDependencies:
+    leaflet: ^1.9.0
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  checksum: 10c0/2e9d1687e883fd7d2e9798e51a04600e1b14784dc98b981a44507e65eb39a24f08c7f237c7522ae5667e999eb53b8d565ebd0f5baa25ef73a0278d6bfcc369e1
+  languageName: node
+  linkType: hard
+
 "react-number-format@npm:^5.4.2":
   version: 5.4.2
   resolution: "react-number-format@npm:5.4.2"
@@ -15990,6 +16034,17 @@ __metadata:
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
   checksum: 10c0/652d290d316c55a253507ecf65ca27f2162801dace10c715f2241203e81d82e9de6d282095b758b26c6bc9e1af9ca552cab5c3a361b230e5fcf25bec31e1bd25
+  languageName: node
+  linkType: hard
+
+"react18-json-view@npm:^0.2.9-canary.9":
+  version: 0.2.9-canary.9
+  resolution: "react18-json-view@npm:0.2.9-canary.9"
+  dependencies:
+    copy-to-clipboard: "npm:^3.3.3"
+  peerDependencies:
+    react: ">=16.8.0"
+  checksum: 10c0/2eb9fd24c75200daa7b810dd8a0228aea58356f79d607f852a1f338682ca23f7017059d292d537b9759b3d63d5eab46ce84468c0a6ad461845be5def846ddba8
   languageName: node
   linkType: hard
 
@@ -17916,6 +17971,13 @@ __metadata:
   dependencies:
     is-number: "npm:^7.0.0"
   checksum: 10c0/487988b0a19c654ff3e1961b87f471702e708fa8a8dd02a298ef16da7206692e8552a0250e8b3e8759270f62e9d8314616f6da274734d3b558b1fc7b7724e892
+  languageName: node
+  linkType: hard
+
+"toggle-selection@npm:^1.0.6":
+  version: 1.0.6
+  resolution: "toggle-selection@npm:1.0.6"
+  checksum: 10c0/f2cf1f2c70f374fd87b0cdc8007453ba9e981c4305a8bf4eac10a30e62ecdfd28bca7d18f8f15b15a506bf8a7bfb20dbe3539f0fcf2a2c8396c1a78d53e1f179
   languageName: node
   linkType: hard
 
