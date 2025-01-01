@@ -278,54 +278,53 @@ export const GeoCompareMachine = setup({
         },
       },
       S_COMPARING: {
-        type: 'parallel',
-        states: {
-          S_COMPARISON_IN_PROGRESS: {
-            on: {
-              E_CLICK_BASE_FEATURE: {
-                actions: [
-                  {
-                    type: 'A_TOGGLE_BASE_FEATURE_SELECTION',
-                    params: ({ event }) => {
-                      return { baseLayerfeature: event.baseLayerFeature };
-                    },
-                  },
-                ],
+        on: {
+          E_CLICK_BASE_FEATURE: {
+            actions: [
+              {
+                type: 'A_TOGGLE_BASE_FEATURE_SELECTION',
+                params: ({ event }) => {
+                  return { baseLayerfeature: event.baseLayerFeature };
+                },
               },
-              E_NEXT_COMPARISON_FEATURE: {
-                actions: [
-                  {
-                    type: 'A_ADD_UPDATE_MAPPINGS',
-                  },
-                  {
-                    type: 'A_SET_NEXT_COMPARISON_FEATURE',
-                  },
-                ],
-              },
-              E_PREV_COMPARISON_FEATURE: {
-                actions: [
-                  {
-                    type: 'A_ADD_UPDATE_MAPPINGS',
-                  },
-                  {
-                    type: 'A_SET_PREV_COMPARISON_FEATURE',
-                  },
-                ],
-              },
-            },
+            ],
           },
-          S_COMPARISON_COMPLETION_STATUS: {
-            // show done button.
-            on: {
-              E_CLICK_BASE_FEATURE: {
-                guard: 'G_COMPARISON_COMPLETED',
-                target: '.S_COMPARISON_APPROVED',
+          E_NEXT_COMPARISON_FEATURE: {
+            actions: [
+              {
+                type: 'A_ADD_UPDATE_MAPPINGS',
               },
-            },
+              {
+                type: 'A_SET_NEXT_COMPARISON_FEATURE',
+              },
+            ],
+          },
+          E_PREV_COMPARISON_FEATURE: {
+            actions: [
+              {
+                type: 'A_ADD_UPDATE_MAPPINGS',
+              },
+              {
+                type: 'A_SET_PREV_COMPARISON_FEATURE',
+              },
+            ],
           },
         },
+        // initial: 'S_COMPARISON_IN_PROGRESS',
+        // states: {
+        //   S_COMPARISON_IN_PROGRESS: {},
+        //   S_COMPARISON_COMPLETION_STATUS: {
+        //     // show done button.
+        //     on: {
+        //       E_CLICK_BASE_FEATURE: {
+        //         guard: 'G_COMPARISON_COMPLETED',
+        //         target: '.S_COMPARISON_APPROVED',
+        //       },
+        //     },
+        //   },
+        // },
       },
-      S_COMPARISON_APPROVED: {},
+      //   S_COMPARISON_APPROVED: {},
     },
   }
   //   {
