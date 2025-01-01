@@ -571,7 +571,7 @@ async function connectDVLPipeline(
       geometry: val.geo?.geo_osm?.geo_osm?.source_data ? JSON.parse(val.geo.geo_osm.geo_osm.source_data)?.geometry : {},
       properties: {
         name_id: val.name_id,
-        wikipedia_page: val.district.toSaveDistrict.wikipedia_page,
+        // wikipedia_page: val.district.toSaveDistrict.wikipedia_page,
         wikidata_qid: val.district.toSaveDistrict.wikidata_qid,
         osm_id: val.district.toSaveDistrict.osm_id,
         geo_osm_id: val.geo.geo_osm.geoOSMId,
@@ -589,7 +589,7 @@ async function connectDVLPipeline(
       type: "Feature",
       properties: {
         name_id: val.name_id,
-        wikipedia_page: val.loksabhaConstituency.toSaveLoksabhaConstituency.wikipedia_page,
+        // wikipedia_page: val.loksabhaConstituency.toSaveLoksabhaConstituency.wikipedia_page,
         wikidata_qid: val.loksabhaConstituency.toSaveLoksabhaConstituency.wikidata_qid,
         disestablished_on_string: val.loksabhaConstituency.toSaveLoksabhaConstituency.disestablished_on_string,
         osm_id: val.loksabhaConstituency.toSaveLoksabhaConstituency.osm_id,
@@ -609,7 +609,7 @@ async function connectDVLPipeline(
       type: "Feature",
       properties: {
         name_id: val.name_id,
-        wikipedia_page: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikipedia_page,
+        // wikipedia_page: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikipedia_page,
         wikidata_qid: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.wikidata_qid,
         disestablished_on_string: val.vidhansabhaConstituency.toSaveVidhansabhaConstituency.disestablished_on_string,
         geo_eci_id: val.geo.geo_eci.geoECIId,
