@@ -1,5 +1,5 @@
 import { cloneDeep, keyBy, reduce, size, uniq } from 'lodash';
-import { assign, enqueueActions, setup } from 'xstate';
+import { assign, enqueueActions, not, setup } from 'xstate';
 
 interface MappingContext {
   //   map: any; // or a more specific type if you have one
@@ -194,7 +194,7 @@ export const GeoCompareMachine = setup({
   },
 
   guards: {
-    G_COMPARISON_COMPLETED: ({ context }, params) => {
+    G_COMPARISON_COMPLETED: ({ context }) => {
       const { comparisonToBaseMappings, keyedByNameIdComparisonLayerIndices } = context;
 
       if (size(comparisonToBaseMappings) !== size(keyedByNameIdComparisonLayerIndices))
@@ -274,55 +274,73 @@ export const GeoCompareMachine = setup({
           },
         ],
         always: {
-          target: 'S_COMPARING',
+          target: 'S_COMPARING.S_COMPARISON_IN_PROGRESS',
         },
       },
       S_COMPARING: {
-        on: {
-          E_CLICK_BASE_FEATURE: {
-            actions: [
-              {
-                type: 'A_TOGGLE_BASE_FEATURE_SELECTION',
-                params: ({ event }) => {
-                  return { baseLayerfeature: event.baseLayerFeature };
+        // initial: 'S_COMPARISON_IN_PROGRESS',
+        type: 'parallel',
+        states: {
+          S_COMPARISON_IN_PROGRESS: {
+            on: {
+              E_CLICK_BASE_FEATURE: {
+                actions: [
+                  {
+                    type: 'A_TOGGLE_BASE_FEATURE_SELECTION',
+                    params: ({ event }) => {
+                      return { baseLayerfeature: event.baseLayerFeature };
+                    },
+                  },
+                ],
+              },
+              E_NEXT_COMPARISON_FEATURE: {
+                actions: [
+                  {
+                    type: 'A_ADD_UPDATE_MAPPINGS',
+                  },
+                  {
+                    type: 'A_SET_NEXT_COMPARISON_FEATURE',
+                  },
+                ],
+              },
+              E_PREV_COMPARISON_FEATURE: {
+                actions: [
+                  {
+                    type: 'A_ADD_UPDATE_MAPPINGS',
+                  },
+                  {
+                    type: 'A_SET_PREV_COMPARISON_FEATURE',
+                  },
+                ],
+              },
+            },
+          },
+          S_COMPARISON_COMPLETION_STATUS: {
+            initial: 'S_NOT_COMPLETE',
+            states: {
+              S_NOT_COMPLETE: {
+                on: {
+                  E_CLICK_BASE_FEATURE: {
+                    guard: 'G_COMPARISON_COMPLETED',
+                    target: 'S_COMPLETED',
+                  },
                 },
               },
-            ],
-          },
-          E_NEXT_COMPARISON_FEATURE: {
-            actions: [
-              {
-                type: 'A_ADD_UPDATE_MAPPINGS',
+              S_COMPLETED: {
+                on: {
+                  E_CLICK_BASE_FEATURE: {
+                    guard: not('G_COMPARISON_COMPLETED'),
+                    target: 'S_NOT_COMPLETE',
+                  },
+                },
               },
-              {
-                type: 'A_SET_NEXT_COMPARISON_FEATURE',
-              },
-            ],
-          },
-          E_PREV_COMPARISON_FEATURE: {
-            actions: [
-              {
-                type: 'A_ADD_UPDATE_MAPPINGS',
-              },
-              {
-                type: 'A_SET_PREV_COMPARISON_FEATURE',
-              },
-            ],
+            },
+            // show done button.
+            // on: {
+
+            // },
           },
         },
-        // initial: 'S_COMPARISON_IN_PROGRESS',
-        // states: {
-        //   S_COMPARISON_IN_PROGRESS: {},
-        //   S_COMPARISON_COMPLETION_STATUS: {
-        //     // show done button.
-        //     on: {
-        //       E_CLICK_BASE_FEATURE: {
-        //         guard: 'G_COMPARISON_COMPLETED',
-        //         target: '.S_COMPARISON_APPROVED',
-        //       },
-        //     },
-        //   },
-        // },
       },
       //   S_COMPARISON_APPROVED: {},
     },
