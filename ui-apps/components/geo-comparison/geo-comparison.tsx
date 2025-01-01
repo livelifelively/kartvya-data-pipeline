@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react';
-import { isEmpty } from 'lodash';
+import { isEmpty, isObject } from 'lodash';
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 import {
   Anchor,
@@ -157,7 +157,9 @@ function GeoComparison() {
                       send({ type: 'E_CLICK_BASE_FEATURE', baseLayerFeature: feature })
                     );
                   }}
-                  fitBounds={value !== 'S_COMPARING'}
+                  fitBounds={
+                    !(value && isObject(value) && Object.keys(value).includes('S_COMPARING'))
+                  }
                 />
               )}
             </MapContainer>
