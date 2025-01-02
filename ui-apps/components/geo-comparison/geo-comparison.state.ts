@@ -1,5 +1,5 @@
 import { cloneDeep, keyBy, reduce, size, uniq } from 'lodash';
-import { assign, enqueueActions, not, setup } from 'xstate';
+import { assign, not, raise, setup } from 'xstate';
 
 interface MappingContext {
   //   map: any; // or a more specific type if you have one
@@ -36,7 +36,8 @@ type MappingEvents =
   | {
       type: 'E_MAPPING_COMPLETE';
       //   baseGeojsonString: string;
-    };
+    }
+  | { type: 'E_MAPPING_CHANGED' };
 
 export const GeoCompareMachine = setup({
   types: {
@@ -45,36 +46,31 @@ export const GeoCompareMachine = setup({
   },
 
   actions: {
-    A_ADD_BASE_LAYER: enqueueActions(({ enqueue, event }) => {
-      if (event.type !== 'E_ADD_BASE_LAYER') return;
+    A_ADD_BASE_LAYER: assign(({ event, context }) => {
+      if (event.type !== 'E_ADD_BASE_LAYER') return context;
 
       const baseLayer = JSON.parse(event.baseGeojsonString);
 
-      enqueue.assign({
-        baseLayer,
-      });
-
       const keyedByNameIdBaseLayerIndices = keyBy(baseLayer.features, 'properties.name_id');
-      enqueue.assign({
+      return {
         keyedByNameIdBaseLayerIndices,
-      });
+        baseLayer,
+      };
     }),
 
-    A_ADD_COMPARISON_LAYER: enqueueActions(({ enqueue, event }) => {
-      if (event.type !== 'E_ADD_COMPARISON_LAYER') return;
+    A_ADD_COMPARISON_LAYER: assign(({ event, context }) => {
+      if (event.type !== 'E_ADD_COMPARISON_LAYER') return context;
 
       const comparisonLayer = JSON.parse(event.comparisonGeojsonString);
 
-      enqueue.assign({
-        comparisonLayer,
-      });
       const keyedByNameIdComparisonLayerIndices = keyBy(
         comparisonLayer.features,
         'properties.name_id'
       );
-      enqueue.assign({
+      return {
+        comparisonLayer,
         keyedByNameIdComparisonLayerIndices,
-      });
+      };
     }),
 
     A_RESET_COMPARISON_LAYER_FEATURE: assign({
@@ -86,25 +82,23 @@ export const GeoCompareMachine = setup({
       selectedBaseLayerFeatures: [],
     }),
 
-    A_TOGGLE_BASE_FEATURE_SELECTION: enqueueActions(
-      ({ enqueue, context }, params: { baseLayerfeature: any }) => {
-        let selectedBaseLayerFeatures: string[];
+    A_TOGGLE_BASE_FEATURE_SELECTION: assign(({ context }, params: { baseLayerfeature: any }) => {
+      let selectedBaseLayerFeatures: string[];
 
-        selectedBaseLayerFeatures = context.selectedBaseLayerFeatures.filter((val: any) => {
-          return val !== params.baseLayerfeature.properties.name_id;
-        });
+      selectedBaseLayerFeatures = context.selectedBaseLayerFeatures.filter((val: any) => {
+        return val !== params.baseLayerfeature.properties.name_id;
+      });
 
-        // if was not there already, push feature
-        if (selectedBaseLayerFeatures.length === context.selectedBaseLayerFeatures.length)
-          selectedBaseLayerFeatures.push(params.baseLayerfeature.properties.name_id);
+      // if was not there already, push feature
+      if (selectedBaseLayerFeatures.length === context.selectedBaseLayerFeatures.length)
+        selectedBaseLayerFeatures.push(params.baseLayerfeature.properties.name_id);
 
-        enqueue.assign({
-          selectedBaseLayerFeatures,
-        });
-      }
-    ),
+      return {
+        selectedBaseLayerFeatures,
+      };
+    }),
 
-    A_ADD_UPDATE_MAPPINGS: enqueueActions(({ enqueue, context }) => {
+    A_ADD_UPDATE_MAPPINGS: assign(({ context }) => {
       //   const { comparisonLayerFeature, baseLayerFeatures } = params;
       const {
         comparisonLayer,
@@ -122,12 +116,12 @@ export const GeoCompareMachine = setup({
 
       newComparisonToBaseMappings[comparisonFeatureNameId] = selectedBaseLayerFeatures;
 
-      enqueue.assign({
+      return {
         comparisonToBaseMappings: newComparisonToBaseMappings,
-      });
+      };
     }),
 
-    A_SET_NEXT_COMPARISON_FEATURE: enqueueActions(({ enqueue, context }) => {
+    A_SET_NEXT_COMPARISON_FEATURE: assign(({ context }) => {
       const {
         comparisonLayer,
         activeComparisonLayerFeatureIndex,
@@ -142,9 +136,6 @@ export const GeoCompareMachine = setup({
       } else {
         index += 1;
       }
-      enqueue.assign({
-        activeComparisonLayerFeatureIndex: index,
-      });
 
       const comparisonFeatureNameId = comparisonLayer.features[index].properties.name_id;
 
@@ -154,12 +145,13 @@ export const GeoCompareMachine = setup({
         ? comparisonToBaseMappings[comparisonFeatureNameId]
         : selectedBaseLayerFeatures;
 
-      enqueue.assign({
+      return {
+        activeComparisonLayerFeatureIndex: index,
         selectedBaseLayerFeatures: selectedBaseFeaturesForComparisonFeature,
-      });
+      };
     }),
 
-    A_SET_PREV_COMPARISON_FEATURE: enqueueActions(({ enqueue, context }) => {
+    A_SET_PREV_COMPARISON_FEATURE: assign(({ context }) => {
       const {
         comparisonLayer,
         activeComparisonLayerFeatureIndex,
@@ -175,10 +167,6 @@ export const GeoCompareMachine = setup({
         index -= 1;
       }
 
-      enqueue.assign({
-        activeComparisonLayerFeatureIndex: index,
-      });
-
       const comparisonFeatureNameId = comparisonLayer.features[index].properties.name_id;
 
       const selectedBaseFeaturesForComparisonFeature = comparisonToBaseMappings[
@@ -187,9 +175,10 @@ export const GeoCompareMachine = setup({
         ? comparisonToBaseMappings[comparisonFeatureNameId]
         : selectedBaseLayerFeatures;
 
-      enqueue.assign({
+      return {
         selectedBaseLayerFeatures: selectedBaseFeaturesForComparisonFeature,
-      });
+        activeComparisonLayerFeatureIndex: index,
+      };
     }),
   },
 
@@ -291,6 +280,7 @@ export const GeoCompareMachine = setup({
                       return { baseLayerfeature: event.baseLayerFeature };
                     },
                   },
+                  raise({ type: 'E_MAPPING_CHANGED' }),
                 ],
               },
               E_NEXT_COMPARISON_FEATURE: {
@@ -320,7 +310,7 @@ export const GeoCompareMachine = setup({
             states: {
               S_NOT_COMPLETE: {
                 on: {
-                  E_CLICK_BASE_FEATURE: {
+                  E_MAPPING_CHANGED: {
                     guard: 'G_COMPARISON_COMPLETED',
                     target: 'S_COMPLETED',
                   },
@@ -328,7 +318,7 @@ export const GeoCompareMachine = setup({
               },
               S_COMPLETED: {
                 on: {
-                  E_CLICK_BASE_FEATURE: {
+                  E_MAPPING_CHANGED: {
                     guard: not('G_COMPARISON_COMPLETED'),
                     target: 'S_NOT_COMPLETE',
                   },
