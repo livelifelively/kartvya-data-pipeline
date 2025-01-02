@@ -1,5 +1,5 @@
 import { useMachine } from '@xstate/react';
-import { isEmpty, isObject } from 'lodash';
+import { get, has, isEmpty, isObject, size } from 'lodash';
 import { MapContainer, Marker, Popup, TileLayer, useMapEvents } from 'react-leaflet';
 import {
   Anchor,
@@ -19,7 +19,6 @@ import classes from './geo-comparison.module.css';
 
 import 'leaflet/dist/leaflet.css';
 
-import { feature } from '@turf/turf';
 import { PathOptions } from 'leaflet';
 import JsonView from 'react18-json-view';
 
@@ -29,11 +28,17 @@ function GeoComparison() {
   const { context, value } = state;
   // console.log(context);
   console.log(value);
+  const {
+    selectedBaseLayerFeatures,
+    comparisonToBaseMappings,
+    activeComparisonLayerFeatureIndex,
+    baseLayer,
+    comparisonLayer,
+  } = context;
 
   return (
     <AppShell
       header={{ height: 60 }}
-      footer={{ height: 60 }}
       navbar={{ width: 300, breakpoint: 'sm' }}
       aside={{ width: 500, breakpoint: 'md', collapsed: { desktop: false, mobile: true } }}
       padding="md"
@@ -61,6 +66,7 @@ function GeoComparison() {
           <Button
             id="prev-button"
             variant="default"
+            disabled={selectedBaseLayerFeatures.length === 0}
             onClick={() => {
               send({ type: 'E_PREV_COMPARISON_FEATURE' });
             }}
@@ -70,23 +76,44 @@ function GeoComparison() {
           <Button
             id="next-button"
             variant="default"
+            disabled={selectedBaseLayerFeatures.length === 0}
             onClick={() => {
               send({ type: 'E_NEXT_COMPARISON_FEATURE' });
             }}
           >
             Next Feature
           </Button>
+          <Button
+            id="done-button"
+            variant="primary"
+            disabled={
+              selectedBaseLayerFeatures.length === 0 ||
+              (value &&
+                get(value, 'S_COMPARING.S_COMPARISON_COMPLETION_STATUS') === 'S_NOT_COMPLETE')
+            }
+            onClick={() => {
+              console.log(comparisonToBaseMappings);
+              // window.postMessage(comparisonToBaseMappings, '*');
+            }}
+          >
+            DONE
+          </Button>
         </Group>
       </AppShell.Header>
       <AppShell.Navbar p="xs">
-        {context.activeComparisonLayerFeatureIndex > -1 && (
-          <Box style={{ backgroundColor: 'pink', padding: '10px', fontSize: '10px' }}>
+        {activeComparisonLayerFeatureIndex > -1 && (
+          <Box
+            style={{
+              padding: '10px',
+              fontSize: '10px',
+              border: '1px solid #d5d5d5',
+              borderRadius: '5px',
+              marginBottom: '10px',
+            }}
+          >
             <Title size={'h4'}>Active Comparison Feature</Title>
             <JsonView
-              src={
-                context.comparisonLayer.features[context.activeComparisonLayerFeatureIndex]
-                  .properties
-              }
+              src={comparisonLayer.features[activeComparisonLayerFeatureIndex].properties}
               theme="github"
               collapsed={1}
               collapseStringsAfterLength={20}
@@ -95,19 +122,26 @@ function GeoComparison() {
             />
           </Box>
         )}
-        {context.selectedBaseLayerFeatures.length > 0 && (
-          <Box style={{ backgroundColor: 'lightgreen', padding: '10px', fontSize: '10px' }}>
-            <Title size={'h4'}>Selected Base Features</Title>
-            <JsonView
-              src={context.selectedBaseLayerFeatures}
-              theme="github"
-              collapsed={1}
-              collapseStringsAfterLength={20}
-              collapseStringMode="address"
-              displaySize={true}
-            />
-          </Box>
-        )}
+        <Box
+          style={{
+            padding: '10px',
+            fontSize: '10px',
+            border: '1px solid #d5d5d5',
+            borderRadius: '5px',
+            marginBottom: '10px',
+            backgroundColor: selectedBaseLayerFeatures.length === 0 ? 'pink' : 'transparent',
+          }}
+        >
+          <Title size={'h4'}>Selected Base Features</Title>
+          <JsonView
+            src={selectedBaseLayerFeatures}
+            theme="github"
+            collapsed={1}
+            collapseStringsAfterLength={20}
+            collapseStringMode="address"
+            displaySize={true}
+          />
+        </Box>
       </AppShell.Navbar>
       <AppShell.Main>
         <Container fluid>
@@ -117,23 +151,21 @@ function GeoComparison() {
                 attribution="© OpenStreetMap contributors"
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
               />
-              {context.activeComparisonLayerFeatureIndex !== -1 &&
-                context.comparisonLayer.features[context.activeComparisonLayerFeatureIndex] && (
+              {activeComparisonLayerFeatureIndex !== -1 &&
+                comparisonLayer.features[activeComparisonLayerFeatureIndex] && (
                   <PolygonLayer
-                    data={
-                      context.comparisonLayer.features[context.activeComparisonLayerFeatureIndex]
-                    }
+                    data={comparisonLayer.features[activeComparisonLayerFeatureIndex]}
                     style={{ color: 'black', weight: 2, fillOpacity: 0.7, fillColor: 'black' }}
                   />
                 )}
-              {!isEmpty(context.baseLayer) && (
+              {!isEmpty(baseLayer) && (
                 <PolygonLayer
-                  data={context.baseLayer}
+                  data={baseLayer}
                   style={(feature): PathOptions => {
                     const baseFeatureId = feature?.properties.name_id;
                     if (
-                      context.selectedBaseLayerFeatures &&
-                      context.selectedBaseLayerFeatures.includes(baseFeatureId)
+                      selectedBaseLayerFeatures &&
+                      selectedBaseLayerFeatures.includes(baseFeatureId)
                     ) {
                       // Set the style to indicate mapping
                       return {
@@ -157,9 +189,7 @@ function GeoComparison() {
                       send({ type: 'E_CLICK_BASE_FEATURE', baseLayerFeature: feature })
                     );
                   }}
-                  fitBounds={
-                    !(value && isObject(value) && Object.keys(value).includes('S_COMPARING'))
-                  }
+                  fitBounds={!(value && has(value, 'S_COMPARING'))}
                 />
               )}
             </MapContainer>
@@ -172,9 +202,13 @@ function GeoComparison() {
             id="base-geojson-input"
             placeholder="Paste base GeoJSON here..."
             minRows={10}
+            mb={15}
             onChange={(event) =>
               send({ type: 'E_ADD_BASE_LAYER', baseGeojsonString: event.currentTarget.value })
             }
+            style={{
+              display: 'none',
+            }}
           ></Textarea>
           <Textarea
             id="comparison-geojson-input"
@@ -186,10 +220,37 @@ function GeoComparison() {
                 comparisonGeojsonString: event.currentTarget.value,
               })
             }
+            style={{
+              display: 'none',
+            }}
           ></Textarea>
+          <Box
+            style={{
+              padding: '10px',
+              fontSize: '10px',
+              border: '1px solid #d5d5d5',
+              borderRadius: '5px',
+              marginBottom: '10px',
+            }}
+          >
+            <Title size={'h4'}>
+              Comparison to Base Mappings -
+              <Text
+                component="span"
+                style={{ color: 'red' }}
+              >{` ${size(comparisonToBaseMappings)} / ${comparisonLayer.features.length} `}</Text>
+            </Title>
+            <JsonView
+              src={comparisonToBaseMappings}
+              theme="github"
+              collapsed={1}
+              collapseStringsAfterLength={20}
+              collapseStringMode="address"
+              displaySize={true}
+            />
+          </Box>
         </Box>
       </AppShell.Aside>
-      <AppShell.Footer p="md">Footer</AppShell.Footer>
     </AppShell>
   );
 }
