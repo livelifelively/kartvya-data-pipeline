@@ -319,7 +319,7 @@ type _Country_ {
 
   names: [_Name_!]! @hasInverse(field: "country")
 
-  region: [_Country_Region_] @hasInverse(field: "country")
+  regions: [_Country_Region_] @hasInverse(field: "country")
 
   government: _Country_Government_ @hasInverse(field: "governs_country")
 
@@ -333,7 +333,9 @@ type _Country_ {
 type _Country_Region_ {
   id: ID!
 
-  country: _Country_ @hasInverse(field: "region")
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
+  country: _Country_ @hasInverse(field: "regions")
 
   # date on which the region changed
   # e.g. sikkim added to India
@@ -1395,11 +1397,6 @@ type _Indian_State_Union_Territory_ {
 
   state_or_union_territory: _Indian_State_Or_Union_Territory_Category_
 
-  districts: [_Indian_District_] @hasInverse(field: "states_union_territories")
-  sub_districts: [_Indian_Sub_District_] @hasInverse(field: "states_union_territories")
-  loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "states_union_territories")
-  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "states_union_territories")
-
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
   osm_id: String @search(by: [hash])
@@ -1419,9 +1416,17 @@ type _Indian_State_Union_Territory_ {
 type _Indian_State_Union_Territory_Region_ {
   id: ID!
 
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
   self: _Indian_State_Union_Territory_ @hasInverse(field: "regions")
 
   geo_boundary: [_Geo_] @hasInverse(field: "indian_states_union_territory_boundary")
+
+  states_union_territories: [_Indian_State_Union_Territory_Region_] @hasInverse(field: "states_union_territories")
+  districts: [_Indian_District_Region_] @hasInverse(field: "states_union_territories")
+  sub_districts: [_Indian_Sub_District_Region_] @hasInverse(field: "states_union_territories")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "states_union_territories")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_Region_] @hasInverse(field: "states_union_territories")
 
   established_on_string: String
   disestablished_on_string: String
@@ -1443,17 +1448,10 @@ type _Indian_District_ {
 
   names: [_Name_] @hasInverse(field: "indian_district")
 
-  states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "districts")
-  sub_districts: [_Indian_Sub_District_] @hasInverse(field: "districts")
-
-  loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "districts")
-  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "districts")
-
   regions: [_Indian_District_Region_] @hasInverse(field: "self")
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-  osm_id: String @search(by: [hash])
 
   established_on_string: String
   disestablished_on_string: String
@@ -1473,7 +1471,17 @@ type _Indian_District_ {
 type _Indian_District_Region_ {
   id: ID!
 
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
   self: _Indian_District_ @hasInverse(field: "regions")
+
+  osm_id: String @search(by: [hash])
+
+  states_union_territories: [_Indian_State_Union_Territory_Region_] @hasInverse(field: "districts")
+  districts: [_Indian_District_Region_] @hasInverse(field: "districts")
+  sub_districts: [_Indian_Sub_District_Region_] @hasInverse(field: "districts")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "districts")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_Region_] @hasInverse(field: "districts")
 
   established_on_string: String
   disestablished_on_string: String
@@ -1493,16 +1501,10 @@ type _Indian_Sub_District_ {
   name_id: String! @id @search(by: [exact, term, fulltext])
   names: [_Name_] @hasInverse(field: "indian_sub_district")
 
-  states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "sub_districts")
-  districts: [_Indian_District_] @hasInverse(field: "sub_districts")
-  loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "sub_districts")
-  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "sub_districts")
-
   regions: [_Indian_Sub_District_Region_] @hasInverse(field: "self")
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-  osm_id: String @search(by: [hash])
 
   established_on_string: String
   disestablished_on_string: String
@@ -1517,7 +1519,17 @@ type _Indian_Sub_District_ {
 type _Indian_Sub_District_Region_ {
   id: ID!
 
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
   self: _Indian_Sub_District_ @hasInverse(field: "regions")
+
+  osm_id: String @search(by: [hash])
+
+  states_union_territories: [_Indian_State_Union_Territory_Region_] @hasInverse(field: "sub_districts")
+  districts: [_Indian_District_Region_] @hasInverse(field: "sub_districts")
+  sub_districts: [_Indian_Sub_District_Region_] @hasInverse(field: "sub_districts")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "sub_districts")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_Region_] @hasInverse(field: "sub_districts")
 
   established_on_string: String
   disestablished_on_string: String
@@ -1563,13 +1575,6 @@ type _Indian_Loksabha_Constituency_ {
 
   constituency_number: String @search(by: [exact, term, fulltext])
 
-  # region connections - district, vsc, state
-  states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "loksabha_constituencies")
-  districts: [_Indian_District_] @hasInverse(field: "loksabha_constituencies")
-
-  sub_districts: [_Indian_Sub_District_] @hasInverse(field: "loksabha_constituencies")
-  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "loksabha_constituencies")
-
   # region
   regions: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "self")
 
@@ -1586,7 +1591,15 @@ type _Indian_Loksabha_Constituency_ {
 type _Indian_Loksabha_Constituency_Region_ {
   id: ID!
 
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
   self: _Indian_Loksabha_Constituency_ @hasInverse(field: "regions")
+
+  states_union_territories: [_Indian_State_Union_Territory_Region_] @hasInverse(field: "loksabha_constituencies")
+  districts: [_Indian_District_Region_] @hasInverse(field: "loksabha_constituencies")
+  sub_districts: [_Indian_Sub_District_Region_] @hasInverse(field: "loksabha_constituencies")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "loksabha_constituencies")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_Region_] @hasInverse(field: "loksabha_constituencies")
 
   geo_boundary: [_Geo_] @hasInverse(field: "indian_loksabha_constituency_boundary")
 
@@ -1619,12 +1632,6 @@ type _Indian_Vidhansabha_Constituency_ {
 
   constituency_number: String @search(by: [exact, term, fulltext])
 
-  states_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "vidhansabha_constituencies")
-  districts: [_Indian_District_] @hasInverse(field: "vidhansabha_constituencies")
-  sub_districts: [_Indian_Sub_District_] @hasInverse(field: "vidhansabha_constituencies")
-
-  loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "vidhansabha_constituencies")
-
   regions: [_Indian_Vidhansabha_Constituency_Region_] @hasInverse(field: "self")
 
   established_on_string: String
@@ -1640,7 +1647,16 @@ type _Indian_Vidhansabha_Constituency_ {
 type _Indian_Vidhansabha_Constituency_Region_ {
   id: ID!
 
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
   self: _Indian_Vidhansabha_Constituency_ @hasInverse(field: "regions")
+
+  states_union_territories: [_Indian_State_Union_Territory_Region_] @hasInverse(field: "vidhansabha_constituencies")
+  districts: [_Indian_District_Region_] @hasInverse(field: "vidhansabha_constituencies")
+  sub_districts: [_Indian_Sub_District_Region_] @hasInverse(field: "vidhansabha_constituencies")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_Region_] @hasInverse(field: "vidhansabha_constituencies")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_Region_]
+    @hasInverse(field: "vidhansabha_constituencies")
 
   established_on_string: String
   disestablished_on_string: String
