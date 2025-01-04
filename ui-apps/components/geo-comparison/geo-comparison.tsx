@@ -23,7 +23,7 @@ import { PathOptions } from 'leaflet';
 import JsonView from 'react18-json-view';
 
 function GeoComparison() {
-  const [state, send] = useMachine(GeoCompareMachine);
+  const [state, send, actor] = useMachine(GeoCompareMachine);
 
   const { context, value } = state;
   // console.log(context);
@@ -92,7 +92,8 @@ function GeoComparison() {
                 get(value, 'S_COMPARING.S_COMPARISON_COMPLETION_STATUS') === 'S_NOT_COMPLETE')
             }
             onClick={() => {
-              console.log(comparisonToBaseMappings);
+              // console.log(comparisonToBaseMappings);
+              console.log(actor.getPersistedSnapshot());
               // window.postMessage(comparisonToBaseMappings, '*');
             }}
           >
