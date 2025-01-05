@@ -7,11 +7,11 @@ interface DateTimeConversionResult {
   formattedDatetime: string;
   dateTimeId: string;
   year: number;
-  month: number;
-  day: number;
-  hour: number;
-  minute: number;
-  second: number;
+  month?: number;
+  day?: number;
+  hour?: number;
+  minute?: number;
+  second?: number;
   timezoneIndependent: boolean;
   timezone: string;
   dateTimePrecision: Date_Time_Precision_Category;
@@ -43,8 +43,6 @@ function determineStartingYear(dt: Date, precision: Date_Time_Precision_Category
 }
 
 function formatDatetime(dt: Date, precision: Date_Time_Precision_Category): string {
-  console.log(dt);
-
   switch (precision) {
     case "year":
       return formatDate(dt, "yyyy");
@@ -115,19 +113,38 @@ export function convertDatetime(options: ConvertDatetimeOptions): DateTimeConver
   const formattedDatetime = formatDatetime(dt, precision);
   const dateTimeId = generateDateTimeId(dt, precision, timezone, timezoneIndependent);
 
-  return {
+  const result: DateTimeConversionResult = {
     formattedDatetime,
     dateTimeId,
     year: getYear(dt),
-    month: getMonth(dt) + 1,
-    day: getDate(dt),
-    hour: getHours(dt),
-    minute: getMinutes(dt),
-    second: getSeconds(dt),
     timezoneIndependent,
     timezone,
     dateTimePrecision: precision,
   };
+
+  if (
+    precision === "month" ||
+    precision === "day" ||
+    precision === "hour" ||
+    precision === "minute" ||
+    precision === "second"
+  ) {
+    result.month = getMonth(dt) + 1;
+  }
+  if (precision === "day" || precision === "hour" || precision === "minute" || precision === "second") {
+    result.day = getDate(dt);
+  }
+  if (precision === "hour" || precision === "minute" || precision === "second") {
+    result.hour = getHours(dt);
+  }
+  if (precision === "minute" || precision === "second") {
+    result.minute = getMinutes(dt);
+  }
+  if (precision === "second") {
+    result.second = getSeconds(dt);
+  }
+
+  return result;
 }
 
 // const options: ConvertDatetimeOptions = {
