@@ -177,6 +177,8 @@ type _Name_ {
 
   indian_legal_document: [_Indian_Legal_Document_] @hasInverse(field: "names")
 
+  indian_district_reorganisation: [_Indian_District_Reorganisation_] @hasInverse(field: "names")
+
   node_created_on: DateTime
   node_updates: [_Node_Update_]
 }
@@ -1450,8 +1452,56 @@ type _Indian_District_ {
 
   regions: [_Indian_District_Region_] @hasInverse(field: "self")
 
+  versions: [_Indian_District_Version_] @hasInverse(field: "self")
+  reorganisations: [_Indian_District_Reorganisation_] @hasInverse(field: "self")
+
+  active_version: _Indian_District_Version_
+
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
+
+  established_on_string: String
+  disestablished_on_string: String
+
+  established_on: DateTime
+  disestablished_on: DateTime
+
+  # TODO
+  # officials, events
+
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
+}
+
+type _Indian_District_Reorganisation_ {
+  id: ID!
+
+  names: [_Name_] @hasInverse(field: "indian_district_reorganisation")
+  self: _Indian_District_ @hasInverse(field: "reorganisations")
+
+  # TODO should this be bidirectional?
+  # Should all changes made to direct sub-regions be added to parent?
+  state_or_union_territory: _Indian_State_Union_Territory_
+
+  districts: [_Indian_District_Version_]
+
+  reorganised_on_string: DateTime
+  reorganised_on: DateTime
+}
+
+type _Indian_District_Version_ {
+  id: ID!
+
+  name_id: String! @id @search(by: [exact, term, fulltext])
+
+  # not bidirectional because that name will be there in the main node,
+  # thus the purpose of having an entry point is fulfilled already.
+  official_name: _Name_
+
+  self: _Indian_District_ @hasInverse(field: "versions")
+  region: _Indian_District_Region_ @hasInverse(field: "version")
+
+  reorganisation: _Indian_District_Reorganisation_
 
   established_on_string: String
   disestablished_on_string: String
@@ -1474,6 +1524,7 @@ type _Indian_District_Region_ {
   name_id: String! @id @search(by: [exact, term, fulltext])
 
   self: _Indian_District_ @hasInverse(field: "regions")
+  version: _Indian_District_Version_ @hasInverse(field: "region")
 
   osm_id: String @search(by: [hash])
 
