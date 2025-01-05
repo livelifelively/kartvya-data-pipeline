@@ -1,4 +1,4 @@
-import { createGraphQLClient } from '../knowledge-graph/generic/generic.utils';
+import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
 
 interface LanguageScript {
   name_en: string;
@@ -75,7 +75,7 @@ export async function upsertName(name: string, languageScriptNameEn: string) {
       return response.data.data.addName.name.id;
     }
   } catch (error) {
-    console.error('Error in upsertName:', error);
+    console.error("Error in upsertName:", error);
     // throw error;
   }
 }
