@@ -6,6 +6,15 @@ type Date_Time_Precision_Category = "year" | "decade" | "century" | "month" | "d
 interface DateTimeConversionResult {
   formattedDatetime: string;
   dateTimeId: string;
+  year: number;
+  month: number;
+  day: number;
+  hour: number;
+  minute: number;
+  second: number;
+  timezoneIndependent: boolean;
+  timezone: string;
+  dateTimePrecision: Date_Time_Precision_Category;
 }
 
 interface ConvertDatetimeOptions {
@@ -109,16 +118,26 @@ export function convertDatetime(options: ConvertDatetimeOptions): DateTimeConver
   return {
     formattedDatetime,
     dateTimeId,
+    year: getYear(dt),
+    month: getMonth(dt) + 1,
+    day: getDate(dt),
+    hour: getHours(dt),
+    minute: getMinutes(dt),
+    second: getSeconds(dt),
+    timezoneIndependent,
+    timezone,
+    dateTimePrecision: precision,
   };
 }
 
-// // Example usage
 // const options: ConvertDatetimeOptions = {
-//   dateTime: "2022",
-//   precision: "year",
+//   dateTime: "4 April 2022",
+//   precision: "day",
 //   timezone: "+05:30",
-//   timezoneIndependent: false,
+//   timezoneIndependent: true,
 // };
-// const { formattedDatetime, dateTimeId } = convertDatetime(options);
-// console.log(`Formatted Datetime: ${formattedDatetime}`);
-// console.log(`Date Time ID: ${dateTimeId}`);
+
+// const result = convertDatetime(options);
+// console.log(result);
+
+// Output will be an object suitable for insertion into Dgraph with the provided schema.
