@@ -507,14 +507,16 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
           name: val,
         };
       }),
-      states_union_territories: [{ name_id: td.states_union_territories }],
+
       wikipedia_page: td.wikipedia_page,
       wikidata_qid: td.wikidata_qid,
 
       node_created_on: new Date(),
     };
 
-    if (td.osm_id) toSaveDistrict.osm_id = td.osm_id;
+    let toSaveDistrictRegion: any = {};
+
+    if (td.osm_id) toSaveDistrictRegion.osm_id = td.osm_id;
 
     let geo_osm, geo_soi;
     let geoOSMId, geoSOIId;
@@ -525,7 +527,7 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
         category: "Region",
         area: multiPolygonToDgraphMultiPolygon(districtMapOSM.geometry.coordinates),
         source_name: "OpenStreetMap",
-        source_url: `https://nominatim.openstreetmap.org/details.php?osmtype=R&osmid=${toSaveDistrict.osm_id}&class=boundary&addressdetails=1&hierarchy=0&group_hierarchy=1&polygon_geojson=1&format=json`,
+        source_url: `https://nominatim.openstreetmap.org/details.php?osmtype=R&osmid=${toSaveDistrictRegion.osm_id}&class=boundary&addressdetails=1&hierarchy=0&group_hierarchy=1&polygon_geojson=1&format=json`,
         source_data: `${JSON.stringify(td.geo_osm)}`,
       };
       geoOSMId = await createNodeType("_Geo_", graphQLClient, geo_osm);
@@ -549,11 +551,24 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       nameIds.push({ id: nameId });
     }
 
+    let toSaveDistrictVersion: any = {
+      name_id: `${td.name_id}-version-1`,
+      // self: { id: districtId },
+    };
+
+    const districtVersionId = await createNodeType("_Indian_District_Version_", graphQLClient, toSaveDistrictVersion);
+
+    toSaveDistrict.active_version = { id: districtVersionId };
+    toSaveDistrict.versions = [{ id: districtVersionId }];
+
     const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
 
-    let toSaveDistrictRegion: any = {
+    toSaveDistrictRegion = {
+      name_id: `${td.name_id}-region-1`,
       self: { name_id: toSaveDistrict.name_id },
+      version: { id: districtVersionId },
       geo_boundary: [],
+      states_union_territories: [{ name_id: `${td.states_union_territories}-region` }],
       node_created_on: new Date(),
     };
 
@@ -572,6 +587,9 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
       district: {
         districtId,
         toSaveDistrict,
+      },
+      districtVersion: {
+        districtVersionId,
       },
       districtRegion: {
         districtRegionId,
