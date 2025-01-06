@@ -1,0 +1,12 @@
+{
+  "message": "Step 8 (Save Districts to KnowledgeGraph) failed.",
+  "data": {},
+  "error": {
+    "error": [
+      "unknown field: {\"response\":{\"errors\":[{\"message\":\"unknown field\",\"path\":[\"variable\",\"input\",\"names\"]}],\"extensions\":{\"tracing\":{\"version\":1,\"startTime\":\"2025-01-05T20:04:36.85475734Z\",\"endTime\":\"2025-01-05T20:04:36.854887462Z\",\"duration\":130152}},\"status\":200,\"headers\":{}},\"request\":{\"query\":\"\\n        mutation Create_Indian_District_Version_($input: Add_Indian_District_Version_Input!) {\\n            add_Indian_District_Version_(input: [$input]) {\\n                _Indian_District_Version_ {\\n                    id\\n                }\\n            }\\n        }\\n        \",\"variables\":{\"input\":{\"name_id\":\"in-d-ap-srikakulam\",\"names\":[{\"name\":\"Srikakulam\"}],\"wikipedia_page\":\"https://en.wikipedia.org/wiki/Srikakulam_district\",\"wikidata_qid\":\"Q15395\",\"node_created_on\":\"2025-01-05T20:04:35.734Z\"}}}}",
+      null
+    ]
+  },
+  "key": "STEP_8_FAILURE_Save Districts to KnowledgeGraph",
+  "timeStamp": "2025-01-05T20:04:36.870Z"
+}

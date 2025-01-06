@@ -1,0 +1,12 @@
+{
+  "message": "Step 8 (Save Districts to KnowledgeGraph) failed.",
+  "data": {},
+  "error": {
+    "error": [
+      "must be defined: {\"response\":{\"errors\":[{\"message\":\"must be defined\",\"path\":[\"variable\",\"input\",\"name_id\"]}],\"extensions\":{\"tracing\":{\"version\":1,\"startTime\":\"2025-01-05T20:25:20.719280736Z\",\"endTime\":\"2025-01-05T20:25:20.719406567Z\",\"duration\":125841}},\"status\":200,\"headers\":{}},\"request\":{\"query\":\"\\n        mutation Create_Indian_District_Region_($input: Add_Indian_District_Region_Input!) {\\n            add_Indian_District_Region_(input: [$input]) {\\n                _Indian_District_Region_ {\\n                    id\\n                }\\n            }\\n        }\\n        \",\"variables\":{\"input\":{\"self\":{\"name_id\":\"in-d-ap-srikakulam\"},\"version\":{\"id\":\"0x9be96045bf\"},\"geo_boundary\":[{\"id\":\"0x9be96045be\"}],\"states_union_territories\":[{\"name_id\":\"in-sut-andhra-pradesh\"}],\"node_created_on\":\"2025-01-05T20:25:11.730Z\"}}}}",
+      null
+    ]
+  },
+  "key": "STEP_8_FAILURE_Save Districts to KnowledgeGraph",
+  "timeStamp": "2025-01-05T20:25:27.933Z"
+}
