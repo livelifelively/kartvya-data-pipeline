@@ -1,27 +1,28 @@
 import { parseISO, format as formatDate, getYear, getMonth, getDate, getHours, getMinutes, getSeconds } from "date-fns";
 import { toZonedTime, format as tzFormat } from "date-fns-tz";
+import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
 
 type Date_Time_Precision_Category = "year" | "decade" | "century" | "month" | "day" | "hour" | "minute" | "second";
 
 interface DateTimeConversionResult {
-  formattedDatetime: string;
-  dateTimeId: string;
+  // formattedDatetime: string;
+  date_time_id: string;
   year: number;
   month?: number;
   day?: number;
   hour?: number;
   minute?: number;
   second?: number;
-  timezoneIndependent: boolean;
+  timezone_independent: boolean;
   timezone: string;
-  dateTimePrecision: Date_Time_Precision_Category;
+  date_time_precision: Date_Time_Precision_Category;
 }
 
 interface ConvertDatetimeOptions {
   dateTime: string;
   precision: Date_Time_Precision_Category;
   timezone: string;
-  timezoneIndependent: boolean;
+  timezone_independent: boolean;
 }
 
 function parseTimestamp(timestamp: string): Date {
@@ -68,7 +69,7 @@ function generateDateTimeId(
   dt: Date,
   precision: Date_Time_Precision_Category,
   timezone: string,
-  timezoneIndependent: boolean
+  timezone_independent: boolean
 ): string {
   const year = determineStartingYear(dt, precision);
   const month = String(getMonth(dt) + 1).padStart(2, "0");
@@ -76,7 +77,7 @@ function generateDateTimeId(
   const hour = String(getHours(dt)).padStart(2, "0");
   const minute = String(getMinutes(dt)).padStart(2, "0");
   const second = String(getSeconds(dt)).padStart(2, "0");
-  const tzIndicator = timezoneIndependent ? "tzi" : "tzd";
+  const tzIndicator = timezone_independent ? "tzi" : "tzd";
 
   switch (precision) {
     case "year":
@@ -101,25 +102,25 @@ function generateDateTimeId(
 }
 
 export function convertDatetime(options: ConvertDatetimeOptions): DateTimeConversionResult {
-  const { dateTime, precision, timezone, timezoneIndependent } = options;
+  const { dateTime, precision, timezone, timezone_independent } = options;
 
   let timestamp = new Date(dateTime).toISOString();
   let dt = parseTimestamp(timestamp);
 
-  if (!timezoneIndependent) {
+  if (!timezone_independent) {
     dt = toZonedTime(dt, timezone);
   }
 
-  const formattedDatetime = formatDatetime(dt, precision);
-  const dateTimeId = generateDateTimeId(dt, precision, timezone, timezoneIndependent);
+  // const formattedDatetime = formatDatetime(dt, precision);
+  const dateTimeId = generateDateTimeId(dt, precision, timezone, timezone_independent);
 
   const result: DateTimeConversionResult = {
-    formattedDatetime,
-    dateTimeId,
+    // formattedDatetime,
+    date_time_id: dateTimeId,
     year: getYear(dt),
-    timezoneIndependent,
+    timezone_independent,
     timezone,
-    dateTimePrecision: precision,
+    date_time_precision: precision,
   };
 
   if (
@@ -151,7 +152,7 @@ export function convertDatetime(options: ConvertDatetimeOptions): DateTimeConver
 //   dateTime: "4 April 2022",
 //   precision: "day",
 //   timezone: "+05:30",
-//   timezoneIndependent: true,
+//   timezone_independent: true,
 // };
 
 // const result = convertDatetime(options);
