@@ -275,11 +275,23 @@ enum Date_Time_Precision_Category {
 type _Date_Time_ {
   id: ID!
 
-  date_time: DateTime @search(by: [hour])
+  date_time_id: String! @id @search
+
+  year: Int @search
+  month: Int @search
+  day: Int @search
+  hour: Int @search
+  minute: Int @search
+  second: Int @search
+
+  timezone_independent: Boolean @search
+  timezone: String @search
+
   date_time_precision: Date_Time_Precision_Category @search(by: [exact])
 
   from_datetime_country_event: [_Country_Event_] @hasInverse(field: "datetime_from")
   to_datetime_country_event: [_Country_Event_] @hasInverse(field: "datetime_to")
+  indian_district_reorganisation: [_Indian_District_Reorganisation_] @hasInverse(field: "reorganised_on")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1453,7 +1465,7 @@ type _Indian_District_ {
   regions: [_Indian_District_Region_] @hasInverse(field: "self")
 
   versions: [_Indian_District_Version_] @hasInverse(field: "self")
-  reorganisations: [_Indian_District_Reorganisation_] @hasInverse(field: "self")
+  reorganisations: [_Indian_District_Reorganisation_] @hasInverse(field: "districts")
 
   active_version: _Indian_District_Version_
 
@@ -1477,16 +1489,16 @@ type _Indian_District_Reorganisation_ {
   id: ID!
 
   names: [_Name_] @hasInverse(field: "indian_district_reorganisation")
-  self: _Indian_District_ @hasInverse(field: "reorganisations")
 
   # TODO should this be bidirectional?
   # Should all changes made to direct sub-regions be added to parent?
-  state_or_union_territory: _Indian_State_Union_Territory_
+  state_or_union_territory: _Indian_State_Union_Territory_Region_
 
-  districts: [_Indian_District_Version_]
+  districts: [_Indian_District_] @hasInverse(field: "reorganisations")
+  district_versions: [_Indian_District_Version_] @hasInverse(field: "reorganisation")
 
   reorganised_on_string: DateTime
-  reorganised_on: DateTime
+  reorganised_on: _Date_Time_
 }
 
 type _Indian_District_Version_ {
@@ -1501,7 +1513,7 @@ type _Indian_District_Version_ {
   self: _Indian_District_ @hasInverse(field: "versions")
   region: _Indian_District_Region_ @hasInverse(field: "version")
 
-  reorganisation: _Indian_District_Reorganisation_
+  reorganisation: _Indian_District_Reorganisation_ @hasInverse(field: "district_versions")
 
   established_on_string: String
   disestablished_on_string: String
