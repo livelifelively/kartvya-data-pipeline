@@ -26,31 +26,7 @@ export async function upsert_Name_(name: string, languageScriptNameEn: string = 
     if (names.length > 0) {
       const nameData = names[0];
       const nameId = nameData.id;
-      // // Check if the language script is already linked
-      // if (nameData.language_script.some((ls: any) => ls.name_en === languageScriptNameEn)) {
-      //   return nameData; // Return name data
-      // }
 
-      // const updatedNameLanguageScripts = [...nameData.language_script, { name_en: languageScriptNameEn }];
-
-      // // Mutation to add a new language script if not already present
-      // const updateMutation = `
-      //         mutation update_Name_($nameId: ID!, $languageScriptNameEn: String!) {
-      //           update_Name_(input: {
-      //             filter: {id: [$nameId]},
-      //             set: {
-      //               language_script: ${updatedNameLanguageScripts}
-      //             }
-      //           }) {
-      //             name {
-      //               id
-      //             }
-      //           }
-      //         }`;
-
-      // response = await graphQLClient.request(updateMutation, { nameId, languageScriptNameEn });
-
-      // return response.data.data.update_Name_.name.id;
       return nameId;
     } else {
       // Mutation to add a new name if not exists
