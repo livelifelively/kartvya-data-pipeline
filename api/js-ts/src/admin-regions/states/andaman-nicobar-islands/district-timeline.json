@@ -1,0 +1,118 @@
+[
+  {
+    "district": "Andaman district",
+    "timeline": [
+      {
+        "date": null,
+        "event": "Formation",
+        "details": "Andaman district was initially formed encompassing all of the Andaman and Nicobar Islands.",
+        "territory_gained": [],
+        "territory_lost": [],
+        "sections_of_text_for_this_info": [
+          "Andaman district was a district in the Indian Union Territory (UT) of Andaman and Nicobar Islands.",
+          "The district's administrative territory encompasses all of the Andaman Islands, which are located in the Indian Ocean (Bay of Bengal, bordering with the Andaman Sea).",
+          "The district was created on August 1, 1974, when it was separated from Andaman district."
+        ]
+      },
+      {
+        "date": "1974-08-01",
+        "event": "Boundary Adjustment",
+        "details": "The Nicobar Islands were separated from the Andaman district to form the Nicobar district.",
+        "territory_gained": [],
+        "territory_lost": [
+          {
+            "territory_name": "Nicobar Islands",
+            "territory_type": "area",
+            "lost_to": "Nicobar district",
+            "text_details": "The district was created on August 1, 1974, when it was separated from Andaman district."
+          }
+        ],
+        "sections_of_text_for_this_info": [
+          "The district was created on August 1, 1974, when it was separated from Andaman district."
+        ]
+      },
+      {
+        "date": "2006-08-18",
+        "event": "Dissolution",
+        "details": "The Andaman district was dissolved and its remaining territory (Andaman Islands) divided into North and Middle Andaman district and South Andaman district.",
+        "territory_gained": [],
+        "territory_lost": [
+          {
+            "territory_name": "North & Middle Andaman",
+            "territory_type": "sub-division",
+            "lost_to": "North and Middle Andaman district",
+            "text_details": "The district comprised two sub-divisions, North & Middle Andaman (Mayabunder), and South & Little Andaman (Port Blair), which were turned into North and Middle Andaman district"
+          },
+          {
+            "territory_name": "South & Little Andaman",
+            "territory_type": "sub-division",
+            "lost_to": "South Andaman district",
+            "text_details": "The district comprised two sub-divisions, North & Middle Andaman (Mayabunder), and South & Little Andaman (Port Blair), which were turned into ... and South Andaman district"
+          }
+        ],
+        "sections_of_text_for_this_info": [
+          "The district comprised two sub-divisions, North & Middle Andaman (Mayabunder), and South & Little Andaman (Port Blair), which were turned into North and Middle Andaman district and South Andaman district on August 18, 2006."
+        ]
+      }
+    ]
+  },
+  {
+    "district": "Nicobar district",
+    "timeline": [
+      {
+        "date": "1974-08-01",
+        "event": "Formation",
+        "details": "Nicobar district was created by separating it from Andaman district.",
+        "territory_gained": [],
+        "territory_lost": [],
+        "sections_of_text_for_this_info": [
+          "The district was created on August 1, 1974, when it was separated from Andaman district."
+        ]
+      }
+    ]
+  },
+  {
+    "district": "South Andaman district",
+    "timeline": [
+      {
+        "date": "2006-08-18",
+        "event": "Formation",
+        "details": "South Andaman district was created by bifurcating the erstwhile Andaman district.",
+        "territory_gained": [
+          {
+            "territory_name": "South & Little Andaman",
+            "territory_type": "sub-division",
+            "gained_from": "Andaman district",
+            "text_details": "This district was created on August 18, 2006, by bifurcating the erstwhile Andaman district."
+          }
+        ],
+        "territory_lost": [],
+        "sections_of_text_for_this_info": [
+          "This district was created on August 18, 2006, by bifurcating the erstwhile Andaman district."
+        ]
+      }
+    ]
+  },
+  {
+    "district": "North and Middle Andaman district",
+    "timeline": [
+      {
+        "date": "2006-08-18",
+        "event": "Formation",
+        "details": "North and Middle Andaman district was created by bifurcating the erstwhile Andaman district.",
+        "territory_gained": [
+          {
+            "territory_name": "Mayabunder sub-division",
+            "territory_type": "sub-division",
+            "gained_from": "Andaman district",
+            "text_details": "This district was created on August 18, 2006, by bifurcating the erstwhile Andaman district,[2] which included all three tehsils of Mayabunder sub-division of this erstwhile district."
+          }
+        ],
+        "territory_lost": [],
+        "sections_of_text_for_this_info": [
+          "This district was created on August 18, 2006, by bifurcating the erstwhile Andaman district,[2] which included all three tehsils of Mayabunder sub-division of this erstwhile district."
+        ]
+      }
+    ]
+  }
+]
