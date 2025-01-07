@@ -1472,9 +1472,6 @@ type _Indian_District_ {
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
 
-  established_on_string: String
-  disestablished_on_string: String
-
   established_on: DateTime
   disestablished_on: DateTime
 
@@ -1497,8 +1494,25 @@ type _Indian_District_Reorganisation_ {
   districts: [_Indian_District_] @hasInverse(field: "reorganisations")
   district_versions: [_Indian_District_Version_] @hasInverse(field: "reorganisation")
 
-  reorganised_on_string: DateTime
   reorganised_on: _Date_Time_
+}
+
+type _Indian_District_All_Version_ {
+  id: ID!
+
+  name_id: String! @id @search(by: [exact]) # unique id for each all_district version
+  # The date and time this version of all districts became active
+  established_on: DateTime!
+
+  # Not bidirectional
+  districts: [_Indian_District_Version_]
+
+  # Metadata about the reason this node was created
+  reorganisation: _Indian_District_Reorganisation_
+
+  # Audit fields
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
 }
 
 type _Indian_District_Version_ {
