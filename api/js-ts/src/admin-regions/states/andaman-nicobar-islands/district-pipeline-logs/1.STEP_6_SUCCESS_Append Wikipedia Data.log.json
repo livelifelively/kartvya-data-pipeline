@@ -1,0 +1,46 @@
+{
+  "message": "Step 6 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedDistrictsWikipedia": [
+      {
+        "names": [
+          "Nicobar"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Nicobar_district",
+        "states_union_territories": "in-sut-andaman-nicobar-islands",
+        "name_id": "in-d-an-nicobar",
+        "wikidata_qid": "Q797295",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nicobar_district"
+        ]
+      },
+      {
+        "names": [
+          "North and Middle Andaman"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
+        "states_union_territories": "in-sut-andaman-nicobar-islands",
+        "name_id": "in-d-an-north-middle-andaman",
+        "wikidata_qid": "Q796983",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district"
+        ]
+      },
+      {
+        "names": [
+          "South Andaman"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/South_Andaman_district",
+        "states_union_territories": "in-sut-andaman-nicobar-islands",
+        "name_id": "in-d-an-south-andaman",
+        "wikidata_qid": "Q796979",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Andaman_district"
+        ]
+      }
+    ],
+    "districtsNotTransformedWikipedia": []
+  },
+  "key": "STEP_6_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-06T09:44:29.331Z"
+}
