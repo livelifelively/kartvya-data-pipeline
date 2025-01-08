@@ -1485,6 +1485,7 @@ type _Indian_District_ {
 type _Indian_District_Reorganisation_ {
   id: ID!
 
+  name_id: String @search(by: [exact])
   names: [_Name_] @hasInverse(field: "indian_district_reorganisation")
 
   # TODO should this be bidirectional?
@@ -1499,7 +1500,7 @@ type _Indian_District_Reorganisation_ {
   reorganised_on: _Date_Time_
 }
 
-type _Indian_District_All_Version_ {
+type _Indian_District_Version_Group_ {
   id: ID!
 
   name_id: String! @id @search(by: [exact]) # unique id for each all_district version
@@ -1517,6 +1518,11 @@ type _Indian_District_All_Version_ {
   node_updates: [_Node_Update_]
 }
 
+enum _Indian_District_Version_Change_ {
+  Formation
+  Reorganisation
+}
+
 type _Indian_District_Version_ {
   id: ID!
 
@@ -1532,6 +1538,8 @@ type _Indian_District_Version_ {
   region: _Indian_District_Region_ @hasInverse(field: "version")
 
   reorganisation: _Indian_District_Reorganisation_ @hasInverse(field: "district_versions")
+
+  change: _Indian_District_Version_Change_ @search
 
   established_on: _Date_Time_
   disestablished_on: _Date_Time_
