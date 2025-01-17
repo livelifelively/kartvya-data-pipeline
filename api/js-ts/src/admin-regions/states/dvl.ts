@@ -535,18 +535,18 @@ async function connectDVLPipeline(
   const extraStateDetailsByNameId = keyBy(statesAndUnionTerritories, "name_id");
   let state: any = statesUTsVDL[1];
 
-  // let stateUT: any = {
-  //   name: state.state_name,
-  //   name_id: state.name_id,
-  //   vehicle_code: extraStateDetailsByNameId[state.name_id].vehicle_code,
-  //   vidhansabhaConstituenciesCount: state.count,
-  // };
   let stateUT: any = {
-    name: "andhra pradesh",
-    name_id: "in-sut-andhra-pradesh",
-    vehicle_code: "AP",
-    // vidhansabhaConstituenciesCount: state.count,
+    name: state.state_name,
+    name_id: state.name_id,
+    vehicle_code: extraStateDetailsByNameId[state.name_id].vehicle_code,
+    vidhansabhaConstituenciesCount: state.count,
   };
+  // let stateUT: any = {
+  //   name: "andaman and nicobar islands",
+  //   name_id: "in-sut-andaman-nicobar-islands",
+  //   vehicle_code: "AN",
+  //   // vidhansabhaConstituenciesCount: state.count,
+  // };
 
   console.log("INNITATING PROCESSING OF STATE ", stateUT.name);
 
@@ -558,116 +558,24 @@ async function connectDVLPipeline(
   // stateUT.loksabhaConstituenciesCount = stateLoksabhaConstituencies?.loksabhaConstituenciesCount;
   stateUT.districtsCount = stateDistrictData?.numberOfDistricts;
 
-  // const d = getDistrictsByURL(stateUT, state.data.data);
+  const d = getDistrictsByURL(stateUT, state.data.data);
   // const l = getLoksabhaConstituenciesByURL(stateUT, state.data.data);
   // const v = getVidhansabhaConstituenciesList(stateUT, state.data.data);
 
-  const d = [
-    {
-      names: ["Srikakulam"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_district",
-    },
-    {
-      names: ["Parvathipuram Manyam"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district",
-    },
-    {
-      names: ["Vizianagaram"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Vizianagaram_district",
-    },
-    {
-      names: ["Visakhapatnam"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_district",
-    },
-    {
-      names: ["Anakapalli"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Anakapalli_district",
-    },
-    {
-      names: ["Alluri Sitharama Raju"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district",
-    },
-    {
-      names: ["Kakinada"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_district",
-    },
-    {
-      names: ["East Godavari"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/East_Godavari_district",
-    },
-    {
-      names: ["Konaseema"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Konaseema_district",
-    },
-    {
-      names: ["Eluru"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Eluru_district",
-    },
-    {
-      names: ["West Godavari"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/West_Godavari_district",
-    },
-    {
-      names: ["NTR"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/NTR_district",
-    },
-    {
-      names: ["Krishna"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Krishna_district",
-    },
-    {
-      names: ["Guntur"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_district",
-    },
-    {
-      names: ["Palnadu"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Palnadu_district",
-    },
-    {
-      names: ["Bapatla"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Bapatla_district",
-    },
-    {
-      names: ["Prakasam"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Prakasam_district",
-    },
-    {
-      names: ["Sri Potti Sriramulu Nellore"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Nellore_district",
-    },
-    {
-      names: ["Kurnool"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_district",
-    },
-    {
-      names: ["Nandyal"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_district",
-    },
-    {
-      names: ["Y.S.R."],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_district",
-    },
-    {
-      names: ["Anantpur"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Anantapur_district",
-    },
-    {
-      names: ["Sri Sathya Sai"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district",
-    },
-    {
-      names: ["Annamayya"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Annamayya_district",
-    },
-    {
-      names: ["Tirupati"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Tirupati_district",
-    },
-    {
-      names: ["Chittoor"],
-      wikipedia_page: "https://en.wikipedia.org/wiki/Chittoor_district",
-    },
-  ];
+  // const d = [
+  //   {
+  //     names: ["Nicobar"],
+  //     wikipedia_page: "https://en.wikipedia.org/wiki/Nicobar_district",
+  //   },
+  //   {
+  //     names: ["North and Middle Andaman"],
+  //     wikipedia_page: "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
+  //   },
+  //   {
+  //     names: ["South Andaman"],
+  //     wikipedia_page: "https://en.wikipedia.org/wiki/South_Andaman_district",
+  //   },
+  // ];
 
   // console.log(d);
   // console.log(v);
