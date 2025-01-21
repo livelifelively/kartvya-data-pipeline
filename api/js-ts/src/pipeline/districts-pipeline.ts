@@ -4,7 +4,7 @@ import { groupBy, keyBy, map, reduce, size } from "lodash";
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
 import { createNodeType, queryNodeType } from "../knowledge-graph/generic/generic.create";
 import { fetchByRelationId, fetchDistrictsOSMRelationIdsForState } from "../maps/india-osm/states.fetch-geojsons";
-import { processListOfWikipediaPages } from "../admin-regions/districts/extract-district-page-data";
+import { processListOfWikipediaPages } from "../admin-regions/districts-old/extract-district-page-data";
 import { generateNameId } from "../knowledge-graph/region-names/region-names.utils";
 
 import { upsert_Name_ } from "../knowledge-graph/name/name.update";

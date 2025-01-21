@@ -1,4 +1,4 @@
-const districts = require("../districts/india.d.geojson");
+const districts = require("../districts-old/india.geojson");
 
 const fs = require("fs");
 const path = require("path");

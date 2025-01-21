@@ -1,4 +1,4 @@
-import { districtVCs } from "../../../districts/andhra-pradesh/ap.districts-vcs";
+import { districtVCs } from "../../../districts-old/andhra-pradesh/ap.districts-vcs";
 import { map, keyBy } from "lodash";
 import districtMaps from "../ap.d.geo.json";
 import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";

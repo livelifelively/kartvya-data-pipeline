@@ -32,7 +32,7 @@ import {
   transformDistrictsWithSOIGeo,
 } from "../../pipeline/districts-pipeline";
 
-import { stateDistrictsList } from "../districts/state-wise-districts-count-list-urls";
+import { stateDistrictsList } from "../districts-old/state-wise-districts-count-list-urls";
 import { stateLoksabhaConstituenciesCountList } from "../loksabha/state-wise-loksabha-constituencies-count-list-urls";
 import { createGraphQLClient } from "../../knowledge-graph/generic/generic.utils";
 import { updateNodeType } from "../../knowledge-graph/generic/generic.create";

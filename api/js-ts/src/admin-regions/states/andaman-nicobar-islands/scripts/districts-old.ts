@@ -1,7 +1,7 @@
 import path from "path";
 import fs from "fs";
 import { keyBy, map, size } from "lodash";
-import { districtsList } from "../../../districts/all-states-districts-list";
+import { districtsList } from "../../../districts-old/all-states-districts-list";
 // import DVCLC from "../../../../source-wikipedia/d-vc-lc.v3";
 import { createNodeType, queryNodeType } from "../../../../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
@@ -10,7 +10,7 @@ import {
   fetchDistrictsOSMRelationIdsForState,
 } from "../../../../maps/india-osm/states.fetch-geojsons";
 
-import { processListOfWikipediaPages } from "../../../districts/extract-district-page-data";
+import { processListOfWikipediaPages } from "../../../districts-old/extract-district-page-data";
 import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
 import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "../../../../pipeline/pipeline-utils";
 
