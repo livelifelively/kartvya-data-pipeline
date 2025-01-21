@@ -1,5 +1,5 @@
 import { _Indian_State_Union_Territory_ } from "../../../generated/graphql";
-import { states, uts } from "../../../admin-regions/states-data/basic-states-data";
+import { states, uts } from "../../../admin-regions/states-basic/basic-states-data";
 import { update_Name_Change_Name_Case, upsert_Name_ } from "../../name/name.update";
 import { createNodeType, updateNodeType } from "../../generic/generic.create";
 import { createGraphQLClient } from "../../generic/generic.utils";

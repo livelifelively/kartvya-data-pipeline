@@ -36,7 +36,7 @@ import { stateDistrictsList } from "../districts-old/state-wise-districts-count-
 import { stateLoksabhaConstituenciesCountList } from "../loksabha/state-wise-loksabha-constituencies-count-list-urls";
 import { createGraphQLClient } from "../../knowledge-graph/generic/generic.utils";
 import { updateNodeType } from "../../knowledge-graph/generic/generic.create";
-import { statesAndUnionTerritories } from "../states-data/update-states";
+import { statesAndUnionTerritories } from "../states-basic/update-states";
 import {
   keyByURLDistrictsVidhansabhaLoksabha,
   prepareLoksabhaToDistrictsAndVidhansabha,
