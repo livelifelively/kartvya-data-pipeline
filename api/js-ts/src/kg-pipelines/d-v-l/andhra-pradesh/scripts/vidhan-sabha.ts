@@ -1,6 +1,6 @@
 import { keyBy, groupBy, forEach } from "lodash";
 
-import { districtVCs } from "../../../districts-old/andhra-pradesh/ap.districts-vcs";
+import { districtVCs } from "../../../../admin-regions/districts-old/andhra-pradesh/ap.districts-vcs";
 import { allDistricts } from "./districts";
 import vcData from "../vc-data.json";
 import { json_All_AC } from "../ap.vc.geojson";

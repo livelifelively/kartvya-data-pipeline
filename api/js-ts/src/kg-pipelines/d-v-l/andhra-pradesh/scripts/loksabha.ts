@@ -1,4 +1,4 @@
-import { districtVCs } from "../../../districts-old/andhra-pradesh/ap.districts-vcs";
+import { districtVCs } from "../../../../admin-regions/districts-old/andhra-pradesh/ap.districts-vcs";
 import { allDistricts } from "./districts";
 import { vidhansabhaConstituencies } from "./vidhan-sabha";
 import { forEach, groupBy, keyBy, map } from "lodash";
