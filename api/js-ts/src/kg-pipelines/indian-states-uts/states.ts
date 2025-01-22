@@ -14,65 +14,16 @@ import {
   transformDistrictsWikipediaData,
   transformDistrictsWithOSM,
   transformDistrictsWithSOIGeo,
-} from "../../pipeline/districts-pipeline";
+} from "../../pipeline/states-pipeline";
 
-import { stateDistrictsList } from "../../admin-regions/districts-old/state-wise-districts-count-list-urls";
-import { statesAndUnionTerritories } from "../../admin-regions/states-basic/update-states";
+// import { statesAndUnionTerritories } from "../../admin-regions/states-basic/update-states";
+import { states } from "./basic-states-data";
 
-function getDistrictsByURL(stateUT: any, dataVDL: any) {
+function getStatesByURL(statesData: any) {
   let d: any = [];
-  dataVDL.forEach((val: any) => {
-    d.push({
-      name: val.district_name,
-      wikipedia_page: val.district_wikipedia_page,
-    });
-  });
+  let states: any = [];
 
-  let dGroupedByURL = groupBy(d, "wikipedia_page");
-
-  // remove duplicate values
-  dGroupedByURL = reduce(
-    dGroupedByURL,
-    (agg: any, val: any, idx: any) => {
-      agg[idx] = uniqWith(val, isEqual);
-      return agg;
-    },
-    {}
-  );
-
-  let dGroupedByNames = groupBy(Object.values(dGroupedByURL).flat, "name");
-  let withSameName: any = [];
-  forEach(dGroupedByNames, (val: any, key: string) => {
-    if (val.length > 1) withSameName.push(val);
-  });
-  if (withSameName.length) console.log("DISTRICTS WITH COMMON NAMES", JSON.stringify(withSameName, null, 2));
-
-  // merge values with same url but different names
-  dGroupedByURL = reduce(
-    dGroupedByURL,
-    (agg: any, val: any, idx: any) => {
-      agg[idx] = val.reduce((agg1: any, val1: any) => {
-        agg1.names = agg1.names || [];
-        agg1.names.push(val1.name);
-        agg1.wikipedia_page = val1.wikipedia_page;
-
-        return agg1;
-      }, {});
-      return agg;
-    },
-    {}
-  );
-
-  if (stateUT.districtsCount && Object.values(dGroupedByURL).flat().length !== stateUT.districtsCount) {
-    console.log(
-      "DISTRICTS COUNT MISMATCH",
-      ` should be ${stateUT.districtsCount}`,
-      ` is ${Object.values(dGroupedByURL).flat().length}`
-    );
-  }
-  console.log("=====================");
-
-  return dGroupedByURL;
+  return states;
 }
 
 async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boolean = false) {
@@ -187,27 +138,24 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
 }
 
 (async () => {
-  const extraStateDetailsByNameId = keyBy(statesAndUnionTerritories, "name_id");
-  let state: any = statesUTsVDL[1];
+  // const extraStateDetailsByNameId = keyBy(statesAndUnionTerritories, "name_id");
 
-  let stateUT: any = {
-    name: state.state_name,
-    name_id: state.name_id,
-    vehicle_code: extraStateDetailsByNameId[state.name_id].vehicle_code,
-    vidhansabhaConstituenciesCount: state.count,
-  };
+  let toSaveStatesUts: any = states.map((state: any) => {
+    // return state;
+    return {
+      names: [{ name: state.State.text }],
+      established_on: new Date(state?.established_on.text),
+      name_id: `in-sut-${state.State.text.toLowerCase().split(" ").join("-").split(",").join("")}`,
+      // node_created_on: new Date(),
+      // state_or_union_territory: "State",
+    };
+  });
 
-  console.log("INNITATING PROCESSING OF STATE ", stateUT.name);
+  console.log(JSON.stringify(toSaveStatesUts, null, 2));
 
-  const stateDistrictData = stateDistrictsList.find((val: any) => val.regionId === stateUT.name_id);
+  // const saveToKG = true;
 
-  stateUT.districtsCount = stateDistrictData?.numberOfDistricts;
-
-  const d = getDistrictsByURL(stateUT, state.data.data);
-
-  const saveToKG = true;
-
-  const districtsLastStep = await districtsPipeline(stateUT, Object.values(d), saveToKG);
+  // const districtsLastStep = await districtsPipeline(stateUT, Object.values(d), saveToKG);
 
   return;
 })();

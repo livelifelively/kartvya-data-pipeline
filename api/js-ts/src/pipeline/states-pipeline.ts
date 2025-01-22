@@ -17,12 +17,6 @@ interface District {
   states_union_territories: string;
 }
 
-interface ProgressStep {
-  step: number;
-  logFile: string;
-  status: "SUCCESS" | "FAILURE" | "PARTIAL";
-}
-
 interface GeoJSONFeature {
   type: string;
   properties: {
