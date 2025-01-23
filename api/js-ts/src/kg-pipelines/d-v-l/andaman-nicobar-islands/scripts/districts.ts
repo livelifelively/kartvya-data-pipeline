@@ -152,7 +152,7 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
     },
   ];
 
-  const saveToKG = false;
+  const saveToKG = true;
 
   await districtsPipeline(stateUT, districtsList, saveToKG);
 })();
