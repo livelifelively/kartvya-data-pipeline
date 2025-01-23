@@ -5,93 +5,42 @@
     "steps": [
       {
         "step": 0,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 1,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 2,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 3,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 4,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 5,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 6,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 7,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
-        "status": "SUCCESS"
-      }
-    ]
-  },
-  {
-    "iteration": 2,
-    "timeStamp": "2025-01-06T09:46:22.129Z",
-    "steps": [
-      {
-        "step": 0,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 1,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 2,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 3,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 4,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 5,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_5_SUCCESS_Fetch District SOI Geo Features.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 6,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_6_SUCCESS_Append Wikipedia Data.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 7,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/1.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 8,
-        "logFile": "src/admin-regions/states/andaman-nicobar-islands/district-pipeline-logs/2.STEP_8_SUCCESS_Save Districts to KnowledgeGraph.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/district-pipeline-logs/1.STEP_7_SUCCESS_Transform Districts with OSM.log.json",
         "status": "SUCCESS"
       }
     ]
