@@ -26,8 +26,8 @@ import { upsert_Name_ } from "../../knowledge-graph/name/name.update";
   //     source_urls: ["https://www.openstreetmap.org/"],
   //   });
 
-  for (let state of states) {
-    //   for (let state of uts) {
+  // for (let state of states) {
+  for (let state of uts) {
     const name_id = `in-sut-${state.State.text
       .toLowerCase()
       .split(" and")
@@ -67,30 +67,10 @@ import { upsert_Name_ } from "../../knowledge-graph/name/name.update";
       timezone_independent: true,
     });
 
-    const toSaveState = {
-      name_id,
-      names: [{ name: state.State.text }],
-      state_or_union_territory: "State",
-      // state_or_union_territory: "Union_Territory",
-
-      established_on: { id: dateTimeId },
-
-      wikidata_qid: keyedByStatesData[name_id].wikidata_qid,
-      wikipedia_page: keyedByStatesData[name_id].wikipedia_page,
-
-      vehicle_code: state.vehicle_code.text,
-      iso_code: state.iso_code.text,
-
-      node_created_on: new Date(),
-    };
-
-    const toSaveStateId = await createNodeType("_Indian_State_Union_Territory_", graphQLClient, toSaveState);
-
     const toSaveStateVersionRegion = {
       name_id: `${name_id}-version-25-region`,
       osm_id: `${keyedByStatesData[name_id].osm_id}`,
       geo_boundary: { id: geoId },
-      self: { id: toSaveStateId },
 
       node_created_on: new Date(),
     };
@@ -104,7 +84,7 @@ import { upsert_Name_ } from "../../knowledge-graph/name/name.update";
     const toSaveStateVersion = {
       name_id: `${name_id}-version-25`,
       region: { id: toSaveStateVersionRegionId },
-      self: { id: toSaveStateId },
+      // self: { id: toSaveStateId },
 
       node_created_on: new Date(),
     };
@@ -114,6 +94,29 @@ import { upsert_Name_ } from "../../knowledge-graph/name/name.update";
       graphQLClient,
       toSaveStateVersion
     );
+
+    const toSaveState = {
+      name_id,
+      names: [{ name: state.State.text }],
+      // state_or_union_territory: "State",
+      state_or_union_territory: "Union_Territory",
+
+      established_on: { id: dateTimeId },
+
+      wikidata_qid: keyedByStatesData[name_id].wikidata_qid,
+      wikipedia_page: keyedByStatesData[name_id].wikipedia_page,
+
+      vehicle_code: state.vehicle_code.text,
+      iso_code: state.iso_code.text,
+
+      versions: [{ id: toSaveStateVersionId }],
+      regions: [{ id: toSaveStateVersionRegionId }],
+      active_version: { id: toSaveStateVersionId },
+
+      node_created_on: new Date(),
+    };
+
+    const toSaveStateId = await createNodeType("_Indian_State_Union_Territory_", graphQLClient, toSaveState);
 
     console.log({ geoSourceId, geoId, dateTimeId, toSaveStateId, toSaveStateVersionRegionId, toSaveStateVersionId });
   }
