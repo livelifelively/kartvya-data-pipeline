@@ -1,6 +1,7 @@
 import { parseISO, format as formatDate, getYear, getMonth, getDate, getHours, getMinutes, getSeconds } from "date-fns";
 import { toZonedTime, format as tzFormat } from "date-fns-tz";
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
+import { createNodeType } from "../knowledge-graph/generic/generic.create";
 
 type Date_Time_Precision_Category = "year" | "decade" | "century" | "month" | "day" | "hour" | "minute" | "second";
 
@@ -146,6 +147,40 @@ export function convertDatetime(options: ConvertDatetimeOptions): DateTimeConver
   }
 
   return result;
+}
+
+export async function upsertDateTime(graphQLClient: any, options: ConvertDatetimeOptions) {
+  const dateTime = convertDatetime(options);
+
+  const query = `
+      query get_Date_Time_($dateTimeId: String!) {
+        query_Date_Time_(filter: {date_time_id: {eq: $dateTimeId}}) {
+          id
+          date_time_id
+        }
+      }`;
+  const variables = { dateTimeId: dateTime.date_time_id };
+
+  try {
+    let response: any = await graphQLClient.request(query, variables);
+
+    const dateTimeSaved = response.query_Date_Time_;
+
+    // Check if the name was found
+    if (dateTimeSaved.length > 0) {
+      const dateTimeSavedData = dateTimeSaved[0];
+      const dateTimeSavedId = dateTimeSavedData.id;
+
+      return dateTimeSavedId;
+    } else {
+      // Mutation to add a new name if not exists
+      const dateTimeId = await createNodeType("_Date_Time_", graphQLClient, dateTime);
+      return dateTimeId;
+    }
+  } catch (error) {
+    console.error("Error in upsert_Name_:", error);
+    // throw error;
+  }
 }
 
 // const options: ConvertDatetimeOptions = {
