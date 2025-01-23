@@ -139,6 +139,8 @@ type _Name_ {
   country: [_Country_] @hasInverse(field: "names")
   # in_zonal_council: [_IN_Zonal_Council_]
 
+  map_data_source_name: [_Source_] @hasInverse(field: "names")
+
   country_event: [_Country_Event_] @hasInverse(field: "names")
   country_government: [_Country_Government_] @hasInverse(field: "names")
 
@@ -217,7 +219,7 @@ type _Source_ {
   name_id: String! @id @search(by: [exact, term, fulltext])
 
   # about source
-  source_name: String!
+  names: [_Name_] @hasInverse(field: "map_data_source_name")
   source_description: String
 
   # link to source
@@ -235,6 +237,8 @@ type _Source_Data_ {
   source_url: [String]
   # original stringified data for this instance
   source_data: String
+
+  geo: [_Geo_] @hasInverse(field: "source")
 }
 
 enum _Location_Or_Region_Category_ {
@@ -260,7 +264,7 @@ type _Geo_ {
   # CHANGE: not to include category, if has location,
   category: _Location_Or_Region_Category_ @search(by: [exact])
 
-  source_data: _Source_Data_
+  source: _Source_Data_ @hasInverse(field: "geo")
 
   # if the category is location
   location: Point @search
@@ -268,6 +272,7 @@ type _Geo_ {
   # if the category is region
   area: MultiPolygon @search
 
+  # how close to real the map data is. kind of like confidence score
   precision: Int @search
 
   country_boundary_actual: _Country_Region_ @hasInverse(field: "geo_boundary_self_actual")
@@ -309,7 +314,7 @@ enum Date_Time_Precision_Category {
 type _Date_Time_ {
   id: ID!
 
-  date_time_id: String! @id @search
+  date_time_id: String! @id @search(by: [exact, term, fulltext])
 
   year: Int @search
   month: Int @search
@@ -325,6 +330,11 @@ type _Date_Time_ {
 
   from_datetime_country_event: [_Country_Event_] @hasInverse(field: "datetime_from")
   to_datetime_country_event: [_Country_Event_] @hasInverse(field: "datetime_to")
+
+  indian_state_union_territory_established_on: [_Indian_State_Union_Territory_] @hasInverse(field: "established_on")
+  indian_state_union_territory_disestablished_on: [_Indian_State_Union_Territory_]
+    @hasInverse(field: "disestablished_on")
+
   indian_district_reorganisation: [_Indian_District_Reorganisation_] @hasInverse(field: "reorganised_on")
 
   node_created_on: DateTime
@@ -1462,8 +1472,8 @@ type _Indian_State_Union_Territory_ {
   vehicle_code: String @search(by: [hash])
   iso_code: String @search(by: [hash])
 
-  established_on: _Date_Time_
-  disestablished_on: _Date_Time_
+  established_on: _Date_Time_ @hasInverse(field: "indian_state_union_territory_established_on")
+  disestablished_on: _Date_Time_ @hasInverse(field: "indian_state_union_territory_disestablished_on")
 
   # TODO
   # officials, events
