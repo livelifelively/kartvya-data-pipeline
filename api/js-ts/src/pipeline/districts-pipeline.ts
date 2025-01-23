@@ -552,7 +552,7 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
     }
 
     let toSaveDistrictVersion: any = {
-      name_id: `${td.name_id}-version-1`,
+      name_id: `${td.name_id}-version-25`,
       // self: { id: districtId },
     };
 
@@ -564,11 +564,11 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
     const districtId = await createNodeType("_Indian_District_", graphQLClient, toSaveDistrict);
 
     toSaveDistrictRegion = {
-      name_id: `${td.name_id}-region-1`,
+      name_id: `${td.name_id}-version-25-region`,
       self: { name_id: toSaveDistrict.name_id },
       version: { id: districtVersionId },
       geo_boundary: [],
-      states_union_territories: [{ name_id: `${td.states_union_territories}-region` }],
+      states_union_territories: [{ name_id: `${td.states_union_territories}-version-25-region` }],
       node_created_on: new Date(),
     };
 
