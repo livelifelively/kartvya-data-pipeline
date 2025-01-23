@@ -1,5 +1,6 @@
 import path from "path";
 import {
+  addDistrictDataToKnowledgeGraph,
   fetchDistrictSOIGeoFeatures,
   fetchDistrictsOSMDetails,
   fetchDistrictsOSMRelationIds,
@@ -12,7 +13,7 @@ import {
 } from "../../../../pipeline/districts-pipeline";
 import { PipelineStep, runPipeline } from "../../../../pipeline/pipeline";
 
-async function districtsPipeline(stateUT: any, districtsList: any) {
+async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boolean = false) {
   console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
 
   const steps: PipelineStep[] = [
@@ -65,17 +66,12 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
       input: null, // Will be set after the fourth and seventh steps
       key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     },
-    {
-      name: "Transform Districts with SOI Geo",
-      function: transformDistrictsWithSOIGeo,
-      input: null, // Will be set after the sixth and seventh steps
-      key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    },
+    // SOI district boundaries are not always to the point as per present situation
     // {
-    //   name: "Save Districts to KnowledgeGraph",
-    //   function: addDistrictDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    //   name: "Transform Districts with SOI Geo",
+    //   function: transformDistrictsWithSOIGeo,
+    //   input: null, // Will be set after the sixth and seventh steps
+    //   key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
     // },
   ];
 
@@ -100,48 +96,63 @@ async function districtsPipeline(stateUT: any, districtsList: any) {
     fullMatchDistrictsOSMWiki: [],
     partialMatchDistrictsOSMWiki: [],
     allMatchedDistrictsOSMWiki: [],
+    matchDistrictsOSMWikiStatistics: {},
     unmatchedDistrictsOSMWiki: [],
     transformedDistrictsSOIGeo: [],
     unmatchedDistrictsSOIGeo: [],
   };
 
-  const districtsProgressDir = path.join(__dirname, "district-pipeline-logs");
+  if (saveToKG) {
+    steps.push({
+      name: "Save Districts to KnowledgeGraph",
+      function: addDistrictDataToKnowledgeGraph,
+      input: null,
+      key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
+    });
+  }
+
+  const districtsProgressDir = path.join(__dirname, "../", "district-pipeline-logs");
   const progressStatusFile = path.join(districtsProgressDir, "progressStatus.json");
 
   try {
-    await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+    const lastStepOutput = await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+
+    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    return lastStepOutput.transformedDistrictsSOIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
 }
 
-// (async () => {
-//   const stateUT = {
-//     state_name: "andaman and nicobar islands",
-//     name_id: "in-sut-andaman-nicobar-islands",
-//     vehicle_code: "AN",
-//   };
+(async () => {
+  const stateUT = {
+    state_name: "andaman and nicobar islands",
+    name_id: "in-sut-andaman-nicobar-islands",
+    vehicle_code: "AN",
+  };
 
-//   const districtsList = [
-//     {
-//       name: "Nicobar",
-//       wikipedia_page: "https://en.wikipedia.org/wiki/Nicobar_district",
-//       headquarter_name: "Car Nicobar",
-//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Car_Nicobar",
-//     },
-//     {
-//       name: "North and Middle Andaman",
-//       wikipedia_page: "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
-//       headquarter_name: "Mayabunder",
-//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Mayabunder",
-//     },
-//     {
-//       name: "South Andaman",
-//       wikipedia_page: "https://en.wikipedia.org/wiki/South_Andaman_district",
-//       headquarter_name: "Port Blair",
-//       headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Port_Blair",
-//     },
-//   ];
+  const districtsList = [
+    {
+      name: "Nicobar",
+      wikipedia_page: "https://en.wikipedia.org/wiki/Nicobar_district",
+      headquarter_name: "Car Nicobar",
+      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Car_Nicobar",
+    },
+    {
+      name: "North and Middle Andaman",
+      wikipedia_page: "https://en.wikipedia.org/wiki/North_and_Middle_Andaman_district",
+      headquarter_name: "Mayabunder",
+      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Mayabunder",
+    },
+    {
+      name: "South Andaman",
+      wikipedia_page: "https://en.wikipedia.org/wiki/South_Andaman_district",
+      headquarter_name: "Port Blair",
+      headquarter_wikipedia_page: "https://en.wikipedia.org/wiki/Port_Blair",
+    },
+  ];
 
-//   await districtsPipeline(stateUT, districtsList);
-// })();
+  const saveToKG = false;
+
+  await districtsPipeline(stateUT, districtsList, saveToKG);
+})();
