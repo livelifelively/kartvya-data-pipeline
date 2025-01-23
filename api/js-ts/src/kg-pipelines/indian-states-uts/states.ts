@@ -70,7 +70,7 @@ import { upsert_Name_ } from "../../knowledge-graph/name/name.update";
     const toSaveStateVersionRegion = {
       name_id: `${name_id}-version-25-region`,
       osm_id: `${keyedByStatesData[name_id].osm_id}`,
-      geo_boundary: { id: geoId },
+      geo_boundary: [{ id: geoId }],
 
       node_created_on: new Date(),
     };
