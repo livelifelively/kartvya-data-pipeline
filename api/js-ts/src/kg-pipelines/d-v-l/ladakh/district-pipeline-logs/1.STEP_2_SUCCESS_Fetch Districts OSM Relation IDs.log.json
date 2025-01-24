@@ -1,0 +1,725 @@
+{
+  "message": "Step 2 (Fetch Districts OSM Relation IDs) completed successfully.",
+  "data": {
+    "districtsRelationIds": [
+      {
+        "type": "relation",
+        "id": 1786178,
+        "members": [
+          {
+            "type": "way",
+            "ref": 586703114,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 586703113,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046404,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046401,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046400,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 753311004,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1327828455,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1327828454,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1327845756,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 245775021,
+            "role": "admin_centre"
+          },
+          {
+            "type": "relation",
+            "ref": 10390949,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10390948,
+            "role": "subarea"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Kargil district",
+          "name:ar": "مقاطعة كارغل",
+          "name:arz": "مقاطعة كارغل",
+          "name:cs": "okres Kárgil",
+          "name:de": "Distrikt Kargil",
+          "name:en": "Kargil district",
+          "name:es": "Distrito de Kargil",
+          "name:fa": "بخش کارگل",
+          "name:hi": "कारगिल ज़िला",
+          "name:ks": "ضلع کارگل",
+          "name:pnb": "ضلع کارگل",
+          "name:pt": "Distrito de Cargil",
+          "name:ur": "ضلع کارگل",
+          "name:zh": "卡基尔县",
+          "official_name": "Kargil District",
+          "type": "boundary",
+          "wikidata": "Q1650798",
+          "wikipedia": "en:Kargil district",
+          "wikipedia:ur": "ضلع کارگل"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 10390947,
+        "members": [
+          {
+            "type": "node",
+            "ref": 245773925,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 754046400,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046399,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 753311011,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 615166629,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 46246261,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 719015792,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754045481,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090666,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "alt_name": "Zangskar district",
+          "boundary": "administrative",
+          "name": "Zanskar",
+          "name:en": "Zanskar",
+          "name:zh": "藏斯卡",
+          "type": "boundary",
+          "wikidata": "Q147011",
+          "wikipedia:en": "Zanskar"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 10391800,
+        "members": [
+          {
+            "type": "node",
+            "ref": 245774579,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 754090661,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201963202,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 911415831,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201963204,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 845790747,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 845790750,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 845790751,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1305062634,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 843910193,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201963201,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989205,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 537069331,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989226,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989209,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 484553387,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 484548020,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 484823878,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 202057039,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 202057037,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 537053851,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989219,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989218,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989207,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 536962322,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 536962318,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 868036658,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989225,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1192430295,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1192430291,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201989210,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 131631559,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 310177073,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 310177074,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 719015795,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 848875339,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 551819555,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754045481,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090665,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Leh district",
+          "name:ar": "مقاطعة ليه",
+          "name:arz": "مقاطعة ليه",
+          "name:cs": "okres Léh",
+          "name:de": "Distrikt Leh",
+          "name:en": "Leh district",
+          "name:es": "Distrito de Leh",
+          "name:fa": "بخش لیهه",
+          "name:ja": "レー",
+          "name:ks": "ضلع لیہہ",
+          "name:pnb": "ضلع لہ",
+          "name:pt": "Distrito de Lé",
+          "name:sd": "ليھ ضلعو",
+          "name:ur": "ضلع لیہہ",
+          "name:zh": "列城县",
+          "sorting_name:cs": "Léh",
+          "type": "boundary",
+          "wikidata": "Q1921210",
+          "wikipedia": "en:Leh district",
+          "wikipedia:ur": "ضلع لیہہ"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 10391801,
+        "members": [
+          {
+            "type": "way",
+            "ref": 1168804844,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 586703158,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090662,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090665,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090666,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046401,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046404,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 741956963,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 912969933,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "alt_name": "Khalatse;Khaltse;Khaltsi",
+          "boundary": "administrative",
+          "name": "Sham Valley",
+          "type": "boundary"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 10391802,
+        "members": [
+          {
+            "type": "way",
+            "ref": 1276291269,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 905717165,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 329316222,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 484308119,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1168804850,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864290,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 204784124,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 340317211,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864297,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 204779878,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864291,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 563799816,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 525054377,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 296644252,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 973960227,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 973960228,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864292,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 895941548,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 826045692,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 895904282,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 898009158,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 899519646,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864293,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864296,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1305062635,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864295,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201864294,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 804672674,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 817049118,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 201963203,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090661,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090662,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754090663,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 132959991,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 342116571,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "long_name": "وادی نوبرا",
+          "long_name:ks": "وادی نوبرا",
+          "long_name:pa": "ਨੁਬਰਾ ਘਾਟੀ",
+          "long_name:ur": "وادی نوبرا",
+          "name": "Nubra tehsil",
+          "name:ar": "نوبرا",
+          "name:de": "Nubra district",
+          "name:en": "Nubra district",
+          "name:ks": "نوبرا",
+          "name:pa": "ਨੁਬਰਾ",
+          "name:ur": "نوبرا",
+          "name:zh": "努布拉",
+          "type": "boundary",
+          "wikidata": "Q2004108",
+          "wikipedia": "pa:ਨੁਬਰਾ ਘਾਟੀ",
+          "wikipedia:ur": "وادی نوبرا"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 18205199,
+        "members": [
+          {
+            "type": "way",
+            "ref": 1327828454,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1327828455,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754046402,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 753320756,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 754017161,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687745225,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 711800850,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 831326962,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 831326963,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 831328508,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 831368208,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 831368207,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1168804847,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Drass district",
+          "name:en": "Drass district",
+          "type": "boundary",
+          "wikidata": "Q130265763",
+          "wikipedia": "en:Drass district"
+        }
+      }
+    ],
+    "osmDistrictsCount": 6
+  },
+  "key": "STEP_2_SUCCESS_Fetch Districts OSM Relation IDs",
+  "timeStamp": "2025-01-24T22:41:40.956Z"
+}

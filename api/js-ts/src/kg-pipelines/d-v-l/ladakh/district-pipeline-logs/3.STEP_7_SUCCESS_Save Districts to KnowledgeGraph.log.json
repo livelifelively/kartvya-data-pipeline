@@ -1,0 +1,135 @@
+{
+  "message": "Step 7 (Save Districts to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9605a81"
+          },
+          {
+            "id": "0x9be9605a82"
+          }
+        ],
+        "district": {
+          "districtId": "0x9be9605a83",
+          "toSaveDistrict": {
+            "name_id": "in-d-la-kargil",
+            "names": [
+              {
+                "name": "Kargil"
+              },
+              {
+                "name": "Kargil district"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kargil_district",
+            "wikidata_qid": "Q1650798",
+            "node_created_on": "2025-01-24T22:53:18.853Z",
+            "active_version": {
+              "id": "0x9be9605a80"
+            },
+            "versions": [
+              {
+                "id": "0x9be9605a80"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9605a7f"
+              }
+            ]
+          }
+        },
+        "districtVersion": {
+          "districtVersionId": "0x9be9605a80"
+        },
+        "districtRegion": {
+          "districtRegionId": "0x9be9605a7f",
+          "toSaveDistrictRegion": {
+            "name_id": "in-d-la-kargil-version-25-region",
+            "geo_boundary": [],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-ladakh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-24T22:53:18.853Z"
+          }
+        },
+        "geo": {
+          "geo_osm": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kargil_district"
+        ],
+        "name_id": "in-d-la-kargil"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605a86"
+          },
+          {
+            "id": "0x9be9605a87"
+          }
+        ],
+        "district": {
+          "districtId": "0x9be9605a88",
+          "toSaveDistrict": {
+            "name_id": "in-d-la-leh",
+            "names": [
+              {
+                "name": "Leh"
+              },
+              {
+                "name": "Leh district"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Leh_district",
+            "wikidata_qid": "Q1921210",
+            "node_created_on": "2025-01-24T22:53:20.943Z",
+            "active_version": {
+              "id": "0x9be9605a85"
+            },
+            "versions": [
+              {
+                "id": "0x9be9605a85"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9605a84"
+              }
+            ]
+          }
+        },
+        "districtVersion": {
+          "districtVersionId": "0x9be9605a85"
+        },
+        "districtRegion": {
+          "districtRegionId": "0x9be9605a84",
+          "toSaveDistrictRegion": {
+            "name_id": "in-d-la-leh-version-25-region",
+            "geo_boundary": [],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-ladakh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-24T22:53:20.943Z"
+          }
+        },
+        "geo": {
+          "geo_osm": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Leh_district"
+        ],
+        "name_id": "in-d-la-leh"
+      }
+    ]
+  },
+  "key": "STEP_7_SUCCESS_Save Districts to KnowledgeGraph",
+  "timeStamp": "2025-01-24T22:53:22.715Z"
+}

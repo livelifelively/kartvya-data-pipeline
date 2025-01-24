@@ -1,0 +1,32 @@
+{
+  "message": "Step 4 (Fetch Districts Wiki Details) completed successfully.",
+  "data": {
+    "districtsWikiDetails": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Kargil_district",
+        "results": {
+          "last_updated_on": "2025-01-04T15:26:00.000Z",
+          "wikidata_qid": "Q1650798",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/Kargil_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/Kargil_district"
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Leh_district",
+        "results": {
+          "last_updated_on": "2024-11-14T21:13:00.000Z",
+          "wikidata_qid": "Q1921210",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/Leh_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/Leh_district"
+        ]
+      }
+    ],
+    "districtsWikiDetailsFailed": []
+  },
+  "key": "STEP_4_SUCCESS_Fetch Districts Wiki Details",
+  "timeStamp": "2025-01-24T22:49:50.176Z"
+}

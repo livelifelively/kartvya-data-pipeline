@@ -1,0 +1,32 @@
+{
+  "message": "Step 6 (Transform Districts with OSM) completed successfully.",
+  "data": {
+    "allMatchedDistrictsOSMWiki": [
+      {
+        "names": ["Kargil", "Kargil district"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Kargil_district",
+        "states_union_territories": "in-sut-ladakh",
+        "name_id": "in-d-la-kargil",
+        "wikidata_qid": "Q1650798",
+        "id_url": ["https://en.wikipedia.org/wiki/Kargil_district"]
+      },
+      {
+        "names": ["Leh", "Leh district"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Leh_district",
+        "states_union_territories": "in-sut-ladakh",
+        "name_id": "in-d-la-leh",
+        "wikidata_qid": "Q1921210",
+        "id_url": ["https://en.wikipedia.org/wiki/Leh_district"]
+      }
+    ],
+    "matchDistrictsOSMWikiStatistics": {
+      "fullMatched": 2,
+      "partialMatched": 0,
+      "partialMatchesBrief": [],
+      "unmatched": 0
+    },
+    "unmatchedDistrictsOSMWiki": []
+  },
+  "key": "STEP_6_SUCCESS_Transform Districts with OSM",
+  "timeStamp": "2025-01-24T22:49:54.989Z"
+}

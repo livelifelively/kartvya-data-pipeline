@@ -1,0 +1,34 @@
+{
+  "message": "Step 5 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedDistrictsWikipedia": [
+      {
+        "names": [
+          "Kargil"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Kargil_district",
+        "states_union_territories": "in-sut-ladakh",
+        "name_id": "in-d-la-kargil",
+        "wikidata_qid": "Q1650798",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kargil_district"
+        ]
+      },
+      {
+        "names": [
+          "Leh"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Leh_district",
+        "states_union_territories": "in-sut-ladakh",
+        "name_id": "in-d-la-leh",
+        "wikidata_qid": "Q1921210",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Leh_district"
+        ]
+      }
+    ],
+    "districtsNotTransformedWikipedia": []
+  },
+  "key": "STEP_5_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-24T22:49:54.986Z"
+}
