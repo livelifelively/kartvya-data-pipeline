@@ -1,0 +1,34 @@
+{
+  "message": "Step 5 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedDistrictsWikipedia": [
+      {
+        "names": [
+          "North Goa"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/North_Goa",
+        "states_union_territories": "in-sut-goa",
+        "name_id": "in-d-ga-north-goa",
+        "wikidata_qid": "Q108234",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_Goa"
+        ]
+      },
+      {
+        "names": [
+          "South Goa"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/South_Goa",
+        "states_union_territories": "in-sut-goa",
+        "name_id": "in-d-ga-south-goa",
+        "wikidata_qid": "Q108244",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Goa"
+        ]
+      }
+    ],
+    "districtsNotTransformedWikipedia": []
+  },
+  "key": "STEP_5_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-24T04:40:59.566Z"
+}

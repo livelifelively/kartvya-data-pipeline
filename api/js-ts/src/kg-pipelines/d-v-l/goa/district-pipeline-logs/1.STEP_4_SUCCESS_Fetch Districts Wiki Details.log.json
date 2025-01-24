@@ -1,0 +1,32 @@
+{
+  "message": "Step 4 (Fetch Districts Wiki Details) completed successfully.",
+  "data": {
+    "districtsWikiDetails": [
+      {
+        "url": "https://en.wikipedia.org/wiki/North_Goa",
+        "results": {
+          "last_updated_on": "2025-01-05T00:33:00.000Z",
+          "wikidata_qid": "Q108234",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/North_Goa_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/North_Goa"
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/South_Goa",
+        "results": {
+          "last_updated_on": "2025-01-04T22:24:00.000Z",
+          "wikidata_qid": "Q108244",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/South_Goa_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/South_Goa"
+        ]
+      }
+    ],
+    "districtsWikiDetailsFailed": []
+  },
+  "key": "STEP_4_SUCCESS_Fetch Districts Wiki Details",
+  "timeStamp": "2025-01-24T04:40:59.564Z"
+}
