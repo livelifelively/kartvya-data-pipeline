@@ -1,0 +1,46 @@
+{
+  "message": "Step 5 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedDistrictsWikipedia": [
+      {
+        "names": [
+          "Daman"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Daman_district,_India",
+        "states_union_territories": "in-sut-dadra-nagar-haveli-daman-diu",
+        "name_id": "in-d-dd-daman",
+        "wikidata_qid": "Q1158197",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Daman_district,_India"
+        ]
+      },
+      {
+        "names": [
+          "Diu"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Diu_district",
+        "states_union_territories": "in-sut-dadra-nagar-haveli-daman-diu",
+        "name_id": "in-d-dd-diu",
+        "wikidata_qid": "Q2552347",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Diu_district"
+        ]
+      },
+      {
+        "names": [
+          "Dadra and Nagar Haveli"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_district",
+        "states_union_territories": "in-sut-dadra-nagar-haveli-daman-diu",
+        "name_id": "in-d-dd-dadra-nagar-haveli",
+        "wikidata_qid": "Q46107",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_district"
+        ]
+      }
+    ],
+    "districtsNotTransformedWikipedia": []
+  },
+  "key": "STEP_5_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-24T04:27:30.292Z"
+}

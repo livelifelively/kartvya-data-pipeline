@@ -1,0 +1,43 @@
+{
+  "message": "Step 4 (Fetch Districts Wiki Details) completed successfully.",
+  "data": {
+    "districtsWikiDetails": [
+      {
+        "url": "https://en.wikipedia.org/wiki/Daman_district,_India",
+        "results": {
+          "last_updated_on": "2025-01-13T13:08:00.000Z",
+          "wikidata_qid": "Q1158197",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/Daman_district,_India"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/Daman_district,_India"
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Diu_district",
+        "results": {
+          "last_updated_on": "2024-10-23T11:47:00.000Z",
+          "wikidata_qid": "Q2552347",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/Diu_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/Diu_district"
+        ]
+      },
+      {
+        "url": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_district",
+        "results": {
+          "last_updated_on": "2024-11-13T21:52:00.000Z",
+          "wikidata_qid": "Q46107",
+          "wikipedia_page": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_district"
+        },
+        "urls": [
+          "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_district"
+        ]
+      }
+    ],
+    "districtsWikiDetailsFailed": []
+  },
+  "key": "STEP_4_SUCCESS_Fetch Districts Wiki Details",
+  "timeStamp": "2025-01-24T04:27:30.291Z"
+}
