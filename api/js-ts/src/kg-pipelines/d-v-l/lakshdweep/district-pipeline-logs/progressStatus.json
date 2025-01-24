@@ -1,0 +1,95 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-24T22:59:26.004Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_6_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "mismatch in wikidata qid. osm has district wikidata_qid, while wikipedia page is for union territory. added osm district wikidata qid to move forward"
+        ]
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-24T23:03:10.922Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/1.STEP_6_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "mismatch in wikidata qid. osm has district wikidata_qid, while wikipedia page is for union territory. added osm district wikidata qid to move forward"
+        ]
+      },
+      {
+        "step": 7,
+        "logFile": "src/kg-pipelines/d-v-l/lakshdweep/district-pipeline-logs/2.STEP_7_SUCCESS_Save Districts to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
