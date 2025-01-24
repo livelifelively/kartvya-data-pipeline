@@ -1,0 +1,1427 @@
+{
+  "message": "Step 2 (Fetch Districts OSM Relation IDs) completed successfully.",
+  "data": {
+    "districtsRelationIds": [
+      {
+        "type": "relation",
+        "id": 2027870,
+        "members": [
+          {
+            "type": "way",
+            "ref": 728855907,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687219611,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493367,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184251,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855905,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855914,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493419,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095049,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493436,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687219605,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687219610,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 3911459976,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Churachandpur",
+          "name:ja": "チューラーチャーンドプル",
+          "official_name": "Churachandpur District",
+          "type": "boundary",
+          "wikidata": "Q2577281",
+          "wikipedia": "en:Churachandpur district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027871,
+        "members": [
+          {
+            "type": "node",
+            "ref": 569040820,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 729087919,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073361,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087921,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089795,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087934,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087930,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087915,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729090788,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087922,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Imphal East",
+          "official_name": "Imphal East District",
+          "type": "boundary",
+          "wikidata": "Q1916666",
+          "wikipedia": "en:Imphal East district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027872,
+        "members": [
+          {
+            "type": "node",
+            "ref": 4283849570,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 1333611809,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593210,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593211,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687050859,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855897,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855899,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087864,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687050861,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687027088,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728172745,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198227,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855892,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728172753,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687038580,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687038579,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593207,
+            "role": "outer"
+          },
+          {
+            "type": "relation",
+            "ref": 10083205,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10083204,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10083206,
+            "role": "subarea"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Tamenglong district",
+          "type": "boundary",
+          "wikidata": "Q2301717",
+          "wikipedia": "en:Tamenglong district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027934,
+        "members": [
+          {
+            "type": "way",
+            "ref": 729095049,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493419,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184252,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095047,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095046,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089818,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087936,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150494286,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095044,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087870,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 245724723,
+            "role": "admin_centre"
+          },
+          {
+            "type": "relation",
+            "ref": 10087007,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10087055,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10087008,
+            "role": "subarea"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Bishnupur district",
+          "type": "boundary",
+          "wikidata": "Q938190",
+          "wikipedia": "en:Bishnupur district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027935,
+        "members": [
+          {
+            "type": "way",
+            "ref": 729087862,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087924,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073348,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089795,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087934,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087930,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089808,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729090791,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163786,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095046,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089818,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087936,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 6229200260,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Imphal West",
+          "official_name": "Imphal West District",
+          "type": "boundary",
+          "wikidata": "Q1822188",
+          "wikipedia": "en:Imphal West district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027936,
+        "members": [
+          {
+            "type": "way",
+            "ref": 728098568,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 686176147,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213828,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728098654,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 45711813,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728172762,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198220,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687027088,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087858,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687027094,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213829,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855889,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728825313,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213835,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855891,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745222,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198211,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745227,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745237,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745234,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745238,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855886,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745232,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728098521,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687412797,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 830297611,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Senapati",
+          "official_name": "Senapati District",
+          "type": "boundary",
+          "wikidata": "Q2301706",
+          "wikipedia": "en:Senapati district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027937,
+        "members": [
+          {
+            "type": "node",
+            "ref": 245724699,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 729090791,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687089808,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087915,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729090788,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087922,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073342,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153963,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729090790,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163787,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Thoubal",
+          "official_name": "Thoubal District",
+          "type": "boundary",
+          "wikidata": "Q2086198",
+          "wikipedia": "en:Thoubal district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027970,
+        "members": [
+          {
+            "type": "node",
+            "ref": 2914322362,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 728855913,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153971,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855910,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493398,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855911,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855905,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184251,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 40495929,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153975,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Chandel",
+          "official_name": "Chandel District",
+          "type": "boundary",
+          "wikidata": "Q2301769",
+          "wikipedia": "en:Chandel district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 2027971,
+        "members": [
+          {
+            "type": "way",
+            "ref": 687153983,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153989,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728834143,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153995,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019673,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1348328766,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019690,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019704,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213829,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855889,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728825313,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213835,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855891,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198197,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745178,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198188,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 727745172,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687198187,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728825303,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 1848134157,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Ukhrul",
+          "name:zh": "乌克如县",
+          "official_name": "Ukhrul District",
+          "type": "boundary",
+          "wikidata": "Q735101",
+          "wikipedia": "en:Ukhrul district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532320,
+        "members": [
+          {
+            "type": "node",
+            "ref": 1420699824,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 1333593206,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593208,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687060397,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 725972294,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687038578,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687050858,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593207,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333611810,
+            "role": "outer"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Jiribam district",
+          "type": "boundary",
+          "wikidata": "Q28419387",
+          "wikipedia": "en:Jiribam_district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532329,
+        "members": [
+          {
+            "type": "way",
+            "ref": 729087870,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087914,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855897,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687050859,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687060405,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1337230920,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855900,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493437,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687219605,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493436,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 3927938119,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Noney district",
+          "official_name": "Noney District",
+          "type": "boundary",
+          "wikidata": "Q28419389",
+          "wikipedia": "en:Noney_district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532475,
+        "members": [
+          {
+            "type": "way",
+            "ref": 729087862,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073348,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087921,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073361,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087919,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073342,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073340,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073341,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687154011,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153995,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019673,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1348328766,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019690,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687019704,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087858,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687027094,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687050861,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087864,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855899,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087914,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095044,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150494286,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729087924,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 6197847416,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Kangpokpi district",
+          "type": "boundary",
+          "wikidata": "Q28419386",
+          "wikipedia": "en:Kangpokpi_district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532614,
+        "members": [
+          {
+            "type": "way",
+            "ref": 687153963,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729073340,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728834148,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855908,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 203588103,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855913,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153971,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855910,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163789,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 2458565985,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Tengnoupal",
+          "official_name": "Tengnoupal District",
+          "type": "boundary",
+          "wikidata": "Q28419388",
+          "wikipedia": "en:Tengnoupal District"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532615,
+        "members": [
+          {
+            "type": "way",
+            "ref": 729073341,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728834148,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855908,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728834152,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 399621914,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 399621913,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 203588092,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687153989,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728834143,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687154011,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 245727220,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Kamjong",
+          "official_name": "Kamjong District",
+          "type": "boundary",
+          "wikidata": "Q28419390",
+          "wikipedia": "en:Kamjong_district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9532750,
+        "members": [
+          {
+            "type": "way",
+            "ref": 728855914,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184252,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729095047,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163786,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163787,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 729090790,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687163789,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493398,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855911,
+            "role": "outer"
+          },
+          {
+            "type": "node",
+            "ref": 259186488,
+            "role": "admin_centre"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Kakching",
+          "official_name": "Kakching District",
+          "type": "boundary",
+          "wikidata": "Q28173825",
+          "wikipedia": "en:Kakching_district"
+        }
+      },
+      {
+        "type": "relation",
+        "id": 9533549,
+        "members": [
+          {
+            "type": "node",
+            "ref": 2455616138,
+            "role": "admin_centre"
+          },
+          {
+            "type": "way",
+            "ref": 728855902,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728214322,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184249,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184248,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213826,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855907,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687219610,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150493437,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 728855900,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1337230920,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687060405,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593211,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593210,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333611809,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333611810,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593206,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1333593208,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 150357644,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687184250,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 1337230919,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 687213827,
+            "role": "outer"
+          },
+          {
+            "type": "way",
+            "ref": 689514457,
+            "role": "outer"
+          },
+          {
+            "type": "relation",
+            "ref": 10083208,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 10083209,
+            "role": "subarea"
+          },
+          {
+            "type": "relation",
+            "ref": 18321763,
+            "role": "subarea"
+          }
+        ],
+        "tags": {
+          "admin_level": "5",
+          "boundary": "administrative",
+          "name": "Pherzawl district",
+          "type": "boundary",
+          "wikidata": "Q28173809",
+          "wikipedia": "en:Pherzawl district"
+        }
+      }
+    ],
+    "osmDistrictsCount": 16
+  },
+  "key": "STEP_2_SUCCESS_Fetch Districts OSM Relation IDs",
+  "timeStamp": "2025-01-24T23:31:37.060Z"
+}
