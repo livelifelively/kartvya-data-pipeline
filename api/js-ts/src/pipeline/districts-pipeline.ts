@@ -161,12 +161,13 @@ export async function fetchStateOSMData(outputs: Record<string, any>): Promise<a
   const graphQLClient = await createGraphQLClient();
 
   try {
-    const stateDetails = await queryNodeType("_Indian_State_Union_Territory_", graphQLClient, stateUT.name_id, [
-      "osm_id",
-      "id",
-      "regions { geo_boundary { source_data } } ",
-    ]);
-    const stateOSMData: any = JSON.parse(stateDetails[0].regions[0].geo_boundary[0].source_data);
+    const stateDetails = await queryNodeType(
+      "_Indian_State_Union_Territory_Version_Region_",
+      graphQLClient,
+      `${stateUT.name_id}-version-25-region`,
+      ["osm_id", "id", "geo_boundary { source { source_data } }"]
+    );
+    const stateOSMData: any = JSON.parse(stateDetails[0].geo_boundary[0].source.source_data);
 
     const relevantData = {
       state_union_territory_id: stateDetails[0].id,
