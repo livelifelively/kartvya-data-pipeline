@@ -1,73 +1,88 @@
 [
   {
     "iteration": 1,
-    "timeStamp": "2024-12-24T12:03:00.914Z",
+    "timeStamp": "2025-01-24T03:55:26.523Z",
     "steps": [
       {
         "step": 0,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 1,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 2,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 3,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 4,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 5,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_5_FAILURE_Fetch District SOI Geo Features.log.json",
-        "status": "FAILURE"
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_6_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "PARTIAL"
       }
     ]
   },
   {
     "iteration": 2,
-    "timeStamp": "2024-12-24T12:05:47.867Z",
+    "timeStamp": "2025-01-24T04:03:42.273Z",
     "steps": [
       {
         "step": 0,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 1,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 2,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 3,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_3_SUCCESS_Fetch Districts OSM Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 4,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 5,
-        "logFile": "src/admin-regions/states/chhattisgarh/district-pipeline-logs/2.STEP_5_PARTIAL_Fetch District SOI Geo Features.log.json",
-        "status": "PARTIAL"
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/1.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/2.STEP_6_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/kg-pipelines/d-v-l/chhattisgarh/district-pipeline-logs/2.STEP_7_SUCCESS_Save Districts to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
       }
     ]
   }
