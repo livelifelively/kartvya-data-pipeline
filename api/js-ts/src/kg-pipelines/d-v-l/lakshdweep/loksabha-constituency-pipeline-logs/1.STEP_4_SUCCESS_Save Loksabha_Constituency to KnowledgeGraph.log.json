@@ -1,0 +1,76 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95fd118"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606974",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ld-lakshadweep",
+            "names": [
+              {
+                "name": "Lakshadweep"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lakshadweep_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6479803",
+            "node_created_on": "2025-01-25T15:26:10.529Z",
+            "active_version": {
+              "id": "0x9be9606973"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606973"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606972"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606973",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ld-lakshadweep-version-25",
+            "region": {
+              "id": "0x9be9606972"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606972",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ld-lakshadweep-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606971"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-lakshadweep-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T15:26:09.668Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lakshadweep_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ld-lakshadweep"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T15:26:11.388Z"
+}
