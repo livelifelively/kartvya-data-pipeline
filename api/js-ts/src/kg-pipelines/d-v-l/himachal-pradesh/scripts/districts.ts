@@ -126,7 +126,7 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
 
 (async () => {
   const stateUT = {
-    state_name: "himachal pradesh",
+    name: "himachal pradesh",
     name_id: "in-sut-himachal-pradesh",
     vehicle_code: "HP",
   };
