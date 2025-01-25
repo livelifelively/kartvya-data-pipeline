@@ -1,0 +1,2853 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606499"
+          },
+          {
+            "id": "0x9be9606f70"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f71",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-cooch-behar",
+            "names": [
+              {
+                "name": "Cooch Behar"
+              },
+              {
+                "name": "Coochbehar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cooch_Behar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3351420",
+            "node_created_on": "2025-01-25T16:52:24.728Z",
+            "active_version": {
+              "id": "0x9be9606f6f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f6f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f6e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f6f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-cooch-behar-version-25",
+            "region": {
+              "id": "0x9be9606f6e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f6e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-cooch-behar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f6d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:24.189Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cooch_Behar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-cooch-behar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f76"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f77",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-alipurduars",
+            "names": [
+              {
+                "name": "Alipurduars"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Alipurduars_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4726846",
+            "node_created_on": "2025-01-25T16:52:26.985Z",
+            "active_version": {
+              "id": "0x9be9606f75"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f75"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f74"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f75",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-alipurduars-version-25",
+            "region": {
+              "id": "0x9be9606f74"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f74",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-alipurduars-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f73"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:26.340Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Alipurduars_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-alipurduars"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064b7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f7c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-jalpaiguri",
+            "names": [
+              {
+                "name": "Jalpaiguri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jalpaiguri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3348198",
+            "node_created_on": "2025-01-25T16:52:29.970Z",
+            "active_version": {
+              "id": "0x9be9606f7b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f7b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f7a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f7b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-jalpaiguri-version-25",
+            "region": {
+              "id": "0x9be9606f7a"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f7a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-jalpaiguri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f79"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:28.797Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jalpaiguri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-jalpaiguri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064a5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f81",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-darjeeling",
+            "names": [
+              {
+                "name": "Darjeeling"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Darjeeling_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5223069",
+            "node_created_on": "2025-01-25T16:52:31.542Z",
+            "active_version": {
+              "id": "0x9be9606f80"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f80"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f7f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f80",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-darjeeling-version-25",
+            "region": {
+              "id": "0x9be9606f7f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f7f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-darjeeling-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f7e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:31.036Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Darjeeling_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-darjeeling"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f86"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f87",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-raiganj",
+            "names": [
+              {
+                "name": "Raiganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raiganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12449852",
+            "node_created_on": "2025-01-25T16:52:33.329Z",
+            "active_version": {
+              "id": "0x9be9606f85"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f85"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f84"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f85",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-raiganj-version-25",
+            "region": {
+              "id": "0x9be9606f84"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f84",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-raiganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f83"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:32.735Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raiganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-raiganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f8c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f8d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-balurghat",
+            "names": [
+              {
+                "name": "Balurghat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Balurghat_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4853085",
+            "node_created_on": "2025-01-25T16:52:35.474Z",
+            "active_version": {
+              "id": "0x9be9606f8b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f8b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f8a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f8b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-balurghat-version-25",
+            "region": {
+              "id": "0x9be9606f8a"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f8a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-balurghat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f89"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:34.736Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Balurghat_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-balurghat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f92"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f93",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-maldaha-uttar",
+            "names": [
+              {
+                "name": "Maldaha Uttar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maldaha_Uttar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6742776",
+            "node_created_on": "2025-01-25T16:52:38.034Z",
+            "active_version": {
+              "id": "0x9be9606f91"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f91"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f90"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f91",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-maldaha-uttar-version-25",
+            "region": {
+              "id": "0x9be9606f90"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f90",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-maldaha-uttar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f8f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:37.498Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Maldaha_Uttar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-maldaha-uttar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f98"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f99",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-maldaha-dakshin",
+            "names": [
+              {
+                "name": "Maldaha Dakshin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maldaha_Dakshin_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6742775",
+            "node_created_on": "2025-01-25T16:52:39.924Z",
+            "active_version": {
+              "id": "0x9be9606f97"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f97"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f96"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f97",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-maldaha-dakshin-version-25",
+            "region": {
+              "id": "0x9be9606f96"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f96",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-maldaha-dakshin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f95"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:39.342Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Maldaha_Dakshin_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-maldaha-dakshin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f9e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606f9f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-jangipur",
+            "names": [
+              {
+                "name": "Jangipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jangipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6154054",
+            "node_created_on": "2025-01-25T16:52:42.041Z",
+            "active_version": {
+              "id": "0x9be9606f9d"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606f9d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606f9c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606f9d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-jangipur-version-25",
+            "region": {
+              "id": "0x9be9606f9c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606f9c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-jangipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606f9b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:41.296Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jangipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-jangipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fa4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fa5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-baharampur",
+            "names": [
+              {
+                "name": "Baharampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baharampur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4842446",
+            "node_created_on": "2025-01-25T16:52:44.329Z",
+            "active_version": {
+              "id": "0x9be9606fa3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fa3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fa2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fa3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-baharampur-version-25",
+            "region": {
+              "id": "0x9be9606fa2"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fa2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-baharampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fa1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:43.715Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baharampur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-baharampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064d5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606faa",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-murshidabad",
+            "names": [
+              {
+                "name": "Murshidabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Murshidabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6939683",
+            "node_created_on": "2025-01-25T16:52:46.536Z",
+            "active_version": {
+              "id": "0x9be9606fa9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fa9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fa8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fa9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-murshidabad-version-25",
+            "region": {
+              "id": "0x9be9606fa8"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fa8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-murshidabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fa7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:46.001Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Murshidabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-murshidabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606faf"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fb0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-krishnanagar",
+            "names": [
+              {
+                "name": "Krishnanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Krishnanagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6437565",
+            "node_created_on": "2025-01-25T16:52:48.300Z",
+            "active_version": {
+              "id": "0x9be9606fae"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fae"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fad"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fae",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-krishnanagar-version-25",
+            "region": {
+              "id": "0x9be9606fad"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fad",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-krishnanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fac"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:47.715Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Krishnanagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-krishnanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fb5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fb6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-ranaghat",
+            "names": [
+              {
+                "name": "Ranaghat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ranaghat_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7290693",
+            "node_created_on": "2025-01-25T16:52:50.494Z",
+            "active_version": {
+              "id": "0x9be9606fb4"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fb4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fb3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fb4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-ranaghat-version-25",
+            "region": {
+              "id": "0x9be9606fb3"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fb3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-ranaghat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fb2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:49.888Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ranaghat_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-ranaghat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fbb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fbc",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bangaon",
+            "names": [
+              {
+                "name": "Bangaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bangaon_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4855093",
+            "node_created_on": "2025-01-25T16:52:52.551Z",
+            "active_version": {
+              "id": "0x9be9606fba"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fba"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fb9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fba",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bangaon-version-25",
+            "region": {
+              "id": "0x9be9606fb9"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fb9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bangaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fb8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:51.799Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bangaon_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bangaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fc1"
+          },
+          {
+            "id": "0x9be9606fc2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fc3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-barrackpore",
+            "names": [
+              {
+                "name": "Barrackpore"
+              },
+              {
+                "name": "Barrackpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barrackpore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4863171",
+            "node_created_on": "2025-01-25T16:52:54.498Z",
+            "active_version": {
+              "id": "0x9be9606fc0"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fc0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fbf"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fc0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-barrackpore-version-25",
+            "region": {
+              "id": "0x9be9606fbf"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fbf",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-barrackpore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fbe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:53.883Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barrackpore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-barrackpore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fc8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fc9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-dum-dum",
+            "names": [
+              {
+                "name": "Dum Dum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dum_Dum_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5313570",
+            "node_created_on": "2025-01-25T16:52:56.854Z",
+            "active_version": {
+              "id": "0x9be9606fc7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fc7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fc6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fc7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-dum-dum-version-25",
+            "region": {
+              "id": "0x9be9606fc6"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fc6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-dum-dum-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fc5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:56.237Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dum_Dum_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-dum-dum"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fce"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fcf",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-barasat",
+            "names": [
+              {
+                "name": "Barasat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barasat_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4858448",
+            "node_created_on": "2025-01-25T16:52:58.949Z",
+            "active_version": {
+              "id": "0x9be9606fcd"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fcd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fcc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fcd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-barasat-version-25",
+            "region": {
+              "id": "0x9be9606fcc"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fcc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-barasat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fcb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:52:58.388Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barasat_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-barasat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fd4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fd5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-basirhat",
+            "names": [
+              {
+                "name": "Basirhat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Basirhat_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4867561",
+            "node_created_on": "2025-01-25T16:53:01.770Z",
+            "active_version": {
+              "id": "0x9be9606fd3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fd3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fd2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fd3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-basirhat-version-25",
+            "region": {
+              "id": "0x9be9606fd2"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fd2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-basirhat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fd1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:00.849Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Basirhat_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-basirhat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fda"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fdb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-jaynagar",
+            "names": [
+              {
+                "name": "Jaynagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaynagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6167862",
+            "node_created_on": "2025-01-25T16:53:05.303Z",
+            "active_version": {
+              "id": "0x9be9606fd9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fd9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fd8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fd9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-jaynagar-version-25",
+            "region": {
+              "id": "0x9be9606fd8"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fd8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-jaynagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fd7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:03.950Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaynagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-jaynagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fe0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fe1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-mathurapur",
+            "names": [
+              {
+                "name": "Mathurapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mathurapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6787367",
+            "node_created_on": "2025-01-25T16:53:08.184Z",
+            "active_version": {
+              "id": "0x9be9606fdf"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fdf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fde"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fdf",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-mathurapur-version-25",
+            "region": {
+              "id": "0x9be9606fde"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fde",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-mathurapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fdd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:07.193Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mathurapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-mathurapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fe6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fe7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-diamond-harbour",
+            "names": [
+              {
+                "name": "Diamond Harbour"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Diamond_Harbour_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5270807",
+            "node_created_on": "2025-01-25T16:53:11.709Z",
+            "active_version": {
+              "id": "0x9be9606fe5"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606fe5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fe4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606fe5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-diamond-harbour-version-25",
+            "region": {
+              "id": "0x9be9606fe4"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fe4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-diamond-harbour-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fe3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:10.929Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Diamond_Harbour_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-diamond-harbour"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606fec"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606fed",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-jadavpur",
+            "names": [
+              {
+                "name": "Jadavpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jadavpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12428678",
+            "node_created_on": "2025-01-25T16:53:13.714Z",
+            "active_version": {
+              "id": "0x9be9606feb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606feb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606fea"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606feb",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-jadavpur-version-25",
+            "region": {
+              "id": "0x9be9606fea"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606fea",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-jadavpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fe9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:13.007Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jadavpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-jadavpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ff2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ff3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-kolkata-dakshin",
+            "names": [
+              {
+                "name": "Kolkata Dakshin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kolkata_Dakshin_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3348171",
+            "node_created_on": "2025-01-25T16:53:16.003Z",
+            "active_version": {
+              "id": "0x9be9606ff1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ff1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ff0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ff1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-kolkata-dakshin-version-25",
+            "region": {
+              "id": "0x9be9606ff0"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ff0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-kolkata-dakshin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606fef"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:15.016Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kolkata_Dakshin_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-kolkata-dakshin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ff8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ff9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-kolkata-uttar",
+            "names": [
+              {
+                "name": "Kolkata Uttar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kolkata_Uttar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6427315",
+            "node_created_on": "2025-01-25T16:53:18.014Z",
+            "active_version": {
+              "id": "0x9be9606ff7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ff7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ff6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ff7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-kolkata-uttar-version-25",
+            "region": {
+              "id": "0x9be9606ff6"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ff6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-kolkata-uttar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ff5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:17.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kolkata_Uttar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-kolkata-uttar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064b1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ffe",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-howrah",
+            "names": [
+              {
+                "name": "Howrah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Howrah_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3348243",
+            "node_created_on": "2025-01-25T16:53:20.815Z",
+            "active_version": {
+              "id": "0x9be9606ffd"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ffd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ffc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ffd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-howrah-version-25",
+            "region": {
+              "id": "0x9be9606ffc"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ffc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-howrah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ffb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:19.997Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Howrah_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-howrah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607003"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607004",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-uluberia",
+            "names": [
+              {
+                "name": "Uluberia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uluberia_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3348210",
+            "node_created_on": "2025-01-25T16:53:22.698Z",
+            "active_version": {
+              "id": "0x9be9607002"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607002"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607001"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607002",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-uluberia-version-25",
+            "region": {
+              "id": "0x9be9607001"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607001",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-uluberia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607000"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:21.838Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uluberia_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-uluberia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607009"
+          },
+          {
+            "id": "0x9be960700a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960700b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-srerampur",
+            "names": [
+              {
+                "name": "Srerampur"
+              },
+              {
+                "name": "Sreerampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Serampore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7585738",
+            "node_created_on": "2025-01-25T16:53:25.294Z",
+            "active_version": {
+              "id": "0x9be9607008"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607008"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607007"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607008",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-srerampur-version-25",
+            "region": {
+              "id": "0x9be9607007"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607007",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-srerampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607006"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:24.500Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Serampore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-srerampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064ab"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607010",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-hooghly",
+            "names": [
+              {
+                "name": "Hooghly"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hooghly_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12460669",
+            "node_created_on": "2025-01-25T16:53:27.688Z",
+            "active_version": {
+              "id": "0x9be960700f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960700f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960700e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960700f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-hooghly-version-25",
+            "region": {
+              "id": "0x9be960700e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960700e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-hooghly-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960700d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:26.943Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hooghly_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-hooghly"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607015"
+          },
+          {
+            "id": "0x9be9607016"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607017",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-arambagh",
+            "names": [
+              {
+                "name": "Arambagh"
+              },
+              {
+                "name": "Arambag"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arambagh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4783993",
+            "node_created_on": "2025-01-25T16:53:29.684Z",
+            "active_version": {
+              "id": "0x9be9607014"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607014"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607013"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607014",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-arambagh-version-25",
+            "region": {
+              "id": "0x9be9607013"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607013",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-arambagh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607012"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:28.804Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arambagh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-arambagh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960701c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960701d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-tamluk",
+            "names": [
+              {
+                "name": "Tamluk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tamluk_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3351485",
+            "node_created_on": "2025-01-25T16:53:32.703Z",
+            "active_version": {
+              "id": "0x9be960701b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960701b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960701a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960701b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-tamluk-version-25",
+            "region": {
+              "id": "0x9be960701a"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960701a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-tamluk-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607019"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:31.315Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tamluk_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-tamluk"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607022"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607023",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-kanthi",
+            "names": [
+              {
+                "name": "Kanthi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanthi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3351410",
+            "node_created_on": "2025-01-25T16:53:35.143Z",
+            "active_version": {
+              "id": "0x9be9607021"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607021"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607020"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607021",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-kanthi-version-25",
+            "region": {
+              "id": "0x9be9607020"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607020",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-kanthi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960701f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:34.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanthi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-kanthi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607028"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607029",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-ghatal",
+            "names": [
+              {
+                "name": "Ghatal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghatal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5555886",
+            "node_created_on": "2025-01-25T16:53:37.187Z",
+            "active_version": {
+              "id": "0x9be9607027"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607027"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607026"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607027",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-ghatal-version-25",
+            "region": {
+              "id": "0x9be9607026"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607026",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-ghatal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607025"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:36.383Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghatal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-ghatal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064bd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960702e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-jhargram",
+            "names": [
+              {
+                "name": "Jhargram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhargram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6190927",
+            "node_created_on": "2025-01-25T16:53:39.332Z",
+            "active_version": {
+              "id": "0x9be960702d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960702d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960702c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960702d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-jhargram-version-25",
+            "region": {
+              "id": "0x9be960702c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960702c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-jhargram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960702b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:38.735Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhargram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-jhargram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607033"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607034",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-medinipur",
+            "names": [
+              {
+                "name": "Medinipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Medinipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6806969",
+            "node_created_on": "2025-01-25T16:53:41.344Z",
+            "active_version": {
+              "id": "0x9be9607032"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607032"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607031"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607032",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-medinipur-version-25",
+            "region": {
+              "id": "0x9be9607031"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607031",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-medinipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607030"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:40.691Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Medinipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-medinipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96064ff"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607039",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-purulia",
+            "names": [
+              {
+                "name": "Purulia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Purulia_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7261625",
+            "node_created_on": "2025-01-25T16:53:43.752Z",
+            "active_version": {
+              "id": "0x9be9607038"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607038"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607037"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607038",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-purulia-version-25",
+            "region": {
+              "id": "0x9be9607037"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607037",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-purulia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607036"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:42.730Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Purulia_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-purulia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960648d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960703e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bankura",
+            "names": [
+              {
+                "name": "Bankura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bankura_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4856799",
+            "node_created_on": "2025-01-25T16:53:45.535Z",
+            "active_version": {
+              "id": "0x9be960703d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960703d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960703c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960703d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bankura-version-25",
+            "region": {
+              "id": "0x9be960703c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960703c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bankura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960703b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:44.775Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bankura_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bankura"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cb7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607043",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bishnupur",
+            "names": [
+              {
+                "name": "Bishnupur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bishnupur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4917381",
+            "node_created_on": "2025-01-25T16:53:47.474Z",
+            "active_version": {
+              "id": "0x9be9607042"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607042"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607041"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607042",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bishnupur-version-25",
+            "region": {
+              "id": "0x9be9607041"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607041",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bishnupur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607040"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:46.518Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bishnupur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bishnupur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607048"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607049",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bardhaman-purba",
+            "names": [
+              {
+                "name": "Bardhaman Purba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bardhaman_Purba_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4860138",
+            "node_created_on": "2025-01-25T16:53:49.827Z",
+            "active_version": {
+              "id": "0x9be9607047"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607047"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607046"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607047",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bardhaman-purba-version-25",
+            "region": {
+              "id": "0x9be9607046"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607046",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bardhaman-purba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607045"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:48.771Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bardhaman_Purba_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bardhaman-purba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960704e"
+          },
+          {
+            "id": "0x9be960704f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607050",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bardhaman–durgapur",
+            "names": [
+              {
+                "name": "Bardhaman–Durgapur"
+              },
+              {
+                "name": "Bardhaman-Durgapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bardhaman%E2%80%93Durgapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4860137",
+            "node_created_on": "2025-01-25T16:53:52.505Z",
+            "active_version": {
+              "id": "0x9be960704d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960704d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960704c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960704d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bardhaman–durgapur-version-25",
+            "region": {
+              "id": "0x9be960704c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960704c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bardhaman–durgapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960704b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:51.331Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bardhaman%E2%80%93Durgapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bardhaman–durgapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607055"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607056",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-asansol",
+            "names": [
+              {
+                "name": "Asansol"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Asansol_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4803541",
+            "node_created_on": "2025-01-25T16:53:55.325Z",
+            "active_version": {
+              "id": "0x9be9607054"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607054"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607053"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607054",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-asansol-version-25",
+            "region": {
+              "id": "0x9be9607053"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607053",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-asansol-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607052"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:54.295Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Asansol_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-asansol"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960705b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960705c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-bolpur",
+            "names": [
+              {
+                "name": "Bolpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bolpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4940018",
+            "node_created_on": "2025-01-25T16:53:57.372Z",
+            "active_version": {
+              "id": "0x9be960705a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960705a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607059"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960705a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-bolpur-version-25",
+            "region": {
+              "id": "0x9be9607059"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9607059",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-bolpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607058"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:56.759Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bolpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-bolpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606493"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9607061",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-wb-birbhum",
+            "names": [
+              {
+                "name": "Birbhum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Birbhum_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4915625",
+            "node_created_on": "2025-01-25T16:53:59.728Z",
+            "active_version": {
+              "id": "0x9be9607060"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607060"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960705f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9607060",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-wb-birbhum-version-25",
+            "region": {
+              "id": "0x9be960705f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960705f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-wb-birbhum-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960705e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-west-bengal-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:53:58.908Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Birbhum_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-wb-birbhum"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T16:54:00.345Z"
+}
