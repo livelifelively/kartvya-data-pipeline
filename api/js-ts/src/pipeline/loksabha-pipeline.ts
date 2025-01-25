@@ -304,6 +304,59 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
   const graphQLClient = await createGraphQLClient();
 
   for (let td of transformedLoksabhaConstituenciesECIGeo) {
+    let geo_eci,
+      geoECIId,
+      geoOSMId,
+      geoSourceId,
+      eciLoksabhaConstituencyRegionId,
+      toSaveLoksabhaConstituencyRegion: any;
+
+    if (td.geo_eci) {
+      const loksabhaConstituencyMapECI = polygonToMultiPolygon(td.geo_eci);
+
+      geoSourceId = await createNodeType("_Source_Data_", graphQLClient, {
+        source: { name_id: "election-commission-of-india" },
+        source_url: `https://results.eci.gov.in/PcResultGenJune2024/pc/${td.geo_eci.properties.ST_CODE}.js`,
+        source_data: `${JSON.stringify(td.geo_eci)}`,
+      });
+
+      geoECIId = await createNodeType("_Geo_", graphQLClient, {
+        category: "Region",
+        area: multiPolygonToDgraphMultiPolygon(loksabhaConstituencyMapECI.geometry.coordinates),
+        node_created_on: new Date(),
+        source: { id: geoSourceId },
+      });
+    }
+
+    toSaveLoksabhaConstituencyRegion = {
+      name_id: `${td.name_id}-version-25-region`,
+      geo_boundary: [],
+      states_union_territories: [{ name_id: `${td.states_union_territories}-version-25-region` }],
+      node_created_on: new Date(),
+    };
+
+    if (geoECIId) {
+      toSaveLoksabhaConstituencyRegion.geo_boundary.push({ id: geoECIId });
+    }
+
+    // save loksabhaConstituency region
+    eciLoksabhaConstituencyRegionId = await createNodeType(
+      "_Indian_Loksabha_Constituency_Version_Region_",
+      graphQLClient,
+      toSaveLoksabhaConstituencyRegion
+    );
+
+    let toSaveLoksabhaConstituencyVersion: any = {
+      name_id: `${td.name_id}-version-25`,
+      region: { id: eciLoksabhaConstituencyRegionId },
+    };
+
+    const loksabhaConstituencyVersionId = await createNodeType(
+      "_Indian_Loksabha_Constituency_Version_",
+      graphQLClient,
+      toSaveLoksabhaConstituencyVersion
+    );
+
     let toSaveLoksabhaConstituency: any = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
@@ -312,18 +365,11 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
         };
       }),
 
-      states_union_territories: [{ name_id: td.states_union_territories }],
-      established_on_string: td.established_on_string,
-
       wikipedia_page: td.wikipedia_page,
       wikidata_qid: td.wikidata_qid,
 
       node_created_on: new Date(),
     };
-
-    if (td.disestablished_on_string) {
-      toSaveLoksabhaConstituency.disestablished_on_string = td.disestablished_on_string;
-    }
 
     let nameIds: any = [];
     for (let n of toSaveLoksabhaConstituency.names) {
@@ -331,90 +377,15 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
       nameIds.push({ id: nameId });
     }
 
+    toSaveLoksabhaConstituency.active_version = { id: loksabhaConstituencyVersionId };
+    toSaveLoksabhaConstituency.versions = [{ id: loksabhaConstituencyVersionId }];
+    toSaveLoksabhaConstituency.regions = [{ id: eciLoksabhaConstituencyRegionId }];
+
     const loksabhaConstituencyId = await createNodeType(
       "_Indian_Loksabha_Constituency_",
       graphQLClient,
       toSaveLoksabhaConstituency
     );
-
-    let geo_eci, geoECIId, eciLoksabhaConstituencyRegionId, eciToSaveLoksabhaConstituencyRegion: any;
-    if (td.geo_eci) {
-      const loksabhaConstituencyMapECI = polygonToMultiPolygon(td.geo_eci);
-      geo_eci = {
-        area: multiPolygonToDgraphMultiPolygon(loksabhaConstituencyMapECI.geometry.coordinates),
-        category: "Region",
-        source_name: "Election Commission Of India",
-        // source_url: `https://results.eci.gov.in/PcResultGenJune2024/pc/${lc.geo.properties.ST_CODE}.js`,
-        source_data: `${JSON.stringify(td.geo_eci)}`,
-      };
-
-      geoECIId = await createNodeType("_Geo_", graphQLClient, geo_eci);
-
-      eciToSaveLoksabhaConstituencyRegion = {
-        self: { name_id: toSaveLoksabhaConstituency.name_id },
-        geo_boundary: [
-          {
-            id: geoECIId,
-          },
-        ],
-        node_created_on: new Date(),
-      };
-
-      if (td.delimitation_date && td.region_changed) {
-        eciToSaveLoksabhaConstituencyRegion.established_on_string = td.delimitation_date;
-      }
-
-      // save loksabhaConstituency region
-      eciLoksabhaConstituencyRegionId = await createNodeType(
-        "_Indian_Loksabha_Constituency_Region_",
-        graphQLClient,
-        eciToSaveLoksabhaConstituencyRegion
-      );
-    }
-
-    // create a separate region for one that has been changed.
-    let geo_eci_pre_delimitation,
-      geoECIPreDelimitationId,
-      preDelimitationECILoksabhaConstituencyRegionId,
-      preDelimitationECIToSaveLoksabhaConstituencyRegion: any;
-    if (td.geo_eci_pre_delimitation) {
-      const loksabhaConstituencyMapECI = polygonToMultiPolygon(td.geo_eci_pre_delimitation);
-      geo_eci_pre_delimitation = {
-        area: multiPolygonToDgraphMultiPolygon(loksabhaConstituencyMapECI.geometry.coordinates),
-        category: "Region",
-        source_name: "Election Commission Of India",
-        // source_url: `https://results.eci.gov.in/PcResultGenJune2024/pc/${lc.geo.properties.ST_CODE}.js`,
-        source_data: `${JSON.stringify(td.geo_eci_pre_delimitation)}`,
-      };
-
-      geoECIPreDelimitationId = await createNodeType("_Geo_", graphQLClient, geo_eci_pre_delimitation);
-
-      preDelimitationECIToSaveLoksabhaConstituencyRegion = {
-        self: { name_id: toSaveLoksabhaConstituency.name_id },
-        geo_boundary: [
-          {
-            id: geoECIPreDelimitationId,
-          },
-        ],
-        disestablished_on_string: "",
-        node_created_on: new Date(),
-      };
-
-      if (td.disestablished_on_string) {
-        preDelimitationECIToSaveLoksabhaConstituencyRegion.disestablished_on_string = td.disestablished_on_string;
-      }
-
-      if (td.delimitation_date && td.region_changed) {
-        preDelimitationECIToSaveLoksabhaConstituencyRegion.disestablished_on_string = td.delimitation_date;
-      }
-
-      // save loksabhaConstituency region
-      preDelimitationECILoksabhaConstituencyRegionId = await createNodeType(
-        "_Indian_Loksabha_Constituency_Region_",
-        graphQLClient,
-        preDelimitationECIToSaveLoksabhaConstituencyRegion
-      );
-    }
 
     savedToKnowledgeGraph.push({
       names: nameIds,
@@ -422,25 +393,20 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
         loksabhaConstituencyId,
         toSaveLoksabhaConstituency,
       },
-      loksabhaConstituencyRegion: [
-        {
-          loksabhaConstituencyRegionId: eciLoksabhaConstituencyRegionId,
-          toSaveLoksabhaConstituencyRegion: eciToSaveLoksabhaConstituencyRegion,
-        },
-        {
-          loksabhaConstituencyRegionId: preDelimitationECILoksabhaConstituencyRegionId,
-          toSaveLoksabhaConstituencyRegion: preDelimitationECIToSaveLoksabhaConstituencyRegion,
-        },
-      ],
+      loksabhaConstituencyVersion: {
+        loksabhaConstituencyVersionId,
+        toSaveLoksabhaConstituencyVersion,
+      },
+      loksabhaConstituencyRegion: {
+        loksabhaConstituencyRegionId: eciLoksabhaConstituencyRegionId,
+        toSaveLoksabhaConstituencyRegion,
+      },
       geo: {
         geo_eci: geo_eci
           ? {
               geo_eci,
               geoECIId,
             }
-          : null,
-        geo_eci_pre_delimitation: geo_eci_pre_delimitation
-          ? { geo_eci_pre_delimitation, geoECIPreDelimitationId }
           : null,
       },
       id_url: td.id_url,
@@ -450,78 +416,12 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
     console.log({
       nameIds,
       loksabhaConstituencyId,
-      eciLoksabhaConstituencyRegionId,
-      preDelimitationECILoksabhaConstituencyRegionId,
+      loksabhaConstituencyRegionId: eciLoksabhaConstituencyRegionId,
+      loksabhaConstituencyVersionId,
       id_url: td.id_url,
       name_id: td.name_id,
     });
   }
 
   return { savedToKnowledgeGraph, status: "SUCCESS" };
-}
-
-async function sampleFunction(stateUT: any) {
-  console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.state_name);
-
-  const steps: PipelineStep[] = [
-    {
-      name: "Fetch State Loksabha_Constituency",
-      function: fetchStateLoksabhaConstituencies,
-      key: "STATE_LOKSABHA_LIST",
-      input: stateUT,
-    },
-    {
-      name: "Fetch Loksabha_Constituency Wiki Details",
-      function: fetchLoksabhaConstituenciesWikiDetails,
-      key: "STATE_LOKSABHA_CONSTITUENCY_WIKI_DATA",
-      input: null, // Will be set after the first step
-    },
-    {
-      name: "Fetch LoksabhaConstituency ECI Geo Features",
-      function: fetchLoksabhaConstituencyECIGeoFeatures,
-      key: "STATE_LOKSABHA_CONSTITUENCY_ECI_GEO_DATA",
-      input: stateUT,
-    },
-    {
-      name: "Append Wikipedia Data",
-      function: transformLoksabhaConstituenciesWikipediaData,
-      input: null, // Will be set after the fifth step
-      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
-    },
-    {
-      name: "Transform Loksabha_Constituency with ECI Geo",
-      function: transformLoksabhaConstituenciesWithECIGeo,
-      input: null, // Will be set after the sixth and seventh steps
-      key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
-    },
-    // {
-    //   name: "Save Loksabha_Constituency to KnowledgeGraph",
-    //   function: addLoksabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
-  ];
-
-  let outputs: Record<string, any> = {
-    stateUT,
-    vcDLcList: [],
-    stateLoksabhaConstituencies: [],
-    loksabhaConstituenciesCount: 0,
-    loksabhaConstituenciesWikiDetails: [],
-    loksabhaConstituenciesWikiDetailsFailed: [],
-    loksabhaConstituencyFeaturesECI: [],
-    transformedLoksabhaConstituenciesWikipedia: [],
-    loksabhaConstituenciesNotTransformedWikipedia: [],
-    transformedLoksabhaConstituenciesECIGeo: [],
-    unmatchedLoksabhaConstituenciesECIGeo: [],
-  };
-
-  const loksabhaConstituenciesProgressDir = path.join(__dirname, "loksabha-constituency-pipeline-logs");
-  const progressStatusFile = path.join(loksabhaConstituenciesProgressDir, "progressStatus.json");
-
-  try {
-    await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
-  } catch (error) {
-    console.error("Error in processing: ", error);
-  }
 }
