@@ -1,0 +1,37 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q7843879",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tripura_West_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Tripura_West_Lok_Sabha_constituency",
+        "names": [
+          "Tripura West"
+        ],
+        "states_union_territories": "in-sut-tripura",
+        "name_id": "in-lc-tr-tripura-west",
+        "established_on_string": "1952",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q7843852",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tripura_East_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Tripura_East_Lok_Sabha_constituency",
+        "names": [
+          "Tripura East"
+        ],
+        "states_union_territories": "in-sut-tripura",
+        "name_id": "in-lc-tr-tripura-east",
+        "established_on_string": "1952",
+        "reservation": "ST"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-25T16:38:02.529Z"
+}
