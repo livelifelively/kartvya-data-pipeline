@@ -1,0 +1,143 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96056af"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960672f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ga-north-goa",
+            "names": [
+              {
+                "name": "North Goa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/North_Goa_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12416142",
+            "node_created_on": "2025-01-25T14:49:21.892Z",
+            "active_version": {
+              "id": "0x9be960672e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960672e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960672d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960672e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ga-north-goa-version-25",
+            "region": {
+              "id": "0x9be960672d"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960672d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ga-north-goa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960672c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:49:20.763Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_Goa_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ga-north-goa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96056b5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606734",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ga-south-goa",
+            "names": [
+              {
+                "name": "South Goa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/South_Goa_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7567370",
+            "node_created_on": "2025-01-25T14:49:23.937Z",
+            "active_version": {
+              "id": "0x9be9606733"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606733"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606732"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606733",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ga-south-goa-version-25",
+            "region": {
+              "id": "0x9be9606732"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606732",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ga-south-goa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606731"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:49:23.018Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Goa_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ga-south-goa"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T14:49:24.310Z"
+}
