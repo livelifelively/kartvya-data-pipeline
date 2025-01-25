@@ -1,0 +1,149 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96066ff"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606700",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dd-daman-diu",
+            "names": [
+              {
+                "name": "Daman and Diu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Daman_and_Diu_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5211945",
+            "node_created_on": "2025-01-25T14:40:02.066Z",
+            "active_version": {
+              "id": "0x9be96066fe"
+            },
+            "versions": [
+              {
+                "id": "0x9be96066fe"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96066fd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96066fe",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dd-daman-diu-version-25",
+            "region": {
+              "id": "0x9be96066fd"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96066fd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dd-daman-diu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96066fc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-dadra-nagar-haveli-daman-diu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:40:01.159Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Daman_and_Diu_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dd-daman-diu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605667"
+          },
+          {
+            "id": "0x9be9606705"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606706",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dd-dadra-nagar-haveli",
+            "names": [
+              {
+                "name": "Dadra and Nagar Haveli"
+              },
+              {
+                "name": "Dadra & Nagar Haveli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5208111",
+            "node_created_on": "2025-01-25T14:40:04.280Z",
+            "active_version": {
+              "id": "0x9be9606704"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606704"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606703"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606704",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dd-dadra-nagar-haveli-version-25",
+            "region": {
+              "id": "0x9be9606703"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606703",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dd-dadra-nagar-haveli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606702"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-dadra-nagar-haveli-daman-diu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:40:03.672Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dd-dadra-nagar-haveli"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T14:40:05.674Z"
+}
