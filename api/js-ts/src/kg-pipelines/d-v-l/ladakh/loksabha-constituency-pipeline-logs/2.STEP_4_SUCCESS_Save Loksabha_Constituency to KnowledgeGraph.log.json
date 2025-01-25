@@ -1,0 +1,76 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95fd116"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960696f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-la-ladakh",
+            "names": [
+              {
+                "name": "Ladakh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ladakh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4252512",
+            "node_created_on": "2025-01-25T15:25:07.697Z",
+            "active_version": {
+              "id": "0x9be960696e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960696e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960696d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960696e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-la-ladakh-version-25",
+            "region": {
+              "id": "0x9be960696d"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960696d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-la-ladakh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960696c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-ladakh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T15:25:06.689Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ladakh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-la-ladakh"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T15:25:07.982Z"
+}
