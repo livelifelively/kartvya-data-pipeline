@@ -126,7 +126,7 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
 
 (async () => {
   const stateUT = {
-    state: "kerala",
+    name: "kerala",
     name_id: "in-sut-kerala",
     vehicle_code: "KL",
   };
