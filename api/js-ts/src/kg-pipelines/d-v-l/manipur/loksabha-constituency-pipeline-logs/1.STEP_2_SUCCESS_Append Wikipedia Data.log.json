@@ -1,0 +1,37 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q6035471",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Inner_Manipur_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Inner_Manipur_Lok_Sabha_constituency",
+        "names": [
+          "Inner Manipur"
+        ],
+        "states_union_territories": "in-sut-manipur",
+        "name_id": "in-lc-mn-inner-manipur",
+        "established_on_string": "1951",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q7111989",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Outer_Manipur_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Outer_Manipur_Lok_Sabha_constituency",
+        "names": [
+          "Outer Manipur"
+        ],
+        "states_union_territories": "in-sut-manipur",
+        "name_id": "in-lc-mn-outer-manipur",
+        "established_on_string": "1952",
+        "reservation": "ST"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-25T16:07:29.216Z"
+}
