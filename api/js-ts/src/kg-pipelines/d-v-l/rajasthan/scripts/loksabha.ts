@@ -1,131 +1,87 @@
-// TODO FIXME
-/**
- * Administratively Puducherry only has 2 districts, Puducherry and Karaikal.
- * The districts of Yanam and Mahé are census districts and not administrative districts.
- * The sub-taluks covered by these 2 census districts are administratively under the Puducherry district.[1][2]
- */
-
 import path from "path";
-import {
-  addDistrictDataToKnowledgeGraph,
-  fetchDistrictSOIGeoFeatures,
-  fetchDistrictsOSMDetails,
-  fetchDistrictsOSMRelationIds,
-  fetchDistrictsWikiDetails,
-  fetchStateDistricts,
-  fetchStateOSMData,
-  transformDistrictsWikipediaData,
-  transformDistrictsWithOSM,
-  transformDistrictsWithSOIGeo,
-} from "../../../../pipeline/districts-pipeline";
 import { PipelineStep, runPipeline } from "../../../../pipeline/pipeline";
+import {
+  addLoksabhaConstituencyDataToKnowledgeGraph,
+  fetchLoksabhaConstituenciesWikiDetails,
+  fetchLoksabhaConstituencyECIGeoFeatures,
+  transformLoksabhaConstituenciesWikipediaData,
+  transformLoksabhaConstituenciesWithECIGeo,
+} from "../../../../pipeline/loksabha-pipeline";
+import { upsert_Name_ } from "../../../../knowledge-graph/name/name.update";
+import { createNodeType } from "../../../../knowledge-graph/generic/generic.create";
+import { createGraphQLClient } from "../../../../knowledge-graph/generic/generic.utils";
 
-async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boolean = false) {
-  console.log("DISTRICTS PROCESSING INITIALIZED: ", stateUT.name);
-
+async function loksabhaConstituenciesPipeline(
+  stateUT: any,
+  loksabhaConstituenciesList: any,
+  saveToKG: boolean = false
+) {
+  // console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.name);
   const steps: PipelineStep[] = [
+    // // DONT NEED THIS STEP, ALREADY INPUT IS IN THE REQUIRED FORMAT
+    // {
+    //   name: "Fetch State Loksabha_Constituency",
+    //   function: fetchStateLoksabhaConstituencies,
+    //   key: "STATE_LOKSABHA_LIST",
+    //   input: stateUT,
+    // },
     {
-      name: "Fetch State Districts",
-      function: fetchStateDistricts,
-      key: "STATE_DISTRICTS_LIST",
-      input: null,
-    },
-    {
-      name: "Fetch State OSM Data",
-      function: fetchStateOSMData,
-      key: "STATE_OSM_DATA",
-      input: null,
-    },
-    {
-      name: "Fetch Districts OSM Relation IDs",
-      function: fetchDistrictsOSMRelationIds,
-      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
-      input: null, // Will be set after the second step
-    },
-    {
-      name: "Fetch Districts OSM Details",
-      function: fetchDistrictsOSMDetails,
-      key: "STATE_DISTRICTS_OSM_RELATION_IDS",
-
-      input: null, // Will be set after the third step
-    },
-    {
-      name: "Fetch Districts Wiki Details",
-      function: fetchDistrictsWikiDetails,
-      key: "STATE_DISTRICTS_WIKI_DATA",
+      name: "Fetch Loksabha_Constituency Wiki Details",
+      function: fetchLoksabhaConstituenciesWikiDetails,
+      key: "STATE_LOKSABHA_CONSTITUENCY_WIKI_DATA",
       input: null, // Will be set after the first step
     },
-    // {
-    //   name: "Fetch District SOI Geo Features",
-    //   function: fetchDistrictSOIGeoFeatures,
-    //   key: "STATE_DISTRICTS_SOI_GEO_DATA",
-    //   input: null,
-    // },
+    {
+      name: "Fetch LoksabhaConstituency ECI Geo Features",
+      function: fetchLoksabhaConstituencyECIGeoFeatures,
+      key: "STATE_LOKSABHA_CONSTITUENCY_ECI_GEO_DATA",
+      input: stateUT,
+    },
     {
       name: "Append Wikipedia Data",
-      function: transformDistrictsWikipediaData,
+      function: transformLoksabhaConstituenciesWikipediaData,
       input: null, // Will be set after the fifth step
-      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
     },
     {
-      name: "Transform Districts with OSM",
-      function: transformDistrictsWithOSM,
-      input: null, // Will be set after the fourth and seventh steps
-      key: "APPEND_OSM_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
+      name: "Transform Loksabha_Constituency with ECI Geo",
+      function: transformLoksabhaConstituenciesWithECIGeo,
+      input: null, // Will be set after the sixth and seventh steps
+      key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
     },
-    // SOI district boundaries are not always to the point as per present situation
-    // {
-    //   name: "Transform Districts with SOI Geo",
-    //   function: transformDistrictsWithSOIGeo,
-    //   input: null, // Will be set after the sixth and seventh steps
-    //   key: "APPEND_SOI_DATA_TRANSFORM_STATE_DISTRICTS_DATA",
-    // },
   ];
 
   let outputs: Record<string, any> = {
     stateUT,
-    districtsList,
-    districtsCount: 0,
-    districts: [],
-    state_union_territory_id: "",
-    state_union_territory_osm_id: "",
-    state_osm_data: {},
-    districtsRelationIds: {},
-    osmDistrictsCount: 0,
-    districtsOSMDetails: [],
-    districtsOSMDetailsNotFound: [],
-    osmDetailsDistrictsCount: 0,
-    districtsWikiDetails: [],
-    districtsWikiDetailsFailed: [],
-    districtFeaturesSOI: [],
-    transformedDistrictsWikipedia: [],
-    districtsNotTransformedWikipedia: [],
-    fullMatchDistrictsOSMWiki: [],
-    partialMatchDistrictsOSMWiki: [],
-    allMatchedDistrictsOSMWiki: [],
-    matchDistrictsOSMWikiStatistics: {},
-    unmatchedDistrictsOSMWiki: [],
-    transformedDistrictsSOIGeo: [],
-    unmatchedDistrictsSOIGeo: [],
+    // loksabhaConstituenciesList,
+    stateLoksabhaConstituencies: loksabhaConstituenciesList,
+    loksabhaConstituenciesCount: 0,
+    loksabhaConstituenciesWikiDetails: [],
+    loksabhaConstituenciesWikiDetailsFailed: [],
+    loksabhaConstituencyFeaturesECI: [],
+    transformedLoksabhaConstituenciesWikipedia: [],
+    loksabhaConstituenciesNotTransformedWikipedia: [],
+    transformedLoksabhaConstituenciesECIGeo: [],
+    unmatchedLoksabhaConstituenciesECIGeo: [],
   };
 
   if (saveToKG) {
     steps.push({
-      name: "Save Districts to KnowledgeGraph",
-      function: addDistrictDataToKnowledgeGraph,
+      name: "Save Loksabha_Constituency to KnowledgeGraph",
+      function: addLoksabhaConstituencyDataToKnowledgeGraph,
       input: null,
       key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
     });
   }
 
-  const districtsProgressDir = path.join(__dirname, "../", "district-pipeline-logs");
-  const progressStatusFile = path.join(districtsProgressDir, "progressStatus.json");
+  const loksabhaConstituenciesProgressDir = path.join(__dirname, "../", "loksabha-constituency-pipeline-logs");
+  const progressStatusFile = path.join(loksabhaConstituenciesProgressDir, "progressStatus.json");
 
   try {
-    const lastStepOutput = await runPipeline(steps, outputs, districtsProgressDir, progressStatusFile);
+    const lastStepOutput = await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
 
     if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
-    return lastStepOutput.transformedDistrictsSOIGeo;
+    return lastStepOutput.transformedLoksabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
@@ -138,7 +94,7 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
     vehicle_code: "RJ",
   };
 
-  const districtsList = [
+  const loksabhaConstituenciesList = [
     {
       names: ["Ganganagar"],
       wikipedia_page: "https://en.wikipedia.org/wiki/Ganganagar_Lok_Sabha_constituency",
@@ -243,5 +199,7 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
 
   const saveToKG = true;
 
-  await districtsPipeline(stateUT, districtsList, saveToKG);
+  await loksabhaConstituenciesPipeline(stateUT, loksabhaConstituenciesList, saveToKG);
+
+  return;
 })();
