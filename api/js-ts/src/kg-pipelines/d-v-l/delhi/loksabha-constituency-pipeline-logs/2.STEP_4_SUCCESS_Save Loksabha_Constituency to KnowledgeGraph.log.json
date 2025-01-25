@@ -1,0 +1,478 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960670b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960670c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-chandni-chowk",
+            "names": [
+              {
+                "name": "Chandni Chowk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chandni_Chowk_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5071226",
+            "node_created_on": "2025-01-25T14:48:08.269Z",
+            "active_version": {
+              "id": "0x9be960670a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960670a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606709"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960670a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-chandni-chowk-version-25",
+            "region": {
+              "id": "0x9be9606709"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606709",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-chandni-chowk-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606708"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:07.527Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chandni_Chowk_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-chandni-chowk"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605685"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606711",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-north-east-delhi",
+            "names": [
+              {
+                "name": "North East Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/North_East_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7055185",
+            "node_created_on": "2025-01-25T14:48:10.725Z",
+            "active_version": {
+              "id": "0x9be9606710"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606710"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960670f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606710",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-north-east-delhi-version-25",
+            "region": {
+              "id": "0x9be960670f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960670f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-north-east-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960670e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:09.935Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_East_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-north-east-delhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605673"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606716",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-east-delhi",
+            "names": [
+              {
+                "name": "East Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/East_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5328213",
+            "node_created_on": "2025-01-25T14:48:12.472Z",
+            "active_version": {
+              "id": "0x9be9606715"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606715"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606714"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606715",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-east-delhi-version-25",
+            "region": {
+              "id": "0x9be9606714"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606714",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-east-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606713"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:11.543Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/East_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-east-delhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605679"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960671b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-new-delhi",
+            "names": [
+              {
+                "name": "New Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/New_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q13118215",
+            "node_created_on": "2025-01-25T14:48:14.310Z",
+            "active_version": {
+              "id": "0x9be960671a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960671a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606719"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960671a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-new-delhi-version-25",
+            "region": {
+              "id": "0x9be9606719"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606719",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-new-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606718"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:13.459Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/New_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-new-delhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960568b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606720",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-north-west-delhi",
+            "names": [
+              {
+                "name": "North West Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/North_West_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7057245",
+            "node_created_on": "2025-01-25T14:48:16.017Z",
+            "active_version": {
+              "id": "0x9be960671f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960671f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960671e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960671f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-north-west-delhi-version-25",
+            "region": {
+              "id": "0x9be960671e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960671e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-north-west-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960671d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:15.333Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_West_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-north-west-delhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96056a9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606725",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-west-delhi",
+            "names": [
+              {
+                "name": "West Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/West_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7984938",
+            "node_created_on": "2025-01-25T14:48:17.679Z",
+            "active_version": {
+              "id": "0x9be9606724"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606724"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606723"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606724",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-west-delhi-version-25",
+            "region": {
+              "id": "0x9be9606723"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606723",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-west-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606722"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:16.895Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/West_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-west-delhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605697"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960672a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-dl-south-delhi",
+            "names": [
+              {
+                "name": "South Delhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/South_Delhi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7567023",
+            "node_created_on": "2025-01-25T14:48:19.732Z",
+            "active_version": {
+              "id": "0x9be9606729"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606729"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606728"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606729",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-dl-south-delhi-version-25",
+            "region": {
+              "id": "0x9be9606728"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606728",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-dl-south-delhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606727"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-delhi-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:48:18.923Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Delhi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-dl-south-delhi"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T14:48:19.997Z"
+}
