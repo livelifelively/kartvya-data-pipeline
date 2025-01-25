@@ -1,0 +1,143 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96032c3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960659e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ar-arunachal-west",
+            "names": [
+              {
+                "name": "Arunachal West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arunachal_West_Lok_Sabha_constituency",
+            "wikidata_qid": "Q1659305",
+            "node_created_on": "2025-01-25T14:08:47.724Z",
+            "active_version": {
+              "id": "0x9be960659d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960659d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960659c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960659d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ar-arunachal-west-version-25",
+            "region": {
+              "id": "0x9be960659c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960659c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ar-arunachal-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960659b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:08:46.806Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arunachal_West_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ar-arunachal-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032c7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be96065a3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ar-arunachal-east",
+            "names": [
+              {
+                "name": "Arunachal East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arunachal_East_Lok_Sabha_constituency",
+            "wikidata_qid": "Q1659329",
+            "node_created_on": "2025-01-25T14:08:49.995Z",
+            "active_version": {
+              "id": "0x9be96065a2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96065a2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96065a1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96065a2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ar-arunachal-east-version-25",
+            "region": {
+              "id": "0x9be96065a1"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96065a1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ar-arunachal-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96065a0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T14:08:48.754Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arunachal_East_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ar-arunachal-east"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T14:08:50.291Z"
+}
