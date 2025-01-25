@@ -126,115 +126,67 @@ async function districtsPipeline(stateUT: any, districtsList: any, saveToKG: boo
 
 (async () => {
   const stateUT = {
-    state_name: "arunachal pradesh",
-    name_id: "in-sut-arunachal-pradesh",
-    vehicle_code: "AR",
+    state_name: "assam",
+    name_id: "in-sut-assam",
+    vehicle_code: "AS",
   };
 
   const districtsList = [
     {
-      name: "Srikakulam",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Srikakulam_district",
+      names: ["Kokrajhar"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Kokrajhar_Lok_Sabha_constituency",
     },
     {
-      name: "Parvathipuram Manyam",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Parvathipuram_Manyam_district",
+      names: ["Dhubri"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Dhubri_Lok_Sabha_constituency",
     },
     {
-      name: "Vizianagaram",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Vizianagaram_district",
+      names: ["Barpeta"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Barpeta_Lok_Sabha_constituency",
     },
     {
-      name: "Visakhapatnam",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Visakhapatnam_district",
+      names: ["Darrang-Udalguri"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Darrang%E2%80%93Udalguri_Lok_Sabha_constituency",
     },
     {
-      name: "Anakapalli",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Anakapalli_district",
+      names: ["Guwahati"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Guwahati_Lok_Sabha_constituency",
     },
     {
-      name: "Alluri Sitharama Raju",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Alluri_Sitharama_Raju_district",
+      names: ["Diphu"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Diphu_Lok_Sabha_constituency",
     },
     {
-      name: "Kakinada",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kakinada_district",
+      names: ["Karimganj"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Karimganj_Lok_Sabha_constituency",
     },
     {
-      name: "East Godavari",
-      wikipedia_page: "https://en.wikipedia.org/wiki/East_Godavari_district",
+      names: ["Silchar"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Silchar_Lok_Sabha_constituency",
     },
     {
-      name: "Konaseema",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Konaseema_district",
+      names: ["Nowgong"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Nagaon_Lok_Sabha_constituency",
     },
     {
-      name: "Eluru",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Eluru_district",
+      names: ["Kaziranga"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Kaziranga_Lok_Sabha_constituency",
     },
     {
-      name: "West Godavari",
-      wikipedia_page: "https://en.wikipedia.org/wiki/West_Godavari_district",
+      names: ["Sonitpur"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Sonitpur_Lok_Sabha_constituency",
     },
     {
-      name: "NTR",
-      wikipedia_page: "https://en.wikipedia.org/wiki/NTR_district",
+      names: ["Lakhimpur"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Lakhimpur_Lok_Sabha_constituency",
     },
     {
-      name: "Krishna",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Krishna_district",
+      names: ["Dilbrugarh"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Dibrugarh_Lok_Sabha_constituency",
     },
     {
-      name: "Guntur",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Guntur_district",
-    },
-    {
-      name: "Palnadu",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Palnadu_district",
-    },
-    {
-      name: "Bapatla",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Bapatla_district",
-    },
-    {
-      name: "Prakasam",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Prakasam_district",
-    },
-    {
-      name: "Sri Potti Sriramulu Nellore",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Nellore_district",
-    },
-    {
-      name: "Kurnool",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kurnool_district",
-    },
-    {
-      name: "Nandyal",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Nandyal_district",
-    },
-    {
-      name: "Y.S.R.",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Kadapa_district",
-    },
-    {
-      name: "Anantpur",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Anantapur_district",
-    },
-    {
-      name: "Sri Sathya Sai",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Sri_Sathya_Sai_district",
-    },
-    {
-      name: "Annamayya",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Annamayya_district",
-    },
-    {
-      name: "Tirupati",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Tirupati_district",
-    },
-    {
-      name: "Chittoor",
-      wikipedia_page: "https://en.wikipedia.org/wiki/Chittoor_district",
+      names: ["Jorhat"],
+      wikipedia_page: "https://en.wikipedia.org/wiki/Jorhat_Lok_Sabha_constituency",
     },
   ];
 

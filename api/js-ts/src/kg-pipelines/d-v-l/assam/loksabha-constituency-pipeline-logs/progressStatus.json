@@ -1,57 +1,73 @@
 [
   {
     "iteration": 1,
-    "timeStamp": "2024-12-23T10:28:33.325Z",
+    "timeStamp": "2025-01-25T14:14:04.085Z",
     "steps": [
       {
         "step": 0,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 1,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 2,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
-        "status": "SUCCESS"
-      },
-      {
-        "step": 3,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_3_SUCCESS_Transform Loksabha_Constituency with ECI Geo.log.json",
-        "status": "SUCCESS"
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
       }
     ]
   },
   {
     "iteration": 2,
-    "timeStamp": "2024-12-26T15:35:42.878Z",
+    "timeStamp": "2025-01-25T14:15:22.526Z",
     "steps": [
       {
         "step": 0,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 1,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 2,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 3,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/1.STEP_3_SUCCESS_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/2.STEP_3_PARTIAL_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2025-01-25T14:17:37.569Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/3.STEP_3_SUCCESS_Transform Loksabha_Constituency with ECI Geo.log.json",
         "status": "SUCCESS"
       },
       {
         "step": 4,
-        "logFile": "src/admin-regions/states/assam/loksabha-constituency-pipeline-logs/2.STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph.log.json",
+        "logFile": "src/kg-pipelines/d-v-l/assam/loksabha-constituency-pipeline-logs/3.STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph.log.json",
         "status": "SUCCESS"
       }
     ]
