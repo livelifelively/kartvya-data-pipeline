@@ -522,11 +522,6 @@ export async function addDistrictDataToKnowledgeGraph(outputs: Record<string, an
 
     if (td.geo_osm) {
       const districtMapOSM = polygonToMultiPolygon(td.geo_osm);
-      geo_osm = {
-        category: "Region",
-        area: multiPolygonToDgraphMultiPolygon(districtMapOSM.geometry.coordinates),
-        source_name: "OpenStreetMap",
-      };
 
       geoSourceId = await createNodeType("_Source_Data_", graphQLClient, {
         source: { name_id: "OpenStreetMap" },
