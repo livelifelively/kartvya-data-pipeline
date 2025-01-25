@@ -1,0 +1,59 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-25T13:51:31.374Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_3_PARTIAL_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-25T13:56:44.722Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/2.STEP_3_SUCCESS_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/andhra-pradesh/loksabha-constituency-pipeline-logs/2.STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]

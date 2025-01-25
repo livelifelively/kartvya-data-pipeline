@@ -1,0 +1,1696 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95ffd6e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606521",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-araku",
+            "names": [
+              {
+                "name": "Araku"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Araku_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633068",
+            "node_created_on": "2025-01-25T13:57:02.325Z",
+            "active_version": {
+              "id": "0x9be9606520"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606520"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960651f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606520",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-araku-version-25",
+            "region": {
+              "id": "0x9be960651f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960651f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-araku-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960651e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:01.485Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Araku_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-araku"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95fd1c2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606526",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-srikakulam",
+            "names": [
+              {
+                "name": "Srikakulam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Srikakulam_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764487",
+            "node_created_on": "2025-01-25T13:57:04.335Z",
+            "active_version": {
+              "id": "0x9be9606525"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606525"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606524"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606525",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-srikakulam-version-25",
+            "region": {
+              "id": "0x9be9606524"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606524",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-srikakulam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606523"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:03.480Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Srikakulam_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-srikakulam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff1ea"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960652b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-vizianagaram",
+            "names": [
+              {
+                "name": "Vizianagaram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vizianagaram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7938017",
+            "node_created_on": "2025-01-25T13:57:06.339Z",
+            "active_version": {
+              "id": "0x9be960652a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960652a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606529"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960652a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-vizianagaram-version-25",
+            "region": {
+              "id": "0x9be9606529"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606529",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-vizianagaram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606528"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:05.539Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vizianagaram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-vizianagaram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff1ee"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606530",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-visakhapatnam",
+            "names": [
+              {
+                "name": "Visakhapatnam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Visakhapatnam_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3763974",
+            "node_created_on": "2025-01-25T13:57:08.325Z",
+            "active_version": {
+              "id": "0x9be960652f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960652f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960652e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960652f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-visakhapatnam-version-25",
+            "region": {
+              "id": "0x9be960652e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960652e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-visakhapatnam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960652d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:07.666Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Visakhapatnam_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-visakhapatnam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff1f2"
+          },
+          {
+            "id": "0x9be95ff66b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606535",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-anakapalli",
+            "names": [
+              {
+                "name": "Anakapalli"
+              },
+              {
+                "name": "Anakapalle"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anakapalle_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630236",
+            "node_created_on": "2025-01-25T13:57:10.297Z",
+            "active_version": {
+              "id": "0x9be9606534"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606534"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606533"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606534",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-anakapalli-version-25",
+            "region": {
+              "id": "0x9be9606533"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606533",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-anakapalli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606532"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:09.757Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anakapalli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-anakapalli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff1fa"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960653a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-kakinada",
+            "names": [
+              {
+                "name": "Kakinada"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kakinada_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764050",
+            "node_created_on": "2025-01-25T13:57:11.903Z",
+            "active_version": {
+              "id": "0x9be9606539"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606539"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606538"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606539",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-kakinada-version-25",
+            "region": {
+              "id": "0x9be9606538"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606538",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-kakinada-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606537"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:11.302Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kakinada_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-kakinada"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff6ca"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960653f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-amalapuram",
+            "names": [
+              {
+                "name": "Amalapuram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Amalapuram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630204",
+            "node_created_on": "2025-01-25T13:57:14.322Z",
+            "active_version": {
+              "id": "0x9be960653e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960653e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960653d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960653e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-amalapuram-version-25",
+            "region": {
+              "id": "0x9be960653d"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960653d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-amalapuram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960653c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:13.237Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Amalapuram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-amalapuram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ffdac"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606544",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-rajahmundry",
+            "names": [
+              {
+                "name": "Rajahmundry"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajahmundry_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764342",
+            "node_created_on": "2025-01-25T13:57:15.918Z",
+            "active_version": {
+              "id": "0x9be9606543"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606543"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606542"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606543",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-rajahmundry-version-25",
+            "region": {
+              "id": "0x9be9606542"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606542",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-rajahmundry-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606541"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:15.392Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajahmundry_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-rajahmundry"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff703"
+          },
+          {
+            "id": "0x9be95ffdb0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606549",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-narasapuram",
+            "names": [
+              {
+                "name": "Narasapuram"
+              },
+              {
+                "name": "Narsapuram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narasapuram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3763879",
+            "node_created_on": "2025-01-25T13:57:17.719Z",
+            "active_version": {
+              "id": "0x9be9606548"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606548"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606547"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606548",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-narasapuram-version-25",
+            "region": {
+              "id": "0x9be9606547"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606547",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-narasapuram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606546"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:16.920Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narasapuram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-narasapuram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff206"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960654e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-eluru",
+            "names": [
+              {
+                "name": "Eluru"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Eluru_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764062",
+            "node_created_on": "2025-01-25T13:57:19.280Z",
+            "active_version": {
+              "id": "0x9be960654d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960654d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960654c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960654d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-eluru-version-25",
+            "region": {
+              "id": "0x9be960654c"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960654c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-eluru-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960654b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:18.750Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Eluru_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-eluru"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff73e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606553",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-machilipatnam",
+            "names": [
+              {
+                "name": "Machilipatnam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Machilipatnam_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3765244",
+            "node_created_on": "2025-01-25T13:57:21.920Z",
+            "active_version": {
+              "id": "0x9be9606552"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606552"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606551"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606552",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-machilipatnam-version-25",
+            "region": {
+              "id": "0x9be9606551"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606551",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-machilipatnam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606550"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:21.209Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Machilipatnam_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-machilipatnam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ffd7e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606558",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-vijayawada",
+            "names": [
+              {
+                "name": "Vijayawada"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vijayawada_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3765236",
+            "node_created_on": "2025-01-25T13:57:24.297Z",
+            "active_version": {
+              "id": "0x9be9606557"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606557"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606556"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606557",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-vijayawada-version-25",
+            "region": {
+              "id": "0x9be9606556"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606556",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-vijayawada-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606555"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:23.378Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vijayawada_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-vijayawada"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff216"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960655d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-guntur",
+            "names": [
+              {
+                "name": "Guntur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Guntur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764410",
+            "node_created_on": "2025-01-25T13:57:25.914Z",
+            "active_version": {
+              "id": "0x9be960655c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960655c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960655b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960655c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-guntur-version-25",
+            "region": {
+              "id": "0x9be960655b"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960655b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-guntur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960655a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:25.301Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Guntur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-guntur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff773"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606562",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-narasaraopet",
+            "names": [
+              {
+                "name": "Narasaraopet"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narasaraopet_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764443",
+            "node_created_on": "2025-01-25T13:57:28.023Z",
+            "active_version": {
+              "id": "0x9be9606561"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606561"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606560"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606561",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-narasaraopet-version-25",
+            "region": {
+              "id": "0x9be9606560"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606560",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-narasaraopet-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960655f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:27.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narasaraopet_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-narasaraopet"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff21e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606567",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-bapatla",
+            "names": [
+              {
+                "name": "Bapatla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bapatla_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630032",
+            "node_created_on": "2025-01-25T13:57:30.749Z",
+            "active_version": {
+              "id": "0x9be9606566"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606566"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606565"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606566",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-bapatla-version-25",
+            "region": {
+              "id": "0x9be9606565"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606565",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-bapatla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606564"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:29.171Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bapatla_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-bapatla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff7aa"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960656c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-ongole",
+            "names": [
+              {
+                "name": "Ongole"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ongole_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764026",
+            "node_created_on": "2025-01-25T13:57:32.299Z",
+            "active_version": {
+              "id": "0x9be960656b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960656b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960656a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960656b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-ongole-version-25",
+            "region": {
+              "id": "0x9be960656a"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960656a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-ongole-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606569"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:31.701Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ongole_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-ongole"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff22e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606571",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-nandyal",
+            "names": [
+              {
+                "name": "Nandyal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nandyal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764367",
+            "node_created_on": "2025-01-25T13:57:33.924Z",
+            "active_version": {
+              "id": "0x9be9606570"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606570"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960656f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606570",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-nandyal-version-25",
+            "region": {
+              "id": "0x9be960656f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960656f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-nandyal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960656e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:33.308Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nandyal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-nandyal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff22a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606576",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-kurnool",
+            "names": [
+              {
+                "name": "Kurnool"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kurnool_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3763840",
+            "node_created_on": "2025-01-25T13:57:35.971Z",
+            "active_version": {
+              "id": "0x9be9606575"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606575"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606574"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606575",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-kurnool-version-25",
+            "region": {
+              "id": "0x9be9606574"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606574",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-kurnool-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606573"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:34.981Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kurnool_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-kurnool"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ffdb5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960657b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-anantapur",
+            "names": [
+              {
+                "name": "Anantapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anantapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630239",
+            "node_created_on": "2025-01-25T13:57:37.528Z",
+            "active_version": {
+              "id": "0x9be960657a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960657a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606579"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960657a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-anantapur-version-25",
+            "region": {
+              "id": "0x9be9606579"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606579",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-anantapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606578"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:36.908Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anantapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-anantapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff85f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606580",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-hindupur",
+            "names": [
+              {
+                "name": "Hindupur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hindupur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764429",
+            "node_created_on": "2025-01-25T13:57:39.480Z",
+            "active_version": {
+              "id": "0x9be960657f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960657f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960657e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960657f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-hindupur-version-25",
+            "region": {
+              "id": "0x9be960657e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960657e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-hindupur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960657d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:38.468Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hindupur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-hindupur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff81d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606585",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-kadapa",
+            "names": [
+              {
+                "name": "Kadapa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kadapa_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764405",
+            "node_created_on": "2025-01-25T13:57:41.192Z",
+            "active_version": {
+              "id": "0x9be9606584"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606584"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606583"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606584",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-kadapa-version-25",
+            "region": {
+              "id": "0x9be9606583"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606583",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-kadapa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606582"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:40.546Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kadapa_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-kadapa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ffd92"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960658a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-nellore",
+            "names": [
+              {
+                "name": "Nellore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nellore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764509",
+            "node_created_on": "2025-01-25T13:57:42.995Z",
+            "active_version": {
+              "id": "0x9be9606589"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606589"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606588"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606589",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-nellore-version-25",
+            "region": {
+              "id": "0x9be9606588"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606588",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-nellore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606587"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:42.491Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nellore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-nellore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff242"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960658f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-tirupati",
+            "names": [
+              {
+                "name": "Tirupati"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tirupati_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764514",
+            "node_created_on": "2025-01-25T13:57:44.755Z",
+            "active_version": {
+              "id": "0x9be960658e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960658e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960658d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960658e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-tirupati-version-25",
+            "region": {
+              "id": "0x9be960658d"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960658d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-tirupati-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960658c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:44.059Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tirupati_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-tirupati"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff832"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606594",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-rajampet",
+            "names": [
+              {
+                "name": "Rajampet"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajampet_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3764476",
+            "node_created_on": "2025-01-25T13:57:47.232Z",
+            "active_version": {
+              "id": "0x9be9606593"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606593"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606592"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606593",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-rajampet-version-25",
+            "region": {
+              "id": "0x9be9606592"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606592",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-rajampet-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606591"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:46.210Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajampet_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-rajampet"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be95ff246"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606599",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ap-chittoor",
+            "names": [
+              {
+                "name": "Chittoor"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chittoor_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3763885",
+            "node_created_on": "2025-01-25T13:57:48.768Z",
+            "active_version": {
+              "id": "0x9be9606598"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606598"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606597"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606598",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ap-chittoor-version-25",
+            "region": {
+              "id": "0x9be9606597"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606597",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ap-chittoor-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606596"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andhra-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T13:57:48.185Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chittoor_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ap-chittoor"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T13:57:55.826Z"
+}
