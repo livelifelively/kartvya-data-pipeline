@@ -1,0 +1,2646 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606156"
+          },
+          {
+            "id": "0x9be9606155"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c7a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-thiruvallur",
+            "names": [
+              {
+                "name": "Thiruvallur"
+              },
+              {
+                "name": "Tiruvallur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tiruvallur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7785493",
+            "node_created_on": "2025-01-25T16:31:50.198Z",
+            "active_version": {
+              "id": "0x9be9606c79"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c79"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c78"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c79",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-thiruvallur-version-25",
+            "region": {
+              "id": "0x9be9606c78"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c78",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-thiruvallur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c77"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:31:49.294Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tiruvallur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-thiruvallur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c7f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c80",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-chennai-north",
+            "names": [
+              {
+                "name": "Chennai North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chennai_North_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532545",
+            "node_created_on": "2025-01-25T16:31:52.504Z",
+            "active_version": {
+              "id": "0x9be9606c7e"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c7e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c7d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c7e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-chennai-north-version-25",
+            "region": {
+              "id": "0x9be9606c7d"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c7d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-chennai-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c7c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:31:51.680Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chennai_North_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-chennai-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c85"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c86",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-chennai-south",
+            "names": [
+              {
+                "name": "Chennai South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chennai_South_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532431",
+            "node_created_on": "2025-01-25T16:31:54.348Z",
+            "active_version": {
+              "id": "0x9be9606c84"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c84"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c83"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c84",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-chennai-south-version-25",
+            "region": {
+              "id": "0x9be9606c83"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c83",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-chennai-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c82"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:31:53.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chennai_South_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-chennai-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c8b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c8c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-chennai-central",
+            "names": [
+              {
+                "name": "Chennai Central"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chennai_Central_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532474",
+            "node_created_on": "2025-01-25T16:31:56.393Z",
+            "active_version": {
+              "id": "0x9be9606c8a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c8a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c89"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c8a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-chennai-central-version-25",
+            "region": {
+              "id": "0x9be9606c89"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c89",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-chennai-central-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c88"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:31:55.781Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chennai_Central_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-chennai-central"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c91"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c92",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-sriperumbudur",
+            "names": [
+              {
+                "name": "Sriperumbudur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sriperumbudur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534197",
+            "node_created_on": "2025-01-25T16:31:58.487Z",
+            "active_version": {
+              "id": "0x9be9606c90"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c90"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c8f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c90",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-sriperumbudur-version-25",
+            "region": {
+              "id": "0x9be9606c8f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c8f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-sriperumbudur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c8e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:31:57.727Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sriperumbudur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-sriperumbudur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c97"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c98",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-kancheepuram",
+            "names": [
+              {
+                "name": "Kancheepuram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kancheepuram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12418931",
+            "node_created_on": "2025-01-25T16:32:00.958Z",
+            "active_version": {
+              "id": "0x9be9606c96"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c96"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c95"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c96",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-kancheepuram-version-25",
+            "region": {
+              "id": "0x9be9606c95"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c95",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-kancheepuram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c94"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:00.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kancheepuram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-kancheepuram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c9d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606c9e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-arakkonam",
+            "names": [
+              {
+                "name": "Arakkonam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arakkonam_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534088",
+            "node_created_on": "2025-01-25T16:32:03.360Z",
+            "active_version": {
+              "id": "0x9be9606c9c"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606c9c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606c9b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606c9c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-arakkonam-version-25",
+            "region": {
+              "id": "0x9be9606c9b"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606c9b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-arakkonam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606c9a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:02.684Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arakkonam_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-arakkonam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606169"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ca3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-vellore",
+            "names": [
+              {
+                "name": "Vellore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vellore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534098",
+            "node_created_on": "2025-01-25T16:32:05.816Z",
+            "active_version": {
+              "id": "0x9be9606ca2"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ca2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ca1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ca2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-vellore-version-25",
+            "region": {
+              "id": "0x9be9606ca1"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ca1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-vellore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ca0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:05.188Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vellore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-vellore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060dc"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ca8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-krishnagiri",
+            "names": [
+              {
+                "name": "Krishnagiri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Krishnagiri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534043",
+            "node_created_on": "2025-01-25T16:32:08.684Z",
+            "active_version": {
+              "id": "0x9be9606ca7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ca7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ca6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ca7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-krishnagiri-version-25",
+            "region": {
+              "id": "0x9be9606ca6"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ca6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-krishnagiri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ca5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:07.527Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Krishnagiri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-krishnagiri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96030b4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cad",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-dharmapuri",
+            "names": [
+              {
+                "name": "Dharmapuri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharmapuri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532436",
+            "node_created_on": "2025-01-25T16:32:10.532Z",
+            "active_version": {
+              "id": "0x9be9606cac"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cab"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cac",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-dharmapuri-version-25",
+            "region": {
+              "id": "0x9be9606cab"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cab",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-dharmapuri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606caa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:09.966Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharmapuri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-dharmapuri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606163"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cb2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-tiruvannamalai",
+            "names": [
+              {
+                "name": "Tiruvannamalai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tiruvannamalai_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7809457",
+            "node_created_on": "2025-01-25T16:32:12.576Z",
+            "active_version": {
+              "id": "0x9be9606cb1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cb1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cb0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cb1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-tiruvannamalai-version-25",
+            "region": {
+              "id": "0x9be9606cb0"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cb0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-tiruvannamalai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606caf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:11.886Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tiruvannamalai_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-tiruvannamalai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606cb7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cb8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-arani",
+            "names": [
+              {
+                "name": "Arani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arani_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3533589",
+            "node_created_on": "2025-01-25T16:32:14.417Z",
+            "active_version": {
+              "id": "0x9be9606cb6"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cb6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cb5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cb6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-arani-version-25",
+            "region": {
+              "id": "0x9be9606cb5"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cb5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-arani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cb4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:13.508Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arani_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-arani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606cbd"
+          },
+          {
+            "id": "0x9be960616f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cbe",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-villupuram",
+            "names": [
+              {
+                "name": "Villupuram"
+              },
+              {
+                "name": "Viluppuram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Viluppuram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532551",
+            "node_created_on": "2025-01-25T16:32:16.499Z",
+            "active_version": {
+              "id": "0x9be9606cbc"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cbc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cbb"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cbc",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-villupuram-version-25",
+            "region": {
+              "id": "0x9be9606cbb"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cbb",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-villupuram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cba"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:15.862Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Viluppuram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-villupuram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060c3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cc3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-kallakurichi",
+            "names": [
+              {
+                "name": "Kallakurichi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kallakurichi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6353510",
+            "node_created_on": "2025-01-25T16:32:18.956Z",
+            "active_version": {
+              "id": "0x9be9606cc2"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cc2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cc1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cc2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-kallakurichi-version-25",
+            "region": {
+              "id": "0x9be9606cc1"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cc1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-kallakurichi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cc0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:18.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kallakurichi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-kallakurichi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606118"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cc8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-salem",
+            "names": [
+              {
+                "name": "Salem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Salem_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532569",
+            "node_created_on": "2025-01-25T16:32:21.075Z",
+            "active_version": {
+              "id": "0x9be9606cc7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cc7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cc6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cc7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-salem-version-25",
+            "region": {
+              "id": "0x9be9606cc6"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cc6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-salem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cc5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:20.304Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Salem_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-salem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060fa"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ccd",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-namakkal",
+            "names": [
+              {
+                "name": "Namakkal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namakkal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6961238",
+            "node_created_on": "2025-01-25T16:32:22.850Z",
+            "active_version": {
+              "id": "0x9be9606ccc"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ccc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ccb"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ccc",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-namakkal-version-25",
+            "region": {
+              "id": "0x9be9606ccb"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ccb",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-namakkal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cca"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:22.043Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namakkal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-namakkal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060bd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cd2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-erode",
+            "names": [
+              {
+                "name": "Erode"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Erode_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5395251",
+            "node_created_on": "2025-01-25T16:32:25.068Z",
+            "active_version": {
+              "id": "0x9be9606cd1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cd1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cd0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cd1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-erode-version-25",
+            "region": {
+              "id": "0x9be9606cd0"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cd0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-erode-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ccf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:24.291Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Erode_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-erode"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960612b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cd7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-tiruppur",
+            "names": [
+              {
+                "name": "Tiruppur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tiruppur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7809406",
+            "node_created_on": "2025-01-25T16:32:26.920Z",
+            "active_version": {
+              "id": "0x9be9606cd6"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cd6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cd5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cd6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-tiruppur-version-25",
+            "region": {
+              "id": "0x9be9606cd5"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cd5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-tiruppur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cd4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:26.348Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tiruppur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-tiruppur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060f4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cdc",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-nilgiris",
+            "names": [
+              {
+                "name": "Nilgiris"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nilgiris_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534177",
+            "node_created_on": "2025-01-25T16:32:28.961Z",
+            "active_version": {
+              "id": "0x9be9606cdb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cdb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cda"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cdb",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-nilgiris-version-25",
+            "region": {
+              "id": "0x9be9606cda"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cda",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-nilgiris-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cd9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:28.009Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nilgiris_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-nilgiris"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060a6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ce1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-coimbatore",
+            "names": [
+              {
+                "name": "Coimbatore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Coimbatore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534118",
+            "node_created_on": "2025-01-25T16:32:30.802Z",
+            "active_version": {
+              "id": "0x9be9606ce0"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ce0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cdf"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ce0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-coimbatore-version-25",
+            "region": {
+              "id": "0x9be9606cdf"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cdf",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-coimbatore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cde"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:30.030Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Coimbatore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-coimbatore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ce6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606ce7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-pollachi",
+            "names": [
+              {
+                "name": "Pollachi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pollachi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534217",
+            "node_created_on": "2025-01-25T16:32:32.830Z",
+            "active_version": {
+              "id": "0x9be9606ce5"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ce5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606ce4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ce5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-pollachi-version-25",
+            "region": {
+              "id": "0x9be9606ce4"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606ce4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-pollachi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ce3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:32.194Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pollachi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-pollachi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060b7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cec",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-dindigul",
+            "names": [
+              {
+                "name": "Dindigul"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dindigul_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532565",
+            "node_created_on": "2025-01-25T16:32:35.291Z",
+            "active_version": {
+              "id": "0x9be9606ceb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606ceb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cea"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606ceb",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-dindigul-version-25",
+            "region": {
+              "id": "0x9be9606cea"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cea",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-dindigul-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606ce9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:34.387Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dindigul_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-dindigul"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060d6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cf1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-karur",
+            "names": [
+              {
+                "name": "Karur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532480",
+            "node_created_on": "2025-01-25T16:32:36.981Z",
+            "active_version": {
+              "id": "0x9be9606cf0"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cf0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cef"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cf0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-karur-version-25",
+            "region": {
+              "id": "0x9be9606cef"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cef",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-karur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cee"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:36.293Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-karur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606131"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cf6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-tiruchirappalli",
+            "names": [
+              {
+                "name": "Tiruchirappalli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tiruchirappalli_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532420",
+            "node_created_on": "2025-01-25T16:32:38.749Z",
+            "active_version": {
+              "id": "0x9be9606cf5"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cf5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cf4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cf5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-tiruchirappalli-version-25",
+            "region": {
+              "id": "0x9be9606cf4"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cf4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-tiruchirappalli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cf3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:38.074Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tiruchirappalli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-tiruchirappalli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606100"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606cfb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-perambalur",
+            "names": [
+              {
+                "name": "Perambalur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Perambalur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534214",
+            "node_created_on": "2025-01-25T16:32:40.939Z",
+            "active_version": {
+              "id": "0x9be9606cfa"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cfa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cf9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cfa",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-perambalur-version-25",
+            "region": {
+              "id": "0x9be9606cf9"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cf9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-perambalur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cf8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:39.812Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Perambalur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-perambalur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060ac"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d00",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-cuddalore",
+            "names": [
+              {
+                "name": "Cuddalore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cuddalore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534221",
+            "node_created_on": "2025-01-25T16:32:42.687Z",
+            "active_version": {
+              "id": "0x9be9606cff"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606cff"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606cfe"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606cff",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-cuddalore-version-25",
+            "region": {
+              "id": "0x9be9606cfe"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606cfe",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-cuddalore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606cfd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:42.067Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cuddalore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-cuddalore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606d05"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d06",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-chidambaram",
+            "names": [
+              {
+                "name": "Chidambaram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chidambaram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3533974",
+            "node_created_on": "2025-01-25T16:32:44.336Z",
+            "active_version": {
+              "id": "0x9be9606d04"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d04"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d03"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d04",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-chidambaram-version-25",
+            "region": {
+              "id": "0x9be9606d03"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d03",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-chidambaram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d02"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:43.724Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chidambaram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-chidambaram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606d0b"
+          },
+          {
+            "id": "0x9be96060e8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d0c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-mayiladuturai",
+            "names": [
+              {
+                "name": "Mayiladuturai"
+              },
+              {
+                "name": "Mayiladuthurai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mayiladuthurai_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534106",
+            "node_created_on": "2025-01-25T16:32:46.312Z",
+            "active_version": {
+              "id": "0x9be9606d0a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d0a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d09"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d0a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-mayiladuturai-version-25",
+            "region": {
+              "id": "0x9be9606d09"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d09",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-mayiladuturai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d08"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:45.753Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mayiladuthurai_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-mayiladuturai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060ee"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d11",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-nagapattinam",
+            "names": [
+              {
+                "name": "Nagapattinam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagapattinam_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3533967",
+            "node_created_on": "2025-01-25T16:32:48.927Z",
+            "active_version": {
+              "id": "0x9be9606d10"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d10"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d0f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d10",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-nagapattinam-version-25",
+            "region": {
+              "id": "0x9be9606d0f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d0f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-nagapattinam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d0e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:47.903Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagapattinam_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-nagapattinam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606143"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d16",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-thanjavur",
+            "names": [
+              {
+                "name": "Thanjavur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thanjavur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534230",
+            "node_created_on": "2025-01-25T16:32:51.590Z",
+            "active_version": {
+              "id": "0x9be9606d15"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d15"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d14"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d15",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-thanjavur-version-25",
+            "region": {
+              "id": "0x9be9606d14"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d14",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-thanjavur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d13"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:50.708Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thanjavur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-thanjavur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960611e"
+          },
+          {
+            "id": "0x9be9606d1b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d1c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-sivaganga",
+            "names": [
+              {
+                "name": "Sivaganga"
+              },
+              {
+                "name": "Shivaganga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sivaganga_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534136",
+            "node_created_on": "2025-01-25T16:32:53.330Z",
+            "active_version": {
+              "id": "0x9be9606d1a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d1a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d19"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d1a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-sivaganga-version-25",
+            "region": {
+              "id": "0x9be9606d19"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d19",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-sivaganga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d18"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:52.716Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sivaganga_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-sivaganga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060e2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d21",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-madurai",
+            "names": [
+              {
+                "name": "Madurai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Madurai_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534013",
+            "node_created_on": "2025-01-25T16:32:55.323Z",
+            "active_version": {
+              "id": "0x9be9606d20"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d20"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d1f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d20",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-madurai-version-25",
+            "region": {
+              "id": "0x9be9606d1f"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d1f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-madurai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d1e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:54.766Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Madurai_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-madurai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606137"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d26",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-theni",
+            "names": [
+              {
+                "name": "Theni"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Theni_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7781368",
+            "node_created_on": "2025-01-25T16:32:57.024Z",
+            "active_version": {
+              "id": "0x9be9606d25"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d25"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d24"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d25",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-theni-version-25",
+            "region": {
+              "id": "0x9be9606d24"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d24",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-theni-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d23"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:56.408Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Theni_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-theni"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606175"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d2b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-virudhunagar",
+            "names": [
+              {
+                "name": "Virudhunagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Virudhunagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534127",
+            "node_created_on": "2025-01-25T16:32:58.682Z",
+            "active_version": {
+              "id": "0x9be9606d2a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d2a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d29"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d2a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-virudhunagar-version-25",
+            "region": {
+              "id": "0x9be9606d29"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d29",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-virudhunagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d28"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:32:57.882Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Virudhunagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-virudhunagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960610c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d30",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-ramanathapuram",
+            "names": [
+              {
+                "name": "Ramanathapuram"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramanathapuram_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532492",
+            "node_created_on": "2025-01-25T16:33:01.627Z",
+            "active_version": {
+              "id": "0x9be9606d2f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d2f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d2e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d2f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-ramanathapuram-version-25",
+            "region": {
+              "id": "0x9be9606d2e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d2e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-ramanathapuram-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d2d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:33:00.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramanathapuram_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-ramanathapuram"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606d35"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d36",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-thoothukkudi",
+            "names": [
+              {
+                "name": "Thoothukkudi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thoothukkudi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3534206",
+            "node_created_on": "2025-01-25T16:33:03.529Z",
+            "active_version": {
+              "id": "0x9be9606d34"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d34"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d33"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d34",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-thoothukkudi-version-25",
+            "region": {
+              "id": "0x9be9606d33"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d33",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-thoothukkudi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d32"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:33:02.858Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thoothukkudi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-thoothukkudi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606125"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d3b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-tenkasi",
+            "names": [
+              {
+                "name": "Tenkasi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tenkasi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532578",
+            "node_created_on": "2025-01-25T16:33:05.721Z",
+            "active_version": {
+              "id": "0x9be9606d3a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d3a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d39"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d3a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-tenkasi-version-25",
+            "region": {
+              "id": "0x9be9606d39"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d39",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-tenkasi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d38"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:33:04.997Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tenkasi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-tenkasi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960613d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d40",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-tirunelveli",
+            "names": [
+              {
+                "name": "Tirunelveli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tirunelveli_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3533981",
+            "node_created_on": "2025-01-25T16:33:07.708Z",
+            "active_version": {
+              "id": "0x9be9606d3f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d3f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d3e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d3f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-tirunelveli-version-25",
+            "region": {
+              "id": "0x9be9606d3e"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d3e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-tirunelveli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d3d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:33:07.050Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tirunelveli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-tirunelveli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96060d0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9606d45",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tn-kanniyakumari",
+            "names": [
+              {
+                "name": "Kanniyakumari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanniyakumari_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12418045",
+            "node_created_on": "2025-01-25T16:33:09.674Z",
+            "active_version": {
+              "id": "0x9be9606d44"
+            },
+            "versions": [
+              {
+                "id": "0x9be9606d44"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9606d43"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9606d44",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tn-kanniyakumari-version-25",
+            "region": {
+              "id": "0x9be9606d43"
+            }
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9606d43",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tn-kanniyakumari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9606d42"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tamil-nadu-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-25T16:33:08.687Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanniyakumari_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tn-kanniyakumari"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-25T16:33:10.034Z"
+}
