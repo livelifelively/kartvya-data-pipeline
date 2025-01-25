@@ -1,0 +1,59 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q7694914",
+        "id_url": ["https://en.wikipedia.org/wiki/Tehri_Garhwal_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Tehri_Garhwal_Lok_Sabha_constituency",
+        "names": ["Tehri Garhwal"],
+        "states_union_territories": "in-sut-uttarakhand",
+        "name_id": "in-lc-uk-tehri-garhwal",
+        "established_on_string": "1957",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q3632618",
+        "id_url": ["https://en.wikipedia.org/wiki/Garhwal_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Garhwal_Lok_Sabha_constituency",
+        "names": ["Garhwal"],
+        "states_union_territories": "in-sut-uttarakhand",
+        "name_id": "in-lc-uk-garhwal",
+        "established_on_string": "1952",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q3632592",
+        "id_url": ["https://en.wikipedia.org/wiki/Almora_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Almora_Lok_Sabha_constituency",
+        "names": ["Almora"],
+        "states_union_territories": "in-sut-uttarakhand",
+        "name_id": "in-lc-uk-almora",
+        "established_on_string": "1951",
+        "reservation": "SC"
+      },
+      {
+        "wikidata_qid": "Q6959714",
+        "id_url": ["https://en.wikipedia.org/wiki/Nainital%E2%80%93Udhamsingh_Nagar_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Nainital%E2%80%93Udhamsingh_Nagar_Lok_Sabha_constituency",
+        "names": ["Nainital–Udhamsingh Nagar", "Nainital-Udhamsingh Nagar"],
+        "states_union_territories": "in-sut-uttarakhand",
+        "name_id": "in-lc-uk-nainital–udhamsingh-nagar",
+        "established_on_string": "2009",
+        "reservation": "NONE"
+      },
+      {
+        "wikidata_qid": "Q5657364",
+        "id_url": ["https://en.wikipedia.org/wiki/Haridwar_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Haridwar_Lok_Sabha_constituency",
+        "names": ["Haridwar", "Hardwar"],
+        "states_union_territories": "in-sut-uttarakhand",
+        "name_id": "in-lc-uk-haridwar",
+        "established_on_string": "1977",
+        "reservation": "NONE"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-25T16:45:38.714Z"
+}
