@@ -1,0 +1,171 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-25T00:38:17.463Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_3_PARTIAL_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "OSM still has 50 districts, government rolled back to 41."
+        ]
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-25T00:46:57.523Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_3_PARTIAL_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "OSM still has 50 districts, government rolled back to 41."
+        ]
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_6_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "PARTIAL",
+        "comments": [
+          "updated osm_id for beawar district"
+        ]
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2025-01-25T00:59:52.671Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_3_PARTIAL_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "OSM still has 50 districts, government rolled back to 41."
+        ]
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/3.STEP_6_PARTIAL_Transform Districts with OSM.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 4,
+    "timeStamp": "2025-01-25T01:01:32.783Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_0_SUCCESS_Fetch State Districts.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_1_SUCCESS_Fetch State OSM Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_2_SUCCESS_Fetch Districts OSM Relation IDs.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/1.STEP_3_PARTIAL_Fetch Districts OSM Details.log.json",
+        "status": "SUCCESS",
+        "comments": [
+          "OSM still has 50 districts, government rolled back to 41."
+        ]
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_4_SUCCESS_Fetch Districts Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/2.STEP_5_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 6,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/4.STEP_6_SUCCESS_Transform Districts with OSM.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 7,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/district-pipeline-logs/4.STEP_7_SUCCESS_Save Districts to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
