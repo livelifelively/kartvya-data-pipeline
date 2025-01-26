@@ -227,6 +227,7 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
             keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].names[0]
           ),
           reservation: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].reservation,
+          constituency_number: keyedVidhansabhaConstituencies[wikiVidhansabhaConstituency.urls[0]].constituency_number,
         };
 
         if (wikiVidhansabhaConstituency.results.infobox?.constituencyDetails?.established) {
@@ -287,16 +288,21 @@ export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Reco
   transformedVidhansabhaConstituenciesWikipedia.forEach(
     (vidhansabhaConstituency: VidhansabhaConstituencyTransformationWikidata) => {
       const matchedGeoDetail = vidhansabhaConstituencyFeaturesECI.find((geoDetail: GeoJSONFeature) => {
-        const lowerCaseVidhansabhaConstituencyNames = vidhansabhaConstituency.names.map((n) => n.toLowerCase());
-        return lowerCaseVidhansabhaConstituencyNames.includes(geoDetail.properties.AC_NAME.toLowerCase());
+        return parseInt(vidhansabhaConstituency.constituency_number || "") === geoDetail.properties.AC_NO;
       });
 
       if (matchedGeoDetail) {
-        transformedVidhansabhaConstituenciesECIGeo.push({
+        let toSaveVC = {
           ...vidhansabhaConstituency,
           constituency_number: vidhansabhaConstituency.constituency_number || matchedGeoDetail.properties.AC_NO,
           geo_eci: matchedGeoDetail,
-        });
+        };
+
+        const lowerCaseVidhansabhaConstituencyNames = vidhansabhaConstituency.names.map((n) => n.toLowerCase());
+        if (!lowerCaseVidhansabhaConstituencyNames.includes(matchedGeoDetail.properties.AC_NAME.toLowerCase()))
+          toSaveVC.names.push(matchedGeoDetail.properties.AC_NAME);
+
+        transformedVidhansabhaConstituenciesECIGeo.push(toSaveVC);
       } else {
         unmatchedVidhansabhaConstituencies.push(vidhansabhaConstituency);
         status = "PARTIAL";
@@ -344,7 +350,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       area: multiPolygonToDgraphMultiPolygon(vidhansabhaConstituencyMapECI.geometry.coordinates),
       category: "Region",
       source_name: "Election Commission Of India",
-      //   source_url: `https://results.eci.gov.in/PcResultGenJune2024/pc/${lc.geo.properties.ST_CODE}.js`,
+      source_url: `https://results.eci.gov.in/ResultAcGenNov2024/ac/${td.geo_eci.properties.ST_CODE}.js`,
       source_data: `${JSON.stringify(td.geo_eci)}`,
     };
 
