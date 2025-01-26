@@ -1,0 +1,4639 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960846d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960846e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-churah",
+            "names": [
+              {
+                "name": "Churah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Churah_Assembly_constituency",
+            "wikidata_qid": "Q5116518",
+            "node_created_on": "2025-01-26T17:00:36.981Z",
+            "active_version": {
+              "id": "0x9be960846c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960846c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960846b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960846c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-churah-version-25",
+            "region": {
+              "id": "0x9be960846b"
+            },
+            "constituency_number": "1"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960846b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-churah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960846a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:36.265Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Churah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-churah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608473"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608474",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-bharmour",
+            "names": [
+              {
+                "name": "Bharmour"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bharmour_Assembly_constituency",
+            "wikidata_qid": "Q15670030",
+            "node_created_on": "2025-01-26T17:00:40.567Z",
+            "active_version": {
+              "id": "0x9be9608472"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608472"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608471"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608472",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-bharmour-version-25",
+            "region": {
+              "id": "0x9be9608471"
+            },
+            "constituency_number": "2"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608471",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-bharmour-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608470"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:38.936Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bharmour_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-bharmour"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605810"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608479",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-chamba",
+            "names": [
+              {
+                "name": "Chamba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chamba_Assembly_constituency",
+            "wikidata_qid": "Q15647413",
+            "node_created_on": "2025-01-26T17:00:42.921Z",
+            "active_version": {
+              "id": "0x9be9608478"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608478"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608477"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608478",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-chamba-version-25",
+            "region": {
+              "id": "0x9be9608477"
+            },
+            "constituency_number": "3"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608477",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-chamba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608476"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:42.106Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chamba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-chamba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960847e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960847f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-dalhousie",
+            "names": [
+              {
+                "name": "Dalhousie"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dalhousie_Assembly_constituency",
+            "wikidata_qid": "Q15946968",
+            "node_created_on": "2025-01-26T17:00:44.544Z",
+            "active_version": {
+              "id": "0x9be960847d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960847d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960847c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960847d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-dalhousie-version-25",
+            "region": {
+              "id": "0x9be960847c"
+            },
+            "constituency_number": "4"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960847c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-dalhousie-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960847b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:43.939Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dalhousie_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-dalhousie"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608484"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608485",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-bhattiyat",
+            "names": [
+              {
+                "name": "Bhattiyat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhattiyat_Assembly_constituency",
+            "wikidata_qid": "Q15669568",
+            "node_created_on": "2025-01-26T17:00:46.472Z",
+            "active_version": {
+              "id": "0x9be9608483"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608483"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608482"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608483",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-bhattiyat-version-25",
+            "region": {
+              "id": "0x9be9608482"
+            },
+            "constituency_number": "5"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608482",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-bhattiyat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608481"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:45.756Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhattiyat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-bhattiyat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960848a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960848b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nurpur",
+            "names": [
+              {
+                "name": "Nurpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nurpur_Assembly_constituency",
+            "wikidata_qid": "Q15650846",
+            "node_created_on": "2025-01-26T17:00:48.553Z",
+            "active_version": {
+              "id": "0x9be9608489"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608489"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608488"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608489",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nurpur-version-25",
+            "region": {
+              "id": "0x9be9608488"
+            },
+            "constituency_number": "6"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608488",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nurpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608487"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:47.833Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nurpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nurpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608490"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608491",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-indora",
+            "names": [
+              {
+                "name": "Indora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Indora_Assembly_constituency",
+            "wikidata_qid": "Q15946964",
+            "node_created_on": "2025-01-26T17:00:50.936Z",
+            "active_version": {
+              "id": "0x9be960848f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960848f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960848e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960848f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-indora-version-25",
+            "region": {
+              "id": "0x9be960848e"
+            },
+            "constituency_number": "7"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960848e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-indora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960848d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:50.395Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Indora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-indora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960630d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608496",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-fatehpur",
+            "names": [
+              {
+                "name": "Fatehpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatehpur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15946966",
+            "node_created_on": "2025-01-26T17:00:53.263Z",
+            "active_version": {
+              "id": "0x9be9608495"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608495"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608494"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608495",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-fatehpur-version-25",
+            "region": {
+              "id": "0x9be9608494"
+            },
+            "constituency_number": "8"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608494",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-fatehpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608493"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:52.547Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatehpur,_Himachal_Pradesh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-fatehpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960849b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960849c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jawali",
+            "names": [
+              {
+                "name": "Jawali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jawali_Assembly_constituency",
+            "wikidata_qid": "Q15647782",
+            "node_created_on": "2025-01-26T17:00:55.004Z",
+            "active_version": {
+              "id": "0x9be960849a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960849a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608499"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960849a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jawali-version-25",
+            "region": {
+              "id": "0x9be9608499"
+            },
+            "constituency_number": "9"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608499",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jawali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608498"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:54.288Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jawali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jawali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084a1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084a2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-dehra",
+            "names": [
+              {
+                "name": "Dehra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dehra_Assembly_constituency",
+            "wikidata_qid": "Q15946952",
+            "node_created_on": "2025-01-26T17:00:57.360Z",
+            "active_version": {
+              "id": "0x9be96084a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960849f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-dehra-version-25",
+            "region": {
+              "id": "0x9be960849f"
+            },
+            "constituency_number": "10"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960849f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-dehra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960849e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:56.335Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dehra_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-dehra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084a7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084a8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jaswan-pragpur",
+            "names": [
+              {
+                "name": "Jaswan-Pragpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaswan-Pragpur_Assembly_constituency",
+            "wikidata_qid": "Q15946951",
+            "node_created_on": "2025-01-26T17:00:59.411Z",
+            "active_version": {
+              "id": "0x9be96084a6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084a6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084a5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084a6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jaswan-pragpur-version-25",
+            "region": {
+              "id": "0x9be96084a5"
+            },
+            "constituency_number": "11"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084a5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jaswan-pragpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084a4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:00:58.792Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaswan-Pragpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jaswan-pragpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084ad"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084ae",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jawalamukhi",
+            "names": [
+              {
+                "name": "Jawalamukhi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jawalamukhi_Assembly_constituency",
+            "wikidata_qid": "Q15647911",
+            "node_created_on": "2025-01-26T17:01:01.763Z",
+            "active_version": {
+              "id": "0x9be96084ac"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084ac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084ab"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084ac",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jawalamukhi-version-25",
+            "region": {
+              "id": "0x9be96084ab"
+            },
+            "constituency_number": "12"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084ab",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jawalamukhi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084aa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:00.972Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jawalamukhi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jawalamukhi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084b3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084b4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jaisinghpur",
+            "names": [
+              {
+                "name": "Jaisinghpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaisinghpur_Assembly_constituency",
+            "wikidata_qid": "Q15946963",
+            "node_created_on": "2025-01-26T17:01:04.016Z",
+            "active_version": {
+              "id": "0x9be96084b2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084b2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084b1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084b2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jaisinghpur-version-25",
+            "region": {
+              "id": "0x9be96084b1"
+            },
+            "constituency_number": "13"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084b1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jaisinghpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084b0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:03.029Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaisinghpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jaisinghpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084b9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084ba",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sullah",
+            "names": [
+              {
+                "name": "Sullah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sullah_Assembly_constituency",
+            "wikidata_qid": "Q15957706",
+            "node_created_on": "2025-01-26T17:01:06.296Z",
+            "active_version": {
+              "id": "0x9be96084b8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084b8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084b7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084b8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sullah-version-25",
+            "region": {
+              "id": "0x9be96084b7"
+            },
+            "constituency_number": "14"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084b7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sullah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084b6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:05.757Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sullah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-sullah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084bf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084c0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nagrota",
+            "names": [
+              {
+                "name": "Nagrota"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagrota,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15650011",
+            "node_created_on": "2025-01-26T17:01:08.930Z",
+            "active_version": {
+              "id": "0x9be96084be"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084be"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084bd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084be",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nagrota-version-25",
+            "region": {
+              "id": "0x9be96084bd"
+            },
+            "constituency_number": "15"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084bd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nagrota-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084bc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:07.685Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagrota,_Himachal_Pradesh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nagrota"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960581c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084c5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kangra",
+            "names": [
+              {
+                "name": "Kangra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kangra_Assembly_constituency",
+            "wikidata_qid": "Q15646004",
+            "node_created_on": "2025-01-26T17:01:11.010Z",
+            "active_version": {
+              "id": "0x9be96084c4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084c4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084c3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084c4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kangra-version-25",
+            "region": {
+              "id": "0x9be96084c3"
+            },
+            "constituency_number": "16"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084c3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kangra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084c2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:10.362Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kangra_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kangra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084ca"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084cb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-shahpur",
+            "names": [
+              {
+                "name": "Shahpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shahpur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q30599399",
+            "node_created_on": "2025-01-26T17:01:13.334Z",
+            "active_version": {
+              "id": "0x9be96084c9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084c9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084c8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084c9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-shahpur-version-25",
+            "region": {
+              "id": "0x9be96084c8"
+            },
+            "constituency_number": "17"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084c8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-shahpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084c7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:11.901Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shahpur,_Himachal_Pradesh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-shahpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084d0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084d1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-dharamshala",
+            "names": [
+              {
+                "name": "Dharamshala"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharamshala_Assembly_constituency",
+            "wikidata_qid": "Q15649724",
+            "node_created_on": "2025-01-26T17:01:15.487Z",
+            "active_version": {
+              "id": "0x9be96084cf"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084cf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084ce"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084cf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-dharamshala-version-25",
+            "region": {
+              "id": "0x9be96084ce"
+            },
+            "constituency_number": "18"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084ce",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-dharamshala-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084cd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:14.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharamshala_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-dharamshala"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084d6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084d7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-palampur",
+            "names": [
+              {
+                "name": "Palampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Palampur_Assembly_constituency",
+            "wikidata_qid": "Q15654060",
+            "node_created_on": "2025-01-26T17:01:17.533Z",
+            "active_version": {
+              "id": "0x9be96084d5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084d5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084d4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084d5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-palampur-version-25",
+            "region": {
+              "id": "0x9be96084d4"
+            },
+            "constituency_number": "19"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084d4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-palampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084d3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:16.817Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Palampur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-palampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084dc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-baijnath",
+            "names": [
+              {
+                "name": "Baijnath"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baijnath_Assembly_constituency",
+            "wikidata_qid": "Q15667811",
+            "node_created_on": "2025-01-26T17:01:19.683Z",
+            "active_version": {
+              "id": "0x9be96084db"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084db"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084da"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084db",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-baijnath-version-25",
+            "region": {
+              "id": "0x9be96084da"
+            },
+            "constituency_number": "20"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084da",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-baijnath-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084d9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:18.992Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baijnath_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-baijnath"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960582e"
+          },
+          {
+            "id": "0x9be96084e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084e3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-lahaul-spiti",
+            "names": [
+              {
+                "name": "Lahaul and Spiti"
+              },
+              {
+                "name": "Lahaul & Spiti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lahaul_and_Spiti_Assembly_constituency",
+            "wikidata_qid": "Q15957704",
+            "node_created_on": "2025-01-26T17:01:21.731Z",
+            "active_version": {
+              "id": "0x9be96084e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-lahaul-spiti-version-25",
+            "region": {
+              "id": "0x9be96084e0"
+            },
+            "constituency_number": "21"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-lahaul-spiti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:21.018Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lahaul_and_Spiti_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-lahaul-spiti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084e8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084e9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-manali",
+            "names": [
+              {
+                "name": "Manali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Manali_Assembly_constituency",
+            "wikidata_qid": "Q15946962",
+            "node_created_on": "2025-01-26T17:01:24.517Z",
+            "active_version": {
+              "id": "0x9be96084e7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084e7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084e6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084e7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-manali-version-25",
+            "region": {
+              "id": "0x9be96084e6"
+            },
+            "constituency_number": "22"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084e6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-manali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084e5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:23.779Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Manali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-manali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605828"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084ee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kullu",
+            "names": [
+              {
+                "name": "Kullu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kullu_Assembly_constituency",
+            "wikidata_qid": "Q15646353",
+            "node_created_on": "2025-01-26T17:01:26.683Z",
+            "active_version": {
+              "id": "0x9be96084ed"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084ed"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084ec"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084ed",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kullu-version-25",
+            "region": {
+              "id": "0x9be96084ec"
+            },
+            "constituency_number": "23"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084ec",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kullu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084eb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:25.961Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kullu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kullu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084f3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084f4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-banjar",
+            "names": [
+              {
+                "name": "Banjar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Banjar_Assembly_constituency",
+            "wikidata_qid": "Q15660991",
+            "node_created_on": "2025-01-26T17:01:29.027Z",
+            "active_version": {
+              "id": "0x9be96084f2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084f2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084f1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084f2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-banjar-version-25",
+            "region": {
+              "id": "0x9be96084f1"
+            },
+            "constituency_number": "24"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084f1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-banjar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084f0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:28.285Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Banjar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-banjar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084f9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96084fa",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-anni",
+            "names": [
+              {
+                "name": "Anni"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anni_Assembly_constituency",
+            "wikidata_qid": "Q15644766",
+            "node_created_on": "2025-01-26T17:01:31.353Z",
+            "active_version": {
+              "id": "0x9be96084f8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084f8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084f7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084f8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-anni-version-25",
+            "region": {
+              "id": "0x9be96084f7"
+            },
+            "constituency_number": "25"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084f7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-anni-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084f6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:30.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anni_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-anni"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084ff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608500",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-karsog",
+            "names": [
+              {
+                "name": "Karsog"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karsog_Assembly_constituency",
+            "wikidata_qid": "Q15645856",
+            "node_created_on": "2025-01-26T17:01:34.019Z",
+            "active_version": {
+              "id": "0x9be96084fe"
+            },
+            "versions": [
+              {
+                "id": "0x9be96084fe"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96084fd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96084fe",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-karsog-version-25",
+            "region": {
+              "id": "0x9be96084fd"
+            },
+            "constituency_number": "26"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96084fd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-karsog-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96084fc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:33.199Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karsog_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-karsog"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608505"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608506",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sundernagar",
+            "names": [
+              {
+                "name": "Sundernagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sundernagar_Assembly_constituency",
+            "wikidata_qid": "Q15957705",
+            "node_created_on": "2025-01-26T17:01:35.995Z",
+            "active_version": {
+              "id": "0x9be9608504"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608504"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608503"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608504",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sundernagar-version-25",
+            "region": {
+              "id": "0x9be9608503"
+            },
+            "constituency_number": "27"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608503",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sundernagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608502"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:35.350Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sundernagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-sundernagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960850b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960850c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nachan",
+            "names": [
+              {
+                "name": "Nachan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nachan_Assembly_constituency",
+            "wikidata_qid": "Q15650551",
+            "node_created_on": "2025-01-26T17:01:38.480Z",
+            "active_version": {
+              "id": "0x9be960850a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960850a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608509"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960850a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nachan-version-25",
+            "region": {
+              "id": "0x9be9608509"
+            },
+            "constituency_number": "28"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608509",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nachan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608508"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:37.909Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nachan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nachan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608511"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608512",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-seraj",
+            "names": [
+              {
+                "name": "Seraj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Seraj_Assembly_constituency",
+            "wikidata_qid": "Q15946959",
+            "node_created_on": "2025-01-26T17:01:41.013Z",
+            "active_version": {
+              "id": "0x9be9608510"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608510"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960850f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608510",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-seraj-version-25",
+            "region": {
+              "id": "0x9be960850f"
+            },
+            "constituency_number": "29"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960850f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-seraj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960850e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:40.301Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Seraj_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-seraj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608517"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608518",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-darang",
+            "names": [
+              {
+                "name": "Darang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Darang_Assembly_constituency",
+            "wikidata_qid": "Q15648405",
+            "node_created_on": "2025-01-26T17:01:43.337Z",
+            "active_version": {
+              "id": "0x9be9608516"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608516"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608515"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608516",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-darang-version-25",
+            "region": {
+              "id": "0x9be9608515"
+            },
+            "constituency_number": "30"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608515",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-darang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608514"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:42.723Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Darang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-darang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960851d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960851e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jogindernagar",
+            "names": [
+              {
+                "name": "Jogindernagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jogindernagar_Assembly_constituency",
+            "wikidata_qid": "Q15647889",
+            "node_created_on": "2025-01-26T17:01:45.384Z",
+            "active_version": {
+              "id": "0x9be960851c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960851c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960851b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960851c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jogindernagar-version-25",
+            "region": {
+              "id": "0x9be960851b"
+            },
+            "constituency_number": "31"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960851b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jogindernagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960851a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:44.772Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jogindernagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jogindernagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608244"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608523",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-dharampur",
+            "names": [
+              {
+                "name": "Dharampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharampur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q25624804",
+            "node_created_on": "2025-01-26T17:01:47.844Z",
+            "active_version": {
+              "id": "0x9be9608522"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608522"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608521"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608522",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-dharampur-version-25",
+            "region": {
+              "id": "0x9be9608521"
+            },
+            "constituency_number": "32"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608521",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-dharampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608520"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:47.228Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharampur,_Himachal_Pradesh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-dharampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605834"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608528",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-mandi",
+            "names": [
+              {
+                "name": "Mandi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mandi_Assembly_constituency",
+            "wikidata_qid": "Q6748037",
+            "node_created_on": "2025-01-26T17:01:49.789Z",
+            "active_version": {
+              "id": "0x9be9608527"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608527"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608526"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608527",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-mandi-version-25",
+            "region": {
+              "id": "0x9be9608526"
+            },
+            "constituency_number": "33"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608526",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-mandi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608525"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:48.970Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mandi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-mandi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960852d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960852e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-balh",
+            "names": [
+              {
+                "name": "Balh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Balh_Assembly_constituency",
+            "wikidata_qid": "Q15663561",
+            "node_created_on": "2025-01-26T17:01:52.034Z",
+            "active_version": {
+              "id": "0x9be960852c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960852c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960852b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960852c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-balh-version-25",
+            "region": {
+              "id": "0x9be960852b"
+            },
+            "constituency_number": "34"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960852b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-balh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960852a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:51.529Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Balh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-balh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608533"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608534",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sarkaghat",
+            "names": [
+              {
+                "name": "Sarkaghat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sarkaghat_Assembly_constituency",
+            "wikidata_qid": "Q15946961",
+            "node_created_on": "2025-01-26T17:01:54.016Z",
+            "active_version": {
+              "id": "0x9be9608532"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608532"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608531"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608532",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sarkaghat-version-25",
+            "region": {
+              "id": "0x9be9608531"
+            },
+            "constituency_number": "35"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608531",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sarkaghat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608530"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:53.373Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sarkaghat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-sarkaghat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608539"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960853a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-bhoranj",
+            "names": [
+              {
+                "name": "Bhoranj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhoranj_Assembly_constituency",
+            "wikidata_qid": "Q15946953",
+            "node_created_on": "2025-01-26T17:01:55.955Z",
+            "active_version": {
+              "id": "0x9be9608538"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608538"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608537"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608538",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-bhoranj-version-25",
+            "region": {
+              "id": "0x9be9608537"
+            },
+            "constituency_number": "36"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608537",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-bhoranj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608536"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:55.317Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhoranj_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-bhoranj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960853f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608540",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sujanpur",
+            "names": [
+              {
+                "name": "Sujanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sujanpur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15946949",
+            "node_created_on": "2025-01-26T17:01:57.999Z",
+            "active_version": {
+              "id": "0x9be960853e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960853e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960853d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960853e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sujanpur-version-25",
+            "region": {
+              "id": "0x9be960853d"
+            },
+            "constituency_number": "37"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960853d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sujanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960853c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:57.363Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sujanpur_(Himachal_Pradesh_Assembly_constituency)"
+        ],
+        "name_id": "in-vc-hp-sujanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605816"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608545",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-hamirpur",
+            "names": [
+              {
+                "name": "Hamirpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hamirpur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15957699",
+            "node_created_on": "2025-01-26T17:02:00.132Z",
+            "active_version": {
+              "id": "0x9be9608544"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608544"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608543"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608544",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-hamirpur-version-25",
+            "region": {
+              "id": "0x9be9608543"
+            },
+            "constituency_number": "38"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608543",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-hamirpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608542"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:01:59.313Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hamirpur_(Himachal_Pradesh_Assembly_constituency)"
+        ],
+        "name_id": "in-vc-hp-hamirpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960854a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960854b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-barsar",
+            "names": [
+              {
+                "name": "Barsar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barsar_Assembly_constituency",
+            "wikidata_qid": "Q15946954",
+            "node_created_on": "2025-01-26T17:02:02.382Z",
+            "active_version": {
+              "id": "0x9be9608549"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608549"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608548"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608549",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-barsar-version-25",
+            "region": {
+              "id": "0x9be9608548"
+            },
+            "constituency_number": "39"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608548",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-barsar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608547"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:01.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barsar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-barsar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608550"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608551",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nadaun",
+            "names": [
+              {
+                "name": "Nadaun"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nadaun_Assembly_constituency",
+            "wikidata_qid": "Q15650556",
+            "node_created_on": "2025-01-26T17:02:04.488Z",
+            "active_version": {
+              "id": "0x9be960854f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960854f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960854e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960854f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nadaun-version-25",
+            "region": {
+              "id": "0x9be960854e"
+            },
+            "constituency_number": "40"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960854e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nadaun-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960854d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:03.817Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nadaun_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nadaun"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608556"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608557",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-chintpurni",
+            "names": [
+              {
+                "name": "Chintpurni"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chintpurni_Assembly_constituency",
+            "wikidata_qid": "Q15647575",
+            "node_created_on": "2025-01-26T17:02:06.787Z",
+            "active_version": {
+              "id": "0x9be9608555"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608555"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608554"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608555",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-chintpurni-version-25",
+            "region": {
+              "id": "0x9be9608554"
+            },
+            "constituency_number": "41"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608554",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-chintpurni-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608553"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:06.070Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chintpurni_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-chintpurni"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960855c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960855d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-gagret",
+            "names": [
+              {
+                "name": "Gagret"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gagret_Assembly_constituency",
+            "wikidata_qid": "Q15647038",
+            "node_created_on": "2025-01-26T17:02:08.938Z",
+            "active_version": {
+              "id": "0x9be960855b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960855b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960855a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960855b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-gagret-version-25",
+            "region": {
+              "id": "0x9be960855a"
+            },
+            "constituency_number": "42"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960855a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-gagret-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608559"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:08.183Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gagret_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-gagret"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608562"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608563",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-haroli",
+            "names": [
+              {
+                "name": "Haroli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Haroli_Assembly_constituency",
+            "wikidata_qid": "Q15946948",
+            "node_created_on": "2025-01-26T17:02:12.214Z",
+            "active_version": {
+              "id": "0x9be9608561"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608561"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608560"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608561",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-haroli-version-25",
+            "region": {
+              "id": "0x9be9608560"
+            },
+            "constituency_number": "43"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608560",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-haroli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960855f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:11.393Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Haroli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-haroli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960584c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608568",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-una",
+            "names": [
+              {
+                "name": "Una"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Una,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15645278",
+            "node_created_on": "2025-01-26T17:02:13.988Z",
+            "active_version": {
+              "id": "0x9be9608567"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608567"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608566"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608567",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-una-version-25",
+            "region": {
+              "id": "0x9be9608566"
+            },
+            "constituency_number": "44"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608566",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-una-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608565"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:13.340Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Una_(Himachal_Pradesh_Assembly_constituency)"
+        ],
+        "name_id": "in-vc-hp-una"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960856d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960856e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kutlehar",
+            "names": [
+              {
+                "name": "Kutlehar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kutlehar_Assembly_constituency",
+            "wikidata_qid": "Q15957698",
+            "node_created_on": "2025-01-26T17:02:15.717Z",
+            "active_version": {
+              "id": "0x9be960856c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960856c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960856b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960856c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kutlehar-version-25",
+            "region": {
+              "id": "0x9be960856b"
+            },
+            "constituency_number": "45"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960856b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kutlehar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960856a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:15.009Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kutlehar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kutlehar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608573"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608574",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jhanduta",
+            "names": [
+              {
+                "name": "Jhanduta"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhanduta_Assembly_constituency",
+            "wikidata_qid": "Q15946947",
+            "node_created_on": "2025-01-26T17:02:18.254Z",
+            "active_version": {
+              "id": "0x9be9608572"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608572"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608571"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608572",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jhanduta-version-25",
+            "region": {
+              "id": "0x9be9608571"
+            },
+            "constituency_number": "46"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608571",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jhanduta-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608570"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:17.336Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhanduta_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jhanduta"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608579"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960857a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-ghumarwin",
+            "names": [
+              {
+                "name": "Ghumarwin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghumarwin_Assembly_constituency",
+            "wikidata_qid": "Q15647371",
+            "node_created_on": "2025-01-26T17:02:20.022Z",
+            "active_version": {
+              "id": "0x9be9608578"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608578"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608577"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608578",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-ghumarwin-version-25",
+            "region": {
+              "id": "0x9be9608577"
+            },
+            "constituency_number": "47"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608577",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-ghumarwin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608576"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:19.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghumarwin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-ghumarwin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055b6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960857f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-bilaspur",
+            "names": [
+              {
+                "name": "Bilaspur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bilaspur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15665706",
+            "node_created_on": "2025-01-26T17:02:22.352Z",
+            "active_version": {
+              "id": "0x9be960857e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960857e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960857d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960857e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-bilaspur-version-25",
+            "region": {
+              "id": "0x9be960857d"
+            },
+            "constituency_number": "48"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960857d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-bilaspur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960857c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:21.737Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bilaspur_(Himachal_Pradesh_Assembly_constituency)"
+        ],
+        "name_id": "in-vc-hp-bilaspur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608584"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608585",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sri-naina-deviji",
+            "names": [
+              {
+                "name": "Sri Naina Deviji"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sri_Naina_Deviji_Assembly_constituency",
+            "wikidata_qid": "Q15946945",
+            "node_created_on": "2025-01-26T17:02:24.013Z",
+            "active_version": {
+              "id": "0x9be9608583"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608583"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608582"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608583",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sri-naina-deviji-version-25",
+            "region": {
+              "id": "0x9be9608582"
+            },
+            "constituency_number": "49"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608582",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sri-naina-deviji-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608581"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:23.376Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sri_Naina_Deviji_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-sri-naina-deviji"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960858a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960858b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-arki",
+            "names": [
+              {
+                "name": "Arki"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arki_Assembly_constituency",
+            "wikidata_qid": "Q15644074",
+            "node_created_on": "2025-01-26T17:02:26.755Z",
+            "active_version": {
+              "id": "0x9be9608589"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608589"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608588"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608589",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-arki-version-25",
+            "region": {
+              "id": "0x9be9608588"
+            },
+            "constituency_number": "50"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608588",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-arki-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608587"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:26.038Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arki_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-arki"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608590"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608591",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nalagarh",
+            "names": [
+              {
+                "name": "Nalagarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nalagarh_Assembly_constituency",
+            "wikidata_qid": "Q15650601",
+            "node_created_on": "2025-01-26T17:02:28.691Z",
+            "active_version": {
+              "id": "0x9be960858f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960858f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960858e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960858f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nalagarh-version-25",
+            "region": {
+              "id": "0x9be960858e"
+            },
+            "constituency_number": "51"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960858e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nalagarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960858d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:28.011Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nalagarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nalagarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608596"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608597",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-doon",
+            "names": [
+              {
+                "name": "Doon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Doon_Assembly_constituency",
+            "wikidata_qid": "Q15649007",
+            "node_created_on": "2025-01-26T17:02:30.707Z",
+            "active_version": {
+              "id": "0x9be9608595"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608595"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608594"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608595",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-doon-version-25",
+            "region": {
+              "id": "0x9be9608594"
+            },
+            "constituency_number": "52"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608594",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-doon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608593"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:30.012Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Doon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-doon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605846"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960859c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-solan",
+            "names": [
+              {
+                "name": "Solan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Solan_Assembly_constituency",
+            "wikidata_qid": "Q10820124",
+            "node_created_on": "2025-01-26T17:02:32.778Z",
+            "active_version": {
+              "id": "0x9be960859b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960859b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960859a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960859b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-solan-version-25",
+            "region": {
+              "id": "0x9be960859a"
+            },
+            "constituency_number": "53"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960859a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-solan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608599"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:32.180Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Solan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-solan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085a1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085a2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kasauli",
+            "names": [
+              {
+                "name": "Kasauli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kasauli_Assembly_constituency",
+            "wikidata_qid": "Q15645977",
+            "node_created_on": "2025-01-26T17:02:34.329Z",
+            "active_version": {
+              "id": "0x9be96085a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960859f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kasauli-version-25",
+            "region": {
+              "id": "0x9be960859f"
+            },
+            "constituency_number": "54"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960859f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kasauli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960859e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:33.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kasauli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kasauli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085a7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085a8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-pachhad",
+            "names": [
+              {
+                "name": "Pachhad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pachhad_Assembly_constituency",
+            "wikidata_qid": "Q15651317",
+            "node_created_on": "2025-01-26T17:02:36.695Z",
+            "active_version": {
+              "id": "0x9be96085a6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085a6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085a5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085a6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-pachhad-version-25",
+            "region": {
+              "id": "0x9be96085a5"
+            },
+            "constituency_number": "55"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085a5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-pachhad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085a4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:36.015Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pachhad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-pachhad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085ad"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085ae",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-nahan",
+            "names": [
+              {
+                "name": "Nahan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nahan_Assembly_constituency",
+            "wikidata_qid": "Q15650624",
+            "node_created_on": "2025-01-26T17:02:38.736Z",
+            "active_version": {
+              "id": "0x9be96085ac"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085ac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085ab"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085ac",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-nahan-version-25",
+            "region": {
+              "id": "0x9be96085ab"
+            },
+            "constituency_number": "56"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085ab",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-nahan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085aa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:38.019Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nahan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-nahan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085b3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085b4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-sri-renukaji",
+            "names": [
+              {
+                "name": "Sri Renukaji"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sri_Renukaji_Assembly_constituency",
+            "wikidata_qid": "Q15946955",
+            "node_created_on": "2025-01-26T17:02:41.500Z",
+            "active_version": {
+              "id": "0x9be96085b2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085b2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085b1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085b2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-sri-renukaji-version-25",
+            "region": {
+              "id": "0x9be96085b1"
+            },
+            "constituency_number": "57"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085b1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-sri-renukaji-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085b0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:40.783Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sri_Renukaji_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-sri-renukaji"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085b9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085ba",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-paonta-sahib",
+            "names": [
+              {
+                "name": "Paonta Sahib"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Paonta_Sahib_Assembly_constituency",
+            "wikidata_qid": "Q15946958",
+            "node_created_on": "2025-01-26T17:02:43.341Z",
+            "active_version": {
+              "id": "0x9be96085b8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085b8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085b7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085b8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-paonta-sahib-version-25",
+            "region": {
+              "id": "0x9be96085b7"
+            },
+            "constituency_number": "58"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085b7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-paonta-sahib-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085b6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:42.738Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Paonta_Sahib_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-paonta-sahib"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085bf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085c0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-shillai",
+            "names": [
+              {
+                "name": "Shillai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shillai_Assembly_constituency",
+            "wikidata_qid": "Q15957701",
+            "node_created_on": "2025-01-26T17:02:45.515Z",
+            "active_version": {
+              "id": "0x9be96085be"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085be"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085bd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085be",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-shillai-version-25",
+            "region": {
+              "id": "0x9be96085bd"
+            },
+            "constituency_number": "59"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085bd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-shillai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085bc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:44.737Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shillai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-shillai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085c5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085c6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-chopal",
+            "names": [
+              {
+                "name": "Chopal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chopal_Assembly_constituency",
+            "wikidata_qid": "Q15647679",
+            "node_created_on": "2025-01-26T17:02:47.746Z",
+            "active_version": {
+              "id": "0x9be96085c4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085c4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085c3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085c4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-chopal-version-25",
+            "region": {
+              "id": "0x9be96085c3"
+            },
+            "constituency_number": "60"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085c3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-chopal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085c2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:46.927Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chopal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-chopal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085cb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085cc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-theog",
+            "names": [
+              {
+                "name": "Theog"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Theog_Assembly_constituency",
+            "wikidata_qid": "Q15647969",
+            "node_created_on": "2025-01-26T17:02:50.205Z",
+            "active_version": {
+              "id": "0x9be96085ca"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085ca"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085c9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085ca",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-theog-version-25",
+            "region": {
+              "id": "0x9be96085c9"
+            },
+            "constituency_number": "61"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085c9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-theog-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085c8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:48.966Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Theog_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-theog"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085d1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085d2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kasumpti",
+            "names": [
+              {
+                "name": "Kasumpti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kasumpti_Assembly_constituency",
+            "wikidata_qid": "Q15646358",
+            "node_created_on": "2025-01-26T17:02:52.355Z",
+            "active_version": {
+              "id": "0x9be96085d0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085d0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085cf"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085d0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kasumpti-version-25",
+            "region": {
+              "id": "0x9be96085cf"
+            },
+            "constituency_number": "62"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085cf",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kasumpti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085ce"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:51.743Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kasumpti_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kasumpti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960583a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085d7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-shimla",
+            "names": [
+              {
+                "name": "Shimla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shimla_Assembly_constituency",
+            "wikidata_qid": "Q15957702",
+            "node_created_on": "2025-01-26T17:02:54.813Z",
+            "active_version": {
+              "id": "0x9be96085d6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085d6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085d5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085d6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-shimla-version-25",
+            "region": {
+              "id": "0x9be96085d5"
+            },
+            "constituency_number": "63"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085d5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-shimla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085d4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:53.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shimla_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-shimla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085dc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-shimla-rural",
+            "names": [
+              {
+                "name": "Shimla Rural"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shimla_Rural_Assembly_constituency",
+            "wikidata_qid": "Q15946957",
+            "node_created_on": "2025-01-26T17:02:56.756Z",
+            "active_version": {
+              "id": "0x9be96085db"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085db"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085da"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085db",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-shimla-rural-version-25",
+            "region": {
+              "id": "0x9be96085da"
+            },
+            "constituency_number": "64"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085da",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-shimla-rural-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085d9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:55.938Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shimla_Rural_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-shimla-rural"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085e3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-jubbal-kotkhai",
+            "names": [
+              {
+                "name": "Jubbal-Kotkhai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jubbal-Kotkhai_Assembly_constituency",
+            "wikidata_qid": "Q15647838",
+            "node_created_on": "2025-01-26T17:02:58.805Z",
+            "active_version": {
+              "id": "0x9be96085e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-jubbal-kotkhai-version-25",
+            "region": {
+              "id": "0x9be96085e0"
+            },
+            "constituency_number": "65"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-jubbal-kotkhai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:02:58.014Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jubbal-Kotkhai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-jubbal-kotkhai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063e4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085e8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-rampur",
+            "names": [
+              {
+                "name": "Rampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rampur,_Himachal_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q15682569",
+            "node_created_on": "2025-01-26T17:03:01.491Z",
+            "active_version": {
+              "id": "0x9be96085e7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085e7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085e6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085e7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-rampur-version-25",
+            "region": {
+              "id": "0x9be96085e6"
+            },
+            "constituency_number": "66"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085e6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-rampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085e5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:03:00.791Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rampur_(Himachal_Pradesh_Assembly_constituency)"
+        ],
+        "name_id": "in-vc-hp-rampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085ed"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085ee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-rohru",
+            "names": [
+              {
+                "name": "Rohru"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rohru_Assembly_constituency",
+            "wikidata_qid": "Q15957703",
+            "node_created_on": "2025-01-26T17:03:03.413Z",
+            "active_version": {
+              "id": "0x9be96085ec"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085ec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085eb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085ec",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-rohru-version-25",
+            "region": {
+              "id": "0x9be96085eb"
+            },
+            "constituency_number": "67"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085eb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-rohru-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085ea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:03:02.594Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rohru_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-rohru"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605822"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085f3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hp-kinnaur",
+            "names": [
+              {
+                "name": "Kinnaur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kinnaur_Assembly_constituency",
+            "wikidata_qid": "Q10780104",
+            "node_created_on": "2025-01-26T17:03:05.576Z",
+            "active_version": {
+              "id": "0x9be96085f2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085f2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085f1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085f2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hp-kinnaur-version-25",
+            "region": {
+              "id": "0x9be96085f1"
+            },
+            "constituency_number": "68"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085f1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hp-kinnaur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085f0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:03:04.744Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kinnaur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hp-kinnaur"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-26T17:03:05.908Z"
+}
