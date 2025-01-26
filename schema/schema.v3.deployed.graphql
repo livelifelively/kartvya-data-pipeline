@@ -1458,7 +1458,7 @@ type _Indian_State_Union_Territory_ {
 
   names: [_Name_] @hasInverse(field: "indian_state_union_territory")
 
-  state_or_union_territory: _Indian_State_Or_Union_Territory_Category_
+  state_or_union_territory: _Indian_State_Or_Union_Territory_Category_ @search(by: [hash])
 
   regions: [_Indian_State_Union_Territory_Version_Region_] @hasInverse(field: "self")
   versions: [_Indian_State_Union_Territory_Version_] @hasInverse(field: "self")
@@ -1730,8 +1730,6 @@ type _Indian_Loksabha_Constituency_ {
 
   active_version: _Indian_Loksabha_Constituency_Version_
 
-  constituency_number: String @search(by: [exact, term, fulltext])
-
   established_on: _Date_Time_
   disestablished_on: _Date_Time_
 
@@ -1794,6 +1792,8 @@ type _Indian_Loksabha_Constituency_Version_ {
 
   change: _Indian_Division_Version_Change_ @search
 
+  constituency_number: String @search(by: [exact, term, fulltext])
+
   established_on: _Date_Time_
   disestablished_on: _Date_Time_
 
@@ -1846,8 +1846,6 @@ type _Indian_Vidhansabha_Constituency_ {
   wikipedia_page: String @search(by: [fulltext])
 
   reservation: _Indian_Legislative_Constituency_Reservation_ @search
-
-  constituency_number: String @search(by: [exact, term, fulltext])
 
   # # all vidhansabhas that had a member from this constituency
   # vidhansabhas: [_Indian_Vidhansabha_] @hasInverse(field: "constituencies")
@@ -1922,6 +1920,8 @@ type _Indian_Vidhansabha_Constituency_Version_ {
 
   reorganisation: _Indian_Vidhansabha_Constituency_Reorganisation_
     @hasInverse(field: "vidhansabha_constituency_versions")
+
+  constituency_number: String @search(by: [exact, term, fulltext])
 
   change: _Indian_Division_Version_Change_ @search
 
