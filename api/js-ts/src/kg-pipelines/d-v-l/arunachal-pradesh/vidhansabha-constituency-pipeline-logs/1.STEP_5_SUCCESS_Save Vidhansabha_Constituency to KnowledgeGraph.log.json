@@ -1,0 +1,4143 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96032cb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075d5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-lumla",
+            "names": [
+              {
+                "name": "Lumla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lumla_Assembly_constituency",
+            "wikidata_qid": "Q30600959",
+            "node_created_on": "2025-01-26T16:14:07.702Z",
+            "active_version": {
+              "id": "0x9be96075d4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075d4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075d3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075d4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-lumla-version-25",
+            "region": {
+              "id": "0x9be96075d3"
+            },
+            "constituency_number": "1"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075d3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-lumla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075d2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:06.982Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lumla_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-lumla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603243"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075da",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-tawang",
+            "names": [
+              {
+                "name": "Tawang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tawang_Assembly_constituency",
+            "wikidata_qid": "Q30600955",
+            "node_created_on": "2025-01-26T16:14:09.743Z",
+            "active_version": {
+              "id": "0x9be96075d9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075d9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075d8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075d9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-tawang-version-25",
+            "region": {
+              "id": "0x9be96075d8"
+            },
+            "constituency_number": "2"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075d8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-tawang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075d7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:08.990Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tawang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-tawang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032d2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075df",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-mukto",
+            "names": [
+              {
+                "name": "Mukto"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mukto_Assembly_constituency",
+            "wikidata_qid": "Q6933629",
+            "node_created_on": "2025-01-26T16:14:11.583Z",
+            "active_version": {
+              "id": "0x9be96075de"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075de"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075dd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075de",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-mukto-version-25",
+            "region": {
+              "id": "0x9be96075dd"
+            },
+            "constituency_number": "3"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075dd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-mukto-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075dc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:10.829Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mukto_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-mukto"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032d6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075e4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-dirang",
+            "names": [
+              {
+                "name": "Dirang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dirang_Assembly_constituency",
+            "wikidata_qid": "Q55261568",
+            "node_created_on": "2025-01-26T16:14:13.737Z",
+            "active_version": {
+              "id": "0x9be96075e3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075e3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075e2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075e3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-dirang-version-25",
+            "region": {
+              "id": "0x9be96075e2"
+            },
+            "constituency_number": "4"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075e2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-dirang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075e1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:13.032Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dirang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-dirang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032da"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075e9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-kalaktang",
+            "names": [
+              {
+                "name": "Kalaktang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalaktang_Assembly_constituency",
+            "wikidata_qid": "Q55261569",
+            "node_created_on": "2025-01-26T16:14:16.011Z",
+            "active_version": {
+              "id": "0x9be96075e8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075e8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075e7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075e8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-kalaktang-version-25",
+            "region": {
+              "id": "0x9be96075e7"
+            },
+            "constituency_number": "5"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075e7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-kalaktang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075e6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:15.334Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalaktang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-kalaktang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032de"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075ee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-thrizino-buragaon",
+            "names": [
+              {
+                "name": "Thrizino-Buragaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thrizino-Buragaon_Assembly_constituency",
+            "wikidata_qid": "Q28172589",
+            "node_created_on": "2025-01-26T16:14:18.345Z",
+            "active_version": {
+              "id": "0x9be96075ed"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075ed"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075ec"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075ed",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-thrizino-buragaon-version-25",
+            "region": {
+              "id": "0x9be96075ec"
+            },
+            "constituency_number": "6"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075ec",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-thrizino-buragaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075eb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:17.728Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thrizino-Buragaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-thrizino-buragaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075f3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-bomdila",
+            "names": [
+              {
+                "name": "Bomdila"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bomdila_Assembly_constituency",
+            "wikidata_qid": "Q55261571",
+            "node_created_on": "2025-01-26T16:14:21.108Z",
+            "active_version": {
+              "id": "0x9be96075f2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075f2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075f1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075f2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-bomdila-version-25",
+            "region": {
+              "id": "0x9be96075f1"
+            },
+            "constituency_number": "7"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075f1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-bomdila-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075f0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:19.806Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bomdila_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-bomdila"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032e6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075f8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-bameng",
+            "names": [
+              {
+                "name": "Bameng"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bameng_Assembly_constituency",
+            "wikidata_qid": "Q55261572",
+            "node_created_on": "2025-01-26T16:14:23.023Z",
+            "active_version": {
+              "id": "0x9be96075f7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075f7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075f6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075f7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-bameng-version-25",
+            "region": {
+              "id": "0x9be96075f6"
+            },
+            "constituency_number": "8"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075f6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-bameng-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075f5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:22.336Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bameng_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-bameng"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032ea"
+          },
+          {
+            "id": "0x9be96032eb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96075fd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-chayangtajo",
+            "names": [
+              {
+                "name": "Chayangtajo"
+              },
+              {
+                "name": "Chayang Tajo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chayangtajo_Assembly_constituency",
+            "wikidata_qid": "Q55261573",
+            "node_created_on": "2025-01-26T16:14:24.736Z",
+            "active_version": {
+              "id": "0x9be96075fc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96075fc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96075fb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96075fc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-chayangtajo-version-25",
+            "region": {
+              "id": "0x9be96075fb"
+            },
+            "constituency_number": "9"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96075fb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-chayangtajo-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075fa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:24.078Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chayangtajo_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-chayangtajo"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032ef"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607602",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-seppa-east",
+            "names": [
+              {
+                "name": "Seppa East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Seppa_East_Assembly_constituency",
+            "wikidata_qid": "Q28172639",
+            "node_created_on": "2025-01-26T16:14:26.705Z",
+            "active_version": {
+              "id": "0x9be9607601"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607601"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607600"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607601",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-seppa-east-version-25",
+            "region": {
+              "id": "0x9be9607600"
+            },
+            "constituency_number": "10"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607600",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-seppa-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96075ff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:25.846Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Seppa_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-seppa-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032f3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607607",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-seppa-west",
+            "names": [
+              {
+                "name": "Seppa West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Seppa_West_Assembly_constituency",
+            "wikidata_qid": "Q28172647",
+            "node_created_on": "2025-01-26T16:14:28.509Z",
+            "active_version": {
+              "id": "0x9be9607606"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607606"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607605"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607606",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-seppa-west-version-25",
+            "region": {
+              "id": "0x9be9607605"
+            },
+            "constituency_number": "11"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607605",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-seppa-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607604"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:27.885Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Seppa_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-seppa-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603252"
+          },
+          {
+            "id": "0x9be9603253"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960760c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-pakke-kessang",
+            "names": [
+              {
+                "name": "Pakke-Kessang"
+              },
+              {
+                "name": "Pakke Kessang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pakke-Kessang_Assembly_constituency",
+            "wikidata_qid": "Q30598171",
+            "node_created_on": "2025-01-26T16:14:31.348Z",
+            "active_version": {
+              "id": "0x9be960760b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960760b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960760a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960760b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-pakke-kessang-version-25",
+            "region": {
+              "id": "0x9be960760a"
+            },
+            "constituency_number": "12"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960760a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-pakke-kessang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607609"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:30.020Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pakke-Kessang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-pakke-kessang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032fa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607611",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-itanagar",
+            "names": [
+              {
+                "name": "Itanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Itanagar_Assembly_constituency",
+            "wikidata_qid": "Q25209201",
+            "node_created_on": "2025-01-26T16:14:32.945Z",
+            "active_version": {
+              "id": "0x9be9607610"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607610"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960760f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607610",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-itanagar-version-25",
+            "region": {
+              "id": "0x9be960760f"
+            },
+            "constituency_number": "13"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960760f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-itanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960760e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:32.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Itanagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-itanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032fe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607616",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-doimukh",
+            "names": [
+              {
+                "name": "Doimukh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Doimukh_Assembly_constituency",
+            "wikidata_qid": "Q55261576",
+            "node_created_on": "2025-01-26T16:14:35.497Z",
+            "active_version": {
+              "id": "0x9be9607615"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607615"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607614"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607615",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-doimukh-version-25",
+            "region": {
+              "id": "0x9be9607614"
+            },
+            "constituency_number": "14"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607614",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-doimukh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607613"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:34.830Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Doimukh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-doimukh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603302"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960761b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-sagalee",
+            "names": [
+              {
+                "name": "Sagalee"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sagalee_Assembly_constituency",
+            "wikidata_qid": "Q55261578",
+            "node_created_on": "2025-01-26T16:14:37.079Z",
+            "active_version": {
+              "id": "0x9be960761a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960761a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607619"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960761a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-sagalee-version-25",
+            "region": {
+              "id": "0x9be9607619"
+            },
+            "constituency_number": "15"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607619",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-sagalee-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607618"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:36.493Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sagalee_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-sagalee"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603306"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607620",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-yachuli",
+            "names": [
+              {
+                "name": "Yachuli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Yachuli_Assembly_constituency",
+            "wikidata_qid": "Q55261579",
+            "node_created_on": "2025-01-26T16:14:38.749Z",
+            "active_version": {
+              "id": "0x9be960761f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960761f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960761e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960761f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-yachuli-version-25",
+            "region": {
+              "id": "0x9be960761e"
+            },
+            "constituency_number": "16"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960761e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-yachuli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960761d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:37.995Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Yachuli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-yachuli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960330a"
+          },
+          {
+            "id": "0x9be960330b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607625",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-ziro–hapoli",
+            "names": [
+              {
+                "name": "Ziro–Hapoli"
+              },
+              {
+                "name": "Ziro Hapoli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ziro%E2%80%93Hapoli_Assembly_constituency",
+            "wikidata_qid": "Q28172934",
+            "node_created_on": "2025-01-26T16:14:40.697Z",
+            "active_version": {
+              "id": "0x9be9607624"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607624"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607623"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607624",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-ziro–hapoli-version-25",
+            "region": {
+              "id": "0x9be9607623"
+            },
+            "constituency_number": "17"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607623",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-ziro–hapoli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607622"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:39.745Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ziro%E2%80%93Hapoli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-ziro–hapoli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960330f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960762a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-palin",
+            "names": [
+              {
+                "name": "Palin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Palin_Assembly_constituency",
+            "wikidata_qid": "Q28179939",
+            "node_created_on": "2025-01-26T16:14:42.408Z",
+            "active_version": {
+              "id": "0x9be9607629"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607629"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607628"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607629",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-palin-version-25",
+            "region": {
+              "id": "0x9be9607628"
+            },
+            "constituency_number": "18"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607628",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-palin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607627"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:41.788Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Palin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-palin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603313"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960762f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-nyapin",
+            "names": [
+              {
+                "name": "Nyapin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nyapin_Assembly_constituency",
+            "wikidata_qid": "Q55261581",
+            "node_created_on": "2025-01-26T16:14:43.973Z",
+            "active_version": {
+              "id": "0x9be960762e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960762e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960762d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960762e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-nyapin-version-25",
+            "region": {
+              "id": "0x9be960762d"
+            },
+            "constituency_number": "19"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960762d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-nyapin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960762c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:43.323Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nyapin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-nyapin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603317"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607634",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-tali",
+            "names": [
+              {
+                "name": "Tali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tali_Assembly_constituency",
+            "wikidata_qid": "Q55261582",
+            "node_created_on": "2025-01-26T16:14:45.540Z",
+            "active_version": {
+              "id": "0x9be9607633"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607633"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607632"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607633",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-tali-version-25",
+            "region": {
+              "id": "0x9be9607632"
+            },
+            "constituency_number": "20"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607632",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-tali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607631"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:45.025Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-tali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960331b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607639",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-koloriang",
+            "names": [
+              {
+                "name": "Koloriang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Koloriang_Assembly_constituency",
+            "wikidata_qid": "Q55261583",
+            "node_created_on": "2025-01-26T16:14:47.757Z",
+            "active_version": {
+              "id": "0x9be9607638"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607638"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607637"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607638",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-koloriang-version-25",
+            "region": {
+              "id": "0x9be9607637"
+            },
+            "constituency_number": "21"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607637",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-koloriang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607636"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:47.218Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Koloriang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-koloriang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960331f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960763e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-nacho",
+            "names": [
+              {
+                "name": "Nacho"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nacho_Assembly_constituency",
+            "wikidata_qid": "Q55261584",
+            "node_created_on": "2025-01-26T16:14:49.575Z",
+            "active_version": {
+              "id": "0x9be960763d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960763d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960763c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960763d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-nacho-version-25",
+            "region": {
+              "id": "0x9be960763c"
+            },
+            "constituency_number": "22"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960763c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-nacho-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960763b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:49.065Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nacho_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-nacho"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603323"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607643",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-taliha",
+            "names": [
+              {
+                "name": "Taliha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Taliha_Assembly_constituency",
+            "wikidata_qid": "Q55261585",
+            "node_created_on": "2025-01-26T16:14:52.187Z",
+            "active_version": {
+              "id": "0x9be9607642"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607642"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607641"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607642",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-taliha-version-25",
+            "region": {
+              "id": "0x9be9607641"
+            },
+            "constituency_number": "23"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607641",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-taliha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607640"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:51.322Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Taliha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-taliha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603327"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607648",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-daporijo",
+            "names": [
+              {
+                "name": "Daporijo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Daporijo_Assembly_constituency",
+            "wikidata_qid": "Q55261586",
+            "node_created_on": "2025-01-26T16:14:53.771Z",
+            "active_version": {
+              "id": "0x9be9607647"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607647"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607646"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607647",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-daporijo-version-25",
+            "region": {
+              "id": "0x9be9607646"
+            },
+            "constituency_number": "24"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607646",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-daporijo-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607645"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:53.262Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Daporijo_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-daporijo"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960332b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960764d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-raga",
+            "names": [
+              {
+                "name": "Raga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raga_Assembly_constituency",
+            "wikidata_qid": "Q55261591",
+            "node_created_on": "2025-01-26T16:14:56.542Z",
+            "active_version": {
+              "id": "0x9be960764c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960764c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960764b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960764c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-raga-version-25",
+            "region": {
+              "id": "0x9be960764b"
+            },
+            "constituency_number": "25"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960764b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-raga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960764a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:55.763Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raga_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-raga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960332f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607652",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-dumporijo",
+            "names": [
+              {
+                "name": "Dumporijo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dumporijo_Assembly_constituency",
+            "wikidata_qid": "Q55261592",
+            "node_created_on": "2025-01-26T16:14:58.280Z",
+            "active_version": {
+              "id": "0x9be9607651"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607651"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607650"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607651",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-dumporijo-version-25",
+            "region": {
+              "id": "0x9be9607650"
+            },
+            "constituency_number": "26"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607650",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-dumporijo-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960764f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:57.564Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dumporijo_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-dumporijo"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603333"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607657",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-liromoba",
+            "names": [
+              {
+                "name": "Liromoba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Liromoba_Assembly_constituency",
+            "wikidata_qid": "Q28180067",
+            "node_created_on": "2025-01-26T16:14:59.976Z",
+            "active_version": {
+              "id": "0x9be9607656"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607656"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607655"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607656",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-liromoba-version-25",
+            "region": {
+              "id": "0x9be9607655"
+            },
+            "constituency_number": "27"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607655",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-liromoba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607654"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:14:59.508Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Liromoba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-liromoba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603337"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960765c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-likabali",
+            "names": [
+              {
+                "name": "Likabali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Likabali_Assembly_constituency",
+            "wikidata_qid": "Q48725958",
+            "node_created_on": "2025-01-26T16:15:01.984Z",
+            "active_version": {
+              "id": "0x9be960765b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960765b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960765a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960765b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-likabali-version-25",
+            "region": {
+              "id": "0x9be960765a"
+            },
+            "constituency_number": "28"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960765a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-likabali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607659"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:01.317Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Likabali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-likabali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960333b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607661",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-basar",
+            "names": [
+              {
+                "name": "Basar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Basar_Assembly_constituency",
+            "wikidata_qid": "Q55261595",
+            "node_created_on": "2025-01-26T16:15:03.526Z",
+            "active_version": {
+              "id": "0x9be9607660"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607660"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960765f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607660",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-basar-version-25",
+            "region": {
+              "id": "0x9be960765f"
+            },
+            "constituency_number": "29"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960765f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-basar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960765e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:02.889Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Basar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-basar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960333f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607666",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-along-west",
+            "names": [
+              {
+                "name": "Along West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Along_West_Assembly_constituency",
+            "wikidata_qid": "Q30600956",
+            "node_created_on": "2025-01-26T16:15:05.345Z",
+            "active_version": {
+              "id": "0x9be9607665"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607665"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607664"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607665",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-along-west-version-25",
+            "region": {
+              "id": "0x9be9607664"
+            },
+            "constituency_number": "30"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607664",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-along-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607663"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:04.733Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Along_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-along-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603343"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960766b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-along-east",
+            "names": [
+              {
+                "name": "Along East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Along_East_Assembly_constituency",
+            "wikidata_qid": "Q55261596",
+            "node_created_on": "2025-01-26T16:15:07.543Z",
+            "active_version": {
+              "id": "0x9be960766a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960766a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607669"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960766a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-along-east-version-25",
+            "region": {
+              "id": "0x9be9607669"
+            },
+            "constituency_number": "31"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607669",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-along-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607668"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:07.084Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Along_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-along-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603347"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607670",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-rumgong",
+            "names": [
+              {
+                "name": "Rumgong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rumgong_Assembly_constituency",
+            "wikidata_qid": "Q105474018",
+            "node_created_on": "2025-01-26T16:15:10.261Z",
+            "active_version": {
+              "id": "0x9be960766f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960766f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960766e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960766f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-rumgong-version-25",
+            "region": {
+              "id": "0x9be960766e"
+            },
+            "constituency_number": "32"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960766e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-rumgong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960766d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:08.721Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rumgong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-rumgong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960334b"
+          },
+          {
+            "id": "0x9be960334c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607675",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-mechuka",
+            "names": [
+              {
+                "name": "Mechuka"
+              },
+              {
+                "name": "Mechukha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mechuka_Assembly_constituency",
+            "wikidata_qid": "Q55261597",
+            "node_created_on": "2025-01-26T16:15:12.828Z",
+            "active_version": {
+              "id": "0x9be9607674"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607674"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607673"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607674",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-mechuka-version-25",
+            "region": {
+              "id": "0x9be9607673"
+            },
+            "constituency_number": "33"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607673",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-mechuka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607672"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:12.206Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mechuka_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-mechuka"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603350"
+          },
+          {
+            "id": "0x9be9603351"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960767a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-tuting–yingkiong",
+            "names": [
+              {
+                "name": "Tuting–Yingkiong"
+              },
+              {
+                "name": "Tuting Yingkiong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuting%E2%80%93Yingkiong_Assembly_constituency",
+            "wikidata_qid": "Q28172914",
+            "node_created_on": "2025-01-26T16:15:14.696Z",
+            "active_version": {
+              "id": "0x9be9607679"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607679"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607678"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607679",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-tuting–yingkiong-version-25",
+            "region": {
+              "id": "0x9be9607678"
+            },
+            "constituency_number": "34"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607678",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-tuting–yingkiong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607677"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:14.050Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuting%E2%80%93Yingkiong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-tuting–yingkiong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603355"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960767f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-pangin",
+            "names": [
+              {
+                "name": "Pangin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pangin_Assembly_constituency",
+            "wikidata_qid": "Q105474168",
+            "node_created_on": "2025-01-26T16:15:16.404Z",
+            "active_version": {
+              "id": "0x9be960767e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960767e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960767d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960767e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-pangin-version-25",
+            "region": {
+              "id": "0x9be960767d"
+            },
+            "constituency_number": "35"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960767d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-pangin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960767c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:15.768Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pangin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-pangin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603359"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607684",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-nari-koyu",
+            "names": [
+              {
+                "name": "Nari-Koyu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nari-Koyu_Assembly_constituency",
+            "wikidata_qid": "Q28173122",
+            "node_created_on": "2025-01-26T16:15:19.012Z",
+            "active_version": {
+              "id": "0x9be9607683"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607683"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607682"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607683",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-nari-koyu-version-25",
+            "region": {
+              "id": "0x9be9607682"
+            },
+            "constituency_number": "36"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607682",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-nari-koyu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607681"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:18.494Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nari-Koyu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-nari-koyu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960335d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607689",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-pasighat-west",
+            "names": [
+              {
+                "name": "Pasighat West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pasighat_West_Assembly_constituency",
+            "wikidata_qid": "Q28173096",
+            "node_created_on": "2025-01-26T16:15:22.955Z",
+            "active_version": {
+              "id": "0x9be9607688"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607688"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607687"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607688",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-pasighat-west-version-25",
+            "region": {
+              "id": "0x9be9607687"
+            },
+            "constituency_number": "37"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607687",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-pasighat-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607686"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:22.189Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pasighat_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-pasighat-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603361"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960768e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-pasighat-east",
+            "names": [
+              {
+                "name": "Pasighat East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pasighat_East_Assembly_constituency",
+            "wikidata_qid": "Q28173085",
+            "node_created_on": "2025-01-26T16:15:25.036Z",
+            "active_version": {
+              "id": "0x9be960768d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960768d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960768c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960768d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-pasighat-east-version-25",
+            "region": {
+              "id": "0x9be960768c"
+            },
+            "constituency_number": "38"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960768c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-pasighat-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960768b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:24.303Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pasighat_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-pasighat-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603365"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607693",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-mebo",
+            "names": [
+              {
+                "name": "Mebo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mebo_Assembly_constituency",
+            "wikidata_qid": "Q55261602",
+            "node_created_on": "2025-01-26T16:15:26.542Z",
+            "active_version": {
+              "id": "0x9be9607692"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607692"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607691"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607692",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-mebo-version-25",
+            "region": {
+              "id": "0x9be9607691"
+            },
+            "constituency_number": "39"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607691",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-mebo-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607690"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:25.871Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mebo_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-mebo"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603369"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9607698",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-mariyang-geku",
+            "names": [
+              {
+                "name": "Mariyang-Geku"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mariyang-Geku_Assembly_constituency",
+            "wikidata_qid": "Q25209450",
+            "node_created_on": "2025-01-26T16:15:28.784Z",
+            "active_version": {
+              "id": "0x9be9607697"
+            },
+            "versions": [
+              {
+                "id": "0x9be9607697"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9607696"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9607697",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-mariyang-geku-version-25",
+            "region": {
+              "id": "0x9be9607696"
+            },
+            "constituency_number": "40"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9607696",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-mariyang-geku-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9607695"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:27.773Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mariyang-Geku_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-mariyang-geku"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960336d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960769d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-anini",
+            "names": [
+              {
+                "name": "Anini"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anini_Assembly_constituency",
+            "wikidata_qid": "Q55261605",
+            "node_created_on": "2025-01-26T16:15:30.688Z",
+            "active_version": {
+              "id": "0x9be960769c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960769c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960769b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960769c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-anini-version-25",
+            "region": {
+              "id": "0x9be960769b"
+            },
+            "constituency_number": "41"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960769b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-anini-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960769a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:29.890Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anini_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-anini"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603371"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076a2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-dambuk",
+            "names": [
+              {
+                "name": "Dambuk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dambuk_Assembly_constituency",
+            "wikidata_qid": "Q55261606",
+            "node_created_on": "2025-01-26T16:15:32.303Z",
+            "active_version": {
+              "id": "0x9be96076a1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076a1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076a0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076a1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-dambuk-version-25",
+            "region": {
+              "id": "0x9be96076a0"
+            },
+            "constituency_number": "42"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076a0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-dambuk-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960769f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:31.689Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dambuk_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-dambuk"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603375"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076a7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-roing",
+            "names": [
+              {
+                "name": "Roing"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Roing_Assembly_constituency",
+            "wikidata_qid": "Q55261607",
+            "node_created_on": "2025-01-26T16:15:34.530Z",
+            "active_version": {
+              "id": "0x9be96076a6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076a6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076a5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076a6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-roing-version-25",
+            "region": {
+              "id": "0x9be96076a5"
+            },
+            "constituency_number": "43"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076a5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-roing-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076a4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:33.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Roing_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-roing"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603379"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076ac",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-tezu",
+            "names": [
+              {
+                "name": "Tezu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tezu_Assembly_constituency",
+            "wikidata_qid": "Q55261608",
+            "node_created_on": "2025-01-26T16:15:37.289Z",
+            "active_version": {
+              "id": "0x9be96076ab"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076ab"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076aa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076ab",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-tezu-version-25",
+            "region": {
+              "id": "0x9be96076aa"
+            },
+            "constituency_number": "44"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076aa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-tezu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076a9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:36.216Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tezu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-tezu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960337d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076b1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-hayuliang",
+            "names": [
+              {
+                "name": "Hayuliang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hayuliang_Assembly_constituency",
+            "wikidata_qid": "Q25209190",
+            "node_created_on": "2025-01-26T16:15:39.851Z",
+            "active_version": {
+              "id": "0x9be96076b0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076b0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076af"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076b0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-hayuliang-version-25",
+            "region": {
+              "id": "0x9be96076af"
+            },
+            "constituency_number": "45"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076af",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-hayuliang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076ae"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:39.139Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hayuliang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-hayuliang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603381"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076b6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-chowkham",
+            "names": [
+              {
+                "name": "Chowkham"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chowkham_Assembly_constituency",
+            "wikidata_qid": "Q55261609",
+            "node_created_on": "2025-01-26T16:15:41.802Z",
+            "active_version": {
+              "id": "0x9be96076b5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076b5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076b4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076b5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-chowkham-version-25",
+            "region": {
+              "id": "0x9be96076b4"
+            },
+            "constituency_number": "46"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076b4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-chowkham-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076b3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:41.047Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chowkham_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-chowkham"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96032b1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076bb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-namsai",
+            "names": [
+              {
+                "name": "Namsai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namsai_Assembly_constituency",
+            "wikidata_qid": "Q55261611",
+            "node_created_on": "2025-01-26T16:15:44.360Z",
+            "active_version": {
+              "id": "0x9be96076ba"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076ba"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076b9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076ba",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-namsai-version-25",
+            "region": {
+              "id": "0x9be96076b9"
+            },
+            "constituency_number": "47"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076b9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-namsai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076b8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:43.701Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namsai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-namsai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603388"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076c0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-lekang",
+            "names": [
+              {
+                "name": "Lekang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lekang_Assembly_constituency",
+            "wikidata_qid": "Q55261612",
+            "node_created_on": "2025-01-26T16:15:46.021Z",
+            "active_version": {
+              "id": "0x9be96076bf"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076bf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076be"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076bf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-lekang-version-25",
+            "region": {
+              "id": "0x9be96076be"
+            },
+            "constituency_number": "48"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076be",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-lekang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076bd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:45.500Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lekang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-lekang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960338c"
+          },
+          {
+            "id": "0x9be960338d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076c5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-bordumsa-diyun",
+            "names": [
+              {
+                "name": "Bordumsa-Diyun"
+              },
+              {
+                "name": "Bordumsa - Diyum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bordumsa-Diyun_Assembly_constituency",
+            "wikidata_qid": "Q28172944",
+            "node_created_on": "2025-01-26T16:15:49.786Z",
+            "active_version": {
+              "id": "0x9be96076c4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076c4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076c3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076c4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-bordumsa-diyun-version-25",
+            "region": {
+              "id": "0x9be96076c3"
+            },
+            "constituency_number": "49"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076c3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-bordumsa-diyun-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076c2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:48.282Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bordumsa-Diyun_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-bordumsa-diyun"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603391"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076ca",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-miao",
+            "names": [
+              {
+                "name": "Miao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Miao_Assembly_constituency",
+            "wikidata_qid": "Q55261615",
+            "node_created_on": "2025-01-26T16:15:52.859Z",
+            "active_version": {
+              "id": "0x9be96076c9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076c9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076c8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076c9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-miao-version-25",
+            "region": {
+              "id": "0x9be96076c8"
+            },
+            "constituency_number": "50"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076c8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-miao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076c7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:51.735Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Miao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-miao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603395"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076cf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-nampong",
+            "names": [
+              {
+                "name": "Nampong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nampong_Assembly_constituency",
+            "wikidata_qid": "Q28180074",
+            "node_created_on": "2025-01-26T16:15:55.316Z",
+            "active_version": {
+              "id": "0x9be96076ce"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076ce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076cd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076ce",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-nampong-version-25",
+            "region": {
+              "id": "0x9be96076cd"
+            },
+            "constituency_number": "51"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076cd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-nampong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076cc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:54.482Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nampong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-nampong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603399"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076d4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-changlang-south",
+            "names": [
+              {
+                "name": "Changlang South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Changlang_South_Assembly_constituency",
+            "wikidata_qid": "Q28172882",
+            "node_created_on": "2025-01-26T16:15:57.360Z",
+            "active_version": {
+              "id": "0x9be96076d3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076d3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076d2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076d3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-changlang-south-version-25",
+            "region": {
+              "id": "0x9be96076d2"
+            },
+            "constituency_number": "52"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076d2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-changlang-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076d1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:56.341Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Changlang_South_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-changlang-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960339d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076d9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-changlang-north",
+            "names": [
+              {
+                "name": "Changlang North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Changlang_North_Assembly_constituency",
+            "wikidata_qid": "Q28172827",
+            "node_created_on": "2025-01-26T16:15:59.307Z",
+            "active_version": {
+              "id": "0x9be96076d8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076d8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076d7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076d8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-changlang-north-version-25",
+            "region": {
+              "id": "0x9be96076d7"
+            },
+            "constituency_number": "53"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076d7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-changlang-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076d6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:15:58.594Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Changlang_North_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-changlang-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033a1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076de",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-namsang",
+            "names": [
+              {
+                "name": "Namsang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namsang_Assembly_constituency",
+            "wikidata_qid": "Q55261619",
+            "node_created_on": "2025-01-26T16:16:02.277Z",
+            "active_version": {
+              "id": "0x9be96076dd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076dd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076dc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076dd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-namsang-version-25",
+            "region": {
+              "id": "0x9be96076dc"
+            },
+            "constituency_number": "54"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076dc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-namsang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076db"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:01.488Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namsang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-namsang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033a5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076e3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-khonsa-east",
+            "names": [
+              {
+                "name": "Khonsa East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khonsa_East_Assembly_constituency",
+            "wikidata_qid": "Q28179977",
+            "node_created_on": "2025-01-26T16:16:04.193Z",
+            "active_version": {
+              "id": "0x9be96076e2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076e2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076e1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076e2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-khonsa-east-version-25",
+            "region": {
+              "id": "0x9be96076e1"
+            },
+            "constituency_number": "55"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076e1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-khonsa-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076e0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:03.407Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khonsa_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-khonsa-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033a9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076e8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-khonsa-west",
+            "names": [
+              {
+                "name": "Khonsa West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khonsa_West_Assembly_constituency",
+            "wikidata_qid": "Q55261620",
+            "node_created_on": "2025-01-26T16:16:06.276Z",
+            "active_version": {
+              "id": "0x9be96076e7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076e7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076e6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076e7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-khonsa-west-version-25",
+            "region": {
+              "id": "0x9be96076e6"
+            },
+            "constituency_number": "56"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076e6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-khonsa-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076e5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:05.298Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khonsa_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-khonsa-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033ad"
+          },
+          {
+            "id": "0x9be96033ae"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076ed",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-borduria–bagapani",
+            "names": [
+              {
+                "name": "Borduria–Bagapani"
+              },
+              {
+                "name": "Borduria Bogapani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Borduria%E2%80%93Bagapani_Assembly_constituency",
+            "wikidata_qid": "Q55261621",
+            "node_created_on": "2025-01-26T16:16:08.016Z",
+            "active_version": {
+              "id": "0x9be96076ec"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076ec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076eb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076ec",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-borduria–bagapani-version-25",
+            "region": {
+              "id": "0x9be96076eb"
+            },
+            "constituency_number": "57"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076eb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-borduria–bagapani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076ea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:07.502Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Borduria%E2%80%93Bagapani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-borduria–bagapani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033b2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076f2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-kanubari",
+            "names": [
+              {
+                "name": "Kanubari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanubari_Assembly_constituency",
+            "wikidata_qid": "Q55261622",
+            "node_created_on": "2025-01-26T16:16:10.881Z",
+            "active_version": {
+              "id": "0x9be96076f1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076f1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076f0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076f1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-kanubari-version-25",
+            "region": {
+              "id": "0x9be96076f0"
+            },
+            "constituency_number": "58"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076f0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-kanubari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076ef"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:09.732Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanubari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-kanubari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033b6"
+          },
+          {
+            "id": "0x9be96033b7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076f7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-longding–pumao",
+            "names": [
+              {
+                "name": "Longding–Pumao"
+              },
+              {
+                "name": "Longding Pumao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Longding%E2%80%93Pumao_Assembly_constituency",
+            "wikidata_qid": "Q55261623",
+            "node_created_on": "2025-01-26T16:16:12.716Z",
+            "active_version": {
+              "id": "0x9be96076f6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076f6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076f5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076f6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-longding–pumao-version-25",
+            "region": {
+              "id": "0x9be96076f5"
+            },
+            "constituency_number": "59"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076f5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-longding–pumao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076f4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:12.007Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Longding%E2%80%93Pumao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-longding–pumao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96033bb"
+          },
+          {
+            "id": "0x9be96033bc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96076fc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ar-pongchau-wakka",
+            "names": [
+              {
+                "name": "Pongchau-Wakka"
+              },
+              {
+                "name": "Pongchao Wakka"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pongchau-Wakka_Assembly_constituency",
+            "wikidata_qid": "Q28419665",
+            "node_created_on": "2025-01-26T16:16:14.364Z",
+            "active_version": {
+              "id": "0x9be96076fb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96076fb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96076fa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96076fb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ar-pongchau-wakka-version-25",
+            "region": {
+              "id": "0x9be96076fa"
+            },
+            "constituency_number": "60"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96076fa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ar-pongchau-wakka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96076f9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-arunachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T16:16:13.715Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pongchau-Wakka_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ar-pongchau-wakka"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-26T16:16:14.810Z"
+}

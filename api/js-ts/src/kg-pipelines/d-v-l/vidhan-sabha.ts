@@ -99,11 +99,12 @@ async function vidhansabhaConstituenciesPipeline(
     return lastStepOutput.transformedVidhansabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
+    throw new Error("Error in processing");
   }
 }
 
 (async () => {
-  let state = vidhansabhaSeats[0];
+  let state = vidhansabhaSeats[10];
   const saveToKG = true;
 
   await vidhansabhaConstituenciesPipeline(state, state.vidhansabha_constituencies, saveToKG);
