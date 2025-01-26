@@ -1,6 +1,6 @@
 import path from "path";
 import fs from "fs";
-import { flatten, groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
+import { filter, flatten, groupBy, isEqual, keyBy, map, reduce, size, uniqWith } from "lodash";
 
 import { queryNodeType, createNodeType } from "../knowledge-graph/generic/generic.create";
 import { createGraphQLClient } from "../knowledge-graph/generic/generic.utils";
@@ -274,6 +274,33 @@ export async function transformVidhansabhaConstituenciesWikipediaData(outputs: R
   };
 }
 
+export async function checkForDuplicateNameIds(outputs: Record<string, any>): Promise<{
+  transformedVidhansabhaConstituenciesWikipedia: VidhansabhaConstituencyTransformationWikidata[];
+  status: StepStatus;
+}> {
+  const { transformedVidhansabhaConstituenciesWikipedia } = outputs;
+
+  const repeatedNameIds = groupBy(transformedVidhansabhaConstituenciesWikipedia, "name_id");
+  const duplicates = filter(repeatedNameIds, (val) => val.length > 1);
+  const keyedByWikidataQId = keyBy(transformedVidhansabhaConstituenciesWikipedia, "wikidata_qid");
+
+  if (duplicates.length) {
+    duplicates.forEach((val) => {
+      val.forEach((v, i) => {
+        keyedByWikidataQId[v.wikidata_qid] = {
+          ...keyedByWikidataQId[v.wikidata_qid],
+          name_id: `${keyedByWikidataQId[v.wikidata_qid].name_id}-${i}`,
+        };
+      });
+    });
+  }
+
+  return {
+    transformedVidhansabhaConstituenciesWikipedia: Object.values(keyedByWikidataQId),
+    status: "SUCCESS",
+  };
+}
+
 export async function transformVidhansabhaConstituenciesWithECIGeo(outputs: Record<string, any>): Promise<{
   transformedVidhansabhaConstituenciesECIGeo: VidhansabhaConstituencyTransformationECIGeo[];
   unmatchedVidhansabhaConstituenciesECIGeo: VidhansabhaConstituencyTransformationWikidata[];
@@ -327,7 +354,61 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
   const graphQLClient = await createGraphQLClient();
 
   for (let td of transformedVidhansabhaConstituenciesECIGeo) {
-    let toSaveVidhansabhaConstituency = {
+    let geo_eci,
+      geoECIId,
+      geoOSMId,
+      geoSourceId,
+      eciVidhansabhaConstituencyRegionId,
+      toSaveVidhansabhaConstituencyRegion: any;
+
+    if (td.geo_eci) {
+      const vidhansabhaConstituencyMapECI = polygonToMultiPolygon(td.geo_eci);
+
+      geoSourceId = await createNodeType("_Source_Data_", graphQLClient, {
+        source: { name_id: "election-commission-of-india" },
+        source_url: `https://results.eci.gov.in/ResultAcGenNov2024/ac/${td.geo_eci.properties.ST_CODE}.js`,
+        source_data: `${JSON.stringify(td.geo_eci)}`,
+      });
+
+      geoECIId = await createNodeType("_Geo_", graphQLClient, {
+        category: "Region",
+        area: multiPolygonToDgraphMultiPolygon(vidhansabhaConstituencyMapECI.geometry.coordinates),
+        node_created_on: new Date(),
+        source: { id: geoSourceId },
+      });
+    }
+
+    toSaveVidhansabhaConstituencyRegion = {
+      name_id: `${td.name_id}-version-25-region`,
+      geo_boundary: [],
+      states_union_territories: [{ name_id: `${td.states_union_territories}-version-25-region` }],
+      node_created_on: new Date(),
+    };
+
+    if (geoECIId) {
+      toSaveVidhansabhaConstituencyRegion.geo_boundary.push({ id: geoECIId });
+    }
+
+    // save vidhansabhaConstituency region
+    eciVidhansabhaConstituencyRegionId = await createNodeType(
+      "_Indian_Vidhansabha_Constituency_Version_Region_",
+      graphQLClient,
+      toSaveVidhansabhaConstituencyRegion
+    );
+
+    let toSaveVidhansabhaConstituencyVersion: any = {
+      name_id: `${td.name_id}-version-25`,
+      region: { id: eciVidhansabhaConstituencyRegionId },
+      constituency_number: td.constituency_number,
+    };
+
+    const vidhansabhaConstituencyVersionId = await createNodeType(
+      "_Indian_Vidhansabha_Constituency_Version_",
+      graphQLClient,
+      toSaveVidhansabhaConstituencyVersion
+    );
+
+    let toSaveVidhansabhaConstituency: any = {
       name_id: td.name_id,
       names: td.names.map((val: any) => {
         return {
@@ -335,23 +416,10 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
         };
       }),
 
-      states_union_territories: [{ name_id: td.states_union_territories }],
-      established_on_string: td.established_on_string,
-
       wikipedia_page: td.wikipedia_page,
       wikidata_qid: td.wikidata_qid,
 
       node_created_on: new Date(),
-    };
-
-    const vidhansabhaConstituencyMapECI = polygonToMultiPolygon(td.geo_eci);
-
-    let geo_eci = {
-      area: multiPolygonToDgraphMultiPolygon(vidhansabhaConstituencyMapECI.geometry.coordinates),
-      category: "Region",
-      source_name: "Election Commission Of India",
-      source_url: `https://results.eci.gov.in/ResultAcGenNov2024/ac/${td.geo_eci.properties.ST_CODE}.js`,
-      source_data: `${JSON.stringify(td.geo_eci)}`,
     };
 
     let nameIds: any = [];
@@ -360,29 +428,14 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       nameIds.push({ id: nameId });
     }
 
+    toSaveVidhansabhaConstituency.active_version = { id: vidhansabhaConstituencyVersionId };
+    toSaveVidhansabhaConstituency.versions = [{ id: vidhansabhaConstituencyVersionId }];
+    toSaveVidhansabhaConstituency.regions = [{ id: eciVidhansabhaConstituencyRegionId }];
+
     const vidhansabhaConstituencyId = await createNodeType(
       "_Indian_Vidhansabha_Constituency_",
       graphQLClient,
       toSaveVidhansabhaConstituency
-    );
-
-    const geoECIId = await createNodeType("_Geo_", graphQLClient, geo_eci);
-
-    let toSaveVidhansabhaConstituencyRegion = {
-      self: { name_id: toSaveVidhansabhaConstituency.name_id },
-      geo_boundary: [
-        {
-          id: geoECIId,
-        },
-      ],
-      node_created_on: new Date(),
-    };
-
-    // save vidhansabhaConstituency region
-    const vidhansabhaConstituencyRegionId = await createNodeType(
-      "_Indian_Vidhansabha_Constituency_Region_",
-      graphQLClient,
-      toSaveVidhansabhaConstituencyRegion
     );
 
     savedToKnowledgeGraph.push({
@@ -391,15 +444,21 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
         vidhansabhaConstituencyId,
         toSaveVidhansabhaConstituency,
       },
+      vidhansabhaConstituencyVersion: {
+        vidhansabhaConstituencyVersionId,
+        toSaveVidhansabhaConstituencyVersion,
+      },
       vidhansabhaConstituencyRegion: {
-        vidhansabhaConstituencyRegionId,
+        vidhansabhaConstituencyRegionId: eciVidhansabhaConstituencyRegionId,
         toSaveVidhansabhaConstituencyRegion,
       },
       geo: {
-        geo_eci: {
-          geo_eci,
-          geoECIId,
-        },
+        geo_eci: geo_eci
+          ? {
+              geo_eci,
+              geoECIId,
+            }
+          : null,
       },
       id_url: td.id_url,
       name_id: td.name_id,
@@ -408,7 +467,8 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
     console.log({
       nameIds,
       vidhansabhaConstituencyId,
-      vidhansabhaConstituencyRegionId,
+      vidhansabhaConstituencyRegionId: eciVidhansabhaConstituencyRegionId,
+      vidhansabhaConstituencyVersionId,
       id_url: td.id_url,
       name_id: td.name_id,
     });
