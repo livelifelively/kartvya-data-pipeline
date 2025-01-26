@@ -1,0 +1,6195 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96085f8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085f9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-karnah",
+            "names": [
+              {
+                "name": "Karnah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karnah_Assembly_constituency",
+            "wikidata_qid": "Q55432140",
+            "node_created_on": "2025-01-26T17:04:55.850Z",
+            "active_version": {
+              "id": "0x9be96085f7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085f7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085f6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085f7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-karnah-version-25",
+            "region": {
+              "id": "0x9be96085f6"
+            },
+            "constituency_number": "1"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085f6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-karnah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085f5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:04:55.180Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karnah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-karnah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96085fe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96085ff",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-trehgam",
+            "names": [
+              {
+                "name": "Trehgam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Trehgam_Assembly_constituency",
+            "wikidata_qid": "Q130052463",
+            "node_created_on": "2025-01-26T17:04:58.412Z",
+            "active_version": {
+              "id": "0x9be96085fd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96085fd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96085fc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96085fd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-trehgam-version-25",
+            "region": {
+              "id": "0x9be96085fc"
+            },
+            "constituency_number": "2"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96085fc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-trehgam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96085fb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:04:57.594Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Trehgam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-trehgam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605920"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608604",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kupwara",
+            "names": [
+              {
+                "name": "Kupwara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kupwara_Assembly_constituency",
+            "wikidata_qid": "Q55432141",
+            "node_created_on": "2025-01-26T17:05:00.355Z",
+            "active_version": {
+              "id": "0x9be9608603"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608603"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608602"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608603",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kupwara-version-25",
+            "region": {
+              "id": "0x9be9608602"
+            },
+            "constituency_number": "3"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608602",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kupwara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608601"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:04:59.742Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kupwara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kupwara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608609"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960860a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-lolab",
+            "names": [
+              {
+                "name": "Lolab"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lolab_Assembly_constituency",
+            "wikidata_qid": "Q55432142",
+            "node_created_on": "2025-01-26T17:05:02.019Z",
+            "active_version": {
+              "id": "0x9be9608608"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608608"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608607"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608608",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-lolab-version-25",
+            "region": {
+              "id": "0x9be9608607"
+            },
+            "constituency_number": "4"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608607",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-lolab-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608606"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:01.380Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lolab_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-lolab"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960860f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608610",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-handwara",
+            "names": [
+              {
+                "name": "Handwara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Handwara_Assembly_constituency",
+            "wikidata_qid": "Q55432143",
+            "node_created_on": "2025-01-26T17:05:04.353Z",
+            "active_version": {
+              "id": "0x9be960860e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960860e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960860d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960860e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-handwara-version-25",
+            "region": {
+              "id": "0x9be960860d"
+            },
+            "constituency_number": "5"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960860d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-handwara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960860c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:03.224Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Handwara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-handwara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608615"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608616",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-langate",
+            "names": [
+              {
+                "name": "Langate"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Langate_Assembly_constituency",
+            "wikidata_qid": "Q55432144",
+            "node_created_on": "2025-01-26T17:05:06.498Z",
+            "active_version": {
+              "id": "0x9be9608614"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608614"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608613"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608614",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-langate-version-25",
+            "region": {
+              "id": "0x9be9608613"
+            },
+            "constituency_number": "6"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608613",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-langate-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608612"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:05.783Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Langate_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-langate"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960861b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960861c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-sopore",
+            "names": [
+              {
+                "name": "Sopore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sopore_Assembly_constituency",
+            "wikidata_qid": "Q55432146",
+            "node_created_on": "2025-01-26T17:05:08.685Z",
+            "active_version": {
+              "id": "0x9be960861a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960861a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608619"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960861a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-sopore-version-25",
+            "region": {
+              "id": "0x9be9608619"
+            },
+            "constituency_number": "7"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608619",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-sopore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608618"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:07.962Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sopore_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-sopore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608621"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608622",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-rafiabad",
+            "names": [
+              {
+                "name": "Rafiabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rafiabad_Assembly_constituency",
+            "wikidata_qid": "Q30599397",
+            "node_created_on": "2025-01-26T17:05:11.004Z",
+            "active_version": {
+              "id": "0x9be9608620"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608620"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960861f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608620",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-rafiabad-version-25",
+            "region": {
+              "id": "0x9be960861f"
+            },
+            "constituency_number": "8"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960861f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-rafiabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960861e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:10.320Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rafiabad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-rafiabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608627"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608628",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-uri",
+            "names": [
+              {
+                "name": "Uri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uri_Assembly_constituency",
+            "wikidata_qid": "Q55432145",
+            "node_created_on": "2025-01-26T17:05:12.976Z",
+            "active_version": {
+              "id": "0x9be9608626"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608626"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608625"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608626",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-uri-version-25",
+            "region": {
+              "id": "0x9be9608625"
+            },
+            "constituency_number": "9"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608625",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-uri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608624"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:12.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-uri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058f6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960862d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-baramulla",
+            "names": [
+              {
+                "name": "Baramulla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baramulla_Assembly_constituency",
+            "wikidata_qid": "Q55432152",
+            "node_created_on": "2025-01-26T17:05:15.483Z",
+            "active_version": {
+              "id": "0x9be960862c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960862c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960862b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960862c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-baramulla-version-25",
+            "region": {
+              "id": "0x9be960862b"
+            },
+            "constituency_number": "10"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960862b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-baramulla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960862a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:14.894Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baramulla_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-baramulla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608632"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608633",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-gulmarg",
+            "names": [
+              {
+                "name": "Gulmarg"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gulmarg_Assembly_constituency",
+            "wikidata_qid": "Q55432153",
+            "node_created_on": "2025-01-26T17:05:17.180Z",
+            "active_version": {
+              "id": "0x9be9608631"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608631"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608630"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608631",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-gulmarg-version-25",
+            "region": {
+              "id": "0x9be9608630"
+            },
+            "constituency_number": "11"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608630",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-gulmarg-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960862f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:16.329Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gulmarg_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-gulmarg"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608638"
+          },
+          {
+            "id": "0x9be9608639"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960863a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-wagoora–kreeri",
+            "names": [
+              {
+                "name": "Wagoora–Kreeri"
+              },
+              {
+                "name": "Wagoora - Kreeri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wagoora%E2%80%93Kreeri_Assembly_constituency",
+            "wikidata_qid": "Q130213803",
+            "node_created_on": "2025-01-26T17:05:19.711Z",
+            "active_version": {
+              "id": "0x9be9608637"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608637"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608636"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608637",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-wagoora–kreeri-version-25",
+            "region": {
+              "id": "0x9be9608636"
+            },
+            "constituency_number": "12"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608636",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-wagoora–kreeri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608635"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:18.296Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wagoora%E2%80%93Kreeri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-wagoora–kreeri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960863f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608640",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-pattan",
+            "names": [
+              {
+                "name": "Pattan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pattan_Assembly_constituency",
+            "wikidata_qid": "Q55432154",
+            "node_created_on": "2025-01-26T17:05:22.019Z",
+            "active_version": {
+              "id": "0x9be960863e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960863e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960863d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960863e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-pattan-version-25",
+            "region": {
+              "id": "0x9be960863d"
+            },
+            "constituency_number": "13"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960863d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-pattan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960863c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:21.346Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pattan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-pattan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608645"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608646",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-sonawari",
+            "names": [
+              {
+                "name": "Sonawari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sonawari_Assembly_constituency",
+            "wikidata_qid": "Q55432150",
+            "node_created_on": "2025-01-26T17:05:24.830Z",
+            "active_version": {
+              "id": "0x9be9608644"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608644"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608643"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608644",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-sonawari-version-25",
+            "region": {
+              "id": "0x9be9608643"
+            },
+            "constituency_number": "14"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608643",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-sonawari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608642"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:24.112Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sonawari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-sonawari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960864b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960864c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-bandipora",
+            "names": [
+              {
+                "name": "Bandipora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bandipora_Assembly_constituency",
+            "wikidata_qid": "Q55432148",
+            "node_created_on": "2025-01-26T17:05:27.181Z",
+            "active_version": {
+              "id": "0x9be960864a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960864a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608649"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960864a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-bandipora-version-25",
+            "region": {
+              "id": "0x9be9608649"
+            },
+            "constituency_number": "15"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608649",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-bandipora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608648"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:26.061Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bandipora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-bandipora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608651"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608652",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-gurez",
+            "names": [
+              {
+                "name": "Gurez"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gurez_Assembly_constituency",
+            "wikidata_qid": "Q55432147",
+            "node_created_on": "2025-01-26T17:05:29.234Z",
+            "active_version": {
+              "id": "0x9be9608650"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608650"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960864f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608650",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-gurez-version-25",
+            "region": {
+              "id": "0x9be960864f"
+            },
+            "constituency_number": "16"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960864f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-gurez-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960864e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:28.516Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gurez_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-gurez"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608657"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608658",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kangan",
+            "names": [
+              {
+                "name": "Kangan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kangan_Assembly_constituency",
+            "wikidata_qid": "Q55432155",
+            "node_created_on": "2025-01-26T17:05:31.792Z",
+            "active_version": {
+              "id": "0x9be9608656"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608656"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608655"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608656",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kangan-version-25",
+            "region": {
+              "id": "0x9be9608655"
+            },
+            "constituency_number": "17"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608655",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kangan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608654"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:30.972Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kangan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kangan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605902"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960865d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-ganderbal",
+            "names": [
+              {
+                "name": "Ganderbal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ganderbal_Assembly_constituency",
+            "wikidata_qid": "Q55432156",
+            "node_created_on": "2025-01-26T17:05:33.978Z",
+            "active_version": {
+              "id": "0x9be960865c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960865c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960865b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960865c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-ganderbal-version-25",
+            "region": {
+              "id": "0x9be960865b"
+            },
+            "constituency_number": "18"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960865b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-ganderbal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960865a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:33.298Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ganderbal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-ganderbal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608662"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608663",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-hazratbal",
+            "names": [
+              {
+                "name": "Hazratbal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hazratbal_Assembly_constituency",
+            "wikidata_qid": "Q55432157",
+            "node_created_on": "2025-01-26T17:05:35.788Z",
+            "active_version": {
+              "id": "0x9be9608661"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608661"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608660"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608661",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-hazratbal-version-25",
+            "region": {
+              "id": "0x9be9608660"
+            },
+            "constituency_number": "19"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608660",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-hazratbal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960865f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:34.967Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hazratbal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-hazratbal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608668"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608669",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-khanyar",
+            "names": [
+              {
+                "name": "Khanyar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khanyar_Assembly_constituency",
+            "wikidata_qid": "Q55432163",
+            "node_created_on": "2025-01-26T17:05:37.733Z",
+            "active_version": {
+              "id": "0x9be9608667"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608667"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608666"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608667",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-khanyar-version-25",
+            "region": {
+              "id": "0x9be9608666"
+            },
+            "constituency_number": "20"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608666",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-khanyar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608665"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:36.986Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khanyar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-khanyar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960866e"
+          },
+          {
+            "id": "0x9be960866f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608670",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-habba-kadal",
+            "names": [
+              {
+                "name": "Habba Kadal"
+              },
+              {
+                "name": "Habbakadal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Habba_Kadal_Assembly_constituency",
+            "wikidata_qid": "Q55432164",
+            "node_created_on": "2025-01-26T17:05:40.191Z",
+            "active_version": {
+              "id": "0x9be960866d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960866d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960866c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960866d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-habba-kadal-version-25",
+            "region": {
+              "id": "0x9be960866c"
+            },
+            "constituency_number": "21"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960866c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-habba-kadal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960866b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:38.991Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Habba_Kadal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-habba-kadal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608675"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608676",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-lal-chowk",
+            "names": [
+              {
+                "name": "Lal Chowk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lal_Chowk_Assembly_constituency",
+            "wikidata_qid": "Q130199493",
+            "node_created_on": "2025-01-26T17:05:42.475Z",
+            "active_version": {
+              "id": "0x9be9608674"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608674"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608673"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608674",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-lal-chowk-version-25",
+            "region": {
+              "id": "0x9be9608673"
+            },
+            "constituency_number": "22"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608673",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-lal-chowk-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608672"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:41.732Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lal_Chowk_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-lal-chowk"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960867b"
+          },
+          {
+            "id": "0x9be960867c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960867d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-chanapora",
+            "names": [
+              {
+                "name": "Chanapora"
+              },
+              {
+                "name": "Channapora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chanapora_Assembly_constituency",
+            "wikidata_qid": "Q130213794",
+            "node_created_on": "2025-01-26T17:05:44.389Z",
+            "active_version": {
+              "id": "0x9be960867a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960867a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608679"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960867a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-chanapora-version-25",
+            "region": {
+              "id": "0x9be9608679"
+            },
+            "constituency_number": "23"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608679",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-chanapora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608678"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:43.773Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chanapora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-chanapora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608682"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608683",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-zadibal",
+            "names": [
+              {
+                "name": "Zadibal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Zadibal_Assembly_constituency",
+            "wikidata_qid": "Q55432159",
+            "node_created_on": "2025-01-26T17:05:46.979Z",
+            "active_version": {
+              "id": "0x9be9608681"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608681"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608680"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608681",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-zadibal-version-25",
+            "region": {
+              "id": "0x9be9608680"
+            },
+            "constituency_number": "24"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608680",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-zadibal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960867f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:46.308Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Zadibal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-zadibal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608688"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608689",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-eidgah",
+            "names": [
+              {
+                "name": "Eidgah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Eidgah_Assembly_constituency",
+            "wikidata_qid": "Q55432161",
+            "node_created_on": "2025-01-26T17:05:48.924Z",
+            "active_version": {
+              "id": "0x9be9608687"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608687"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608686"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608687",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-eidgah-version-25",
+            "region": {
+              "id": "0x9be9608686"
+            },
+            "constituency_number": "25"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608686",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-eidgah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608685"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:48.384Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Eidgah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-eidgah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960868e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960868f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-central-shalteng",
+            "names": [
+              {
+                "name": "Central Shalteng"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Central_Shalteng_Assembly_constituency",
+            "wikidata_qid": "Q130052482",
+            "node_created_on": "2025-01-26T17:05:51.016Z",
+            "active_version": {
+              "id": "0x9be960868d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960868d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960868c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960868d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-central-shalteng-version-25",
+            "region": {
+              "id": "0x9be960868c"
+            },
+            "constituency_number": "26"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960868c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-central-shalteng-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960868b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:50.294Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Central_Shalteng_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-central-shalteng"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058ea"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608694",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-budgam",
+            "names": [
+              {
+                "name": "Budgam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Budgam_Assembly_constituency",
+            "wikidata_qid": "Q55432170",
+            "node_created_on": "2025-01-26T17:05:53.402Z",
+            "active_version": {
+              "id": "0x9be9608693"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608693"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608692"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608693",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-budgam-version-25",
+            "region": {
+              "id": "0x9be9608692"
+            },
+            "constituency_number": "27"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608692",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-budgam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608691"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:52.581Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Budgam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-budgam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608699"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960869a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-beerwah",
+            "names": [
+              {
+                "name": "Beerwah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Beerwah_Assembly_constituency",
+            "wikidata_qid": "Q55432171",
+            "node_created_on": "2025-01-26T17:05:55.345Z",
+            "active_version": {
+              "id": "0x9be9608698"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608698"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608697"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608698",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-beerwah-version-25",
+            "region": {
+              "id": "0x9be9608697"
+            },
+            "constituency_number": "28"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608697",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-beerwah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608696"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:54.526Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Beerwah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-beerwah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960869f"
+          },
+          {
+            "id": "0x9be96086a0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086a1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-khan-sahib",
+            "names": [
+              {
+                "name": "Khan Sahib"
+              },
+              {
+                "name": "Khansahib"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khan_Sahib_Assembly_constituency",
+            "wikidata_qid": "Q55432172",
+            "node_created_on": "2025-01-26T17:05:57.523Z",
+            "active_version": {
+              "id": "0x9be960869e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960869e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960869d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960869e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-khan-sahib-version-25",
+            "region": {
+              "id": "0x9be960869d"
+            },
+            "constituency_number": "29"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960869d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-khan-sahib-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960869c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:56.883Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khan_Sahib_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-khan-sahib"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086a6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086a7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-chrar-i-sharief",
+            "names": [
+              {
+                "name": "Chrar-i-Sharief"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Charari_Sharief_Assembly_constituency",
+            "wikidata_qid": "Q55432173",
+            "node_created_on": "2025-01-26T17:06:00.697Z",
+            "active_version": {
+              "id": "0x9be96086a5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086a5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086a4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086a5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-chrar-i-sharief-version-25",
+            "region": {
+              "id": "0x9be96086a4"
+            },
+            "constituency_number": "30"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086a4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-chrar-i-sharief-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086a3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:05:59.342Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Charari_Sharief_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-chrar-i-sharief"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086ac"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086ad",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-chadoora",
+            "names": [
+              {
+                "name": "Chadoora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chadoora_Assembly_constituency",
+            "wikidata_qid": "Q55432169",
+            "node_created_on": "2025-01-26T17:06:02.714Z",
+            "active_version": {
+              "id": "0x9be96086ab"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086ab"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086aa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086ab",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-chadoora-version-25",
+            "region": {
+              "id": "0x9be96086aa"
+            },
+            "constituency_number": "31"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086aa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-chadoora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086a9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:02.003Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chadoora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-chadoora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086b2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086b3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-pampore",
+            "names": [
+              {
+                "name": "Pampore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pampore_Assembly_constituency",
+            "wikidata_qid": "Q55432175",
+            "node_created_on": "2025-01-26T17:06:05.279Z",
+            "active_version": {
+              "id": "0x9be96086b1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086b1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086b0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086b1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-pampore-version-25",
+            "region": {
+              "id": "0x9be96086b0"
+            },
+            "constituency_number": "32"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086b0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-pampore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086af"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:04.047Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pampore_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-pampore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086b8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086b9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-tral",
+            "names": [
+              {
+                "name": "Tral"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tral_Assembly_constituency",
+            "wikidata_qid": "Q55432174",
+            "node_created_on": "2025-01-26T17:06:07.533Z",
+            "active_version": {
+              "id": "0x9be96086b7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086b7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086b6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086b7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-tral-version-25",
+            "region": {
+              "id": "0x9be96086b6"
+            },
+            "constituency_number": "33"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086b6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-tral-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086b5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:06.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tral_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-tral"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960592c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086be",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-pulwama",
+            "names": [
+              {
+                "name": "Pulwama"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pulwama_Assembly_constituency",
+            "wikidata_qid": "Q55432176",
+            "node_created_on": "2025-01-26T17:06:10.197Z",
+            "active_version": {
+              "id": "0x9be96086bd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086bd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086bc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086bd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-pulwama-version-25",
+            "region": {
+              "id": "0x9be96086bc"
+            },
+            "constituency_number": "34"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086bc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-pulwama-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086bb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:08.687Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pulwama_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-pulwama"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086c3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086c4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-rajpora",
+            "names": [
+              {
+                "name": "Rajpora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajpora_Assembly_constituency",
+            "wikidata_qid": "Q107481821",
+            "node_created_on": "2025-01-26T17:06:12.756Z",
+            "active_version": {
+              "id": "0x9be96086c2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086c2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086c1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086c2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-rajpora-version-25",
+            "region": {
+              "id": "0x9be96086c1"
+            },
+            "constituency_number": "35"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086c1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-rajpora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086c0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:11.935Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajpora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-rajpora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086c9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086ca",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-zainapora",
+            "names": [
+              {
+                "name": "Zainapora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Zainapora_Assembly_constituency",
+            "wikidata_qid": "Q130199461",
+            "node_created_on": "2025-01-26T17:06:14.701Z",
+            "active_version": {
+              "id": "0x9be96086c8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086c8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086c7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086c8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-zainapora-version-25",
+            "region": {
+              "id": "0x9be96086c7"
+            },
+            "constituency_number": "36"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086c7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-zainapora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086c6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:13.992Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Zainapora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-zainapora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960594a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086cf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-shopian",
+            "names": [
+              {
+                "name": "Shopian"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shopian_Assembly_constituency",
+            "wikidata_qid": "Q55432178",
+            "node_created_on": "2025-01-26T17:06:17.261Z",
+            "active_version": {
+              "id": "0x9be96086ce"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086ce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086cd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086ce",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-shopian-version-25",
+            "region": {
+              "id": "0x9be96086cd"
+            },
+            "constituency_number": "37"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086cd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-shopian-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086cc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:16.543Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shopian_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-shopian"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086d4"
+          },
+          {
+            "id": "0x9be96086d5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086d6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-d.-h.-pora",
+            "names": [
+              {
+                "name": "D. H. Pora"
+              },
+              {
+                "name": "D.H. Pora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Damhal_Hanji_Pora_Assembly_constituency",
+            "wikidata_qid": "Q130052475",
+            "node_created_on": "2025-01-26T17:06:19.413Z",
+            "active_version": {
+              "id": "0x9be96086d3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086d3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086d2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086d3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-d.-h.-pora-version-25",
+            "region": {
+              "id": "0x9be96086d2"
+            },
+            "constituency_number": "38"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086d2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-d.-h.-pora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086d1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:18.387Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Damhal_Hanji_Pora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-d.-h.-pora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960591a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086db",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kulgam",
+            "names": [
+              {
+                "name": "Kulgam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kulgam_Assembly_constituency",
+            "wikidata_qid": "Q55432180",
+            "node_created_on": "2025-01-26T17:06:21.910Z",
+            "active_version": {
+              "id": "0x9be96086da"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086da"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086d9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086da",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kulgam-version-25",
+            "region": {
+              "id": "0x9be96086d9"
+            },
+            "constituency_number": "39"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086d9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kulgam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086d8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:21.356Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kulgam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kulgam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086e0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086e1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-devsar",
+            "names": [
+              {
+                "name": "Devsar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Devsar,_Jammu_and_Kashmir_Assembly_constituency",
+            "wikidata_qid": "Q55432184",
+            "node_created_on": "2025-01-26T17:06:24.183Z",
+            "active_version": {
+              "id": "0x9be96086df"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086df"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086de"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086df",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-devsar-version-25",
+            "region": {
+              "id": "0x9be96086de"
+            },
+            "constituency_number": "40"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086de",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-devsar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086dd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:23.405Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Devsar,_Jammu_and_Kashmir_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-devsar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086e6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086e7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-dooru",
+            "names": [
+              {
+                "name": "Dooru"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dooru_Assembly_constituency",
+            "wikidata_qid": "Q55432185",
+            "node_created_on": "2025-01-26T17:06:27.194Z",
+            "active_version": {
+              "id": "0x9be96086e5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086e5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086e4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086e5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-dooru-version-25",
+            "region": {
+              "id": "0x9be96086e4"
+            },
+            "constituency_number": "41"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086e4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-dooru-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086e3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:26.372Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dooru_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-dooru"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086ec"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086ed",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kokernag",
+            "names": [
+              {
+                "name": "Kokernag"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kokernag_Assembly_constituency",
+            "wikidata_qid": "Q55432186",
+            "node_created_on": "2025-01-26T17:06:29.295Z",
+            "active_version": {
+              "id": "0x9be96086eb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086eb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086ea"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086eb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kokernag-version-25",
+            "region": {
+              "id": "0x9be96086ea"
+            },
+            "constituency_number": "42"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086ea",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kokernag-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086e9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:28.736Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kokernag_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kokernag"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086f2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086f3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-anantnag-west",
+            "names": [
+              {
+                "name": "Anantnag West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anantnag_West_Assembly_constituency",
+            "wikidata_qid": "Q130199467",
+            "node_created_on": "2025-01-26T17:06:32.036Z",
+            "active_version": {
+              "id": "0x9be96086f1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086f1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086f0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086f1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-anantnag-west-version-25",
+            "region": {
+              "id": "0x9be96086f0"
+            },
+            "constituency_number": "43"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086f0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-anantnag-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086ef"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:31.393Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anantnag_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-anantnag-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058e4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086f8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-anantnag",
+            "names": [
+              {
+                "name": "Anantnag"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anantnag_Assembly_constituency",
+            "wikidata_qid": "Q25209003",
+            "node_created_on": "2025-01-26T17:06:34.361Z",
+            "active_version": {
+              "id": "0x9be96086f7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086f7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086f6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086f7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-anantnag-version-25",
+            "region": {
+              "id": "0x9be96086f6"
+            },
+            "constituency_number": "44"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086f6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-anantnag-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086f5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:33.543Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anantnag_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-anantnag"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96086fd"
+          },
+          {
+            "id": "0x9be96086fe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96086ff",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-srigufwara–bijbehara",
+            "names": [
+              {
+                "name": "Srigufwara–Bijbehara"
+              },
+              {
+                "name": "Srigufwara - Bijbehara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Srigufwara%E2%80%93Bijbehara_Assembly_constituency",
+            "wikidata_qid": "Q55432189",
+            "node_created_on": "2025-01-26T17:06:36.313Z",
+            "active_version": {
+              "id": "0x9be96086fc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96086fc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96086fb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96086fc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-srigufwara–bijbehara-version-25",
+            "region": {
+              "id": "0x9be96086fb"
+            },
+            "constituency_number": "45"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96086fb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-srigufwara–bijbehara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96086fa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:35.591Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Srigufwara%E2%80%93Bijbehara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-srigufwara–bijbehara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608704"
+          },
+          {
+            "id": "0x9be9608705"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608706",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-shangus–anantnag-east",
+            "names": [
+              {
+                "name": "Shangus–Anantnag East"
+              },
+              {
+                "name": "Shangus - Anantnag East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shangus%E2%80%93Anantnag_East_Assembly_constituency",
+            "wikidata_qid": "Q55432187",
+            "node_created_on": "2025-01-26T17:06:38.764Z",
+            "active_version": {
+              "id": "0x9be9608703"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608703"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608702"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608703",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-shangus–anantnag-east-version-25",
+            "region": {
+              "id": "0x9be9608702"
+            },
+            "constituency_number": "46"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608702",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-shangus–anantnag-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608701"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:37.986Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shangus%E2%80%93Anantnag_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-shangus–anantnag-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960870b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960870c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-pahalgam",
+            "names": [
+              {
+                "name": "Pahalgam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pahalgam_Assembly_constituency",
+            "wikidata_qid": "Q48727616",
+            "node_created_on": "2025-01-26T17:06:41.041Z",
+            "active_version": {
+              "id": "0x9be960870a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960870a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608709"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960870a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-pahalgam-version-25",
+            "region": {
+              "id": "0x9be9608709"
+            },
+            "constituency_number": "47"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608709",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-pahalgam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608708"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:40.484Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pahalgam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-pahalgam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608711"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608712",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-inderwal",
+            "names": [
+              {
+                "name": "Inderwal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Inderwal_Assembly_constituency",
+            "wikidata_qid": "Q55432195",
+            "node_created_on": "2025-01-26T17:06:43.376Z",
+            "active_version": {
+              "id": "0x9be9608710"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608710"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960870f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608710",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-inderwal-version-25",
+            "region": {
+              "id": "0x9be960870f"
+            },
+            "constituency_number": "48"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960870f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-inderwal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960870e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:42.763Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Inderwal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-inderwal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605914"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608717",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kishtwar",
+            "names": [
+              {
+                "name": "Kishtwar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kishtwar_Assembly_constituency",
+            "wikidata_qid": "Q55432194",
+            "node_created_on": "2025-01-26T17:06:45.704Z",
+            "active_version": {
+              "id": "0x9be9608716"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608716"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608715"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608716",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kishtwar-version-25",
+            "region": {
+              "id": "0x9be9608715"
+            },
+            "constituency_number": "49"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608715",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kishtwar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608714"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:44.808Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kishtwar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kishtwar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960871c"
+          },
+          {
+            "id": "0x9be960871d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960871e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-padder–nagseni",
+            "names": [
+              {
+                "name": "Padder–Nagseni"
+              },
+              {
+                "name": "Padder-Nagseni"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Padder%E2%80%93Nagseni_Assembly_constituency",
+            "wikidata_qid": "Q130213800",
+            "node_created_on": "2025-01-26T17:06:47.366Z",
+            "active_version": {
+              "id": "0x9be960871b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960871b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960871a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960871b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-padder–nagseni-version-25",
+            "region": {
+              "id": "0x9be960871a"
+            },
+            "constituency_number": "50"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960871a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-padder–nagseni-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608719"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:46.752Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Padder%E2%80%93Nagseni_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-padder–nagseni"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608723"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608724",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-bhadarwah",
+            "names": [
+              {
+                "name": "Bhadarwah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhaderwah_Assembly_constituency",
+            "wikidata_qid": "Q55432197",
+            "node_created_on": "2025-01-26T17:06:49.925Z",
+            "active_version": {
+              "id": "0x9be9608722"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608722"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608721"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608722",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-bhadarwah-version-25",
+            "region": {
+              "id": "0x9be9608721"
+            },
+            "constituency_number": "51"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608721",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-bhadarwah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608720"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:49.112Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhaderwah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-bhadarwah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058fc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608729",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-doda",
+            "names": [
+              {
+                "name": "Doda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Doda_Assembly_constituency",
+            "wikidata_qid": "Q55432196",
+            "node_created_on": "2025-01-26T17:06:52.078Z",
+            "active_version": {
+              "id": "0x9be9608728"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608728"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608727"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608728",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-doda-version-25",
+            "region": {
+              "id": "0x9be9608727"
+            },
+            "constituency_number": "52"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608727",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-doda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608726"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:51.298Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Doda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-doda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960872e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960872f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-doda-west",
+            "names": [
+              {
+                "name": "Doda West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Doda_West_Assembly_constituency",
+            "wikidata_qid": "Q115801908",
+            "node_created_on": "2025-01-26T17:06:54.432Z",
+            "active_version": {
+              "id": "0x9be960872d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960872d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960872c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960872d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-doda-west-version-25",
+            "region": {
+              "id": "0x9be960872c"
+            },
+            "constituency_number": "53"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960872c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-doda-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960872b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:53.306Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Doda_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-doda-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605938"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608734",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-ramban",
+            "names": [
+              {
+                "name": "Ramban"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramban_Assembly_constituency",
+            "wikidata_qid": "Q55432198",
+            "node_created_on": "2025-01-26T17:06:56.787Z",
+            "active_version": {
+              "id": "0x9be9608733"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608733"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608732"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608733",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-ramban-version-25",
+            "region": {
+              "id": "0x9be9608732"
+            },
+            "constituency_number": "54"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608732",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-ramban-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608731"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:55.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramban_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-ramban"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608739"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960873a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-banihal",
+            "names": [
+              {
+                "name": "Banihal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Banihal_Assembly_constituency",
+            "wikidata_qid": "Q55432199",
+            "node_created_on": "2025-01-26T17:06:59.347Z",
+            "active_version": {
+              "id": "0x9be9608738"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608738"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608737"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608738",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-banihal-version-25",
+            "region": {
+              "id": "0x9be9608737"
+            },
+            "constituency_number": "55"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608737",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-banihal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608736"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:06:58.734Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Banihal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-banihal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960873f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608740",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-gulabgarh",
+            "names": [
+              {
+                "name": "Gulabgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gulabgarh_Assembly_constituency",
+            "wikidata_qid": "Q30599402",
+            "node_created_on": "2025-01-26T17:07:02.215Z",
+            "active_version": {
+              "id": "0x9be960873e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960873e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960873d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960873e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-gulabgarh-version-25",
+            "region": {
+              "id": "0x9be960873d"
+            },
+            "constituency_number": "56"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960873d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-gulabgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960873c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:01.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gulabgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-gulabgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960593e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608745",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-reasi",
+            "names": [
+              {
+                "name": "Reasi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Reasi_Assembly_constituency",
+            "wikidata_qid": "Q55432200",
+            "node_created_on": "2025-01-26T17:07:04.366Z",
+            "active_version": {
+              "id": "0x9be9608744"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608744"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608743"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608744",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-reasi-version-25",
+            "region": {
+              "id": "0x9be9608743"
+            },
+            "constituency_number": "57"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608743",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-reasi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608742"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:03.750Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Reasi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-reasi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960874a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960874b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-shri-mata-vaishno-devi",
+            "names": [
+              {
+                "name": "Shri Mata Vaishno Devi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shri_Mata_Vaishno_Devi_Assembly_constituency",
+            "wikidata_qid": "Q130052458",
+            "node_created_on": "2025-01-26T17:07:06.514Z",
+            "active_version": {
+              "id": "0x9be9608749"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608749"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608748"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608749",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-shri-mata-vaishno-devi-version-25",
+            "region": {
+              "id": "0x9be9608748"
+            },
+            "constituency_number": "58"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608748",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-shri-mata-vaishno-devi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608747"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:05.698Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shri_Mata_Vaishno_Devi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-shri-mata-vaishno-devi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608750"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608751",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-udhampur-west",
+            "names": [
+              {
+                "name": "Udhampur West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Udhampur_West_Assembly_constituency",
+            "wikidata_qid": "Q130050761",
+            "node_created_on": "2025-01-26T17:07:08.769Z",
+            "active_version": {
+              "id": "0x9be960874f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960874f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960874e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960874f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-udhampur-west-version-25",
+            "region": {
+              "id": "0x9be960874e"
+            },
+            "constituency_number": "59"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960874e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-udhampur-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960874d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:08.051Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Udhampur_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-udhampur-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608756"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608757",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-udhampur-east",
+            "names": [
+              {
+                "name": "Udhampur East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Udhampur_East_Assembly_constituency",
+            "wikidata_qid": "Q130052446",
+            "node_created_on": "2025-01-26T17:07:11.330Z",
+            "active_version": {
+              "id": "0x9be9608755"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608755"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608754"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608755",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-udhampur-east-version-25",
+            "region": {
+              "id": "0x9be9608754"
+            },
+            "constituency_number": "60"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608754",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-udhampur-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608753"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:10.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Udhampur_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-udhampur-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960875c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960875d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-chenani",
+            "names": [
+              {
+                "name": "Chenani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chenani_Assembly_constituency",
+            "wikidata_qid": "Q30600185",
+            "node_created_on": "2025-01-26T17:07:13.582Z",
+            "active_version": {
+              "id": "0x9be960875b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960875b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960875a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960875b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-chenani-version-25",
+            "region": {
+              "id": "0x9be960875a"
+            },
+            "constituency_number": "61"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960875a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-chenani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608759"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:12.763Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chanani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-chenani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608762"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608763",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-ramnagar",
+            "names": [
+              {
+                "name": "Ramnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramnagar,_Jammu_and_Kashmir_Assembly_constituency",
+            "wikidata_qid": "Q30600184",
+            "node_created_on": "2025-01-26T17:07:15.834Z",
+            "active_version": {
+              "id": "0x9be9608761"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608761"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608760"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608761",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-ramnagar-version-25",
+            "region": {
+              "id": "0x9be9608760"
+            },
+            "constituency_number": "62"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608760",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-ramnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960875f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:15.203Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramnagar,_Jammu_and_Kashmir_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-ramnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608768"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608769",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-bani",
+            "names": [
+              {
+                "name": "Bani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bani_Assembly_constituency",
+            "wikidata_qid": "Q55432204",
+            "node_created_on": "2025-01-26T17:07:18.014Z",
+            "active_version": {
+              "id": "0x9be9608767"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608767"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608766"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608767",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-bani-version-25",
+            "region": {
+              "id": "0x9be9608766"
+            },
+            "constituency_number": "63"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608766",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-bani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608765"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:17.314Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-bani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960876e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960876f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-billawar",
+            "names": [
+              {
+                "name": "Billawar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Billawar_Assembly_constituency",
+            "wikidata_qid": "Q19843125",
+            "node_created_on": "2025-01-26T17:07:20.340Z",
+            "active_version": {
+              "id": "0x9be960876d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960876d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960876c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960876d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-billawar-version-25",
+            "region": {
+              "id": "0x9be960876c"
+            },
+            "constituency_number": "64"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960876c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-billawar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960876b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:19.725Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Billawar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-billawar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608774"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608775",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-basohli",
+            "names": [
+              {
+                "name": "Basohli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Basohli_Assembly_constituency",
+            "wikidata_qid": "Q30600172",
+            "node_created_on": "2025-01-26T17:07:22.538Z",
+            "active_version": {
+              "id": "0x9be9608773"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608773"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608772"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608773",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-basohli-version-25",
+            "region": {
+              "id": "0x9be9608772"
+            },
+            "constituency_number": "65"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608772",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-basohli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608771"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:21.773Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Basohli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-basohli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960877a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960877b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-jasrota",
+            "names": [
+              {
+                "name": "Jasrota"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jasrota_Assembly_constituency",
+            "wikidata_qid": "Q130199511",
+            "node_created_on": "2025-01-26T17:07:24.539Z",
+            "active_version": {
+              "id": "0x9be9608779"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608779"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608778"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608779",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-jasrota-version-25",
+            "region": {
+              "id": "0x9be9608778"
+            },
+            "constituency_number": "66"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608778",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-jasrota-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608777"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:23.821Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jasrota_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-jasrota"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960590e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608780",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kathua",
+            "names": [
+              {
+                "name": "Kathua"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kathua_Assembly_constituency",
+            "wikidata_qid": "Q55432206",
+            "node_created_on": "2025-01-26T17:07:27.404Z",
+            "active_version": {
+              "id": "0x9be960877f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960877f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960877e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960877f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kathua-version-25",
+            "region": {
+              "id": "0x9be960877e"
+            },
+            "constituency_number": "67"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960877e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kathua-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960877d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:26.586Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kathua_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kathua"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608785"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608786",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-hiranagar",
+            "names": [
+              {
+                "name": "Hiranagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hiranagar_Assembly_constituency",
+            "wikidata_qid": "Q30600168",
+            "node_created_on": "2025-01-26T17:07:29.248Z",
+            "active_version": {
+              "id": "0x9be9608784"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608784"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608783"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608784",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-hiranagar-version-25",
+            "region": {
+              "id": "0x9be9608783"
+            },
+            "constituency_number": "68"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608783",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-hiranagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608782"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:28.532Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hiranagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-hiranagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058c0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960878b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-ramgarh",
+            "names": [
+              {
+                "name": "Ramgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramgarh,_Jammu_and_Kashmir_Assembly_constituency",
+            "wikidata_qid": "Q130199506",
+            "node_created_on": "2025-01-26T17:07:32.037Z",
+            "active_version": {
+              "id": "0x9be960878a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960878a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608789"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960878a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-ramgarh-version-25",
+            "region": {
+              "id": "0x9be9608789"
+            },
+            "constituency_number": "69"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608789",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-ramgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608788"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:31.400Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramgarh,_Jammu_and_Kashmir_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-ramgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605944"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608790",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-samba",
+            "names": [
+              {
+                "name": "Samba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Samba_Assembly_constituency",
+            "wikidata_qid": "Q55432207",
+            "node_created_on": "2025-01-26T17:07:33.685Z",
+            "active_version": {
+              "id": "0x9be960878f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960878f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960878e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960878f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-samba-version-25",
+            "region": {
+              "id": "0x9be960878e"
+            },
+            "constituency_number": "70"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960878e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-samba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960878d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:33.004Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Samba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-samba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608795"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608796",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-vijaypur",
+            "names": [
+              {
+                "name": "Vijaypur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vijaypur,_Jammu_and_Kashmir_Assembly_constituency",
+            "wikidata_qid": "Q55432208",
+            "node_created_on": "2025-01-26T17:07:35.904Z",
+            "active_version": {
+              "id": "0x9be9608794"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608794"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608793"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608794",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-vijaypur-version-25",
+            "region": {
+              "id": "0x9be9608793"
+            },
+            "constituency_number": "71"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608793",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-vijaypur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608792"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:34.778Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vijaypur,_Jammu_and_Kashmir_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-vijaypur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960879b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960879c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-bishnah",
+            "names": [
+              {
+                "name": "Bishnah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bishnah_Assembly_constituency",
+            "wikidata_qid": "Q30599403",
+            "node_created_on": "2025-01-26T17:07:38.014Z",
+            "active_version": {
+              "id": "0x9be960879a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960879a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608799"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960879a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-bishnah-version-25",
+            "region": {
+              "id": "0x9be9608799"
+            },
+            "constituency_number": "72"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608799",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-bishnah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608798"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:37.338Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bishnah_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-bishnah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087a1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087a2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-suchetgarh",
+            "names": [
+              {
+                "name": "Suchetgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Suchetgarh_Assembly_constituency",
+            "wikidata_qid": "Q30599374",
+            "node_created_on": "2025-01-26T17:07:40.513Z",
+            "active_version": {
+              "id": "0x9be96087a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960879f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-suchetgarh-version-25",
+            "region": {
+              "id": "0x9be960879f"
+            },
+            "constituency_number": "73"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960879f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-suchetgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960879e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:39.796Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Suchetgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-suchetgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087a7"
+          },
+          {
+            "id": "0x9be96087a8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087a9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-r.-s.-pura–jammu-south",
+            "names": [
+              {
+                "name": "R. S. Pura–Jammu South"
+              },
+              {
+                "name": "R.S. Pura - Jammu South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ranbir_Singh_Pora%E2%80%93Jammu_South_Assembly_constituency",
+            "wikidata_qid": "Q30599383",
+            "node_created_on": "2025-01-26T17:07:42.560Z",
+            "active_version": {
+              "id": "0x9be96087a6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087a6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087a5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087a6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-r.-s.-pura–jammu-south-version-25",
+            "region": {
+              "id": "0x9be96087a5"
+            },
+            "constituency_number": "74"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087a5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-r.-s.-pura–jammu-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087a4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:41.741Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ranbir_Singh_Pura-Jammu_South_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-r.-s.-pura–jammu-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087ae"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087af",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-bahu",
+            "names": [
+              {
+                "name": "Bahu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bahu_Assembly_constituency",
+            "wikidata_qid": "Q130199518",
+            "node_created_on": "2025-01-26T17:07:45.530Z",
+            "active_version": {
+              "id": "0x9be96087ad"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087ad"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087ac"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087ad",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-bahu-version-25",
+            "region": {
+              "id": "0x9be96087ac"
+            },
+            "constituency_number": "75"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087ac",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-bahu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087ab"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:44.815Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bahu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-bahu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087b4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087b5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-jammu-east",
+            "names": [
+              {
+                "name": "Jammu East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jammu_East_Assembly_constituency",
+            "wikidata_qid": "Q30599386",
+            "node_created_on": "2025-01-26T17:07:47.784Z",
+            "active_version": {
+              "id": "0x9be96087b3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087b3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087b2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087b3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-jammu-east-version-25",
+            "region": {
+              "id": "0x9be96087b2"
+            },
+            "constituency_number": "76"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087b2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-jammu-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087b1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:47.066Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jammu_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-jammu-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96084bf"
+          },
+          {
+            "id": "0x9be96087ba"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087bb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-nagrota",
+            "names": [
+              {
+                "name": "Nagrota"
+              },
+              {
+                "name": " Nagrota"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagrota,_Jammu_and_Kashmir_Assembly_constituency",
+            "wikidata_qid": "Q25209138",
+            "node_created_on": "2025-01-26T17:07:50.988Z",
+            "active_version": {
+              "id": "0x9be96087b9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087b9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087b8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087b9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-nagrota-version-25",
+            "region": {
+              "id": "0x9be96087b8"
+            },
+            "constituency_number": "77"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087b8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-nagrota-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087b7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:49.831Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagrota,_Jammu_and_Kashmir_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-nagrota"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087c0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087c1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-jammu-west",
+            "names": [
+              {
+                "name": "Jammu West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jammu_West_Assembly_constituency",
+            "wikidata_qid": "Q19459070",
+            "node_created_on": "2025-01-26T17:07:53.210Z",
+            "active_version": {
+              "id": "0x9be96087bf"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087bf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087be"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087bf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-jammu-west-version-25",
+            "region": {
+              "id": "0x9be96087be"
+            },
+            "constituency_number": "78"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087be",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-jammu-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087bd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:52.390Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jammu_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-jammu-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087c6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087c7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-jammu-north",
+            "names": [
+              {
+                "name": "Jammu North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jammu_North_Assembly_constituency",
+            "wikidata_qid": "Q130050663",
+            "node_created_on": "2025-01-26T17:07:56.003Z",
+            "active_version": {
+              "id": "0x9be96087c5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087c5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087c4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087c5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-jammu-north-version-25",
+            "region": {
+              "id": "0x9be96087c4"
+            },
+            "constituency_number": "79"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087c4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-jammu-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087c3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:55.361Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jammu_North_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-jammu-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087cc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087cd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-marh",
+            "names": [
+              {
+                "name": "Marh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Marh_Assembly_constituency",
+            "wikidata_qid": "Q30599384",
+            "node_created_on": "2025-01-26T17:07:57.942Z",
+            "active_version": {
+              "id": "0x9be96087cb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087cb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087ca"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087cb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-marh-version-25",
+            "region": {
+              "id": "0x9be96087ca"
+            },
+            "constituency_number": "80"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087ca",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-marh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087c9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:57.407Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Marh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-marh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087d2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087d3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-akhnoor",
+            "names": [
+              {
+                "name": "Akhnoor"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Akhnoor_Assembly_constituency",
+            "wikidata_qid": "Q55432210",
+            "node_created_on": "2025-01-26T17:08:00.788Z",
+            "active_version": {
+              "id": "0x9be96087d1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087d1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087d0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087d1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-akhnoor-version-25",
+            "region": {
+              "id": "0x9be96087d0"
+            },
+            "constituency_number": "81"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087d0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-akhnoor-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087cf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:07:59.997Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Akhnoor_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-akhnoor"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087d8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087d9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-chhamb",
+            "names": [
+              {
+                "name": "Chhamb"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chhamb_Assembly_constituency",
+            "wikidata_qid": "Q55432211",
+            "node_created_on": "2025-01-26T17:08:03.246Z",
+            "active_version": {
+              "id": "0x9be96087d7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087d7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087d6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087d7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-chhamb-version-25",
+            "region": {
+              "id": "0x9be96087d6"
+            },
+            "constituency_number": "82"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087d6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-chhamb-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087d5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:02.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chhamb_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-chhamb"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087de"
+          },
+          {
+            "id": "0x9be96087df"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087e0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-kalakote–sunderbani",
+            "names": [
+              {
+                "name": "Kalakote–Sunderbani"
+              },
+              {
+                "name": "Kalakote - Sunderbani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalakote%E2%80%93Sunderbani_Assembly_constituency",
+            "wikidata_qid": "Q55432217",
+            "node_created_on": "2025-01-26T17:08:06.215Z",
+            "active_version": {
+              "id": "0x9be96087dd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087dd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087dc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087dd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-kalakote–sunderbani-version-25",
+            "region": {
+              "id": "0x9be96087dc"
+            },
+            "constituency_number": "83"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087dc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-kalakote–sunderbani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087db"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:05.398Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalakote%E2%80%93Sunderbani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-kalakote–sunderbani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087e5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087e6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-nowshera",
+            "names": [
+              {
+                "name": "Nowshera"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nowshera_Assembly_constituency",
+            "wikidata_qid": "Q55432212",
+            "node_created_on": "2025-01-26T17:08:08.776Z",
+            "active_version": {
+              "id": "0x9be96087e4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087e4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087e3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087e4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-nowshera-version-25",
+            "region": {
+              "id": "0x9be96087e3"
+            },
+            "constituency_number": "84"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087e3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-nowshera-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087e2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:08.059Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nowshera_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-nowshera"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605932"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087eb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-rajouri",
+            "names": [
+              {
+                "name": "Rajouri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajouri_Assembly_constituency",
+            "wikidata_qid": "Q55432216",
+            "node_created_on": "2025-01-26T17:08:11.745Z",
+            "active_version": {
+              "id": "0x9be96087ea"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087ea"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087e9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087ea",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-rajouri-version-25",
+            "region": {
+              "id": "0x9be96087e9"
+            },
+            "constituency_number": "85"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087e9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-rajouri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087e8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:10.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajouri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-rajouri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087f0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087f1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-budhal",
+            "names": [
+              {
+                "name": "Budhal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Budhal_Assembly_constituency",
+            "wikidata_qid": "Q130199474",
+            "node_created_on": "2025-01-26T17:08:13.384Z",
+            "active_version": {
+              "id": "0x9be96087ef"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087ef"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087ee"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087ef",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-budhal-version-25",
+            "region": {
+              "id": "0x9be96087ee"
+            },
+            "constituency_number": "86"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087ee",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-budhal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087ed"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:12.770Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Budhal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-budhal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087f6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087f7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-thannamandi",
+            "names": [
+              {
+                "name": "Thannamandi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thanamandi_Assembly_constituency",
+            "wikidata_qid": "Q130052452",
+            "node_created_on": "2025-01-26T17:08:16.046Z",
+            "active_version": {
+              "id": "0x9be96087f5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087f5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087f4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087f5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-thannamandi-version-25",
+            "region": {
+              "id": "0x9be96087f4"
+            },
+            "constituency_number": "87"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087f4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-thannamandi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087f3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:14.731Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thannamandi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-thannamandi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96087fc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96087fd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-surankote",
+            "names": [
+              {
+                "name": "Surankote"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Surankote_Assembly_constituency",
+            "wikidata_qid": "Q55432218",
+            "node_created_on": "2025-01-26T17:08:18.400Z",
+            "active_version": {
+              "id": "0x9be96087fb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96087fb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96087fa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96087fb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-surankote-version-25",
+            "region": {
+              "id": "0x9be96087fa"
+            },
+            "constituency_number": "88"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96087fa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-surankote-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087f9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:17.786Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Surankote_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-surankote"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608802"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608803",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-poonch-haveli",
+            "names": [
+              {
+                "name": "Poonch Haveli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Poonch_Haveli_Assembly_constituency",
+            "wikidata_qid": "Q55432220",
+            "node_created_on": "2025-01-26T17:08:20.757Z",
+            "active_version": {
+              "id": "0x9be9608801"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608801"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608800"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608801",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-poonch-haveli-version-25",
+            "region": {
+              "id": "0x9be9608800"
+            },
+            "constituency_number": "89"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608800",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-poonch-haveli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96087ff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:20.022Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Poonch_Haveli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-poonch-haveli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608808"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9608809",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-jk-mendhar",
+            "names": [
+              {
+                "name": "Mendhar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mendhar_Assembly_constituency",
+            "wikidata_qid": "Q55432219",
+            "node_created_on": "2025-01-26T17:08:22.907Z",
+            "active_version": {
+              "id": "0x9be9608807"
+            },
+            "versions": [
+              {
+                "id": "0x9be9608807"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9608806"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9608807",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-jk-mendhar-version-25",
+            "region": {
+              "id": "0x9be9608806"
+            },
+            "constituency_number": "90"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9608806",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-jk-mendhar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9608805"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T17:08:22.088Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mendhar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-jk-mendhar"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-26T17:08:23.832Z"
+}
