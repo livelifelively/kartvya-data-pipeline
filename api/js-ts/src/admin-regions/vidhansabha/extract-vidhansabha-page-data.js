@@ -506,7 +506,12 @@ async function processVidhansabhaPage(page) {
 
 // (async () => {
 //   // const urls = vidhansabhaConstituencies.map((val) => val.href);
-//   const urls = ["https://en.wikipedia.org/wiki/Tiruvuru_(Assembly_constituency)"];
+//   const urls = [
+//     "https://en.wikipedia.org/wiki/Singanallur",
+//     "https://en.wikipedia.org/wiki/Modakkurichi",
+//     "https://en.wikipedia.org/wiki/Sareni",
+//     "https://en.wikipedia.org/wiki/Rae_Bareli",
+//   ];
 //   // console.log(urls);
 //   let results = await processListOfWikipediaPages(urls);
 //   // results = { results, state: statesUrls[i].state };
