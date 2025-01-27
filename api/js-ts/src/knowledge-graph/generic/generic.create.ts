@@ -68,6 +68,31 @@ export async function queryNodeType(nodetype: string, graphQLClient: any, idOrNa
   }
 }
 
+export async function deleteNodeType(nodetype: string, graphQLClient: any, ids: string[]) {
+  // Construct the query
+  const mutation = `
+      mutation Delete${nodetype}($ids: [ID!]!) {
+          delete${nodetype}(filter: {id: $ids}) {
+              ${nodetype} {
+                id
+              }
+          }
+      }
+  `;
+
+  const variables = {
+    ids,
+  };
+
+  try {
+    const response = await graphQLClient.request(mutation, variables);
+    return response[`mutation${nodetype}`] || [];
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    throw error;
+  }
+}
+
 // export async function upsertNodeType(nodetype: string, graphQLClient: any, nodeData: any) {
 //   const query = `
 //     query Query${nodetype}
