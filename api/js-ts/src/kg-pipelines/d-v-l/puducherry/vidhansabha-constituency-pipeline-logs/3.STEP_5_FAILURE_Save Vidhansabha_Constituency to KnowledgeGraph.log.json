@@ -1,0 +1,12 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) failed.",
+  "data": {},
+  "error": {
+    "error": [
+      "couldn't rewrite mutation add_Indian_Vidhansabha_Constituency_Version_Region_ because failed to rewrite mutation payload because id in-vc-py-ozhukarai-version-25-region already exists for field name_id inside type _Indian_Vidhansabha_Constituency_Version_Region_: {\"response\":{\"errors\":[{\"message\":\"couldn't rewrite mutation add_Indian_Vidhansabha_Constituency_Version_Region_ because failed to rewrite mutation payload because id in-vc-py-ozhukarai-version-25-region already exists for field name_id inside type _Indian_Vidhansabha_Constituency_Version_Region_\",\"path\":[\"add_Indian_Vidhansabha_Constituency_Version_Region_\"]}],\"data\":{\"add_Indian_Vidhansabha_Constituency_Version_Region_\":null},\"extensions\":{\"touched_uids\":7,\"tracing\":{\"version\":1,\"startTime\":\"2025-01-26T17:26:04.967570572Z\",\"endTime\":\"2025-01-26T17:26:05.299083278Z\",\"duration\":331512706,\"execution\":{\"resolvers\":[{\"path\":[\"add_Indian_Vidhansabha_Constituency_Version_Region_\"],\"parentType\":\"Mutation\",\"fieldName\":\"add_Indian_Vidhansabha_Constituency_Version_Region_\",\"returnType\":\"Add_Indian_Vidhansabha_Constituency_Version_Region_Payload\",\"startOffset\":234574,\"duration\":331255301,\"dgraph\":[{\"label\":\"preMutationQuery\",\"startOffset\":319485,\"duration\":223699432},{\"label\":\"mutation\",\"startOffset\":0,\"duration\":0},{\"label\":\"query\",\"startOffset\":0,\"duration\":0}]}]}}},\"status\":200,\"headers\":{}},\"request\":{\"query\":\"\\n        mutation Create_Indian_Vidhansabha_Constituency_Version_Region_($input: Add_Indian_Vidhansabha_Constituency_Version_Region_Input!) {\\n            add_Indian_Vidhansabha_Constituency_Version_Region_(input: [$input]) {\\n                _Indian_Vidhansabha_Constituency_Version_Region_ {\\n                    id\\n                }\\n            }\\n        }\\n        \",\"variables\":{\"input\":{\"name_id\":\"in-vc-py-ozhukarai-version-25-region\",\"geo_boundary\":[{\"id\":\"0x9be9608d5f\"}],\"states_union_territories\":[{\"name_id\":\"in-sut-puducherry-version-25-region\"}],\"node_created_on\":\"2025-01-26T17:26:04.857Z\"}}}}",
+      null
+    ]
+  },
+  "key": "STEP_5_FAILURE_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-26T17:26:05.239Z"
+}
