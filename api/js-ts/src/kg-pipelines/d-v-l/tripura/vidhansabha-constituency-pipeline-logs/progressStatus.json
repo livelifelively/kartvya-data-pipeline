@@ -1,0 +1,18 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-26T18:10:33.557Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/tripura/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/tripura/vidhansabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  }
+]
