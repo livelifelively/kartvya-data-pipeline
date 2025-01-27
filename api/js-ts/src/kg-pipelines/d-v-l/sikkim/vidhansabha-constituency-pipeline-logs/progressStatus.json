@@ -1,0 +1,49 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-26T17:41:46.928Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-26T19:04:34.241Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/2.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/sikkim/vidhansabha-constituency-pipeline-logs/2.STEP_4_PARTIAL_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  }
+]
