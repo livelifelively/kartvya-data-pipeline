@@ -1,0 +1,60 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-26T18:38:24.115Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/1.STEP_0_PARTIAL_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-26T18:41:17.949Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/2.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/2.STEP_1_FAILURE_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2025-01-26T18:42:34.151Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/2.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/3.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/3.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/3.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/uttarakhand/vidhansabha-constituency-pipeline-logs/3.STEP_4_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
