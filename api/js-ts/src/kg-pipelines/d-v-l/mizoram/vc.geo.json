@@ -1,12 +1,12 @@
 {
-  type: "FeatureCollection",
-  features: [
+  "type": "FeatureCollection",
+  "features": [
     {
-      type: "Feature",
-      id: 0,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.692359371001885, 23.714149135484771],
             [92.68950374462429, 23.717361728414751],
@@ -32,18 +32,18 @@
             [92.711634840025795, 23.692017947920338],
             [92.707708455299553, 23.700584785379032],
             [92.700926321250904, 23.707366941760593],
-            [92.692359371001885, 23.714149135484771],
-          ],
-        ],
+            [92.692359371001885, 23.714149135484771]
+          ]
+        ]
       },
-      properties: { FID: 0, AC_NO: 16, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl West II" },
+      "properties": { "FID": 0, "AC_NO": 16, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl West II" }
     },
     {
-      type: "Feature",
-      id: 1,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 1,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.725557777918723, 23.747701569783938],
             [92.731269216148604, 23.748772294445772],
@@ -82,18 +82,18 @@
             [92.716990872155833, 23.756268505081444],
             [92.718775556094059, 23.750914245061498],
             [92.721988180905072, 23.74912943697688],
-            [92.725557777918723, 23.747701569783938],
-          ],
-        ],
+            [92.725557777918723, 23.747701569783938]
+          ]
+        ]
       },
-      properties: { FID: 1, AC_NO: 10, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl North I" },
+      "properties": { "FID": 1, "AC_NO": 10, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl North I" }
     },
     {
-      type: "Feature",
-      id: 2,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 2,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.753446881687964, 23.746833965520473],
             [92.748760237401157, 23.741632964994785],
@@ -117,18 +117,18 @@
             [92.766523637155188, 23.732094018521916],
             [92.765349705630996, 23.735094153589142],
             [92.758387299653421, 23.739170536155711],
-            [92.753446881687964, 23.746833965520473],
-          ],
-        ],
+            [92.753446881687964, 23.746833965520473]
+          ]
+        ]
       },
-      properties: { FID: 2, AC_NO: 11, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl North II" },
+      "properties": { "FID": 2, "AC_NO": 11, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl North II" }
     },
     {
-      type: "Feature",
-      id: 3,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 3,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.707708455299553, 23.700584785379032],
             [92.718774411820291, 23.70451098430442],
@@ -152,18 +152,18 @@
             [92.705567062504727, 23.716290548995435],
             [92.692359371001885, 23.714149135484771],
             [92.700926321250904, 23.707366941760593],
-            [92.707708455299553, 23.700584785379032],
-          ],
-        ],
+            [92.707708455299553, 23.700584785379032]
+          ]
+        ]
       },
-      properties: { FID: 3, AC_NO: 14, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl East II" },
+      "properties": { "FID": 3, "AC_NO": 14, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl East II" }
     },
     {
-      type: "Feature",
-      id: 4,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 4,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.743124306923093, 23.701930356674762],
             [92.737841379067618, 23.705908873829109],
@@ -183,18 +183,18 @@
             [92.76232386961712, 23.702368385249358],
             [92.754456764972261, 23.703658443287036],
             [92.750103115216262, 23.701799770655949],
-            [92.743124306923093, 23.701930356674762],
-          ],
-        ],
+            [92.743124306923093, 23.701930356674762]
+          ]
+        ]
       },
-      properties: { FID: 4, AC_NO: 18, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl South I" },
+      "properties": { "FID": 4, "AC_NO": 18, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl South I" }
     },
     {
-      type: "Feature",
-      id: 5,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 5,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.723687596353557, 23.685951914172652],
             [92.717346067153343, 23.68452191744996],
@@ -219,18 +219,18 @@
             [92.730079233785261, 23.678973263719541],
             [92.725904983168562, 23.678647251745215],
             [92.725579053272085, 23.68608231397128],
-            [92.723687596353557, 23.685951914172652],
-          ],
-        ],
+            [92.723687596353557, 23.685951914172652]
+          ]
+        ]
       },
-      properties: { FID: 5, AC_NO: 17, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl West III" },
+      "properties": { "FID": 5, "AC_NO": 17, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl West III" }
     },
     {
-      type: "Feature",
-      id: 6,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 6,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.763037267504416, 23.680951482118502],
             [92.725579053272085, 23.68608231397128],
@@ -269,18 +269,18 @@
             [92.755897406221067, 23.656679158915637],
             [92.768391108829562, 23.656321950725172],
             [92.765178642437604, 23.664531824231407],
-            [92.763037267504416, 23.680951482118502],
-          ],
-        ],
+            [92.763037267504416, 23.680951482118502]
+          ]
+        ]
       },
-      properties: { FID: 6, AC_NO: 19, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl South II" },
+      "properties": { "FID": 6, "AC_NO": 19, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl South II" }
     },
     {
-      type: "Feature",
-      id: 7,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 7,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.185516487577303, 22.437855112069855],
             [93.185449571257209, 22.437914688331603],
@@ -369,18 +369,18 @@
             [93.117806956489176, 22.444312481175732],
             [93.137320592652955, 22.430510120641685],
             [93.152075104638044, 22.432889473331205],
-            [93.185516487577303, 22.437855112069855],
-          ],
-        ],
+            [93.185516487577303, 22.437855112069855]
+          ]
+        ]
       },
-      properties: { FID: 7, AC_NO: 39, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Saiha" },
+      "properties": { "FID": 7, "AC_NO": 39, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Saiha" }
     },
     {
-      type: "Feature",
-      id: 8,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 8,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.695426548323312, 23.280852056402008],
             [92.692092142830546, 23.281051140132238],
@@ -480,18 +480,18 @@
             [92.698056422729849, 23.262120490529508],
             [92.696210403233678, 23.270791227625452],
             [92.693938228578986, 23.275140625208312],
-            [92.695426548323312, 23.280852056402008],
-          ],
-        ],
+            [92.695426548323312, 23.280852056402008]
+          ]
+        ]
       },
-      properties: { FID: 8, AC_NO: 32, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lunglei West" },
+      "properties": { "FID": 8, "AC_NO": 32, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lunglei West" }
     },
     {
-      type: "Feature",
-      id: 9,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 9,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.899854924139433, 22.965548287277684],
             [92.847052955729865, 22.962494837650997],
@@ -536,18 +536,18 @@
             [92.890994575172158, 22.942657789868854],
             [92.893488994450919, 22.944944143617704],
             [92.898486678597024, 22.953510787585611],
-            [92.899854924139433, 22.965548287277684],
-          ],
-        ],
+            [92.899854924139433, 22.965548287277684]
+          ]
+        ]
       },
-      properties: { FID: 9, AC_NO: 31, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lunglei East" },
+      "properties": { "FID": 9, "AC_NO": 31, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lunglei East" }
     },
     {
-      type: "Feature",
-      id: 10,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 10,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.927831358072709, 23.264088305081589],
             [92.915097301642973, 23.263019715369776],
@@ -668,18 +668,18 @@
             [92.928901866356881, 23.248382576197027],
             [92.926570528163836, 23.253242456291904],
             [92.927117293389671, 23.258377153465148],
-            [92.927831358072709, 23.264088305081589],
-          ],
-        ],
+            [92.927831358072709, 23.264088305081589]
+          ]
+        ]
       },
-      properties: { FID: 10, AC_NO: 26, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Serchhip" },
+      "properties": { "FID": 10, "AC_NO": 26, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Serchhip" }
     },
     {
-      type: "Feature",
-      id: 11,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 11,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.830846484713391, 23.555357245842178],
             [92.822993365614181, 23.558212994499396],
@@ -799,18 +799,18 @@
             [92.868219195964897, 23.554611511938777],
             [92.852324176588823, 23.554611843618506],
             [92.836297791337998, 23.553774550725311],
-            [92.830846484713391, 23.555357245842178],
-          ],
-        ],
+            [92.830846484713391, 23.555357245842178]
+          ]
+        ]
       },
-      properties: { FID: 11, AC_NO: 27, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tuikum" },
+      "properties": { "FID": 11, "AC_NO": 27, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tuikum" }
     },
     {
-      type: "Feature",
-      id: 12,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 12,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.96984109852194, 23.274333797415881],
             [92.967026916437987, 23.277335600806992],
@@ -926,18 +926,18 @@
             [92.996725186361076, 23.263016034528651],
             [92.983874657859658, 23.268727467006318],
             [92.975950759890608, 23.267816806392332],
-            [92.96984109852194, 23.274333797415881],
-          ],
-        ],
+            [92.96984109852194, 23.274333797415881]
+          ]
+        ]
       },
-      properties: { FID: 12, AC_NO: 28, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Hrangturzo" },
+      "properties": { "FID": 12, "AC_NO": 28, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Hrangturzo" }
     },
     {
-      type: "Feature",
-      id: 13,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 13,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.005959235434787, 22.469539016846177],
             [92.985017699344766, 22.481437687763535],
@@ -1192,18 +1192,18 @@
             [93.082111021721715, 22.458591097972054],
             [93.040703306170172, 22.456688210407904],
             [93.023569141194955, 22.458592274423484],
-            [93.005959235434787, 22.469539016846177],
-          ],
-        ],
+            [93.005959235434787, 22.469539016846177]
+          ]
+        ]
       },
-      properties: { FID: 13, AC_NO: 40, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Palak" },
+      "properties": { "FID": 13, "AC_NO": 40, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Palak" }
     },
     {
-      type: "Feature",
-      id: 14,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 14,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.607349842395664, 23.765664481066693],
             [92.602352567533515, 23.774231342320086],
@@ -1608,18 +1608,18 @@
             [92.627157506140151, 23.755818402705199],
             [92.626004352939518, 23.762403414712978],
             [92.608777519674476, 23.758525487008495],
-            [92.607349842395664, 23.765664481066693],
-          ],
-        ],
+            [92.607349842395664, 23.765664481066693]
+          ]
+        ]
       },
-      properties: { FID: 14, AC_NO: 2, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Dampa" },
+      "properties": { "FID": 14, "AC_NO": 2, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Dampa" }
     },
     {
-      type: "Feature",
-      id: 15,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 15,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.542831522923834, 24.12965425987645],
             [92.543182641283579, 24.132642496641513],
@@ -1844,18 +1844,18 @@
             [92.542121977529348, 24.111351774884984],
             [92.542683507356699, 24.112716600562369],
             [92.541521292175517, 24.126933064046703],
-            [92.542831522923834, 24.12965425987645],
-          ],
-        ],
+            [92.542831522923834, 24.12965425987645]
+          ]
+        ]
       },
-      properties: { FID: 15, AC_NO: 3, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Mamit" },
+      "properties": { "FID": 15, "AC_NO": 3, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Mamit" }
     },
     {
-      type: "Feature",
-      id: 16,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 16,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.262577989702564, 23.814284287310713],
             [92.263189575965001, 23.810420397523817],
@@ -2186,18 +2186,18 @@
             [92.27983813461222, 23.814501949545289],
             [92.272658307114497, 23.817073307613818],
             [92.266358209517747, 23.815330197816269],
-            [92.262577989702564, 23.814284287310713],
-          ],
-        ],
+            [92.262577989702564, 23.814284287310713]
+          ]
+        ]
       },
-      properties: { FID: 16, AC_NO: 1, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Hachhek" },
+      "properties": { "FID": 16, "AC_NO": 1, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Hachhek" }
     },
     {
-      type: "Feature",
-      id: 17,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 17,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.621841130198774, 23.390651439519313],
             [92.618271806626595, 23.395473903298743],
@@ -2476,18 +2476,18 @@
             [92.631280211003997, 23.387240969807142],
             [92.626053579102603, 23.38774211744709],
             [92.623429224548346, 23.386432065204065],
-            [92.621841130198774, 23.390651439519313],
-          ],
-        ],
+            [92.621841130198774, 23.390651439519313]
+          ]
+        ]
       },
-      properties: { FID: 17, AC_NO: 34, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Thorang" },
+      "properties": { "FID": 17, "AC_NO": 34, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Thorang" }
     },
     {
-      type: "Feature",
-      id: 18,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 18,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.429568431636781, 23.196692852211363],
             [92.412434183029205, 23.19597930237207],
@@ -2846,18 +2846,18 @@
             [92.438848729256733, 23.165281241233892],
             [92.433851532585663, 23.17741757377615],
             [92.435279587693074, 23.185984296631194],
-            [92.429568431636781, 23.196692852211363],
-          ],
-        ],
+            [92.429568431636781, 23.196692852211363]
+          ]
+        ]
       },
-      properties: { FID: 18, AC_NO: 35, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "West Tuipui" },
+      "properties": { "FID": 18, "AC_NO": 35, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "West Tuipui" }
     },
     {
-      type: "Feature",
-      id: 19,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 19,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.822303770611953, 22.872954150895474],
             [92.819724699596122, 22.87789743755652],
@@ -3041,18 +3041,18 @@
             [92.828536585153145, 22.86349740333576],
             [92.825527598646417, 22.866291466109818],
             [92.824238014494554, 22.866721338744338],
-            [92.822303770611953, 22.872954150895474],
-          ],
-        ],
+            [92.822303770611953, 22.872954150895474]
+          ]
+        ]
       },
-      properties: { FID: 19, AC_NO: 33, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lunglei South" },
+      "properties": { "FID": 19, "AC_NO": 33, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lunglei South" }
     },
     {
-      type: "Feature",
-      id: 20,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 20,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.745422893531938, 23.249100249999632],
             [92.738640638564746, 23.25088512886126],
@@ -3155,18 +3155,18 @@
             [92.765412703414782, 23.244102568781003],
             [92.758273374735523, 23.241247132284339],
             [92.751848056496428, 23.241961160374256],
-            [92.745422893531938, 23.249100249999632],
-          ],
-        ],
+            [92.745422893531938, 23.249100249999632]
+          ]
+        ]
       },
-      properties: { FID: 20, AC_NO: 30, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lunglei North" },
+      "properties": { "FID": 20, "AC_NO": 30, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lunglei North" }
     },
     {
-      type: "Feature",
-      id: 21,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 21,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.960312101397705, 23.144631077723801],
             [92.923066594796026, 23.143679984073813],
@@ -3310,18 +3310,18 @@
             [92.963524163095997, 23.119523691352033],
             [92.962096388846064, 23.122736250868776],
             [92.960311840541223, 23.133801670075133],
-            [92.960312101397705, 23.144631077723801],
-          ],
-        ],
+            [92.960312101397705, 23.144631077723801]
+          ]
+        ]
       },
-      properties: { FID: 21, AC_NO: 29, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "South Tuipui" },
+      "properties": { "FID": 21, "AC_NO": 29, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "South Tuipui" }
     },
     {
-      type: "Feature",
-      id: 22,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 22,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.092411664715826, 22.796573080530266],
             [93.087552134490537, 22.799263394209355],
@@ -3504,18 +3504,18 @@
             [93.111228320429717, 22.769460534972254],
             [93.107285238257916, 22.786304957793636],
             [93.095922016559555, 22.793322750001948],
-            [93.092411664715826, 22.796573080530266],
-          ],
-        ],
+            [93.092411664715826, 22.796573080530266]
+          ]
+        ]
       },
-      properties: { FID: 22, AC_NO: 38, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lawngtlai East" },
+      "properties": { "FID": 22, "AC_NO": 38, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lawngtlai East" }
     },
     {
-      type: "Feature",
-      id: 23,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 23,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.509080772614013, 22.734970915500245],
             [92.507394563133644, 22.734879942081761],
@@ -3913,18 +3913,18 @@
             [92.517366911755545, 22.740252173606819],
             [92.515253551766804, 22.735881865334054],
             [92.514581467245435, 22.73581187347925],
-            [92.509080772614013, 22.734970915500245],
-          ],
-        ],
+            [92.509080772614013, 22.734970915500245]
+          ]
+        ]
       },
-      properties: { FID: 23, AC_NO: 36, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tuichawng" },
+      "properties": { "FID": 23, "AC_NO": 36, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tuichawng" }
     },
     {
-      type: "Feature",
-      id: 24,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 24,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.818525235588098, 22.629126268118029],
             [92.813343589570522, 22.628595329495809],
@@ -4215,18 +4215,18 @@
             [92.842210047345247, 22.625435498299378],
             [92.830986713487164, 22.627127858304149],
             [92.827469274423066, 22.626725897177529],
-            [92.818525235588098, 22.629126268118029],
-          ],
-        ],
+            [92.818525235588098, 22.629126268118029]
+          ]
+        ]
       },
-      properties: { FID: 24, AC_NO: 37, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lawngtlai West" },
+      "properties": { "FID": 24, "AC_NO": 37, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lawngtlai West" }
     },
     {
-      type: "Feature",
-      id: 25,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 25,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.78022081565048, 24.225142523992382],
             [92.726734782474921, 24.220909162668697],
@@ -4405,18 +4405,18 @@
             [92.889502482349783, 24.170239215948111],
             [92.891182697973093, 24.170540204974309],
             [92.797472550161331, 24.166245676530359],
-            [92.78022081565048, 24.225142523992382],
-          ],
-        ],
+            [92.78022081565048, 24.225142523992382]
+          ]
+        ]
       },
-      properties: { FID: 25, AC_NO: 4, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tuirial" },
+      "properties": { "FID": 25, "AC_NO": 4, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tuirial" }
     },
     {
-      type: "Feature",
-      id: 26,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 26,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.699852727803048, 24.248700672827379],
             [92.698291331729536, 24.252916587817687],
@@ -4479,18 +4479,18 @@
             [92.692044942054594, 24.238083062022618],
             [92.69345033086816, 24.239488326278583],
             [92.699071881312094, 24.244953238279642],
-            [92.699852727803048, 24.248700672827379],
-          ],
-        ],
+            [92.699852727803048, 24.248700672827379]
+          ]
+        ]
       },
-      properties: { FID: 26, AC_NO: 5, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Kolasib" },
+      "properties": { "FID": 26, "AC_NO": 5, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Kolasib" }
     },
     {
-      type: "Feature",
-      id: 27,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 27,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.804055240469481, 24.418381375510297],
             [92.80330821041494, 24.420793590277725],
@@ -4704,18 +4704,18 @@
             [92.812747325490889, 24.418632208765256],
             [92.810420050997493, 24.419193305657391],
             [92.806964594787758, 24.418122292226283],
-            [92.804055240469481, 24.418381375510297],
-          ],
-        ],
+            [92.804055240469481, 24.418381375510297]
+          ]
+        ]
       },
-      properties: { FID: 27, AC_NO: 6, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Serlui" },
+      "properties": { "FID": 27, "AC_NO": 6, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Serlui" }
     },
     {
-      type: "Feature",
-      id: 28,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 28,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.37368520505386, 23.512548488719574],
             [93.370096216309705, 23.513189432009657],
@@ -4811,18 +4811,18 @@
             [93.384580336473988, 23.51011296441742],
             [93.383683126928091, 23.511779236593487],
             [93.375351467601746, 23.51011316043558],
-            [93.37368520505386, 23.512548488719574],
-          ],
-        ],
+            [93.37368520505386, 23.512548488719574]
+          ]
+        ]
       },
-      properties: { FID: 28, AC_NO: 24, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Champhai South" },
+      "properties": { "FID": 28, "AC_NO": 24, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Champhai South" }
     },
     {
-      type: "Feature",
-      id: 29,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 29,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.324685644952609, 23.34700930574822],
             [93.308302189745021, 23.341343712416823],
@@ -4952,18 +4952,18 @@
             [93.347419531562679, 23.331981005419404],
             [93.34161867771428, 23.339439289338582],
             [93.33396660941608, 23.344153528201687],
-            [93.324685644952609, 23.34700930574822],
-          ],
-        ],
+            [93.324685644952609, 23.34700930574822]
+          ]
+        ]
       },
-      properties: { FID: 29, AC_NO: 25, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "East Tuipui" },
+      "properties": { "FID": 29, "AC_NO": 25, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "East Tuipui" }
     },
     {
-      type: "Feature",
-      id: 30,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 30,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.251323972412735, 24.08463345567916],
             [93.245638302735344, 24.085864678808839],
@@ -5164,18 +5164,18 @@
             [93.269918620109706, 24.059552015280573],
             [93.267041459116697, 24.067082689482781],
             [93.267026586513239, 24.072113098527378],
-            [93.251323972412735, 24.08463345567916],
-          ],
-        ],
+            [93.251323972412735, 24.08463345567916]
+          ]
+        ]
       },
-      properties: { FID: 30, AC_NO: 21, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Lengteng" },
+      "properties": { "FID": 30, "AC_NO": 21, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Lengteng" }
     },
     {
-      type: "Feature",
-      id: 31,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 31,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.183778067957718, 23.533104688484435],
             [93.150461710650944, 23.540720280995242],
@@ -5237,18 +5237,18 @@
             [93.205712071137839, 23.526696944950171],
             [93.20161039920167, 23.528619632198115],
             [93.197636762126407, 23.524774515702166],
-            [93.183778067957718, 23.533104688484435],
-          ],
-        ],
+            [93.183778067957718, 23.533104688484435]
+          ]
+        ]
       },
-      properties: { FID: 31, AC_NO: 22, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tuichang" },
+      "properties": { "FID": 31, "AC_NO": 22, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tuichang" }
     },
     {
-      type: "Feature",
-      id: 32,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 32,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.398913069839267, 23.886555203220627],
             [93.4000575018419, 23.897945100184049],
@@ -5381,18 +5381,18 @@
             [93.400200628802423, 23.863053274226584],
             [93.399741755374379, 23.870214863560889],
             [93.398766782434024, 23.875975350893409],
-            [93.398913069839267, 23.886555203220627],
-          ],
-        ],
+            [93.398913069839267, 23.886555203220627]
+          ]
+        ]
       },
-      properties: { FID: 32, AC_NO: 23, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Champhai North" },
+      "properties": { "FID": 32, "AC_NO": 23, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Champhai North" }
     },
     {
-      type: "Feature",
-      id: 33,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 33,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.721946028685153, 23.812934887277649],
             [92.725533212809509, 23.810652119053572],
@@ -5477,18 +5477,18 @@
             [92.706049016174703, 23.862187320341043],
             [92.69716876404965, 23.86604108025346],
             [92.693909167892755, 23.833845729698762],
-            [92.721946028685153, 23.812934887277649],
-          ],
-        ],
+            [92.721946028685153, 23.812934887277649]
+          ]
+        ]
       },
-      properties: { FID: 33, AC_NO: 13, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl East I" },
+      "properties": { "FID": 33, "AC_NO": 13, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl East I" }
     },
     {
-      type: "Feature",
-      id: 34,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 34,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.693909167892755, 23.833845729698762],
             [92.69716876404965, 23.86604108025346],
@@ -5567,18 +5567,18 @@
             [92.7191413511691, 23.808565219028036],
             [92.720315442599116, 23.812021843730381],
             [92.721946028685153, 23.812934887277649],
-            [92.693909167892755, 23.833845729698762],
-          ],
-        ],
+            [92.693909167892755, 23.833845729698762]
+          ]
+        ]
       },
-      properties: { FID: 34, AC_NO: 15, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl West I" },
+      "properties": { "FID": 34, "AC_NO": 15, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl West I" }
     },
     {
-      type: "Feature",
-      id: 35,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 35,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.692359371001885, 23.714149135484771],
             [92.705567062504727, 23.716290548995435],
@@ -5625,18 +5625,18 @@
             [92.696286168834561, 23.722358861070155],
             [92.690574713044839, 23.72057424032614],
             [92.68950374462429, 23.717361728414751],
-            [92.692359371001885, 23.714149135484771],
-          ],
-        ],
+            [92.692359371001885, 23.714149135484771]
+          ]
+        ]
       },
-      properties: { FID: 35, AC_NO: 12, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl North III" },
+      "properties": { "FID": 35, "AC_NO": 12, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl North III" }
     },
     {
-      type: "Feature",
-      id: 36,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 36,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.836576417179074, 23.71206193817817],
             [92.794486027974543, 23.720646077747151],
@@ -5718,18 +5718,18 @@
             [92.96809255211241, 23.678919360118481],
             [92.953531650720961, 23.686362620935235],
             [92.920105351804864, 23.694212778261036],
-            [92.836576417179074, 23.71206193817817],
-          ],
-        ],
+            [92.836576417179074, 23.71206193817817]
+          ]
+        ]
       },
-      properties: { FID: 36, AC_NO: 9, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tawi" },
+      "properties": { "FID": 36, "AC_NO": 9, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tawi" }
     },
     {
-      type: "Feature",
-      id: 37,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 37,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.930925441173528, 24.397955961872384],
             [92.928653251821061, 24.401546305416058],
@@ -5981,18 +5981,18 @@
             [92.941829801197969, 24.39834775824626],
             [92.941013640631766, 24.396036586909865],
             [92.938983358915252, 24.394867535050679],
-            [92.930925441173528, 24.397955961872384],
-          ],
-        ],
+            [92.930925441173528, 24.397955961872384]
+          ]
+        ]
       },
-      properties: { FID: 37, AC_NO: 7, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Tuivawl" },
+      "properties": { "FID": 37, "AC_NO": 7, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Tuivawl" }
     },
     {
-      type: "Feature",
-      id: 38,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 38,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [93.017385599296645, 24.103831056408065],
             [93.014300169522187, 24.107612547664118],
@@ -6154,18 +6154,18 @@
             [93.033575504571701, 24.100131407816427],
             [93.030578206246219, 24.102939701005031],
             [93.024770433508309, 24.100751647095656],
-            [93.017385599296645, 24.103831056408065],
-          ],
-        ],
+            [93.017385599296645, 24.103831056408065]
+          ]
+        ]
       },
-      properties: { FID: 38, AC_NO: 8, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Chalfilh" },
+      "properties": { "FID": 38, "AC_NO": 8, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Chalfilh" }
     },
     {
-      type: "Feature",
-      id: 39,
-      geometry: {
-        type: "Polygon",
-        coordinates: [
+      "type": "Feature",
+      "id": 39,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
           [
             [92.692787438526736, 23.646038048493438],
             [92.6901297081846, 23.649625192634733],
@@ -6303,11 +6303,11 @@
             [92.706875546237285, 23.647668250553771],
             [92.705179747814839, 23.647146527003326],
             [92.696961665131667, 23.645385764392856],
-            [92.692787438526736, 23.646038048493438],
-          ],
-        ],
+            [92.692787438526736, 23.646038048493438]
+          ]
+        ]
       },
-      properties: { FID: 39, AC_NO: 20, ST_CODE: "S16", ST_NAME: "Mizoram", AC_NAME: "Aizawl South III" },
-    },
-  ],
-};
+      "properties": { "FID": 39, "AC_NO": 20, "ST_CODE": "S16", "ST_NAME": "Mizoram", "AC_NAME": "Aizawl South III" }
+    }
+  ]
+}

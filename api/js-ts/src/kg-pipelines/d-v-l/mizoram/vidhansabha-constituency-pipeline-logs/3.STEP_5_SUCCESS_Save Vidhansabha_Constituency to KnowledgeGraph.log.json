@@ -1,0 +1,2795 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9609b1a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b1b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-hachhek",
+            "names": [
+              {
+                "name": "Hachhek"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hachhek_Assembly_constituency",
+            "wikidata_qid": "Q55589708",
+            "node_created_on": "2025-01-26T18:38:10.316Z",
+            "active_version": {
+              "id": "0x9be9609b19"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b19"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b18"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b19",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-hachhek-version-25",
+            "region": {
+              "id": "0x9be9609b18"
+            },
+            "constituency_number": "1"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b18",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-hachhek-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b17"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:09.296Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hachhek_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-hachhek"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b20"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b21",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-dampa",
+            "names": [
+              {
+                "name": "Dampa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dampa_Assembly_constituency",
+            "wikidata_qid": "Q55589709",
+            "node_created_on": "2025-01-26T18:38:12.300Z",
+            "active_version": {
+              "id": "0x9be9609b1f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b1f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b1e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b1f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-dampa-version-25",
+            "region": {
+              "id": "0x9be9609b1e"
+            },
+            "constituency_number": "2"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b1e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-dampa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b1d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:11.708Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dampa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-dampa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d90"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b26",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-mamit",
+            "names": [
+              {
+                "name": "Mamit"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mamit_Assembly_constituency",
+            "wikidata_qid": "Q55589710",
+            "node_created_on": "2025-01-26T18:38:14.742Z",
+            "active_version": {
+              "id": "0x9be9609b25"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b25"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b24"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b25",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-mamit-version-25",
+            "region": {
+              "id": "0x9be9609b24"
+            },
+            "constituency_number": "3"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b24",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-mamit-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b23"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:13.718Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mamit_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-mamit"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b2b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b2c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tuirial",
+            "names": [
+              {
+                "name": "Tuirial"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuirial_Assembly_constituency",
+            "wikidata_qid": "Q55589711",
+            "node_created_on": "2025-01-26T18:38:16.315Z",
+            "active_version": {
+              "id": "0x9be9609b2a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b2a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b29"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b2a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tuirial-version-25",
+            "region": {
+              "id": "0x9be9609b29"
+            },
+            "constituency_number": "4"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b29",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tuirial-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b28"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:15.746Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuirial_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tuirial"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d7e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b31",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-kolasib",
+            "names": [
+              {
+                "name": "Kolasib"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kolasib_Assembly_constituency",
+            "wikidata_qid": "Q30599535",
+            "node_created_on": "2025-01-26T18:38:17.997Z",
+            "active_version": {
+              "id": "0x9be9609b30"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b30"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b2f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b30",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-kolasib-version-25",
+            "region": {
+              "id": "0x9be9609b2f"
+            },
+            "constituency_number": "5"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b2f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-kolasib-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b2e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:17.530Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kolasib_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-kolasib"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b36"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b37",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-serlui",
+            "names": [
+              {
+                "name": "Serlui"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Serlui_Assembly_constituency",
+            "wikidata_qid": "Q55589712",
+            "node_created_on": "2025-01-26T18:38:19.732Z",
+            "active_version": {
+              "id": "0x9be9609b35"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b35"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b34"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b35",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-serlui-version-25",
+            "region": {
+              "id": "0x9be9609b34"
+            },
+            "constituency_number": "6"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b34",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-serlui-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b33"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:19.125Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Serlui_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-serlui"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b3c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b3d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tuivawl",
+            "names": [
+              {
+                "name": "Tuivawl"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuivawl_Assembly_constituency",
+            "wikidata_qid": "Q55589713",
+            "node_created_on": "2025-01-26T18:38:21.787Z",
+            "active_version": {
+              "id": "0x9be9609b3b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b3b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b3a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b3b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tuivawl-version-25",
+            "region": {
+              "id": "0x9be9609b3a"
+            },
+            "constituency_number": "7"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b3a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tuivawl-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b39"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:21.011Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuivawl_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tuivawl"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b42"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b43",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-chalfilh",
+            "names": [
+              {
+                "name": "Chalfilh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chalfilh_Assembly_constituency",
+            "wikidata_qid": "Q55589714",
+            "node_created_on": "2025-01-26T18:38:24.028Z",
+            "active_version": {
+              "id": "0x9be9609b41"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b41"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b40"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b41",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-chalfilh-version-25",
+            "region": {
+              "id": "0x9be9609b40"
+            },
+            "constituency_number": "8"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b40",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-chalfilh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b3f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:23.482Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chalfilh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-chalfilh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b48"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b49",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tawi",
+            "names": [
+              {
+                "name": "Tawi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tawi_Assembly_constituency",
+            "wikidata_qid": "Q55589715",
+            "node_created_on": "2025-01-26T18:38:25.961Z",
+            "active_version": {
+              "id": "0x9be9609b47"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b47"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b46"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b47",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tawi-version-25",
+            "region": {
+              "id": "0x9be9609b46"
+            },
+            "constituency_number": "9"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b46",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tawi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b45"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:25.370Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tawi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tawi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b4e"
+          },
+          {
+            "id": "0x9be9609b4f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b50",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-north-1",
+            "names": [
+              {
+                "name": "Aizawl North 1"
+              },
+              {
+                "name": "Aizawl North I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_North_1_Assembly_constituency",
+            "wikidata_qid": "Q55589716",
+            "node_created_on": "2025-01-26T18:38:28.505Z",
+            "active_version": {
+              "id": "0x9be9609b4d"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b4d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b4c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b4d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-north-1-version-25",
+            "region": {
+              "id": "0x9be9609b4c"
+            },
+            "constituency_number": "10"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b4c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-north-1-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b4b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:27.721Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_North_1_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-north-1"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b55"
+          },
+          {
+            "id": "0x9be9609b56"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b57",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-north-2",
+            "names": [
+              {
+                "name": "Aizawl North 2"
+              },
+              {
+                "name": "Aizawl North II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_North_2_Assembly_constituency",
+            "wikidata_qid": "Q55589717",
+            "node_created_on": "2025-01-26T18:38:31.105Z",
+            "active_version": {
+              "id": "0x9be9609b54"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b54"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b53"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b54",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-north-2-version-25",
+            "region": {
+              "id": "0x9be9609b53"
+            },
+            "constituency_number": "11"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b53",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-north-2-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b52"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:30.323Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_North_2_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-north-2"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b5c"
+          },
+          {
+            "id": "0x9be9609b5d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b5e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-north-3",
+            "names": [
+              {
+                "name": "Aizawl North 3"
+              },
+              {
+                "name": "Aizawl North III"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_North_3_Assembly_constituency",
+            "wikidata_qid": "Q25208643",
+            "node_created_on": "2025-01-26T18:38:33.971Z",
+            "active_version": {
+              "id": "0x9be9609b5b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b5b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b5a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b5b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-north-3-version-25",
+            "region": {
+              "id": "0x9be9609b5a"
+            },
+            "constituency_number": "12"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b5a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-north-3-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b59"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:33.360Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_North_3_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-north-3"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b63"
+          },
+          {
+            "id": "0x9be9609b64"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b65",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-east-1",
+            "names": [
+              {
+                "name": "Aizawl East 1"
+              },
+              {
+                "name": "Aizawl East I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_East_1_Assembly_constituency",
+            "wikidata_qid": "Q55589718",
+            "node_created_on": "2025-01-26T18:38:36.738Z",
+            "active_version": {
+              "id": "0x9be9609b62"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b62"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b61"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b62",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-east-1-version-25",
+            "region": {
+              "id": "0x9be9609b61"
+            },
+            "constituency_number": "13"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b61",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-east-1-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b60"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:36.046Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_East_1_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-east-1"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b6a"
+          },
+          {
+            "id": "0x9be9609b6b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b6c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-east-2",
+            "names": [
+              {
+                "name": "Aizawl East 2"
+              },
+              {
+                "name": "Aizawl East II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_East_2_Assembly_constituency",
+            "wikidata_qid": "Q55589719",
+            "node_created_on": "2025-01-26T18:38:39.608Z",
+            "active_version": {
+              "id": "0x9be9609b69"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b69"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b68"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b69",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-east-2-version-25",
+            "region": {
+              "id": "0x9be9609b68"
+            },
+            "constituency_number": "14"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b68",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-east-2-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b67"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:38.377Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_East_2_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-east-2"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b71"
+          },
+          {
+            "id": "0x9be9609b72"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b73",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-west-1",
+            "names": [
+              {
+                "name": "Aizawl West 1"
+              },
+              {
+                "name": "Aizawl West I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_West_1_Assembly_constituency",
+            "wikidata_qid": "Q55589720",
+            "node_created_on": "2025-01-26T18:38:42.319Z",
+            "active_version": {
+              "id": "0x9be9609b70"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b70"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b6f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b70",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-west-1-version-25",
+            "region": {
+              "id": "0x9be9609b6f"
+            },
+            "constituency_number": "15"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b6f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-west-1-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b6e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:41.754Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_West_1_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-west-1"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b78"
+          },
+          {
+            "id": "0x9be9609b79"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b7a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-west-2",
+            "names": [
+              {
+                "name": "Aizawl West 2"
+              },
+              {
+                "name": "Aizawl West II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_West_2_Assembly_constituency",
+            "wikidata_qid": "Q55589721",
+            "node_created_on": "2025-01-26T18:38:44.725Z",
+            "active_version": {
+              "id": "0x9be9609b77"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b77"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b76"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b77",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-west-2-version-25",
+            "region": {
+              "id": "0x9be9609b76"
+            },
+            "constituency_number": "16"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b76",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-west-2-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b75"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:44.055Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_West_2_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-west-2"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b7f"
+          },
+          {
+            "id": "0x9be9609b80"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b81",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-west-3",
+            "names": [
+              {
+                "name": "Aizawl West 3"
+              },
+              {
+                "name": "Aizawl West III"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_West_3_Assembly_constituency",
+            "wikidata_qid": "Q55589722",
+            "node_created_on": "2025-01-26T18:38:47.308Z",
+            "active_version": {
+              "id": "0x9be9609b7e"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b7e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b7d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b7e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-west-3-version-25",
+            "region": {
+              "id": "0x9be9609b7d"
+            },
+            "constituency_number": "17"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b7d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-west-3-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b7c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:46.500Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_West_3_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-west-3"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b86"
+          },
+          {
+            "id": "0x9be9609b87"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b88",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-south-1",
+            "names": [
+              {
+                "name": "Aizawl South 1"
+              },
+              {
+                "name": "Aizawl South I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_South_1_Assembly_constituency",
+            "wikidata_qid": "Q55589723",
+            "node_created_on": "2025-01-26T18:38:50.486Z",
+            "active_version": {
+              "id": "0x9be9609b85"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b85"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b84"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b85",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-south-1-version-25",
+            "region": {
+              "id": "0x9be9609b84"
+            },
+            "constituency_number": "18"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b84",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-south-1-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b83"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:49.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_South_1_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-south-1"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b8d"
+          },
+          {
+            "id": "0x9be9609b8e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b8f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-south-2",
+            "names": [
+              {
+                "name": "Aizawl South 2"
+              },
+              {
+                "name": "Aizawl South II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_South_2_Assembly_constituency",
+            "wikidata_qid": "Q55589724",
+            "node_created_on": "2025-01-26T18:38:52.919Z",
+            "active_version": {
+              "id": "0x9be9609b8c"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b8c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b8b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b8c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-south-2-version-25",
+            "region": {
+              "id": "0x9be9609b8b"
+            },
+            "constituency_number": "19"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b8b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-south-2-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b8a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:52.201Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_South_2_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-south-2"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b94"
+          },
+          {
+            "id": "0x9be9609b95"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b96",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-aizawl-south-3",
+            "names": [
+              {
+                "name": "Aizawl South 3"
+              },
+              {
+                "name": "Aizawl South III"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aizawl_South_3_Assembly_constituency",
+            "wikidata_qid": "Q55589725",
+            "node_created_on": "2025-01-26T18:38:55.723Z",
+            "active_version": {
+              "id": "0x9be9609b93"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b93"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b92"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b93",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-aizawl-south-3-version-25",
+            "region": {
+              "id": "0x9be9609b92"
+            },
+            "constituency_number": "20"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b92",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-aizawl-south-3-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b91"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:54.704Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aizawl_South_3_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-aizawl-south-3"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b9b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609b9c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lengteng",
+            "names": [
+              {
+                "name": "Lengteng"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lengteng_Assembly_constituency",
+            "wikidata_qid": "Q55589728",
+            "node_created_on": "2025-01-26T18:38:57.969Z",
+            "active_version": {
+              "id": "0x9be9609b9a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609b9a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b99"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609b9a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lengteng-version-25",
+            "region": {
+              "id": "0x9be9609b99"
+            },
+            "constituency_number": "21"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b99",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lengteng-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b98"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:57.320Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lengteng_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lengteng"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ba1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609ba2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tuichang",
+            "names": [
+              {
+                "name": "Tuichang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuichang_Assembly_constituency",
+            "wikidata_qid": "Q55589729",
+            "node_created_on": "2025-01-26T18:39:00.477Z",
+            "active_version": {
+              "id": "0x9be9609ba0"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609ba0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609b9f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609ba0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tuichang-version-25",
+            "region": {
+              "id": "0x9be9609b9f"
+            },
+            "constituency_number": "22"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609b9f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tuichang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609b9e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:38:59.301Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuichang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tuichang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ba7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609ba8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-champhai-north",
+            "names": [
+              {
+                "name": "Champhai North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Champhai_North_Assembly_constituency",
+            "wikidata_qid": "Q55589730",
+            "node_created_on": "2025-01-26T18:39:02.320Z",
+            "active_version": {
+              "id": "0x9be9609ba6"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609ba6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609ba5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609ba6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-champhai-north-version-25",
+            "region": {
+              "id": "0x9be9609ba5"
+            },
+            "constituency_number": "23"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609ba5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-champhai-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609ba4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:01.724Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Champhai_North_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-champhai-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bad"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bae",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-champhai-south",
+            "names": [
+              {
+                "name": "Champhai South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Champhai_South_Assembly_constituency",
+            "wikidata_qid": "Q55589731",
+            "node_created_on": "2025-01-26T18:39:04.795Z",
+            "active_version": {
+              "id": "0x9be9609bac"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bab"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bac",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-champhai-south-version-25",
+            "region": {
+              "id": "0x9be9609bab"
+            },
+            "constituency_number": "24"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bab",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-champhai-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609baa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:03.974Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Champhai_South_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-champhai-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bb3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bb4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-east-tuipui",
+            "names": [
+              {
+                "name": "East Tuipui"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/East_Tuipui_Assembly_constituency",
+            "wikidata_qid": "Q55589732",
+            "node_created_on": "2025-01-26T18:39:06.556Z",
+            "active_version": {
+              "id": "0x9be9609bb2"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bb2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bb1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bb2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-east-tuipui-version-25",
+            "region": {
+              "id": "0x9be9609bb1"
+            },
+            "constituency_number": "25"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bb1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-east-tuipui-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bb0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:06.048Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/East_Tuipui_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-east-tuipui"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605da2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bb9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-serchhip",
+            "names": [
+              {
+                "name": "Serchhip"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Serchhip_Assembly_constituency",
+            "wikidata_qid": "Q55589733",
+            "node_created_on": "2025-01-26T18:39:08.780Z",
+            "active_version": {
+              "id": "0x9be9609bb8"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bb8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bb7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bb8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-serchhip-version-25",
+            "region": {
+              "id": "0x9be9609bb7"
+            },
+            "constituency_number": "26"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bb7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-serchhip-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bb6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:08.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Serchhip_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-serchhip"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bbe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bbf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tuikum",
+            "names": [
+              {
+                "name": "Tuikum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuikum_Assembly_constituency",
+            "wikidata_qid": "Q55589734",
+            "node_created_on": "2025-01-26T18:39:11.188Z",
+            "active_version": {
+              "id": "0x9be9609bbd"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bbd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bbc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bbd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tuikum-version-25",
+            "region": {
+              "id": "0x9be9609bbc"
+            },
+            "constituency_number": "27"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bbc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tuikum-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bbb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:10.529Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuikum_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tuikum"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bc4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bc5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-hrangturzo",
+            "names": [
+              {
+                "name": "Hrangturzo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hrangturzo_Assembly_constituency",
+            "wikidata_qid": "Q55589735",
+            "node_created_on": "2025-01-26T18:39:13.012Z",
+            "active_version": {
+              "id": "0x9be9609bc3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bc3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bc2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bc3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-hrangturzo-version-25",
+            "region": {
+              "id": "0x9be9609bc2"
+            },
+            "constituency_number": "28"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bc2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-hrangturzo-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bc1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:12.375Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hrangturzo_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-hrangturzo"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bca"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bcb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-south-tuipui",
+            "names": [
+              {
+                "name": "South Tuipui"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/South_Tuipui_Assembly_constituency",
+            "wikidata_qid": "Q55589736",
+            "node_created_on": "2025-01-26T18:39:15.296Z",
+            "active_version": {
+              "id": "0x9be9609bc9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bc9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bc8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bc9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-south-tuipui-version-25",
+            "region": {
+              "id": "0x9be9609bc8"
+            },
+            "constituency_number": "29"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bc8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-south-tuipui-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bc7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:14.720Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Tuipui_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-south-tuipui"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bd0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bd1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lunglei-north",
+            "names": [
+              {
+                "name": "Lunglei North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lunglei_North_Assembly_constituency",
+            "wikidata_qid": "Q55589737",
+            "node_created_on": "2025-01-26T18:39:17.392Z",
+            "active_version": {
+              "id": "0x9be9609bcf"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bcf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bce"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bcf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lunglei-north-version-25",
+            "region": {
+              "id": "0x9be9609bce"
+            },
+            "constituency_number": "30"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bce",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lunglei-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bcd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:16.705Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lunglei_North_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lunglei-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bd6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bd7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lunglei-east",
+            "names": [
+              {
+                "name": "Lunglei East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lunglei_East_Assembly_constituency",
+            "wikidata_qid": "Q55589738",
+            "node_created_on": "2025-01-26T18:39:19.984Z",
+            "active_version": {
+              "id": "0x9be9609bd5"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bd5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bd4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bd5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lunglei-east-version-25",
+            "region": {
+              "id": "0x9be9609bd4"
+            },
+            "constituency_number": "31"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bd4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lunglei-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bd3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:18.757Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lunglei_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lunglei-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bdc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bdd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lunglei-west",
+            "names": [
+              {
+                "name": "Lunglei West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lunglei_West_Assembly_constituency",
+            "wikidata_qid": "Q55589739",
+            "node_created_on": "2025-01-26T18:39:22.701Z",
+            "active_version": {
+              "id": "0x9be9609bdb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bdb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bda"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bdb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lunglei-west-version-25",
+            "region": {
+              "id": "0x9be9609bda"
+            },
+            "constituency_number": "32"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bda",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lunglei-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bd9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:21.310Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lunglei_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lunglei-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609be2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609be3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lunglei-south",
+            "names": [
+              {
+                "name": "Lunglei South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lunglei_South_Assembly_constituency",
+            "wikidata_qid": "Q55589740",
+            "node_created_on": "2025-01-26T18:39:25.276Z",
+            "active_version": {
+              "id": "0x9be9609be1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609be1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609be0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609be1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lunglei-south-version-25",
+            "region": {
+              "id": "0x9be9609be0"
+            },
+            "constituency_number": "33"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609be0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lunglei-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bdf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:23.976Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lunglei_South_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lunglei-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609be8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609be9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-thorang",
+            "names": [
+              {
+                "name": "Thorang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thorang_Assembly_constituency",
+            "wikidata_qid": "Q55589741",
+            "node_created_on": "2025-01-26T18:39:27.530Z",
+            "active_version": {
+              "id": "0x9be9609be7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609be7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609be6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609be7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-thorang-version-25",
+            "region": {
+              "id": "0x9be9609be6"
+            },
+            "constituency_number": "34"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609be6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-thorang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609be5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:26.710Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thorang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-thorang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bee"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bef",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-west-tuipui",
+            "names": [
+              {
+                "name": "West Tuipui"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/West_Tuipui_Assembly_constituency",
+            "wikidata_qid": "Q55589742",
+            "node_created_on": "2025-01-26T18:39:29.877Z",
+            "active_version": {
+              "id": "0x9be9609bed"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bed"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bec"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bed",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-west-tuipui-version-25",
+            "region": {
+              "id": "0x9be9609bec"
+            },
+            "constituency_number": "35"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bec",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-west-tuipui-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609beb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:29.271Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/West_Tuipui_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-west-tuipui"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bf4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bf5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-tuichawng",
+            "names": [
+              {
+                "name": "Tuichawng"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuichawng_Assembly_constituency",
+            "wikidata_qid": "Q55589743",
+            "node_created_on": "2025-01-26T18:39:32.343Z",
+            "active_version": {
+              "id": "0x9be9609bf3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bf3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bf2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bf3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-tuichawng-version-25",
+            "region": {
+              "id": "0x9be9609bf2"
+            },
+            "constituency_number": "36"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bf2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-tuichawng-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bf1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:31.187Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuichawng_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-tuichawng"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609bfa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609bfb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lawngtlai-west",
+            "names": [
+              {
+                "name": "Lawngtlai West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lawngtlai_West_Assembly_constituency",
+            "wikidata_qid": "Q55589744",
+            "node_created_on": "2025-01-26T18:39:34.391Z",
+            "active_version": {
+              "id": "0x9be9609bf9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bf9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bf8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bf9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lawngtlai-west-version-25",
+            "region": {
+              "id": "0x9be9609bf8"
+            },
+            "constituency_number": "37"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bf8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lawngtlai-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bf7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:33.699Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lawngtlai_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lawngtlai-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609c00"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609c01",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-lawngtlai-east",
+            "names": [
+              {
+                "name": "Lawngtlai East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lawngtlai_East_Assembly_constituency",
+            "wikidata_qid": "Q123377657",
+            "node_created_on": "2025-01-26T18:39:36.540Z",
+            "active_version": {
+              "id": "0x9be9609bff"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609bff"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609bfe"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609bff",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-lawngtlai-east-version-25",
+            "region": {
+              "id": "0x9be9609bfe"
+            },
+            "constituency_number": "38"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609bfe",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-lawngtlai-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609bfd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:35.823Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lawngtlai_East_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-lawngtlai-east"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d96"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609c06",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-saiha",
+            "names": [
+              {
+                "name": "Saiha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saiha_Assembly_constituency",
+            "wikidata_qid": "Q55589747",
+            "node_created_on": "2025-01-26T18:39:38.792Z",
+            "active_version": {
+              "id": "0x9be9609c05"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609c05"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609c04"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609c05",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-saiha-version-25",
+            "region": {
+              "id": "0x9be9609c04"
+            },
+            "constituency_number": "39"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609c04",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-saiha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609c03"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:37.869Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saiha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-saiha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609c0b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9609c0c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mz-palak",
+            "names": [
+              {
+                "name": "Palak"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Palak_Assembly_constituency",
+            "wikidata_qid": "Q55589748",
+            "node_created_on": "2025-01-26T18:39:40.474Z",
+            "active_version": {
+              "id": "0x9be9609c0a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9609c0a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9609c09"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9609c0a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mz-palak-version-25",
+            "region": {
+              "id": "0x9be9609c09"
+            },
+            "constituency_number": "40"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9609c09",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mz-palak-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9609c08"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-mizoram-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-26T18:39:39.919Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Palak_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mz-palak"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-26T18:39:41.011Z"
+}
