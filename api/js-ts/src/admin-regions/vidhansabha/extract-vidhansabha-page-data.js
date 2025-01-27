@@ -504,17 +504,17 @@ async function processVidhansabhaPage(page) {
   return result;
 }
 
-(async () => {
-  // const urls = vidhansabhaConstituencies.map((val) => val.href);
-  const urls = ["https://en.wikipedia.org/wiki/Tiruvuru_(Assembly_constituency)"];
-  // console.log(urls);
-  let results = await processListOfWikipediaPages(urls);
-  // results = { results, state: statesUrls[i].state };
-  fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
+// (async () => {
+//   // const urls = vidhansabhaConstituencies.map((val) => val.href);
+//   const urls = ["https://en.wikipedia.org/wiki/Tiruvuru_(Assembly_constituency)"];
+//   // console.log(urls);
+//   let results = await processListOfWikipediaPages(urls);
+//   // results = { results, state: statesUrls[i].state };
+//   fs.writeFileSync(outputFilePath, JSON.stringify(results, null, 2));
 
-  // for (let i = 0; i < statesUrls.length; i++) {
-  //   const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
-  //   existingResults.push(results);
-  //   fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
-  // }
-})();
+//   // for (let i = 0; i < statesUrls.length; i++) {
+//   //   const existingResults = fs.existsSync(outputFilePath) ? JSON.parse(fs.readFileSync(outputFilePath)) : [];
+//   //   existingResults.push(results);
+//   //   fs.writeFileSync(outputFilePath, JSON.stringify(existingResults, null, 2));
+//   // }
+// })();
