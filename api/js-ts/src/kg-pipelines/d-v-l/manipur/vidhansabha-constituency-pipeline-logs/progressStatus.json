@@ -1,0 +1,69 @@
+[
+  {
+    "iteration": 1,
+    "timeStamp": "2025-01-26T18:01:46.342Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_4_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-26T18:43:39.749Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/1.STEP_4_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/manipur/vidhansabha-constituency-pipeline-logs/2.STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph.log.json",
+        "status": "SUCCESS"
+      }
+    ]
+  }
+]
