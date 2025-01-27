@@ -1,0 +1,2283 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960b819"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b81a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-sangha",
+            "names": [
+              {
+                "name": "Sangha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sangha_Assembly_constituency",
+            "wikidata_qid": "Q55720446",
+            "node_created_on": "2025-01-27T08:29:24.391Z",
+            "active_version": {
+              "id": "0x9be960b818"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b818"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b817"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b818",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-sangha-version-25",
+            "region": {
+              "id": "0x9be960b817"
+            },
+            "constituency_number": "32"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b817",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-sangha-version-25-region",
+            "geo_boundary": [],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:23.344Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sangha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-sangha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b81f"
+          },
+          {
+            "id": "0x9be960b820"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b821",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-yoksam–tashiding",
+            "names": [
+              {
+                "name": "Yoksam–Tashiding"
+              },
+              {
+                "name": "Yuksom Tashiding"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Yoksam%E2%80%93Tashiding_Assembly_constituency",
+            "wikidata_qid": "Q55720404",
+            "node_created_on": "2025-01-27T08:29:26.699Z",
+            "active_version": {
+              "id": "0x9be960b81e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b81e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b81d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b81e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-yoksam–tashiding-version-25",
+            "region": {
+              "id": "0x9be960b81d"
+            },
+            "constituency_number": "1"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b81d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-yoksam–tashiding-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b81c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:25.720Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Yoksam%E2%80%93Tashiding_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-yoksam–tashiding"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b826"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b827",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-yangthang",
+            "names": [
+              {
+                "name": "Yangthang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Yangthang_Assembly_constituency",
+            "wikidata_qid": "Q55720405",
+            "node_created_on": "2025-01-27T08:29:28.777Z",
+            "active_version": {
+              "id": "0x9be960b825"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b825"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b824"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b825",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-yangthang-version-25",
+            "region": {
+              "id": "0x9be960b824"
+            },
+            "constituency_number": "2"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b824",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-yangthang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b823"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:28.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Yangthang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-yangthang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b82c"
+          },
+          {
+            "id": "0x9be960b82d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b82e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-maneybong–dentam",
+            "names": [
+              {
+                "name": "Maneybong–Dentam"
+              },
+              {
+                "name": "Maneybong-Dentam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maneybong%E2%80%93Dentam_Assembly_constituency",
+            "wikidata_qid": "Q55720406",
+            "node_created_on": "2025-01-27T08:29:31.302Z",
+            "active_version": {
+              "id": "0x9be960b82b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b82b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b82a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b82b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-maneybong–dentam-version-25",
+            "region": {
+              "id": "0x9be960b82a"
+            },
+            "constituency_number": "3"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b82a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-maneybong–dentam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b829"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:30.718Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Maneybong%E2%80%93Dentam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-maneybong–dentam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b833"
+          },
+          {
+            "id": "0x9be960b834"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b835",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-gyalshing–barnyak",
+            "names": [
+              {
+                "name": "Gyalshing–Barnyak"
+              },
+              {
+                "name": "Gyalshing-Barnyak"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gyalshing%E2%80%93Barnyak_Assembly_constituency",
+            "wikidata_qid": "Q55720407",
+            "node_created_on": "2025-01-27T08:29:33.525Z",
+            "active_version": {
+              "id": "0x9be960b832"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b832"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b831"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b832",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-gyalshing–barnyak-version-25",
+            "region": {
+              "id": "0x9be960b831"
+            },
+            "constituency_number": "4"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b831",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-gyalshing–barnyak-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b830"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:32.850Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gyalshing%E2%80%93Barnyak_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-gyalshing–barnyak"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b83a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b83b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-rinchenpong",
+            "names": [
+              {
+                "name": "Rinchenpong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rinchenpong_Assembly_constituency",
+            "wikidata_qid": "Q55720408",
+            "node_created_on": "2025-01-27T08:29:36.775Z",
+            "active_version": {
+              "id": "0x9be960b839"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b839"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b838"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b839",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-rinchenpong-version-25",
+            "region": {
+              "id": "0x9be960b838"
+            },
+            "constituency_number": "5"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b838",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-rinchenpong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b837"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:35.993Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rinchenpong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-rinchenpong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b840"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b841",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-daramdin",
+            "names": [
+              {
+                "name": "Daramdin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Daramdin_Assembly_constituency",
+            "wikidata_qid": "Q55720409",
+            "node_created_on": "2025-01-27T08:29:38.546Z",
+            "active_version": {
+              "id": "0x9be960b83f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b83f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b83e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b83f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-daramdin-version-25",
+            "region": {
+              "id": "0x9be960b83e"
+            },
+            "constituency_number": "6"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b83e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-daramdin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b83d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:37.935Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Daramdin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-daramdin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b846"
+          },
+          {
+            "id": "0x9be960b847"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b848",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-soreng–chakung",
+            "names": [
+              {
+                "name": "Soreng–Chakung"
+              },
+              {
+                "name": "Soreong-Chakung"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Soreng%E2%80%93Chakung_Assembly_constituency",
+            "wikidata_qid": "Q55720410",
+            "node_created_on": "2025-01-27T08:29:41.186Z",
+            "active_version": {
+              "id": "0x9be960b845"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b845"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b844"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b845",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-soreng–chakung-version-25",
+            "region": {
+              "id": "0x9be960b844"
+            },
+            "constituency_number": "7"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b844",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-soreng–chakung-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b843"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:40.344Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Soreng%E2%80%93Chakung_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-soreng–chakung"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b84d"
+          },
+          {
+            "id": "0x9be960b84e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b84f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-salghari–zoom",
+            "names": [
+              {
+                "name": "Salghari–Zoom"
+              },
+              {
+                "name": "Salghari-Zoom"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Salghari%E2%80%93Zoom_Assembly_constituency",
+            "wikidata_qid": "Q55720412",
+            "node_created_on": "2025-01-27T08:29:43.695Z",
+            "active_version": {
+              "id": "0x9be960b84c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b84c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b84b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b84c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-salghari–zoom-version-25",
+            "region": {
+              "id": "0x9be960b84b"
+            },
+            "constituency_number": "8"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b84b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-salghari–zoom-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b84a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:42.926Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Salghari%E2%80%93Zoom_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-salghari–zoom"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b854"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b855",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-barfung",
+            "names": [
+              {
+                "name": "Barfung"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barfung_Assembly_constituency",
+            "wikidata_qid": "Q55720413",
+            "node_created_on": "2025-01-27T08:29:46.094Z",
+            "active_version": {
+              "id": "0x9be960b853"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b853"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b852"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b853",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-barfung-version-25",
+            "region": {
+              "id": "0x9be960b852"
+            },
+            "constituency_number": "9"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b852",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-barfung-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b851"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:45.297Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barfung_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-barfung"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b85a"
+          },
+          {
+            "id": "0x9be960b85b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b85c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-poklok–kamrang",
+            "names": [
+              {
+                "name": "Poklok–Kamrang"
+              },
+              {
+                "name": "Poklok-Kamrang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Poklok%E2%80%93Kamrang_Assembly_constituency",
+            "wikidata_qid": "Q55720417",
+            "node_created_on": "2025-01-27T08:29:47.972Z",
+            "active_version": {
+              "id": "0x9be960b859"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b859"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b858"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b859",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-poklok–kamrang-version-25",
+            "region": {
+              "id": "0x9be960b858"
+            },
+            "constituency_number": "10"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b858",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-poklok–kamrang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b857"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:47.321Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Poklok%E2%80%93Kamrang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-poklok–kamrang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b861"
+          },
+          {
+            "id": "0x9be960b862"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b863",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-namchi–singhithang",
+            "names": [
+              {
+                "name": "Namchi–Singhithang"
+              },
+              {
+                "name": "Namchi-Singhithang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namchi%E2%80%93Singhithang_Assembly_constituency",
+            "wikidata_qid": "Q54528373",
+            "node_created_on": "2025-01-27T08:29:50.521Z",
+            "active_version": {
+              "id": "0x9be960b860"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b860"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b85f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b860",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-namchi–singhithang-version-25",
+            "region": {
+              "id": "0x9be960b85f"
+            },
+            "constituency_number": "11"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b85f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-namchi–singhithang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b85e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:49.806Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namchi%E2%80%93Singhithang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-namchi–singhithang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b868"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b869",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-melli",
+            "names": [
+              {
+                "name": "Melli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Melli_Assembly_constituency",
+            "wikidata_qid": "Q55720418",
+            "node_created_on": "2025-01-27T08:29:52.993Z",
+            "active_version": {
+              "id": "0x9be960b867"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b867"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b866"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b867",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-melli-version-25",
+            "region": {
+              "id": "0x9be960b866"
+            },
+            "constituency_number": "12"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b866",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-melli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b865"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:52.343Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Melli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-melli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b86e"
+          },
+          {
+            "id": "0x9be960b86f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b870",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-namthang–rateypani",
+            "names": [
+              {
+                "name": "Namthang–Rateypani"
+              },
+              {
+                "name": "Namthang-Rateypani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namthang%E2%80%93Rateypani_Assembly_constituency",
+            "wikidata_qid": "Q55720419",
+            "node_created_on": "2025-01-27T08:29:55.419Z",
+            "active_version": {
+              "id": "0x9be960b86d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b86d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b86c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b86d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-namthang–rateypani-version-25",
+            "region": {
+              "id": "0x9be960b86c"
+            },
+            "constituency_number": "13"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b86c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-namthang–rateypani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b86b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:54.699Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namthang%E2%80%93Rateypani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-namthang–rateypani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b875"
+          },
+          {
+            "id": "0x9be960b876"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b877",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-temi–namphing",
+            "names": [
+              {
+                "name": "Temi–Namphing"
+              },
+              {
+                "name": "Temi-Namphing"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Temi%E2%80%93Namphing_Assembly_constituency",
+            "wikidata_qid": "Q55720420",
+            "node_created_on": "2025-01-27T08:29:58.036Z",
+            "active_version": {
+              "id": "0x9be960b874"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b874"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b873"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b874",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-temi–namphing-version-25",
+            "region": {
+              "id": "0x9be960b873"
+            },
+            "constituency_number": "14"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b873",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-temi–namphing-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b872"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:57.494Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Temi%E2%80%93Namphing_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-temi–namphing"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b87c"
+          },
+          {
+            "id": "0x9be960b87d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b87e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-rangang–yangang",
+            "names": [
+              {
+                "name": "Rangang–Yangang"
+              },
+              {
+                "name": "Rangang-Yangang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rangang%E2%80%93Yangang_Assembly_constituency",
+            "wikidata_qid": "Q104882815",
+            "node_created_on": "2025-01-27T08:30:00.944Z",
+            "active_version": {
+              "id": "0x9be960b87b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b87b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b87a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b87b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-rangang–yangang-version-25",
+            "region": {
+              "id": "0x9be960b87a"
+            },
+            "constituency_number": "15"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b87a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-rangang–yangang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b879"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:29:59.691Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rangang%E2%80%93Yangang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-rangang–yangang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b883"
+          },
+          {
+            "id": "0x9be960b884"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b885",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-tumin–lingee",
+            "names": [
+              {
+                "name": "Tumin–Lingee"
+              },
+              {
+                "name": "Tumen-Lingi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tumin%E2%80%93Lingee_Assembly_constituency",
+            "wikidata_qid": "Q104882816",
+            "node_created_on": "2025-01-27T08:30:03.400Z",
+            "active_version": {
+              "id": "0x9be960b882"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b882"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b881"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b882",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-tumin–lingee-version-25",
+            "region": {
+              "id": "0x9be960b881"
+            },
+            "constituency_number": "16"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b881",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-tumin–lingee-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b880"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:02.779Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tumin%E2%80%93Lingee_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-tumin–lingee"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b88a"
+          },
+          {
+            "id": "0x9be960b88b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b88c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-khamdong–singtam",
+            "names": [
+              {
+                "name": "Khamdong–Singtam"
+              },
+              {
+                "name": "Khamdong-Singtam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khamdong%E2%80%93Singtam_Assembly_constituency",
+            "wikidata_qid": "Q55720424",
+            "node_created_on": "2025-01-27T08:30:05.752Z",
+            "active_version": {
+              "id": "0x9be960b889"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b889"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b888"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b889",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-khamdong–singtam-version-25",
+            "region": {
+              "id": "0x9be960b888"
+            },
+            "constituency_number": "17"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b888",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-khamdong–singtam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b887"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:05.242Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khamdong%E2%80%93Singtam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-khamdong–singtam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b891"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b892",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-west-pendam",
+            "names": [
+              {
+                "name": "West Pendam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/West_Pendam_Assembly_constituency",
+            "wikidata_qid": "Q55720425",
+            "node_created_on": "2025-01-27T08:30:08.320Z",
+            "active_version": {
+              "id": "0x9be960b890"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b890"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b88f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b890",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-west-pendam-version-25",
+            "region": {
+              "id": "0x9be960b88f"
+            },
+            "constituency_number": "18"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b88f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-west-pendam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b88e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:07.598Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/West_Pendam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-west-pendam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b897"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b898",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-rhenock",
+            "names": [
+              {
+                "name": "Rhenock"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rhenock_Assembly_constituency",
+            "wikidata_qid": "Q104882817",
+            "node_created_on": "2025-01-27T08:30:10.753Z",
+            "active_version": {
+              "id": "0x9be960b896"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b896"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b895"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b896",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-rhenock-version-25",
+            "region": {
+              "id": "0x9be960b895"
+            },
+            "constituency_number": "19"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b895",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-rhenock-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b894"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:09.999Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rhenock_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-rhenock"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b89d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b89e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-chujachen",
+            "names": [
+              {
+                "name": "Chujachen"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chujachen_Assembly_constituency",
+            "wikidata_qid": "Q55720430",
+            "node_created_on": "2025-01-27T08:30:13.333Z",
+            "active_version": {
+              "id": "0x9be960b89c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b89c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b89b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b89c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-chujachen-version-25",
+            "region": {
+              "id": "0x9be960b89b"
+            },
+            "constituency_number": "20"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b89b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-chujachen-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b89a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:12.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chujachen_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-chujachen"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8a3"
+          },
+          {
+            "id": "0x9be960b8a4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8a5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-gnathang–machong",
+            "names": [
+              {
+                "name": "Gnathang–Machong"
+              },
+              {
+                "name": "Gnathang-Machong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gnathang%E2%80%93Machong_Assembly_constituency",
+            "wikidata_qid": "Q55720431",
+            "node_created_on": "2025-01-27T08:30:15.382Z",
+            "active_version": {
+              "id": "0x9be960b8a2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8a2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8a1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8a2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-gnathang–machong-version-25",
+            "region": {
+              "id": "0x9be960b8a1"
+            },
+            "constituency_number": "21"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8a1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-gnathang–machong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8a0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:14.710Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gnathang%E2%80%93Machong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-gnathang–machong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8aa"
+          },
+          {
+            "id": "0x9be960b8ab"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8ac",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-namchaybong",
+            "names": [
+              {
+                "name": "Namchaybong"
+              },
+              {
+                "name": "Namcheybung"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Namchaybong_Assembly_constituency",
+            "wikidata_qid": "Q55720432",
+            "node_created_on": "2025-01-27T08:30:18.186Z",
+            "active_version": {
+              "id": "0x9be960b8a9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8a9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8a8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8a9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-namchaybong-version-25",
+            "region": {
+              "id": "0x9be960b8a8"
+            },
+            "constituency_number": "22"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8a8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-namchaybong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8a7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:17.542Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Namchaybong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-namchaybong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8b1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8b2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-shyari",
+            "names": [
+              {
+                "name": "Shyari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shyari_Assembly_constituency",
+            "wikidata_qid": "Q55720433",
+            "node_created_on": "2025-01-27T08:30:20.731Z",
+            "active_version": {
+              "id": "0x9be960b8b0"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8b0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8af"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8b0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-shyari-version-25",
+            "region": {
+              "id": "0x9be960b8af"
+            },
+            "constituency_number": "23"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8af",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-shyari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8ae"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:20.189Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shyari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-shyari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8b7"
+          },
+          {
+            "id": "0x9be960b8b8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8b9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-martam–rumtek",
+            "names": [
+              {
+                "name": "Martam–Rumtek"
+              },
+              {
+                "name": "Martam-Rumtek"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Martam%E2%80%93Rumtek_Assembly_constituency",
+            "wikidata_qid": "Q55720434",
+            "node_created_on": "2025-01-27T08:30:23.538Z",
+            "active_version": {
+              "id": "0x9be960b8b6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8b6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8b5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8b6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-martam–rumtek-version-25",
+            "region": {
+              "id": "0x9be960b8b5"
+            },
+            "constituency_number": "24"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8b5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-martam–rumtek-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8b4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:22.687Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Martam%E2%80%93Rumtek_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-martam–rumtek"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8be"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8bf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-upper-tadong",
+            "names": [
+              {
+                "name": "Upper Tadong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Upper_Tadong_Assembly_constituency",
+            "wikidata_qid": "Q55720435",
+            "node_created_on": "2025-01-27T08:30:26.230Z",
+            "active_version": {
+              "id": "0x9be960b8bd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8bd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8bc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8bd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-upper-tadong-version-25",
+            "region": {
+              "id": "0x9be960b8bc"
+            },
+            "constituency_number": "25"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8bc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-upper-tadong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8bb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:25.521Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Upper_Tadong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-upper-tadong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8c4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8c5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-arithang",
+            "names": [
+              {
+                "name": "Arithang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arithang_Assembly_constituency",
+            "wikidata_qid": "Q55720436",
+            "node_created_on": "2025-01-27T08:30:28.545Z",
+            "active_version": {
+              "id": "0x9be960b8c3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8c3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8c2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8c3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-arithang-version-25",
+            "region": {
+              "id": "0x9be960b8c2"
+            },
+            "constituency_number": "26"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8c2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-arithang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8c1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:27.945Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arithang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-arithang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606070"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8ca",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-gangtok",
+            "names": [
+              {
+                "name": "Gangtok"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gangtok_Assembly_constituency",
+            "wikidata_qid": "Q55720437",
+            "node_created_on": "2025-01-27T08:30:30.976Z",
+            "active_version": {
+              "id": "0x9be960b8c9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8c9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8c8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8c9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-gangtok-version-25",
+            "region": {
+              "id": "0x9be960b8c8"
+            },
+            "constituency_number": "27"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8c8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-gangtok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8c7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:30.332Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gangtok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-gangtok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8cf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8d0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-upper-burtuk",
+            "names": [
+              {
+                "name": "Upper Burtuk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Upper_Burtuk_Assembly_constituency",
+            "wikidata_qid": "Q104882822",
+            "node_created_on": "2025-01-27T08:30:33.405Z",
+            "active_version": {
+              "id": "0x9be960b8ce"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8ce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8cd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8ce",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-upper-burtuk-version-25",
+            "region": {
+              "id": "0x9be960b8cd"
+            },
+            "constituency_number": "28"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8cd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-upper-burtuk-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8cc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:32.484Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Upper_Burtuk_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-upper-burtuk"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8d5"
+          },
+          {
+            "id": "0x9be960b8d6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8d7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-kabi–lungchok",
+            "names": [
+              {
+                "name": "Kabi–Lungchok"
+              },
+              {
+                "name": "Kabi Lungchuk"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kabi%E2%80%93Lungchok_Assembly_constituency",
+            "wikidata_qid": "Q55720442",
+            "node_created_on": "2025-01-27T08:30:35.498Z",
+            "active_version": {
+              "id": "0x9be960b8d4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8d4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8d3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8d4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-kabi–lungchok-version-25",
+            "region": {
+              "id": "0x9be960b8d3"
+            },
+            "constituency_number": "29"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8d3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-kabi–lungchok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8d2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:34.772Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kabi%E2%80%93Lungchok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-kabi–lungchok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8dc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-djongu",
+            "names": [
+              {
+                "name": "Djongu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Djongu_Assembly_constituency",
+            "wikidata_qid": "Q55720443",
+            "node_created_on": "2025-01-27T08:30:38.556Z",
+            "active_version": {
+              "id": "0x9be960b8db"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8db"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8da"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8db",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-djongu-version-25",
+            "region": {
+              "id": "0x9be960b8da"
+            },
+            "constituency_number": "30"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8da",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-djongu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8d9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:37.808Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Djongu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-djongu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b8e2"
+          },
+          {
+            "id": "0x9be960b8e3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960b8e4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-sk-lachen–mangan",
+            "names": [
+              {
+                "name": "Lachen–Mangan"
+              },
+              {
+                "name": "Lachen Mangan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lachen%E2%80%93Mangan_Assembly_constituency",
+            "wikidata_qid": "Q55720444",
+            "node_created_on": "2025-01-27T08:30:41.304Z",
+            "active_version": {
+              "id": "0x9be960b8e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960b8e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960b8e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960b8e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-sk-lachen–mangan-version-25",
+            "region": {
+              "id": "0x9be960b8e0"
+            },
+            "constituency_number": "31"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960b8e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-sk-lachen–mangan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960b8df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-sikkim-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-27T08:30:40.060Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lachen%E2%80%93Mangan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-sk-lachen–mangan"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-27T08:30:42.518Z"
+}
