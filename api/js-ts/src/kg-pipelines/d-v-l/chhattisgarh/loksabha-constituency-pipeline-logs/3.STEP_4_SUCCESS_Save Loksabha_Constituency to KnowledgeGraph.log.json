@@ -1,0 +1,780 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96066c6"
+          },
+          {
+            "id": "0x9be9605655"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cc76",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-sarguja",
+            "names": [
+              {
+                "name": "Sarguja"
+              },
+              {
+                "name": "Surguja"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sarguja_Lok_Sabha_constituency",
+            "wikidata_qid": "Q255234",
+            "node_created_on": "2025-01-28T13:42:38.607Z",
+            "active_version": {
+              "id": "0x9be960cc73"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cc73"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cc72"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cc73",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-sarguja-version-25",
+            "region": {
+              "id": "0x9be960cc72"
+            },
+            "constituency_number": "1",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cc72",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-sarguja-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cc71"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:42:37.800Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sarguja_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-sarguja"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960562b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cc85",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-raigarh",
+            "names": [
+              {
+                "name": "Raigarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raigarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7283824",
+            "node_created_on": "2025-01-28T13:42:42.673Z",
+            "active_version": {
+              "id": "0x9be960cc80"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cc80"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cc7b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cc80",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-raigarh-version-25",
+            "region": {
+              "id": "0x9be960cc7b"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cc7b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-raigarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cc78"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:42:40.525Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raigarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-raigarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96066d1"
+          },
+          {
+            "id": "0x9be96055da"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cc96",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-janjgir–champa",
+            "names": [
+              {
+                "name": "Janjgir–Champa"
+              },
+              {
+                "name": "Janjgir-Champa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Janjgir%E2%80%93Champa_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6154769",
+            "node_created_on": "2025-01-28T13:42:47.504Z",
+            "active_version": {
+              "id": "0x9be960cc8e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cc8e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cc8b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cc8e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-janjgir–champa-version-25",
+            "region": {
+              "id": "0x9be960cc8b"
+            },
+            "constituency_number": "3",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cc8b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-janjgir–champa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cc89"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:42:45.957Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Janjgir%E2%80%93Champa_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-janjgir–champa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055ff"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960ccac",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-korba",
+            "names": [
+              {
+                "name": "Korba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Korba_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6431463",
+            "node_created_on": "2025-01-28T13:42:53.589Z",
+            "active_version": {
+              "id": "0x9be960cca5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cca5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cca2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cca5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-korba-version-25",
+            "region": {
+              "id": "0x9be960cca2"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cca2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-korba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cc9f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:42:51.000Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Korba_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-korba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055b6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960ccc9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-bilaspur",
+            "names": [
+              {
+                "name": "Bilaspur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bilaspur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q131904368",
+            "node_created_on": "2025-01-28T13:43:01.013Z",
+            "active_version": {
+              "id": "0x9be960ccc3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960ccc3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960ccbc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960ccc3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-bilaspur-version-25",
+            "region": {
+              "id": "0x9be960ccbc"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960ccbc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-bilaspur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960ccb4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:42:57.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bilaspur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-bilaspur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605637"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960ccd8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-rajnandgaon",
+            "names": [
+              {
+                "name": "Rajnandgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajnandgaon_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7286332",
+            "node_created_on": "2025-01-28T13:43:04.315Z",
+            "active_version": {
+              "id": "0x9be960ccd5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960ccd5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960ccd0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960ccd5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-rajnandgaon-version-25",
+            "region": {
+              "id": "0x9be960ccd0"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960ccd0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-rajnandgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cccd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:02.879Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajnandgaon_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-rajnandgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055c8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cce8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-durg",
+            "names": [
+              {
+                "name": "Durg"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Durg_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632662",
+            "node_created_on": "2025-01-28T13:43:09.314Z",
+            "active_version": {
+              "id": "0x9be960cce6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cce6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cce2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cce6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-durg-version-25",
+            "region": {
+              "id": "0x9be960cce2"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cce2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-durg-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cce1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:07.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Durg_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-durg"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605631"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960ccf0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-raipur",
+            "names": [
+              {
+                "name": "Raipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12449885",
+            "node_created_on": "2025-01-28T13:43:12.913Z",
+            "active_version": {
+              "id": "0x9be960ccee"
+            },
+            "versions": [
+              {
+                "id": "0x9be960ccee"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cced"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960ccee",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-raipur-version-25",
+            "region": {
+              "id": "0x9be960cced"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cced",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-raipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960ccea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:11.505Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-raipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960560c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cd0a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-mahasamund",
+            "names": [
+              {
+                "name": "Mahasamund"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mahasamund_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12446106",
+            "node_created_on": "2025-01-28T13:43:19.639Z",
+            "active_version": {
+              "id": "0x9be960ccfd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960ccfd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960ccfa"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960ccfd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-mahasamund-version-25",
+            "region": {
+              "id": "0x9be960ccfa"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960ccfa",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-mahasamund-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960ccf5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:15.885Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mahasamund_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-mahasamund"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055a4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cd16",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-bastar",
+            "names": [
+              {
+                "name": "Bastar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bastar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4868222",
+            "node_created_on": "2025-01-28T13:43:24.384Z",
+            "active_version": {
+              "id": "0x9be960cd15"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cd15"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cd14"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cd15",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-bastar-version-25",
+            "region": {
+              "id": "0x9be960cd14"
+            },
+            "constituency_number": "10",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cd14",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-bastar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cd0f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:23.361Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bastar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-bastar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055ec"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960cd2b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-cg-kanker",
+            "names": [
+              {
+                "name": "Kanker"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanker_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12418918",
+            "node_created_on": "2025-01-28T13:43:28.193Z",
+            "active_version": {
+              "id": "0x9be960cd23"
+            },
+            "versions": [
+              {
+                "id": "0x9be960cd23"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960cd1f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960cd23",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-cg-kanker-version-25",
+            "region": {
+              "id": "0x9be960cd1f"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960cd1f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-cg-kanker-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960cd1b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T13:43:26.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanker_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-cg-kanker"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T13:43:30.696Z"
+}
