@@ -1,0 +1,39 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q12416142",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/North_Goa_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/North_Goa_Lok_Sabha_constituency",
+        "names": [
+          "North Goa"
+        ],
+        "states_union_territories": "in-sut-goa",
+        "name_id": "in-lc-ga-north-goa",
+        "reservation": "NONE",
+        "constituency_number": "1",
+        "established_on_string": "2009"
+      },
+      {
+        "wikidata_qid": "Q7567370",
+        "id_url": [
+          "https://en.wikipedia.org/wiki/South_Goa_Lok_Sabha_constituency"
+        ],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/South_Goa_Lok_Sabha_constituency",
+        "names": [
+          "South Goa"
+        ],
+        "states_union_territories": "in-sut-goa",
+        "name_id": "in-lc-ga-south-goa",
+        "reservation": "NONE",
+        "constituency_number": "2",
+        "established_on_string": "1962"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-28T13:54:12.906Z"
+}
