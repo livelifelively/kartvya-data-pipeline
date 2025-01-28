@@ -269,7 +269,7 @@ async function vidhansabhaConstituenciesPipeline(
   let state: any;
 
   // for (let i = 0; i < loksabha.length; i++) {
-  state = loksabha[3];
+  state = loksabha[4];
   const saveToKG = true;
 
   state.vidhansabha_constituencies = vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
