@@ -269,7 +269,7 @@ async function vidhansabhaConstituenciesPipeline(
   let state: any;
 
   // for (let i = 0; i < loksabha.length; i++) {
-  state = loksabha[2];
+  state = loksabha[3];
   const saveToKG = true;
 
   state.vidhansabha_constituencies = vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
@@ -280,13 +280,13 @@ async function vidhansabhaConstituenciesPipeline(
     saveToKG
   );
 
-  if (state.vidhansabha_constituencies) {
-    await vidhansabhaConstituenciesPipeline(
-      { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-      state.vidhansabha_constituencies,
-      saveToKG
-    );
-  }
+  // if (state.vidhansabha_constituencies) {
+  //   await vidhansabhaConstituenciesPipeline(
+  //     { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+  //     state.vidhansabha_constituencies,
+  //     saveToKG
+  //   );
+  // }
 
   // cleanDirectories(state.name_id);
   // copyProgressFromOldDVL(loksabha, vidhansabhaConstituenciesKeyedByNameId);
