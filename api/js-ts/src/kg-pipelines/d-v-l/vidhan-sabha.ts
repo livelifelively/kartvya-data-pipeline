@@ -104,7 +104,7 @@ async function vidhansabhaConstituenciesPipeline(
 }
 
 (async () => {
-  let state = vidhansabhaSeats[10];
+  let state = vidhansabhaSeats[25];
   const saveToKG = true;
 
   await vidhansabhaConstituenciesPipeline(state, state.vidhansabha_constituencies, saveToKG);

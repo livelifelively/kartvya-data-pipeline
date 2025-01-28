@@ -125,6 +125,47 @@ export async function deleteAllVidhanSabhaNodesForAStateOrUT(stateNameId: string
   await deleteNodeType("_Indian_Vidhansabha_Constituency_", graphQLClient, vs_id);
 }
 
-(async () => {
-  await deleteAllVidhanSabhaNodesForAStateOrUT("in-sut-puducherry");
-})();
+// (async () => {
+//   let states = [
+//     "in-sut-kerala",
+//     "in-sut-himachal-pradesh",
+//     "in-sut-meghalaya",
+//     "in-sut-jharkhand",
+//     "in-sut-chhattisgarh",
+//     "in-sut-bihar",
+//     "in-sut-goa",
+//     "in-sut-maharashtra",
+//     "in-sut-uttar-pradesh",
+//     "in-sut-west-bengal",
+//     "in-sut-nagaland",
+//     "in-sut-rajasthan",
+//     "in-sut-arunachal-pradesh",
+//     "in-sut-manipur",
+//     "in-sut-telangana",
+//     "in-sut-sikkim",
+//     "in-sut-gujarat",
+//     "in-sut-assam",
+//     "in-sut-tamil-nadu",
+//     "in-sut-punjab",
+//     "in-sut-haryana",
+//     "in-sut-odisha",
+//     "in-sut-madhya-pradesh",
+//     "in-sut-uttarakhand",
+//     "in-sut-karnataka",
+//     "in-sut-andhra-pradesh",
+//     "in-sut-mizoram",
+//     "in-sut-tripura",
+//     "in-sut-andaman-nicobar-islands",
+//     "in-sut-chandigarh",
+//     "in-sut-dadra-nagar-haveli-daman-diu",
+//     "in-sut-delhi",
+//     "in-sut-jammu-kashmir",
+//     "in-sut-ladakh",
+//     "in-sut-lakshadweep",
+//     "in-sut-puducherry",
+//   ];
+
+//   for (let state_name_id of states) {
+//     await deleteAllLokSabhaNodesForAStateOrUT(state_name_id);
+//   }
+// })();
