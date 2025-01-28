@@ -1,17 +1,12 @@
 [
   {
     "iteration": 1,
-    "timeStamp": "2025-01-28T02:33:01.871Z",
+    "timeStamp": "2025-01-28T11:22:20.172Z",
     "steps": [
       {
         "step": 0,
         "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
         "status": "SUCCESS"
-      },
-      {
-        "step": 1,
-        "logFile": "src/kg-pipelines/d-v-l/andaman-nicobar-islands/loksabha-constituency-pipeline-logs/1.STEP_1_FAILURE_Fetch LoksabhaConstituency ECI Geo Features.log.json",
-        "status": "FAILURE"
       }
     ]
   }
