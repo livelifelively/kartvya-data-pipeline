@@ -1,0 +1,31 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q5211945",
+        "id_url": ["https://en.wikipedia.org/wiki/Daman_and_Diu_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Daman_and_Diu_Lok_Sabha_constituency",
+        "names": ["Daman and Diu"],
+        "states_union_territories": "in-sut-dadra-nagar-haveli-daman-diu",
+        "name_id": "in-lc-dd-daman-diu",
+        "reservation": "NONE",
+        "constituency_number": "1",
+        "established_on_string": "1987"
+      },
+      {
+        "wikidata_qid": "Q5208111",
+        "id_url": ["https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Dadra_and_Nagar_Haveli_Lok_Sabha_constituency",
+        "names": ["Dadra and Nagar Haveli", "Dadra & Nagar Haveli"],
+        "states_union_territories": "in-sut-dadra-nagar-haveli-daman-diu",
+        "name_id": "in-lc-dd-dadra-nagar-haveli",
+        "reservation": "ST",
+        "constituency_number": "2",
+        "established_on_string": "1967"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-28T13:48:34.629Z"
+}
