@@ -15,7 +15,7 @@ import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./pipel
 interface VidhansabhaConstituency {
   names: string[];
   wikipedia_page: string;
-  reservation?: "SC" | "ST" | "NONE";
+  reservation?: "SC" | "ST" | "NONE" | "SANGHA";
   constituency_number?: string;
   // states_union_territories: string;
 }
@@ -70,7 +70,7 @@ interface VidhansabhaConstituencyTransformationWikidata extends VidhansabhaConst
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
-  reservation?: "SC" | "ST" | "NONE";
+  reservation?: "SC" | "ST" | "NONE" | "SANGHA";
 }
 
 interface VidhansabhaConstituencyTransformationECIGeo extends VidhansabhaConstituencyTransformationWikidata {
@@ -400,6 +400,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       name_id: `${td.name_id}-version-25`,
       region: { id: eciVidhansabhaConstituencyRegionId },
       constituency_number: td.constituency_number,
+      reservation: td.reservation,
     };
 
     const vidhansabhaConstituencyVersionId = await createNodeType(
@@ -475,71 +476,4 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
   }
 
   return { savedToKnowledgeGraph, status: "SUCCESS" };
-}
-
-async function sampleFunction(stateUT: any) {
-  console.log("LOKSABHA PROCESSING INITIALIZED: ", stateUT.state_name);
-
-  const steps: PipelineStep[] = [
-    {
-      name: "Fetch State Vidhansabha_Constituency",
-      function: fetchStateVidhansabhaConstituencies,
-      key: "STATE_LOKSABHA_LIST",
-      input: stateUT,
-    },
-    {
-      name: "Fetch Vidhansabha_Constituency Wiki Details",
-      function: fetchVidhansabhaConstituenciesWikiDetails,
-      key: "STATE_LOKSABHA_CONSTITUENCY_WIKI_DATA",
-      input: null, // Will be set after the first step
-    },
-    {
-      name: "Fetch VidhansabhaConstituency ECI Geo Features",
-      function: fetchVidhansabhaConstituencyECIGeoFeatures,
-      key: "STATE_LOKSABHA_CONSTITUENCY_ECI_GEO_DATA",
-      input: stateUT,
-    },
-    {
-      name: "Append Wikipedia Data",
-      function: transformVidhansabhaConstituenciesWikipediaData,
-      input: null, // Will be set after the fifth step
-      key: "APPEND_WIKIPEDIA_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
-    },
-    {
-      name: "Transform Vidhansabha_Constituency with ECI Geo",
-      function: transformVidhansabhaConstituenciesWithECIGeo,
-      input: null, // Will be set after the sixth and seventh steps
-      key: "APPEND_ECI_DATA_TRANSFORM_STATE_LOKSABHA_CONSTITUENCY_DATA",
-    },
-    // {
-    //   name: "Save Vidhansabha_Constituency to KnowledgeGraph",
-    //   function: addVidhansabhaConstituencyDataToKnowledgeGraph,
-    //   input: null,
-    //   key: "SAVE_DISTRICT_DATA_TO_KNOWLEDGE_GRAPH",
-    // },
-  ];
-
-  let outputs: Record<string, any> = {
-    stateUT,
-    vcDLcList: [],
-    stateVidhansabhaConstituencies: [],
-    vidhansabhaConstituenciesCount: 0,
-    vidhansabhaConstituenciesWikiDetails: [],
-    vidhansabhaConstituenciesWikiDetailsFailed: [],
-    vidhansabhaConstituencyFeaturesECI: [],
-    transformedVidhansabhaConstituenciesWikipedia: [],
-    vidhansabhaConstituenciesNotTransformedWikipedia: [],
-    transformedVidhansabhaConstituenciesECIGeo: [],
-    unmatchedVidhansabhaConstituenciesECIGeo: [],
-    vidhansabhaConstituenciesMissingUrlsAndIssues: [],
-  };
-
-  const vidhansabhaConstituenciesProgressDir = path.join(__dirname, "vidhansabha-constituency-pipeline-logs");
-  const progressStatusFile = path.join(vidhansabhaConstituenciesProgressDir, "progressStatus.json");
-
-  try {
-    await runPipeline(steps, outputs, vidhansabhaConstituenciesProgressDir, progressStatusFile);
-  } catch (error) {
-    console.error("Error in processing: ", error);
-  }
 }

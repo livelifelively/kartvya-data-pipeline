@@ -15,6 +15,8 @@ import { multiPolygonToDgraphMultiPolygon, polygonToMultiPolygon } from "./pipel
 interface LoksabhaConstituency {
   names: string[];
   wikipedia_page: string;
+  reservation?: "SC" | "ST" | "NONE" | "SANGHA";
+  constituency_number?: string;
   // states_union_territories: string;
 }
 
@@ -68,7 +70,7 @@ interface LoksabhaConstituencyTransformationWikidata extends LoksabhaConstituenc
   states_union_territories: string;
   established_on_string?: string;
   constituency_number?: string;
-  reservation?: "SC" | "ST" | "NONE";
+  reservation?: "SC" | "ST" | "NONE" | "SANGHA";
 }
 
 interface LoksabhaConstituencyTransformationECIGeo extends LoksabhaConstituencyTransformationWikidata {
@@ -221,6 +223,8 @@ export async function transformLoksabhaConstituenciesWikipediaData(outputs: Reco
             `in-lc-${stateUT.vehicle_code.toLowerCase()}-`,
             keyedLoksabhaConstituencies[wikiLoksabhaConstituency.urls[0]].names[0]
           ),
+          reservation: keyedLoksabhaConstituencies[wikiLoksabhaConstituency.urls[0]].reservation,
+          constituency_number: keyedLoksabhaConstituencies[wikiLoksabhaConstituency.urls[0]].constituency_number,
         };
 
         if (wikiLoksabhaConstituency.results.infobox?.constituencyDetails?.established) {
@@ -349,6 +353,8 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
     let toSaveLoksabhaConstituencyVersion: any = {
       name_id: `${td.name_id}-version-25`,
       region: { id: eciLoksabhaConstituencyRegionId },
+      constituency_number: td.constituency_number,
+      reservation: td.reservation,
     };
 
     const loksabhaConstituencyVersionId = await createNodeType(
