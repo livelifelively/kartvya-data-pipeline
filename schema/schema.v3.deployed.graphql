@@ -1698,6 +1698,7 @@ enum _Indian_Legislative_Constituency_Reservation_ {
   SC
   ST
   NONE
+  SANGHA
 }
 
 # DIRECTORY_NODE_TYPE
@@ -1725,8 +1726,6 @@ type _Indian_Loksabha_Constituency_ {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-
-  reservation: _Indian_Legislative_Constituency_Reservation_ @search
 
   active_version: _Indian_Loksabha_Constituency_Version_
 
@@ -1793,6 +1792,7 @@ type _Indian_Loksabha_Constituency_Version_ {
   change: _Indian_Division_Version_Change_ @search
 
   constituency_number: String @search(by: [exact, term, fulltext])
+  reservation: _Indian_Legislative_Constituency_Reservation_ @search
 
   established_on: _Date_Time_
   disestablished_on: _Date_Time_
@@ -1844,8 +1844,6 @@ type _Indian_Vidhansabha_Constituency_ {
 
   wikidata_qid: String @search(by: [hash])
   wikipedia_page: String @search(by: [fulltext])
-
-  reservation: _Indian_Legislative_Constituency_Reservation_ @search
 
   # # all vidhansabhas that had a member from this constituency
   # vidhansabhas: [_Indian_Vidhansabha_] @hasInverse(field: "constituencies")
@@ -1922,6 +1920,7 @@ type _Indian_Vidhansabha_Constituency_Version_ {
     @hasInverse(field: "vidhansabha_constituency_versions")
 
   constituency_number: String @search(by: [exact, term, fulltext])
+  reservation: _Indian_Legislative_Constituency_Reservation_ @search
 
   change: _Indian_Division_Version_Change_ @search
 
