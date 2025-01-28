@@ -1,0 +1,78 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95fd10c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960bf08",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-an-andaman-nicobar-islands",
+            "names": [
+              {
+                "name": "Andaman and Nicobar Islands"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3530684",
+            "node_created_on": "2025-01-28T11:34:50.027Z",
+            "active_version": {
+              "id": "0x9be960bf07"
+            },
+            "versions": [
+              {
+                "id": "0x9be960bf07"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960bf06"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960bf07",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-an-andaman-nicobar-islands-version-25",
+            "region": {
+              "id": "0x9be960bf06"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960bf06",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-an-andaman-nicobar-islands-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960bf05"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-andaman-nicobar-islands-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T11:34:49.311Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Andaman_and_Nicobar_Islands_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-an-andaman-nicobar-islands"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T11:34:50.542Z"
+}
