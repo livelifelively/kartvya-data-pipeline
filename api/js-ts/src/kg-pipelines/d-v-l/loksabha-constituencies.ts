@@ -1,6 +1,6 @@
 import path from "path";
-// import fs from "fs";
-import { promises as fs } from "fs";
+import fs from "fs";
+
 import { PipelineStep, runPipeline } from "../../pipeline/pipeline";
 
 import {
@@ -23,6 +23,76 @@ import {
 import vidhansabha from "./vidhansabha-seats.json";
 import loksabha from "./loksabha-seats.json";
 import { keyBy } from "lodash";
+import { copyFilesWithStructure } from "../../file-utils/move-certain-files";
+import { cleanDirectories } from "../../file-utils/remove-files-folders";
+
+export const copyProgressFromOldDVL = (loksabha: any, vidhansabhaConstituenciesKeyedByNameId: any) => {
+  let state: any = {};
+
+  for (state of loksabha) {
+    state.vidhansabha_constituencies =
+      vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
+
+    const sourceStateDir = path.join(__dirname, "../_OLD_d-v-l", state.name_id.split("in-sut-")[1]);
+    const targetStateDir = path.join(__dirname, state.name_id.split("in-sut-")[1]);
+
+    const sourceLSPipelineLogsPath = path.join(sourceStateDir, "loksabha-constituency-pipeline-logs");
+    const targetLSPipelineLogsPath = path.join(targetStateDir, "loksabha-constituency-pipeline-logs");
+    const targetProgressStatusLSPipelineLogsPath = path.join(targetLSPipelineLogsPath, "progressStatus.json");
+
+    fs.mkdirSync(targetLSPipelineLogsPath, { recursive: true });
+
+    const progressJSONLoksabha = [
+      {
+        iteration: 1,
+        timeStamp: new Date(),
+        steps: [
+          {
+            step: 0,
+            logFile: `src/kg-pipelines/d-v-l/${
+              state.name_id.split("in-sut-")[1]
+            }/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json`,
+            status: "SUCCESS",
+          },
+        ],
+      },
+    ];
+    copyFilesWithStructure(sourceLSPipelineLogsPath, targetLSPipelineLogsPath, [
+      "1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+    ]);
+    fs.writeFileSync(targetProgressStatusLSPipelineLogsPath, JSON.stringify(progressJSONLoksabha, null, 2));
+
+    if (!state.vidhansabha_constituencies) {
+      continue;
+    }
+
+    const sourceVSPipelineLogsPath = path.join(sourceStateDir, "vidhansabha-constituency-pipeline-logs");
+    const targetVSPipelineLogsPath = path.join(targetStateDir, "vidhansabha-constituency-pipeline-logs");
+    const targetProgressStatusVSPipelineLogsPath = path.join(targetVSPipelineLogsPath, "progressStatus.json");
+
+    fs.mkdirSync(targetVSPipelineLogsPath, { recursive: true });
+
+    const progressJSONVidhansabha = [
+      {
+        iteration: 1,
+        timeStamp: new Date(),
+        steps: [
+          {
+            step: 0,
+            logFile: `src/kg-pipelines/d-v-l/${
+              state.name_id.split("in-sut-")[1]
+            }/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json`,
+            status: "SUCCESS",
+          },
+        ],
+      },
+    ];
+    copyFilesWithStructure(sourceVSPipelineLogsPath, targetVSPipelineLogsPath, [
+      "1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+    ]);
+    fs.writeFileSync(targetProgressStatusVSPipelineLogsPath, JSON.stringify(progressJSONVidhansabha, null, 2));
+  }
+};
 
 async function loksabhaConstituenciesPipeline(
   stateUT: any,
@@ -194,41 +264,30 @@ async function vidhansabhaConstituenciesPipeline(
   }
 }
 
-async function cleanDirectories(state_name_id: string) {
-  const stateDir = path.join(__dirname, state_name_id.split("in-sut-")[1]);
-
-  const scriptsPath = path.join(stateDir, "scripts");
-  const lsPipelineLogsPath = path.join(stateDir, "loksabha-constituency-pipeline-logs");
-  const vsPipelineLogsPath = path.join(stateDir, "vidhansabha-constituency-pipeline-logs");
-  const districtsPipelineLogsPath = path.join(stateDir, "district-pipeline-logs");
-
-  await fs.rm(scriptsPath, { recursive: true, force: true });
-  await fs.rm(lsPipelineLogsPath, { recursive: true, force: true });
-  await fs.rm(vsPipelineLogsPath, { recursive: true, force: true });
-  await fs.rm(districtsPipelineLogsPath, { recursive: true, force: true });
-}
-
 (async () => {
   const vidhansabhaConstituenciesKeyedByNameId = keyBy(vidhansabha, "name_id");
   let state: any;
-  for (state of loksabha) {
-    const saveToKG = false;
 
-    state.vidhansabha_constituencies =
-      vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
+  // for (let i = 0; i < loksabha.length; i++) {
+  state = loksabha[0];
+  const saveToKG = false;
 
-    await loksabhaConstituenciesPipeline(
-      { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-      state.loksabha_constituencies,
-      saveToKG
-    );
+  state.vidhansabha_constituencies = vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
 
-    if (state.vidhansabha_constituencies) {
-      await vidhansabhaConstituenciesPipeline(
-        { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-        state.vidhansabha_constituencies,
-        saveToKG
-      );
-    }
-  }
+  await loksabhaConstituenciesPipeline(
+    { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+    state.loksabha_constituencies,
+    saveToKG
+  );
+
+  // if (state.vidhansabha_constituencies) {
+  //   await vidhansabhaConstituenciesPipeline(
+  //     { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+  //     state.vidhansabha_constituencies,
+  //     saveToKG
+  //   );
+  // }
+
+  // cleanDirectories(state.name_id);
+  // copyProgressFromOldDVL(loksabha, vidhansabhaConstituenciesKeyedByNameId);
 })();
