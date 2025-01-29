@@ -9,5 +9,57 @@
         "status": "SUCCESS"
       }
     ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-28T15:28:45.766Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/2.STEP_3_PARTIAL_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2025-01-28T15:36:01.886Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Loksabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch LoksabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/rajasthan/loksabha-constituency-pipeline-logs/3.STEP_3_PARTIAL_Transform Loksabha_Constituency with ECI Geo.log.json",
+        "status": "PARTIAL"
+      }
+    ]
   }
 ]
