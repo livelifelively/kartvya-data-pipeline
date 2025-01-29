@@ -1,0 +1,285 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960581c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d796",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-hp-kangra",
+            "names": [
+              {
+                "name": "Kangra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kangra_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6362861",
+            "node_created_on": "2025-01-28T14:22:21.464Z",
+            "active_version": {
+              "id": "0x9be960d795"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d795"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d794"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d795",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-hp-kangra-version-25",
+            "region": {
+              "id": "0x9be960d794"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d794",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-hp-kangra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d793"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:22:20.741Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kangra_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-hp-kangra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605834"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d79b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-hp-mandi",
+            "names": [
+              {
+                "name": "Mandi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mandi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6748042",
+            "node_created_on": "2025-01-28T14:22:23.825Z",
+            "active_version": {
+              "id": "0x9be960d79a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d79a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d799"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d79a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-hp-mandi-version-25",
+            "region": {
+              "id": "0x9be960d799"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d799",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-hp-mandi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d798"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:22:22.765Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mandi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-hp-mandi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605816"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d7a0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-hp-hamirpur",
+            "names": [
+              {
+                "name": "Hamirpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hamirpur,_Himachal_Pradesh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5645333",
+            "node_created_on": "2025-01-28T14:22:25.737Z",
+            "active_version": {
+              "id": "0x9be960d79f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d79f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d79e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d79f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-hp-hamirpur-version-25",
+            "region": {
+              "id": "0x9be960d79e"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d79e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-hp-hamirpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d79d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:22:24.956Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hamirpur,_Himachal_Pradesh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-hp-hamirpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960583a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d7a5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-hp-shimla",
+            "names": [
+              {
+                "name": "Shimla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shimla_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7496887",
+            "node_created_on": "2025-01-28T14:22:27.982Z",
+            "active_version": {
+              "id": "0x9be960d7a4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d7a4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d7a3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d7a4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-hp-shimla-version-25",
+            "region": {
+              "id": "0x9be960d7a3"
+            },
+            "constituency_number": "4",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d7a3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-hp-shimla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d7a2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-himachal-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:22:27.284Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shimla_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-hp-shimla"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T14:22:28.282Z"
+}
