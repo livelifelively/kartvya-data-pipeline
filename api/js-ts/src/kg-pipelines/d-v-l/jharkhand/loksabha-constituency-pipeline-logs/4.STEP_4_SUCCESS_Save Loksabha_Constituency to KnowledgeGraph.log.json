@@ -1,0 +1,981 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606823"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dadb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-rajmahal",
+            "names": [
+              {
+                "name": "Rajmahal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajmahal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7286307",
+            "node_created_on": "2025-01-28T14:28:04.417Z",
+            "active_version": {
+              "id": "0x9be960dada"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dada"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dad9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dada",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-rajmahal-version-25",
+            "region": {
+              "id": "0x9be960dad9"
+            },
+            "constituency_number": "1",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dad9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-rajmahal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dad8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:03.701Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajmahal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-rajmahal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960586a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dae0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-dumka",
+            "names": [
+              {
+                "name": "Dumka"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dumka_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5313895",
+            "node_created_on": "2025-01-28T14:28:06.569Z",
+            "active_version": {
+              "id": "0x9be960dadf"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dadf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dade"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dadf",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-dumka-version-25",
+            "region": {
+              "id": "0x9be960dade"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dade",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-dumka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dadd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:05.751Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dumka_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-dumka"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605882"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dae5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-godda",
+            "names": [
+              {
+                "name": "Godda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Godda_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5576233",
+            "node_created_on": "2025-01-28T14:28:08.324Z",
+            "active_version": {
+              "id": "0x9be960dae4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dae4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dae3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dae4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-godda-version-25",
+            "region": {
+              "id": "0x9be960dae3"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dae3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-godda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dae2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:07.685Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Godda_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-godda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605858"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960daea",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-chatra",
+            "names": [
+              {
+                "name": "Chatra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chatra_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5087772",
+            "node_created_on": "2025-01-28T14:28:10.730Z",
+            "active_version": {
+              "id": "0x9be960dae9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dae9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dae8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dae9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-chatra-version-25",
+            "region": {
+              "id": "0x9be960dae8"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dae8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-chatra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dae7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:09.887Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chatra_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-chatra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058a1"
+          },
+          {
+            "id": "0x9be96058a2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960daef",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-koderma",
+            "names": [
+              {
+                "name": "Koderma"
+              },
+              {
+                "name": "Kodarma"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kodarma_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6425227",
+            "node_created_on": "2025-01-28T14:28:12.510Z",
+            "active_version": {
+              "id": "0x9be960daee"
+            },
+            "versions": [
+              {
+                "id": "0x9be960daee"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960daed"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960daee",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-koderma-version-25",
+            "region": {
+              "id": "0x9be960daed"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960daed",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-koderma-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960daec"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:11.787Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kodarma_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-koderma"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960587c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960daf4",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-giridih",
+            "names": [
+              {
+                "name": "Giridih"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Giridih_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5564263",
+            "node_created_on": "2025-01-28T14:28:14.471Z",
+            "active_version": {
+              "id": "0x9be960daf3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960daf3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960daf2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960daf3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-giridih-version-25",
+            "region": {
+              "id": "0x9be960daf2"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960daf2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-giridih-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960daf1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:13.713Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Giridih_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-giridih"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605864"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960daf9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-dhanbad",
+            "names": [
+              {
+                "name": "Dhanbad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dhanbad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5268930",
+            "node_created_on": "2025-01-28T14:28:16.504Z",
+            "active_version": {
+              "id": "0x9be960daf8"
+            },
+            "versions": [
+              {
+                "id": "0x9be960daf8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960daf7"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960daf8",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-dhanbad-version-25",
+            "region": {
+              "id": "0x9be960daf7"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960daf7",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-dhanbad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960daf6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:15.677Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dhanbad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-dhanbad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058c6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dafe",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-ranchi",
+            "names": [
+              {
+                "name": "Ranchi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ranchi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7290802",
+            "node_created_on": "2025-01-28T14:28:18.728Z",
+            "active_version": {
+              "id": "0x9be960dafd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dafd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dafc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dafd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-ranchi-version-25",
+            "region": {
+              "id": "0x9be960dafc"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dafc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-ranchi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dafb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:18.194Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ranchi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-ranchi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960684c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db03",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-jamshedpur",
+            "names": [
+              {
+                "name": "Jamshedpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jamshedpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6148213",
+            "node_created_on": "2025-01-28T14:28:20.693Z",
+            "active_version": {
+              "id": "0x9be960db02"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db02"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db01"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db02",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-jamshedpur-version-25",
+            "region": {
+              "id": "0x9be960db01"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db01",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-jamshedpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db00"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:19.987Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jamshedpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-jamshedpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606852"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db08",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-singhbhum",
+            "names": [
+              {
+                "name": "Singhbhum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Singhbhum_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632303",
+            "node_created_on": "2025-01-28T14:28:22.932Z",
+            "active_version": {
+              "id": "0x9be960db07"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db07"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db06"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db07",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-singhbhum-version-25",
+            "region": {
+              "id": "0x9be960db06"
+            },
+            "constituency_number": "10",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db06",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-singhbhum-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db05"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:22.309Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Singhbhum_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-singhbhum"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960589b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db0d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-khunti",
+            "names": [
+              {
+                "name": "Khunti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khunti_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6403035",
+            "node_created_on": "2025-01-28T14:28:24.781Z",
+            "active_version": {
+              "id": "0x9be960db0c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db0c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db0b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db0c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-khunti-version-25",
+            "region": {
+              "id": "0x9be960db0b"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db0b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-khunti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db0a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:24.032Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khunti_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-khunti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058ae"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db12",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-lohardaga",
+            "names": [
+              {
+                "name": "Lohardaga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lohardaga_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6667970",
+            "node_created_on": "2025-01-28T14:28:26.847Z",
+            "active_version": {
+              "id": "0x9be960db11"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db11"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db10"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db11",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-lohardaga-version-25",
+            "region": {
+              "id": "0x9be960db10"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db10",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-lohardaga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db0f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:26.197Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lohardaga_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-lohardaga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96058ba"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db17",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-palamu",
+            "names": [
+              {
+                "name": "Palamu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Palamu_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632686",
+            "node_created_on": "2025-01-28T14:28:28.461Z",
+            "active_version": {
+              "id": "0x9be960db16"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db16"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db15"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db16",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-palamu-version-25",
+            "region": {
+              "id": "0x9be960db15"
+            },
+            "constituency_number": "13",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db15",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-palamu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db14"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:27.845Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Palamu_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-palamu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960588f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960db1c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jh-hazaribagh",
+            "names": [
+              {
+                "name": "Hazaribagh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hazaribagh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632585",
+            "node_created_on": "2025-01-28T14:28:30.529Z",
+            "active_version": {
+              "id": "0x9be960db1b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960db1b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960db1a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960db1b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jh-hazaribagh-version-25",
+            "region": {
+              "id": "0x9be960db1a"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960db1a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jh-hazaribagh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960db19"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jharkhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:28:29.709Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hazaribagh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jh-hazaribagh"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T14:28:30.855Z"
+}
