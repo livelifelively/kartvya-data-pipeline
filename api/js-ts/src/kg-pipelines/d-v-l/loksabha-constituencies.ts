@@ -272,14 +272,16 @@ async function vidhansabhaConstituenciesPipeline(
     state = loksabha[i];
     const saveToKG = true;
 
+    console.log("PROCESSING ", state.name);
+
     state.vidhansabha_constituencies =
       vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
 
-    await loksabhaConstituenciesPipeline(
-      { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-      state.loksabha_constituencies,
-      saveToKG
-    );
+    // await loksabhaConstituenciesPipeline(
+    //   { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+    //   state.loksabha_constituencies,
+    //   saveToKG
+    // );
 
     if (state.vidhansabha_constituencies) {
       await vidhansabhaConstituenciesPipeline(
