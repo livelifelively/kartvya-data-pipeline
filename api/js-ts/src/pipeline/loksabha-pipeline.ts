@@ -332,8 +332,10 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
       });
     }
 
+    const name_id = td.name_id.split(".").join("");
+
     toSaveLoksabhaConstituencyRegion = {
-      name_id: `${td.name_id}-version-25-region`,
+      name_id: `${name_id}-version-25-region`,
       geo_boundary: [],
       states_union_territories: [{ name_id: `${td.states_union_territories}-version-25-region` }],
       node_created_on: new Date(),
@@ -351,7 +353,7 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
     );
 
     let toSaveLoksabhaConstituencyVersion: any = {
-      name_id: `${td.name_id}-version-25`,
+      name_id: `${name_id}-version-25`,
       region: { id: eciLoksabhaConstituencyRegionId },
       constituency_number: td.constituency_number,
       reservation: td.reservation,
@@ -364,7 +366,7 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
     );
 
     let toSaveLoksabhaConstituency: any = {
-      name_id: td.name_id,
+      name_id: name_id,
       names: td.names.map((val: any) => {
         return {
           name: val,
@@ -416,7 +418,7 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
           : null,
       },
       id_url: td.id_url,
-      name_id: td.name_id,
+      name_id: name_id,
     });
 
     console.log({
@@ -425,7 +427,7 @@ export async function addLoksabhaConstituencyDataToKnowledgeGraph(outputs: Recor
       loksabhaConstituencyRegionId: eciLoksabhaConstituencyRegionId,
       loksabhaConstituencyVersionId,
       id_url: td.id_url,
-      name_id: td.name_id,
+      name_id: name_id,
     });
   }
 

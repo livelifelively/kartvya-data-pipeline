@@ -378,6 +378,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       });
     }
 
+    const name_id = td.name_id.split(".").join("");
     toSaveVidhansabhaConstituencyRegion = {
       name_id: `${td.name_id}-version-25-region`,
       geo_boundary: [],
@@ -397,7 +398,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
     );
 
     let toSaveVidhansabhaConstituencyVersion: any = {
-      name_id: `${td.name_id}-version-25`,
+      name_id: `${name_id}-version-25`,
       region: { id: eciVidhansabhaConstituencyRegionId },
       constituency_number: td.constituency_number,
       reservation: td.reservation,
@@ -410,7 +411,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
     );
 
     let toSaveVidhansabhaConstituency: any = {
-      name_id: td.name_id,
+      name_id: name_id,
       names: td.names.map((val: any) => {
         return {
           name: val,
@@ -462,7 +463,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
           : null,
       },
       id_url: td.id_url,
-      name_id: td.name_id,
+      name_id: name_id,
     });
 
     console.log({
@@ -471,7 +472,7 @@ export async function addVidhansabhaConstituencyDataToKnowledgeGraph(outputs: Re
       vidhansabhaConstituencyRegionId: eciVidhansabhaConstituencyRegionId,
       vidhansabhaConstituencyVersionId,
       id_url: td.id_url,
-      name_id: td.name_id,
+      name_id: name_id,
     });
   }
 
