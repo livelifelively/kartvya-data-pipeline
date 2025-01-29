@@ -1,0 +1,360 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96058f6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d8fe",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jk-baramulla",
+            "names": [
+              {
+                "name": "Baramulla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baramulla_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4858316",
+            "node_created_on": "2025-01-28T14:24:48.680Z",
+            "active_version": {
+              "id": "0x9be960d8fd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d8fd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d8fc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d8fd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jk-baramulla-version-25",
+            "region": {
+              "id": "0x9be960d8fc"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d8fc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jk-baramulla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d8fb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:24:47.976Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baramulla_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jk-baramulla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605950"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d903",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jk-srinagar",
+            "names": [
+              {
+                "name": "Srinagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Srinagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7586418",
+            "node_created_on": "2025-01-28T14:24:50.735Z",
+            "active_version": {
+              "id": "0x9be960d902"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d902"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d901"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d902",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jk-srinagar-version-25",
+            "region": {
+              "id": "0x9be960d901"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d901",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jk-srinagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d900"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:24:49.996Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Srinagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jk-srinagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606812"
+          },
+          {
+            "id": "0x9be9606813"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d908",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jk-anantnag–rajouri",
+            "names": [
+              {
+                "name": "Anantnag–Rajouri"
+              },
+              {
+                "name": "Anantnag-Rajouri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Anantnag%E2%80%93Rajouri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q112083339",
+            "node_created_on": "2025-01-28T14:24:52.681Z",
+            "active_version": {
+              "id": "0x9be960d907"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d907"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d906"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d907",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jk-anantnag–rajouri-version-25",
+            "region": {
+              "id": "0x9be960d906"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d906",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jk-anantnag–rajouri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d905"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:24:52.021Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Anantnag%E2%80%93Rajouri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jk-anantnag–rajouri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605956"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d90d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jk-udhampur",
+            "names": [
+              {
+                "name": "Udhampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Udhampur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7877193",
+            "node_created_on": "2025-01-28T14:24:55.389Z",
+            "active_version": {
+              "id": "0x9be960d90c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d90c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d90b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d90c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jk-udhampur-version-25",
+            "region": {
+              "id": "0x9be960d90b"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d90b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jk-udhampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d90a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:24:54.570Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Udhampur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jk-udhampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605908"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960d912",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-jk-jammu",
+            "names": [
+              {
+                "name": "Jammu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jammu_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6147990",
+            "node_created_on": "2025-01-28T14:24:57.994Z",
+            "active_version": {
+              "id": "0x9be960d911"
+            },
+            "versions": [
+              {
+                "id": "0x9be960d911"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960d910"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960d911",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-jk-jammu-version-25",
+            "region": {
+              "id": "0x9be960d910"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960d910",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-jk-jammu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960d90f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-jammu-kashmir-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:24:56.823Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jammu_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-jk-jammu"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T14:24:58.567Z"
+}

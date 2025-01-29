@@ -1,0 +1,64 @@
+{
+  "message": "Step 2 (Append Wikipedia Data) completed successfully.",
+  "data": {
+    "transformedLoksabhaConstituenciesWikipedia": [
+      {
+        "wikidata_qid": "Q4858316",
+        "id_url": ["https://en.wikipedia.org/wiki/Baramulla_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Baramulla_Lok_Sabha_constituency",
+        "names": ["Baramulla"],
+        "states_union_territories": "in-sut-jammu-kashmir",
+        "name_id": "in-lc-jk-baramulla",
+        "reservation": "NONE",
+        "constituency_number": "1",
+        "established_on_string": "1967"
+      },
+      {
+        "wikidata_qid": "Q7586418",
+        "id_url": ["https://en.wikipedia.org/wiki/Srinagar_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Srinagar_Lok_Sabha_constituency",
+        "names": ["Srinagar"],
+        "states_union_territories": "in-sut-jammu-kashmir",
+        "name_id": "in-lc-jk-srinagar",
+        "reservation": "NONE",
+        "constituency_number": "2",
+        "established_on_string": "1967"
+      },
+      {
+        "wikidata_qid": "Q112083339",
+        "id_url": ["https://en.wikipedia.org/wiki/Anantnag%E2%80%93Rajouri_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Anantnag%E2%80%93Rajouri_Lok_Sabha_constituency",
+        "names": ["Anantnag–Rajouri", "Anantnag-Rajouri"],
+        "states_union_territories": "in-sut-jammu-kashmir",
+        "name_id": "in-lc-jk-anantnag–rajouri",
+        "reservation": "NONE",
+        "constituency_number": "3",
+        "established_on_string": "2022"
+      },
+      {
+        "wikidata_qid": "Q7877193",
+        "id_url": ["https://en.wikipedia.org/wiki/Udhampur_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Udhampur_Lok_Sabha_constituency",
+        "names": ["Udhampur"],
+        "states_union_territories": "in-sut-jammu-kashmir",
+        "name_id": "in-lc-jk-udhampur",
+        "reservation": "NONE",
+        "constituency_number": "4",
+        "established_on_string": "1957"
+      },
+      {
+        "wikidata_qid": "Q6147990",
+        "id_url": ["https://en.wikipedia.org/wiki/Jammu_Lok_Sabha_constituency"],
+        "wikipedia_page": "https://en.wikipedia.org/wiki/Jammu_Lok_Sabha_constituency",
+        "names": ["Jammu"],
+        "states_union_territories": "in-sut-jammu-kashmir",
+        "name_id": "in-lc-jk-jammu",
+        "reservation": "NONE",
+        "constituency_number": "5",
+        "established_on_string": "1962"
+      }
+    ]
+  },
+  "key": "STEP_2_SUCCESS_Append Wikipedia Data",
+  "timeStamp": "2025-01-28T14:10:22.999Z"
+}
