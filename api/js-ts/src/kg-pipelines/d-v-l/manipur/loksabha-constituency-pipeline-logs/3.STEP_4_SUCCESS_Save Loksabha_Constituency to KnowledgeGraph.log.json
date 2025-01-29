@@ -1,0 +1,147 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606b18"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f47d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-mn-inner-manipur",
+            "names": [
+              {
+                "name": "Inner Manipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Inner_Manipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6035471",
+            "node_created_on": "2025-01-29T03:12:37.968Z",
+            "active_version": {
+              "id": "0x9be960f47c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f47c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f47b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f47c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-mn-inner-manipur-version-25",
+            "region": {
+              "id": "0x9be960f47b"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f47b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-mn-inner-manipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f47a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:37.288Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Inner_Manipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-mn-inner-manipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b1e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f482",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-mn-outer-manipur",
+            "names": [
+              {
+                "name": "Outer Manipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Outer_Manipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7111989",
+            "node_created_on": "2025-01-29T03:12:40.194Z",
+            "active_version": {
+              "id": "0x9be960f481"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f481"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f480"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f481",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-mn-outer-manipur-version-25",
+            "region": {
+              "id": "0x9be960f480"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f480",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-mn-outer-manipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f47f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:39.464Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Outer_Manipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-mn-outer-manipur"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:12:40.474Z"
+}

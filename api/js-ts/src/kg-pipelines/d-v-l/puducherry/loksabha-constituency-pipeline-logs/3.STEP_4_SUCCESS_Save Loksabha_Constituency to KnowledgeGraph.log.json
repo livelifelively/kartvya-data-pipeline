@@ -1,0 +1,78 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95fd11a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f504",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-py-puducherry",
+            "names": [
+              {
+                "name": "Puducherry"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Puducherry_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3532557",
+            "node_created_on": "2025-01-29T03:13:32.580Z",
+            "active_version": {
+              "id": "0x9be960f503"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f503"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f502"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f503",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-py-puducherry-version-25",
+            "region": {
+              "id": "0x9be960f502"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f502",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-py-puducherry-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f501"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-puducherry-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:31.701Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Puducherry_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-py-puducherry"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:13:33.511Z"
+}
