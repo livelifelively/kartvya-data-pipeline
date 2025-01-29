@@ -1,0 +1,2787 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9607d2d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101a1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-mandrem",
+            "names": [
+              {
+                "name": "Mandrem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mandrem_Assembly_constituency",
+            "wikidata_qid": "Q28179400",
+            "node_created_on": "2025-01-29T04:04:30.034Z",
+            "active_version": {
+              "id": "0x9be96101a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961019f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-mandrem-version-25",
+            "region": {
+              "id": "0x9be961019f"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961019f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-mandrem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961019e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:29.301Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mandrem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-mandrem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d33"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101a6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-pernem",
+            "names": [
+              {
+                "name": "Pernem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pernem_Assembly_constituency",
+            "wikidata_qid": "Q28179404",
+            "node_created_on": "2025-01-29T04:04:31.703Z",
+            "active_version": {
+              "id": "0x9be96101a5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101a5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101a4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101a5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-pernem-version-25",
+            "region": {
+              "id": "0x9be96101a4"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101a4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-pernem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101a3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:31.031Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pernem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-pernem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d39"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101ab",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-bicholim",
+            "names": [
+              {
+                "name": "Bicholim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bicholim_Assembly_constituency",
+            "wikidata_qid": "Q28179408",
+            "node_created_on": "2025-01-29T04:04:33.708Z",
+            "active_version": {
+              "id": "0x9be96101aa"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101aa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101a9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101aa",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-bicholim-version-25",
+            "region": {
+              "id": "0x9be96101a9"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101a9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-bicholim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101a8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:32.837Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bicholim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-bicholim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d3f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101b0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-tivim",
+            "names": [
+              {
+                "name": "Tivim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tivim_Assembly_constituency",
+            "wikidata_qid": "Q28179412",
+            "node_created_on": "2025-01-29T04:04:35.535Z",
+            "active_version": {
+              "id": "0x9be96101af"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101af"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101ae"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101af",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-tivim-version-25",
+            "region": {
+              "id": "0x9be96101ae"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101ae",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-tivim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101ad"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:34.787Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tivim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-tivim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d45"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101b5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-mapusa",
+            "names": [
+              {
+                "name": "Mapusa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mapusa_Assembly_constituency",
+            "wikidata_qid": "Q25208230",
+            "node_created_on": "2025-01-29T04:04:37.248Z",
+            "active_version": {
+              "id": "0x9be96101b4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101b4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101b3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101b4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-mapusa-version-25",
+            "region": {
+              "id": "0x9be96101b3"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101b3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-mapusa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101b2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:36.491Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mapusa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-mapusa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d4b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101ba",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-siolim",
+            "names": [
+              {
+                "name": "Siolim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Siolim_Assembly_constituency",
+            "wikidata_qid": "Q28179501",
+            "node_created_on": "2025-01-29T04:04:39.308Z",
+            "active_version": {
+              "id": "0x9be96101b9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101b9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101b8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101b9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-siolim-version-25",
+            "region": {
+              "id": "0x9be96101b8"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101b8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-siolim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101b7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:38.272Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Siolim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-siolim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d51"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101bf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-saligao",
+            "names": [
+              {
+                "name": "Saligao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saligao_Assembly_constituency",
+            "wikidata_qid": "Q28179507",
+            "node_created_on": "2025-01-29T04:04:41.217Z",
+            "active_version": {
+              "id": "0x9be96101be"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101be"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101bd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101be",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-saligao-version-25",
+            "region": {
+              "id": "0x9be96101bd"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101bd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-saligao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101bc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:40.422Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saligao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-saligao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d57"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101c4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-calangute",
+            "names": [
+              {
+                "name": "Calangute"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Calangute_Assembly_constituency",
+            "wikidata_qid": "Q28179509",
+            "node_created_on": "2025-01-29T04:04:43.366Z",
+            "active_version": {
+              "id": "0x9be96101c3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101c3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101c2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101c3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-calangute-version-25",
+            "region": {
+              "id": "0x9be96101c2"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101c2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-calangute-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101c1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:42.775Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Calangute_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-calangute"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d5d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101c9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-porvorim",
+            "names": [
+              {
+                "name": "Porvorim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Porvorim_Assembly_constituency",
+            "wikidata_qid": "Q28179517",
+            "node_created_on": "2025-01-29T04:04:44.941Z",
+            "active_version": {
+              "id": "0x9be96101c8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101c8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101c7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101c8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-porvorim-version-25",
+            "region": {
+              "id": "0x9be96101c7"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101c7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-porvorim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101c6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:44.346Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Porvorim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-porvorim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d63"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101ce",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-aldona",
+            "names": [
+              {
+                "name": "Aldona"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aldona_Assembly_constituency",
+            "wikidata_qid": "Q28179520",
+            "node_created_on": "2025-01-29T04:04:46.562Z",
+            "active_version": {
+              "id": "0x9be96101cd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101cd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101cc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101cd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-aldona-version-25",
+            "region": {
+              "id": "0x9be96101cc"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101cc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-aldona-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101cb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:46.017Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aldona_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-aldona"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d69"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101d3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-panaji",
+            "names": [
+              {
+                "name": "Panaji"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Panaji_Assembly_constituency",
+            "wikidata_qid": "Q25241333",
+            "node_created_on": "2025-01-29T04:04:48.696Z",
+            "active_version": {
+              "id": "0x9be96101d2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101d2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101d1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101d2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-panaji-version-25",
+            "region": {
+              "id": "0x9be96101d1"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101d1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-panaji-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101d0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:48.024Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Panaji_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-panaji"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d6f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101d8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-taleigao",
+            "names": [
+              {
+                "name": "Taleigao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Taleigao_Assembly_constituency",
+            "wikidata_qid": "Q28179523",
+            "node_created_on": "2025-01-29T04:04:50.762Z",
+            "active_version": {
+              "id": "0x9be96101d7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101d7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101d6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101d7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-taleigao-version-25",
+            "region": {
+              "id": "0x9be96101d6"
+            },
+            "constituency_number": "12",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101d6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-taleigao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101d5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:49.895Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Taleigao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-taleigao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d75"
+          },
+          {
+            "id": "0x9be9607d76"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-santa-cruz",
+            "names": [
+              {
+                "name": "Santa Cruz"
+              },
+              {
+                "name": "St.Cruz"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/St._Cruz_Assembly_constituency",
+            "wikidata_qid": "Q25241382",
+            "node_created_on": "2025-01-29T04:04:52.489Z",
+            "active_version": {
+              "id": "0x9be96101dc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101dc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101db"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101dc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-santa-cruz-version-25",
+            "region": {
+              "id": "0x9be96101db"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101db",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-santa-cruz-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101da"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:51.857Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/St._Cruz_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-santa-cruz"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960d100"
+          },
+          {
+            "id": "0x9be9607d7c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101e2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-st-andre",
+            "names": [
+              {
+                "name": "St Andre"
+              },
+              {
+                "name": "St. Andre"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/St._Andre_Assembly_constituency",
+            "wikidata_qid": "Q28179529",
+            "node_created_on": "2025-01-29T04:04:54.345Z",
+            "active_version": {
+              "id": "0x9be96101e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-st-andre-version-25",
+            "region": {
+              "id": "0x9be96101e0"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-st-andre-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:53.733Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/St._Andre_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-st-andre"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d82"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101e7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-cumbarjua",
+            "names": [
+              {
+                "name": "Cumbarjua"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cumbarjua_Assembly_constituency",
+            "wikidata_qid": "Q28179532",
+            "node_created_on": "2025-01-29T04:04:55.987Z",
+            "active_version": {
+              "id": "0x9be96101e6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101e6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101e5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101e6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-cumbarjua-version-25",
+            "region": {
+              "id": "0x9be96101e5"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101e5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-cumbarjua-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101e4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:55.307Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cumbarjua_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-cumbarjua"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d88"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101ec",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-maem",
+            "names": [
+              {
+                "name": "Maem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maem_Assembly_constituency",
+            "wikidata_qid": "Q28179535",
+            "node_created_on": "2025-01-29T04:04:58.301Z",
+            "active_version": {
+              "id": "0x9be96101eb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101eb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101ea"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101eb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-maem-version-25",
+            "region": {
+              "id": "0x9be96101ea"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101ea",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-maem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101e9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:57.192Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Maem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-maem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d8e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101f1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-sanquelim",
+            "names": [
+              {
+                "name": "Sanquelim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sanquelim_Assembly_constituency",
+            "wikidata_qid": "Q28179541",
+            "node_created_on": "2025-01-29T04:05:00.593Z",
+            "active_version": {
+              "id": "0x9be96101f0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101f0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101ef"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101f0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-sanquelim-version-25",
+            "region": {
+              "id": "0x9be96101ef"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101ef",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-sanquelim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101ee"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:04:59.838Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sanquelim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-sanquelim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d94"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101f6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-poriem",
+            "names": [
+              {
+                "name": "Poriem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Poriem_Assembly_constituency",
+            "wikidata_qid": "Q28179545",
+            "node_created_on": "2025-01-29T04:05:02.233Z",
+            "active_version": {
+              "id": "0x9be96101f5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101f5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101f4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101f5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-poriem-version-25",
+            "region": {
+              "id": "0x9be96101f4"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101f4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-poriem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101f3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:01.490Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Poriem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-poriem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607d9a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96101fb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-valpoi",
+            "names": [
+              {
+                "name": "Valpoi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Valpoi_Assembly_constituency",
+            "wikidata_qid": "Q28179550",
+            "node_created_on": "2025-01-29T04:05:03.717Z",
+            "active_version": {
+              "id": "0x9be96101fa"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101fa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101f9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101fa",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-valpoi-version-25",
+            "region": {
+              "id": "0x9be96101f9"
+            },
+            "constituency_number": "19",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101f9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-valpoi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101f8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:02.992Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Valpoi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-valpoi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607da0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610200",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-priol",
+            "names": [
+              {
+                "name": "Priol"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Priol_Assembly_constituency",
+            "wikidata_qid": "Q28179554",
+            "node_created_on": "2025-01-29T04:05:05.755Z",
+            "active_version": {
+              "id": "0x9be96101ff"
+            },
+            "versions": [
+              {
+                "id": "0x9be96101ff"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96101fe"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96101ff",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-priol-version-25",
+            "region": {
+              "id": "0x9be96101fe"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96101fe",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-priol-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96101fd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:04.761Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Priol_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-priol"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607da6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610205",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-ponda",
+            "names": [
+              {
+                "name": "Ponda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ponda_Assembly_constituency",
+            "wikidata_qid": "Q28179559",
+            "node_created_on": "2025-01-29T04:05:07.558Z",
+            "active_version": {
+              "id": "0x9be9610204"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610204"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610203"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610204",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-ponda-version-25",
+            "region": {
+              "id": "0x9be9610203"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610203",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-ponda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610202"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:06.781Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ponda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-ponda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dac"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961020a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-siroda",
+            "names": [
+              {
+                "name": "Siroda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Siroda_Assembly_constituency",
+            "wikidata_qid": "Q28179564",
+            "node_created_on": "2025-01-29T04:05:09.403Z",
+            "active_version": {
+              "id": "0x9be9610209"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610209"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610208"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610209",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-siroda-version-25",
+            "region": {
+              "id": "0x9be9610208"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610208",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-siroda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610207"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:08.692Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Siroda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-siroda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607db2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961020f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-marcaim",
+            "names": [
+              {
+                "name": "Marcaim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Marcaim_Assembly_constituency",
+            "wikidata_qid": "Q28179566",
+            "node_created_on": "2025-01-29T04:05:11.504Z",
+            "active_version": {
+              "id": "0x9be961020e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961020e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961020d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961020e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-marcaim-version-25",
+            "region": {
+              "id": "0x9be961020d"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961020d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-marcaim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961020c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:10.733Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Marcaim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-marcaim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607db8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610214",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-mormugao",
+            "names": [
+              {
+                "name": "Mormugao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mormugao_Assembly_constituency",
+            "wikidata_qid": "Q28179570",
+            "node_created_on": "2025-01-29T04:05:14.035Z",
+            "active_version": {
+              "id": "0x9be9610213"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610213"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610212"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610213",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-mormugao-version-25",
+            "region": {
+              "id": "0x9be9610212"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610212",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-mormugao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610211"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:13.291Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mormugao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-mormugao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dbe"
+          },
+          {
+            "id": "0x9be9607dbf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610219",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-vasco-da-gama",
+            "names": [
+              {
+                "name": "Vasco Da Gama"
+              },
+              {
+                "name": "Vasco-Da-Gama"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vasco_Da_Gama_Assembly_constituency",
+            "wikidata_qid": "Q25241414",
+            "node_created_on": "2025-01-29T04:05:16.214Z",
+            "active_version": {
+              "id": "0x9be9610218"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610218"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610217"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610218",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-vasco-da-gama-version-25",
+            "region": {
+              "id": "0x9be9610217"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610217",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-vasco-da-gama-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610216"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:15.187Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vasco_Da_Gama_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-vasco-da-gama"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dc5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961021e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-dabolim",
+            "names": [
+              {
+                "name": "Dabolim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dabolim_Assembly_constituency",
+            "wikidata_qid": "Q28179574",
+            "node_created_on": "2025-01-29T04:05:18.704Z",
+            "active_version": {
+              "id": "0x9be961021d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961021d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961021c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961021d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-dabolim-version-25",
+            "region": {
+              "id": "0x9be961021c"
+            },
+            "constituency_number": "26",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961021c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-dabolim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961021b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:17.902Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dabolim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-dabolim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dcb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610223",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-cortalim",
+            "names": [
+              {
+                "name": "Cortalim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cortalim_Assembly_constituency",
+            "wikidata_qid": "Q28179576",
+            "node_created_on": "2025-01-29T04:05:20.493Z",
+            "active_version": {
+              "id": "0x9be9610222"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610222"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610221"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610222",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-cortalim-version-25",
+            "region": {
+              "id": "0x9be9610221"
+            },
+            "constituency_number": "27",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610221",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-cortalim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610220"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:19.743Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cortalim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-cortalim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dd1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610228",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-nuvem",
+            "names": [
+              {
+                "name": "Nuvem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nuvem_Assembly_constituency",
+            "wikidata_qid": "Q28179589",
+            "node_created_on": "2025-01-29T04:05:22.712Z",
+            "active_version": {
+              "id": "0x9be9610227"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610227"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610226"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610227",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-nuvem-version-25",
+            "region": {
+              "id": "0x9be9610226"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610226",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-nuvem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610225"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:21.931Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nuvem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-nuvem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dd7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961022d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-curtorim",
+            "names": [
+              {
+                "name": "Curtorim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Curtorim_Assembly_constituency",
+            "wikidata_qid": "Q28179591",
+            "node_created_on": "2025-01-29T04:05:24.338Z",
+            "active_version": {
+              "id": "0x9be961022c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961022c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961022b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961022c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-curtorim-version-25",
+            "region": {
+              "id": "0x9be961022b"
+            },
+            "constituency_number": "29",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961022b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-curtorim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961022a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:23.736Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Curtorim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-curtorim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ddd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610232",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-fatorda",
+            "names": [
+              {
+                "name": "Fatorda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatorda_Assembly_constituency",
+            "wikidata_qid": "Q28179597",
+            "node_created_on": "2025-01-29T04:05:26.700Z",
+            "active_version": {
+              "id": "0x9be9610231"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610231"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610230"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610231",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-fatorda-version-25",
+            "region": {
+              "id": "0x9be9610230"
+            },
+            "constituency_number": "30",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610230",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-fatorda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961022f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:26.092Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatorda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-fatorda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607de3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610237",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-margao",
+            "names": [
+              {
+                "name": "Margao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Margao_Assembly_constituency",
+            "wikidata_qid": "Q28179598",
+            "node_created_on": "2025-01-29T04:05:28.343Z",
+            "active_version": {
+              "id": "0x9be9610236"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610236"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610235"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610236",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-margao-version-25",
+            "region": {
+              "id": "0x9be9610235"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610235",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-margao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610234"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:27.536Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Margao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-margao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607de9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961023c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-benaulim",
+            "names": [
+              {
+                "name": "Benaulim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Benaulim_Assembly_constituency",
+            "wikidata_qid": "Q28179601",
+            "node_created_on": "2025-01-29T04:05:30.904Z",
+            "active_version": {
+              "id": "0x9be961023b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961023b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961023a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961023b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-benaulim-version-25",
+            "region": {
+              "id": "0x9be961023a"
+            },
+            "constituency_number": "32",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961023a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-benaulim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610239"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:29.368Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Benaulim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-benaulim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607def"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610241",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-navelim",
+            "names": [
+              {
+                "name": "Navelim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Navelim_Assembly_constituency",
+            "wikidata_qid": "Q28179606",
+            "node_created_on": "2025-01-29T04:05:32.713Z",
+            "active_version": {
+              "id": "0x9be9610240"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610240"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961023f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610240",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-navelim-version-25",
+            "region": {
+              "id": "0x9be961023f"
+            },
+            "constituency_number": "33",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961023f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-navelim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961023e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:32.018Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Navelim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-navelim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607df5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610246",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-cuncolim",
+            "names": [
+              {
+                "name": "Cuncolim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cuncolim_Assembly_constituency",
+            "wikidata_qid": "Q28179613",
+            "node_created_on": "2025-01-29T04:05:34.304Z",
+            "active_version": {
+              "id": "0x9be9610245"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610245"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610244"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610245",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-cuncolim-version-25",
+            "region": {
+              "id": "0x9be9610244"
+            },
+            "constituency_number": "34",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610244",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-cuncolim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610243"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:33.690Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cuncolim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-cuncolim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607dfb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961024b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-velim",
+            "names": [
+              {
+                "name": "Velim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Velim_Assembly_constituency",
+            "wikidata_qid": "Q28179617",
+            "node_created_on": "2025-01-29T04:05:36.734Z",
+            "active_version": {
+              "id": "0x9be961024a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961024a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610249"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961024a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-velim-version-25",
+            "region": {
+              "id": "0x9be9610249"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610249",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-velim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610248"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:35.819Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Velim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-velim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607e01"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610250",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-quepem",
+            "names": [
+              {
+                "name": "Quepem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Quepem_Assembly_constituency",
+            "wikidata_qid": "Q28179621",
+            "node_created_on": "2025-01-29T04:05:38.801Z",
+            "active_version": {
+              "id": "0x9be961024f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961024f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961024e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961024f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-quepem-version-25",
+            "region": {
+              "id": "0x9be961024e"
+            },
+            "constituency_number": "36",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961024e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-quepem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961024d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:37.792Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Quepem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-quepem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607e07"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610255",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-curchorem",
+            "names": [
+              {
+                "name": "Curchorem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Curchorem_Assembly_constituency",
+            "wikidata_qid": "Q28179625",
+            "node_created_on": "2025-01-29T04:05:40.747Z",
+            "active_version": {
+              "id": "0x9be9610254"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610254"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610253"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610254",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-curchorem-version-25",
+            "region": {
+              "id": "0x9be9610253"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610253",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-curchorem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610252"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:40.206Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Curchorem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-curchorem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607e0d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961025a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-sanvordem",
+            "names": [
+              {
+                "name": "Sanvordem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sanvordem_Assembly_constituency",
+            "wikidata_qid": "Q28179627",
+            "node_created_on": "2025-01-29T04:05:43.048Z",
+            "active_version": {
+              "id": "0x9be9610259"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610259"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610258"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610259",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-sanvordem-version-25",
+            "region": {
+              "id": "0x9be9610258"
+            },
+            "constituency_number": "38",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610258",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-sanvordem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610257"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:42.373Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sanvordem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-sanvordem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607e13"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961025f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-sanguem",
+            "names": [
+              {
+                "name": "Sanguem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sanguem_Assembly_constituency",
+            "wikidata_qid": "Q28179633",
+            "node_created_on": "2025-01-29T04:05:44.537Z",
+            "active_version": {
+              "id": "0x9be961025e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961025e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961025d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961025e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-sanguem-version-25",
+            "region": {
+              "id": "0x9be961025d"
+            },
+            "constituency_number": "39",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961025d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-sanguem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961025c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:43.962Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sanguem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-sanguem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607e19"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610264",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-ga-canacona",
+            "names": [
+              {
+                "name": "Canacona"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Canacona_Assembly_constituency",
+            "wikidata_qid": "Q28179635",
+            "node_created_on": "2025-01-29T04:05:46.312Z",
+            "active_version": {
+              "id": "0x9be9610263"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610263"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610262"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610263",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-ga-canacona-version-25",
+            "region": {
+              "id": "0x9be9610262"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610262",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-ga-canacona-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610261"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-goa-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:05:45.716Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Canacona_Assembly_constituency"
+        ],
+        "name_id": "in-vc-ga-canacona"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T04:05:46.700Z"
+}
