@@ -1,0 +1,12 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) failed.",
+  "data": {},
+  "error": {
+    "error": [
+      "couldn't rewrite mutation add_Indian_Vidhansabha_Constituency_ because failed to rewrite mutation payload because id in-vc-mh-akkalkuwa already exists for field name_id inside type _Indian_Vidhansabha_Constituency_: {\"response\":{\"errors\":[{\"message\":\"couldn't rewrite mutation add_Indian_Vidhansabha_Constituency_ because failed to rewrite mutation payload because id in-vc-mh-akkalkuwa already exists for field name_id inside type _Indian_Vidhansabha_Constituency_\",\"path\":[\"add_Indian_Vidhansabha_Constituency_\"]}],\"data\":{\"add_Indian_Vidhansabha_Constituency_\":null},\"extensions\":{\"touched_uids\":10,\"tracing\":{\"version\":1,\"startTime\":\"2025-01-29T04:43:42.94100674Z\",\"endTime\":\"2025-01-29T04:43:42.947993234Z\",\"duration\":6986484,\"execution\":{\"resolvers\":[{\"path\":[\"add_Indian_Vidhansabha_Constituency_\"],\"parentType\":\"Mutation\",\"fieldName\":\"add_Indian_Vidhansabha_Constituency_\",\"returnType\":\"Add_Indian_Vidhansabha_Constituency_Payload\",\"startOffset\":274395,\"duration\":6698089,\"dgraph\":[{\"label\":\"preMutationQuery\",\"startOffset\":366016,\"duration\":3802212},{\"label\":\"mutation\",\"startOffset\":0,\"duration\":0},{\"label\":\"query\",\"startOffset\":0,\"duration\":0}]}]}}},\"status\":200,\"headers\":{}},\"request\":{\"query\":\"\\n        mutation Create_Indian_Vidhansabha_Constituency_($input: Add_Indian_Vidhansabha_Constituency_Input!) {\\n            add_Indian_Vidhansabha_Constituency_(input: [$input]) {\\n                _Indian_Vidhansabha_Constituency_ {\\n                    id\\n                }\\n            }\\n        }\\n        \",\"variables\":{\"input\":{\"name_id\":\"in-vc-mh-akkalkuwa\",\"names\":[{\"name\":\"Akkalkuwa\"}],\"wikipedia_page\":\"https://en.wikipedia.org/wiki/Akkalkuwa_Assembly_constituency\",\"wikidata_qid\":\"Q4701313\",\"node_created_on\":\"2025-01-29T04:43:42.873Z\",\"active_version\":{\"id\":\"0x9be96117fd\"},\"versions\":[{\"id\":\"0x9be96117fd\"}],\"regions\":[{\"id\":\"0x9be96117fc\"}]}}}}",
+      null
+    ]
+  },
+  "key": "STEP_5_FAILURE_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T04:44:06.484Z"
+}

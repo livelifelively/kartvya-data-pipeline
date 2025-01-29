@@ -9,5 +9,77 @@
         "status": "SUCCESS"
       }
     ]
+  },
+  {
+    "iteration": 2,
+    "timeStamp": "2025-01-29T04:43:41.024Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_4_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_5_FAILURE_Save Vidhansabha_Constituency to KnowledgeGraph.log.json",
+        "status": "FAILURE"
+      }
+    ]
+  },
+  {
+    "iteration": 3,
+    "timeStamp": "2025-01-29T04:51:34.814Z",
+    "steps": [
+      {
+        "step": 0,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/1.STEP_0_SUCCESS_Fetch Vidhansabha_Constituency Wiki Details.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 1,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_1_SUCCESS_Fetch VidhansabhaConstituency ECI Geo Features.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 2,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_2_SUCCESS_Append Wikipedia Data.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 3,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_3_SUCCESS_FIND AND RESOLVE DUPLICATE NAME IDS.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 4,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/2.STEP_4_SUCCESS_Transform Vidhansabha_Constituency with ECI Geo.log.json",
+        "status": "SUCCESS"
+      },
+      {
+        "step": 5,
+        "logFile": "src/kg-pipelines/d-v-l/maharashtra/vidhansabha-constituency-pipeline-logs/3.STEP_5_FAILURE_Save Vidhansabha_Constituency to KnowledgeGraph.log.json",
+        "status": "FAILURE"
+      }
+    ]
   }
 ]
