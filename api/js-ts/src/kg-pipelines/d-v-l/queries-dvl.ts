@@ -252,58 +252,58 @@ export async function deleteAllLokSabhaNodesForAStateOrUT(stateNameId: string) {
 }
 
 (async () => {
-  let states = [
-    "in-sut-kerala",
-    "in-sut-himachal-pradesh",
-    "in-sut-meghalaya",
-    "in-sut-jharkhand",
-    "in-sut-chhattisgarh",
-    "in-sut-bihar",
-    "in-sut-goa",
-    "in-sut-maharashtra",
-    "in-sut-uttar-pradesh",
-    "in-sut-west-bengal",
-    "in-sut-nagaland",
-    "in-sut-rajasthan",
-    "in-sut-arunachal-pradesh",
-    "in-sut-manipur",
-    "in-sut-telangana",
-    "in-sut-sikkim",
-    "in-sut-gujarat",
-    "in-sut-assam",
-    "in-sut-tamil-nadu",
-    "in-sut-punjab",
-    "in-sut-haryana",
-    "in-sut-odisha",
-    "in-sut-madhya-pradesh",
-    "in-sut-uttarakhand",
-    "in-sut-karnataka",
-    "in-sut-andhra-pradesh",
-    "in-sut-mizoram",
-    "in-sut-tripura",
-    "in-sut-andaman-nicobar-islands",
-    "in-sut-chandigarh",
-    "in-sut-dadra-nagar-haveli-daman-diu",
-    "in-sut-delhi",
-    "in-sut-jammu-kashmir",
-    "in-sut-ladakh",
-    "in-sut-lakshadweep",
-    "in-sut-puducherry",
-  ];
+  // let states = [
+  //   "in-sut-kerala",
+  //   "in-sut-himachal-pradesh",
+  //   "in-sut-meghalaya",
+  //   "in-sut-jharkhand",
+  //   "in-sut-chhattisgarh",
+  //   "in-sut-bihar",
+  //   "in-sut-goa",
+  //   "in-sut-maharashtra",
+  //   "in-sut-uttar-pradesh",
+  //   "in-sut-west-bengal",
+  //   "in-sut-nagaland",
+  //   "in-sut-rajasthan",
+  //   "in-sut-arunachal-pradesh",
+  //   "in-sut-manipur",
+  //   "in-sut-telangana",
+  //   "in-sut-sikkim",
+  //   "in-sut-gujarat",
+  //   "in-sut-assam",
+  //   "in-sut-tamil-nadu",
+  //   "in-sut-punjab",
+  //   "in-sut-haryana",
+  //   "in-sut-odisha",
+  //   "in-sut-madhya-pradesh",
+  //   "in-sut-uttarakhand",
+  //   "in-sut-karnataka",
+  //   "in-sut-andhra-pradesh",
+  //   "in-sut-mizoram",
+  //   "in-sut-tripura",
+  //   "in-sut-andaman-nicobar-islands",
+  //   "in-sut-chandigarh",
+  //   "in-sut-dadra-nagar-haveli-daman-diu",
+  //   "in-sut-delhi",
+  //   "in-sut-jammu-kashmir",
+  //   "in-sut-ladakh",
+  //   "in-sut-lakshadweep",
+  //   "in-sut-puducherry",
+  // ];
+  // let baseObject: any = [];
+  // for (let state_name_id of states) {
+  //   const state = vidhansabhaConstituencies.find((val) => val.name_id === state_name_id);
+  //   if (state) {
+  //     const { name, name_id, wikipedia_page, vehicle_code } = state;
+  //     baseObject.push({
+  //       name,
+  //       name_id,
+  //       wikipedia_page,
+  //       vehicle_code,
+  //     });
+  //   }
+  // }
+  // console.log(JSON.stringify(baseObject));
 
-  let baseObject: any = [];
-  for (let state_name_id of states) {
-    const state = vidhansabhaConstituencies.find((val) => val.name_id === state_name_id);
-    if (state) {
-      const { name, name_id, wikipedia_page, vehicle_code } = state;
-
-      baseObject.push({
-        name,
-        name_id,
-        wikipedia_page,
-        vehicle_code,
-      });
-    }
-  }
-  console.log(JSON.stringify(baseObject));
+  deleteAllVidhanSabhaNodesForAStateOrUT("in-sut-madhya-pradesh");
 })();
