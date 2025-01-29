@@ -1792,7 +1792,7 @@ type _Indian_Loksabha_Constituency_Version_ {
   change: _Indian_Division_Version_Change_ @search
 
   constituency_number: String @search(by: [exact, term, fulltext])
-  reservation: _Indian_Legislative_Constituency_Reservation_ @search
+  reservation: _Indian_Legislative_Constituency_Reservation_ @search(by: [exact])
 
   established_on: _Date_Time_
   disestablished_on: _Date_Time_
@@ -1920,7 +1920,7 @@ type _Indian_Vidhansabha_Constituency_Version_ {
     @hasInverse(field: "vidhansabha_constituency_versions")
 
   constituency_number: String @search(by: [exact, term, fulltext])
-  reservation: _Indian_Legislative_Constituency_Reservation_ @search
+  reservation: _Indian_Legislative_Constituency_Reservation_ @search(by: [exact])
 
   change: _Indian_Division_Version_Change_ @search
 
