@@ -168,8 +168,8 @@ async function loksabhaConstituenciesPipeline(
   try {
     const lastStepOutput = await runPipeline(steps, outputs, loksabhaConstituenciesProgressDir, progressStatusFile);
 
-    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
-    return lastStepOutput.transformedLoksabhaConstituenciesECIGeo;
+    // if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    // return lastStepOutput.transformedLoksabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
   }
@@ -256,8 +256,8 @@ async function vidhansabhaConstituenciesPipeline(
   try {
     const lastStepOutput = await runPipeline(steps, outputs, vidhansabhaConstituenciesProgressDir, progressStatusFile);
 
-    if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
-    return lastStepOutput.transformedVidhansabhaConstituenciesECIGeo;
+    // if (saveToKG) return lastStepOutput.savedToKnowledgeGraph;
+    // // return lastStepOutput.transformedVidhansabhaConstituenciesECIGeo;
   } catch (error) {
     console.error("Error in processing: ", error);
     throw new Error("Error in processing");
@@ -268,24 +268,26 @@ async function vidhansabhaConstituenciesPipeline(
   const vidhansabhaConstituenciesKeyedByNameId = keyBy(vidhansabha, "name_id");
   let state: any;
 
-  // for (let i = 0; i < loksabha.length; i++) {
-  state = loksabha[8];
-  const saveToKG = true;
+  for (let i = 0; i < loksabha.length; i++) {
+    state = loksabha[i];
+    const saveToKG = true;
 
-  state.vidhansabha_constituencies = vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
+    state.vidhansabha_constituencies =
+      vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
 
-  await loksabhaConstituenciesPipeline(
-    { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-    state.loksabha_constituencies,
-    saveToKG
-  );
-
-  if (state.vidhansabha_constituencies) {
-    await vidhansabhaConstituenciesPipeline(
+    await loksabhaConstituenciesPipeline(
       { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-      state.vidhansabha_constituencies,
+      state.loksabha_constituencies,
       saveToKG
     );
+
+    if (state.vidhansabha_constituencies) {
+      await vidhansabhaConstituenciesPipeline(
+        { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+        state.vidhansabha_constituencies,
+        saveToKG
+      );
+    }
   }
 
   // cleanDirectories(state.name_id);
