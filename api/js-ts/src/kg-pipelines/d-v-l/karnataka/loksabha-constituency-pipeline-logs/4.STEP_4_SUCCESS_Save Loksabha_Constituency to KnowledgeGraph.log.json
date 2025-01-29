@@ -1,0 +1,1947 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960686c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcb6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-chikkodi",
+            "names": [
+              {
+                "name": "Chikkodi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chikkodi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3939251",
+            "node_created_on": "2025-01-28T14:31:13.760Z",
+            "active_version": {
+              "id": "0x9be960dcb5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcb5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcb4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcb5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-chikkodi-version-25",
+            "region": {
+              "id": "0x9be960dcb4"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcb4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-chikkodi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcb3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:12.697Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chikkodi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-chikkodi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606872"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcbb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-belgaum",
+            "names": [
+              {
+                "name": "Belgaum"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Belgaum_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3995921",
+            "node_created_on": "2025-01-28T14:31:15.473Z",
+            "active_version": {
+              "id": "0x9be960dcba"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcba"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcb9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcba",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-belgaum-version-25",
+            "region": {
+              "id": "0x9be960dcb9"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcb9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-belgaum-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcb8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:14.887Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Belgaum_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-belgaum"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960595c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcc0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bagalkot",
+            "names": [
+              {
+                "name": "Bagalkot"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bagalkot_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4841427",
+            "node_created_on": "2025-01-28T14:31:17.345Z",
+            "active_version": {
+              "id": "0x9be960dcbf"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcbf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcbe"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcbf",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bagalkot-version-25",
+            "region": {
+              "id": "0x9be960dcbe"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcbe",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bagalkot-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcbd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:16.681Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bagalkot_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bagalkot"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055b0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcc5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bijapur",
+            "names": [
+              {
+                "name": "Bijapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bijapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4907176",
+            "node_created_on": "2025-01-28T14:31:19.019Z",
+            "active_version": {
+              "id": "0x9be960dcc4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcc4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcc3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcc4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bijapur-version-25",
+            "region": {
+              "id": "0x9be960dcc3"
+            },
+            "constituency_number": "4",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcc3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bijapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcc2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:18.294Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bijapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bijapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606882"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcca",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-gulbarga",
+            "names": [
+              {
+                "name": "Gulbarga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gulbarga_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4172532",
+            "node_created_on": "2025-01-28T14:31:20.829Z",
+            "active_version": {
+              "id": "0x9be960dcc9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcc9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcc8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcc9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-gulbarga-version-25",
+            "region": {
+              "id": "0x9be960dcc8"
+            },
+            "constituency_number": "5",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcc8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-gulbarga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcc7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:20.211Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gulbarga_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-gulbarga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059e0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dccf",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-raichur",
+            "names": [
+              {
+                "name": "Raichur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raichur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4172533",
+            "node_created_on": "2025-01-28T14:31:23.517Z",
+            "active_version": {
+              "id": "0x9be960dcce"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dccd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcce",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-raichur-version-25",
+            "region": {
+              "id": "0x9be960dccd"
+            },
+            "constituency_number": "6",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dccd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-raichur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dccc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:22.771Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raichur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-raichur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605976"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcd4",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bidar",
+            "names": [
+              {
+                "name": "Bidar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bidar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3883318",
+            "node_created_on": "2025-01-28T14:31:25.975Z",
+            "active_version": {
+              "id": "0x9be960dcd3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcd3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcd2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcd3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bidar-version-25",
+            "region": {
+              "id": "0x9be960dcd2"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcd2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bidar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcd1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:25.293Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bidar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bidar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059cd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcd9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-koppal",
+            "names": [
+              {
+                "name": "Koppal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Koppal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4348317",
+            "node_created_on": "2025-01-28T14:31:28.287Z",
+            "active_version": {
+              "id": "0x9be960dcd8"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcd8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcd7"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcd8",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-koppal-version-25",
+            "region": {
+              "id": "0x9be960dcd7"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcd7",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-koppal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcd6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:26.995Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Koppal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-koppal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606897"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcde",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bellary",
+            "names": [
+              {
+                "name": "Bellary"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bellary_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3521014",
+            "node_created_on": "2025-01-28T14:31:30.720Z",
+            "active_version": {
+              "id": "0x9be960dcdd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcdd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcdc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcdd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bellary-version-25",
+            "region": {
+              "id": "0x9be960dcdc"
+            },
+            "constituency_number": "9",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcdc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bellary-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcdb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:29.305Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bellary_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bellary"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059bb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dce3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-haveri",
+            "names": [
+              {
+                "name": "Haveri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Haveri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4628043",
+            "node_created_on": "2025-01-28T14:31:32.807Z",
+            "active_version": {
+              "id": "0x9be960dce2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dce2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dce1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dce2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-haveri-version-25",
+            "region": {
+              "id": "0x9be960dce1"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dce1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-haveri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dce0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:31.885Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Haveri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-haveri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059a2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dce8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-dharwad",
+            "names": [
+              {
+                "name": "Dharwad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharwad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5269410",
+            "node_created_on": "2025-01-28T14:31:34.754Z",
+            "active_version": {
+              "id": "0x9be960dce7"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dce7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dce6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dce7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-dharwad-version-25",
+            "region": {
+              "id": "0x9be960dce6"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dce6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-dharwad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dce5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:33.931Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharwad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-dharwad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059fe"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dced",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-uttara-kannada",
+            "names": [
+              {
+                "name": "Uttara Kannada"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uttara_Kannada_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4756549",
+            "node_created_on": "2025-01-28T14:31:37.517Z",
+            "active_version": {
+              "id": "0x9be960dcec"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dceb"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcec",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-uttara-kannada-version-25",
+            "region": {
+              "id": "0x9be960dceb"
+            },
+            "constituency_number": "12",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dceb",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-uttara-kannada-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:36.555Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uttara_Kannada_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-uttara-kannada"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960599c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcf2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-davanagere",
+            "names": [
+              {
+                "name": "Davanagere"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Davanagere_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4877000",
+            "node_created_on": "2025-01-28T14:31:40.018Z",
+            "active_version": {
+              "id": "0x9be960dcf1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcf1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcf0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcf1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-davanagere-version-25",
+            "region": {
+              "id": "0x9be960dcf0"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcf0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-davanagere-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcef"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:39.054Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Davanagere_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-davanagere"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059ec"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcf7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-shimoga",
+            "names": [
+              {
+                "name": "Shimoga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shimoga_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4876992",
+            "node_created_on": "2025-01-28T14:31:41.921Z",
+            "active_version": {
+              "id": "0x9be960dcf6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcf6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcf5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcf6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-shimoga-version-25",
+            "region": {
+              "id": "0x9be960dcf5"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcf5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-shimoga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcf4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:41.204Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shimoga_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-shimoga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068b6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dcfc",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-udupi-chikmagalur",
+            "names": [
+              {
+                "name": "Udupi Chikmagalur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Udupi_Chikmagalur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7877355",
+            "node_created_on": "2025-01-28T14:31:44.300Z",
+            "active_version": {
+              "id": "0x9be960dcfb"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dcfb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcfa"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dcfb",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-udupi-chikmagalur-version-25",
+            "region": {
+              "id": "0x9be960dcfa"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcfa",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-udupi-chikmagalur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcf9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:43.048Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Udupi_Chikmagalur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-udupi-chikmagalur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059b5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd01",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-hassan",
+            "names": [
+              {
+                "name": "Hassan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hassan_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5679532",
+            "node_created_on": "2025-01-28T14:31:46.221Z",
+            "active_version": {
+              "id": "0x9be960dd00"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd00"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dcff"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd00",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-hassan-version-25",
+            "region": {
+              "id": "0x9be960dcff"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dcff",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-hassan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dcfe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:45.478Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hassan_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-hassan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605996"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd06",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-dakshina-kannada",
+            "names": [
+              {
+                "name": "Dakshina Kannada"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dakshina_Kannada_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5121423",
+            "node_created_on": "2025-01-28T14:31:47.860Z",
+            "active_version": {
+              "id": "0x9be960dd05"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd05"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd04"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd05",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-dakshina-kannada-version-25",
+            "region": {
+              "id": "0x9be960dd04"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd04",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-dakshina-kannada-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd03"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:47.245Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dakshina_Kannada_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-dakshina-kannada"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605990"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd0b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-chitradurga",
+            "names": [
+              {
+                "name": "Chitradurga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chitradurga_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5102316",
+            "node_created_on": "2025-01-28T14:31:49.694Z",
+            "active_version": {
+              "id": "0x9be960dd0a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd0a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd09"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd0a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-chitradurga-version-25",
+            "region": {
+              "id": "0x9be960dd09"
+            },
+            "constituency_number": "18",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd09",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-chitradurga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd08"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:48.987Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chitradurga_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-chitradurga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068cb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd10",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-tumkur",
+            "names": [
+              {
+                "name": "Tumkur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tumkur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5245318",
+            "node_created_on": "2025-01-28T14:31:51.754Z",
+            "active_version": {
+              "id": "0x9be960dd0f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd0f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd0e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd0f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-tumkur-version-25",
+            "region": {
+              "id": "0x9be960dd0e"
+            },
+            "constituency_number": "19",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd0e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-tumkur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd0d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:50.764Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tumkur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-tumkur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059d3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd15",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-mandya",
+            "names": [
+              {
+                "name": "Mandya"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mandya_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5187868",
+            "node_created_on": "2025-01-28T14:31:53.799Z",
+            "active_version": {
+              "id": "0x9be960dd14"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd14"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd13"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd14",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-mandya-version-25",
+            "region": {
+              "id": "0x9be960dd13"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd13",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-mandya-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd12"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:53.184Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mandya_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-mandya"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059d9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd1a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-mysore",
+            "names": [
+              {
+                "name": "Mysore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mysore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5332086",
+            "node_created_on": "2025-01-28T14:31:55.744Z",
+            "active_version": {
+              "id": "0x9be960dd19"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd19"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd18"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd19",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-mysore-version-25",
+            "region": {
+              "id": "0x9be960dd18"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd18",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-mysore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd17"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:54.926Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mysore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-mysore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960597c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd1f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-chamarajanagar",
+            "names": [
+              {
+                "name": "Chamarajanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chamarajanagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5069470",
+            "node_created_on": "2025-01-28T14:31:57.293Z",
+            "active_version": {
+              "id": "0x9be960dd1e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd1e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd1d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd1e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-chamarajanagar-version-25",
+            "region": {
+              "id": "0x9be960dd1d"
+            },
+            "constituency_number": "22",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd1d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-chamarajanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd1c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:56.750Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chamarajanagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-chamarajanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960596f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd24",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bangalore-rural",
+            "names": [
+              {
+                "name": "Bangalore Rural"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bangalore_Rural_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4855074",
+            "node_created_on": "2025-01-28T14:31:59.329Z",
+            "active_version": {
+              "id": "0x9be960dd23"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd23"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd22"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd23",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bangalore-rural-version-25",
+            "region": {
+              "id": "0x9be960dd22"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd22",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bangalore-rural-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd21"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:31:58.459Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bangalore_Rural_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bangalore-rural"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068e5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd29",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bangalore-north",
+            "names": [
+              {
+                "name": "Bangalore North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bangalore_North_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4855069",
+            "node_created_on": "2025-01-28T14:32:01.288Z",
+            "active_version": {
+              "id": "0x9be960dd28"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd28"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd27"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd28",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bangalore-north-version-25",
+            "region": {
+              "id": "0x9be960dd27"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd27",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bangalore-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd26"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:32:00.766Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bangalore_North_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bangalore-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068eb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd2e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bangalore-central",
+            "names": [
+              {
+                "name": "Bangalore Central"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bangalore_Central_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4855038",
+            "node_created_on": "2025-01-28T14:32:02.949Z",
+            "active_version": {
+              "id": "0x9be960dd2d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd2d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd2c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd2d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bangalore-central-version-25",
+            "region": {
+              "id": "0x9be960dd2c"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd2c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bangalore-central-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd2b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:32:02.305Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bangalore_Central_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bangalore-central"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068f1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd33",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-bangalore-south",
+            "names": [
+              {
+                "name": "Bangalore South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bangalore_South_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6509948",
+            "node_created_on": "2025-01-28T14:32:04.756Z",
+            "active_version": {
+              "id": "0x9be960dd32"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd32"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd31"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd32",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-bangalore-south-version-25",
+            "region": {
+              "id": "0x9be960dd31"
+            },
+            "constituency_number": "26",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd31",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-bangalore-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd30"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:32:04.021Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bangalore_South_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-bangalore-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96068f7"
+          },
+          {
+            "id": "0x9be96068f8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd38",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-chikballapur",
+            "names": [
+              {
+                "name": "Chikballapur"
+              },
+              {
+                "name": "Chikkballapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chikballapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5097405",
+            "node_created_on": "2025-01-28T14:32:06.749Z",
+            "active_version": {
+              "id": "0x9be960dd37"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd37"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd36"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd37",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-chikballapur-version-25",
+            "region": {
+              "id": "0x9be960dd36"
+            },
+            "constituency_number": "27",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd36",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-chikballapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd35"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:32:06.199Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chikballapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-chikballapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96059c7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960dd3d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ka-kolar",
+            "names": [
+              {
+                "name": "Kolar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kolar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6427060",
+            "node_created_on": "2025-01-28T14:32:08.766Z",
+            "active_version": {
+              "id": "0x9be960dd3c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960dd3c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960dd3b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960dd3c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ka-kolar-version-25",
+            "region": {
+              "id": "0x9be960dd3b"
+            },
+            "constituency_number": "28",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960dd3b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ka-kolar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960dd3a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-karnataka-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-28T14:32:07.921Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kolar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ka-kolar"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-28T14:32:09.183Z"
+}
