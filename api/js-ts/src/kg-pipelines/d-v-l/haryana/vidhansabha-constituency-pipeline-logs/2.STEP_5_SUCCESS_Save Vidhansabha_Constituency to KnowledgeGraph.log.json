@@ -1,0 +1,6237 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9608261"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96105f7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kalka",
+            "names": [
+              {
+                "name": "Kalka"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalka_Assembly_constituency",
+            "wikidata_qid": "Q15646118",
+            "node_created_on": "2025-01-29T04:11:57.322Z",
+            "active_version": {
+              "id": "0x9be96105f6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96105f6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96105f5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96105f6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kalka-version-25",
+            "region": {
+              "id": "0x9be96105f5"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96105f5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kalka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96105f4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:11:56.546Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalka_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kalka"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057e1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96105fc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-panchkula",
+            "names": [
+              {
+                "name": "Panchkula"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Panchkula_Assembly_constituency",
+            "wikidata_qid": "Q15651207",
+            "node_created_on": "2025-01-29T04:11:59.707Z",
+            "active_version": {
+              "id": "0x9be96105fb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96105fb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96105fa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96105fb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-panchkula-version-25",
+            "region": {
+              "id": "0x9be96105fa"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96105fa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-panchkula-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96105f9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:11:58.320Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Panchkula_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-panchkula"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960826c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610601",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-naraingarh",
+            "names": [
+              {
+                "name": "Naraingarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Naraingarh_Assembly_constituency",
+            "wikidata_qid": "Q15650573",
+            "node_created_on": "2025-01-29T04:12:01.992Z",
+            "active_version": {
+              "id": "0x9be9610600"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610600"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96105ff"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610600",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-naraingarh-version-25",
+            "region": {
+              "id": "0x9be96105ff"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96105ff",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-naraingarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96105fe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:00.828Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Naraingarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-naraingarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608272"
+          },
+          {
+            "id": "0x9be9608273"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610606",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ambala-cantonment",
+            "names": [
+              {
+                "name": "Ambala Cantonment"
+              },
+              {
+                "name": "AMBALA CANTT."
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ambala_Cantonment_Assembly_constituency",
+            "wikidata_qid": "Q15643997",
+            "node_created_on": "2025-01-29T04:12:03.695Z",
+            "active_version": {
+              "id": "0x9be9610605"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610605"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610604"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610605",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ambala-cantonment-version-25",
+            "region": {
+              "id": "0x9be9610604"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610604",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ambala-cantonment-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610603"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:02.997Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ambala_Cantonment_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ambala-cantonment"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608279"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961060b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ambala-city",
+            "names": [
+              {
+                "name": "Ambala City"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ambala_City_Assembly_constituency",
+            "wikidata_qid": "Q15643998",
+            "node_created_on": "2025-01-29T04:12:05.706Z",
+            "active_version": {
+              "id": "0x9be961060a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961060a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610609"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961060a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ambala-city-version-25",
+            "region": {
+              "id": "0x9be9610609"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610609",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ambala-city-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610608"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:04.931Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ambala_City_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ambala-city"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960827f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610610",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-mulana",
+            "names": [
+              {
+                "name": "Mulana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mulana_Assembly_constituency",
+            "wikidata_qid": "Q15678009",
+            "node_created_on": "2025-01-29T04:12:07.336Z",
+            "active_version": {
+              "id": "0x9be961060f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961060f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961060e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961060f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-mulana-version-25",
+            "region": {
+              "id": "0x9be961060e"
+            },
+            "constituency_number": "6",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961060e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-mulana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961060d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:06.784Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mulana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-mulana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608285"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610615",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-sadhaura",
+            "names": [
+              {
+                "name": "Sadhaura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sadhaura_Assembly_constituency",
+            "wikidata_qid": "Q15697015",
+            "node_created_on": "2025-01-29T04:12:08.779Z",
+            "active_version": {
+              "id": "0x9be9610614"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610614"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610613"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610614",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-sadhaura-version-25",
+            "region": {
+              "id": "0x9be9610613"
+            },
+            "constituency_number": "7",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610613",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-sadhaura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610612"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:08.323Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sadhaura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-sadhaura"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960828b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961061a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-jagadhri",
+            "names": [
+              {
+                "name": "Jagadhri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jagadhri_Assembly_constituency",
+            "wikidata_qid": "Q15647724",
+            "node_created_on": "2025-01-29T04:12:10.310Z",
+            "active_version": {
+              "id": "0x9be9610619"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610619"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610618"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610619",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-jagadhri-version-25",
+            "region": {
+              "id": "0x9be9610618"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610618",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-jagadhri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610617"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:09.754Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jagadhri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-jagadhri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605805"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961061f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-yamunanagar",
+            "names": [
+              {
+                "name": "Yamunanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Yamunanagar_Assembly_constituency",
+            "wikidata_qid": "Q15679804",
+            "node_created_on": "2025-01-29T04:12:12.515Z",
+            "active_version": {
+              "id": "0x9be961061e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961061e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961061d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961061e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-yamunanagar-version-25",
+            "region": {
+              "id": "0x9be961061d"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961061d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-yamunanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961061c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:11.738Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Yamunanagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-yamunanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608296"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610624",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-radaur",
+            "names": [
+              {
+                "name": "Radaur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Radaur_Assembly_constituency",
+            "wikidata_qid": "Q15681948",
+            "node_created_on": "2025-01-29T04:12:14.060Z",
+            "active_version": {
+              "id": "0x9be9610623"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610623"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610622"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610623",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-radaur-version-25",
+            "region": {
+              "id": "0x9be9610622"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610622",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-radaur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610621"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:13.486Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Radaur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-radaur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960829c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610629",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ladwa",
+            "names": [
+              {
+                "name": "Ladwa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ladwa_Assembly_constituency",
+            "wikidata_qid": "Q15695013",
+            "node_created_on": "2025-01-29T04:12:16.187Z",
+            "active_version": {
+              "id": "0x9be9610628"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610628"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610627"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610628",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ladwa-version-25",
+            "region": {
+              "id": "0x9be9610627"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610627",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ladwa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610626"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:15.593Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ladwa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ladwa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082a2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961062e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-shahbad",
+            "names": [
+              {
+                "name": "Shahbad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shahbad_Assembly_constituency",
+            "wikidata_qid": "Q15696486",
+            "node_created_on": "2025-01-29T04:12:17.743Z",
+            "active_version": {
+              "id": "0x9be961062d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961062d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961062c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961062d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-shahbad-version-25",
+            "region": {
+              "id": "0x9be961062c"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961062c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-shahbad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961062b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:17.030Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shahbad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-shahbad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082a8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610633",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-thanesar",
+            "names": [
+              {
+                "name": "Thanesar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thanesar_Assembly_constituency",
+            "wikidata_qid": "Q15648157",
+            "node_created_on": "2025-01-29T04:12:20.304Z",
+            "active_version": {
+              "id": "0x9be9610632"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610632"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610631"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610632",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-thanesar-version-25",
+            "region": {
+              "id": "0x9be9610631"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610631",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-thanesar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610630"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:19.017Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thanesar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-thanesar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082ae"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610638",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-pehowa",
+            "names": [
+              {
+                "name": "Pehowa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pehowa_Assembly_constituency",
+            "wikidata_qid": "Q15656995",
+            "node_created_on": "2025-01-29T04:12:22.185Z",
+            "active_version": {
+              "id": "0x9be9610637"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610637"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610636"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610637",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-pehowa-version-25",
+            "region": {
+              "id": "0x9be9610636"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610636",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-pehowa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610635"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:21.303Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pehowa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-pehowa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082b4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961063d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-guhla",
+            "names": [
+              {
+                "name": "Guhla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Guhla_Assembly_constituency",
+            "wikidata_qid": "Q15689582",
+            "node_created_on": "2025-01-29T04:12:23.539Z",
+            "active_version": {
+              "id": "0x9be961063c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961063c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961063b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961063c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-guhla-version-25",
+            "region": {
+              "id": "0x9be961063b"
+            },
+            "constituency_number": "15",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961063b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-guhla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961063a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:22.985Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Guhla_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-guhla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082ba"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610642",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kalayat",
+            "names": [
+              {
+                "name": "Kalayat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalayat_Assembly_constituency",
+            "wikidata_qid": "Q15645924",
+            "node_created_on": "2025-01-29T04:12:25.332Z",
+            "active_version": {
+              "id": "0x9be9610641"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610641"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610640"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610641",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kalayat-version-25",
+            "region": {
+              "id": "0x9be9610640"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610640",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kalayat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961063f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:24.701Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalayat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kalayat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057bd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610647",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kaithal",
+            "names": [
+              {
+                "name": "Kaithal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kaithal_Assembly_constituency",
+            "wikidata_qid": "Q15646463",
+            "node_created_on": "2025-01-29T04:12:26.959Z",
+            "active_version": {
+              "id": "0x9be9610646"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610646"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610645"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610646",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kaithal-version-25",
+            "region": {
+              "id": "0x9be9610645"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610645",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kaithal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610644"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:26.307Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kaithal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kaithal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082c5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961064c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-pundri",
+            "names": [
+              {
+                "name": "Pundri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pundri_Assembly_constituency",
+            "wikidata_qid": "Q15655225",
+            "node_created_on": "2025-01-29T04:12:29.319Z",
+            "active_version": {
+              "id": "0x9be961064b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961064b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961064a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961064b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-pundri-version-25",
+            "region": {
+              "id": "0x9be961064a"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961064a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-pundri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610649"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:28.600Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pundri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-pundri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082cb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610651",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-nilokheri",
+            "names": [
+              {
+                "name": "Nilokheri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nilokheri_Assembly_constituency",
+            "wikidata_qid": "Q15650821",
+            "node_created_on": "2025-01-29T04:12:30.924Z",
+            "active_version": {
+              "id": "0x9be9610650"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610650"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961064f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610650",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-nilokheri-version-25",
+            "region": {
+              "id": "0x9be961064f"
+            },
+            "constituency_number": "19",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961064f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-nilokheri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961064e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:30.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nilokheri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-nilokheri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082d1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610656",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-indri",
+            "names": [
+              {
+                "name": "Indri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Indri_Assembly_constituency",
+            "wikidata_qid": "Q15645008",
+            "node_created_on": "2025-01-29T04:12:32.717Z",
+            "active_version": {
+              "id": "0x9be9610655"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610655"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610654"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610655",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-indri-version-25",
+            "region": {
+              "id": "0x9be9610654"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610654",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-indri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610653"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:31.976Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Indri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-indri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057c3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961065b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-karnal",
+            "names": [
+              {
+                "name": "Karnal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karnal_Assembly_constituency",
+            "wikidata_qid": "Q15645847",
+            "node_created_on": "2025-01-29T04:12:34.335Z",
+            "active_version": {
+              "id": "0x9be961065a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961065a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610659"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961065a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-karnal-version-25",
+            "region": {
+              "id": "0x9be9610659"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610659",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-karnal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610658"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:33.719Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karnal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-karnal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082dc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610660",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-gharaunda",
+            "names": [
+              {
+                "name": "Gharaunda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gharaunda_Assembly_constituency",
+            "wikidata_qid": "Q15647360",
+            "node_created_on": "2025-01-29T04:12:36.715Z",
+            "active_version": {
+              "id": "0x9be961065f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961065f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961065e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961065f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-gharaunda-version-25",
+            "region": {
+              "id": "0x9be961065e"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961065e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-gharaunda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961065d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:36.055Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gharaunda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-gharaunda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610665",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-assandh",
+            "names": [
+              {
+                "name": "Assandh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Assandh_Assembly_constituency",
+            "wikidata_qid": "Q15644489",
+            "node_created_on": "2025-01-29T04:12:38.503Z",
+            "active_version": {
+              "id": "0x9be9610664"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610664"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610663"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610664",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-assandh-version-25",
+            "region": {
+              "id": "0x9be9610663"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610663",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-assandh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610662"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:37.795Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Assandh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-assandh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082e8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961066a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-panipat-rural",
+            "names": [
+              {
+                "name": "Panipat Rural"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Panipat_Rural_Assembly_constituency",
+            "wikidata_qid": "Q15653658",
+            "node_created_on": "2025-01-29T04:12:40.804Z",
+            "active_version": {
+              "id": "0x9be9610669"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610669"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610668"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610669",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-panipat-rural-version-25",
+            "region": {
+              "id": "0x9be9610668"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610668",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-panipat-rural-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610667"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:40.069Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Panipat_Rural_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-panipat-rural"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082ee"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961066f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-panipat-city",
+            "names": [
+              {
+                "name": "Panipat City"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Panipat_City_Assembly_constituency",
+            "wikidata_qid": "Q15653667",
+            "node_created_on": "2025-01-29T04:12:42.503Z",
+            "active_version": {
+              "id": "0x9be961066e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961066e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961066d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961066e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-panipat-city-version-25",
+            "region": {
+              "id": "0x9be961066d"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961066d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-panipat-city-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961066c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:41.868Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Panipat_City_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-panipat-city"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082f4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610674",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-israna",
+            "names": [
+              {
+                "name": "Israna"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Israna_Assembly_constituency",
+            "wikidata_qid": "Q15645106",
+            "node_created_on": "2025-01-29T04:12:44.710Z",
+            "active_version": {
+              "id": "0x9be9610673"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610673"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610672"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610673",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-israna-version-25",
+            "region": {
+              "id": "0x9be9610672"
+            },
+            "constituency_number": "26",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610672",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-israna-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610671"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:43.771Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Israna_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-israna"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96082fa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610679",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-samalkha",
+            "names": [
+              {
+                "name": "Samalkha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Samalkha_Assembly_constituency",
+            "wikidata_qid": "Q15697174",
+            "node_created_on": "2025-01-29T04:12:46.517Z",
+            "active_version": {
+              "id": "0x9be9610678"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610678"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610677"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610678",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-samalkha-version-25",
+            "region": {
+              "id": "0x9be9610677"
+            },
+            "constituency_number": "27",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610677",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-samalkha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610676"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:45.821Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Samalkha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-samalkha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608300"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961067e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ganaur",
+            "names": [
+              {
+                "name": "Ganaur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ganaur_Assembly_constituency",
+            "wikidata_qid": "Q15647074",
+            "node_created_on": "2025-01-29T04:12:48.715Z",
+            "active_version": {
+              "id": "0x9be961067d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961067d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961067c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961067d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ganaur-version-25",
+            "region": {
+              "id": "0x9be961067c"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961067c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ganaur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961067b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:47.750Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ganaur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ganaur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608306"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610683",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-rai",
+            "names": [
+              {
+                "name": "Rai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rai_Assembly_constituency",
+            "wikidata_qid": "Q15681247",
+            "node_created_on": "2025-01-29T04:12:51.741Z",
+            "active_version": {
+              "id": "0x9be9610682"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610682"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610681"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610682",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-rai-version-25",
+            "region": {
+              "id": "0x9be9610681"
+            },
+            "constituency_number": "29",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610681",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-rai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610680"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:50.822Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-rai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960830c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610688",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kharkhauda",
+            "names": [
+              {
+                "name": "Kharkhauda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kharkhoda_Assembly_constituency",
+            "wikidata_qid": "Q15646902",
+            "node_created_on": "2025-01-29T04:12:53.306Z",
+            "active_version": {
+              "id": "0x9be9610687"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610687"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610686"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610687",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kharkhauda-version-25",
+            "region": {
+              "id": "0x9be9610686"
+            },
+            "constituency_number": "30",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610686",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kharkhauda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610685"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:52.707Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kharkhauda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kharkhauda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057ff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961068d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-sonipat",
+            "names": [
+              {
+                "name": "Sonipat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sonipat_Assembly_constituency",
+            "wikidata_qid": "Q15697800",
+            "node_created_on": "2025-01-29T04:12:55.038Z",
+            "active_version": {
+              "id": "0x9be961068c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961068c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961068b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961068c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-sonipat-version-25",
+            "region": {
+              "id": "0x9be961068b"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961068b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-sonipat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961068a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:54.407Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sonipat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-sonipat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608317"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610692",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-gohana",
+            "names": [
+              {
+                "name": "Gohana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gohana_Assembly_constituency",
+            "wikidata_qid": "Q15647291",
+            "node_created_on": "2025-01-29T04:12:56.761Z",
+            "active_version": {
+              "id": "0x9be9610691"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610691"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610690"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610691",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-gohana-version-25",
+            "region": {
+              "id": "0x9be9610690"
+            },
+            "constituency_number": "32",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610690",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-gohana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961068f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:56.043Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gohana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-gohana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960831d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610697",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-baroda",
+            "names": [
+              {
+                "name": "Baroda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baroda_Assembly_constituency",
+            "wikidata_qid": "Q15661898",
+            "node_created_on": "2025-01-29T04:12:58.297Z",
+            "active_version": {
+              "id": "0x9be9610696"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610696"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610695"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610696",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-baroda-version-25",
+            "region": {
+              "id": "0x9be9610695"
+            },
+            "constituency_number": "33",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610695",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-baroda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610694"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:57.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baroda_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-baroda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608323"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961069c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-julana",
+            "names": [
+              {
+                "name": "Julana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Julana_Assembly_constituency",
+            "wikidata_qid": "Q15647842",
+            "node_created_on": "2025-01-29T04:13:00.037Z",
+            "active_version": {
+              "id": "0x9be961069b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961069b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961069a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961069b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-julana-version-25",
+            "region": {
+              "id": "0x9be961069a"
+            },
+            "constituency_number": "34",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961069a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-julana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610699"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:12:59.216Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Julana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-julana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608329"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106a1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-safidon",
+            "names": [
+              {
+                "name": "Safidon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Safidon_Assembly_constituency",
+            "wikidata_qid": "Q15697070",
+            "node_created_on": "2025-01-29T04:13:02.291Z",
+            "active_version": {
+              "id": "0x9be96106a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961069f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-safidon-version-25",
+            "region": {
+              "id": "0x9be961069f"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961069f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-safidon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961069e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:01.494Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Safidon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-safidon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057b7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106a6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-jind",
+            "names": [
+              {
+                "name": "Jind"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jind_Assembly_constituency",
+            "wikidata_qid": "Q15647831",
+            "node_created_on": "2025-01-29T04:13:04.748Z",
+            "active_version": {
+              "id": "0x9be96106a5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106a5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106a4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106a5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-jind-version-25",
+            "region": {
+              "id": "0x9be96106a4"
+            },
+            "constituency_number": "36",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106a4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-jind-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106a3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:03.415Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jind_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-jind"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608334"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106ab",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-uchana-kalan",
+            "names": [
+              {
+                "name": "Uchana Kalan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uchana_Kalan_Assembly_constituency",
+            "wikidata_qid": "Q15645196",
+            "node_created_on": "2025-01-29T04:13:06.285Z",
+            "active_version": {
+              "id": "0x9be96106aa"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106aa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106a9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106aa",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-uchana-kalan-version-25",
+            "region": {
+              "id": "0x9be96106a9"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106a9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-uchana-kalan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106a8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:05.549Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uchana_Kalan_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-uchana-kalan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960833a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106b0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-narwana",
+            "names": [
+              {
+                "name": "Narwana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narwana_Assembly_constituency",
+            "wikidata_qid": "Q15650184",
+            "node_created_on": "2025-01-29T04:13:08.536Z",
+            "active_version": {
+              "id": "0x9be96106af"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106af"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106ae"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106af",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-narwana-version-25",
+            "region": {
+              "id": "0x9be96106ae"
+            },
+            "constituency_number": "38",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106ae",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-narwana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106ad"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:07.812Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narwana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-narwana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608340"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106b5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-tohana",
+            "names": [
+              {
+                "name": "Tohana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tohana_Assembly_constituency",
+            "wikidata_qid": "Q15647957",
+            "node_created_on": "2025-01-29T04:13:10.736Z",
+            "active_version": {
+              "id": "0x9be96106b4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106b4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106b3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106b4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-tohana-version-25",
+            "region": {
+              "id": "0x9be96106b3"
+            },
+            "constituency_number": "39",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106b3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-tohana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106b2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:09.764Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tohana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-tohana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960579f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106ba",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-fatehabad",
+            "names": [
+              {
+                "name": "Fatehabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatehabad,_Uttar_Pradesh_Assembly_constituency",
+            "wikidata_qid": "Q19808628",
+            "node_created_on": "2025-01-29T04:13:12.529Z",
+            "active_version": {
+              "id": "0x9be96106b9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106b9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106b8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106b9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-fatehabad-version-25",
+            "region": {
+              "id": "0x9be96106b8"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106b8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-fatehabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106b7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:11.717Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatehabad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-fatehabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960834b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106bf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ratia",
+            "names": [
+              {
+                "name": "Ratia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ratia_Assembly_constituency",
+            "wikidata_qid": "Q15680593",
+            "node_created_on": "2025-01-29T04:13:14.214Z",
+            "active_version": {
+              "id": "0x9be96106be"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106be"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106bd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106be",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ratia-version-25",
+            "region": {
+              "id": "0x9be96106bd"
+            },
+            "constituency_number": "41",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106bd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ratia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106bc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:13.553Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ratia_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ratia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608351"
+          },
+          {
+            "id": "0x9be9608352"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106c4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kalanwali",
+            "names": [
+              {
+                "name": "Kalanwali"
+              },
+              {
+                "name": "KALAWALI"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalanwali_Assembly_constituency",
+            "wikidata_qid": "Q15646132",
+            "node_created_on": "2025-01-29T04:13:16.302Z",
+            "active_version": {
+              "id": "0x9be96106c3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106c3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106c2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106c3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kalanwali-version-25",
+            "region": {
+              "id": "0x9be96106c2"
+            },
+            "constituency_number": "42",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106c2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kalanwali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106c1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:15.712Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalanwali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kalanwali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608358"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106c9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-dabwali",
+            "names": [
+              {
+                "name": "Dabwali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dabwali_Assembly_constituency",
+            "wikidata_qid": "Q15647974",
+            "node_created_on": "2025-01-29T04:13:18.775Z",
+            "active_version": {
+              "id": "0x9be96106c8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106c8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106c7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106c8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-dabwali-version-25",
+            "region": {
+              "id": "0x9be96106c7"
+            },
+            "constituency_number": "43",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106c7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-dabwali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106c6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:18.062Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dabwali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-dabwali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960835e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106ce",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-rania",
+            "names": [
+              {
+                "name": "Rania"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rania_Assembly_constituency",
+            "wikidata_qid": "Q15682021",
+            "node_created_on": "2025-01-29T04:13:20.327Z",
+            "active_version": {
+              "id": "0x9be96106cd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106cd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106cc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106cd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-rania-version-25",
+            "region": {
+              "id": "0x9be96106cc"
+            },
+            "constituency_number": "44",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106cc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-rania-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106cb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:19.695Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rania_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-rania"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057f9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106d3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-sirsa",
+            "names": [
+              {
+                "name": "Sirsa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sirsa_Assembly_constituency",
+            "wikidata_qid": "Q15697537",
+            "node_created_on": "2025-01-29T04:13:21.980Z",
+            "active_version": {
+              "id": "0x9be96106d2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106d2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106d1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106d2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-sirsa-version-25",
+            "region": {
+              "id": "0x9be96106d1"
+            },
+            "constituency_number": "45",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106d1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-sirsa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106d0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:21.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sirsa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-sirsa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608369"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106d8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ellenabad",
+            "names": [
+              {
+                "name": "Ellenabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ellenabad_Assembly_constituency",
+            "wikidata_qid": "Q15645573",
+            "node_created_on": "2025-01-29T04:13:23.792Z",
+            "active_version": {
+              "id": "0x9be96106d7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106d7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106d6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106d7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ellenabad-version-25",
+            "region": {
+              "id": "0x9be96106d6"
+            },
+            "constituency_number": "46",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106d6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ellenabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106d5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:23.009Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ellenabad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ellenabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960836f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-adampur",
+            "names": [
+              {
+                "name": "Adampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Adampur,_Haryana_Assembly_constituency",
+            "wikidata_qid": "Q15644721",
+            "node_created_on": "2025-01-29T04:13:26.022Z",
+            "active_version": {
+              "id": "0x9be96106dc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106dc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106db"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106dc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-adampur-version-25",
+            "region": {
+              "id": "0x9be96106db"
+            },
+            "constituency_number": "47",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106db",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-adampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106da"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:25.482Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Adampur,_Haryana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-adampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608375"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106e2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-uklana",
+            "names": [
+              {
+                "name": "Uklana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uklana_Assembly_constituency",
+            "wikidata_qid": "Q15645185",
+            "node_created_on": "2025-01-29T04:13:28.213Z",
+            "active_version": {
+              "id": "0x9be96106e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-uklana-version-25",
+            "region": {
+              "id": "0x9be96106e0"
+            },
+            "constituency_number": "48",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-uklana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:27.041Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uklana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-uklana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960837b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106e7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-narnaund",
+            "names": [
+              {
+                "name": "Narnaund"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narnaund_Assembly_constituency",
+            "wikidata_qid": "Q15650568",
+            "node_created_on": "2025-01-29T04:13:29.848Z",
+            "active_version": {
+              "id": "0x9be96106e6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106e6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106e5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106e6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-narnaund-version-25",
+            "region": {
+              "id": "0x9be96106e5"
+            },
+            "constituency_number": "49",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106e5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-narnaund-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106e4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:29.307Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narnaund_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-narnaund"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608381"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106ec",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-hansi",
+            "names": [
+              {
+                "name": "Hansi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hansi_Assembly_constituency",
+            "wikidata_qid": "Q15698030",
+            "node_created_on": "2025-01-29T04:13:32.088Z",
+            "active_version": {
+              "id": "0x9be96106eb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106eb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106ea"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106eb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-hansi-version-25",
+            "region": {
+              "id": "0x9be96106ea"
+            },
+            "constituency_number": "50",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106ea",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-hansi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106e9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:30.963Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hansi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-hansi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608387"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106f1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-barwala",
+            "names": [
+              {
+                "name": "Barwala"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barwala_Assembly_constituency",
+            "wikidata_qid": "Q15662772",
+            "node_created_on": "2025-01-29T04:13:33.948Z",
+            "active_version": {
+              "id": "0x9be96106f0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106f0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106ef"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106f0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-barwala-version-25",
+            "region": {
+              "id": "0x9be96106ef"
+            },
+            "constituency_number": "51",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106ef",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-barwala-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106ee"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:33.317Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barwala_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-barwala"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057ab"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106f6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-hisar",
+            "names": [
+              {
+                "name": "Hisar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hisar_Assembly_constituency",
+            "wikidata_qid": "Q15698130",
+            "node_created_on": "2025-01-29T04:13:36.287Z",
+            "active_version": {
+              "id": "0x9be96106f5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106f5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106f4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106f5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-hisar-version-25",
+            "region": {
+              "id": "0x9be96106f4"
+            },
+            "constituency_number": "52",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106f4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-hisar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106f3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:35.490Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hisar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-hisar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608392"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96106fb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-nalwa",
+            "names": [
+              {
+                "name": "Nalwa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nalwa_Assembly_constituency",
+            "wikidata_qid": "Q15650266",
+            "node_created_on": "2025-01-29T04:13:38.035Z",
+            "active_version": {
+              "id": "0x9be96106fa"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106fa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106f9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106fa",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-nalwa-version-25",
+            "region": {
+              "id": "0x9be96106f9"
+            },
+            "constituency_number": "53",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106f9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-nalwa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106f8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:37.479Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nalwa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-nalwa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608398"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610700",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-loharu",
+            "names": [
+              {
+                "name": "Loharu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Loharu_Assembly_constituency",
+            "wikidata_qid": "Q6667978",
+            "node_created_on": "2025-01-29T04:13:40.022Z",
+            "active_version": {
+              "id": "0x9be96106ff"
+            },
+            "versions": [
+              {
+                "id": "0x9be96106ff"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96106fe"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96106ff",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-loharu-version-25",
+            "region": {
+              "id": "0x9be96106fe"
+            },
+            "constituency_number": "54",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96106fe",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-loharu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96106fd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:39.255Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Loharu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-loharu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960839e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610705",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-badhra",
+            "names": [
+              {
+                "name": "Badhra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badhra_Assembly_constituency",
+            "wikidata_qid": "Q15664735",
+            "node_created_on": "2025-01-29T04:13:41.748Z",
+            "active_version": {
+              "id": "0x9be9610704"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610704"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610703"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610704",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-badhra-version-25",
+            "region": {
+              "id": "0x9be9610703"
+            },
+            "constituency_number": "55",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610703",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-badhra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610702"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:41.203Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badhra_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-badhra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083a4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961070a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-dadri",
+            "names": [
+              {
+                "name": "Dadri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dadri,_Haryana_Assembly_constituency",
+            "wikidata_qid": "Q5208117",
+            "node_created_on": "2025-01-29T04:13:43.555Z",
+            "active_version": {
+              "id": "0x9be9610709"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610709"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610708"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610709",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-dadri-version-25",
+            "region": {
+              "id": "0x9be9610708"
+            },
+            "constituency_number": "56",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610708",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-dadri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610707"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:42.843Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dadri,_Haryana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-dadri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960578d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961070f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-bhiwani",
+            "names": [
+              {
+                "name": "Bhiwani"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhiwani_Assembly_constituency",
+            "wikidata_qid": "Q15671437",
+            "node_created_on": "2025-01-29T04:13:45.329Z",
+            "active_version": {
+              "id": "0x9be961070e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961070e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961070d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961070e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-bhiwani-version-25",
+            "region": {
+              "id": "0x9be961070d"
+            },
+            "constituency_number": "57",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961070d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-bhiwani-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961070c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:44.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhiwani_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-bhiwani"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083af"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610714",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-tosham",
+            "names": [
+              {
+                "name": "Tosham"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tosham_Assembly_constituency",
+            "wikidata_qid": "Q7827605",
+            "node_created_on": "2025-01-29T04:13:47.729Z",
+            "active_version": {
+              "id": "0x9be9610713"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610713"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610712"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610713",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-tosham-version-25",
+            "region": {
+              "id": "0x9be9610712"
+            },
+            "constituency_number": "58",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610712",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-tosham-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610711"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:46.933Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tosham_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-tosham"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083b5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610719",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-bawani-khera",
+            "names": [
+              {
+                "name": "Bawani Khera"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bawani_Khera_Assembly_constituency",
+            "wikidata_qid": "Q4873763",
+            "node_created_on": "2025-01-29T04:13:49.306Z",
+            "active_version": {
+              "id": "0x9be9610718"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610718"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610717"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610718",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-bawani-khera-version-25",
+            "region": {
+              "id": "0x9be9610717"
+            },
+            "constituency_number": "59",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610717",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-bawani-khera-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610716"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:48.694Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bawani_Khera_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-bawani-khera"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083bb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961071e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-meham",
+            "names": [
+              {
+                "name": "Meham"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maham_Assembly_constituency",
+            "wikidata_qid": "Q15675099",
+            "node_created_on": "2025-01-29T04:13:51.543Z",
+            "active_version": {
+              "id": "0x9be961071d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961071d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961071c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961071d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-meham-version-25",
+            "region": {
+              "id": "0x9be961071c"
+            },
+            "constituency_number": "60",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961071c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-meham-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961071b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:50.947Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Meham_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-meham"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083c1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610723",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-garhi-sampla-kiloi",
+            "names": [
+              {
+                "name": "Garhi Sampla-Kiloi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Garhi_Sampla-Kiloi_Assembly_constituency",
+            "wikidata_qid": "Q15647058",
+            "node_created_on": "2025-01-29T04:13:53.947Z",
+            "active_version": {
+              "id": "0x9be9610722"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610722"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610721"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610722",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-garhi-sampla-kiloi-version-25",
+            "region": {
+              "id": "0x9be9610721"
+            },
+            "constituency_number": "61",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610721",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-garhi-sampla-kiloi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610720"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:52.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Garhi_Sampla-Kiloi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-garhi-sampla-kiloi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057f3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610728",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-rohtak",
+            "names": [
+              {
+                "name": "Rohtak"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rohtak_Assembly_constituency",
+            "wikidata_qid": "Q15694549",
+            "node_created_on": "2025-01-29T04:13:55.820Z",
+            "active_version": {
+              "id": "0x9be9610727"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610727"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610726"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610727",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-rohtak-version-25",
+            "region": {
+              "id": "0x9be9610726"
+            },
+            "constituency_number": "62",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610726",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-rohtak-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610725"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:55.209Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rohtak_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-rohtak"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083cc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961072d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kalanaur",
+            "names": [
+              {
+                "name": "Kalanaur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalanaur_Assembly_constituency",
+            "wikidata_qid": "Q15645923",
+            "node_created_on": "2025-01-29T04:13:57.541Z",
+            "active_version": {
+              "id": "0x9be961072c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961072c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961072b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961072c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kalanaur-version-25",
+            "region": {
+              "id": "0x9be961072b"
+            },
+            "constituency_number": "63",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961072b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kalanaur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961072a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:56.966Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalanaur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kalanaur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083d2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610732",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-bahadurgarh",
+            "names": [
+              {
+                "name": "Bahadurgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bahadurgarh_Assembly_constituency",
+            "wikidata_qid": "Q15664074",
+            "node_created_on": "2025-01-29T04:13:59.327Z",
+            "active_version": {
+              "id": "0x9be9610731"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610731"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610730"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610731",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-bahadurgarh-version-25",
+            "region": {
+              "id": "0x9be9610730"
+            },
+            "constituency_number": "64",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610730",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-bahadurgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961072f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:13:58.608Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bahadurgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-bahadurgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ba4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610737",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-badli",
+            "names": [
+              {
+                "name": "Badli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badli,_Haryana_Assembly_constituency",
+            "wikidata_qid": "Q55377712",
+            "node_created_on": "2025-01-29T04:14:01.681Z",
+            "active_version": {
+              "id": "0x9be9610736"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610736"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610735"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610736",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-badli-version-25",
+            "region": {
+              "id": "0x9be9610735"
+            },
+            "constituency_number": "65",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610735",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-badli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610734"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:00.704Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badli,_Haryana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-badli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057b1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961073c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-jhajjar",
+            "names": [
+              {
+                "name": "Jhajjar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhajjar_Assembly_constituency",
+            "wikidata_qid": "Q15647912",
+            "node_created_on": "2025-01-29T04:14:03.326Z",
+            "active_version": {
+              "id": "0x9be961073b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961073b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961073a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961073b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-jhajjar-version-25",
+            "region": {
+              "id": "0x9be961073a"
+            },
+            "constituency_number": "66",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961073a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-jhajjar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610739"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:02.809Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhajjar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-jhajjar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610741",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-beri",
+            "names": [
+              {
+                "name": "Beri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Beri_Assembly_constituency",
+            "wikidata_qid": "Q15667279",
+            "node_created_on": "2025-01-29T04:14:05.367Z",
+            "active_version": {
+              "id": "0x9be9610740"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610740"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961073f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610740",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-beri-version-25",
+            "region": {
+              "id": "0x9be961073f"
+            },
+            "constituency_number": "67",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961073f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-beri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961073e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:04.753Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Beri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-beri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083e8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610746",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ateli",
+            "names": [
+              {
+                "name": "Ateli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ateli_Assembly_constituency",
+            "wikidata_qid": "Q15643503",
+            "node_created_on": "2025-01-29T04:14:07.476Z",
+            "active_version": {
+              "id": "0x9be9610745"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610745"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610744"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610745",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ateli-version-25",
+            "region": {
+              "id": "0x9be9610744"
+            },
+            "constituency_number": "68",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610744",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ateli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610743"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:06.904Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ateli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ateli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057cf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961074b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-mahendragarh",
+            "names": [
+              {
+                "name": "Mahendragarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mahendragarh_Assembly_constituency",
+            "wikidata_qid": "Q15675734",
+            "node_created_on": "2025-01-29T04:14:09.197Z",
+            "active_version": {
+              "id": "0x9be961074a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961074a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610749"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961074a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-mahendragarh-version-25",
+            "region": {
+              "id": "0x9be9610749"
+            },
+            "constituency_number": "69",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610749",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-mahendragarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610748"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:08.543Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mahendragarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-mahendragarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083f3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610750",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-narnaul",
+            "names": [
+              {
+                "name": "Narnaul"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narnaul_Assembly_constituency",
+            "wikidata_qid": "Q15650569",
+            "node_created_on": "2025-01-29T04:14:11.031Z",
+            "active_version": {
+              "id": "0x9be961074f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961074f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961074e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961074f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-narnaul-version-25",
+            "region": {
+              "id": "0x9be961074e"
+            },
+            "constituency_number": "70",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961074e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-narnaul-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961074d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:10.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narnaul_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-narnaul"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083f9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610755",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-nangal-chaudhry",
+            "names": [
+              {
+                "name": "Nangal Chaudhry"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nangal_Chaudhry_Assembly_constituency",
+            "wikidata_qid": "Q15650438",
+            "node_created_on": "2025-01-29T04:14:12.978Z",
+            "active_version": {
+              "id": "0x9be9610754"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610754"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610753"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610754",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-nangal-chaudhry-version-25",
+            "region": {
+              "id": "0x9be9610753"
+            },
+            "constituency_number": "71",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610753",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-nangal-chaudhry-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610752"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:12.326Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nangal_Chaudhry_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-nangal-chaudhry"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96083ff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961075a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-bawal",
+            "names": [
+              {
+                "name": "Bawal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bawal_Assembly_constituency",
+            "wikidata_qid": "Q15665519",
+            "node_created_on": "2025-01-29T04:14:14.867Z",
+            "active_version": {
+              "id": "0x9be9610759"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610759"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610758"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610759",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-bawal-version-25",
+            "region": {
+              "id": "0x9be9610758"
+            },
+            "constituency_number": "72",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610758",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-bawal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610757"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:14.313Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bawal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-bawal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608405"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961075f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-kosli",
+            "names": [
+              {
+                "name": "Kosli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kosli_Assembly_constituency",
+            "wikidata_qid": "Q15646704",
+            "node_created_on": "2025-01-29T04:14:16.737Z",
+            "active_version": {
+              "id": "0x9be961075e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961075e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961075d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961075e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-kosli-version-25",
+            "region": {
+              "id": "0x9be961075d"
+            },
+            "constituency_number": "73",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961075d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-kosli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961075c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:15.915Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kosli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-kosli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057ed"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610764",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-rewari",
+            "names": [
+              {
+                "name": "Rewari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rewari_Assembly_constituency",
+            "wikidata_qid": "Q15694356",
+            "node_created_on": "2025-01-29T04:14:18.579Z",
+            "active_version": {
+              "id": "0x9be9610763"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610763"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610762"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610763",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-rewari-version-25",
+            "region": {
+              "id": "0x9be9610762"
+            },
+            "constituency_number": "74",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610762",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-rewari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610761"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:17.861Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rewari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-rewari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608410"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610769",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-pataudi",
+            "names": [
+              {
+                "name": "Pataudi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pataudi_Assembly_constituency",
+            "wikidata_qid": "Q15651360",
+            "node_created_on": "2025-01-29T04:14:21.038Z",
+            "active_version": {
+              "id": "0x9be9610768"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610768"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610767"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610768",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-pataudi-version-25",
+            "region": {
+              "id": "0x9be9610767"
+            },
+            "constituency_number": "75",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610767",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-pataudi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610766"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:20.216Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pataudi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-pataudi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608416"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961076e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-badshahpur",
+            "names": [
+              {
+                "name": "Badshahpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badshahpur_Assembly_constituency",
+            "wikidata_qid": "Q15664785",
+            "node_created_on": "2025-01-29T04:14:23.303Z",
+            "active_version": {
+              "id": "0x9be961076d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961076d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961076c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961076d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-badshahpur-version-25",
+            "region": {
+              "id": "0x9be961076c"
+            },
+            "constituency_number": "76",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961076c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-badshahpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961076b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:22.715Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badshahpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-badshahpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96067e9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610773",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-gurgaon",
+            "names": [
+              {
+                "name": "Gurgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gurgaon_Assembly_constituency",
+            "wikidata_qid": "Q15647154",
+            "node_created_on": "2025-01-29T04:14:25.645Z",
+            "active_version": {
+              "id": "0x9be9610772"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610772"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610771"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610772",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-gurgaon-version-25",
+            "region": {
+              "id": "0x9be9610771"
+            },
+            "constituency_number": "77",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610771",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-gurgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610770"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:24.357Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gurgaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-gurgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608421"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610778",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-sohna",
+            "names": [
+              {
+                "name": "Sohna"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sohna_Assembly_constituency",
+            "wikidata_qid": "Q15697822",
+            "node_created_on": "2025-01-29T04:14:27.380Z",
+            "active_version": {
+              "id": "0x9be9610777"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610777"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610776"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610777",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-sohna-version-25",
+            "region": {
+              "id": "0x9be9610776"
+            },
+            "constituency_number": "78",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610776",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-sohna-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610775"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:26.695Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sohna_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-sohna"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057d5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961077d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-nuh",
+            "names": [
+              {
+                "name": "Nuh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nuh_Assembly_constituency",
+            "wikidata_qid": "Q15650851",
+            "node_created_on": "2025-01-29T04:14:29.716Z",
+            "active_version": {
+              "id": "0x9be961077c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961077c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961077b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961077c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-nuh-version-25",
+            "region": {
+              "id": "0x9be961077b"
+            },
+            "constituency_number": "79",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961077b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-nuh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961077a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:28.408Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nuh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-nuh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960842c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610782",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ferozepur-jhirka",
+            "names": [
+              {
+                "name": "Ferozepur Jhirka"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ferozepur_Jhirka_Assembly_constituency",
+            "wikidata_qid": "Q15660052",
+            "node_created_on": "2025-01-29T04:14:32.098Z",
+            "active_version": {
+              "id": "0x9be9610781"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610781"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610780"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610781",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ferozepur-jhirka-version-25",
+            "region": {
+              "id": "0x9be9610780"
+            },
+            "constituency_number": "80",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610780",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ferozepur-jhirka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961077f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:31.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ferozepur_Jhirka_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ferozepur-jhirka"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608432"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610787",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-punahana",
+            "names": [
+              {
+                "name": "Punahana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Punahana_Assembly_constituency",
+            "wikidata_qid": "Q15655418",
+            "node_created_on": "2025-01-29T04:14:34.520Z",
+            "active_version": {
+              "id": "0x9be9610786"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610786"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610785"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610786",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-punahana-version-25",
+            "region": {
+              "id": "0x9be9610785"
+            },
+            "constituency_number": "81",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610785",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-punahana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610784"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:33.479Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Punahana_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-punahana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608438"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961078c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-hathin",
+            "names": [
+              {
+                "name": "Hathin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hathin_Assembly_constituency",
+            "wikidata_qid": "Q15697949",
+            "node_created_on": "2025-01-29T04:14:36.335Z",
+            "active_version": {
+              "id": "0x9be961078b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961078b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961078a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961078b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-hathin-version-25",
+            "region": {
+              "id": "0x9be961078a"
+            },
+            "constituency_number": "82",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961078a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-hathin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610789"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:35.692Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hathin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-hathin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960843e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610791",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-hodal",
+            "names": [
+              {
+                "name": "Hodal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hodal_Assembly_constituency",
+            "wikidata_qid": "Q15698176",
+            "node_created_on": "2025-01-29T04:14:37.831Z",
+            "active_version": {
+              "id": "0x9be9610790"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610790"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961078f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610790",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-hodal-version-25",
+            "region": {
+              "id": "0x9be961078f"
+            },
+            "constituency_number": "83",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961078f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-hodal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961078e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:37.215Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hodal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-hodal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96057db"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9610796",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-palwal",
+            "names": [
+              {
+                "name": "Palwal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Palwal_Assembly_constituency",
+            "wikidata_qid": "Q15652421",
+            "node_created_on": "2025-01-29T04:14:40.801Z",
+            "active_version": {
+              "id": "0x9be9610795"
+            },
+            "versions": [
+              {
+                "id": "0x9be9610795"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610794"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9610795",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-palwal-version-25",
+            "region": {
+              "id": "0x9be9610794"
+            },
+            "constituency_number": "84",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610794",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-palwal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610793"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:39.498Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Palwal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-palwal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608449"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961079b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-prithla",
+            "names": [
+              {
+                "name": "Prithla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Prithla_Assembly_constituency",
+            "wikidata_qid": "Q15656280",
+            "node_created_on": "2025-01-29T04:14:43.258Z",
+            "active_version": {
+              "id": "0x9be961079a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961079a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9610799"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961079a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-prithla-version-25",
+            "region": {
+              "id": "0x9be9610799"
+            },
+            "constituency_number": "85",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9610799",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-prithla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9610798"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:42.029Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Prithla_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-prithla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960844f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96107a0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-faridabad-nit",
+            "names": [
+              {
+                "name": "Faridabad NIT"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Faridabad_NIT_Assembly_constituency",
+            "wikidata_qid": "Q15659546",
+            "node_created_on": "2025-01-29T04:14:45.021Z",
+            "active_version": {
+              "id": "0x9be961079f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961079f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961079e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961079f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-faridabad-nit-version-25",
+            "region": {
+              "id": "0x9be961079e"
+            },
+            "constituency_number": "86",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961079e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-faridabad-nit-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961079d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:44.331Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Faridabad_NIT_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-faridabad-nit"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608455"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96107a5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-badkhal",
+            "names": [
+              {
+                "name": "Badkhal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badkhal_Assembly_constituency",
+            "wikidata_qid": "Q15661814",
+            "node_created_on": "2025-01-29T04:14:47.352Z",
+            "active_version": {
+              "id": "0x9be96107a4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96107a4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96107a3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96107a4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-badkhal-version-25",
+            "region": {
+              "id": "0x9be96107a3"
+            },
+            "constituency_number": "87",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96107a3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-badkhal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96107a2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:46.566Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badkhal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-badkhal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960845b"
+          },
+          {
+            "id": "0x9be960845c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96107aa",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-ballabgarh",
+            "names": [
+              {
+                "name": "Ballabgarh"
+              },
+              {
+                "name": "BALLABHGARH"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ballabgarh_Assembly_constituency",
+            "wikidata_qid": "Q15663492",
+            "node_created_on": "2025-01-29T04:14:49.960Z",
+            "active_version": {
+              "id": "0x9be96107a9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96107a9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96107a8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96107a9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-ballabgarh-version-25",
+            "region": {
+              "id": "0x9be96107a8"
+            },
+            "constituency_number": "88",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96107a8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-ballabgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96107a7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:48.584Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ballabgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-ballabgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605799"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96107af",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-faridabad",
+            "names": [
+              {
+                "name": "Faridabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Faridabad_Assembly_constituency",
+            "wikidata_qid": "Q15659557",
+            "node_created_on": "2025-01-29T04:14:51.504Z",
+            "active_version": {
+              "id": "0x9be96107ae"
+            },
+            "versions": [
+              {
+                "id": "0x9be96107ae"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96107ad"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96107ae",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-faridabad-version-25",
+            "region": {
+              "id": "0x9be96107ad"
+            },
+            "constituency_number": "89",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96107ad",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-faridabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96107ac"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:50.813Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Faridabad_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-faridabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608467"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96107b4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-hr-tigaon",
+            "names": [
+              {
+                "name": "Tigaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tigaon_Assembly_constituency",
+            "wikidata_qid": "Q15648115",
+            "node_created_on": "2025-01-29T04:14:53.499Z",
+            "active_version": {
+              "id": "0x9be96107b3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96107b3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96107b2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96107b3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-hr-tigaon-version-25",
+            "region": {
+              "id": "0x9be96107b2"
+            },
+            "constituency_number": "90",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96107b2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-hr-tigaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96107b1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-haryana-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:14:52.884Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tigaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-hr-tigaon"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T04:14:54.012Z"
+}
