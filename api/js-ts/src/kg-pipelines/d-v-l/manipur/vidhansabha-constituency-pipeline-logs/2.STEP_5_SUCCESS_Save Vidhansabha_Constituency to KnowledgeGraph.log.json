@@ -1,0 +1,4179 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9609d7c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dc5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-khundrakpam",
+            "names": [
+              {
+                "name": "Khundrakpam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khundrakpam_Assembly_constituency",
+            "wikidata_qid": "Q32212769",
+            "node_created_on": "2025-01-29T10:22:06.700Z",
+            "active_version": {
+              "id": "0x9be9611dc4"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dc4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dc3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dc4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-khundrakpam-version-25",
+            "region": {
+              "id": "0x9be9611dc3"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dc3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-khundrakpam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dc2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:06.002Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khundrakpam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-khundrakpam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609d82"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dca",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-heingang",
+            "names": [
+              {
+                "name": "Heingang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Heingang_Assembly_constituency",
+            "wikidata_qid": "Q32214326",
+            "node_created_on": "2025-01-29T10:22:08.370Z",
+            "active_version": {
+              "id": "0x9be9611dc9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dc9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dc8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dc9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-heingang-version-25",
+            "region": {
+              "id": "0x9be9611dc8"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dc8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-heingang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dc7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:07.665Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Heingang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-heingang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609d88"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dcf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-khurai",
+            "names": [
+              {
+                "name": "Khurai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khurai,_Manipur_Assembly_constituency",
+            "wikidata_qid": "Q55587638",
+            "node_created_on": "2025-01-29T10:22:11.031Z",
+            "active_version": {
+              "id": "0x9be9611dce"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dcd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dce",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-khurai-version-25",
+            "region": {
+              "id": "0x9be9611dcd"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dcd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-khurai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dcc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:10.290Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khurai,_Manipur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-khurai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609d8e"
+          },
+          {
+            "id": "0x9be9609d8f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dd4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-kshetrigao",
+            "names": [
+              {
+                "name": "Kshetrigao"
+              },
+              {
+                "name": "Khetrigao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kshetrigao_Assembly_constituency",
+            "wikidata_qid": "Q55587639",
+            "node_created_on": "2025-01-29T10:22:12.661Z",
+            "active_version": {
+              "id": "0x9be9611dd3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dd3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dd2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dd3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-kshetrigao-version-25",
+            "region": {
+              "id": "0x9be9611dd2"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dd2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-kshetrigao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dd1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:11.960Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kshetrigao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-kshetrigao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609d95"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dd9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-thongju",
+            "names": [
+              {
+                "name": "Thongju"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thongju_Assembly_constituency",
+            "wikidata_qid": "Q28179951",
+            "node_created_on": "2025-01-29T10:22:14.883Z",
+            "active_version": {
+              "id": "0x9be9611dd8"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dd8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dd7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dd8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-thongju-version-25",
+            "region": {
+              "id": "0x9be9611dd7"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dd7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-thongju-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dd6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:13.793Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thongju_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-thongju"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609d9b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dde",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-keirao",
+            "names": [
+              {
+                "name": "Keirao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Keirao_Assembly_constituency",
+            "wikidata_qid": "Q55587640",
+            "node_created_on": "2025-01-29T10:22:16.767Z",
+            "active_version": {
+              "id": "0x9be9611ddd"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ddd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ddc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ddd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-keirao-version-25",
+            "region": {
+              "id": "0x9be9611ddc"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ddc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-keirao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ddb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:15.895Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Keirao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-keirao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609da1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611de3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-andro",
+            "names": [
+              {
+                "name": "Andro"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Andro_Assembly_constituency",
+            "wikidata_qid": "Q48727225",
+            "node_created_on": "2025-01-29T10:22:19.225Z",
+            "active_version": {
+              "id": "0x9be9611de2"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611de2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611de1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611de2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-andro-version-25",
+            "region": {
+              "id": "0x9be9611de1"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611de1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-andro-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611de0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:18.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Andro_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-andro"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609da7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611de8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-lamlai",
+            "names": [
+              {
+                "name": "Lamlai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lamlai_Assembly_constituency",
+            "wikidata_qid": "Q55587641",
+            "node_created_on": "2025-01-29T10:22:21.989Z",
+            "active_version": {
+              "id": "0x9be9611de7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611de7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611de6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611de7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-lamlai-version-25",
+            "region": {
+              "id": "0x9be9611de6"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611de6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-lamlai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611de5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:20.759Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lamlai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-lamlai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dad"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ded",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-thangmeiband",
+            "names": [
+              {
+                "name": "Thangmeiband"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thangmeiband_Assembly_constituency",
+            "wikidata_qid": "Q28179956",
+            "node_created_on": "2025-01-29T10:22:23.729Z",
+            "active_version": {
+              "id": "0x9be9611dec"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611deb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dec",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-thangmeiband-version-25",
+            "region": {
+              "id": "0x9be9611deb"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611deb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-thangmeiband-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:22.972Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thangmeiband_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-thangmeiband"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609db3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611df2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-uripok",
+            "names": [
+              {
+                "name": "Uripok"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Uripok_Assembly_constituency",
+            "wikidata_qid": "Q55587642",
+            "node_created_on": "2025-01-29T10:22:26.316Z",
+            "active_version": {
+              "id": "0x9be9611df1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611df1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611df0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611df1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-uripok-version-25",
+            "region": {
+              "id": "0x9be9611df0"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611df0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-uripok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611def"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:24.754Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Uripok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-uripok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609db9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611df7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-sagolband",
+            "names": [
+              {
+                "name": "Sagolband"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sagolband_Assembly_constituency",
+            "wikidata_qid": "Q55587643",
+            "node_created_on": "2025-01-29T10:22:28.293Z",
+            "active_version": {
+              "id": "0x9be9611df6"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611df6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611df5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611df6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-sagolband-version-25",
+            "region": {
+              "id": "0x9be9611df5"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611df5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-sagolband-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611df4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:27.518Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sagolband_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-sagolband"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dbf"
+          },
+          {
+            "id": "0x9be9609dc0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611dfc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-keishamthong",
+            "names": [
+              {
+                "name": "Keishamthong"
+              },
+              {
+                "name": "Keisamthong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Keishamthong_Assembly_constituency",
+            "wikidata_qid": "Q28179944",
+            "node_created_on": "2025-01-29T10:22:29.924Z",
+            "active_version": {
+              "id": "0x9be9611dfb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611dfb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dfa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611dfb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-keishamthong-version-25",
+            "region": {
+              "id": "0x9be9611dfa"
+            },
+            "constituency_number": "12",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dfa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-keishamthong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611df9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:29.271Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Keishamthong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-keishamthong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dc6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e01",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-singjamei",
+            "names": [
+              {
+                "name": "Singjamei"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Singjamei_Assembly_constituency",
+            "wikidata_qid": "Q55587644",
+            "node_created_on": "2025-01-29T10:22:31.515Z",
+            "active_version": {
+              "id": "0x9be9611e00"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e00"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611dff"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e00",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-singjamei-version-25",
+            "region": {
+              "id": "0x9be9611dff"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611dff",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-singjamei-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611dfe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:30.803Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Singjamei_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-singjamei"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dcc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e06",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-yaiskul",
+            "names": [
+              {
+                "name": "Yaiskul"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Yaiskul_Assembly_constituency",
+            "wikidata_qid": "Q55587645",
+            "node_created_on": "2025-01-29T10:22:33.355Z",
+            "active_version": {
+              "id": "0x9be9611e05"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e05"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e04"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e05",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-yaiskul-version-25",
+            "region": {
+              "id": "0x9be9611e04"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e04",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-yaiskul-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e03"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:32.741Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Yaiskul_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-yaiskul"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dd2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e0b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-wangkhei",
+            "names": [
+              {
+                "name": "Wangkhei"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wangkhei_Assembly_constituency",
+            "wikidata_qid": "Q55587646",
+            "node_created_on": "2025-01-29T10:22:35.710Z",
+            "active_version": {
+              "id": "0x9be9611e0a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e0a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e09"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e0a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-wangkhei-version-25",
+            "region": {
+              "id": "0x9be9611e09"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e09",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-wangkhei-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e08"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:34.994Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wangkhei_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-wangkhei"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dd8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e10",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-sekmai",
+            "names": [
+              {
+                "name": "Sekmai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sekmai_Assembly_constituency",
+            "wikidata_qid": "Q55587647",
+            "node_created_on": "2025-01-29T10:22:37.693Z",
+            "active_version": {
+              "id": "0x9be9611e0f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e0f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e0e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e0f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-sekmai-version-25",
+            "region": {
+              "id": "0x9be9611e0e"
+            },
+            "constituency_number": "16",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e0e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-sekmai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e0d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:36.836Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sekmai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-sekmai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dde"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e15",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-lamsang",
+            "names": [
+              {
+                "name": "Lamsang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lamsang_Assembly_constituency",
+            "wikidata_qid": "Q55587648",
+            "node_created_on": "2025-01-29T10:22:39.398Z",
+            "active_version": {
+              "id": "0x9be9611e14"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e14"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e13"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e14",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-lamsang-version-25",
+            "region": {
+              "id": "0x9be9611e13"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e13",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-lamsang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e12"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:38.767Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lamsang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-lamsang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609de4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e1a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-konthoujam",
+            "names": [
+              {
+                "name": "Konthoujam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Konthoujam_Assembly_constituency",
+            "wikidata_qid": "Q55587649",
+            "node_created_on": "2025-01-29T10:22:41.512Z",
+            "active_version": {
+              "id": "0x9be9611e19"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e19"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e18"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e19",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-konthoujam-version-25",
+            "region": {
+              "id": "0x9be9611e18"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e18",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-konthoujam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e17"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:40.936Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Konthoujam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-konthoujam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dea"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e1f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-patsoi",
+            "names": [
+              {
+                "name": "Patsoi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Patsoi_Assembly_constituency",
+            "wikidata_qid": "Q55587650",
+            "node_created_on": "2025-01-29T10:22:43.389Z",
+            "active_version": {
+              "id": "0x9be9611e1e"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e1e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e1d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e1e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-patsoi-version-25",
+            "region": {
+              "id": "0x9be9611e1d"
+            },
+            "constituency_number": "19",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e1d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-patsoi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e1c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:42.737Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Patsoi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-patsoi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609df0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e24",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-langthabal",
+            "names": [
+              {
+                "name": "Langthabal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Langthabal_Assembly_constituency",
+            "wikidata_qid": "Q30601173",
+            "node_created_on": "2025-01-29T10:22:45.508Z",
+            "active_version": {
+              "id": "0x9be9611e23"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e23"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e22"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e23",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-langthabal-version-25",
+            "region": {
+              "id": "0x9be9611e22"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e22",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-langthabal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e21"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:44.310Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Langthabal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-langthabal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609df6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e29",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-naoriya-pakhanglakpa",
+            "names": [
+              {
+                "name": "Naoriya Pakhanglakpa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Naoriya_Pakhanglakpa_Assembly_constituency",
+            "wikidata_qid": "Q55587651",
+            "node_created_on": "2025-01-29T10:22:47.274Z",
+            "active_version": {
+              "id": "0x9be9611e28"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e28"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e27"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e28",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-naoriya-pakhanglakpa-version-25",
+            "region": {
+              "id": "0x9be9611e27"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e27",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-naoriya-pakhanglakpa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e26"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:46.673Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Naoriya_Pakhanglakpa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-naoriya-pakhanglakpa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609dfc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e2e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-wangoi",
+            "names": [
+              {
+                "name": "Wangoi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wangoi_Assembly_constituency",
+            "wikidata_qid": "Q55587652",
+            "node_created_on": "2025-01-29T10:22:49.739Z",
+            "active_version": {
+              "id": "0x9be9611e2d"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e2d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e2c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e2d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-wangoi-version-25",
+            "region": {
+              "id": "0x9be9611e2c"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e2c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-wangoi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e2b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:48.810Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wangoi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-wangoi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e02"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e33",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-mayang-imphal",
+            "names": [
+              {
+                "name": "Mayang Imphal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mayang_Imphal_Assembly_constituency",
+            "wikidata_qid": "Q55587653",
+            "node_created_on": "2025-01-29T10:22:52.402Z",
+            "active_version": {
+              "id": "0x9be9611e32"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e32"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e31"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e32",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-mayang-imphal-version-25",
+            "region": {
+              "id": "0x9be9611e31"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e31",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-mayang-imphal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e30"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:50.996Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mayang_Imphal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-mayang-imphal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e08"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e38",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-nambol",
+            "names": [
+              {
+                "name": "Nambol"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nambol_Assembly_constituency",
+            "wikidata_qid": "Q55587654",
+            "node_created_on": "2025-01-29T10:22:53.759Z",
+            "active_version": {
+              "id": "0x9be9611e37"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e37"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e36"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e37",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-nambol-version-25",
+            "region": {
+              "id": "0x9be9611e36"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e36",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-nambol-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e35"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:53.275Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nambol_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-nambol"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e0e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e3d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-oinam",
+            "names": [
+              {
+                "name": "Oinam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Oinam_Assembly_constituency",
+            "wikidata_qid": "Q55587655",
+            "node_created_on": "2025-01-29T10:22:56.163Z",
+            "active_version": {
+              "id": "0x9be9611e3c"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e3c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e3b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e3c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-oinam-version-25",
+            "region": {
+              "id": "0x9be9611e3b"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e3b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-oinam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e3a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:54.995Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Oinam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-oinam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cb7"
+          },
+          {
+            "id": "0x9be9609e14"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e42",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-bishnupur",
+            "names": [
+              {
+                "name": "Bishnupur"
+              },
+              {
+                "name": "Bishenpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bishnupur,_Manipur_Assembly_constituency",
+            "wikidata_qid": "Q48727228",
+            "node_created_on": "2025-01-29T10:22:58.166Z",
+            "active_version": {
+              "id": "0x9be9611e41"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e41"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e40"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e41",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-bishnupur-version-25",
+            "region": {
+              "id": "0x9be9611e40"
+            },
+            "constituency_number": "26",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e40",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-bishnupur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e3f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:57.319Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bishnupur,_Manipur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-bishnupur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e1a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e47",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-moirang",
+            "names": [
+              {
+                "name": "Moirang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Moirang_Assembly_constituency",
+            "wikidata_qid": "Q55587657",
+            "node_created_on": "2025-01-29T10:23:00.490Z",
+            "active_version": {
+              "id": "0x9be9611e46"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e46"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e45"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e46",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-moirang-version-25",
+            "region": {
+              "id": "0x9be9611e45"
+            },
+            "constituency_number": "27",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e45",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-moirang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e44"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:22:59.776Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Moirang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-moirang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e20"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e4c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-thanga",
+            "names": [
+              {
+                "name": "Thanga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thanga_Assembly_constituency",
+            "wikidata_qid": "Q55587658",
+            "node_created_on": "2025-01-29T10:23:02.947Z",
+            "active_version": {
+              "id": "0x9be9611e4b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e4b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e4a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e4b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-thanga-version-25",
+            "region": {
+              "id": "0x9be9611e4a"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e4a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-thanga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e49"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:01.721Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thanga_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-thanga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e26"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e51",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-kumbi",
+            "names": [
+              {
+                "name": "Kumbi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kumbi_Assembly_constituency",
+            "wikidata_qid": "Q55587659",
+            "node_created_on": "2025-01-29T10:23:04.826Z",
+            "active_version": {
+              "id": "0x9be9611e50"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e50"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e4f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e50",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-kumbi-version-25",
+            "region": {
+              "id": "0x9be9611e4f"
+            },
+            "constituency_number": "29",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e4f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-kumbi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e4e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:04.179Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kumbi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-kumbi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e2c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e56",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-lilong",
+            "names": [
+              {
+                "name": "Lilong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lilong_Assembly_constituency",
+            "wikidata_qid": "Q55587660",
+            "node_created_on": "2025-01-29T10:23:07.249Z",
+            "active_version": {
+              "id": "0x9be9611e55"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e55"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e54"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e55",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-lilong-version-25",
+            "region": {
+              "id": "0x9be9611e54"
+            },
+            "constituency_number": "30",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e54",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-lilong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e53"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:06.328Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lilong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-lilong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d11"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e5b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-thoubal",
+            "names": [
+              {
+                "name": "Thoubal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thoubal_Assembly_constituency",
+            "wikidata_qid": "Q55587661",
+            "node_created_on": "2025-01-29T10:23:09.701Z",
+            "active_version": {
+              "id": "0x9be9611e5a"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e5a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e59"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e5a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-thoubal-version-25",
+            "region": {
+              "id": "0x9be9611e59"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e59",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-thoubal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e58"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:08.454Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thoubal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-thoubal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e37"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e60",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-wangkhem",
+            "names": [
+              {
+                "name": "Wangkhem"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wangkhem_Assembly_constituency",
+            "wikidata_qid": "Q55587662",
+            "node_created_on": "2025-01-29T10:23:11.553Z",
+            "active_version": {
+              "id": "0x9be9611e5f"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e5f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e5e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e5f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-wangkhem-version-25",
+            "region": {
+              "id": "0x9be9611e5e"
+            },
+            "constituency_number": "32",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e5e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-wangkhem-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e5d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:10.784Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wangkhem_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-wangkhem"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e3d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e65",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-heirok",
+            "names": [
+              {
+                "name": "Heirok"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Heirok_Assembly_constituency",
+            "wikidata_qid": "Q55587663",
+            "node_created_on": "2025-01-29T10:23:13.663Z",
+            "active_version": {
+              "id": "0x9be9611e64"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e64"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e63"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e64",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-heirok-version-25",
+            "region": {
+              "id": "0x9be9611e63"
+            },
+            "constituency_number": "33",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e63",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-heirok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e62"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:12.512Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Heirok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-heirok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e43"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e6a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-wangjing-tentha",
+            "names": [
+              {
+                "name": "Wangjing Tentha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wangjing_Tentha_Assembly_constituency",
+            "wikidata_qid": "Q55587664",
+            "node_created_on": "2025-01-29T10:23:15.342Z",
+            "active_version": {
+              "id": "0x9be9611e69"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e69"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e68"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e69",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-wangjing-tentha-version-25",
+            "region": {
+              "id": "0x9be9611e68"
+            },
+            "constituency_number": "34",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e68",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-wangjing-tentha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e67"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:14.727Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wangjing_Tentha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-wangjing-tentha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e49"
+          },
+          {
+            "id": "0x9be9609e4a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e6f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-khangabok",
+            "names": [
+              {
+                "name": "Khangabok"
+              },
+              {
+                "name": "Khangabo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khangabok_Assembly_constituency",
+            "wikidata_qid": "Q55587665",
+            "node_created_on": "2025-01-29T10:23:17.292Z",
+            "active_version": {
+              "id": "0x9be9611e6e"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e6e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e6d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e6e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-khangabok-version-25",
+            "region": {
+              "id": "0x9be9611e6d"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e6d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-khangabok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e6c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:16.776Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khangabok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-khangabok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e50"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e74",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-wabgai",
+            "names": [
+              {
+                "name": "Wabgai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wabgai_Assembly_constituency",
+            "wikidata_qid": "Q30599934",
+            "node_created_on": "2025-01-29T10:23:18.918Z",
+            "active_version": {
+              "id": "0x9be9611e73"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e73"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e72"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e73",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-wabgai-version-25",
+            "region": {
+              "id": "0x9be9611e72"
+            },
+            "constituency_number": "36",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e72",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-wabgai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e71"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:18.315Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wabgai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-wabgai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cdd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e79",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-kakching",
+            "names": [
+              {
+                "name": "Kakching"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kakching_Assembly_constituency",
+            "wikidata_qid": "Q55587667",
+            "node_created_on": "2025-01-29T10:23:20.678Z",
+            "active_version": {
+              "id": "0x9be9611e78"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e78"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e77"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e78",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-kakching-version-25",
+            "region": {
+              "id": "0x9be9611e77"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e77",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-kakching-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e76"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:19.974Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kakching_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-kakching"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e5b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e7e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-hiyanglam",
+            "names": [
+              {
+                "name": "Hiyanglam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hiyanglam_Assembly_constituency",
+            "wikidata_qid": "Q55587668",
+            "node_created_on": "2025-01-29T10:23:22.408Z",
+            "active_version": {
+              "id": "0x9be9611e7d"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e7d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e7c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e7d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-hiyanglam-version-25",
+            "region": {
+              "id": "0x9be9611e7c"
+            },
+            "constituency_number": "38",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e7c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-hiyanglam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e7b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:21.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hiyanglam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-hiyanglam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e61"
+          },
+          {
+            "id": "0x9be9609e62"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e83",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-sugnu",
+            "names": [
+              {
+                "name": "Sugnu"
+              },
+              {
+                "name": "Sugnoo"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sugnu_Assembly_constituency",
+            "wikidata_qid": "Q55587669",
+            "node_created_on": "2025-01-29T10:23:24.318Z",
+            "active_version": {
+              "id": "0x9be9611e82"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e82"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e81"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e82",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-sugnu-version-25",
+            "region": {
+              "id": "0x9be9611e81"
+            },
+            "constituency_number": "39",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e81",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-sugnu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e80"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:23.638Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sugnu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-sugnu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cd6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e88",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-jiribam",
+            "names": [
+              {
+                "name": "Jiribam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jiribam_Assembly_constituency",
+            "wikidata_qid": "Q55587670",
+            "node_created_on": "2025-01-29T10:23:26.299Z",
+            "active_version": {
+              "id": "0x9be9611e87"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e87"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e86"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e87",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-jiribam-version-25",
+            "region": {
+              "id": "0x9be9611e86"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e86",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-jiribam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e85"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:25.474Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jiribam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-jiribam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cbe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e8d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-chandel",
+            "names": [
+              {
+                "name": "Chandel"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chandel_Assembly_constituency",
+            "wikidata_qid": "Q48727060",
+            "node_created_on": "2025-01-29T10:23:28.553Z",
+            "active_version": {
+              "id": "0x9be9611e8c"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e8c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e8b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e8c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-chandel-version-25",
+            "region": {
+              "id": "0x9be9611e8b"
+            },
+            "constituency_number": "41",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e8b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-chandel-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e8a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:27.735Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chandel_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-chandel"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d0b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e92",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-tengnoupal",
+            "names": [
+              {
+                "name": "Tengnoupal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tengnoupal_Assembly_constituency",
+            "wikidata_qid": "Q55587671",
+            "node_created_on": "2025-01-29T10:23:31.217Z",
+            "active_version": {
+              "id": "0x9be9611e91"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e91"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e90"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e91",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-tengnoupal-version-25",
+            "region": {
+              "id": "0x9be9611e90"
+            },
+            "constituency_number": "42",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e90",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-tengnoupal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e8f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:30.471Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tengnoupal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-tengnoupal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e77"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e97",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-phungyar",
+            "names": [
+              {
+                "name": "Phungyar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Phungyar_Assembly_constituency",
+            "wikidata_qid": "Q55587672",
+            "node_created_on": "2025-01-29T10:23:33.057Z",
+            "active_version": {
+              "id": "0x9be9611e96"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e96"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e95"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e96",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-phungyar-version-25",
+            "region": {
+              "id": "0x9be9611e95"
+            },
+            "constituency_number": "43",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e95",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-phungyar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e94"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:32.279Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Phungyar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-phungyar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d17"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611e9c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-ukhrul",
+            "names": [
+              {
+                "name": "Ukhrul"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ukhrul_Assembly_constituency",
+            "wikidata_qid": "Q55587673",
+            "node_created_on": "2025-01-29T10:23:35.015Z",
+            "active_version": {
+              "id": "0x9be9611e9b"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611e9b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e9a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611e9b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-ukhrul-version-25",
+            "region": {
+              "id": "0x9be9611e9a"
+            },
+            "constituency_number": "44",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e9a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-ukhrul-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e99"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:34.085Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ukhrul_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-ukhrul"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e82"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ea1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-chingai",
+            "names": [
+              {
+                "name": "Chingai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chingai_Assembly_constituency",
+            "wikidata_qid": "Q48728012",
+            "node_created_on": "2025-01-29T10:23:36.747Z",
+            "active_version": {
+              "id": "0x9be9611ea0"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ea0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611e9f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ea0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-chingai-version-25",
+            "region": {
+              "id": "0x9be9611e9f"
+            },
+            "constituency_number": "45",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611e9f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-chingai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611e9e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:35.990Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chingai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-chingai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e88"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ea6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-saikul",
+            "names": [
+              {
+                "name": "Saikul"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saikul_Assembly_constituency",
+            "wikidata_qid": "Q55587674",
+            "node_created_on": "2025-01-29T10:23:38.357Z",
+            "active_version": {
+              "id": "0x9be9611ea5"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ea5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ea4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ea5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-saikul-version-25",
+            "region": {
+              "id": "0x9be9611ea4"
+            },
+            "constituency_number": "46",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ea4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-saikul-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ea3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:37.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saikul_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-saikul"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e8e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611eab",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-karong",
+            "names": [
+              {
+                "name": "Karong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karong_Assembly_constituency",
+            "wikidata_qid": "Q55587676",
+            "node_created_on": "2025-01-29T10:23:40.305Z",
+            "active_version": {
+              "id": "0x9be9611eaa"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611eaa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ea9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611eaa",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-karong-version-25",
+            "region": {
+              "id": "0x9be9611ea9"
+            },
+            "constituency_number": "47",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ea9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-karong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ea8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:39.677Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-karong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e94"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611eb0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-mao",
+            "names": [
+              {
+                "name": "Mao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mao_Assembly_constituency",
+            "wikidata_qid": "Q55587677",
+            "node_created_on": "2025-01-29T10:23:41.873Z",
+            "active_version": {
+              "id": "0x9be9611eaf"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611eaf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611eae"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611eaf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-mao-version-25",
+            "region": {
+              "id": "0x9be9611eae"
+            },
+            "constituency_number": "48",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611eae",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-mao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ead"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:41.164Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mao_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-mao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609e9a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611eb5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-tadubi",
+            "names": [
+              {
+                "name": "Tadubi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tadubi_Assembly_constituency",
+            "wikidata_qid": "Q55587678",
+            "node_created_on": "2025-01-29T10:23:43.664Z",
+            "active_version": {
+              "id": "0x9be9611eb4"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611eb4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611eb3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611eb4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-tadubi-version-25",
+            "region": {
+              "id": "0x9be9611eb3"
+            },
+            "constituency_number": "49",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611eb3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-tadubi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611eb2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:43.001Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tadubi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-tadubi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605ce9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611eba",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-kangpokpi",
+            "names": [
+              {
+                "name": "Kangpokpi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kangpokpi_Assembly_constituency",
+            "wikidata_qid": "Q30601143",
+            "node_created_on": "2025-01-29T10:23:45.544Z",
+            "active_version": {
+              "id": "0x9be9611eb9"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611eb9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611eb8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611eb9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-kangpokpi-version-25",
+            "region": {
+              "id": "0x9be9611eb8"
+            },
+            "constituency_number": "50",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611eb8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-kangpokpi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611eb7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:44.825Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kangpokpi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-kangpokpi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ea5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ebf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-saitu",
+            "names": [
+              {
+                "name": "Saitu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saitu_Assembly_constituency",
+            "wikidata_qid": "Q55587679",
+            "node_created_on": "2025-01-29T10:23:47.751Z",
+            "active_version": {
+              "id": "0x9be9611ebe"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ebe"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ebd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ebe",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-saitu-version-25",
+            "region": {
+              "id": "0x9be9611ebd"
+            },
+            "constituency_number": "51",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ebd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-saitu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ebc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:47.187Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saitu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-saitu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609eab"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ec4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-tamei",
+            "names": [
+              {
+                "name": "Tamei"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tamei_Assembly_constituency",
+            "wikidata_qid": "Q28419650",
+            "node_created_on": "2025-01-29T10:23:49.673Z",
+            "active_version": {
+              "id": "0x9be9611ec3"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ec3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ec2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ec3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-tamei-version-25",
+            "region": {
+              "id": "0x9be9611ec2"
+            },
+            "constituency_number": "52",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ec2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-tamei-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ec1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:49.033Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tamei_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-tamei"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605d05"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ec9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-tamenglong",
+            "names": [
+              {
+                "name": "Tamenglong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tamenglong_Assembly_constituency",
+            "wikidata_qid": "Q55587680",
+            "node_created_on": "2025-01-29T10:23:51.388Z",
+            "active_version": {
+              "id": "0x9be9611ec8"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ec8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ec7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ec8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-tamenglong-version-25",
+            "region": {
+              "id": "0x9be9611ec7"
+            },
+            "constituency_number": "53",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ec7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-tamenglong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ec6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:50.771Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tamenglong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-tamenglong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609eb6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ece",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-nungba",
+            "names": [
+              {
+                "name": "Nungba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nungba_Assembly_constituency",
+            "wikidata_qid": "Q55587681",
+            "node_created_on": "2025-01-29T10:23:53.459Z",
+            "active_version": {
+              "id": "0x9be9611ecd"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ecd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ecc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ecd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-nungba-version-25",
+            "region": {
+              "id": "0x9be9611ecc"
+            },
+            "constituency_number": "54",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ecc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-nungba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ecb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:52.825Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nungba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-nungba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ebc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ed3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-tipaimukh",
+            "names": [
+              {
+                "name": "Tipaimukh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tipaimukh_Assembly_constituency",
+            "wikidata_qid": "Q48727058",
+            "node_created_on": "2025-01-29T10:23:55.383Z",
+            "active_version": {
+              "id": "0x9be9611ed2"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ed2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ed1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ed2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-tipaimukh-version-25",
+            "region": {
+              "id": "0x9be9611ed1"
+            },
+            "constituency_number": "55",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ed1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-tipaimukh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ed0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:54.675Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tipaimukh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-tipaimukh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ec2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ed8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-thanlon",
+            "names": [
+              {
+                "name": "Thanlon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thanlon_Assembly_constituency",
+            "wikidata_qid": "Q55587682",
+            "node_created_on": "2025-01-29T10:23:57.329Z",
+            "active_version": {
+              "id": "0x9be9611ed7"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ed7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ed6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ed7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-thanlon-version-25",
+            "region": {
+              "id": "0x9be9611ed6"
+            },
+            "constituency_number": "56",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ed6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-thanlon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ed5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:56.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thanlon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-thanlon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ec8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611edd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-henglep",
+            "names": [
+              {
+                "name": "Henglep"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Henglep_Assembly_constituency",
+            "wikidata_qid": "Q55587683",
+            "node_created_on": "2025-01-29T10:23:59.530Z",
+            "active_version": {
+              "id": "0x9be9611edc"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611edc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611edb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611edc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-henglep-version-25",
+            "region": {
+              "id": "0x9be9611edb"
+            },
+            "constituency_number": "57",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611edb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-henglep-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611eda"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:23:58.353Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Henglep_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-henglep"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605cc4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ee2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-churachandpur",
+            "names": [
+              {
+                "name": "Churachandpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Churachandpur_Assembly_constituency",
+            "wikidata_qid": "Q48728019",
+            "node_created_on": "2025-01-29T10:24:01.203Z",
+            "active_version": {
+              "id": "0x9be9611ee1"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ee1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ee0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ee1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-churachandpur-version-25",
+            "region": {
+              "id": "0x9be9611ee0"
+            },
+            "constituency_number": "58",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ee0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-churachandpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611edf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:24:00.504Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Churachandpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-churachandpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ed3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611ee7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-saikot",
+            "names": [
+              {
+                "name": "Saikot"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saikot_Assembly_constituency",
+            "wikidata_qid": "Q55587684",
+            "node_created_on": "2025-01-29T10:24:03.276Z",
+            "active_version": {
+              "id": "0x9be9611ee6"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611ee6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611ee5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611ee6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-saikot-version-25",
+            "region": {
+              "id": "0x9be9611ee5"
+            },
+            "constituency_number": "59",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611ee5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-saikot-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ee4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:24:02.754Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saikot_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-saikot"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ed9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9611eec",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-mn-singhat",
+            "names": [
+              {
+                "name": "Singhat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Singhat_Assembly_constituency",
+            "wikidata_qid": "Q55587687",
+            "node_created_on": "2025-01-29T10:24:04.927Z",
+            "active_version": {
+              "id": "0x9be9611eeb"
+            },
+            "versions": [
+              {
+                "id": "0x9be9611eeb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9611eea"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9611eeb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-mn-singhat-version-25",
+            "region": {
+              "id": "0x9be9611eea"
+            },
+            "constituency_number": "60",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9611eea",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-mn-singhat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9611ee9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-manipur-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:24:04.275Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Singhat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-mn-singhat"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T10:24:05.321Z"
+}

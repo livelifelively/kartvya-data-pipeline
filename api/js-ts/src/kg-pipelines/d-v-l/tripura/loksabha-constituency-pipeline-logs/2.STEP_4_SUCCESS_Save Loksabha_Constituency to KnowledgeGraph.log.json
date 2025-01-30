@@ -1,0 +1,147 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606d9f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f802",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tr-tripura-west",
+            "names": [
+              {
+                "name": "Tripura West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tripura_West_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7843879",
+            "node_created_on": "2025-01-29T03:37:45.994Z",
+            "active_version": {
+              "id": "0x9be960f801"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f801"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f800"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f801",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tr-tripura-west-version-25",
+            "region": {
+              "id": "0x9be960f800"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f800",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tr-tripura-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f7ff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:45.329Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tripura_West_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tr-tripura-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606da5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f807",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-tr-tripura-east",
+            "names": [
+              {
+                "name": "Tripura East"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tripura_East_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7843852",
+            "node_created_on": "2025-01-29T03:37:48.313Z",
+            "active_version": {
+              "id": "0x9be960f806"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f806"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f805"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f806",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-tr-tripura-east-version-25",
+            "region": {
+              "id": "0x9be960f805"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f805",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-tr-tripura-east-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f804"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:46.980Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tripura_East_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-tr-tripura-east"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:37:48.728Z"
+}

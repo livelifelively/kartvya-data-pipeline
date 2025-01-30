@@ -1,0 +1,147 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606b24"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f487",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ml-shillong",
+            "names": [
+              {
+                "name": "Shillong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shillong_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7496680",
+            "node_created_on": "2025-01-29T03:12:41.740Z",
+            "active_version": {
+              "id": "0x9be960f486"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f486"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f485"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f486",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ml-shillong-version-25",
+            "region": {
+              "id": "0x9be960f485"
+            },
+            "constituency_number": "1",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f485",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ml-shillong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f484"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-meghalaya-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:41.080Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shillong_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ml-shillong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b2a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f48c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-ml-tura",
+            "names": [
+              {
+                "name": "Tura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tura_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7853631",
+            "node_created_on": "2025-01-29T03:12:44.048Z",
+            "active_version": {
+              "id": "0x9be960f48b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f48b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f48a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f48b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-ml-tura-version-25",
+            "region": {
+              "id": "0x9be960f48a"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f48a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-ml-tura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f489"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-meghalaya-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:42.890Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tura_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-ml-tura"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:12:44.325Z"
+}

@@ -1,0 +1,6291 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be960797b"
+          },
+          {
+            "id": "0x9be960797c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc12",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bharatpur-sonhat",
+            "names": [
+              {
+                "name": "Bharatpur-Sonhat"
+              },
+              {
+                "name": "Bharatpur - Sonhat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bharatpur-Sonhat_Assembly_constituency",
+            "wikidata_qid": "Q55339183",
+            "node_created_on": "2025-01-29T03:57:52.792Z",
+            "active_version": {
+              "id": "0x9be960fc11"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc11"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc10"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc11",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bharatpur-sonhat-version-25",
+            "region": {
+              "id": "0x9be960fc10"
+            },
+            "constituency_number": "1",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc10",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bharatpur-sonhat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc0f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:57:52.136Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bharatpur-Sonhat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bharatpur-sonhat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607982"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc17",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-manendragarh",
+            "names": [
+              {
+                "name": "Manendragarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Manendragarh_Assembly_constituency",
+            "wikidata_qid": "Q55339184",
+            "node_created_on": "2025-01-29T03:57:55.211Z",
+            "active_version": {
+              "id": "0x9be960fc16"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc16"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc15"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc16",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-manendragarh-version-25",
+            "region": {
+              "id": "0x9be960fc15"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc15",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-manendragarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc14"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:57:54.402Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Manendragarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-manendragarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607988"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc1c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-baikunthpur",
+            "names": [
+              {
+                "name": "Baikunthpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baikunthpur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q16837064",
+            "node_created_on": "2025-01-29T03:57:57.371Z",
+            "active_version": {
+              "id": "0x9be960fc1b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc1b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc1a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc1b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-baikunthpur-version-25",
+            "region": {
+              "id": "0x9be960fc1a"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc1a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-baikunthpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc19"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:57:56.192Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baikunthpur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-baikunthpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960798e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc21",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-premnagar",
+            "names": [
+              {
+                "name": "Premnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Premnagar_Assembly_constituency",
+            "wikidata_qid": "Q55339185",
+            "node_created_on": "2025-01-29T03:57:58.951Z",
+            "active_version": {
+              "id": "0x9be960fc20"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc20"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc1f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc20",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-premnagar-version-25",
+            "region": {
+              "id": "0x9be960fc1f"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc1f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-premnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc1e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:57:58.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Premnagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-premnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607994"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc26",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bhatgaon",
+            "names": [
+              {
+                "name": "Bhatgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhatgaon_Assembly_constituency",
+            "wikidata_qid": "Q55339186",
+            "node_created_on": "2025-01-29T03:58:01.570Z",
+            "active_version": {
+              "id": "0x9be960fc25"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc25"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc24"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc25",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bhatgaon-version-25",
+            "region": {
+              "id": "0x9be960fc24"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc24",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bhatgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc23"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:00.749Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhatgaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bhatgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960799a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc2b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-pratappur",
+            "names": [
+              {
+                "name": "Pratappur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pratappur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339188",
+            "node_created_on": "2025-01-29T03:58:03.336Z",
+            "active_version": {
+              "id": "0x9be960fc2a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc2a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc29"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc2a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-pratappur-version-25",
+            "region": {
+              "id": "0x9be960fc29"
+            },
+            "constituency_number": "6",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc29",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-pratappur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc28"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:02.687Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pratappur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-pratappur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079a0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc30",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-ramanujganj",
+            "names": [
+              {
+                "name": "Ramanujganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramanujganj_Assembly_constituency",
+            "wikidata_qid": "Q55339189",
+            "node_created_on": "2025-01-29T03:58:05.053Z",
+            "active_version": {
+              "id": "0x9be960fc2f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc2f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc2e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc2f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-ramanujganj-version-25",
+            "region": {
+              "id": "0x9be960fc2e"
+            },
+            "constituency_number": "7",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc2e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-ramanujganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc2d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:04.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramanujganj_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-ramanujganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079a6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc35",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-samri",
+            "names": [
+              {
+                "name": "Samri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Samri_Assembly_constituency",
+            "wikidata_qid": "Q55339190",
+            "node_created_on": "2025-01-29T03:58:06.792Z",
+            "active_version": {
+              "id": "0x9be960fc34"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc34"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc33"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc34",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-samri-version-25",
+            "region": {
+              "id": "0x9be960fc33"
+            },
+            "constituency_number": "8",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc33",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-samri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc32"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:05.937Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Samri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-samri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079ac"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc3a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-lundra",
+            "names": [
+              {
+                "name": "Lundra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lundra_Assembly_constituency",
+            "wikidata_qid": "Q55339191",
+            "node_created_on": "2025-01-29T03:58:08.494Z",
+            "active_version": {
+              "id": "0x9be960fc39"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc39"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc38"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc39",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-lundra-version-25",
+            "region": {
+              "id": "0x9be960fc38"
+            },
+            "constituency_number": "9",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc38",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-lundra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc37"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:07.816Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lundra_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-lundra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079b2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc3f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-ambikapur",
+            "names": [
+              {
+                "name": "Ambikapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ambikapur_Assembly_constituency",
+            "wikidata_qid": "Q55339192",
+            "node_created_on": "2025-01-29T03:58:10.928Z",
+            "active_version": {
+              "id": "0x9be960fc3e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc3e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc3d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc3e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-ambikapur-version-25",
+            "region": {
+              "id": "0x9be960fc3d"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc3d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-ambikapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc3c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:10.209Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ambikapur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-ambikapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606415"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc44",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-sitapur",
+            "names": [
+              {
+                "name": "Sitapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sitapur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339194",
+            "node_created_on": "2025-01-29T03:58:12.832Z",
+            "active_version": {
+              "id": "0x9be960fc43"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc43"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc42"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc43",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-sitapur-version-25",
+            "region": {
+              "id": "0x9be960fc42"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc42",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-sitapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc41"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:11.912Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sitapur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-sitapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055e0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc49",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-jashpur",
+            "names": [
+              {
+                "name": "Jashpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jashpur_Assembly_constituency",
+            "wikidata_qid": "Q55339195",
+            "node_created_on": "2025-01-29T03:58:14.836Z",
+            "active_version": {
+              "id": "0x9be960fc48"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc48"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc47"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc48",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-jashpur-version-25",
+            "region": {
+              "id": "0x9be960fc47"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc47",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-jashpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc46"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:13.944Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jashpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-jashpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079c2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc4e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kunkuri",
+            "names": [
+              {
+                "name": "Kunkuri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kunkuri_Assembly_constituency",
+            "wikidata_qid": "Q55339196",
+            "node_created_on": "2025-01-29T03:58:17.032Z",
+            "active_version": {
+              "id": "0x9be960fc4d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc4d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc4c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc4d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kunkuri-version-25",
+            "region": {
+              "id": "0x9be960fc4c"
+            },
+            "constituency_number": "13",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc4c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kunkuri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc4b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:16.008Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kunkuri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kunkuri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079c8"
+          },
+          {
+            "id": "0x9be96079c9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc53",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-pathalgaon",
+            "names": [
+              {
+                "name": "Pathalgaon"
+              },
+              {
+                "name": "Patalgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pathalgaon_Assembly_constituency",
+            "wikidata_qid": "Q55339197",
+            "node_created_on": "2025-01-29T03:58:18.773Z",
+            "active_version": {
+              "id": "0x9be960fc52"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc52"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc51"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc52",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-pathalgaon-version-25",
+            "region": {
+              "id": "0x9be960fc51"
+            },
+            "constituency_number": "14",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc51",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-pathalgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc50"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:17.849Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pathalgaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-pathalgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079cf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc58",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-lailunga",
+            "names": [
+              {
+                "name": "Lailunga"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lailunga_Assembly_constituency",
+            "wikidata_qid": "Q55339198",
+            "node_created_on": "2025-01-29T03:58:21.231Z",
+            "active_version": {
+              "id": "0x9be960fc57"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc57"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc56"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc57",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-lailunga-version-25",
+            "region": {
+              "id": "0x9be960fc56"
+            },
+            "constituency_number": "15",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc56",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-lailunga-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc55"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:20.324Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lailunga_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-lailunga"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960562b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc5d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-raigarh",
+            "names": [
+              {
+                "name": "Raigarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raigarh_Assembly_constituency",
+            "wikidata_qid": "Q55339199",
+            "node_created_on": "2025-01-29T03:58:23.074Z",
+            "active_version": {
+              "id": "0x9be960fc5c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc5c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc5b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc5c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-raigarh-version-25",
+            "region": {
+              "id": "0x9be960fc5b"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc5b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-raigarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc5a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:22.322Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raigarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-raigarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079da"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc62",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-sarangarh",
+            "names": [
+              {
+                "name": "Sarangarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sarangarh_Assembly_constituency",
+            "wikidata_qid": "Q55339200",
+            "node_created_on": "2025-01-29T03:58:25.533Z",
+            "active_version": {
+              "id": "0x9be960fc61"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc61"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc60"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc61",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-sarangarh-version-25",
+            "region": {
+              "id": "0x9be960fc60"
+            },
+            "constituency_number": "17",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc60",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-sarangarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc5f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:24.719Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sarangarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-sarangarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079e0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc67",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kharsia",
+            "names": [
+              {
+                "name": "Kharsia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kharsia_Assembly_constituency",
+            "wikidata_qid": "Q55339201",
+            "node_created_on": "2025-01-29T03:58:27.689Z",
+            "active_version": {
+              "id": "0x9be960fc66"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc66"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc65"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc66",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kharsia-version-25",
+            "region": {
+              "id": "0x9be960fc65"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc65",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kharsia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc64"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:26.556Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kharsia_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kharsia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079e6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc6c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dharamjaigarh",
+            "names": [
+              {
+                "name": "Dharamjaigarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharamjaigarh_Assembly_constituency",
+            "wikidata_qid": "Q55339202",
+            "node_created_on": "2025-01-29T03:58:29.782Z",
+            "active_version": {
+              "id": "0x9be960fc6b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc6b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc6a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc6b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dharamjaigarh-version-25",
+            "region": {
+              "id": "0x9be960fc6a"
+            },
+            "constituency_number": "19",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc6a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dharamjaigarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc69"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:28.707Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharamjaigarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dharamjaigarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063e4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc71",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-rampur",
+            "names": [
+              {
+                "name": "Rampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rampur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339205",
+            "node_created_on": "2025-01-29T03:58:31.552Z",
+            "active_version": {
+              "id": "0x9be960fc70"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc70"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc6f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc70",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-rampur-version-25",
+            "region": {
+              "id": "0x9be960fc6f"
+            },
+            "constituency_number": "20",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc6f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-rampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc6e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:30.926Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rampur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-rampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055ff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc76",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-korba",
+            "names": [
+              {
+                "name": "Korba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Korba_Assembly_constituency",
+            "wikidata_qid": "Q55339206",
+            "node_created_on": "2025-01-29T03:58:34.032Z",
+            "active_version": {
+              "id": "0x9be960fc75"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc75"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc74"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc75",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-korba-version-25",
+            "region": {
+              "id": "0x9be960fc74"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc74",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-korba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc73"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:33.108Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Korba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-korba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079f6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc7b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-katghora",
+            "names": [
+              {
+                "name": "Katghora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Katghora_Assembly_constituency",
+            "wikidata_qid": "Q55339207",
+            "node_created_on": "2025-01-29T03:58:36.308Z",
+            "active_version": {
+              "id": "0x9be960fc7a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc7a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc79"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc7a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-katghora-version-25",
+            "region": {
+              "id": "0x9be960fc79"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc79",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-katghora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc78"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:35.197Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Katghora_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-katghora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96079fc"
+          },
+          {
+            "id": "0x9be96079fd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc80",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-pali-tanakhar",
+            "names": [
+              {
+                "name": "Pali-Tanakhar"
+              },
+              {
+                "name": "Pali - Tanakhar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pali-Tanakhar_Assembly_constituency",
+            "wikidata_qid": "Q55339208",
+            "node_created_on": "2025-01-29T03:58:38.043Z",
+            "active_version": {
+              "id": "0x9be960fc7f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc7f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc7e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc7f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-pali-tanakhar-version-25",
+            "region": {
+              "id": "0x9be960fc7e"
+            },
+            "constituency_number": "23",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc7e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-pali-tanakhar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc7d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:37.401Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pali-Tanakhar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-pali-tanakhar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a03"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc85",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-marwahi",
+            "names": [
+              {
+                "name": "Marwahi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Marwahi_Assembly_constituency",
+            "wikidata_qid": "Q25209106",
+            "node_created_on": "2025-01-29T03:58:40.380Z",
+            "active_version": {
+              "id": "0x9be960fc84"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc84"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc83"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc84",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-marwahi-version-25",
+            "region": {
+              "id": "0x9be960fc83"
+            },
+            "constituency_number": "24",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc83",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-marwahi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc82"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:38.971Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Marwahi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-marwahi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606022"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc8a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kota",
+            "names": [
+              {
+                "name": "Kota"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kota,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339209",
+            "node_created_on": "2025-01-29T03:58:42.565Z",
+            "active_version": {
+              "id": "0x9be960fc89"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc89"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc88"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc89",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kota-version-25",
+            "region": {
+              "id": "0x9be960fc88"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc88",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kota-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc87"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:41.798Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kota,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kota"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a0e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc8f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-lormi",
+            "names": [
+              {
+                "name": "Lormi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lormi_Assembly_constituency",
+            "wikidata_qid": "Q55339210",
+            "node_created_on": "2025-01-29T03:58:44.727Z",
+            "active_version": {
+              "id": "0x9be960fc8e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc8e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc8d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc8e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-lormi-version-25",
+            "region": {
+              "id": "0x9be960fc8d"
+            },
+            "constituency_number": "26",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc8d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-lormi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc8c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:44.002Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lormi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-lormi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960561f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc94",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-mungeli",
+            "names": [
+              {
+                "name": "Mungeli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mungeli_Assembly_constituency",
+            "wikidata_qid": "Q25209159",
+            "node_created_on": "2025-01-29T03:58:46.431Z",
+            "active_version": {
+              "id": "0x9be960fc93"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc93"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc92"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc93",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-mungeli-version-25",
+            "region": {
+              "id": "0x9be960fc92"
+            },
+            "constituency_number": "27",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc92",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-mungeli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc91"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:45.541Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mungeli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-mungeli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a19"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc99",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-takhatpur",
+            "names": [
+              {
+                "name": "Takhatpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Takhatpur_Assembly_constituency",
+            "wikidata_qid": "Q55339211",
+            "node_created_on": "2025-01-29T03:58:47.984Z",
+            "active_version": {
+              "id": "0x9be960fc98"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc98"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc97"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc98",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-takhatpur-version-25",
+            "region": {
+              "id": "0x9be960fc97"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc97",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-takhatpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc96"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:47.342Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Takhatpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-takhatpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a1f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fc9e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bilha",
+            "names": [
+              {
+                "name": "Bilha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bilha_Assembly_constituency",
+            "wikidata_qid": "Q55339212",
+            "node_created_on": "2025-01-29T03:58:50.475Z",
+            "active_version": {
+              "id": "0x9be960fc9d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fc9d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fc9c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fc9d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bilha-version-25",
+            "region": {
+              "id": "0x9be960fc9c"
+            },
+            "constituency_number": "29",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fc9c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bilha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fc9b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:49.800Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bilha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bilha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055b6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fca3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bilaspur",
+            "names": [
+              {
+                "name": "Bilaspur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bilaspur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339213",
+            "node_created_on": "2025-01-29T03:58:52.257Z",
+            "active_version": {
+              "id": "0x9be960fca2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fca2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fca1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fca2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bilaspur-version-25",
+            "region": {
+              "id": "0x9be960fca1"
+            },
+            "constituency_number": "30",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fca1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bilaspur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fca0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:51.540Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bilaspur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bilaspur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a2a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fca8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-beltara",
+            "names": [
+              {
+                "name": "Beltara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Beltara_Assembly_constituency",
+            "wikidata_qid": "Q55339214",
+            "node_created_on": "2025-01-29T03:58:54.531Z",
+            "active_version": {
+              "id": "0x9be960fca7"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fca7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fca6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fca7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-beltara-version-25",
+            "region": {
+              "id": "0x9be960fca6"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fca6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-beltara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fca5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:53.940Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Beltara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-beltara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a30"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcad",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-masturi",
+            "names": [
+              {
+                "name": "Masturi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Masturi_Assembly_constituency",
+            "wikidata_qid": "Q25209168",
+            "node_created_on": "2025-01-29T03:58:56.194Z",
+            "active_version": {
+              "id": "0x9be960fcac"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcab"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcac",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-masturi-version-25",
+            "region": {
+              "id": "0x9be960fcab"
+            },
+            "constituency_number": "32",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcab",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-masturi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcaa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:55.494Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Masturi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-masturi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a36"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcb2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-akaltara",
+            "names": [
+              {
+                "name": "Akaltara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Akaltara_Assembly_constituency",
+            "wikidata_qid": "Q55339215",
+            "node_created_on": "2025-01-29T03:58:58.403Z",
+            "active_version": {
+              "id": "0x9be960fcb1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcb1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcb0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcb1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-akaltara-version-25",
+            "region": {
+              "id": "0x9be960fcb0"
+            },
+            "constituency_number": "33",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcb0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-akaltara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcaf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:57.705Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Akaltara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-akaltara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055da"
+          },
+          {
+            "id": "0x9be9607a3c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcb7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-janjgir-champa",
+            "names": [
+              {
+                "name": "Janjgir-Champa"
+              },
+              {
+                "name": "Janjgir - Champa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Janjgir-Champa_Assembly_constituency",
+            "wikidata_qid": "Q55339216",
+            "node_created_on": "2025-01-29T03:59:00.218Z",
+            "active_version": {
+              "id": "0x9be960fcb6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcb6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcb5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcb6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-janjgir-champa-version-25",
+            "region": {
+              "id": "0x9be960fcb5"
+            },
+            "constituency_number": "34",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcb5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-janjgir-champa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcb4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:58:59.495Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Janjgir-Champa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-janjgir-champa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605643"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcbc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-sakti",
+            "names": [
+              {
+                "name": "Sakti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sakti_Assembly_constituency",
+            "wikidata_qid": "Q55339218",
+            "node_created_on": "2025-01-29T03:59:01.779Z",
+            "active_version": {
+              "id": "0x9be960fcbb"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcbb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcba"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcbb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-sakti-version-25",
+            "region": {
+              "id": "0x9be960fcba"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcba",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-sakti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcb9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:01.049Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sakti_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-sakti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605c07"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcc1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-chandrapur",
+            "names": [
+              {
+                "name": "Chandrapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chandrapur,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q48726686",
+            "node_created_on": "2025-01-29T03:59:03.946Z",
+            "active_version": {
+              "id": "0x9be960fcc0"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcc0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcbf"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcc0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-chandrapur-version-25",
+            "region": {
+              "id": "0x9be960fcbf"
+            },
+            "constituency_number": "36",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcbf",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-chandrapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcbe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:03.216Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chandrapur,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-chandrapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a4c"
+          },
+          {
+            "id": "0x9be9607a4d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcc6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-jaijaipur",
+            "names": [
+              {
+                "name": "Jaijaipur"
+              },
+              {
+                "name": "Jaijepur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaijaipur_Assembly_constituency",
+            "wikidata_qid": "Q55339219",
+            "node_created_on": "2025-01-29T03:59:05.774Z",
+            "active_version": {
+              "id": "0x9be960fcc5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcc5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcc4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcc5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-jaijaipur-version-25",
+            "region": {
+              "id": "0x9be960fcc4"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcc4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-jaijaipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcc3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:05.014Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaijaipur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-jaijaipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a53"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fccb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-pamgarh",
+            "names": [
+              {
+                "name": "Pamgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pamgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339220",
+            "node_created_on": "2025-01-29T03:59:07.923Z",
+            "active_version": {
+              "id": "0x9be960fcca"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcca"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcc9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcca",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-pamgarh-version-25",
+            "region": {
+              "id": "0x9be960fcc9"
+            },
+            "constituency_number": "38",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcc9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-pamgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcc8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:07.413Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pamgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-pamgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a59"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcd0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-saraipali",
+            "names": [
+              {
+                "name": "Saraipali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saraipali_Assembly_constituency",
+            "wikidata_qid": "Q55339221",
+            "node_created_on": "2025-01-29T03:59:09.850Z",
+            "active_version": {
+              "id": "0x9be960fccf"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fccf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcce"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fccf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-saraipali-version-25",
+            "region": {
+              "id": "0x9be960fcce"
+            },
+            "constituency_number": "39",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcce",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-saraipali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fccd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:09.052Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saraipali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-saraipali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a5f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcd5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-basna",
+            "names": [
+              {
+                "name": "Basna"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Basna_Assembly_constituency",
+            "wikidata_qid": "Q55339222",
+            "node_created_on": "2025-01-29T03:59:12.227Z",
+            "active_version": {
+              "id": "0x9be960fcd4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcd4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcd3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcd4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-basna-version-25",
+            "region": {
+              "id": "0x9be960fcd3"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcd3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-basna-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcd2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:10.890Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Basna_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-basna"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a65"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcda",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-khallari",
+            "names": [
+              {
+                "name": "Khallari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khallari_Assembly_constituency",
+            "wikidata_qid": "Q55339223",
+            "node_created_on": "2025-01-29T03:59:13.946Z",
+            "active_version": {
+              "id": "0x9be960fcd9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcd9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcd8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcd9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-khallari-version-25",
+            "region": {
+              "id": "0x9be960fcd8"
+            },
+            "constituency_number": "41",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcd8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-khallari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcd7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:13.456Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khallari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-khallari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960560c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcdf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-mahasamund",
+            "names": [
+              {
+                "name": "Mahasamund"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mahasamund_Assembly_constituency",
+            "wikidata_qid": "Q25209531",
+            "node_created_on": "2025-01-29T03:59:15.535Z",
+            "active_version": {
+              "id": "0x9be960fcde"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcde"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcdd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcde",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-mahasamund-version-25",
+            "region": {
+              "id": "0x9be960fcdd"
+            },
+            "constituency_number": "42",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcdd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-mahasamund-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcdc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:14.917Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mahasamund_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-mahasamund"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a70"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fce4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bilaigarh",
+            "names": [
+              {
+                "name": "Bilaigarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bilaigarh_Assembly_constituency",
+            "wikidata_qid": "Q55339226",
+            "node_created_on": "2025-01-29T03:59:17.188Z",
+            "active_version": {
+              "id": "0x9be960fce3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fce3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fce2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fce3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bilaigarh-version-25",
+            "region": {
+              "id": "0x9be960fce2"
+            },
+            "constituency_number": "43",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fce2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bilaigarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fce1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:16.502Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bilaigarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bilaigarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a76"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fce9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kasdol",
+            "names": [
+              {
+                "name": "Kasdol"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kasdol_Assembly_constituency",
+            "wikidata_qid": "Q55339227",
+            "node_created_on": "2025-01-29T03:59:19.005Z",
+            "active_version": {
+              "id": "0x9be960fce8"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fce8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fce7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fce8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kasdol-version-25",
+            "region": {
+              "id": "0x9be960fce7"
+            },
+            "constituency_number": "44",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fce7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kasdol-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fce6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:18.318Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kasdol_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kasdol"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605597"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-baloda-bazar",
+            "names": [
+              {
+                "name": "Baloda Bazar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baloda_Bazar_Assembly_constituency",
+            "wikidata_qid": "Q55339229",
+            "node_created_on": "2025-01-29T03:59:21.198Z",
+            "active_version": {
+              "id": "0x9be960fced"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fced"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcec"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fced",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-baloda-bazar-version-25",
+            "region": {
+              "id": "0x9be960fcec"
+            },
+            "constituency_number": "45",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcec",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-baloda-bazar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fceb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:20.554Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baloda_Bazar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-baloda-bazar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a81"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcf3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bhatapara",
+            "names": [
+              {
+                "name": "Bhatapara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhatapara_Assembly_constituency",
+            "wikidata_qid": "Q55339230",
+            "node_created_on": "2025-01-29T03:59:23.335Z",
+            "active_version": {
+              "id": "0x9be960fcf2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcf2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcf1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcf2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bhatapara-version-25",
+            "region": {
+              "id": "0x9be960fcf1"
+            },
+            "constituency_number": "46",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcf1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bhatapara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcf0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:22.185Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhatapara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bhatapara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a87"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcf8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dharsiwa",
+            "names": [
+              {
+                "name": "Dharsiwa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharsiwa_Assembly_constituency",
+            "wikidata_qid": "Q16938381",
+            "node_created_on": "2025-01-29T03:59:25.025Z",
+            "active_version": {
+              "id": "0x9be960fcf7"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcf7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcf6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcf7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dharsiwa-version-25",
+            "region": {
+              "id": "0x9be960fcf6"
+            },
+            "constituency_number": "47",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcf6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dharsiwa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcf5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:24.410Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharsiwa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dharsiwa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a8d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fcfd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-raipur-city-gramin",
+            "names": [
+              {
+                "name": "Raipur City Gramin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raipur_City_Gramin_Assembly_constituency",
+            "wikidata_qid": "Q55339231",
+            "node_created_on": "2025-01-29T03:59:26.766Z",
+            "active_version": {
+              "id": "0x9be960fcfc"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fcfc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fcfb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fcfc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-raipur-city-gramin-version-25",
+            "region": {
+              "id": "0x9be960fcfb"
+            },
+            "constituency_number": "48",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fcfb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-raipur-city-gramin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcfa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:25.975Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raipur_City_Gramin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-raipur-city-gramin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a93"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd02",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-raipur-city-west",
+            "names": [
+              {
+                "name": "Raipur City West"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raipur_City_West_Assembly_constituency",
+            "wikidata_qid": "Q55339232",
+            "node_created_on": "2025-01-29T03:59:28.724Z",
+            "active_version": {
+              "id": "0x9be960fd01"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd01"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd00"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd01",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-raipur-city-west-version-25",
+            "region": {
+              "id": "0x9be960fd00"
+            },
+            "constituency_number": "49",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd00",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-raipur-city-west-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fcff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:28.185Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raipur_City_West_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-raipur-city-west"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a99"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd07",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-raipur-city-north",
+            "names": [
+              {
+                "name": "Raipur City North"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raipur_City_North_Assembly_constituency",
+            "wikidata_qid": "Q55339233",
+            "node_created_on": "2025-01-29T03:59:31.325Z",
+            "active_version": {
+              "id": "0x9be960fd06"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd06"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd05"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd06",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-raipur-city-north-version-25",
+            "region": {
+              "id": "0x9be960fd05"
+            },
+            "constituency_number": "50",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd05",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-raipur-city-north-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd04"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:30.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raipur_City_North_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-raipur-city-north"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607a9f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd0c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-raipur-city-south",
+            "names": [
+              {
+                "name": "Raipur City South"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raipur_City_South_Assembly_constituency",
+            "wikidata_qid": "Q55339234",
+            "node_created_on": "2025-01-29T03:59:33.320Z",
+            "active_version": {
+              "id": "0x9be960fd0b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd0b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd0a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd0b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-raipur-city-south-version-25",
+            "region": {
+              "id": "0x9be960fd0a"
+            },
+            "constituency_number": "51",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd0a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-raipur-city-south-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd09"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:32.605Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raipur_City_South_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-raipur-city-south"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607aa5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd11",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-arang",
+            "names": [
+              {
+                "name": "Arang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arang_Assembly_constituency",
+            "wikidata_qid": "Q55339235",
+            "node_created_on": "2025-01-29T03:59:34.959Z",
+            "active_version": {
+              "id": "0x9be960fd10"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd10"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd0f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd10",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-arang-version-25",
+            "region": {
+              "id": "0x9be960fd0f"
+            },
+            "constituency_number": "52",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd0f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-arang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd0e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:34.308Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-arang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607aab"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd16",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-abhanpur",
+            "names": [
+              {
+                "name": "Abhanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Abhanpur_Assembly_constituency",
+            "wikidata_qid": "Q55339239",
+            "node_created_on": "2025-01-29T03:59:36.555Z",
+            "active_version": {
+              "id": "0x9be960fd15"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd15"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd14"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd15",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-abhanpur-version-25",
+            "region": {
+              "id": "0x9be960fd14"
+            },
+            "constituency_number": "53",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd14",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-abhanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd13"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:36.087Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Abhanpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-abhanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ab1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd1b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-rajim",
+            "names": [
+              {
+                "name": "Rajim"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajim_Assembly_constituency",
+            "wikidata_qid": "Q25209107",
+            "node_created_on": "2025-01-29T03:59:38.325Z",
+            "active_version": {
+              "id": "0x9be960fd1a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd1a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd19"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd1a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-rajim-version-25",
+            "region": {
+              "id": "0x9be960fd19"
+            },
+            "constituency_number": "54",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd19",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-rajim-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd18"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:37.516Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajim_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-rajim"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ab7"
+          },
+          {
+            "id": "0x9be9607ab8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd20",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bindrawagarh",
+            "names": [
+              {
+                "name": "Bindrawagarh"
+              },
+              {
+                "name": "Bindranavagarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bindrawagarh_Assembly_constituency",
+            "wikidata_qid": "Q55339240",
+            "node_created_on": "2025-01-29T03:59:40.512Z",
+            "active_version": {
+              "id": "0x9be960fd1f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd1f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd1e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd1f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bindrawagarh-version-25",
+            "region": {
+              "id": "0x9be960fd1e"
+            },
+            "constituency_number": "55",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd1e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bindrawagarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd1d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:39.836Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bindrawagarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bindrawagarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607abe"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd25",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-sihawa",
+            "names": [
+              {
+                "name": "Sihawa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sihawa_Assembly_constituency",
+            "wikidata_qid": "Q55339241",
+            "node_created_on": "2025-01-29T03:59:42.700Z",
+            "active_version": {
+              "id": "0x9be960fd24"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd24"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd23"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd24",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-sihawa-version-25",
+            "region": {
+              "id": "0x9be960fd23"
+            },
+            "constituency_number": "56",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd23",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-sihawa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd22"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:41.819Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sihawa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-sihawa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ac4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd2a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kurud",
+            "names": [
+              {
+                "name": "Kurud"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kurud_Assembly_constituency",
+            "wikidata_qid": "Q55339242",
+            "node_created_on": "2025-01-29T03:59:44.330Z",
+            "active_version": {
+              "id": "0x9be960fd29"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd29"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd28"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd29",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kurud-version-25",
+            "region": {
+              "id": "0x9be960fd28"
+            },
+            "constituency_number": "57",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd28",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kurud-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd27"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:43.761Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kurud_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kurud"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055c2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd2f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dhamtari",
+            "names": [
+              {
+                "name": "Dhamtari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dhamtari_Assembly_constituency",
+            "wikidata_qid": "Q55339243",
+            "node_created_on": "2025-01-29T03:59:46.192Z",
+            "active_version": {
+              "id": "0x9be960fd2e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd2e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd2d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd2e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dhamtari-version-25",
+            "region": {
+              "id": "0x9be960fd2d"
+            },
+            "constituency_number": "58",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd2d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dhamtari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd2c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:45.332Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dhamtari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dhamtari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607acf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd34",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-sanjari-balod",
+            "names": [
+              {
+                "name": "Sanjari Balod"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sanjari_Balod_Assembly_constituency",
+            "wikidata_qid": "Q55339244",
+            "node_created_on": "2025-01-29T03:59:47.758Z",
+            "active_version": {
+              "id": "0x9be960fd33"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd33"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd32"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd33",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-sanjari-balod-version-25",
+            "region": {
+              "id": "0x9be960fd32"
+            },
+            "constituency_number": "59",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd32",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-sanjari-balod-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd31"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:46.961Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sanjari_Balod_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-sanjari-balod"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ad5"
+          },
+          {
+            "id": "0x9be9607ad6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd39",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dondi-lohara",
+            "names": [
+              {
+                "name": "Dondi Lohara"
+              },
+              {
+                "name": "Dondilohara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dondi_Lohara_Assembly_constituency",
+            "wikidata_qid": "Q55339245",
+            "node_created_on": "2025-01-29T03:59:49.958Z",
+            "active_version": {
+              "id": "0x9be960fd38"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd38"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd37"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd38",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dondi-lohara-version-25",
+            "region": {
+              "id": "0x9be960fd37"
+            },
+            "constituency_number": "60",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd37",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dondi-lohara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd36"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:49.294Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dondi_Lohara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dondi-lohara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607adc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd3e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-gunderdehi",
+            "names": [
+              {
+                "name": "Gunderdehi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gunderdehi_Assembly_constituency",
+            "wikidata_qid": "Q30599537",
+            "node_created_on": "2025-01-29T03:59:52.186Z",
+            "active_version": {
+              "id": "0x9be960fd3d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd3d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd3c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd3d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-gunderdehi-version-25",
+            "region": {
+              "id": "0x9be960fd3c"
+            },
+            "constituency_number": "61",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd3c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-gunderdehi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd3b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:51.547Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gunderdehi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-gunderdehi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960574d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd43",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-patan",
+            "names": [
+              {
+                "name": "Patan"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Patan,_Chhattisgarh_Assembly_constituency",
+            "wikidata_qid": "Q55339246",
+            "node_created_on": "2025-01-29T03:59:54.006Z",
+            "active_version": {
+              "id": "0x9be960fd42"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd42"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd41"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd42",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-patan-version-25",
+            "region": {
+              "id": "0x9be960fd41"
+            },
+            "constituency_number": "62",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd41",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-patan-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd40"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:53.040Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Patan,_Chhattisgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-patan"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607ae7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd48",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-durg-gramin",
+            "names": [
+              {
+                "name": "Durg Gramin"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Durg_Gramin_Assembly_constituency",
+            "wikidata_qid": "Q55339247",
+            "node_created_on": "2025-01-29T03:59:55.804Z",
+            "active_version": {
+              "id": "0x9be960fd47"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd47"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd46"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd47",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-durg-gramin-version-25",
+            "region": {
+              "id": "0x9be960fd46"
+            },
+            "constituency_number": "63",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd46",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-durg-gramin-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd45"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:55.234Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Durg_Gramin_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-durg-gramin"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607aed"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd4d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-durg-city",
+            "names": [
+              {
+                "name": "Durg City"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Durg_City_Assembly_constituency",
+            "wikidata_qid": "Q55339250",
+            "node_created_on": "2025-01-29T03:59:57.691Z",
+            "active_version": {
+              "id": "0x9be960fd4c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd4c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd4b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd4c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-durg-city-version-25",
+            "region": {
+              "id": "0x9be960fd4b"
+            },
+            "constituency_number": "64",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd4b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-durg-city-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd4a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:56.972Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Durg_City_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-durg-city"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607af3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd52",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bhilai-nagar",
+            "names": [
+              {
+                "name": "Bhilai Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhilai_Nagar_Assembly_constituency",
+            "wikidata_qid": "Q9656239",
+            "node_created_on": "2025-01-29T03:59:59.429Z",
+            "active_version": {
+              "id": "0x9be960fd51"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd51"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd50"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd51",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bhilai-nagar-version-25",
+            "region": {
+              "id": "0x9be960fd50"
+            },
+            "constituency_number": "65",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd50",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bhilai-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd4f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:59:58.750Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhilai_Nagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bhilai-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607af9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd57",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-vaishali-nagar",
+            "names": [
+              {
+                "name": "Vaishali Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Vaishali_Nagar_Assembly_constituency",
+            "wikidata_qid": "Q55339251",
+            "node_created_on": "2025-01-29T04:00:01.992Z",
+            "active_version": {
+              "id": "0x9be960fd56"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd56"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd55"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd56",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-vaishali-nagar-version-25",
+            "region": {
+              "id": "0x9be960fd55"
+            },
+            "constituency_number": "66",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd55",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-vaishali-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd54"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:01.275Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Vaishali_Nagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-vaishali-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607aff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd5c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-ahiwara",
+            "names": [
+              {
+                "name": "Ahiwara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ahiwara_Assembly_constituency",
+            "wikidata_qid": "Q55339252",
+            "node_created_on": "2025-01-29T04:00:04.011Z",
+            "active_version": {
+              "id": "0x9be960fd5b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd5b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd5a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd5b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-ahiwara-version-25",
+            "region": {
+              "id": "0x9be960fd5a"
+            },
+            "constituency_number": "67",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd5a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-ahiwara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd59"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:03.329Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ahiwara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-ahiwara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b05"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fd9c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-saja",
+            "names": [
+              {
+                "name": "Saja"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saja_Assembly_constituency",
+            "wikidata_qid": "Q55339253",
+            "node_created_on": "2025-01-29T04:00:06.610Z",
+            "active_version": {
+              "id": "0x9be960fd70"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fd70"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fd61"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fd70",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-saja-version-25",
+            "region": {
+              "id": "0x9be960fd61"
+            },
+            "constituency_number": "68",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fd61",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-saja-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fd60"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:04.976Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saja_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-saja"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055aa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe0b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bemetara",
+            "names": [
+              {
+                "name": "Bemetara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bemetara_Assembly_constituency",
+            "wikidata_qid": "Q55339254",
+            "node_created_on": "2025-01-29T04:00:26.971Z",
+            "active_version": {
+              "id": "0x9be960fe07"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe07"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe06"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe07",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bemetara-version-25",
+            "region": {
+              "id": "0x9be960fe06"
+            },
+            "constituency_number": "69",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe06",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bemetara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fdff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:26.262Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bemetara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bemetara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b10"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe14",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-navagarh",
+            "names": [
+              {
+                "name": "Navagarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Navagarh_Assembly_constituency",
+            "wikidata_qid": "Q55339255",
+            "node_created_on": "2025-01-29T04:00:30.050Z",
+            "active_version": {
+              "id": "0x9be960fe13"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe13"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe10"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe13",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-navagarh-version-25",
+            "region": {
+              "id": "0x9be960fe10"
+            },
+            "constituency_number": "70",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe10",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-navagarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe0f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:28.735Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Navagarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-navagarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b16"
+          },
+          {
+            "id": "0x9be9607b17"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe20",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-pandariya",
+            "names": [
+              {
+                "name": "Pandariya"
+              },
+              {
+                "name": "Pandaria"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pandariya_Assembly_constituency",
+            "wikidata_qid": "Q55339256",
+            "node_created_on": "2025-01-29T04:00:32.702Z",
+            "active_version": {
+              "id": "0x9be960fe1b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe1b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe19"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe1b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-pandariya-version-25",
+            "region": {
+              "id": "0x9be960fe19"
+            },
+            "constituency_number": "71",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe19",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-pandariya-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe18"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:31.585Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pandariya_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-pandariya"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b1d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe29",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kawardha",
+            "names": [
+              {
+                "name": "Kawardha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kawardha_Assembly_constituency",
+            "wikidata_qid": "Q55339257",
+            "node_created_on": "2025-01-29T04:00:35.376Z",
+            "active_version": {
+              "id": "0x9be960fe28"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe28"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe27"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe28",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kawardha-version-25",
+            "region": {
+              "id": "0x9be960fe27"
+            },
+            "constituency_number": "72",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe27",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kawardha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe26"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:34.497Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kawardha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kawardha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b23"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe2f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-khairagarh",
+            "names": [
+              {
+                "name": "Khairagarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khairagarh_Assembly_constituency",
+            "wikidata_qid": "Q55339258",
+            "node_created_on": "2025-01-29T04:00:37.322Z",
+            "active_version": {
+              "id": "0x9be960fe2e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe2e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe2d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe2e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-khairagarh-version-25",
+            "region": {
+              "id": "0x9be960fe2d"
+            },
+            "constituency_number": "73",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe2d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-khairagarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe2c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:36.502Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khairagarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-khairagarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b29"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe34",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dongargarh",
+            "names": [
+              {
+                "name": "Dongargarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dongargarh_Assembly_constituency",
+            "wikidata_qid": "Q55339261",
+            "node_created_on": "2025-01-29T04:00:39.061Z",
+            "active_version": {
+              "id": "0x9be960fe33"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe33"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe32"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe33",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dongargarh-version-25",
+            "region": {
+              "id": "0x9be960fe32"
+            },
+            "constituency_number": "74",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe32",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dongargarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe31"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:38.302Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dongargarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dongargarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605637"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe39",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-rajnandgaon",
+            "names": [
+              {
+                "name": "Rajnandgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajnandgaon_Assembly_constituency",
+            "wikidata_qid": "Q25209529",
+            "node_created_on": "2025-01-29T04:00:41.186Z",
+            "active_version": {
+              "id": "0x9be960fe38"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe38"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe37"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe38",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-rajnandgaon-version-25",
+            "region": {
+              "id": "0x9be960fe37"
+            },
+            "constituency_number": "75",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe37",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-rajnandgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe36"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:40.555Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajnandgaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-rajnandgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b34"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe45",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dongargaon",
+            "names": [
+              {
+                "name": "Dongargaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dongargaon_Assembly_constituency",
+            "wikidata_qid": "Q55339262",
+            "node_created_on": "2025-01-29T04:00:44.797Z",
+            "active_version": {
+              "id": "0x9be960fe44"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe44"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe42"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe44",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dongargaon-version-25",
+            "region": {
+              "id": "0x9be960fe42"
+            },
+            "constituency_number": "76",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe42",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dongargaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe41"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:43.057Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dongargaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dongargaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b3a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe4b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-khujji",
+            "names": [
+              {
+                "name": "Khujji"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khujji_Assembly_constituency",
+            "wikidata_qid": "Q55339263",
+            "node_created_on": "2025-01-29T04:00:46.741Z",
+            "active_version": {
+              "id": "0x9be960fe4a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe4a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe49"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe4a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-khujji-version-25",
+            "region": {
+              "id": "0x9be960fe49"
+            },
+            "constituency_number": "77",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe49",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-khujji-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe48"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:45.922Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khujji_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-khujji"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b40"
+          },
+          {
+            "id": "0x9be9607b41"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe51",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-mohla-manpur",
+            "names": [
+              {
+                "name": "Mohla-Manpur"
+              },
+              {
+                "name": "Mohal - Manpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mohla-Manpur_Assembly_constituency",
+            "wikidata_qid": "Q55339264",
+            "node_created_on": "2025-01-29T04:00:48.894Z",
+            "active_version": {
+              "id": "0x9be960fe50"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe50"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe4e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe50",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-mohla-manpur-version-25",
+            "region": {
+              "id": "0x9be960fe4e"
+            },
+            "constituency_number": "78",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe4e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-mohla-manpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe4d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:47.722Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mohla-Manpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-mohla-manpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b47"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe57",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-antagarh",
+            "names": [
+              {
+                "name": "Antagarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Antagarh_Assembly_constituency",
+            "wikidata_qid": "Q55339265",
+            "node_created_on": "2025-01-29T04:00:51.349Z",
+            "active_version": {
+              "id": "0x9be960fe56"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe56"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe55"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe56",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-antagarh-version-25",
+            "region": {
+              "id": "0x9be960fe55"
+            },
+            "constituency_number": "79",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe55",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-antagarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe53"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:50.122Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Antagarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-antagarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b4d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe5c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bhanupratappur",
+            "names": [
+              {
+                "name": "Bhanupratappur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhanupratappur_Assembly_constituency",
+            "wikidata_qid": "Q55339266",
+            "node_created_on": "2025-01-29T04:00:53.295Z",
+            "active_version": {
+              "id": "0x9be960fe5b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe5b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe5a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe5b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bhanupratappur-version-25",
+            "region": {
+              "id": "0x9be960fe5a"
+            },
+            "constituency_number": "80",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe5a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bhanupratappur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe59"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:52.578Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhanupratappur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bhanupratappur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055ec"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe64",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kanker",
+            "names": [
+              {
+                "name": "Kanker"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanker_Assembly_constituency",
+            "wikidata_qid": "Q55339268",
+            "node_created_on": "2025-01-29T04:00:56.030Z",
+            "active_version": {
+              "id": "0x9be960fe63"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe63"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe62"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe63",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kanker-version-25",
+            "region": {
+              "id": "0x9be960fe62"
+            },
+            "constituency_number": "81",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe62",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kanker-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe61"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:55.309Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanker_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kanker"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b58"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe6b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-keshkal",
+            "names": [
+              {
+                "name": "Keshkal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Keshkal_Assembly_constituency",
+            "wikidata_qid": "Q55339269",
+            "node_created_on": "2025-01-29T04:00:58.210Z",
+            "active_version": {
+              "id": "0x9be960fe68"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe68"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe67"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe68",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-keshkal-version-25",
+            "region": {
+              "id": "0x9be960fe67"
+            },
+            "constituency_number": "82",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe67",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-keshkal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe66"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:56.973Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Keshkal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-keshkal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055f9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe73",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-kondagaon",
+            "names": [
+              {
+                "name": "Kondagaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kondagaon_Assembly_constituency",
+            "wikidata_qid": "Q55339270",
+            "node_created_on": "2025-01-29T04:01:00.874Z",
+            "active_version": {
+              "id": "0x9be960fe72"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe72"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe70"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe72",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-kondagaon-version-25",
+            "region": {
+              "id": "0x9be960fe70"
+            },
+            "constituency_number": "83",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe70",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-kondagaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe6f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:00:59.969Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kondagaon_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-kondagaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605625"
+          },
+          {
+            "id": "0x9be9607b63"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe78",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-narayanpur",
+            "names": [
+              {
+                "name": "Narayanpur"
+              },
+              {
+                "name": "Narainpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Narayanpur_Assembly_constituency",
+            "wikidata_qid": "Q16938827",
+            "node_created_on": "2025-01-29T04:01:02.850Z",
+            "active_version": {
+              "id": "0x9be960fe77"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe77"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe76"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe77",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-narayanpur-version-25",
+            "region": {
+              "id": "0x9be960fe76"
+            },
+            "constituency_number": "84",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe76",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-narayanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe75"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:02.309Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Narayanpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-narayanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055a4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe7d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bastar",
+            "names": [
+              {
+                "name": "Bastar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bastar_Assembly_constituency",
+            "wikidata_qid": "Q55339272",
+            "node_created_on": "2025-01-29T04:01:05.482Z",
+            "active_version": {
+              "id": "0x9be960fe7c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe7c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe7b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe7c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bastar-version-25",
+            "region": {
+              "id": "0x9be960fe7b"
+            },
+            "constituency_number": "85",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe7b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bastar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe7a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:04.458Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bastar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bastar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b6e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe82",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-jagdalpur",
+            "names": [
+              {
+                "name": "Jagdalpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jagdalpur_Assembly_constituency",
+            "wikidata_qid": "Q55339273",
+            "node_created_on": "2025-01-29T04:01:07.735Z",
+            "active_version": {
+              "id": "0x9be960fe81"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe81"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe80"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe81",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-jagdalpur-version-25",
+            "region": {
+              "id": "0x9be960fe80"
+            },
+            "constituency_number": "86",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe80",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-jagdalpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe7f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:06.805Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jagdalpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-jagdalpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b74"
+          },
+          {
+            "id": "0x9be9607b75"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe87",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-chitrakot",
+            "names": [
+              {
+                "name": "Chitrakot"
+              },
+              {
+                "name": "Chitrakoat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chitrakot_Assembly_constituency",
+            "wikidata_qid": "Q55339274",
+            "node_created_on": "2025-01-29T04:01:09.983Z",
+            "active_version": {
+              "id": "0x9be960fe86"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe86"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe85"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe86",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-chitrakot-version-25",
+            "region": {
+              "id": "0x9be960fe85"
+            },
+            "constituency_number": "87",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe85",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-chitrakot-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe84"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:08.860Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chitrakot_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-chitrakot"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b7b"
+          },
+          {
+            "id": "0x9be96055bc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe8c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-dantewara",
+            "names": [
+              {
+                "name": "Dantewara"
+              },
+              {
+                "name": "Dantewada"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dantewara_Assembly_constituency",
+            "wikidata_qid": "Q55339275",
+            "node_created_on": "2025-01-29T04:01:11.752Z",
+            "active_version": {
+              "id": "0x9be960fe8b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe8b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe8a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe8b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-dantewara-version-25",
+            "region": {
+              "id": "0x9be960fe8a"
+            },
+            "constituency_number": "88",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe8a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-dantewara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe89"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:11.033Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dantewara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-dantewara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96055b0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe91",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-bijapur",
+            "names": [
+              {
+                "name": "Bijapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bijapur_Assembly_constituency",
+            "wikidata_qid": "Q55339276",
+            "node_created_on": "2025-01-29T04:01:13.947Z",
+            "active_version": {
+              "id": "0x9be960fe90"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe90"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe8f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe90",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-bijapur-version-25",
+            "region": {
+              "id": "0x9be960fe8f"
+            },
+            "constituency_number": "89",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe8f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-bijapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe8e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:13.198Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bijapur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-bijapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9607b86"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be960fe96",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-cg-konta",
+            "names": [
+              {
+                "name": "Konta"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Konta_Assembly_constituency",
+            "wikidata_qid": "Q55339278",
+            "node_created_on": "2025-01-29T04:01:16.233Z",
+            "active_version": {
+              "id": "0x9be960fe95"
+            },
+            "versions": [
+              {
+                "id": "0x9be960fe95"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960fe94"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be960fe95",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-cg-konta-version-25",
+            "region": {
+              "id": "0x9be960fe94"
+            },
+            "constituency_number": "90",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be960fe94",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-cg-konta-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960fe93"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-chhattisgarh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T04:01:15.209Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Konta_Assembly_constituency"
+        ],
+        "name_id": "in-vc-cg-konta"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T04:01:16.853Z"
+}

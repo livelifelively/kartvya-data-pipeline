@@ -305,5 +305,5 @@ export async function deleteAllLokSabhaNodesForAStateOrUT(stateNameId: string) {
   // }
   // console.log(JSON.stringify(baseObject));
 
-  deleteAllVidhanSabhaNodesForAStateOrUT("in-sut-madhya-pradesh");
+  deleteAllVidhanSabhaNodesForAStateOrUT("in-sut-maharashtra");
 })();

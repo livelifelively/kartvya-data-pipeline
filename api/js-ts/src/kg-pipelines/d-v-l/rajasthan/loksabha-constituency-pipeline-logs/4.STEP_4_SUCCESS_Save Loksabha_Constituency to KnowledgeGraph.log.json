@@ -1,0 +1,1752 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606bf0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f54a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-ganganagar",
+            "names": [
+              {
+                "name": "Ganganagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ganganagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5521052",
+            "node_created_on": "2025-01-29T03:14:00.524Z",
+            "active_version": {
+              "id": "0x9be960f549"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f549"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f548"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f549",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-ganganagar-version-25",
+            "region": {
+              "id": "0x9be960f548"
+            },
+            "constituency_number": "1",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f548",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-ganganagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f547"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:59.616Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ganganagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-ganganagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fad"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f54f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-bikaner",
+            "names": [
+              {
+                "name": "Bikaner"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bikaner_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4907311",
+            "node_created_on": "2025-01-29T03:14:02.382Z",
+            "active_version": {
+              "id": "0x9be960f54e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f54e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f54d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f54e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-bikaner-version-25",
+            "region": {
+              "id": "0x9be960f54d"
+            },
+            "constituency_number": "2",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f54d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-bikaner-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f54c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:01.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bikaner_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-bikaner"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fbf"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f554",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-churu",
+            "names": [
+              {
+                "name": "Churu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Churu_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5118333",
+            "node_created_on": "2025-01-29T03:14:03.939Z",
+            "active_version": {
+              "id": "0x9be960f553"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f553"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f552"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f553",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-churu-version-25",
+            "region": {
+              "id": "0x9be960f552"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f552",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-churu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f551"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:03.410Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Churu_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-churu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606003"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f559",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jhunjhunu",
+            "names": [
+              {
+                "name": "Jhunjhunu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhunjhunu_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6191216",
+            "node_created_on": "2025-01-29T03:14:06.278Z",
+            "active_version": {
+              "id": "0x9be960f558"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f558"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f557"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f558",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jhunjhunu-version-25",
+            "region": {
+              "id": "0x9be960f557"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f557",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jhunjhunu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f556"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:05.496Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhunjhunu_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jhunjhunu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606052"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f55e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-sikar",
+            "names": [
+              {
+                "name": "Sikar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sikar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7513596",
+            "node_created_on": "2025-01-29T03:14:08.223Z",
+            "active_version": {
+              "id": "0x9be960f55d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f55d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f55c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f55d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-sikar-version-25",
+            "region": {
+              "id": "0x9be960f55c"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f55c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-sikar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f55b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:07.401Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sikar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-sikar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c0a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f563",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jaipur-rural",
+            "names": [
+              {
+                "name": "Jaipur Rural"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaipur_Rural_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6124137",
+            "node_created_on": "2025-01-29T03:14:10.294Z",
+            "active_version": {
+              "id": "0x9be960f562"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f562"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f561"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f562",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jaipur-rural-version-25",
+            "region": {
+              "id": "0x9be960f561"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f561",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jaipur-rural-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f560"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:09.185Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaipur_Rural_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jaipur-rural"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605feb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f568",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jaipur",
+            "names": [
+              {
+                "name": "Jaipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6124117",
+            "node_created_on": "2025-01-29T03:14:12.013Z",
+            "active_version": {
+              "id": "0x9be960f567"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f567"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f566"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f567",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jaipur-version-25",
+            "region": {
+              "id": "0x9be960f566"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f566",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jaipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f565"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:11.396Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jaipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605f7c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f56d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-alwar",
+            "names": [
+              {
+                "name": "Alwar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Alwar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4738368",
+            "node_created_on": "2025-01-29T03:14:14.038Z",
+            "active_version": {
+              "id": "0x9be960f56c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f56c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f56b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f56c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-alwar-version-25",
+            "region": {
+              "id": "0x9be960f56b"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f56b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-alwar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f56a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:13.343Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Alwar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-alwar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fa1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f572",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-bharatpur",
+            "names": [
+              {
+                "name": "Bharatpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bharatpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4901252",
+            "node_created_on": "2025-01-29T03:14:15.896Z",
+            "active_version": {
+              "id": "0x9be960f571"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f571"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f570"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f571",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-bharatpur-version-25",
+            "region": {
+              "id": "0x9be960f570"
+            },
+            "constituency_number": "9",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f570",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-bharatpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f56f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:15.007Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bharatpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-bharatpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c1f"
+          },
+          {
+            "id": "0x9be960f577"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f578",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-karauli–dholpur",
+            "names": [
+              {
+                "name": "Karauli–Dholpur"
+              },
+              {
+                "name": "Karauli - Dholpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karauli%E2%80%93Dholpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6368815",
+            "node_created_on": "2025-01-29T03:14:18.320Z",
+            "active_version": {
+              "id": "0x9be960f576"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f576"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f575"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f576",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-karauli–dholpur-version-25",
+            "region": {
+              "id": "0x9be960f575"
+            },
+            "constituency_number": "10",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f575",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-karauli–dholpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f574"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:17.207Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karauli%E2%80%93Dholpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-karauli–dholpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fc5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f57d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-dausa",
+            "names": [
+              {
+                "name": "Dausa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dausa_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5228102",
+            "node_created_on": "2025-01-29T03:14:20.748Z",
+            "active_version": {
+              "id": "0x9be960f57c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f57c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f57b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f57c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-dausa-version-25",
+            "region": {
+              "id": "0x9be960f57b"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f57b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-dausa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f57a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:19.869Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dausa_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-dausa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c2b"
+          },
+          {
+            "id": "0x9be960f582"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f583",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-tonk–sawai-madhopur",
+            "names": [
+              {
+                "name": "Tonk–Sawai Madhopur"
+              },
+              {
+                "name": "Tonk - Sawai Madhopur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tonk%E2%80%93Sawai_Madhopur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7821522",
+            "node_created_on": "2025-01-29T03:14:22.475Z",
+            "active_version": {
+              "id": "0x9be960f581"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f581"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f580"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f581",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-tonk–sawai-madhopur-version-25",
+            "region": {
+              "id": "0x9be960f580"
+            },
+            "constituency_number": "12",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f580",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-tonk–sawai-madhopur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f57f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:21.843Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tonk%E2%80%93Sawai_Madhopur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-tonk–sawai-madhopur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605f76"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f588",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-ajmer",
+            "names": [
+              {
+                "name": "Ajmer"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ajmer_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4699904",
+            "node_created_on": "2025-01-29T03:14:24.758Z",
+            "active_version": {
+              "id": "0x9be960f587"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f587"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f586"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f587",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-ajmer-version-25",
+            "region": {
+              "id": "0x9be960f586"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f586",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-ajmer-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f585"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:24.095Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ajmer_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-ajmer"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606028"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f58d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-nagaur",
+            "names": [
+              {
+                "name": "Nagaur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagaur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6958697",
+            "node_created_on": "2025-01-29T03:14:26.860Z",
+            "active_version": {
+              "id": "0x9be960f58c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f58c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f58b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f58c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-nagaur-version-25",
+            "region": {
+              "id": "0x9be960f58b"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f58b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-nagaur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f58a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:25.835Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagaur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-nagaur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960602e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f592",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-pali",
+            "names": [
+              {
+                "name": "Pali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pali_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7127504",
+            "node_created_on": "2025-01-29T03:14:28.494Z",
+            "active_version": {
+              "id": "0x9be960f591"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f591"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f590"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f591",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-pali-version-25",
+            "region": {
+              "id": "0x9be960f590"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f590",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-pali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f58f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:27.781Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pali_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-pali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606009"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f597",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jodhpur",
+            "names": [
+              {
+                "name": "Jodhpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jodhpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6207835",
+            "node_created_on": "2025-01-29T03:14:30.721Z",
+            "active_version": {
+              "id": "0x9be960f596"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f596"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f595"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f596",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jodhpur-version-25",
+            "region": {
+              "id": "0x9be960f595"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f595",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jodhpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f594"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:30.180Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jodhpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jodhpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605f94"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f59c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-barmer",
+            "names": [
+              {
+                "name": "Barmer"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barmer_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4861268",
+            "node_created_on": "2025-01-29T03:14:32.696Z",
+            "active_version": {
+              "id": "0x9be960f59b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f59b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f59a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f59b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-barmer-version-25",
+            "region": {
+              "id": "0x9be960f59a"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f59a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-barmer-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f599"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:32.085Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barmer_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-barmer"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605ff7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5a1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jalore",
+            "names": [
+              {
+                "name": "Jalore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jalore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6126953",
+            "node_created_on": "2025-01-29T03:14:34.710Z",
+            "active_version": {
+              "id": "0x9be960f5a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f59f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5a0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jalore-version-25",
+            "region": {
+              "id": "0x9be960f59f"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f59f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jalore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f59e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:34.176Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jalore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jalore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960606a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5a6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-udaipur",
+            "names": [
+              {
+                "name": "Udaipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Udaipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7876885",
+            "node_created_on": "2025-01-29T03:14:36.494Z",
+            "active_version": {
+              "id": "0x9be960f5a5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5a5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5a4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5a5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-udaipur-version-25",
+            "region": {
+              "id": "0x9be960f5a4"
+            },
+            "constituency_number": "19",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5a4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-udaipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5a3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:35.751Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Udaipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-udaipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605f88"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5ab",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-banswara",
+            "names": [
+              {
+                "name": "Banswara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Banswara_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4857164",
+            "node_created_on": "2025-01-29T03:14:38.298Z",
+            "active_version": {
+              "id": "0x9be960f5aa"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5aa"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5a9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5aa",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-banswara-version-25",
+            "region": {
+              "id": "0x9be960f5a9"
+            },
+            "constituency_number": "20",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5a9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-banswara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5a8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:37.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Banswara_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-banswara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fb9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5b0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-chittorgarh",
+            "names": [
+              {
+                "name": "Chittorgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chittorgarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5102518",
+            "node_created_on": "2025-01-29T03:14:40.246Z",
+            "active_version": {
+              "id": "0x9be960f5af"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5af"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5ae"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5af",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-chittorgarh-version-25",
+            "region": {
+              "id": "0x9be960f5ae"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5ae",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-chittorgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5ad"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:39.352Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chittorgarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-chittorgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606040"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5b5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-rajsamand",
+            "names": [
+              {
+                "name": "Rajsamand"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajsamand_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7286417",
+            "node_created_on": "2025-01-29T03:14:42.117Z",
+            "active_version": {
+              "id": "0x9be960f5b4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5b4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5b3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5b4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-rajsamand-version-25",
+            "region": {
+              "id": "0x9be960f5b3"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5b3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-rajsamand-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5b2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:41.298Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajsamand_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-rajsamand"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605fa7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5ba",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-bhilwara",
+            "names": [
+              {
+                "name": "Bhilwara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhilwara_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4901736",
+            "node_created_on": "2025-01-29T03:14:43.794Z",
+            "active_version": {
+              "id": "0x9be960f5b9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5b9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5b8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5b9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-bhilwara-version-25",
+            "region": {
+              "id": "0x9be960f5b8"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5b8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-bhilwara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5b7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:43.242Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhilwara_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-bhilwara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606022"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5bf",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-kota",
+            "names": [
+              {
+                "name": "Kota"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kota_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6433781",
+            "node_created_on": "2025-01-29T03:14:46.500Z",
+            "active_version": {
+              "id": "0x9be960f5be"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5be"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5bd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5be",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-kota-version-25",
+            "region": {
+              "id": "0x9be960f5bd"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5bd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-kota-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5bc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:45.704Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kota_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-kota"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606c6e"
+          },
+          {
+            "id": "0x9be960f5c4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f5c5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-rj-jhalawar–baran",
+            "names": [
+              {
+                "name": "Jhalawar–Baran"
+              },
+              {
+                "name": "Jhalawar - Baran"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhalawar%E2%80%93Baran_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6190793",
+            "node_created_on": "2025-01-29T03:14:48.682Z",
+            "active_version": {
+              "id": "0x9be960f5c3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f5c3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f5c2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f5c3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-rj-jhalawar–baran-version-25",
+            "region": {
+              "id": "0x9be960f5c2"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f5c2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-rj-jhalawar–baran-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f5c1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-rajasthan-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:14:47.953Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhalawar%E2%80%93Baran_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-rj-jhalawar–baran"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:14:49.691Z"
+}

@@ -1,0 +1,1458 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9605e34"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f49b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-bargarh",
+            "names": [
+              {
+                "name": "Bargarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bargarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4860546",
+            "node_created_on": "2025-01-29T03:12:50.486Z",
+            "active_version": {
+              "id": "0x9be960f49a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f49a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f499"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f49a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-bargarh-version-25",
+            "region": {
+              "id": "0x9be960f499"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f499",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-bargarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f498"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:49.798Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bargarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-bargarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605ecd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4a0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-sundargarh",
+            "names": [
+              {
+                "name": "Sundargarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sundargarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7639274",
+            "node_created_on": "2025-01-29T03:12:52.751Z",
+            "active_version": {
+              "id": "0x9be960f49f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f49f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f49e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f49f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-sundargarh-version-25",
+            "region": {
+              "id": "0x9be960f49e"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f49e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-sundargarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f49d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:51.524Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sundargarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-sundargarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605ec1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4a5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-sambalpur",
+            "names": [
+              {
+                "name": "Sambalpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sambalpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7255845",
+            "node_created_on": "2025-01-29T03:12:54.802Z",
+            "active_version": {
+              "id": "0x9be960f4a4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4a4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4a3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4a4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-sambalpur-version-25",
+            "region": {
+              "id": "0x9be960f4a3"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4a3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-sambalpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4a2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:53.947Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sambalpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-sambalpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b49"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4aa",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-keonjhar",
+            "names": [
+              {
+                "name": "Keonjhar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Keonjhar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q11059079",
+            "node_created_on": "2025-01-29T03:12:56.875Z",
+            "active_version": {
+              "id": "0x9be960f4a9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4a9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4a8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4a9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-keonjhar-version-25",
+            "region": {
+              "id": "0x9be960f4a8"
+            },
+            "constituency_number": "4",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4a8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-keonjhar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4a7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:55.740Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Keonjhar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-keonjhar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e9c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4af",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-mayurbhanj",
+            "names": [
+              {
+                "name": "Mayurbhanj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mayurbhanj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6798125",
+            "node_created_on": "2025-01-29T03:12:58.523Z",
+            "active_version": {
+              "id": "0x9be960f4ae"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4ae"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4ad"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4ae",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-mayurbhanj-version-25",
+            "region": {
+              "id": "0x9be960f4ad"
+            },
+            "constituency_number": "5",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4ad",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-mayurbhanj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4ac"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:57.879Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mayurbhanj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-mayurbhanj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e3a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4b4",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-balasore",
+            "names": [
+              {
+                "name": "Balasore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Balasore_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4850118",
+            "node_created_on": "2025-01-29T03:13:00.740Z",
+            "active_version": {
+              "id": "0x9be960f4b3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4b3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4b2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4b3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-balasore-version-25",
+            "region": {
+              "id": "0x9be960f4b2"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4b2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-balasore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4b1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:59.920Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Balasore_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-balasore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e28"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4b9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-bhadrak",
+            "names": [
+              {
+                "name": "Bhadrak"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhadrak_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4900550",
+            "node_created_on": "2025-01-29T03:13:02.696Z",
+            "active_version": {
+              "id": "0x9be960f4b8"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4b8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4b7"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4b8",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-bhadrak-version-25",
+            "region": {
+              "id": "0x9be960f4b7"
+            },
+            "constituency_number": "7",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4b7",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-bhadrak-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4b6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:01.693Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhadrak_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-bhadrak"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e65"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4be",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-jajpur",
+            "names": [
+              {
+                "name": "Jajpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jajpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6124378",
+            "node_created_on": "2025-01-29T03:13:04.286Z",
+            "active_version": {
+              "id": "0x9be960f4bd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4bd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4bc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4bd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-jajpur-version-25",
+            "region": {
+              "id": "0x9be960f4bc"
+            },
+            "constituency_number": "8",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4bc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-jajpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4bb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:03.711Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jajpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-jajpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e4d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4c3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-dhenkanal",
+            "names": [
+              {
+                "name": "Dhenkanal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dhenkanal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5269512",
+            "node_created_on": "2025-01-29T03:13:05.989Z",
+            "active_version": {
+              "id": "0x9be960f4c2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4c2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4c1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4c2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-dhenkanal-version-25",
+            "region": {
+              "id": "0x9be960f4c1"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4c1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-dhenkanal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4c0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:05.350Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dhenkanal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-dhenkanal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b68"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4c8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-bolangir",
+            "names": [
+              {
+                "name": "Bolangir"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bolangir_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4938935",
+            "node_created_on": "2025-01-29T03:13:07.908Z",
+            "active_version": {
+              "id": "0x9be960f4c7"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4c7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4c6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4c7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-bolangir-version-25",
+            "region": {
+              "id": "0x9be960f4c6"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4c6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-bolangir-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4c5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:07.274Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bolangir_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-bolangir"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e7e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4cd",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-kalahandi",
+            "names": [
+              {
+                "name": "Kalahandi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalahandi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6350138",
+            "node_created_on": "2025-01-29T03:13:10.177Z",
+            "active_version": {
+              "id": "0x9be960f4cc"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4cc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4cb"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4cc",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-kalahandi-version-25",
+            "region": {
+              "id": "0x9be960f4cb"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4cb",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-kalahandi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4ca"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:09.035Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalahandi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-kalahandi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605ea2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4d2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-nabarangpur",
+            "names": [
+              {
+                "name": "Nabarangpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nabarangpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6956755",
+            "node_created_on": "2025-01-29T03:13:11.996Z",
+            "active_version": {
+              "id": "0x9be960f4d1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4d1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4d0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4d1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-nabarangpur-version-25",
+            "region": {
+              "id": "0x9be960f4d0"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4d0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-nabarangpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4cf"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:11.308Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nabarangpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-nabarangpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e84"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4d7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-kandhamal",
+            "names": [
+              {
+                "name": "Kandhamal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kandhamal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q11679513",
+            "node_created_on": "2025-01-29T03:13:13.528Z",
+            "active_version": {
+              "id": "0x9be960f4d6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4d6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4d5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4d6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-kandhamal-version-25",
+            "region": {
+              "id": "0x9be960f4d5"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4d5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-kandhamal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4d4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:13.032Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kandhamal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-kandhamal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e41"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4dc",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-cuttack",
+            "names": [
+              {
+                "name": "Cuttack"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Cuttack_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5196922",
+            "node_created_on": "2025-01-29T03:13:15.496Z",
+            "active_version": {
+              "id": "0x9be960f4db"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4db"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4da"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4db",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-cuttack-version-25",
+            "region": {
+              "id": "0x9be960f4da"
+            },
+            "constituency_number": "14",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4da",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-cuttack-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4d9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:14.769Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Cuttack_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-cuttack"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e90"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4e1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-kendrapara",
+            "names": [
+              {
+                "name": "Kendrapara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kendrapara_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6389017",
+            "node_created_on": "2025-01-29T03:13:17.842Z",
+            "active_version": {
+              "id": "0x9be960f4e0"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4e0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4df"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4e0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-kendrapara-version-25",
+            "region": {
+              "id": "0x9be960f4df"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4df",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-kendrapara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4de"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:16.687Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kendrapara_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-kendrapara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e6b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4e6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-jagatsinghpur",
+            "names": [
+              {
+                "name": "Jagatsinghpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jagatsinghpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6122268",
+            "node_created_on": "2025-01-29T03:13:20.912Z",
+            "active_version": {
+              "id": "0x9be960f4e5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4e5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4e4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4e5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-jagatsinghpur-version-25",
+            "region": {
+              "id": "0x9be960f4e4"
+            },
+            "constituency_number": "16",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4e4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-jagatsinghpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4e3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:19.889Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jagatsinghpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-jagatsinghpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605eb5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4eb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-puri",
+            "names": [
+              {
+                "name": "Puri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Puri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6528588",
+            "node_created_on": "2025-01-29T03:13:23.373Z",
+            "active_version": {
+              "id": "0x9be960f4ea"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4ea"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4e9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4ea",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-puri-version-25",
+            "region": {
+              "id": "0x9be960f4e9"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4e9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-puri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4e8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:22.756Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Puri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-puri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b91"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4f0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-bhubaneswar",
+            "names": [
+              {
+                "name": "Bhubaneswar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhubaneswar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4902092",
+            "node_created_on": "2025-01-29T03:13:25.008Z",
+            "active_version": {
+              "id": "0x9be960f4ef"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4ef"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4ee"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4ef",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-bhubaneswar-version-25",
+            "region": {
+              "id": "0x9be960f4ee"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4ee",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-bhubaneswar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4ed"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:24.321Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhubaneswar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-bhubaneswar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b97"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4f5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-aska",
+            "names": [
+              {
+                "name": "Aska"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aska_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4807113",
+            "node_created_on": "2025-01-29T03:13:26.750Z",
+            "active_version": {
+              "id": "0x9be960f4f4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4f4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4f3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4f4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-aska-version-25",
+            "region": {
+              "id": "0x9be960f4f3"
+            },
+            "constituency_number": "19",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4f3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-aska-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4f2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:25.849Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aska_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-aska"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606b9d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4fa",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-berhampur",
+            "names": [
+              {
+                "name": "Berhampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Berhampur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7255284",
+            "node_created_on": "2025-01-29T03:13:28.707Z",
+            "active_version": {
+              "id": "0x9be960f4f9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4f9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4f8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4f9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-berhampur-version-25",
+            "region": {
+              "id": "0x9be960f4f8"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4f8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-berhampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4f7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:27.683Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Berhampur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-berhampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e8a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f4ff",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-od-koraput",
+            "names": [
+              {
+                "name": "Koraput"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Koraput_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6431426",
+            "node_created_on": "2025-01-29T03:13:30.694Z",
+            "active_version": {
+              "id": "0x9be960f4fe"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f4fe"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f4fd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f4fe",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-od-koraput-version-25",
+            "region": {
+              "id": "0x9be960f4fd"
+            },
+            "constituency_number": "21",
+            "reservation": "ST"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f4fd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-od-koraput-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f4fc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-odisha-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:13:29.825Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Koraput_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-od-koraput"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:13:30.997Z"
+}

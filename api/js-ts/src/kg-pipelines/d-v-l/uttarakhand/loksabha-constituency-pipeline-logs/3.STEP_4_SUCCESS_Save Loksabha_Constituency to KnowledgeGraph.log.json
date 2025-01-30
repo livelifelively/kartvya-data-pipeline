@@ -1,0 +1,366 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9606475"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be96147f0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-uk-tehri-garhwal",
+            "names": [
+              {
+                "name": "Tehri Garhwal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tehri_Garhwal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7694914",
+            "node_created_on": "2025-01-29T23:10:33.208Z",
+            "active_version": {
+              "id": "0x9be96147ef"
+            },
+            "versions": [
+              {
+                "id": "0x9be96147ef"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96147ee"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96147ef",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-uk-tehri-garhwal-version-25",
+            "region": {
+              "id": "0x9be96147ee"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96147ee",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-uk-tehri-garhwal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96147ed"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttarakhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T23:10:32.366Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tehri_Garhwal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-uk-tehri-garhwal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f58"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be96147f5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-uk-garhwal",
+            "names": [
+              {
+                "name": "Garhwal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Garhwal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632618",
+            "node_created_on": "2025-01-29T23:10:34.805Z",
+            "active_version": {
+              "id": "0x9be96147f4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96147f4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96147f3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96147f4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-uk-garhwal-version-25",
+            "region": {
+              "id": "0x9be96147f3"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96147f3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-uk-garhwal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96147f2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttarakhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T23:10:34.233Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Garhwal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-uk-garhwal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606439"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be96147fa",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-uk-almora",
+            "names": [
+              {
+                "name": "Almora"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Almora_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3632592",
+            "node_created_on": "2025-01-29T23:10:37.346Z",
+            "active_version": {
+              "id": "0x9be96147f9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96147f9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96147f8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96147f9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-uk-almora-version-25",
+            "region": {
+              "id": "0x9be96147f8"
+            },
+            "constituency_number": "3",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96147f8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-uk-almora-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96147f7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttarakhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T23:10:36.064Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Almora_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-uk-almora"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f63"
+          },
+          {
+            "id": "0x9be96147ff"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9614800",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-uk-nainital–udhamsingh-nagar",
+            "names": [
+              {
+                "name": "Nainital–Udhamsingh Nagar"
+              },
+              {
+                "name": "Nainital - Udhamsingh Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nainital%E2%80%93Udhamsingh_Nagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6959714",
+            "node_created_on": "2025-01-29T23:10:39.068Z",
+            "active_version": {
+              "id": "0x9be96147fe"
+            },
+            "versions": [
+              {
+                "id": "0x9be96147fe"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96147fd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be96147fe",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-uk-nainital–udhamsingh-nagar-version-25",
+            "region": {
+              "id": "0x9be96147fd"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be96147fd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-uk-nainital–udhamsingh-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96147fc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttarakhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T23:10:38.431Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nainital%E2%80%93Udhamsingh_Nagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-uk-nainital–udhamsingh-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606457"
+          },
+          {
+            "id": "0x9be9606f6a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be9614805",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-uk-haridwar",
+            "names": [
+              {
+                "name": "Haridwar"
+              },
+              {
+                "name": "Hardwar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Haridwar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5657364",
+            "node_created_on": "2025-01-29T23:10:41.919Z",
+            "active_version": {
+              "id": "0x9be9614804"
+            },
+            "versions": [
+              {
+                "id": "0x9be9614804"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9614803"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be9614804",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-uk-haridwar-version-25",
+            "region": {
+              "id": "0x9be9614803"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be9614803",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-uk-haridwar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9614802"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttarakhand-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T23:10:41.095Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Haridwar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-uk-haridwar"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T23:10:42.371Z"
+}

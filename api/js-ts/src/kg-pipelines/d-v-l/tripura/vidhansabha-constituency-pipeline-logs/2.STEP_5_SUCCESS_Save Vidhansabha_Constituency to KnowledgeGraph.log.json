@@ -1,0 +1,4203 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be9613358"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613359",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-simna",
+            "names": [
+              {
+                "name": "Simna"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Simna_Assembly_constituency",
+            "wikidata_qid": "Q48734859",
+            "node_created_on": "2025-01-29T14:06:53.759Z",
+            "active_version": {
+              "id": "0x9be9613357"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613357"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613356"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613357",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-simna-version-25",
+            "region": {
+              "id": "0x9be9613356"
+            },
+            "constituency_number": "1",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613356",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-simna-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613355"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:06:52.528Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Simna_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-simna"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961335e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961335f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-mohanpur",
+            "names": [
+              {
+                "name": "Mohanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mohanpur_Assembly_constituency",
+            "wikidata_qid": "Q48734861",
+            "node_created_on": "2025-01-29T14:06:55.909Z",
+            "active_version": {
+              "id": "0x9be961335d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961335d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961335c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961335d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-mohanpur-version-25",
+            "region": {
+              "id": "0x9be961335c"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961335c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-mohanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961335b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:06:55.186Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mohanpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-mohanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613364"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613365",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-bamutia",
+            "names": [
+              {
+                "name": "Bamutia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bamutia_Assembly_constituency",
+            "wikidata_qid": "Q48734895",
+            "node_created_on": "2025-01-29T14:06:58.264Z",
+            "active_version": {
+              "id": "0x9be9613363"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613363"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613362"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613363",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-bamutia-version-25",
+            "region": {
+              "id": "0x9be9613362"
+            },
+            "constituency_number": "3",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613362",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-bamutia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613361"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:06:57.549Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bamutia_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-bamutia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961336a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961336b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-barjala",
+            "names": [
+              {
+                "name": "Barjala"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barjala_Assembly_constituency",
+            "wikidata_qid": "Q48734898",
+            "node_created_on": "2025-01-29T14:07:00.292Z",
+            "active_version": {
+              "id": "0x9be9613369"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613369"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613368"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613369",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-barjala-version-25",
+            "region": {
+              "id": "0x9be9613368"
+            },
+            "constituency_number": "4",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613368",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-barjala-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613367"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:06:59.798Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barjala_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-barjala"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613370"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613371",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-khayerpur",
+            "names": [
+              {
+                "name": "Khayerpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khayerpur_Assembly_constituency",
+            "wikidata_qid": "Q48734949",
+            "node_created_on": "2025-01-29T14:07:02.753Z",
+            "active_version": {
+              "id": "0x9be961336f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961336f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961336e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961336f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-khayerpur-version-25",
+            "region": {
+              "id": "0x9be961336e"
+            },
+            "constituency_number": "5",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961336e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-khayerpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961336d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:01.952Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khayerpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-khayerpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613376"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613377",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-agartala",
+            "names": [
+              {
+                "name": "Agartala"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Agartala_Assembly_constituency",
+            "wikidata_qid": "Q17011469",
+            "node_created_on": "2025-01-29T14:07:04.729Z",
+            "active_version": {
+              "id": "0x9be9613375"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613375"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613374"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613375",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-agartala-version-25",
+            "region": {
+              "id": "0x9be9613374"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613374",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-agartala-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613373"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:03.999Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Agartala_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-agartala"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9608762"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961337c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-ramnagar",
+            "names": [
+              {
+                "name": "Ramnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramnagar,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q48734966",
+            "node_created_on": "2025-01-29T14:07:07.031Z",
+            "active_version": {
+              "id": "0x9be961337b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961337b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961337a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961337b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-ramnagar-version-25",
+            "region": {
+              "id": "0x9be961337a"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961337a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-ramnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613379"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:06.016Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramnagar,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-ramnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613381"
+          },
+          {
+            "id": "0x9be9613382"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613383",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-town-bordowali",
+            "names": [
+              {
+                "name": "Town Bordowali"
+              },
+              {
+                "name": "Town Bardowali"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Town_Bordowali_Assembly_constituency",
+            "wikidata_qid": "Q48734968",
+            "node_created_on": "2025-01-29T14:07:08.979Z",
+            "active_version": {
+              "id": "0x9be9613380"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613380"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961337f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613380",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-town-bordowali-version-25",
+            "region": {
+              "id": "0x9be961337f"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961337f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-town-bordowali-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961337e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:08.315Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Town_Bordowali_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-town-bordowali"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613388"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613389",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-banamalipur",
+            "names": [
+              {
+                "name": "Banamalipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Banamalipur_Assembly_constituency",
+            "wikidata_qid": "Q48734973",
+            "node_created_on": "2025-01-29T14:07:12.309Z",
+            "active_version": {
+              "id": "0x9be9613387"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613387"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613386"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613387",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-banamalipur-version-25",
+            "region": {
+              "id": "0x9be9613386"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613386",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-banamalipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613385"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:11.578Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Banamalipur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-banamalipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961338e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961338f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-majlishpur",
+            "names": [
+              {
+                "name": "Majlishpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Majlishpur_Assembly_constituency",
+            "wikidata_qid": "Q30599533",
+            "node_created_on": "2025-01-29T14:07:14.712Z",
+            "active_version": {
+              "id": "0x9be961338d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961338d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961338c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961338d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-majlishpur-version-25",
+            "region": {
+              "id": "0x9be961338c"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961338c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-majlishpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961338b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:14.032Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Majlishpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-majlishpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613394"
+          },
+          {
+            "id": "0x9be9613395"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613396",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-mandaibazar",
+            "names": [
+              {
+                "name": "Mandaibazar"
+              },
+              {
+                "name": "Mandai Bazar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mandaibazar_Assembly_constituency",
+            "wikidata_qid": "Q54449676",
+            "node_created_on": "2025-01-29T14:07:17.189Z",
+            "active_version": {
+              "id": "0x9be9613393"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613393"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613392"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613393",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-mandaibazar-version-25",
+            "region": {
+              "id": "0x9be9613392"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613392",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-mandaibazar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613391"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:16.492Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mandaibazar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-mandaibazar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961339b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961339c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-takarjala",
+            "names": [
+              {
+                "name": "Takarjala"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Takarjala_Assembly_constituency",
+            "wikidata_qid": "Q54449764",
+            "node_created_on": "2025-01-29T14:07:20.793Z",
+            "active_version": {
+              "id": "0x9be961339a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961339a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613399"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961339a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-takarjala-version-25",
+            "region": {
+              "id": "0x9be9613399"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613399",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-takarjala-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613398"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:19.312Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Takarjala_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-takarjala"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960603a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133a1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-pratapgarh",
+            "names": [
+              {
+                "name": "Pratapgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pratapgarh,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q54449770",
+            "node_created_on": "2025-01-29T14:07:22.724Z",
+            "active_version": {
+              "id": "0x9be96133a0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133a0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961339f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133a0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-pratapgarh-version-25",
+            "region": {
+              "id": "0x9be961339f"
+            },
+            "constituency_number": "13",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961339f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-pratapgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961339e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:22.024Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pratapgarh,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-pratapgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133a6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133a7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-badharghat",
+            "names": [
+              {
+                "name": "Badharghat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badharghat_Assembly_constituency",
+            "wikidata_qid": "Q54449782",
+            "node_created_on": "2025-01-29T14:07:24.693Z",
+            "active_version": {
+              "id": "0x9be96133a5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133a5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133a4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133a5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-badharghat-version-25",
+            "region": {
+              "id": "0x9be96133a4"
+            },
+            "constituency_number": "14",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133a4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-badharghat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133a3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:23.951Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badharghat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-badharghat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133ac"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133ad",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kamalasagar",
+            "names": [
+              {
+                "name": "Kamalasagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kamalasagar_Assembly_constituency",
+            "wikidata_qid": "Q54449789",
+            "node_created_on": "2025-01-29T14:07:27.551Z",
+            "active_version": {
+              "id": "0x9be96133ab"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133ab"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133aa"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133ab",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kamalasagar-version-25",
+            "region": {
+              "id": "0x9be96133aa"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133aa",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kamalasagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133a9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:26.045Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kamalasagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kamalasagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133b2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133b3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-bishalgarh",
+            "names": [
+              {
+                "name": "Bishalgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bishalgarh_Assembly_constituency",
+            "wikidata_qid": "Q54449804",
+            "node_created_on": "2025-01-29T14:07:29.702Z",
+            "active_version": {
+              "id": "0x9be96133b1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133b1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133b0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133b1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-bishalgarh-version-25",
+            "region": {
+              "id": "0x9be96133b0"
+            },
+            "constituency_number": "16",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133b0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-bishalgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133af"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:29.087Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bishalgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-bishalgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133b8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133b9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-golaghati",
+            "names": [
+              {
+                "name": "Golaghati"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Golaghati_Assembly_constituency",
+            "wikidata_qid": "Q54449811",
+            "node_created_on": "2025-01-29T14:07:32.320Z",
+            "active_version": {
+              "id": "0x9be96133b7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133b7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133b6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133b7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-golaghati-version-25",
+            "region": {
+              "id": "0x9be96133b6"
+            },
+            "constituency_number": "17",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133b6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-golaghati-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133b5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:31.711Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Golaghati_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-golaghati"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133be"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133bf",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-suryamaninagar",
+            "names": [
+              {
+                "name": "Suryamaninagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Suryamaninagar_Assembly_constituency",
+            "wikidata_qid": "Q54449814",
+            "node_created_on": "2025-01-29T14:07:34.513Z",
+            "active_version": {
+              "id": "0x9be96133bd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133bd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133bc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133bd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-suryamaninagar-version-25",
+            "region": {
+              "id": "0x9be96133bc"
+            },
+            "constituency_number": "18",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133bc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-suryamaninagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133bb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:33.797Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Suryamaninagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-suryamaninagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133c4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133c5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-charilam",
+            "names": [
+              {
+                "name": "Charilam"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Charilam_Assembly_constituency",
+            "wikidata_qid": "Q54449817",
+            "node_created_on": "2025-01-29T14:07:36.871Z",
+            "active_version": {
+              "id": "0x9be96133c3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133c3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133c2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133c3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-charilam-version-25",
+            "region": {
+              "id": "0x9be96133c2"
+            },
+            "constituency_number": "19",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133c2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-charilam-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133c1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:36.188Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Charilam_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-charilam"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133ca"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133cb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-boxanagar",
+            "names": [
+              {
+                "name": "Boxanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Boxanagar_Assembly_constituency",
+            "wikidata_qid": "Q54449819",
+            "node_created_on": "2025-01-29T14:07:39.840Z",
+            "active_version": {
+              "id": "0x9be96133c9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133c9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133c8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133c9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-boxanagar-version-25",
+            "region": {
+              "id": "0x9be96133c8"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133c8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-boxanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133c7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:39.030Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Boxanagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-boxanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133d0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133d1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-nalchar",
+            "names": [
+              {
+                "name": "Nalchar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nalchar_Assembly_constituency",
+            "wikidata_qid": "Q54449821",
+            "node_created_on": "2025-01-29T14:07:42.774Z",
+            "active_version": {
+              "id": "0x9be96133cf"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133cf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133ce"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133cf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-nalchar-version-25",
+            "region": {
+              "id": "0x9be96133ce"
+            },
+            "constituency_number": "21",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133ce",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-nalchar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133cd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:41.371Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nalchar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-nalchar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133d6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133d7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-sonamura",
+            "names": [
+              {
+                "name": "Sonamura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sonamura_Assembly_constituency",
+            "wikidata_qid": "Q54449824",
+            "node_created_on": "2025-01-29T14:07:45.062Z",
+            "active_version": {
+              "id": "0x9be96133d5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133d5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133d4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133d5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-sonamura-version-25",
+            "region": {
+              "id": "0x9be96133d4"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133d4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-sonamura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133d3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:44.313Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sonamura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-sonamura"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133dc"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133dd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-dhanpur",
+            "names": [
+              {
+                "name": "Dhanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dhanpur_Assembly_constituency",
+            "wikidata_qid": "Q54449827",
+            "node_created_on": "2025-01-29T14:07:47.737Z",
+            "active_version": {
+              "id": "0x9be96133db"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133db"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133da"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133db",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-dhanpur-version-25",
+            "region": {
+              "id": "0x9be96133da"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133da",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-dhanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133d9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:47.181Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dhanpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-dhanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133e2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133e3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-ramchandraghat",
+            "names": [
+              {
+                "name": "Ramchandraghat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ramchandraghat_Assembly_constituency",
+            "wikidata_qid": "Q54449831",
+            "node_created_on": "2025-01-29T14:07:50.382Z",
+            "active_version": {
+              "id": "0x9be96133e1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133e1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133e0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133e1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-ramchandraghat-version-25",
+            "region": {
+              "id": "0x9be96133e0"
+            },
+            "constituency_number": "24",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133e0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-ramchandraghat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133df"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:49.362Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ramchandraghat_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-ramchandraghat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606250"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133e8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-khowai",
+            "names": [
+              {
+                "name": "Khowai"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Khowai_Assembly_constituency",
+            "wikidata_qid": "Q54449833",
+            "node_created_on": "2025-01-29T14:07:52.477Z",
+            "active_version": {
+              "id": "0x9be96133e7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133e7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133e6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133e7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-khowai-version-25",
+            "region": {
+              "id": "0x9be96133e6"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133e6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-khowai-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133e5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:51.818Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Khowai_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-khowai"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133ed"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133ee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-asharambari",
+            "names": [
+              {
+                "name": "Asharambari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Asharambari_Assembly_constituency",
+            "wikidata_qid": "Q54449838",
+            "node_created_on": "2025-01-29T14:07:54.584Z",
+            "active_version": {
+              "id": "0x9be96133ec"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133ec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133eb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133ec",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-asharambari-version-25",
+            "region": {
+              "id": "0x9be96133eb"
+            },
+            "constituency_number": "26",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133eb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-asharambari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133ea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:53.786Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Asharambari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-asharambari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133f3"
+          },
+          {
+            "id": "0x9be96133f4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133f5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kalyanpur–pramodenagar",
+            "names": [
+              {
+                "name": "Kalyanpur–Pramodenagar"
+              },
+              {
+                "name": "Kalyanpur-Pramodnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kalyanpur%E2%80%93Pramodenagar_Assembly_constituency",
+            "wikidata_qid": "Q54449847",
+            "node_created_on": "2025-01-29T14:07:56.940Z",
+            "active_version": {
+              "id": "0x9be96133f2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133f2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133f1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133f2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kalyanpur–pramodenagar-version-25",
+            "region": {
+              "id": "0x9be96133f1"
+            },
+            "constituency_number": "27",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133f1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kalyanpur–pramodenagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133f0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:56.183Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kalyanpur%E2%80%93Pramodenagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kalyanpur–pramodenagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96133fa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96133fb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-teliamura",
+            "names": [
+              {
+                "name": "Teliamura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Teliamura_Assembly_constituency",
+            "wikidata_qid": "Q54449860",
+            "node_created_on": "2025-01-29T14:08:00.728Z",
+            "active_version": {
+              "id": "0x9be96133f9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133f9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133f8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133f9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-teliamura-version-25",
+            "region": {
+              "id": "0x9be96133f8"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133f8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-teliamura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133f7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:07:59.911Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Teliamura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-teliamura"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613400"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613401",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-krishnapur",
+            "names": [
+              {
+                "name": "Krishnapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Krishnapur_Assembly_constituency",
+            "wikidata_qid": "Q54449876",
+            "node_created_on": "2025-01-29T14:08:03.261Z",
+            "active_version": {
+              "id": "0x9be96133ff"
+            },
+            "versions": [
+              {
+                "id": "0x9be96133ff"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96133fe"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96133ff",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-krishnapur-version-25",
+            "region": {
+              "id": "0x9be96133fe"
+            },
+            "constituency_number": "29",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96133fe",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-krishnapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96133fd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:02.195Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Krishnapur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-krishnapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613406"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613407",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-bagma",
+            "names": [
+              {
+                "name": "Bagma"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bagma_Assembly_constituency",
+            "wikidata_qid": "Q55739051",
+            "node_created_on": "2025-01-29T14:08:05.465Z",
+            "active_version": {
+              "id": "0x9be9613405"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613405"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613404"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613405",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-bagma-version-25",
+            "region": {
+              "id": "0x9be9613404"
+            },
+            "constituency_number": "30",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613404",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-bagma-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613403"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:04.798Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bagma_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-bagma"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961340c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961340d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-radhakishorpur",
+            "names": [
+              {
+                "name": "Radhakishorpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Radhakishorpur_Assembly_constituency",
+            "wikidata_qid": "Q55739052",
+            "node_created_on": "2025-01-29T14:08:07.714Z",
+            "active_version": {
+              "id": "0x9be961340b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961340b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961340a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961340b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-radhakishorpur-version-25",
+            "region": {
+              "id": "0x9be961340a"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961340a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-radhakishorpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613409"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:06.975Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Radhakishorpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-radhakishorpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613412"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613413",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-matarbari",
+            "names": [
+              {
+                "name": "Matarbari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Matarbari_Assembly_constituency",
+            "wikidata_qid": "Q55739053",
+            "node_created_on": "2025-01-29T14:08:10.047Z",
+            "active_version": {
+              "id": "0x9be9613411"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613411"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613410"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613411",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-matarbari-version-25",
+            "region": {
+              "id": "0x9be9613410"
+            },
+            "constituency_number": "32",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613410",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-matarbari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961340f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:09.331Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Matarbari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-matarbari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613418"
+          },
+          {
+            "id": "0x9be9613419"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961341a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kakraban–salgarh",
+            "names": [
+              {
+                "name": "Kakraban–Salgarh"
+              },
+              {
+                "name": "Kakraban-Shalgara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kakraban%E2%80%93Salgarh_Assembly_constituency",
+            "wikidata_qid": "Q55739054",
+            "node_created_on": "2025-01-29T14:08:12.606Z",
+            "active_version": {
+              "id": "0x9be9613417"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613417"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613416"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613417",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kakraban–salgarh-version-25",
+            "region": {
+              "id": "0x9be9613416"
+            },
+            "constituency_number": "33",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613416",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kakraban–salgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613415"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:11.788Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kakraban%E2%80%93Salgarh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kakraban–salgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960a000"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961341f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-rajnagar",
+            "names": [
+              {
+                "name": "Rajnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rajnagar,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q55739055",
+            "node_created_on": "2025-01-29T14:08:15.782Z",
+            "active_version": {
+              "id": "0x9be961341e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961341e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961341d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961341e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-rajnagar-version-25",
+            "region": {
+              "id": "0x9be961341d"
+            },
+            "constituency_number": "34",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961341d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-rajnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961341c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:14.972Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rajnagar,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-rajnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613424"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613425",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-belonia",
+            "names": [
+              {
+                "name": "Belonia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Belonia_Assembly_constituency",
+            "wikidata_qid": "Q55739056",
+            "node_created_on": "2025-01-29T14:08:18.239Z",
+            "active_version": {
+              "id": "0x9be9613423"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613423"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613422"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613423",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-belonia-version-25",
+            "region": {
+              "id": "0x9be9613422"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613422",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-belonia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613421"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:16.960Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Belonia_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-belonia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961342a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961342b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-santirbazar",
+            "names": [
+              {
+                "name": "Santirbazar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Santirbazar_Assembly_constituency",
+            "wikidata_qid": "Q55739057",
+            "node_created_on": "2025-01-29T14:08:20.390Z",
+            "active_version": {
+              "id": "0x9be9613429"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613429"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613428"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613429",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-santirbazar-version-25",
+            "region": {
+              "id": "0x9be9613428"
+            },
+            "constituency_number": "36",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613428",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-santirbazar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613427"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:19.716Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Santirbazar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-santirbazar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613430"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613431",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-hrishyamukh",
+            "names": [
+              {
+                "name": "Hrishyamukh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hrishyamukh_Assembly_constituency",
+            "wikidata_qid": "Q30599530",
+            "node_created_on": "2025-01-29T14:08:22.541Z",
+            "active_version": {
+              "id": "0x9be961342f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961342f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961342e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961342f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-hrishyamukh-version-25",
+            "region": {
+              "id": "0x9be961342e"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961342e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-hrishyamukh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961342d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:21.882Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hrishyamukh_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-hrishyamukh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613436"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613437",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-jolaibari",
+            "names": [
+              {
+                "name": "Jolaibari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jolaibari_Assembly_constituency",
+            "wikidata_qid": "Q55739058",
+            "node_created_on": "2025-01-29T14:08:24.920Z",
+            "active_version": {
+              "id": "0x9be9613435"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613435"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613434"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613435",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-jolaibari-version-25",
+            "region": {
+              "id": "0x9be9613434"
+            },
+            "constituency_number": "38",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613434",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-jolaibari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613433"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:24.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jolaibari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-jolaibari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961343c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961343d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-manu",
+            "names": [
+              {
+                "name": "Manu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Manu_Assembly_constituency",
+            "wikidata_qid": "Q54449798",
+            "node_created_on": "2025-01-29T14:08:27.558Z",
+            "active_version": {
+              "id": "0x9be961343b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961343b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961343a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961343b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-manu-version-25",
+            "region": {
+              "id": "0x9be961343a"
+            },
+            "constituency_number": "39",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961343a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-manu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613439"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:26.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Manu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-manu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613442"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613443",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-sabroom",
+            "names": [
+              {
+                "name": "Sabroom"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sabroom_Assembly_constituency",
+            "wikidata_qid": "Q55739059",
+            "node_created_on": "2025-01-29T14:08:30.704Z",
+            "active_version": {
+              "id": "0x9be9613441"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613441"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613440"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613441",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-sabroom-version-25",
+            "region": {
+              "id": "0x9be9613440"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613440",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-sabroom-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961343f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:29.319Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sabroom_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-sabroom"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613448"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613449",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-ampinagar",
+            "names": [
+              {
+                "name": "Ampinagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ampinagar_Assembly_constituency",
+            "wikidata_qid": "Q55739060",
+            "node_created_on": "2025-01-29T14:08:32.922Z",
+            "active_version": {
+              "id": "0x9be9613447"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613447"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613446"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613447",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-ampinagar-version-25",
+            "region": {
+              "id": "0x9be9613446"
+            },
+            "constituency_number": "41",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613446",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-ampinagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613445"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:32.370Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ampinagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-ampinagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960b576"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961344e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-amarpur",
+            "names": [
+              {
+                "name": "Amarpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Amarpur,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q55739061",
+            "node_created_on": "2025-01-29T14:08:35.689Z",
+            "active_version": {
+              "id": "0x9be961344d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961344d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961344c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961344d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-amarpur-version-25",
+            "region": {
+              "id": "0x9be961344c"
+            },
+            "constituency_number": "42",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961344c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-amarpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961344b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:35.023Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Amarpur,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-amarpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613453"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613454",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-karbook",
+            "names": [
+              {
+                "name": "Karbook"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karbook_Assembly_constituency",
+            "wikidata_qid": "Q55739062",
+            "node_created_on": "2025-01-29T14:08:38.617Z",
+            "active_version": {
+              "id": "0x9be9613452"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613452"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613451"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613452",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-karbook-version-25",
+            "region": {
+              "id": "0x9be9613451"
+            },
+            "constituency_number": "43",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613451",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-karbook-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613450"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:37.859Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karbook_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-karbook"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613459"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961345a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-raima-valley",
+            "names": [
+              {
+                "name": "Raima Valley"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Raima_Valley_Assembly_constituency",
+            "wikidata_qid": "Q55739063",
+            "node_created_on": "2025-01-29T14:08:40.972Z",
+            "active_version": {
+              "id": "0x9be9613458"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613458"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613457"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613458",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-raima-valley-version-25",
+            "region": {
+              "id": "0x9be9613457"
+            },
+            "constituency_number": "44",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613457",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-raima-valley-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613456"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:40.209Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raima_Valley_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-raima-valley"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9603586"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961345f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kamalpur",
+            "names": [
+              {
+                "name": "Kamalpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kamalpur,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q55739064",
+            "node_created_on": "2025-01-29T14:08:43.224Z",
+            "active_version": {
+              "id": "0x9be961345e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961345e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961345d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961345e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kamalpur-version-25",
+            "region": {
+              "id": "0x9be961345d"
+            },
+            "constituency_number": "45",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961345d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kamalpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961345c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:42.508Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kamalpur,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kamalpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613464"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613465",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-surma",
+            "names": [
+              {
+                "name": "Surma"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Surma_Assembly_constituency",
+            "wikidata_qid": "Q55739065",
+            "node_created_on": "2025-01-29T14:08:46.046Z",
+            "active_version": {
+              "id": "0x9be9613463"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613463"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613462"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613463",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-surma-version-25",
+            "region": {
+              "id": "0x9be9613462"
+            },
+            "constituency_number": "46",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613462",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-surma-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613461"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:45.276Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Surma_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-surma"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961346a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961346b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-ambassa",
+            "names": [
+              {
+                "name": "Ambassa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ambassa_Assembly_constituency",
+            "wikidata_qid": "Q55739066",
+            "node_created_on": "2025-01-29T14:08:48.762Z",
+            "active_version": {
+              "id": "0x9be9613469"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613469"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613468"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613469",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-ambassa-version-25",
+            "region": {
+              "id": "0x9be9613468"
+            },
+            "constituency_number": "47",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613468",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-ambassa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613467"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:48.122Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ambassa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-ambassa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613470"
+          },
+          {
+            "id": "0x9be9613471"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613472",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-karamcherra",
+            "names": [
+              {
+                "name": "Karamcherra"
+              },
+              {
+                "name": "Karamchara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Karamcherra_Assembly_constituency",
+            "wikidata_qid": "Q55739067",
+            "node_created_on": "2025-01-29T14:08:51.828Z",
+            "active_version": {
+              "id": "0x9be961346f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961346f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961346e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961346f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-karamcherra-version-25",
+            "region": {
+              "id": "0x9be961346e"
+            },
+            "constituency_number": "48",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961346e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-karamcherra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961346d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:51.009Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Karamcherra_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-karamcherra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613477"
+          },
+          {
+            "id": "0x9be9613478"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613479",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-chawamanu",
+            "names": [
+              {
+                "name": "Chawamanu"
+              },
+              {
+                "name": "Chawmanu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chawamanu_Assembly_constituency",
+            "wikidata_qid": "Q55739068",
+            "node_created_on": "2025-01-29T14:08:54.814Z",
+            "active_version": {
+              "id": "0x9be9613476"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613476"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613475"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613476",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-chawamanu-version-25",
+            "region": {
+              "id": "0x9be9613475"
+            },
+            "constituency_number": "49",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613475",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-chawamanu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613474"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:53.725Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chawamanu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-chawamanu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961347e"
+          },
+          {
+            "id": "0x9be961347f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613480",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-pabiachhara",
+            "names": [
+              {
+                "name": "Pabiachhara"
+              },
+              {
+                "name": "Pabiachara"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pabiachhara_Assembly_constituency",
+            "wikidata_qid": "Q55739069",
+            "node_created_on": "2025-01-29T14:08:57.561Z",
+            "active_version": {
+              "id": "0x9be961347d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961347d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961347c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961347d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-pabiachhara-version-25",
+            "region": {
+              "id": "0x9be961347c"
+            },
+            "constituency_number": "50",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961347c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-pabiachhara-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961347b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:56.868Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pabiachhara_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-pabiachhara"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613485"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613486",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-fatikroy",
+            "names": [
+              {
+                "name": "Fatikroy"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatikroy_Assembly_constituency",
+            "wikidata_qid": "Q55739070",
+            "node_created_on": "2025-01-29T14:09:00.737Z",
+            "active_version": {
+              "id": "0x9be9613484"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613484"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613483"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613484",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-fatikroy-version-25",
+            "region": {
+              "id": "0x9be9613483"
+            },
+            "constituency_number": "51",
+            "reservation": "SC"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613483",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-fatikroy-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613482"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:08:59.898Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatikroy_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-fatikroy"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961348b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961348c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-chandipur",
+            "names": [
+              {
+                "name": "Chandipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chandipur,_Tripura_Assembly_constituency",
+            "wikidata_qid": "Q55739071",
+            "node_created_on": "2025-01-29T14:09:02.765Z",
+            "active_version": {
+              "id": "0x9be961348a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961348a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613489"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961348a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-chandipur-version-25",
+            "region": {
+              "id": "0x9be9613489"
+            },
+            "constituency_number": "52",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613489",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-chandipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613488"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:02.183Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chandipur,_Tripura_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-chandipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613491"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613492",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kailashahar",
+            "names": [
+              {
+                "name": "Kailashahar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kailashahar_Assembly_constituency",
+            "wikidata_qid": "Q55739072",
+            "node_created_on": "2025-01-29T14:09:05.195Z",
+            "active_version": {
+              "id": "0x9be9613490"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613490"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961348f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613490",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kailashahar-version-25",
+            "region": {
+              "id": "0x9be961348f"
+            },
+            "constituency_number": "53",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961348f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kailashahar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961348e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:04.321Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kailashahar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kailashahar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9613497"
+          },
+          {
+            "id": "0x9be9613498"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9613499",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kadamtala–kurti",
+            "names": [
+              {
+                "name": "Kadamtala–Kurti"
+              },
+              {
+                "name": "Kadamtala-Kurti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kadamtala%E2%80%93Kurti_Assembly_constituency",
+            "wikidata_qid": "Q55739073",
+            "node_created_on": "2025-01-29T14:09:07.699Z",
+            "active_version": {
+              "id": "0x9be9613496"
+            },
+            "versions": [
+              {
+                "id": "0x9be9613496"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9613495"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9613496",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kadamtala–kurti-version-25",
+            "region": {
+              "id": "0x9be9613495"
+            },
+            "constituency_number": "54",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9613495",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kadamtala–kurti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9613494"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:06.801Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kadamtala%E2%80%93Kurti_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kadamtala–kurti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be961349e"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961349f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-bagbassa",
+            "names": [
+              {
+                "name": "Bagbassa"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bagbassa_Assembly_constituency",
+            "wikidata_qid": "Q55739074",
+            "node_created_on": "2025-01-29T14:09:10.772Z",
+            "active_version": {
+              "id": "0x9be961349d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961349d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961349c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961349d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-bagbassa-version-25",
+            "region": {
+              "id": "0x9be961349c"
+            },
+            "constituency_number": "55",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961349c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-bagbassa-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961349b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:09.964Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bagbassa_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-bagbassa"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96134a4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96134a5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-dharmanagar",
+            "names": [
+              {
+                "name": "Dharmanagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dharmanagar_Assembly_constituency",
+            "wikidata_qid": "Q55739075",
+            "node_created_on": "2025-01-29T14:09:12.960Z",
+            "active_version": {
+              "id": "0x9be96134a3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96134a3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96134a2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96134a3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-dharmanagar-version-25",
+            "region": {
+              "id": "0x9be96134a2"
+            },
+            "constituency_number": "56",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96134a2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-dharmanagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96134a1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:12.300Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dharmanagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-dharmanagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96134aa"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96134ab",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-jubarajnagar",
+            "names": [
+              {
+                "name": "Jubarajnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jubarajnagar_Assembly_constituency",
+            "wikidata_qid": "Q55739076",
+            "node_created_on": "2025-01-29T14:09:15.217Z",
+            "active_version": {
+              "id": "0x9be96134a9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96134a9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96134a8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96134a9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-jubarajnagar-version-25",
+            "region": {
+              "id": "0x9be96134a8"
+            },
+            "constituency_number": "57",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96134a8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-jubarajnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96134a7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:14.305Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jubarajnagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-jubarajnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96134b0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96134b1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-panisagar",
+            "names": [
+              {
+                "name": "Panisagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Panisagar_Assembly_constituency",
+            "wikidata_qid": "Q55739077",
+            "node_created_on": "2025-01-29T14:09:18.296Z",
+            "active_version": {
+              "id": "0x9be96134af"
+            },
+            "versions": [
+              {
+                "id": "0x9be96134af"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96134ae"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96134af",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-panisagar-version-25",
+            "region": {
+              "id": "0x9be96134ae"
+            },
+            "constituency_number": "58",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96134ae",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-panisagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96134ad"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:17.018Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Panisagar_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-panisagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96134b6"
+          },
+          {
+            "id": "0x9be96134b7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96134b8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-pencharthal",
+            "names": [
+              {
+                "name": "Pencharthal"
+              },
+              {
+                "name": "Pecharthal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pencharthal_Assembly_constituency",
+            "wikidata_qid": "Q55739079",
+            "node_created_on": "2025-01-29T14:09:21.933Z",
+            "active_version": {
+              "id": "0x9be96134b5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96134b5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96134b4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96134b5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-pencharthal-version-25",
+            "region": {
+              "id": "0x9be96134b4"
+            },
+            "constituency_number": "59",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96134b4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-pencharthal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96134b3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:20.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pencharthal_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-pencharthal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96134bd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96134be",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-tr-kanchanpur",
+            "names": [
+              {
+                "name": "Kanchanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanchanpur_Assembly_constituency",
+            "wikidata_qid": "Q55739080",
+            "node_created_on": "2025-01-29T14:09:24.798Z",
+            "active_version": {
+              "id": "0x9be96134bc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96134bc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96134bb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96134bc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-tr-kanchanpur-version-25",
+            "region": {
+              "id": "0x9be96134bb"
+            },
+            "constituency_number": "60",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96134bb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-tr-kanchanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96134ba"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-tripura-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T14:09:23.978Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanchanpur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-tr-kanchanpur"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T14:09:25.516Z"
+}

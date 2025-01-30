@@ -1,0 +1,4275 @@
+{
+  "message": "Step 5 (Save Vidhansabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96099a5"
+          },
+          {
+            "id": "0x9be96099a6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120e5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-dimapur-i",
+            "names": [
+              {
+                "name": "Dimapur I"
+              },
+              {
+                "name": "Dimapur-I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dimapur_I_Assembly_constituency",
+            "wikidata_qid": "Q30599887",
+            "node_created_on": "2025-01-29T10:27:29.528Z",
+            "active_version": {
+              "id": "0x9be96120e4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120e4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120e3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120e4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-dimapur-i-version-25",
+            "region": {
+              "id": "0x9be96120e3"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120e3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-dimapur-i-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120e2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:28.914Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dimapur_I_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-dimapur-i"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099ac"
+          },
+          {
+            "id": "0x9be96099ad"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120ea",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-dimapur-ii",
+            "names": [
+              {
+                "name": "Dimapur II"
+              },
+              {
+                "name": "Dimapur-II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dimapur_II_Assembly_constituency",
+            "wikidata_qid": "Q55593978",
+            "node_created_on": "2025-01-29T10:27:31.757Z",
+            "active_version": {
+              "id": "0x9be96120e9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120e9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120e8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120e9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-dimapur-ii-version-25",
+            "region": {
+              "id": "0x9be96120e8"
+            },
+            "constituency_number": "2",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120e8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-dimapur-ii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120e7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:30.454Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dimapur_II_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-dimapur-ii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099b3"
+          },
+          {
+            "id": "0x9be96099b4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120ef",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-dimapur-iii",
+            "names": [
+              {
+                "name": "Dimapur III"
+              },
+              {
+                "name": "Dimapur-III"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dimapur_III_Assembly_constituency",
+            "wikidata_qid": "Q55593979",
+            "node_created_on": "2025-01-29T10:27:33.478Z",
+            "active_version": {
+              "id": "0x9be96120ee"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120ee"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120ed"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120ee",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-dimapur-iii-version-25",
+            "region": {
+              "id": "0x9be96120ed"
+            },
+            "constituency_number": "3",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120ed",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-dimapur-iii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120ec"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:32.766Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dimapur_III_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-dimapur-iii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099ba"
+          },
+          {
+            "id": "0x9be96099bb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120f4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-ghaspani-i",
+            "names": [
+              {
+                "name": "Ghaspani I"
+              },
+              {
+                "name": "Ghaspani-I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghaspani_I_Assembly_constituency",
+            "wikidata_qid": "Q55593980",
+            "node_created_on": "2025-01-29T10:27:35.190Z",
+            "active_version": {
+              "id": "0x9be96120f3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120f3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120f2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120f3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-ghaspani-i-version-25",
+            "region": {
+              "id": "0x9be96120f2"
+            },
+            "constituency_number": "4",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120f2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-ghaspani-i-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120f1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:34.523Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghaspani_I_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-ghaspani-i"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099c1"
+          },
+          {
+            "id": "0x9be96099c2"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120f9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-ghaspani-ii",
+            "names": [
+              {
+                "name": "Ghaspani II"
+              },
+              {
+                "name": "Ghaspani-Ii"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghaspani_II_Assembly_constituency",
+            "wikidata_qid": "Q55593981",
+            "node_created_on": "2025-01-29T10:27:36.929Z",
+            "active_version": {
+              "id": "0x9be96120f8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120f8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120f7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120f8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-ghaspani-ii-version-25",
+            "region": {
+              "id": "0x9be96120f7"
+            },
+            "constituency_number": "5",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120f7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-ghaspani-ii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120f6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:36.327Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghaspani_II_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-ghaspani-ii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099c8"
+          },
+          {
+            "id": "0x9be96099c9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96120fe",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tening",
+            "names": [
+              {
+                "name": "Tening"
+              },
+              {
+                "name": "Tenning"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tening_Assembly_constituency",
+            "wikidata_qid": "Q55593982",
+            "node_created_on": "2025-01-29T10:27:38.955Z",
+            "active_version": {
+              "id": "0x9be96120fd"
+            },
+            "versions": [
+              {
+                "id": "0x9be96120fd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96120fc"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96120fd",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tening-version-25",
+            "region": {
+              "id": "0x9be96120fc"
+            },
+            "constituency_number": "6",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96120fc",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tening-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96120fb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:38.302Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tening_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tening"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605dec"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612103",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-peren",
+            "names": [
+              {
+                "name": "Peren"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Peren_Assembly_constituency",
+            "wikidata_qid": "Q55593983",
+            "node_created_on": "2025-01-29T10:27:41.457Z",
+            "active_version": {
+              "id": "0x9be9612102"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612102"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612101"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612102",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-peren-version-25",
+            "region": {
+              "id": "0x9be9612101"
+            },
+            "constituency_number": "7",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612101",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-peren-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612100"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:40.767Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Peren_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-peren"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099d4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612108",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-western-angami",
+            "names": [
+              {
+                "name": "Western Angami"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Western_Angami_Assembly_constituency",
+            "wikidata_qid": "Q55593984",
+            "node_created_on": "2025-01-29T10:27:43.672Z",
+            "active_version": {
+              "id": "0x9be9612107"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612107"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612106"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612107",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-western-angami-version-25",
+            "region": {
+              "id": "0x9be9612106"
+            },
+            "constituency_number": "8",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612106",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-western-angami-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612105"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:42.874Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Western_Angami_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-western-angami"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099da"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961210d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-kohima-town",
+            "names": [
+              {
+                "name": "Kohima Town"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kohima_Town_Assembly_constituency",
+            "wikidata_qid": "Q55593985",
+            "node_created_on": "2025-01-29T10:27:45.480Z",
+            "active_version": {
+              "id": "0x9be961210c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961210c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961210b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961210c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-kohima-town-version-25",
+            "region": {
+              "id": "0x9be961210b"
+            },
+            "constituency_number": "9",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961210b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-kohima-town-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961210a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:44.713Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kohima_Town_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-kohima-town"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099e0"
+          },
+          {
+            "id": "0x9be96099e1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612112",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-northern-angami-i",
+            "names": [
+              {
+                "name": "Northern Angami I"
+              },
+              {
+                "name": "Northern Angami-I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Northern_Angami_I_Assembly_constituency",
+            "wikidata_qid": "Q30600263",
+            "node_created_on": "2025-01-29T10:27:47.683Z",
+            "active_version": {
+              "id": "0x9be9612111"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612111"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612110"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612111",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-northern-angami-i-version-25",
+            "region": {
+              "id": "0x9be9612110"
+            },
+            "constituency_number": "10",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612110",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-northern-angami-i-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961210f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:47.007Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Northern_Angami_I_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-northern-angami-i"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099e7"
+          },
+          {
+            "id": "0x9be96099e8"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612117",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-northern-angami-ii",
+            "names": [
+              {
+                "name": "Northern Angami II"
+              },
+              {
+                "name": "Northern Angami-II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Northern_Angami_II_Assembly_constituency",
+            "wikidata_qid": "Q48735047",
+            "node_created_on": "2025-01-29T10:27:49.687Z",
+            "active_version": {
+              "id": "0x9be9612116"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612116"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612115"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612116",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-northern-angami-ii-version-25",
+            "region": {
+              "id": "0x9be9612115"
+            },
+            "constituency_number": "11",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612115",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-northern-angami-ii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612114"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:48.988Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Northern_Angami_II_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-northern-angami-ii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e01"
+          },
+          {
+            "id": "0x9be96099ee"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961211c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tseminyü",
+            "names": [
+              {
+                "name": "Tseminyü"
+              },
+              {
+                "name": "Tseminyu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tseminy%C3%BC_Assembly_constituency",
+            "wikidata_qid": "Q55593986",
+            "node_created_on": "2025-01-29T10:27:51.538Z",
+            "active_version": {
+              "id": "0x9be961211b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961211b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961211a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961211b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tseminyü-version-25",
+            "region": {
+              "id": "0x9be961211a"
+            },
+            "constituency_number": "12",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961211a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tseminyü-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612119"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:50.731Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tseminy%C3%BC_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tseminyü"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099f4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612121",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-pughoboto",
+            "names": [
+              {
+                "name": "Pughoboto"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pughoboto_Assembly_constituency",
+            "wikidata_qid": "Q55593987",
+            "node_created_on": "2025-01-29T10:27:53.532Z",
+            "active_version": {
+              "id": "0x9be9612120"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612120"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961211f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612120",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-pughoboto-version-25",
+            "region": {
+              "id": "0x9be961211f"
+            },
+            "constituency_number": "13",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961211f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-pughoboto-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961211e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:52.908Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pughoboto_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-pughoboto"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96099fa"
+          },
+          {
+            "id": "0x9be96099fb"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612126",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-southern-angami-i",
+            "names": [
+              {
+                "name": "Southern Angami I"
+              },
+              {
+                "name": "Southern Angami-I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Southern_Angami_I_Assembly_constituency",
+            "wikidata_qid": "Q55593988",
+            "node_created_on": "2025-01-29T10:27:55.729Z",
+            "active_version": {
+              "id": "0x9be9612125"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612125"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612124"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612125",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-southern-angami-i-version-25",
+            "region": {
+              "id": "0x9be9612124"
+            },
+            "constituency_number": "14",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612124",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-southern-angami-i-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612123"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:54.824Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Southern_Angami_I_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-southern-angami-i"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a01"
+          },
+          {
+            "id": "0x9be9609a02"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961212b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-southern-angami-ii",
+            "names": [
+              {
+                "name": "Southern Angami II"
+              },
+              {
+                "name": "Southern Angami-II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Southern_Angami_II_Assembly_constituency",
+            "wikidata_qid": "Q55593989",
+            "node_created_on": "2025-01-29T10:27:58.379Z",
+            "active_version": {
+              "id": "0x9be961212a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961212a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612129"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961212a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-southern-angami-ii-version-25",
+            "region": {
+              "id": "0x9be9612129"
+            },
+            "constituency_number": "15",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612129",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-southern-angami-ii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612128"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:27:56.948Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Southern_Angami_II_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-southern-angami-ii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a08"
+          },
+          {
+            "id": "0x9be9609a09"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612130",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-pfütsero",
+            "names": [
+              {
+                "name": "Pfütsero"
+              },
+              {
+                "name": "Pfutsero"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pf%C3%BCtsero_Assembly_constituency",
+            "wikidata_qid": "Q55593990",
+            "node_created_on": "2025-01-29T10:28:00.674Z",
+            "active_version": {
+              "id": "0x9be961212f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961212f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961212e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961212f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-pfütsero-version-25",
+            "region": {
+              "id": "0x9be961212e"
+            },
+            "constituency_number": "16",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961212e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-pfütsero-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961212d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:00.001Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pf%C3%BCtsero_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-pfütsero"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a0f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612135",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-chizami",
+            "names": [
+              {
+                "name": "Chizami"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chizami_Assembly_constituency",
+            "wikidata_qid": "Q55593991",
+            "node_created_on": "2025-01-29T10:28:02.782Z",
+            "active_version": {
+              "id": "0x9be9612134"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612134"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612133"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612134",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-chizami-version-25",
+            "region": {
+              "id": "0x9be9612133"
+            },
+            "constituency_number": "17",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612133",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-chizami-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612132"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:02.029Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chizami_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-chizami"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a15"
+          },
+          {
+            "id": "0x9be9609a16"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961213a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-chozuba",
+            "names": [
+              {
+                "name": "Chozuba"
+              },
+              {
+                "name": "Chazouba"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chozuba_Assembly_constituency",
+            "wikidata_qid": "Q55593992",
+            "node_created_on": "2025-01-29T10:28:05.168Z",
+            "active_version": {
+              "id": "0x9be9612139"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612139"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612138"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612139",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-chozuba-version-25",
+            "region": {
+              "id": "0x9be9612138"
+            },
+            "constituency_number": "18",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612138",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-chozuba-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612137"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:03.924Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chozuba_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-chozuba"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605df3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961213f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-phek",
+            "names": [
+              {
+                "name": "Phek"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Phek_Assembly_constituency",
+            "wikidata_qid": "Q55593993",
+            "node_created_on": "2025-01-29T10:28:06.990Z",
+            "active_version": {
+              "id": "0x9be961213e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961213e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961213d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961213e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-phek-version-25",
+            "region": {
+              "id": "0x9be961213d"
+            },
+            "constituency_number": "19",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961213d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-phek-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961213c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:06.261Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Phek_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-phek"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a21"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612144",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-meluri",
+            "names": [
+              {
+                "name": "Meluri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Meluri_Assembly_constituency",
+            "wikidata_qid": "Q55593994",
+            "node_created_on": "2025-01-29T10:28:09.298Z",
+            "active_version": {
+              "id": "0x9be9612143"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612143"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612142"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612143",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-meluri-version-25",
+            "region": {
+              "id": "0x9be9612142"
+            },
+            "constituency_number": "20",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612142",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-meluri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612141"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:08.671Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Meluri_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-meluri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a27"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612149",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tuli",
+            "names": [
+              {
+                "name": "Tuli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuli_Assembly_constituency",
+            "wikidata_qid": "Q55593995",
+            "node_created_on": "2025-01-29T10:28:11.487Z",
+            "active_version": {
+              "id": "0x9be9612148"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612148"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612147"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612148",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tuli-version-25",
+            "region": {
+              "id": "0x9be9612147"
+            },
+            "constituency_number": "21",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612147",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tuli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612146"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:10.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuli_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tuli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a2d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961214e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-arkakong",
+            "names": [
+              {
+                "name": "Arkakong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Arkakong_Assembly_constituency",
+            "wikidata_qid": "Q55593996",
+            "node_created_on": "2025-01-29T10:28:13.535Z",
+            "active_version": {
+              "id": "0x9be961214d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961214d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961214c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961214d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-arkakong-version-25",
+            "region": {
+              "id": "0x9be961214c"
+            },
+            "constituency_number": "22",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961214c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-arkakong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961214b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:12.511Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Arkakong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-arkakong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a33"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612153",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-impur",
+            "names": [
+              {
+                "name": "Impur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Impur_Assembly_constituency",
+            "wikidata_qid": "Q55593997",
+            "node_created_on": "2025-01-29T10:28:15.669Z",
+            "active_version": {
+              "id": "0x9be9612152"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612152"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612151"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612152",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-impur-version-25",
+            "region": {
+              "id": "0x9be9612151"
+            },
+            "constituency_number": "23",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612151",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-impur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612150"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:14.866Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Impur_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-impur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a39"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612158",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-angetyongpang",
+            "names": [
+              {
+                "name": "Angetyongpang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Angetyongpang_Assembly_constituency",
+            "wikidata_qid": "Q55593998",
+            "node_created_on": "2025-01-29T10:28:17.836Z",
+            "active_version": {
+              "id": "0x9be9612157"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612157"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612156"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612157",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-angetyongpang-version-25",
+            "region": {
+              "id": "0x9be9612156"
+            },
+            "constituency_number": "24",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612156",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-angetyongpang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612155"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:17.220Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Angetyongpang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-angetyongpang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a3f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961215d",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-mongoya",
+            "names": [
+              {
+                "name": "Mongoya"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mongoya_Assembly_constituency",
+            "wikidata_qid": "Q55593999",
+            "node_created_on": "2025-01-29T10:28:19.574Z",
+            "active_version": {
+              "id": "0x9be961215c"
+            },
+            "versions": [
+              {
+                "id": "0x9be961215c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961215b"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961215c",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-mongoya-version-25",
+            "region": {
+              "id": "0x9be961215b"
+            },
+            "constituency_number": "25",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961215b",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-mongoya-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961215a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:18.825Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mongoya_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-mongoya"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a45"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612162",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-aonglenden",
+            "names": [
+              {
+                "name": "Aonglenden"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aonglenden_Assembly_constituency",
+            "wikidata_qid": "Q55594000",
+            "node_created_on": "2025-01-29T10:28:21.666Z",
+            "active_version": {
+              "id": "0x9be9612161"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612161"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612160"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612161",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-aonglenden-version-25",
+            "region": {
+              "id": "0x9be9612160"
+            },
+            "constituency_number": "26",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612160",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-aonglenden-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961215f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:20.938Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aonglenden_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-aonglenden"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a4b"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612167",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-mokokchung-town",
+            "names": [
+              {
+                "name": "Mokokchung Town"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mokokchung_Town_Assembly_constituency",
+            "wikidata_qid": "Q55594001",
+            "node_created_on": "2025-01-29T10:28:23.290Z",
+            "active_version": {
+              "id": "0x9be9612166"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612166"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612165"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612166",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-mokokchung-town-version-25",
+            "region": {
+              "id": "0x9be9612165"
+            },
+            "constituency_number": "27",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612165",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-mokokchung-town-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612164"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:22.689Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mokokchung_Town_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-mokokchung-town"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a51"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961216c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-koridang",
+            "names": [
+              {
+                "name": "Koridang"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Koridang_Assembly_constituency",
+            "wikidata_qid": "Q55594002",
+            "node_created_on": "2025-01-29T10:28:25.482Z",
+            "active_version": {
+              "id": "0x9be961216b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961216b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961216a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961216b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-koridang-version-25",
+            "region": {
+              "id": "0x9be961216a"
+            },
+            "constituency_number": "28",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961216a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-koridang-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612169"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:24.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Koridang_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-koridang"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a57"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612171",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-jangpetkong",
+            "names": [
+              {
+                "name": "Jangpetkong"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jangpetkong_Assembly_constituency",
+            "wikidata_qid": "Q55594003",
+            "node_created_on": "2025-01-29T10:28:26.999Z",
+            "active_version": {
+              "id": "0x9be9612170"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612170"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961216f"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612170",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-jangpetkong-version-25",
+            "region": {
+              "id": "0x9be961216f"
+            },
+            "constituency_number": "29",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961216f",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-jangpetkong-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961216e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:26.334Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jangpetkong_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-jangpetkong"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a5d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612176",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-alongtaki",
+            "names": [
+              {
+                "name": "Alongtaki"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Alongtaki_Assembly_constituency",
+            "wikidata_qid": "Q55594004",
+            "node_created_on": "2025-01-29T10:28:28.792Z",
+            "active_version": {
+              "id": "0x9be9612175"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612175"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612174"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612175",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-alongtaki-version-25",
+            "region": {
+              "id": "0x9be9612174"
+            },
+            "constituency_number": "30",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612174",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-alongtaki-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612173"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:28.002Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Alongtaki_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-alongtaki"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a63"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961217b",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-akuluto",
+            "names": [
+              {
+                "name": "Akuluto"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Akuluto_Assembly_constituency",
+            "wikidata_qid": "Q55594005",
+            "node_created_on": "2025-01-29T10:28:31.249Z",
+            "active_version": {
+              "id": "0x9be961217a"
+            },
+            "versions": [
+              {
+                "id": "0x9be961217a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612179"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961217a",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-akuluto-version-25",
+            "region": {
+              "id": "0x9be9612179"
+            },
+            "constituency_number": "31",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612179",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-akuluto-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612178"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:30.518Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Akuluto_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-akuluto"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a69"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612180",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-atoizu",
+            "names": [
+              {
+                "name": "Atoizu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Atoiz%C3%BC_Assembly_constituency",
+            "wikidata_qid": "Q55594006",
+            "node_created_on": "2025-01-29T10:28:33.713Z",
+            "active_version": {
+              "id": "0x9be961217f"
+            },
+            "versions": [
+              {
+                "id": "0x9be961217f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961217e"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961217f",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-atoizu-version-25",
+            "region": {
+              "id": "0x9be961217e"
+            },
+            "constituency_number": "32",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961217e",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-atoizu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961217d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:32.964Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Atoizu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-atoizu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a6f"
+          },
+          {
+            "id": "0x9be9609a70"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612185",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-suruhoto",
+            "names": [
+              {
+                "name": "Suruhoto"
+              },
+              {
+                "name": "Suruhuto"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Suruhoto_Assembly_constituency",
+            "wikidata_qid": "Q55594007",
+            "node_created_on": "2025-01-29T10:28:35.347Z",
+            "active_version": {
+              "id": "0x9be9612184"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612184"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612183"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612184",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-suruhoto-version-25",
+            "region": {
+              "id": "0x9be9612183"
+            },
+            "constituency_number": "33",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612183",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-suruhoto-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612182"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:34.731Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Suruhoto_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-suruhoto"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a76"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961218a",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-aghunato",
+            "names": [
+              {
+                "name": "Aghunato"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aghunato_Assembly_constituency",
+            "wikidata_qid": "Q55594008",
+            "node_created_on": "2025-01-29T10:28:37.274Z",
+            "active_version": {
+              "id": "0x9be9612189"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612189"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612188"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612189",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-aghunato-version-25",
+            "region": {
+              "id": "0x9be9612188"
+            },
+            "constituency_number": "34",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612188",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-aghunato-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612187"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:36.507Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aghunato_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-aghunato"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e16"
+          },
+          {
+            "id": "0x9be9609a7c"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961218f",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-zünheboto",
+            "names": [
+              {
+                "name": "Zünheboto"
+              },
+              {
+                "name": "Zunheboto"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Z%C3%BCnheboto_Assembly_constituency",
+            "wikidata_qid": "Q55594009",
+            "node_created_on": "2025-01-29T10:28:39.032Z",
+            "active_version": {
+              "id": "0x9be961218e"
+            },
+            "versions": [
+              {
+                "id": "0x9be961218e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961218d"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961218e",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-zünheboto-version-25",
+            "region": {
+              "id": "0x9be961218d"
+            },
+            "constituency_number": "35",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961218d",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-zünheboto-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961218c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:38.316Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Z%C3%BCnheboto_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-zünheboto"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a82"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612194",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-satakha",
+            "names": [
+              {
+                "name": "Satakha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Satakha_Assembly_constituency",
+            "wikidata_qid": "Q55594010",
+            "node_created_on": "2025-01-29T10:28:41.688Z",
+            "active_version": {
+              "id": "0x9be9612193"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612193"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612192"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612193",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-satakha-version-25",
+            "region": {
+              "id": "0x9be9612192"
+            },
+            "constituency_number": "36",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612192",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-satakha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612191"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:40.526Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Satakha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-satakha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a88"
+          },
+          {
+            "id": "0x9be9609a89"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612199",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tyüi",
+            "names": [
+              {
+                "name": "Tyüi"
+              },
+              {
+                "name": "Tyui"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ty%C3%BCi_Assembly_constituency",
+            "wikidata_qid": "Q55594011",
+            "node_created_on": "2025-01-29T10:28:43.282Z",
+            "active_version": {
+              "id": "0x9be9612198"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612198"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612197"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612198",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tyüi-version-25",
+            "region": {
+              "id": "0x9be9612197"
+            },
+            "constituency_number": "37",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612197",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tyüi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612196"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:42.696Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ty%C3%BCi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tyüi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605e0f"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961219e",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-wokha",
+            "names": [
+              {
+                "name": "Wokha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wokha_Assembly_constituency",
+            "wikidata_qid": "Q30599894",
+            "node_created_on": "2025-01-29T10:28:45.586Z",
+            "active_version": {
+              "id": "0x9be961219d"
+            },
+            "versions": [
+              {
+                "id": "0x9be961219d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961219c"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961219d",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-wokha-version-25",
+            "region": {
+              "id": "0x9be961219c"
+            },
+            "constituency_number": "38",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961219c",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-wokha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be961219b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:44.278Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wokha_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-wokha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a94"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121a3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-sanis",
+            "names": [
+              {
+                "name": "Sanis"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sanis_Assembly_constituency",
+            "wikidata_qid": "Q55594012",
+            "node_created_on": "2025-01-29T10:28:46.982Z",
+            "active_version": {
+              "id": "0x9be96121a2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121a2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121a1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121a2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-sanis-version-25",
+            "region": {
+              "id": "0x9be96121a1"
+            },
+            "constituency_number": "39",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121a1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-sanis-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121a0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:46.459Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sanis_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-sanis"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609a9a"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121a8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-bhandari",
+            "names": [
+              {
+                "name": "Bhandari"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhandari_Assembly_constituency",
+            "wikidata_qid": "Q55594013",
+            "node_created_on": "2025-01-29T10:28:49.683Z",
+            "active_version": {
+              "id": "0x9be96121a7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121a7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121a6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121a7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-bhandari-version-25",
+            "region": {
+              "id": "0x9be96121a6"
+            },
+            "constituency_number": "40",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121a6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-bhandari-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121a5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:48.350Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhandari_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-bhandari"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609aa0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121ad",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tizit",
+            "names": [
+              {
+                "name": "Tizit"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tizit_Assembly_constituency",
+            "wikidata_qid": "Q55594014",
+            "node_created_on": "2025-01-29T10:28:51.321Z",
+            "active_version": {
+              "id": "0x9be96121ac"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121ac"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121ab"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121ac",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tizit-version-25",
+            "region": {
+              "id": "0x9be96121ab"
+            },
+            "constituency_number": "41",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121ab",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tizit-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121aa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:50.706Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tizit_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tizit"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609aa6"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121b2",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-wakching",
+            "names": [
+              {
+                "name": "Wakching"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Wakching_Assembly_constituency",
+            "wikidata_qid": "Q55594015",
+            "node_created_on": "2025-01-29T10:28:53.779Z",
+            "active_version": {
+              "id": "0x9be96121b1"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121b1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121b0"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121b1",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-wakching-version-25",
+            "region": {
+              "id": "0x9be96121b0"
+            },
+            "constituency_number": "42",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121b0",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-wakching-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121af"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:52.757Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Wakching_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-wakching"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605771"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121b7",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tapi",
+            "names": [
+              {
+                "name": "Tapi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tapi_Assembly_constituency",
+            "wikidata_qid": "Q55594016",
+            "node_created_on": "2025-01-29T10:28:56.244Z",
+            "active_version": {
+              "id": "0x9be96121b6"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121b6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121b5"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121b6",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tapi-version-25",
+            "region": {
+              "id": "0x9be96121b5"
+            },
+            "constituency_number": "43",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121b5",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tapi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121b4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:55.467Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tapi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tapi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ab1"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121bc",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-phomching",
+            "names": [
+              {
+                "name": "Phomching"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Phomching_Assembly_constituency",
+            "wikidata_qid": "Q55594017",
+            "node_created_on": "2025-01-29T10:28:57.875Z",
+            "active_version": {
+              "id": "0x9be96121bb"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121bb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121ba"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121bb",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-phomching-version-25",
+            "region": {
+              "id": "0x9be96121ba"
+            },
+            "constituency_number": "44",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121ba",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-phomching-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121b9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:57.166Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Phomching_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-phomching"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ab7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121c1",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tehok",
+            "names": [
+              {
+                "name": "Tehok"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tehok_Assembly_constituency",
+            "wikidata_qid": "Q55594018",
+            "node_created_on": "2025-01-29T10:29:00.333Z",
+            "active_version": {
+              "id": "0x9be96121c0"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121c0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121bf"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121c0",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tehok-version-25",
+            "region": {
+              "id": "0x9be96121bf"
+            },
+            "constituency_number": "45",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121bf",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tehok-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121be"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:28:59.192Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tehok_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tehok"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609abd"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121c6",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-mon-town",
+            "names": [
+              {
+                "name": "Mon Town"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mon_Town_Assembly_constituency",
+            "wikidata_qid": "Q55594019",
+            "node_created_on": "2025-01-29T10:29:02.162Z",
+            "active_version": {
+              "id": "0x9be96121c5"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121c5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121c4"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121c5",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-mon-town-version-25",
+            "region": {
+              "id": "0x9be96121c4"
+            },
+            "constituency_number": "46",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121c4",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-mon-town-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121c3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:01.358Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mon_Town_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-mon-town"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ac3"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121cb",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-aboi",
+            "names": [
+              {
+                "name": "Aboi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aboi_Assembly_constituency",
+            "wikidata_qid": "Q55594020",
+            "node_created_on": "2025-01-29T10:29:04.305Z",
+            "active_version": {
+              "id": "0x9be96121ca"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121ca"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121c9"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121ca",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-aboi-version-25",
+            "region": {
+              "id": "0x9be96121c9"
+            },
+            "constituency_number": "47",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121c9",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-aboi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121c8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:03.306Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aboi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-aboi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ac9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121d0",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-moka",
+            "names": [
+              {
+                "name": "Moka"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Moka_Assembly_constituency",
+            "wikidata_qid": "Q55594021",
+            "node_created_on": "2025-01-29T10:29:06.515Z",
+            "active_version": {
+              "id": "0x9be96121cf"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121cf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121ce"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121cf",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-moka-version-25",
+            "region": {
+              "id": "0x9be96121ce"
+            },
+            "constituency_number": "48",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121ce",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-moka-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121cd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:05.668Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Moka_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-moka"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609acf"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121d5",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tamlu",
+            "names": [
+              {
+                "name": "Tamlu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tamlu_Assembly_constituency",
+            "wikidata_qid": "Q55594022",
+            "node_created_on": "2025-01-29T10:29:08.731Z",
+            "active_version": {
+              "id": "0x9be96121d4"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121d4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121d3"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121d4",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tamlu-version-25",
+            "region": {
+              "id": "0x9be96121d3"
+            },
+            "constituency_number": "49",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121d3",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tamlu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121d2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:08.014Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tamlu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tamlu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605dc9"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121da",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-longleng",
+            "names": [
+              {
+                "name": "Longleng"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Longleng_Assembly_constituency",
+            "wikidata_qid": "Q55594023",
+            "node_created_on": "2025-01-29T10:29:11.181Z",
+            "active_version": {
+              "id": "0x9be96121d9"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121d9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121d8"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121d9",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-longleng-version-25",
+            "region": {
+              "id": "0x9be96121d8"
+            },
+            "constituency_number": "50",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121d8",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-longleng-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121d7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:10.575Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Longleng_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-longleng"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ada"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121df",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-noksen",
+            "names": [
+              {
+                "name": "Noksen"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Noksen_Assembly_constituency",
+            "wikidata_qid": "Q23197995",
+            "node_created_on": "2025-01-29T10:29:12.927Z",
+            "active_version": {
+              "id": "0x9be96121de"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121de"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121dd"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121de",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-noksen-version-25",
+            "region": {
+              "id": "0x9be96121dd"
+            },
+            "constituency_number": "51",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121dd",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-noksen-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121dc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:12.314Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Noksen_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-noksen"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ae0"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121e4",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-longkhim-chare",
+            "names": [
+              {
+                "name": "Longkhim Chare"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Longkhim%E2%80%93Chare_Assembly_constituency",
+            "wikidata_qid": "Q55594024",
+            "node_created_on": "2025-01-29T10:29:14.770Z",
+            "active_version": {
+              "id": "0x9be96121e3"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121e3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121e2"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121e3",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-longkhim-chare-version-25",
+            "region": {
+              "id": "0x9be96121e2"
+            },
+            "constituency_number": "52",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121e2",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-longkhim-chare-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121e1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:13.985Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Longkhim_Chare_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-longkhim-chare"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609ae6"
+          },
+          {
+            "id": "0x9be9609ae7"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121e9",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tuensang-sadar-i",
+            "names": [
+              {
+                "name": "Tuensang Sadar I"
+              },
+              {
+                "name": "Tuensang Sadar-I"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuensang_Sadar_I_Assembly_constituency",
+            "wikidata_qid": "Q55594025",
+            "node_created_on": "2025-01-29T10:29:16.673Z",
+            "active_version": {
+              "id": "0x9be96121e8"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121e8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121e7"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121e8",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tuensang-sadar-i-version-25",
+            "region": {
+              "id": "0x9be96121e7"
+            },
+            "constituency_number": "53",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121e7",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tuensang-sadar-i-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121e6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:16.002Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuensang_Sadar_I_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tuensang-sadar-i"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609aed"
+          },
+          {
+            "id": "0x9be9609aee"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121ee",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tuensang-sadar-ii",
+            "names": [
+              {
+                "name": "Tuensang Sadar II"
+              },
+              {
+                "name": "Tuensang Sadar-II"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tuensang_Sadar_II_Assembly_constituency",
+            "wikidata_qid": "Q55594026",
+            "node_created_on": "2025-01-29T10:29:18.969Z",
+            "active_version": {
+              "id": "0x9be96121ed"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121ed"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121ec"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121ed",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tuensang-sadar-ii-version-25",
+            "region": {
+              "id": "0x9be96121ec"
+            },
+            "constituency_number": "54",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121ec",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tuensang-sadar-ii-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121eb"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:18.253Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tuensang_Sadar_II_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tuensang-sadar-ii"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609af4"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121f3",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-tobu",
+            "names": [
+              {
+                "name": "Tobu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Tobu_Assembly_constituency",
+            "wikidata_qid": "Q55594027",
+            "node_created_on": "2025-01-29T10:29:21.301Z",
+            "active_version": {
+              "id": "0x9be96121f2"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121f2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121f1"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121f2",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-tobu-version-25",
+            "region": {
+              "id": "0x9be96121f1"
+            },
+            "constituency_number": "55",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121f1",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-tobu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121f0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:20.511Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Tobu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-tobu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605de5"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121f8",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-noklak",
+            "names": [
+              {
+                "name": "Noklak"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Noklak_Assembly_constituency",
+            "wikidata_qid": "Q55594028",
+            "node_created_on": "2025-01-29T10:29:23.664Z",
+            "active_version": {
+              "id": "0x9be96121f7"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121f7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121f6"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121f7",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-noklak-version-25",
+            "region": {
+              "id": "0x9be96121f6"
+            },
+            "constituency_number": "56",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121f6",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-noklak-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121f5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:22.288Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Noklak_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-noklak"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609aff"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be96121fd",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-thonoknyu",
+            "names": [
+              {
+                "name": "Thonoknyu"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Thonoknyu_Assembly_constituency",
+            "wikidata_qid": "Q55594029",
+            "node_created_on": "2025-01-29T10:29:25.680Z",
+            "active_version": {
+              "id": "0x9be96121fc"
+            },
+            "versions": [
+              {
+                "id": "0x9be96121fc"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be96121fb"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be96121fc",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-thonoknyu-version-25",
+            "region": {
+              "id": "0x9be96121fb"
+            },
+            "constituency_number": "57",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be96121fb",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-thonoknyu-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121fa"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:24.806Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Thonoknyu_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-thonoknyu"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b05"
+          },
+          {
+            "id": "0x9be9609b06"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612202",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-shamator–chessore",
+            "names": [
+              {
+                "name": "Shamator–Chessore"
+              },
+              {
+                "name": "Shamator Chessore"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shamator%E2%80%93Chessore_Assembly_constituency",
+            "wikidata_qid": "Q55594030",
+            "node_created_on": "2025-01-29T10:29:27.725Z",
+            "active_version": {
+              "id": "0x9be9612201"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612201"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612200"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612201",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-shamator–chessore-version-25",
+            "region": {
+              "id": "0x9be9612200"
+            },
+            "constituency_number": "58",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612200",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-shamator–chessore-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be96121ff"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:27.175Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shamator%E2%80%93Chessore_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-shamator–chessore"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b0c"
+          },
+          {
+            "id": "0x9be9609b0d"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be9612207",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-seyochung–sitimi",
+            "names": [
+              {
+                "name": "Seyochung–Sitimi"
+              },
+              {
+                "name": "Seyochung Sitimi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Seyochung%E2%80%93Sitimi_Assembly_constituency",
+            "wikidata_qid": "Q55594031",
+            "node_created_on": "2025-01-29T10:29:30.336Z",
+            "active_version": {
+              "id": "0x9be9612206"
+            },
+            "versions": [
+              {
+                "id": "0x9be9612206"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be9612205"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be9612206",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-seyochung–sitimi-version-25",
+            "region": {
+              "id": "0x9be9612205"
+            },
+            "constituency_number": "59",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be9612205",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-seyochung–sitimi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612204"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:28.861Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Seyochung%E2%80%93Sitimi_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-seyochung–sitimi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9609b13"
+          },
+          {
+            "id": "0x9be9609b14"
+          }
+        ],
+        "vidhansabhaConstituency": {
+          "vidhansabhaConstituencyId": "0x9be961220c",
+          "toSaveVidhansabhaConstituency": {
+            "name_id": "in-vc-nl-pungro–kiphire",
+            "names": [
+              {
+                "name": "Pungro–Kiphire"
+              },
+              {
+                "name": "Pungro Kiphire"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pungro%E2%80%93Kiphire_Assembly_constituency",
+            "wikidata_qid": "Q55594033",
+            "node_created_on": "2025-01-29T10:29:32.301Z",
+            "active_version": {
+              "id": "0x9be961220b"
+            },
+            "versions": [
+              {
+                "id": "0x9be961220b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be961220a"
+              }
+            ]
+          }
+        },
+        "vidhansabhaConstituencyVersion": {
+          "vidhansabhaConstituencyVersionId": "0x9be961220b",
+          "toSaveVidhansabhaConstituencyVersion": {
+            "name_id": "in-vc-nl-pungro–kiphire-version-25",
+            "region": {
+              "id": "0x9be961220a"
+            },
+            "constituency_number": "60",
+            "reservation": "ST"
+          }
+        },
+        "vidhansabhaConstituencyRegion": {
+          "vidhansabhaConstituencyRegionId": "0x9be961220a",
+          "toSaveVidhansabhaConstituencyRegion": {
+            "name_id": "in-vc-nl-pungro–kiphire-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be9612209"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T10:29:31.771Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pungro%E2%80%93Kiphire_Assembly_constituency"
+        ],
+        "name_id": "in-vc-nl-pungro–kiphire"
+      }
+    ]
+  },
+  "key": "STEP_5_SUCCESS_Save Vidhansabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T10:29:32.682Z"
+}

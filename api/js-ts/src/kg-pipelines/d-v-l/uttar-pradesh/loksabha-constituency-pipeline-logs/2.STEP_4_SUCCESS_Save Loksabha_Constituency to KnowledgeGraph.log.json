@@ -1,0 +1,5529 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be96063ea"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f80c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-saharanpur",
+            "names": [
+              {
+                "name": "Saharanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Saharanpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7399517",
+            "node_created_on": "2025-01-29T03:37:50.799Z",
+            "active_version": {
+              "id": "0x9be960f80b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f80b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f80a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f80b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-saharanpur-version-25",
+            "region": {
+              "id": "0x9be960f80a"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f80a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-saharanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f809"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:49.733Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Saharanpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-saharanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606db0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f811",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kairana",
+            "names": [
+              {
+                "name": "Kairana"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kairana_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12420818",
+            "node_created_on": "2025-01-29T03:37:52.927Z",
+            "active_version": {
+              "id": "0x9be960f810"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f810"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f80f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f810",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kairana-version-25",
+            "region": {
+              "id": "0x9be960f80f"
+            },
+            "constituency_number": "2",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f80f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kairana-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f80e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:52.130Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kairana_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kairana"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063c7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f816",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-muzaffarnagar",
+            "names": [
+              {
+                "name": "Muzaffarnagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Muzaffarnagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630669",
+            "node_created_on": "2025-01-29T03:37:55.316Z",
+            "active_version": {
+              "id": "0x9be960f815"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f815"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f814"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f815",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-muzaffarnagar-version-25",
+            "region": {
+              "id": "0x9be960f814"
+            },
+            "constituency_number": "3",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f814",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-muzaffarnagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f813"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:54.586Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Muzaffarnagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-muzaffarnagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062dc"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f81b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bijnor",
+            "names": [
+              {
+                "name": "Bijnor"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bijnor_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633391",
+            "node_created_on": "2025-01-29T03:37:57.126Z",
+            "active_version": {
+              "id": "0x9be960f81a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f81a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f819"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f81a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bijnor-version-25",
+            "region": {
+              "id": "0x9be960f819"
+            },
+            "constituency_number": "4",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f819",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bijnor-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f818"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:56.408Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bijnor_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bijnor"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606dc0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f820",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-nagina",
+            "names": [
+              {
+                "name": "Nagina"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagina_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6958833",
+            "node_created_on": "2025-01-29T03:37:59.073Z",
+            "active_version": {
+              "id": "0x9be960f81f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f81f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f81e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f81f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-nagina-version-25",
+            "region": {
+              "id": "0x9be960f81e"
+            },
+            "constituency_number": "5",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f81e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-nagina-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f81d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:37:58.252Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagina_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-nagina"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063c1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f825",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-moradabad",
+            "names": [
+              {
+                "name": "Moradabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Moradabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3635773",
+            "node_created_on": "2025-01-29T03:38:01.330Z",
+            "active_version": {
+              "id": "0x9be960f824"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f824"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f823"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f824",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-moradabad-version-25",
+            "region": {
+              "id": "0x9be960f823"
+            },
+            "constituency_number": "6",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f823",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-moradabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f822"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:00.716Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Moradabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-moradabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063e4"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f82a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-rampur",
+            "names": [
+              {
+                "name": "Rampur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rampur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7290061",
+            "node_created_on": "2025-01-29T03:38:03.375Z",
+            "active_version": {
+              "id": "0x9be960f829"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f829"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f828"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f829",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-rampur-version-25",
+            "region": {
+              "id": "0x9be960f828"
+            },
+            "constituency_number": "7",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f828",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-rampur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f827"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:02.550Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Rampur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-rampur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063f0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f82f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-sambhal",
+            "names": [
+              {
+                "name": "Sambhal"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sambhal_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7409031",
+            "node_created_on": "2025-01-29T03:38:05.487Z",
+            "active_version": {
+              "id": "0x9be960f82e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f82e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f82d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f82e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-sambhal-version-25",
+            "region": {
+              "id": "0x9be960f82d"
+            },
+            "constituency_number": "8",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f82d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-sambhal-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f82c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:04.400Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sambhal_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-sambhal"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960628d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f834",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-amroha",
+            "names": [
+              {
+                "name": "Amroha"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Amroha_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633418",
+            "node_created_on": "2025-01-29T03:38:07.367Z",
+            "active_version": {
+              "id": "0x9be960f833"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f833"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f832"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f833",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-amroha-version-25",
+            "region": {
+              "id": "0x9be960f832"
+            },
+            "constituency_number": "9",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f832",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-amroha-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f831"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:06.503Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Amroha_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-amroha"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063b5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f839",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-meerut",
+            "names": [
+              {
+                "name": "Meerut"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Meerut_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12447565",
+            "node_created_on": "2025-01-29T03:38:09.319Z",
+            "active_version": {
+              "id": "0x9be960f838"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f838"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f837"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f838",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-meerut-version-25",
+            "region": {
+              "id": "0x9be960f837"
+            },
+            "constituency_number": "10",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f837",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-meerut-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f836"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:08.699Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Meerut_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-meerut"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062a6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f83e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-baghpat",
+            "names": [
+              {
+                "name": "Baghpat"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Baghpat_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633352",
+            "node_created_on": "2025-01-29T03:38:11.872Z",
+            "active_version": {
+              "id": "0x9be960f83d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f83d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f83c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f83d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-baghpat-version-25",
+            "region": {
+              "id": "0x9be960f83c"
+            },
+            "constituency_number": "11",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f83c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-baghpat-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f83b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:10.714Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Baghpat_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-baghpat"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960631f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f843",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-ghaziabad",
+            "names": [
+              {
+                "name": "Ghaziabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghaziabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5556091",
+            "node_created_on": "2025-01-29T03:38:13.739Z",
+            "active_version": {
+              "id": "0x9be960f842"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f842"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f841"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f842",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-ghaziabad-version-25",
+            "region": {
+              "id": "0x9be960f841"
+            },
+            "constituency_number": "12",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f841",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-ghaziabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f840"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:13.017Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghaziabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-ghaziabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606319"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f848",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-gautam-buddha-nagar",
+            "names": [
+              {
+                "name": "Gautam Buddha Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gautam_Buddha_Nagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5527870",
+            "node_created_on": "2025-01-29T03:38:15.328Z",
+            "active_version": {
+              "id": "0x9be960f847"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f847"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f846"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f847",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-gautam-buddha-nagar-version-25",
+            "region": {
+              "id": "0x9be960f846"
+            },
+            "constituency_number": "13",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f846",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-gautam-buddha-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f845"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:14.637Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gautam_Buddha_Nagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-gautam-buddha-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606433"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f84d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bulandshahr",
+            "names": [
+              {
+                "name": "Bulandshahr"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bulandshahr_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634190",
+            "node_created_on": "2025-01-29T03:38:17.328Z",
+            "active_version": {
+              "id": "0x9be960f84c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f84c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f84b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f84c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bulandshahr-version-25",
+            "region": {
+              "id": "0x9be960f84b"
+            },
+            "constituency_number": "14",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f84b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bulandshahr-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f84a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:16.742Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bulandshahr_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bulandshahr"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960627b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f852",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-aligarh",
+            "names": [
+              {
+                "name": "Aligarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aligarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q371869",
+            "node_created_on": "2025-01-29T03:38:18.967Z",
+            "active_version": {
+              "id": "0x9be960f851"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f851"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f850"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f851",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-aligarh-version-25",
+            "region": {
+              "id": "0x9be960f850"
+            },
+            "constituency_number": "15",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f850",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-aligarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f84f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:18.311Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aligarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-aligarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606348"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f857",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-hathras",
+            "names": [
+              {
+                "name": "Hathras"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hathras_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5681557",
+            "node_created_on": "2025-01-29T03:38:20.783Z",
+            "active_version": {
+              "id": "0x9be960f856"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f856"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f855"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f856",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-hathras-version-25",
+            "region": {
+              "id": "0x9be960f855"
+            },
+            "constituency_number": "16",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f855",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-hathras-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f854"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:20.010Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hathras_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-hathras"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063a9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f85c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-mathura",
+            "names": [
+              {
+                "name": "Mathura"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mathura_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634234",
+            "node_created_on": "2025-01-29T03:38:23.194Z",
+            "active_version": {
+              "id": "0x9be960f85b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f85b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f85a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f85b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-mathura-version-25",
+            "region": {
+              "id": "0x9be960f85a"
+            },
+            "constituency_number": "17",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f85a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-mathura-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f859"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:22.444Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mathura_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-mathura"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606275"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f861",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-agra",
+            "names": [
+              {
+                "name": "Agra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Agra_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4693670",
+            "node_created_on": "2025-01-29T03:38:24.978Z",
+            "active_version": {
+              "id": "0x9be960f860"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f860"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f85f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f860",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-agra-version-25",
+            "region": {
+              "id": "0x9be960f85f"
+            },
+            "constituency_number": "18",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f85f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-agra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f85e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:24.339Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Agra_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-agra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e07"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f866",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-fatehpur-sikri",
+            "names": [
+              {
+                "name": "Fatehpur Sikri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatehpur_Sikri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5437430",
+            "node_created_on": "2025-01-29T03:38:26.722Z",
+            "active_version": {
+              "id": "0x9be960f865"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f865"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f864"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f865",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-fatehpur-sikri-version-25",
+            "region": {
+              "id": "0x9be960f864"
+            },
+            "constituency_number": "19",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f864",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-fatehpur-sikri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f863"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:25.901Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatehpur_Sikri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-fatehpur-sikri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606313"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f86b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-firozabad",
+            "names": [
+              {
+                "name": "Firozabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Firozabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5452174",
+            "node_created_on": "2025-01-29T03:38:28.909Z",
+            "active_version": {
+              "id": "0x9be960f86a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f86a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f869"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f86a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-firozabad-version-25",
+            "region": {
+              "id": "0x9be960f869"
+            },
+            "constituency_number": "20",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f869",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-firozabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f868"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:27.837Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Firozabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-firozabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063a3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f870",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-mainpuri",
+            "names": [
+              {
+                "name": "Mainpuri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mainpuri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6736725",
+            "node_created_on": "2025-01-29T03:38:30.714Z",
+            "active_version": {
+              "id": "0x9be960f86f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f86f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f86e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f86f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-mainpuri-version-25",
+            "region": {
+              "id": "0x9be960f86e"
+            },
+            "constituency_number": "21",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f86e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-mainpuri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f86d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:29.998Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mainpuri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-mainpuri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062fb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f875",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-etah",
+            "names": [
+              {
+                "name": "Etah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Etah_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634262",
+            "node_created_on": "2025-01-29T03:38:32.762Z",
+            "active_version": {
+              "id": "0x9be960f874"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f874"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f873"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f874",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-etah-version-25",
+            "region": {
+              "id": "0x9be960f873"
+            },
+            "constituency_number": "22",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f873",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-etah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f872"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:31.799Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Etah_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-etah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062e3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f87a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-badaun",
+            "names": [
+              {
+                "name": "Badaun"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Badaun_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4840644",
+            "node_created_on": "2025-01-29T03:38:34.754Z",
+            "active_version": {
+              "id": "0x9be960f879"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f879"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f878"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f879",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-badaun-version-25",
+            "region": {
+              "id": "0x9be960f878"
+            },
+            "constituency_number": "23",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f878",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-badaun-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f877"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:33.951Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Badaun_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-badaun"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e21"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f87f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-aonla",
+            "names": [
+              {
+                "name": "Aonla"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Aonla_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4778703",
+            "node_created_on": "2025-01-29T03:38:36.804Z",
+            "active_version": {
+              "id": "0x9be960f87e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f87e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f87d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f87e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-aonla-version-25",
+            "region": {
+              "id": "0x9be960f87d"
+            },
+            "constituency_number": "24",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f87d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-aonla-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f87c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:36.264Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Aonla_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-aonla"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062c9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f884",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bareilly",
+            "names": [
+              {
+                "name": "Bareilly"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bareilly_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4860392",
+            "node_created_on": "2025-01-29T03:38:38.522Z",
+            "active_version": {
+              "id": "0x9be960f883"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f883"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f882"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f883",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bareilly-version-25",
+            "region": {
+              "id": "0x9be960f882"
+            },
+            "constituency_number": "25",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f882",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bareilly-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f881"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:37.909Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bareilly_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bareilly"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063cd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f889",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-pilibhit",
+            "names": [
+              {
+                "name": "Pilibhit"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pilibhit_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7193997",
+            "node_created_on": "2025-01-29T03:38:41.158Z",
+            "active_version": {
+              "id": "0x9be960f888"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f888"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f887"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f888",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-pilibhit-version-25",
+            "region": {
+              "id": "0x9be960f887"
+            },
+            "constituency_number": "26",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f887",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-pilibhit-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f886"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:40.056Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pilibhit_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-pilibhit"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063fc"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f88e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-shahjahanpur",
+            "names": [
+              {
+                "name": "Shahjahanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shahjahanpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7461799",
+            "node_created_on": "2025-01-29T03:38:43.314Z",
+            "active_version": {
+              "id": "0x9be960f88d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f88d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f88c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f88d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-shahjahanpur-version-25",
+            "region": {
+              "id": "0x9be960f88c"
+            },
+            "constituency_number": "27",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f88c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-shahjahanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f88b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:42.222Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shahjahanpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-shahjahanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e36"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f893",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kheri",
+            "names": [
+              {
+                "name": "Kheri"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kheri_Lok_Sabha_constituency",
+            "wikidata_qid": "Q13512175",
+            "node_created_on": "2025-01-29T03:38:45.256Z",
+            "active_version": {
+              "id": "0x9be960f892"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f892"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f891"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f892",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kheri-version-25",
+            "region": {
+              "id": "0x9be960f891"
+            },
+            "constituency_number": "28",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f891",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kheri-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f890"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:44.538Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kheri_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kheri"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e3c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f898",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-dhaurahra",
+            "names": [
+              {
+                "name": "Dhaurahra"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Dhaurahra_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12434696",
+            "node_created_on": "2025-01-29T03:38:47.192Z",
+            "active_version": {
+              "id": "0x9be960f897"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f897"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f896"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f897",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-dhaurahra-version-25",
+            "region": {
+              "id": "0x9be960f896"
+            },
+            "constituency_number": "29",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f896",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-dhaurahra-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f895"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:46.380Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Dhaurahra_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-dhaurahra"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606415"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f89d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-sitapur",
+            "names": [
+              {
+                "name": "Sitapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sitapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630783",
+            "node_created_on": "2025-01-29T03:38:48.749Z",
+            "active_version": {
+              "id": "0x9be960f89c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f89c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f89b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f89c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-sitapur-version-25",
+            "region": {
+              "id": "0x9be960f89b"
+            },
+            "constituency_number": "30",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f89b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-sitapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f89a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:48.190Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sitapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-sitapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606342"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8a2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-hardoi",
+            "names": [
+              {
+                "name": "Hardoi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hardoi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5656282",
+            "node_created_on": "2025-01-29T03:38:50.699Z",
+            "active_version": {
+              "id": "0x9be960f8a1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8a1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8a0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8a1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-hardoi-version-25",
+            "region": {
+              "id": "0x9be960f8a0"
+            },
+            "constituency_number": "31",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8a0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-hardoi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f89f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:50.068Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hardoi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-hardoi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e4c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8a7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-misrikh",
+            "names": [
+              {
+                "name": "Misrikh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Misrikh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6875956",
+            "node_created_on": "2025-01-29T03:38:52.770Z",
+            "active_version": {
+              "id": "0x9be960f8a6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8a6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8a5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8a6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-misrikh-version-25",
+            "region": {
+              "id": "0x9be960f8a5"
+            },
+            "constituency_number": "32",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8a5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-misrikh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8a4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:52.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Misrikh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-misrikh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606427"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8ac",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-unnao",
+            "names": [
+              {
+                "name": "Unnao"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Unnao_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7897148",
+            "node_created_on": "2025-01-29T03:38:54.960Z",
+            "active_version": {
+              "id": "0x9be960f8ab"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8ab"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8aa"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8ab",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-unnao-version-25",
+            "region": {
+              "id": "0x9be960f8aa"
+            },
+            "constituency_number": "33",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8aa",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-unnao-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8a9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:53.976Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Unnao_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-unnao"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e57"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8b1",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-mohanlalganj",
+            "names": [
+              {
+                "name": "Mohanlalganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mohanlalganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3823603",
+            "node_created_on": "2025-01-29T03:38:56.726Z",
+            "active_version": {
+              "id": "0x9be960f8b0"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8b0"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8af"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8b0",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-mohanlalganj-version-25",
+            "region": {
+              "id": "0x9be960f8af"
+            },
+            "constituency_number": "34",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8af",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-mohanlalganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8ae"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:56.190Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mohanlalganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-mohanlalganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606390"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8b6",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-lucknow",
+            "names": [
+              {
+                "name": "Lucknow"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lucknow_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6697765",
+            "node_created_on": "2025-01-29T03:38:58.771Z",
+            "active_version": {
+              "id": "0x9be960f8b5"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8b5"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8b4"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8b5",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-lucknow-version-25",
+            "region": {
+              "id": "0x9be960f8b4"
+            },
+            "constituency_number": "35",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8b4",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-lucknow-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8b3"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:58.056Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lucknow_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-lucknow"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e62"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8bb",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-rae-bareli",
+            "names": [
+              {
+                "name": "Rae Bareli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Rae_Bareli_Lok_Sabha_constituency",
+            "wikidata_qid": "Q63117558",
+            "node_created_on": "2025-01-29T03:39:00.717Z",
+            "active_version": {
+              "id": "0x9be960f8ba"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8ba"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8b9"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8ba",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-rae-bareli-version-25",
+            "region": {
+              "id": "0x9be960f8b9"
+            },
+            "constituency_number": "36",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8b9",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-rae-bareli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8b8"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:38:59.899Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Raebareli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-rae-bareli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606287"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8c0",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-amethi",
+            "names": [
+              {
+                "name": "Amethi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Amethi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4745924",
+            "node_created_on": "2025-01-29T03:39:02.336Z",
+            "active_version": {
+              "id": "0x9be960f8bf"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8bf"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8be"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8bf",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-amethi-version-25",
+            "region": {
+              "id": "0x9be960f8be"
+            },
+            "constituency_number": "37",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8be",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-amethi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8bd"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:01.702Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Amethi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-amethi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606421"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8c5",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-sultanpur",
+            "names": [
+              {
+                "name": "Sultanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sultanpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7636812",
+            "node_created_on": "2025-01-29T03:39:03.960Z",
+            "active_version": {
+              "id": "0x9be960f8c4"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8c4"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8c3"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8c4",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-sultanpur-version-25",
+            "region": {
+              "id": "0x9be960f8c3"
+            },
+            "constituency_number": "38",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8c3",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-sultanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8c2"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:03.379Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sultanpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-sultanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960603a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8ca",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-pratapgarh",
+            "names": [
+              {
+                "name": "Pratapgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Pratapgarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7238619",
+            "node_created_on": "2025-01-29T03:39:06.196Z",
+            "active_version": {
+              "id": "0x9be960f8c9"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8c9"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8c8"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8c9",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-pratapgarh-version-25",
+            "region": {
+              "id": "0x9be960f8c8"
+            },
+            "constituency_number": "39",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8c8",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-pratapgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8c7"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:05.054Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Pratapgarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-pratapgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606307"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8cf",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-farrukhabad",
+            "names": [
+              {
+                "name": "Farrukhabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Farrukhabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5436365",
+            "node_created_on": "2025-01-29T03:39:08.296Z",
+            "active_version": {
+              "id": "0x9be960f8ce"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8ce"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8cd"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8ce",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-farrukhabad-version-25",
+            "region": {
+              "id": "0x9be960f8cd"
+            },
+            "constituency_number": "40",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8cd",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-farrukhabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8cc"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:07.578Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Farrukhabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-farrukhabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606301"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8d4",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-etawah",
+            "names": [
+              {
+                "name": "Etawah"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Etawah_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5402455",
+            "node_created_on": "2025-01-29T03:39:10.029Z",
+            "active_version": {
+              "id": "0x9be960f8d3"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8d3"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8d2"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8d3",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-etawah-version-25",
+            "region": {
+              "id": "0x9be960f8d2"
+            },
+            "constituency_number": "41",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8d2",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-etawah-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8d1"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:09.423Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Etawah_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-etawah"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606360"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8d9",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kannauj",
+            "names": [
+              {
+                "name": "Kannauj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kannauj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12418036",
+            "node_created_on": "2025-01-29T03:39:11.701Z",
+            "active_version": {
+              "id": "0x9be960f8d8"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8d8"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8d7"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8d8",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kannauj-version-25",
+            "region": {
+              "id": "0x9be960f8d7"
+            },
+            "constituency_number": "42",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8d7",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kannauj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8d6"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:11.037Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kannauj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kannauj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e86"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8de",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kanpur",
+            "names": [
+              {
+                "name": "Kanpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kanpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q11032972",
+            "node_created_on": "2025-01-29T03:39:13.719Z",
+            "active_version": {
+              "id": "0x9be960f8dd"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8dd"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8dc"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8dd",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kanpur-version-25",
+            "region": {
+              "id": "0x9be960f8dc"
+            },
+            "constituency_number": "43",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8dc",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kanpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8db"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:12.703Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kanpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kanpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606e8c"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8e3",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-akbarpur",
+            "names": [
+              {
+                "name": "Akbarpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Akbarpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633316",
+            "node_created_on": "2025-01-29T03:39:15.874Z",
+            "active_version": {
+              "id": "0x9be960f8e2"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8e2"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8e1"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8e2",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-akbarpur-version-25",
+            "region": {
+              "id": "0x9be960f8e1"
+            },
+            "constituency_number": "44",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8e1",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-akbarpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8e0"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:14.705Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Akbarpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-akbarpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960634e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8e8",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-jalaun",
+            "names": [
+              {
+                "name": "Jalaun"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jalaun_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6126683",
+            "node_created_on": "2025-01-29T03:39:17.792Z",
+            "active_version": {
+              "id": "0x9be960f8e7"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8e7"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8e6"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8e7",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-jalaun-version-25",
+            "region": {
+              "id": "0x9be960f8e6"
+            },
+            "constituency_number": "45",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8e6",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-jalaun-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8e5"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:17.197Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jalaun_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-jalaun"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960635a"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8ed",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-jhansi",
+            "names": [
+              {
+                "name": "Jhansi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jhansi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634171",
+            "node_created_on": "2025-01-29T03:39:20.071Z",
+            "active_version": {
+              "id": "0x9be960f8ec"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8ec"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8eb"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8ec",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-jhansi-version-25",
+            "region": {
+              "id": "0x9be960f8eb"
+            },
+            "constituency_number": "46",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8eb",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-jhansi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8ea"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:19.308Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jhansi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-jhansi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9605816"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8f2",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-hamirpur",
+            "names": [
+              {
+                "name": "Hamirpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Hamirpur,_Uttar_Pradesh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5645332",
+            "node_created_on": "2025-01-29T03:39:21.810Z",
+            "active_version": {
+              "id": "0x9be960f8f1"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8f1"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8f0"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8f1",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-hamirpur-version-25",
+            "region": {
+              "id": "0x9be960f8f0"
+            },
+            "constituency_number": "47",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8f0",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-hamirpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8ef"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:21.097Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Hamirpur,_Uttar_Pradesh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-hamirpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062bd"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8f7",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-banda",
+            "names": [
+              {
+                "name": "Banda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Banda_Lok_Sabha_constituency",
+            "wikidata_qid": "Q1780136",
+            "node_created_on": "2025-01-29T03:39:23.834Z",
+            "active_version": {
+              "id": "0x9be960f8f6"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8f6"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8f5"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8f6",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-banda-version-25",
+            "region": {
+              "id": "0x9be960f8f5"
+            },
+            "constituency_number": "48",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8f5",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-banda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8f4"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:23.189Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Banda_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-banda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960630d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f8fc",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-fatehpur",
+            "names": [
+              {
+                "name": "Fatehpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Fatehpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5437428",
+            "node_created_on": "2025-01-29T03:39:25.535Z",
+            "active_version": {
+              "id": "0x9be960f8fb"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f8fb"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8fa"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f8fb",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-fatehpur-version-25",
+            "region": {
+              "id": "0x9be960f8fa"
+            },
+            "constituency_number": "49",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8fa",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-fatehpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8f9"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:24.885Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Fatehpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-fatehpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606378"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f901",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kaushambi",
+            "names": [
+              {
+                "name": "Kaushambi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kaushambi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6378946",
+            "node_created_on": "2025-01-29T03:39:27.703Z",
+            "active_version": {
+              "id": "0x9be960f900"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f900"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f8ff"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f900",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kaushambi-version-25",
+            "region": {
+              "id": "0x9be960f8ff"
+            },
+            "constituency_number": "50",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f8ff",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kaushambi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f8fe"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:26.948Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kaushambi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kaushambi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606eb0"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f906",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-phulpur",
+            "names": [
+              {
+                "name": "Phulpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Phulpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7188338",
+            "node_created_on": "2025-01-29T03:39:29.310Z",
+            "active_version": {
+              "id": "0x9be960f905"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f905"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f904"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f905",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-phulpur-version-25",
+            "region": {
+              "id": "0x9be960f904"
+            },
+            "constituency_number": "51",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f904",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-phulpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f903"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:28.721Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Phulpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-phulpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606eb6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f90b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-allahabad",
+            "names": [
+              {
+                "name": "Allahabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Allahabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4730342",
+            "node_created_on": "2025-01-29T03:39:31.745Z",
+            "active_version": {
+              "id": "0x9be960f90a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f90a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f909"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f90a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-allahabad-version-25",
+            "region": {
+              "id": "0x9be960f909"
+            },
+            "constituency_number": "52",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f909",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-allahabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f908"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:30.973Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Allahabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-allahabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062c3"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f910",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-barabanki",
+            "names": [
+              {
+                "name": "Barabanki"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Barabanki_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3633461",
+            "node_created_on": "2025-01-29T03:39:34.406Z",
+            "active_version": {
+              "id": "0x9be960f90f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f90f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f90e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f90f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-barabanki-version-25",
+            "region": {
+              "id": "0x9be960f90e"
+            },
+            "constituency_number": "53",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f90e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-barabanki-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f90d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:33.077Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Barabanki_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-barabanki"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ec1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f915",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-faizabad",
+            "names": [
+              {
+                "name": "Faizabad"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Faizabad_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5431351",
+            "node_created_on": "2025-01-29T03:39:35.948Z",
+            "active_version": {
+              "id": "0x9be960f914"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f914"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f913"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f914",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-faizabad-version-25",
+            "region": {
+              "id": "0x9be960f913"
+            },
+            "constituency_number": "54",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f913",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-faizabad-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f912"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:35.328Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Faizabad_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-faizabad"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606281"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f91a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-ambedkar-nagar",
+            "names": [
+              {
+                "name": "Ambedkar Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ambedkar_Nagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4741186",
+            "node_created_on": "2025-01-29T03:39:37.701Z",
+            "active_version": {
+              "id": "0x9be960f919"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f919"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f918"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f919",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-ambedkar-nagar-version-25",
+            "region": {
+              "id": "0x9be960f918"
+            },
+            "constituency_number": "55",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f918",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-ambedkar-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f917"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:37.035Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ambedkar_Nagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-ambedkar-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062ac"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f91f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bahraich",
+            "names": [
+              {
+                "name": "Bahraich"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bahraich_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4842725",
+            "node_created_on": "2025-01-29T03:39:40.756Z",
+            "active_version": {
+              "id": "0x9be960f91e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f91e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f91d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f91e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bahraich-version-25",
+            "region": {
+              "id": "0x9be960f91d"
+            },
+            "constituency_number": "56",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f91d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bahraich-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f91c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:39.737Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bahraich_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bahraich"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ed1"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f924",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kaiserganj",
+            "names": [
+              {
+                "name": "Kaiserganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kaiserganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634204",
+            "node_created_on": "2025-01-29T03:39:42.943Z",
+            "active_version": {
+              "id": "0x9be960f923"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f923"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f922"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f923",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kaiserganj-version-25",
+            "region": {
+              "id": "0x9be960f922"
+            },
+            "constituency_number": "57",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f922",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kaiserganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f921"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:42.198Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kaiserganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kaiserganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ed7"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f929",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-shrawasti",
+            "names": [
+              {
+                "name": "Shrawasti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Shravasti_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7503442",
+            "node_created_on": "2025-01-29T03:39:44.748Z",
+            "active_version": {
+              "id": "0x9be960f928"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f928"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f927"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f928",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-shrawasti-version-25",
+            "region": {
+              "id": "0x9be960f927"
+            },
+            "constituency_number": "58",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f927",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-shrawasti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f926"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:44.008Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Shravasti_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-shrawasti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960632b"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f92e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-gonda",
+            "names": [
+              {
+                "name": "Gonda"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gonda_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12424329",
+            "node_created_on": "2025-01-29T03:39:47.023Z",
+            "active_version": {
+              "id": "0x9be960f92d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f92d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f92c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f92d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-gonda-version-25",
+            "region": {
+              "id": "0x9be960f92c"
+            },
+            "constituency_number": "59",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f92c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-gonda-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f92b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:46.335Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gonda_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-gonda"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606ee2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f933",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-domariyaganj",
+            "names": [
+              {
+                "name": "Domariyaganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Domariyaganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5289934",
+            "node_created_on": "2025-01-29T03:39:49.767Z",
+            "active_version": {
+              "id": "0x9be960f932"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f932"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f931"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f932",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-domariyaganj-version-25",
+            "region": {
+              "id": "0x9be960f931"
+            },
+            "constituency_number": "60",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f931",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-domariyaganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f930"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:48.745Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Domariyaganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-domariyaganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062cf"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f938",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-basti",
+            "names": [
+              {
+                "name": "Basti"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Basti_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4868265",
+            "node_created_on": "2025-01-29T03:39:51.779Z",
+            "active_version": {
+              "id": "0x9be960f937"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f937"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f936"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f937",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-basti-version-25",
+            "region": {
+              "id": "0x9be960f936"
+            },
+            "constituency_number": "61",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f936",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-basti-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f935"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:50.784Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Basti_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-basti"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063f6"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f93d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-sant-kabir-nagar",
+            "names": [
+              {
+                "name": "Sant Kabir Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Sant_Kabir_Nagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7419095",
+            "node_created_on": "2025-01-29T03:39:53.718Z",
+            "active_version": {
+              "id": "0x9be960f93c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f93c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f93b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f93c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-sant-kabir-nagar-version-25",
+            "region": {
+              "id": "0x9be960f93b"
+            },
+            "constituency_number": "62",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f93b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-sant-kabir-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f93a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:53.026Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Sant_Kabir_Nagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-sant-kabir-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606396"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f942",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-maharajganj",
+            "names": [
+              {
+                "name": "Maharajganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Maharajganj,_Uttar_Pradesh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6733274",
+            "node_created_on": "2025-01-29T03:39:55.749Z",
+            "active_version": {
+              "id": "0x9be960f941"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f941"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f940"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f941",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-maharajganj-version-25",
+            "region": {
+              "id": "0x9be960f940"
+            },
+            "constituency_number": "63",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f940",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-maharajganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f93f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:55.210Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Maharajganj,_Uttar_Pradesh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-maharajganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606331"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f947",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-gorakhpur",
+            "names": [
+              {
+                "name": "Gorakhpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Gorakhpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q63121240",
+            "node_created_on": "2025-01-29T03:39:57.474Z",
+            "active_version": {
+              "id": "0x9be960f946"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f946"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f945"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f946",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-gorakhpur-version-25",
+            "region": {
+              "id": "0x9be960f945"
+            },
+            "constituency_number": "64",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f945",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-gorakhpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f944"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:56.826Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Gorakhpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-gorakhpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606efc"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f94c",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-kushi-nagar",
+            "names": [
+              {
+                "name": "Kushi Nagar"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Kushinagar_Lok_Sabha_constituency",
+            "wikidata_qid": "Q12420304",
+            "node_created_on": "2025-01-29T03:39:59.691Z",
+            "active_version": {
+              "id": "0x9be960f94b"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f94b"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f94a"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f94b",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-kushi-nagar-version-25",
+            "region": {
+              "id": "0x9be960f94a"
+            },
+            "constituency_number": "65",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f94a",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-kushi-nagar-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f949"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:39:58.577Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Kushi_Nagar_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-kushi-nagar"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062f5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f951",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-deoria",
+            "names": [
+              {
+                "name": "Deoria"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Deoria_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3634176",
+            "node_created_on": "2025-01-29T03:40:01.339Z",
+            "active_version": {
+              "id": "0x9be960f950"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f950"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f94f"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f950",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-deoria-version-25",
+            "region": {
+              "id": "0x9be960f94f"
+            },
+            "constituency_number": "66",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f94f",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-deoria-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f94e"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:00.693Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Deoria_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-deoria"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f07"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f956",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bansgaon",
+            "names": [
+              {
+                "name": "Bansgaon"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bansgaon_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4857123",
+            "node_created_on": "2025-01-29T03:40:03.591Z",
+            "active_version": {
+              "id": "0x9be960f955"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f955"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f954"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f955",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bansgaon-version-25",
+            "region": {
+              "id": "0x9be960f954"
+            },
+            "constituency_number": "67",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f954",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bansgaon-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f953"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:02.775Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bansgaon_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bansgaon"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f0d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f95b",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-lalganj",
+            "names": [
+              {
+                "name": "Lalganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Lalganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6480280",
+            "node_created_on": "2025-01-29T03:40:05.434Z",
+            "active_version": {
+              "id": "0x9be960f95a"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f95a"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f959"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f95a",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-lalganj-version-25",
+            "region": {
+              "id": "0x9be960f959"
+            },
+            "constituency_number": "68",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f959",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-lalganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f958"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:04.686Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Lalganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-lalganj"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960629f"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f960",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-azamgarh",
+            "names": [
+              {
+                "name": "Azamgarh"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Azamgarh_Lok_Sabha_constituency",
+            "wikidata_qid": "Q16193457",
+            "node_created_on": "2025-01-29T03:40:07.193Z",
+            "active_version": {
+              "id": "0x9be960f95f"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f95f"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f95e"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f95f",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-azamgarh-version-25",
+            "region": {
+              "id": "0x9be960f95e"
+            },
+            "constituency_number": "69",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f95e",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-azamgarh-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f95d"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:06.357Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Azamgarh_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-azamgarh"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f18"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f965",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-ghosi",
+            "names": [
+              {
+                "name": "Ghosi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghosi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5557002",
+            "node_created_on": "2025-01-29T03:40:08.918Z",
+            "active_version": {
+              "id": "0x9be960f964"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f964"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f963"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f964",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-ghosi-version-25",
+            "region": {
+              "id": "0x9be960f963"
+            },
+            "constituency_number": "70",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f963",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-ghosi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f962"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:08.191Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghosi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-ghosi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f1e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f96a",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-salempur",
+            "names": [
+              {
+                "name": "Salempur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Salempur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q11031937",
+            "node_created_on": "2025-01-29T03:40:11.027Z",
+            "active_version": {
+              "id": "0x9be960f969"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f969"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f968"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f969",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-salempur-version-25",
+            "region": {
+              "id": "0x9be960f968"
+            },
+            "constituency_number": "71",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f968",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-salempur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f967"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:10.483Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Salempur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-salempur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062b2"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f96f",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-ballia",
+            "names": [
+              {
+                "name": "Ballia"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ballia_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4851665",
+            "node_created_on": "2025-01-29T03:40:12.732Z",
+            "active_version": {
+              "id": "0x9be960f96e"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f96e"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f96d"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f96e",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-ballia-version-25",
+            "region": {
+              "id": "0x9be960f96d"
+            },
+            "constituency_number": "72",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f96d",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-ballia-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f96c"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:11.886Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ballia_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-ballia"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606354"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f974",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-jaunpur",
+            "names": [
+              {
+                "name": "Jaunpur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Jaunpur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6164852",
+            "node_created_on": "2025-01-29T03:40:14.817Z",
+            "active_version": {
+              "id": "0x9be960f973"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f973"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f972"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f973",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-jaunpur-version-25",
+            "region": {
+              "id": "0x9be960f972"
+            },
+            "constituency_number": "73",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f972",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-jaunpur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f971"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:13.689Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Jaunpur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-jaunpur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f2e"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f979",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-machhlishahr",
+            "names": [
+              {
+                "name": "Machhlishahr"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Machhlishahr_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6723526",
+            "node_created_on": "2025-01-29T03:40:16.470Z",
+            "active_version": {
+              "id": "0x9be960f978"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f978"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f977"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f978",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-machhlishahr-version-25",
+            "region": {
+              "id": "0x9be960f977"
+            },
+            "constituency_number": "74",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f977",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-machhlishahr-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f976"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:15.876Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Machhlishahr_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-machhlishahr"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606325"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f97e",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-ghazipur",
+            "names": [
+              {
+                "name": "Ghazipur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Ghazipur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5556103",
+            "node_created_on": "2025-01-29T03:40:17.909Z",
+            "active_version": {
+              "id": "0x9be960f97d"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f97d"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f97c"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f97d",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-ghazipur-version-25",
+            "region": {
+              "id": "0x9be960f97c"
+            },
+            "constituency_number": "75",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f97c",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-ghazipur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f97b"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:17.301Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Ghazipur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-ghazipur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062e9"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f983",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-chandauli",
+            "names": [
+              {
+                "name": "Chandauli"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Chandauli_Lok_Sabha_constituency",
+            "wikidata_qid": "Q5070983",
+            "node_created_on": "2025-01-29T03:40:20.385Z",
+            "active_version": {
+              "id": "0x9be960f982"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f982"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f981"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f982",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-chandauli-version-25",
+            "region": {
+              "id": "0x9be960f981"
+            },
+            "constituency_number": "76",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f981",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-chandauli-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f980"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:19.564Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Chandauli_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-chandauli"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be960642d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f988",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-varanasi",
+            "names": [
+              {
+                "name": "Varanasi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Varanasi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q3630705",
+            "node_created_on": "2025-01-29T03:40:21.947Z",
+            "active_version": {
+              "id": "0x9be960f987"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f987"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f986"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f987",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-varanasi-version-25",
+            "region": {
+              "id": "0x9be960f986"
+            },
+            "constituency_number": "77",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f986",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-varanasi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f985"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:21.321Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Varanasi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-varanasi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96062d5"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f98d",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-bhadohi",
+            "names": [
+              {
+                "name": "Bhadohi"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Bhadohi_Lok_Sabha_constituency",
+            "wikidata_qid": "Q4900529",
+            "node_created_on": "2025-01-29T03:40:23.687Z",
+            "active_version": {
+              "id": "0x9be960f98c"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f98c"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f98b"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f98c",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-bhadohi-version-25",
+            "region": {
+              "id": "0x9be960f98b"
+            },
+            "constituency_number": "78",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f98b",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-bhadohi-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f98a"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:22.861Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Bhadohi_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-bhadohi"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be96063bb"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f992",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-mirzapur",
+            "names": [
+              {
+                "name": "Mirzapur"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Mirzapur_Lok_Sabha_constituency",
+            "wikidata_qid": "Q6874958",
+            "node_created_on": "2025-01-29T03:40:25.530Z",
+            "active_version": {
+              "id": "0x9be960f991"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f991"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f990"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f991",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-mirzapur-version-25",
+            "region": {
+              "id": "0x9be960f990"
+            },
+            "constituency_number": "79",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f990",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-mirzapur-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f98f"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:24.718Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Mirzapur_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-mirzapur"
+      },
+      {
+        "names": [
+          {
+            "id": "0x9be9606f4d"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f997",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-up-robertsganj",
+            "names": [
+              {
+                "name": "Robertsganj"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Robertsganj_Lok_Sabha_constituency",
+            "wikidata_qid": "Q7352073",
+            "node_created_on": "2025-01-29T03:40:27.552Z",
+            "active_version": {
+              "id": "0x9be960f996"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f996"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f995"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f996",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-up-robertsganj-version-25",
+            "region": {
+              "id": "0x9be960f995"
+            },
+            "constituency_number": "80",
+            "reservation": "SC"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f995",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-up-robertsganj-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f994"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-uttar-pradesh-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:40:26.733Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Robertsganj_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-up-robertsganj"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:40:27.964Z"
+}

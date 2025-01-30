@@ -1,0 +1,78 @@
+{
+  "message": "Step 4 (Save Loksabha_Constituency to KnowledgeGraph) completed successfully.",
+  "data": {
+    "savedToKnowledgeGraph": [
+      {
+        "names": [
+          {
+            "id": "0x9be95fd0e8"
+          }
+        ],
+        "loksabhaConstituency": {
+          "loksabhaConstituencyId": "0x9be960f496",
+          "toSaveLoksabhaConstituency": {
+            "name_id": "in-lc-nl-nagaland",
+            "names": [
+              {
+                "name": "Nagaland"
+              }
+            ],
+            "wikipedia_page": "https://en.wikipedia.org/wiki/Nagaland_Lok_Sabha_constituency",
+            "wikidata_qid": "Q1659313",
+            "node_created_on": "2025-01-29T03:12:48.346Z",
+            "active_version": {
+              "id": "0x9be960f495"
+            },
+            "versions": [
+              {
+                "id": "0x9be960f495"
+              }
+            ],
+            "regions": [
+              {
+                "id": "0x9be960f494"
+              }
+            ]
+          }
+        },
+        "loksabhaConstituencyVersion": {
+          "loksabhaConstituencyVersionId": "0x9be960f495",
+          "toSaveLoksabhaConstituencyVersion": {
+            "name_id": "in-lc-nl-nagaland-version-25",
+            "region": {
+              "id": "0x9be960f494"
+            },
+            "constituency_number": "1",
+            "reservation": "NONE"
+          }
+        },
+        "loksabhaConstituencyRegion": {
+          "loksabhaConstituencyRegionId": "0x9be960f494",
+          "toSaveLoksabhaConstituencyRegion": {
+            "name_id": "in-lc-nl-nagaland-version-25-region",
+            "geo_boundary": [
+              {
+                "id": "0x9be960f493"
+              }
+            ],
+            "states_union_territories": [
+              {
+                "name_id": "in-sut-nagaland-version-25-region"
+              }
+            ],
+            "node_created_on": "2025-01-29T03:12:47.731Z"
+          }
+        },
+        "geo": {
+          "geo_eci": null
+        },
+        "id_url": [
+          "https://en.wikipedia.org/wiki/Nagaland_Lok_Sabha_constituency"
+        ],
+        "name_id": "in-lc-nl-nagaland"
+      }
+    ]
+  },
+  "key": "STEP_4_SUCCESS_Save Loksabha_Constituency to KnowledgeGraph",
+  "timeStamp": "2025-01-29T03:12:48.757Z"
+}
