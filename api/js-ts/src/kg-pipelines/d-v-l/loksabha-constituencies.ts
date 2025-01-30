@@ -277,19 +277,19 @@ async function vidhansabhaConstituenciesPipeline(
     state.vidhansabha_constituencies =
       vidhansabhaConstituenciesKeyedByNameId[state.name_id]?.vidhansabha_constituencies;
 
-    // await loksabhaConstituenciesPipeline(
-    //   { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-    //   state.loksabha_constituencies,
-    //   saveToKG
-    // );
+    await loksabhaConstituenciesPipeline(
+      { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+      state.loksabha_constituencies,
+      saveToKG
+    );
 
-    if (state.vidhansabha_constituencies) {
-      await vidhansabhaConstituenciesPipeline(
-        { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
-        state.vidhansabha_constituencies,
-        saveToKG
-      );
-    }
+    // if (state.vidhansabha_constituencies) {
+    //   await vidhansabhaConstituenciesPipeline(
+    //     { name: state.name, name_id: state.name_id, vehicle_code: state.vehicle_code },
+    //     state.vidhansabha_constituencies,
+    //     saveToKG
+    //   );
+    // }
   }
 
   // cleanDirectories(state.name_id);
