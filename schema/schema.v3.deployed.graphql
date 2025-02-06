@@ -36,7 +36,7 @@ type User {
   image: String
   accounts: [Account] @hasInverse(field: "user")
   sessions: [Session] @hasInverse(field: "user")
-  # citizen_profile: _Citizen_Profile_
+  citizen_profile: _Citizen_Profile_ @hasInverse(field: "user")
 }
 
 type VerificationToken {
@@ -47,22 +47,24 @@ type VerificationToken {
   expires: DateTime
 }
 
-# type _Citizen_Profile_ {
-#   id: ID
+type _Citizen_Profile_ {
+  id: ID
 
-#   user: User @hasInverse(field: "citizen_profile")
+  user: User @hasInverse(field: "citizen_profile")
 
-#   # followed administrative region entities
-#   country: [_Administrative_Entity_]
-#   state: [_Administrative_Entity_]
-#   zonal_council: [_Administrative_Entity_]
-#   district: [_Administrative_Entity_]
-#   loksabha_constituency: [_Administrative_Entity_]
-#   vidhansabha_constituency: [_Administrative_Entity_]
+  # for now country defaults to India
+  # country: [_Country_]
 
-#   # policy subjects
-#   # #TODO
-# }
+  # what should the user follow? region version or entity?
+  # I think root entity it holds the identity of the region for the given time and connects to everything else.
+  state_or_union_territories: [_Indian_State_Union_Territory_] @hasInverse(field: "citizen_followers")
+  districts: [_Indian_District_] @hasInverse(field: "citizen_followers")
+  loksabha_constituencies: [_Indian_Loksabha_Constituency_] @hasInverse(field: "citizen_followers")
+  vidhansabha_constituencies: [_Indian_Vidhansabha_Constituency_] @hasInverse(field: "citizen_followers")
+
+  # policy subjects
+  policy_domains: [_Public_Policy_Domain_] @hasInverse(field: "citizen_followers")
+}
 
 type _Node_Update_ {
   id: ID!
@@ -746,6 +748,8 @@ type _Public_Policy_Domain_ {
 
   government_ministries_departments: _Public_Policy_Domain_Government_Ministries_Departments_
     @hasInverse(field: "public_policy_domain")
+
+  citizen_followers: [_Citizen_Profile_] @hasInverse(field: "policy_domains")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1477,6 +1481,7 @@ type _Indian_State_Union_Territory_ {
 
   # TODO
   # officials, events
+  citizen_followers: [_Citizen_Profile_] @hasInverse(field: "state_or_union_territories")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1596,6 +1601,7 @@ type _Indian_District_ {
 
   # TODO
   # officials, events
+  citizen_followers: [_Citizen_Profile_] @hasInverse(field: "districts")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1735,6 +1741,7 @@ type _Indian_Loksabha_Constituency_ {
 
   # TODO
   # officials, events
+  citizen_followers: [_Citizen_Profile_] @hasInverse(field: "loksabha_constituencies")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
@@ -1864,6 +1871,7 @@ type _Indian_Vidhansabha_Constituency_ {
 
   # TODO
   # officials, events
+  citizen_followers: [_Citizen_Profile_] @hasInverse(field: "vidhansabha_constituencies")
 
   node_created_on: DateTime
   node_updates: [_Node_Update_]
