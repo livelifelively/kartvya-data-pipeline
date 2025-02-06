@@ -1,5 +1,5 @@
-import { cloneDeep, keyBy, reduce, size, uniq } from 'lodash';
-import { assign, not, raise, setup } from 'xstate';
+import { cloneDeep, keyBy, reduce, size, uniq } from "lodash";
+import { assign, not, raise, setup } from "xstate";
 
 interface MappingContext {
   //   map: any; // or a more specific type if you have one
@@ -14,30 +14,30 @@ interface MappingContext {
 
 type MappingEvents =
   | {
-      type: 'E_ADD_BASE_LAYER';
+      type: "E_ADD_BASE_LAYER";
       baseGeojsonString: string;
     }
   | {
-      type: 'E_ADD_COMPARISON_LAYER';
+      type: "E_ADD_COMPARISON_LAYER";
       comparisonGeojsonString: string;
     }
   | {
-      type: 'E_CLICK_BASE_FEATURE';
+      type: "E_CLICK_BASE_FEATURE";
       baseLayerFeature: any;
     }
   | {
-      type: 'E_NEXT_COMPARISON_FEATURE';
+      type: "E_NEXT_COMPARISON_FEATURE";
       //   baseGeojsonString: string;
     }
   | {
-      type: 'E_PREV_COMPARISON_FEATURE';
+      type: "E_PREV_COMPARISON_FEATURE";
       //   baseGeojsonString: string;
     }
   | {
-      type: 'E_MAPPING_COMPLETE';
+      type: "E_MAPPING_COMPLETE";
       //   baseGeojsonString: string;
     }
-  | { type: 'E_MAPPING_CHANGED' };
+  | { type: "E_MAPPING_CHANGED" };
 
 export const GeoCompareMachine = setup({
   types: {
@@ -47,11 +47,11 @@ export const GeoCompareMachine = setup({
 
   actions: {
     A_ADD_BASE_LAYER: assign(({ event, context }) => {
-      if (event.type !== 'E_ADD_BASE_LAYER') return context;
+      if (event.type !== "E_ADD_BASE_LAYER") return context;
 
       const baseLayer = JSON.parse(event.baseGeojsonString);
 
-      const keyedByNameIdBaseLayerIndices = keyBy(baseLayer.features, 'properties.name_id');
+      const keyedByNameIdBaseLayerIndices = keyBy(baseLayer.features, "properties.name_id");
       return {
         keyedByNameIdBaseLayerIndices,
         baseLayer,
@@ -59,14 +59,11 @@ export const GeoCompareMachine = setup({
     }),
 
     A_ADD_COMPARISON_LAYER: assign(({ event, context }) => {
-      if (event.type !== 'E_ADD_COMPARISON_LAYER') return context;
+      if (event.type !== "E_ADD_COMPARISON_LAYER") return context;
 
       const comparisonLayer = JSON.parse(event.comparisonGeojsonString);
 
-      const keyedByNameIdComparisonLayerIndices = keyBy(
-        comparisonLayer.features,
-        'properties.name_id'
-      );
+      const keyedByNameIdComparisonLayerIndices = keyBy(comparisonLayer.features, "properties.name_id");
       return {
         comparisonLayer,
         keyedByNameIdComparisonLayerIndices,
@@ -100,15 +97,9 @@ export const GeoCompareMachine = setup({
 
     A_ADD_UPDATE_MAPPINGS: assign(({ context }) => {
       //   const { comparisonLayerFeature, baseLayerFeatures } = params;
-      const {
-        comparisonLayer,
-        activeComparisonLayerFeatureIndex,
-        comparisonToBaseMappings,
-        selectedBaseLayerFeatures,
-      } = context;
+      const { comparisonLayer, activeComparisonLayerFeatureIndex, comparisonToBaseMappings, selectedBaseLayerFeatures } = context;
 
-      const comparisonFeatureNameId =
-        comparisonLayer.features[activeComparisonLayerFeatureIndex].properties.name_id;
+      const comparisonFeatureNameId = comparisonLayer.features[activeComparisonLayerFeatureIndex].properties.name_id;
 
       const savedComparisonFeatureMappings = comparisonToBaseMappings[comparisonFeatureNameId];
 
@@ -122,12 +113,7 @@ export const GeoCompareMachine = setup({
     }),
 
     A_SET_NEXT_COMPARISON_FEATURE: assign(({ context }) => {
-      const {
-        comparisonLayer,
-        activeComparisonLayerFeatureIndex,
-        comparisonToBaseMappings,
-        selectedBaseLayerFeatures,
-      } = context;
+      const { comparisonLayer, activeComparisonLayerFeatureIndex, comparisonToBaseMappings, selectedBaseLayerFeatures } = context;
 
       let index = activeComparisonLayerFeatureIndex;
       // make it cyclic.
@@ -139,9 +125,7 @@ export const GeoCompareMachine = setup({
 
       const comparisonFeatureNameId = comparisonLayer.features[index].properties.name_id;
 
-      const selectedBaseFeaturesForComparisonFeature = comparisonToBaseMappings[
-        comparisonFeatureNameId
-      ]?.length
+      const selectedBaseFeaturesForComparisonFeature = comparisonToBaseMappings[comparisonFeatureNameId]?.length
         ? comparisonToBaseMappings[comparisonFeatureNameId]
         : selectedBaseLayerFeatures;
 
@@ -152,12 +136,7 @@ export const GeoCompareMachine = setup({
     }),
 
     A_SET_PREV_COMPARISON_FEATURE: assign(({ context }) => {
-      const {
-        comparisonLayer,
-        activeComparisonLayerFeatureIndex,
-        comparisonToBaseMappings,
-        selectedBaseLayerFeatures,
-      } = context;
+      const { comparisonLayer, activeComparisonLayerFeatureIndex, comparisonToBaseMappings, selectedBaseLayerFeatures } = context;
 
       let index = activeComparisonLayerFeatureIndex;
       // make it cyclic.
@@ -169,9 +148,7 @@ export const GeoCompareMachine = setup({
 
       const comparisonFeatureNameId = comparisonLayer.features[index].properties.name_id;
 
-      const selectedBaseFeaturesForComparisonFeature = comparisonToBaseMappings[
-        comparisonFeatureNameId
-      ]?.length
+      const selectedBaseFeaturesForComparisonFeature = comparisonToBaseMappings[comparisonFeatureNameId]?.length
         ? comparisonToBaseMappings[comparisonFeatureNameId]
         : selectedBaseLayerFeatures;
 
@@ -186,8 +163,7 @@ export const GeoCompareMachine = setup({
     G_COMPARISON_COMPLETED: ({ context }) => {
       const { comparisonToBaseMappings, keyedByNameIdComparisonLayerIndices } = context;
 
-      if (size(comparisonToBaseMappings) !== size(keyedByNameIdComparisonLayerIndices))
-        return false;
+      if (size(comparisonToBaseMappings) !== size(keyedByNameIdComparisonLayerIndices)) return false;
 
       // every mapping has values
       return reduce(
@@ -211,116 +187,116 @@ export const GeoCompareMachine = setup({
       comparisonToBaseMappings: {},
       selectedBaseLayerFeatures: [],
     },
-    initial: 'S_NASCENT',
+    initial: "S_NASCENT",
     states: {
       S_NASCENT: {
         // we can have a separate machine here that deals with loading data
-        type: 'parallel',
+        type: "parallel",
         states: {
           S_BASE_LAYER_DATA: {
-            initial: 'S_BASE_LAYER_MISSING',
+            initial: "S_BASE_LAYER_MISSING",
             states: {
               S_BASE_LAYER_MISSING: {
                 on: {
                   E_ADD_BASE_LAYER: {
-                    actions: [{ type: 'A_ADD_BASE_LAYER' }],
-                    target: 'S_BASE_LAYER_ADDED',
+                    actions: [{ type: "A_ADD_BASE_LAYER" }],
+                    target: "S_BASE_LAYER_ADDED",
                   },
                 },
               },
               S_BASE_LAYER_ADDED: {
-                type: 'final',
+                type: "final",
               },
             },
           },
           S_COMPARISON_LAYER_DATA: {
-            initial: 'S_COMPARISON_LAYER_MISSING',
+            initial: "S_COMPARISON_LAYER_MISSING",
             states: {
               S_COMPARISON_LAYER_MISSING: {
                 on: {
                   E_ADD_COMPARISON_LAYER: {
-                    actions: [{ type: 'A_ADD_COMPARISON_LAYER' }],
-                    target: 'S_COMPARISON_LAYER_ADDED',
+                    actions: [{ type: "A_ADD_COMPARISON_LAYER" }],
+                    target: "S_COMPARISON_LAYER_ADDED",
                   },
                 },
               },
               S_COMPARISON_LAYER_ADDED: {
-                type: 'final',
+                type: "final",
               },
             },
           },
         },
         onDone: {
-          target: 'S_READY_FOR_COMPARISON',
+          target: "S_READY_FOR_COMPARISON",
         },
       },
       S_READY_FOR_COMPARISON: {
         entry: [
-          'A_RESET_COMPARISON_LAYER_FEATURE',
-          'A_RESET_MAPPINGS',
+          "A_RESET_COMPARISON_LAYER_FEATURE",
+          "A_RESET_MAPPINGS",
           ({ context, event }) => {
             console.log(context);
           },
         ],
         always: {
-          target: 'S_COMPARING.S_COMPARISON_IN_PROGRESS',
+          target: "S_COMPARING.S_COMPARISON_IN_PROGRESS",
         },
       },
       S_COMPARING: {
         // initial: 'S_COMPARISON_IN_PROGRESS',
-        type: 'parallel',
+        type: "parallel",
         states: {
           S_COMPARISON_IN_PROGRESS: {
             on: {
               E_CLICK_BASE_FEATURE: {
                 actions: [
                   {
-                    type: 'A_TOGGLE_BASE_FEATURE_SELECTION',
+                    type: "A_TOGGLE_BASE_FEATURE_SELECTION",
                     params: ({ event }) => {
                       return { baseLayerfeature: event.baseLayerFeature };
                     },
                   },
-                  raise({ type: 'E_MAPPING_CHANGED' }),
+                  raise({ type: "E_MAPPING_CHANGED" }),
                 ],
               },
               E_NEXT_COMPARISON_FEATURE: {
                 actions: [
                   {
-                    type: 'A_ADD_UPDATE_MAPPINGS',
+                    type: "A_ADD_UPDATE_MAPPINGS",
                   },
                   {
-                    type: 'A_SET_NEXT_COMPARISON_FEATURE',
+                    type: "A_SET_NEXT_COMPARISON_FEATURE",
                   },
                 ],
               },
               E_PREV_COMPARISON_FEATURE: {
                 actions: [
                   {
-                    type: 'A_ADD_UPDATE_MAPPINGS',
+                    type: "A_ADD_UPDATE_MAPPINGS",
                   },
                   {
-                    type: 'A_SET_PREV_COMPARISON_FEATURE',
+                    type: "A_SET_PREV_COMPARISON_FEATURE",
                   },
                 ],
               },
             },
           },
           S_COMPARISON_COMPLETION_STATUS: {
-            initial: 'S_NOT_COMPLETE',
+            initial: "S_NOT_COMPLETE",
             states: {
               S_NOT_COMPLETE: {
                 on: {
                   E_MAPPING_CHANGED: {
-                    guard: 'G_COMPARISON_COMPLETED',
-                    target: 'S_COMPLETED',
+                    guard: "G_COMPARISON_COMPLETED",
+                    target: "S_COMPLETED",
                   },
                 },
               },
               S_COMPLETED: {
                 on: {
                   E_MAPPING_CHANGED: {
-                    guard: not('G_COMPARISON_COMPLETED'),
-                    target: 'S_NOT_COMPLETE',
+                    guard: not("G_COMPARISON_COMPLETED"),
+                    target: "S_NOT_COMPLETE",
                   },
                 },
               },
