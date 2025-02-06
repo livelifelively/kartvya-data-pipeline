@@ -1,4 +1,4 @@
-import { cloneDeep, keyBy, reduce, size, uniq } from "lodash";
+import { cloneDeep, keyBy, reduce, size } from "lodash";
 import { assign, not, raise, setup } from "xstate";
 
 interface MappingContext {
@@ -88,9 +88,7 @@ export const GeoCompareMachine = setup({
     }),
 
     A_TOGGLE_BASE_FEATURE_SELECTION: assign(({ context }, params: { baseLayerfeature: any }) => {
-      let selectedBaseLayerFeatures: string[];
-
-      selectedBaseLayerFeatures = context.selectedBaseLayerFeatures.filter((val: any) => {
+      const selectedBaseLayerFeatures: string[] = context.selectedBaseLayerFeatures.filter((val: any) => {
         return val !== params.baseLayerfeature.properties.name_id;
       });
 
@@ -109,8 +107,6 @@ export const GeoCompareMachine = setup({
       const { comparisonLayer, activeComparisonLayerFeatureIndex, comparisonToBaseMappings, selectedBaseLayerFeatures } = context;
 
       const comparisonFeatureNameId = comparisonLayer.features[activeComparisonLayerFeatureIndex].properties.name_id;
-
-      const savedComparisonFeatureMappings = comparisonToBaseMappings[comparisonFeatureNameId];
 
       const newComparisonToBaseMappings = cloneDeep(comparisonToBaseMappings);
 
@@ -180,6 +176,7 @@ export const GeoCompareMachine = setup({
       return reduce(
         comparisonToBaseMappings,
         (agg, val) => {
+          // eslint-disable-next-line no-param-reassign
           agg = agg && val.length > 0;
           return agg;
         },
@@ -245,7 +242,7 @@ export const GeoCompareMachine = setup({
         entry: [
           "A_RESET_COMPARISON_LAYER_FEATURE",
           "A_RESET_MAPPINGS",
-          ({ context, event }) => {
+          ({ context }) => {
             console.log(context);
           },
         ],
