@@ -15,6 +15,8 @@ function GeoComparison() {
   const [state, send, actor] = useMachine(GeoCompareMachine);
 
   const { context, value } = state;
+  // console.log(context);
+  console.log(value);
   const { selectedBaseLayerFeatures, comparisonToBaseMappings, activeComparisonLayerFeatureIndex, baseLayer, comparisonLayer } =
     context;
 
@@ -38,6 +40,14 @@ function GeoComparison() {
           {/* <Button id="toggle-input-button" variant="default">
             Hide Inputs
           </Button> */}
+          <Button
+            variant="outline"
+            onClick={() => {
+              send({ type: "E_RESET_SELECTED_BASE_FEATURES" });
+            }}
+          >
+            Reset Base Features Selection
+          </Button>
           <Button
             id="prev-button"
             variant="default"

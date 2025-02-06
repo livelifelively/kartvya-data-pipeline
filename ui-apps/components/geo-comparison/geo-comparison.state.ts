@@ -47,7 +47,9 @@ export const GeoCompareMachine = setup({
 
   actions: {
     A_ADD_BASE_LAYER: assign(({ event, context }) => {
-      if (event.type !== "E_ADD_BASE_LAYER") return context;
+      if (event.type !== "E_ADD_BASE_LAYER") {
+        return context;
+      }
 
       const baseLayer = JSON.parse(event.baseGeojsonString);
 
@@ -59,7 +61,9 @@ export const GeoCompareMachine = setup({
     }),
 
     A_ADD_COMPARISON_LAYER: assign(({ event, context }) => {
-      if (event.type !== "E_ADD_COMPARISON_LAYER") return context;
+      if (event.type !== "E_ADD_COMPARISON_LAYER") {
+        return context;
+      }
 
       const comparisonLayer = JSON.parse(event.comparisonGeojsonString);
 
@@ -72,6 +76,10 @@ export const GeoCompareMachine = setup({
 
     A_RESET_COMPARISON_LAYER_FEATURE: assign({
       activeComparisonLayerFeatureIndex: 0,
+    }),
+
+    A_RESET_SELECTED_BASE_LAYER: assign({
+      selectedBaseLayerFeatures: [],
     }),
 
     A_RESET_MAPPINGS: assign({
@@ -87,8 +95,9 @@ export const GeoCompareMachine = setup({
       });
 
       // if was not there already, push feature
-      if (selectedBaseLayerFeatures.length === context.selectedBaseLayerFeatures.length)
+      if (selectedBaseLayerFeatures.length === context.selectedBaseLayerFeatures.length) {
         selectedBaseLayerFeatures.push(params.baseLayerfeature.properties.name_id);
+      }
 
       return {
         selectedBaseLayerFeatures,
@@ -103,7 +112,7 @@ export const GeoCompareMachine = setup({
 
       const savedComparisonFeatureMappings = comparisonToBaseMappings[comparisonFeatureNameId];
 
-      let newComparisonToBaseMappings = cloneDeep(comparisonToBaseMappings);
+      const newComparisonToBaseMappings = cloneDeep(comparisonToBaseMappings);
 
       newComparisonToBaseMappings[comparisonFeatureNameId] = selectedBaseLayerFeatures;
 
@@ -163,7 +172,9 @@ export const GeoCompareMachine = setup({
     G_COMPARISON_COMPLETED: ({ context }) => {
       const { comparisonToBaseMappings, keyedByNameIdComparisonLayerIndices } = context;
 
-      if (size(comparisonToBaseMappings) !== size(keyedByNameIdComparisonLayerIndices)) return false;
+      if (size(comparisonToBaseMappings) !== size(keyedByNameIdComparisonLayerIndices)) {
+        return false;
+      }
 
       // every mapping has values
       return reduce(
@@ -258,6 +269,9 @@ export const GeoCompareMachine = setup({
                   },
                   raise({ type: "E_MAPPING_CHANGED" }),
                 ],
+              },
+              E_RESET_SELECTED_BASE_FEATURES: {
+                actions: ["A_RESET_SELECTED_BASE_LAYER", raise({ type: "E_MAPPING_CHANGED" })],
               },
               E_NEXT_COMPARISON_FEATURE: {
                 actions: [
