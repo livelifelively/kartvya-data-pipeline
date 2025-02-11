@@ -1,34 +1,16 @@
-// module.exports = {
-//   extends: ['mantine', 'plugin:@next/next/recommended', 'plugin:jest/recommended'],
-//   plugins: ['testing-library', 'jest'],
-//   overrides: [
-//     {
-//       files: ['**/?(*.)+(spec|test).[jt]s?(x)'],
-//       extends: ['plugin:testing-library/react'],
-//     },
-//   ],
-//   parserOptions: {
-//     project: './tsconfig.json',
-//   },
-//   rules: {
-//     'react/react-in-jsx-scope': 'off',
-//     'import/extensions': 'off',
-//   },
-// };
-
 module.exports = {
   // Specifies the ESLint parser
-  parser: '@typescript-eslint/parser',
+  parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020, // Allows for the parsing of modern ECMAScript features
-    sourceType: 'module', // Allows for the use of imports
+    sourceType: "module", // Allows for the use of imports
     ecmaFeatures: {
       jsx: false, // Disables JSX since it's not used in Node.js
     },
   },
   settings: {
     react: {
-      version: 'detect', // React version. "detect" automatically picks the version you have installed.
+      version: "detect", // React version. "detect" automatically picks the version you have installed.
     },
   },
   env: {
@@ -37,8 +19,8 @@ module.exports = {
     node: true, // Enables Node.js global variables
   },
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended', // Uses the recommended rules from the @typescript-eslint/eslint-plugin
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended", // Uses the recommended rules from the @typescript-eslint/eslint-plugin
   ],
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
@@ -46,9 +28,9 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['*.js'], // Override settings for JavaScript files
+      files: ["*.js"], // Override settings for JavaScript files
       rules: {
-        '@typescript-eslint/no-var-requires': 'off', // Allow require() in JavaScript files
+        "@typescript-eslint/no-var-requires": "off", // Allow require() in JavaScript files
       },
     },
   ],
