@@ -64,6 +64,9 @@ type _Citizen_Profile_ {
 
   # policy subjects
   policy_domains: [_Public_Policy_Domain_] @hasInverse(field: "citizen_followers")
+
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
 }
 
 type _Node_Update_ {
@@ -136,6 +139,7 @@ type _Name_ {
 
   # NAMES OF public policy domains like defence, healthcare etc.
   public_policy_domain: [_Public_Policy_Domain_] @hasInverse(field: "names")
+  public_policy_domain_group: [_Public_Policy_Domain_Group_] @hasInverse(field: "names")
 
   # NAMES OF Countries
   country: [_Country_] @hasInverse(field: "names")
@@ -738,6 +742,20 @@ type _Government_System_Types_Economic_System_ {
   node_updates: [_Node_Update_]
 }
 
+type _Public_Policy_Domain_Group_ {
+  id: ID!
+
+  name_id: String! @id @search(by: [hash, term])
+
+  names: [_Name_] @hasInverse(field: "public_policy_domain_group")
+  description: String
+
+  domains_in_group: [_Public_Policy_Domain_] @hasInverse(field: "public_policy_domain_group")
+
+  node_created_on: DateTime
+  node_updates: [_Node_Update_]
+}
+
 type _Public_Policy_Domain_ {
   id: ID!
 
@@ -745,6 +763,11 @@ type _Public_Policy_Domain_ {
 
   names: [_Name_] @hasInverse(field: "public_policy_domain")
   description: String
+
+  public_policy_domain_group: _Public_Policy_Domain_Group_ @hasInverse(field: "domains_in_group")
+
+  super_domain: [_Public_Policy_Domain_] @hasInverse(field: "sub_domain")
+  sub_domain: [_Public_Policy_Domain_] @hasInverse(field: "super_domain")
 
   government_ministries_departments: _Public_Policy_Domain_Government_Ministries_Departments_
     @hasInverse(field: "public_policy_domain")
@@ -759,9 +782,7 @@ type _Public_Policy_Domain_ {
 type _Public_Policy_Domain_Government_Ministries_Departments_ {
   id: ID!
 
-  name_id: String! @id @search(by: [hash, term, fulltext])
-
-  public_policy_domain: _Public_Policy_Domain_ @hasInverse(field: "government_ministries_departments")
+  public_policy_domain: [_Public_Policy_Domain_] @hasInverse(field: "government_ministries_departments")
 
   indian_union_government_ministries: [_Indian_Union_Government_Ministry_]
     @hasInverse(field: "policy_domain_ministries_list")
