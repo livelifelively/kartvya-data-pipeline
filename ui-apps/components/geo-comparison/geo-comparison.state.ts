@@ -37,6 +37,7 @@ type MappingEvents =
       type: "E_MAPPING_COMPLETE";
       //   baseGeojsonString: string;
     }
+  | { type: "E_RESET_SELECTED_BASE_FEATURES" }
   | { type: "E_MAPPING_CHANGED" };
 
 export const GeoCompareMachine = setup({

@@ -259,12 +259,7 @@ async function updateVidhansabhaConstituencyRegionAddLoksabhaConstituency(
   console.log(id);
 }
 
-(async () => {
-  const graphQLClient = await createGraphQLClient();
-
-  const stateNameId = "in-sut-himachal-pradesh";
-  //   const stateNameId = "in-sut-punjab";
-
+async function updateStateDistrictLoksabhaVidhasabhaInterlinks(graphQLClient: any, stateNameId: string) {
   const districtLoksabhaConstituencyFilePath = path.join(__dirname, stateNameId.split("in-sut-")[1], "d-lc.json");
   const vidhansabhaConstituencyDistrictFilePath = path.join(__dirname, stateNameId.split("in-sut-")[1], "d-vc.json");
   const vidhansabhaConstituencyLoksabhaConstituencyFilePath = path.join(
@@ -294,4 +289,14 @@ async function updateVidhansabhaConstituencyRegionAddLoksabhaConstituency(
       vidhansabhaConstituencyLoksabhaConstituency[vclc]
     );
   }
+}
+
+(async () => {
+  const stateNameId = "in-sut-himachal-pradesh";
+  //   const stateNameId = "in-sut-punjab";
+  const graphQLClient = await createGraphQLClient();
+
+  await geoCompareLoksabhaConstituenciesVidhansabhaConstituencies(graphQLClient, stateNameId);
+
+  // await updateStateDistrictLoksabhaVidhasabhaInterlinks(graphQLClient, stateNameId);
 })();

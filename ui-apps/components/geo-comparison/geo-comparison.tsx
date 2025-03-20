@@ -8,15 +8,16 @@ import classes from "./geo-comparison.module.css";
 
 import "leaflet/dist/leaflet.css";
 
+import { useState } from "react";
 import { PathOptions } from "leaflet";
 import JsonView from "react18-json-view";
 
 function GeoComparison() {
   const [state, send, actor] = useMachine(GeoCompareMachine);
+  const [areInputsVisible, setAreInputsVisible] = useState(true);
 
   const { context, value } = state;
-  // console.log(context);
-  console.log(value);
+
   const { selectedBaseLayerFeatures, comparisonToBaseMappings, activeComparisonLayerFeatureIndex, baseLayer, comparisonLayer } =
     context;
 
@@ -47,6 +48,15 @@ function GeoComparison() {
             }}
           >
             Reset Base Features Selection
+          </Button>
+          <Button
+            id="hide-layers-inputs"
+            variant="default"
+            onClick={() => {
+              setAreInputsVisible(!areInputsVisible); // Toggle the state
+            }}
+          >
+            {areInputsVisible ? "Hide Layer Inputs" : "Show Layer Inputs"}
           </Button>
           <Button
             id="prev-button"
@@ -174,30 +184,28 @@ function GeoComparison() {
       </AppShell.Main>
       <AppShell.Aside p="md">
         <Box id="geojson-inputs" className="geojson-input-container">
-          <Textarea
-            id="base-geojson-input"
-            placeholder="Paste base GeoJSON here..."
-            minRows={10}
-            mb={15}
-            onChange={(event) => send({ type: "E_ADD_BASE_LAYER", baseGeojsonString: event.currentTarget.value })}
-            style={{
-              display: "none",
-            }}
-          ></Textarea>
-          <Textarea
-            id="comparison-geojson-input"
-            placeholder="Paste comparison GeoJSON here..."
-            minRows={10}
-            onChange={(event) =>
-              send({
-                type: "E_ADD_COMPARISON_LAYER",
-                comparisonGeojsonString: event.currentTarget.value,
-              })
-            }
-            style={{
-              display: "none",
-            }}
-          ></Textarea>
+          {areInputsVisible && (
+            <>
+              <Textarea
+                id="base-geojson-input"
+                placeholder="Paste base GeoJSON here..."
+                minRows={10}
+                mb={15}
+                onChange={(event) => send({ type: "E_ADD_BASE_LAYER", baseGeojsonString: event.currentTarget.value })}
+              ></Textarea>
+              <Textarea
+                id="comparison-geojson-input"
+                placeholder="Paste comparison GeoJSON here..."
+                minRows={10}
+                onChange={(event) =>
+                  send({
+                    type: "E_ADD_COMPARISON_LAYER",
+                    comparisonGeojsonString: event.currentTarget.value,
+                  })
+                }
+              ></Textarea>
+            </>
+          )}
           <Box
             style={{
               padding: "10px",
@@ -212,7 +220,7 @@ function GeoComparison() {
               <Text
                 component="span"
                 style={{ color: "red" }}
-              >{` ${size(comparisonToBaseMappings)} / ${comparisonLayer.features.length} `}</Text>
+              >{` ${size(comparisonToBaseMappings)} / ${comparisonLayer?.features?.length} `}</Text>
             </Title>
             <JsonView
               src={comparisonToBaseMappings}

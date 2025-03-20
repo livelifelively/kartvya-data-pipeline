@@ -20,7 +20,7 @@ export const geoCompare = async (baseGeojsonData: GeoJSON, comparisonGeojsonData
     // const relativePath: string = "../../browser-scripts/react-hello-world/index.html";
     // const absolutePath: string = path.resolve(__dirname, relativePath);
 
-    await page.goto("http://localhost:3001/geo-comparison");
+    await page.goto("http://localhost:3000/geo-comparison");
 
     const baseJsonString = JSON.stringify(baseGeojsonData);
     const comparisonJsonString = comparisonGeojsonData ? JSON.stringify(comparisonGeojsonData) : "";
