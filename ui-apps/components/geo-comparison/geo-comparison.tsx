@@ -106,14 +106,14 @@ function GeoComparison() {
               marginBottom: "10px",
             }}
           >
-            <Title size={"h4"}>Active Comparison Feature</Title>
+            <Title size="h4">Active Comparison Feature</Title>
             <JsonView
-              src={comparisonLayer.features[activeComparisonLayerFeatureIndex].properties}
+              src={comparisonLayer.features[activeComparisonLayerFeatureIndex]?.properties}
               theme="github"
               collapsed={1}
               collapseStringsAfterLength={20}
               collapseStringMode="address"
-              displaySize={true}
+              // displaySize={true}
             />
           </Box>
         )}
@@ -127,21 +127,21 @@ function GeoComparison() {
             backgroundColor: selectedBaseLayerFeatures.length === 0 ? "pink" : "transparent",
           }}
         >
-          <Title size={"h4"}>Selected Base Features</Title>
+          <Title size="h4">Selected Base Features</Title>
           <JsonView
             src={selectedBaseLayerFeatures}
             theme="github"
             collapsed={1}
             collapseStringsAfterLength={20}
             collapseStringMode="address"
-            displaySize={true}
+            displaySize
           />
         </Box>
       </AppShell.Navbar>
       <AppShell.Main>
         <Container fluid>
           <Box id="map" style={{ height: "73vh", overflowY: "scroll" }}>
-            <MapContainer scrollWheelZoom={true} style={{ height: "100%" }} maxZoom={19}>
+            <MapContainer scrollWheelZoom style={{ height: "100%" }} maxZoom={19}>
               <TileLayer attribution="© OpenStreetMap contributors" url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
               {activeComparisonLayerFeatureIndex !== -1 && comparisonLayer.features[activeComparisonLayerFeatureIndex] && (
                 <PolygonLayer
@@ -162,15 +162,14 @@ function GeoComparison() {
                         weight: 3,
                         color: "orange",
                       };
-                    } else {
-                      // Reset the style
-                      return {
-                        fillColor: "transparent",
-                        fillOpacity: 0.3,
-                        weight: 2,
-                        color: "blue",
-                      };
                     }
+                    // Reset the style
+                    return {
+                      fillColor: "transparent",
+                      fillOpacity: 0.3,
+                      weight: 2,
+                      color: "blue",
+                    };
                   }}
                   onEachFeature={(feature, layer) => {
                     layer.on("click", () => send({ type: "E_CLICK_BASE_FEATURE", baseLayerFeature: feature }));
@@ -192,7 +191,7 @@ function GeoComparison() {
                 minRows={10}
                 mb={15}
                 onChange={(event) => send({ type: "E_ADD_BASE_LAYER", baseGeojsonString: event.currentTarget.value })}
-              ></Textarea>
+              />
               <Textarea
                 id="comparison-geojson-input"
                 placeholder="Paste comparison GeoJSON here..."
@@ -203,7 +202,7 @@ function GeoComparison() {
                     comparisonGeojsonString: event.currentTarget.value,
                   })
                 }
-              ></Textarea>
+              />
             </>
           )}
           <Box
@@ -215,7 +214,7 @@ function GeoComparison() {
               marginBottom: "10px",
             }}
           >
-            <Title size={"h4"}>
+            <Title size="h4">
               Comparison to Base Mappings -
               <Text
                 component="span"
@@ -228,7 +227,7 @@ function GeoComparison() {
               collapsed={1}
               collapseStringsAfterLength={20}
               collapseStringMode="address"
-              displaySize={true}
+              displaySize
             />
           </Box>
         </Box>
