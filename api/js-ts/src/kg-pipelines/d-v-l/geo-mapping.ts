@@ -259,44 +259,52 @@ async function updateVidhansabhaConstituencyRegionAddLoksabhaConstituency(
   console.log(id);
 }
 
-async function updateStateDistrictLoksabhaVidhasabhaInterlinks(graphQLClient: any, stateNameId: string) {
+async function updateStateDistrictLoksabhaVidhasabhaInterlinks(graphQLClient: any, stateNameId: string, hasVc = true) {
+  // connect districts and loksabha
   const districtLoksabhaConstituencyFilePath = path.join(__dirname, stateNameId.split("in-sut-")[1], "d-lc.json");
-  const vidhansabhaConstituencyDistrictFilePath = path.join(__dirname, stateNameId.split("in-sut-")[1], "d-vc.json");
-  const vidhansabhaConstituencyLoksabhaConstituencyFilePath = path.join(
-    __dirname,
-    stateNameId.split("in-sut-")[1],
-    "lc-vc.json"
-  );
-
   const districtLoksabhaConstituency = JSON.parse(fs.readFileSync(districtLoksabhaConstituencyFilePath, "utf8"));
-  const vidhansabhaConstituencyDistrict = JSON.parse(fs.readFileSync(vidhansabhaConstituencyDistrictFilePath, "utf8"));
-  const vidhansabhaConstituencyLoksabhaConstituency = JSON.parse(
-    fs.readFileSync(vidhansabhaConstituencyLoksabhaConstituencyFilePath, "utf8")
-  );
-
   for (let dlc in districtLoksabhaConstituency) {
     await updateDistrictRegionAddLoksabhaConstituency(graphQLClient, dlc, districtLoksabhaConstituency[dlc]);
   }
 
-  for (let dvc in vidhansabhaConstituencyDistrict) {
-    await updateVidhansabhaConstituencyRegionAddDistrict(graphQLClient, dvc, vidhansabhaConstituencyDistrict[dvc]);
-  }
-
-  for (let vclc in vidhansabhaConstituencyLoksabhaConstituency) {
-    await updateVidhansabhaConstituencyRegionAddLoksabhaConstituency(
-      graphQLClient,
-      vclc,
-      vidhansabhaConstituencyLoksabhaConstituency[vclc]
+  if (hasVc) {
+    const vidhansabhaConstituencyDistrictFilePath = path.join(__dirname, stateNameId.split("in-sut-")[1], "d-vc.json");
+    const vidhansabhaConstituencyLoksabhaConstituencyFilePath = path.join(
+      __dirname,
+      stateNameId.split("in-sut-")[1],
+      "lc-vc.json"
     );
+
+    const vidhansabhaConstituencyDistrict = JSON.parse(
+      fs.readFileSync(vidhansabhaConstituencyDistrictFilePath, "utf8")
+    );
+    const vidhansabhaConstituencyLoksabhaConstituency = JSON.parse(
+      fs.readFileSync(vidhansabhaConstituencyLoksabhaConstituencyFilePath, "utf8")
+    );
+
+    for (let dvc in vidhansabhaConstituencyDistrict) {
+      await updateVidhansabhaConstituencyRegionAddDistrict(graphQLClient, dvc, vidhansabhaConstituencyDistrict[dvc]);
+    }
+
+    for (let vclc in vidhansabhaConstituencyLoksabhaConstituency) {
+      await updateVidhansabhaConstituencyRegionAddLoksabhaConstituency(
+        graphQLClient,
+        vclc,
+        vidhansabhaConstituencyLoksabhaConstituency[vclc]
+      );
+    }
   }
 }
 
 (async () => {
-  const stateNameId = "in-sut-himachal-pradesh";
-  //   const stateNameId = "in-sut-punjab";
+  const stateNameId = "in-sut-lakshadweep";
+
   const graphQLClient = await createGraphQLClient();
 
-  await geoCompareLoksabhaConstituenciesVidhansabhaConstituencies(graphQLClient, stateNameId);
+  await geoCompareLoksabhaConstituenciesDistricts(graphQLClient, stateNameId);
+
+  // await geoCompareLoksabhaConstituenciesVidhansabhaConstituencies(graphQLClient, stateNameId);
+  // await geoCompareDistrictsVidhansabhaConstituencies(graphQLClient, stateNameId);
 
   // await updateStateDistrictLoksabhaVidhasabhaInterlinks(graphQLClient, stateNameId);
 })();
